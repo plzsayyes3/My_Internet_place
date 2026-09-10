@@ -2,58 +2,119 @@
 
 自分の関心に沿って、ニュース・記事・ブログ・ツール・リリースなどを集めるための公開リポジトリです。
 
-## Purpose
+単なるRSSリーダーではなく、**「最近の自分が気になるインターネット」をつくるための記事レーダー**を目指します。
 
-- インターネット上の情報を一か所に集める
-- RSS / Atom / 公開フィードを中心に、自動収集できる構成にする
-- 個人情報や私的な記録は置かない
-- 個人知識ベースからは、公開して問題ない抽象化された関心テーマだけを反映する
-- 将来的には「なぜこの記事がおすすめなのか」まで表示する
+## Current MVP
+
+- 公開RSS / Atomフィードを自動収集
+- 公開可能な関心プロファイルで記事をスコアリング
+- 古すぎる記事・追跡パラメータ・重複URLを整理
+- 一部のフィードが落ちても他の取得を継続
+- GitHub Pages向けの静的リーダーを生成
+- `FOR YOU` / `LATEST` / カテゴリ別に閲覧
+- 取得元ごとのフィード健全性を表示
 
 ## Flow
 
 ```text
-Internet
+Public Internet
   ↓
-Sources (RSS / Atom / public feeds)
+config/sources.yml
   ↓
-Collector
+GitHub Actions / src/collect.py
   ↓
-Article data
-  ↓
-Interest matching
-  ↓
-GitHub Pages
+data/latest.json
+  └─ docs/data/latest.json
+       ↓
+GitHub Pages reader
 ```
+
+## Schedule
+
+GitHub Actionsで1日3回収集します。
+
+- 06:25ごろ JST
+- 12:25ごろ JST
+- 20:25ごろ JST
+
+GitHub Actionsのscheduled workflowは厳密な定刻実行を保証しないため、時刻は目安です。`workflow_dispatch` による手動実行にも対応しています。
+
+## Initial sources
+
+初期段階では、情報源を増やしすぎず、公式・一次情報を中心にしつつ発見用フィードを少量混ぜています。
+
+- OpenAI News
+- Obsidian Blog
+- Obsidian Changelog
+- GitHub Changelog
+- GitHub Blog
+- Simon Willison's Weblog
+- Hackaday
+- Hacker News via HNRSS
+
+取得元は `config/sources.yml` で管理します。
+
+## Public interest profile
+
+`config/interests.yml` には、公開して問題ない一般化された関心テーマだけを置きます。
+
+例:
+
+- AI / AIツール
+- ナレッジ管理・ノート
+- ソフトウェア制作
+- 小型デバイス・iOS
+- メイキング
+- 保育・教育
+- タスク・仕事設計
+- 個人Web・RSS
+
+このリポジトリから個人知識ベースを直接公開・複製することはしません。
+
+## Privacy boundary
+
+このリポジトリは**公開前提**です。
+
+置かないもの:
+
+- 氏名・住所・連絡先
+- 家族構成や生活記録
+- 勤務先・個別案件・非公開の仕事情報
+- 個人知識ベースの生データ
+- 閲覧履歴など個人を特定しやすい行動ログ
+- APIキーやトークン
+
+個人知識ベースを推薦改善に利用するときも、そのまま転載せず、公開可能な興味カテゴリ・キーワードへ抽象化した結果だけを利用します。
 
 ## Structure
 
 ```text
 config/
   interests.yml   # 公開可能な関心テーマ
-  sources.yml     # 取得元
+  sources.yml     # 公開フィードの取得元
 
 data/
-  latest.json     # 最新の記事一覧
+  latest.json     # 収集データ
 
 src/
-  collect.py      # 記事収集処理
+  collect.py      # 収集・整理・スコアリング
 
 docs/
   index.html      # 公開ビュー
   app.js
   style.css
+  data/latest.json
 
 .github/workflows/
-  collect.yml     # 定期実行
+  collect.yml     # 定期収集
 ```
 
-## Privacy policy
+## Next
 
-このリポジトリは公開前提です。氏名、家族構成、勤務先、個別案件、生活記録などの個人情報は保存しません。
+1. GitHub Pagesを `main` / `docs` から公開する
+2. 実際に読んで、情報源とスコアリングの偏りを調整する
+3. 「気になる / 興味なし」のフィードバック設計を追加する
+4. ニュース以外の良質な記事・ブログ・リリース・論文へ取得範囲を広げる
+5. 必要ならAIによる要約・推薦理由を後段で追加する
 
-個人知識ベースの内容を利用する場合も、そのまま転載せず、一般化した「興味カテゴリ・キーワード」のみを利用します。
-
-## Status
-
-Initial scaffold.
+まずは、AI APIに依存せず安定して流れ続ける小さな仕組みを土台にします。
