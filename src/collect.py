@@ -6,6 +6,7 @@ Public data only. The collector:
 - scores items against the generic public profile in config/interests.yml
 - removes common tracking parameters and duplicates
 - favors recent items and drops stale feed history
+- retries short-lived network failures
 - records feed health without failing the whole run when one source is down
 - writes the same dataset to repository data and the GitHub Pages tree
 """
@@ -16,6 +17,7 @@ import hashlib
 import html
 import json
 import re
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
@@ -37,6 +39,8 @@ MAX_ITEMS_PER_SOURCE = 40
 MAX_AGE_DAYS = 120
 SUMMARY_LIMIT = 320
 FETCH_TIMEOUT_SECONDS = 20
+FETCH_ATTEMPTS = 3
+RETRY_DELAY_SECONDS = 2
 TRACKING_KEYS = {
     "fbclid",
     "gclid",
@@ -140,19 +144,32 @@ def score_item(
 
 
 def fetch_feed(url: str):
-    response = requests.get(
-        url,
-        headers={
-            "User-Agent": USER_AGENT,
-            "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, */*",
-        },
-        timeout=FETCH_TIMEOUT_SECONDS,
-    )
-    response.raise_for_status()
-    parsed = feedparser.parse(response.content)
-    if getattr(parsed, "bozo", False) and not parsed.entries:
-        raise RuntimeError(str(getattr(parsed, "bozo_exception", "invalid feed")))
-    return parsed
+    last_error: Exception | None = None
+    for attempt in range(1, FETCH_ATTEMPTS + 1):
+        try:
+            response = requests.get(
+                url,
+                headers={
+                    "User-Agent": USER_AGENT,
+                    "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, */*",
+                },
+                timeout=FETCH_TIMEOUT_SECONDS,
+            )
+            response.raise_for_status()
+            parsed = feedparser.parse(response.content)
+            if getattr(parsed, "bozo", False) and not parsed.entries:
+                raise RuntimeError(
+                    str(getattr(parsed, "bozo_exception", "invalid feed"))
+                )
+            return parsed
+        except (requests.RequestException, RuntimeError) as exc:
+            last_error = exc
+            if attempt >= FETCH_ATTEMPTS:
+                break
+            print(f"[RETRY] {url} attempt {attempt}/{FETCH_ATTEMPTS}: {exc}")
+            time.sleep(RETRY_DELAY_SECONDS)
+
+    raise RuntimeError(str(last_error or "feed request failed"))
 
 
 def collect() -> dict:
