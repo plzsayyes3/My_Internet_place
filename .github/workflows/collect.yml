@@ -2,6 +2,14 @@ name: Collect feeds
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "config/**"
+      - "src/**"
+      - "requirements.txt"
+      - ".github/workflows/collect.yml"
   schedule:
     # Approx. 06:25, 12:25, 20:25 JST (GitHub schedules use UTC).
     - cron: "25 21,3,11 * * *"
