@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Internet Place</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div>
+      <p class="eyebrow">MY INTERNET PLACE</p>
+      <h1>最近の自分が気になるインターネット</h1>
+      <p class="lead">ニュース、記事、ブログ、ツール、リリースをひとつの流れに。</p>
+    </div>
+    <div class="meta" id="generated">loading…</div>
+  </header>
+
+  <nav class="filters" id="filters">
+    <button class="filter is-active" data-filter="all">FOR YOU</button>
+  </nav>
+
+  <main>
+    <section class="feed" id="feed" aria-live="polite"></section>
+    <p class="empty" id="empty" hidden>まだ記事がありません。</p>
+  </main>
+
+  <template id="card-template">
+    <article class="card">
+      <div class="card-topline">
+        <span class="source"></span>
+        <span class="score"></span>
+      </div>
+      <h2><a class="title" target="_blank" rel="noopener noreferrer"></a></h2>
+      <p class="summary"></p>
+      <div class="card-footer">
+        <span class="reason"></span>
+        <time class="published"></time>
+      </div>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
