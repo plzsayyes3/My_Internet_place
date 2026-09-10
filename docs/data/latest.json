@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-10T22:20:38.923149+00:00",
-  "count": 144,
+  "generated_at": "2026-09-10T22:21:01.186363+00:00",
+  "count": 124,
   "sources": {
     "configured": 8,
-    "healthy": 8,
+    "healthy": 7,
     "status": [
       {
         "id": "openai_news",
@@ -57,9 +57,10 @@
       {
         "id": "hacker_news",
         "name": "Hacker News via HNRSS",
-        "ok": true,
-        "items": 20,
-        "stale_skipped": 0
+        "ok": false,
+        "items": 0,
+        "stale_skipped": 0,
+        "error": "502 Server Error: Bad Gateway for url: https://hnrss.org/frontpage"
       }
     ]
   },
@@ -74,17 +75,19 @@
       "source_id": "simon_willison",
       "source_category": "ai_tools",
       "content_type": "blog",
-      "score": 5.5,
-      "rank_score": 7.36,
+      "score": 6.5,
+      "rank_score": 8.33,
       "matched_interests": [
         "ai_tools",
+        "knowledge_tools",
         "software_building",
         "personal_web"
       ],
       "matched_labels": [
-        "AI tools",
-        "Software building",
-        "Personal web"
+        "AI・AIツール",
+        "ナレッジ・ノート",
+        "ソフトウェア制作",
+        "個人Web・RSS"
       ]
     },
     {
@@ -97,15 +100,80 @@
       "source_id": "simon_willison",
       "source_category": "ai_tools",
       "content_type": "blog",
-      "score": 3.9,
-      "rank_score": 5.88,
+      "score": 4.8,
+      "rank_score": 6.76,
       "matched_interests": [
         "ai_tools",
         "software_building"
       ],
       "matched_labels": [
-        "AI tools",
-        "Software building"
+        "AI・AIツール",
+        "ソフトウェア制作"
+      ]
+    },
+    {
+      "id": "9ea4208917a11c6b",
+      "title": "llm-gemini 0.34",
+      "url": "https://simonwillison.net/2026/Sep/2/llm-gemini/",
+      "summary": "Release: llm-gemini 0.34 New model gemini-3.8-flash for Gemini 3.8 Flash , with low, medium and high thinking levels. #146 Fixed async responses failing to record the resolved model version. Thanks, Charlie Tonneslan . #137 Google released Gemini 3.8 Flash (and 3.8 Flash Cyber, but that's available to \"trusted defender",
+      "published_at": "2026-09-02T16:39:38+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_category": "ai_tools",
+      "content_type": "blog",
+      "score": 4.0,
+      "rank_score": 5.91,
+      "matched_interests": [
+        "ai_tools",
+        "knowledge_tools"
+      ],
+      "matched_labels": [
+        "AI・AIツール",
+        "ナレッジ・ノート"
+      ]
+    },
+    {
+      "id": "590eedef8f336fc5",
+      "title": "llm 0.34",
+      "url": "https://simonwillison.net/2026/Sep/2/llm/",
+      "summary": "Release: llm 0.34 One new feature: llm logs --usage Markdown output now includes the response duration in milliseconds and as a human-readable duration. llm logs --short includes a new duration_ms field. #1653 Plus several contributed bug fixes, and a significant performance improvement to llm logs thanks to waveplate ",
+      "published_at": "2026-09-02T19:23:52+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_category": "ai_tools",
+      "content_type": "blog",
+      "score": 3.9,
+      "rank_score": 5.82,
+      "matched_interests": [
+        "ai_tools",
+        "knowledge_tools",
+        "software_building"
+      ],
+      "matched_labels": [
+        "AI・AIツール",
+        "ナレッジ・ノート",
+        "ソフトウェア制作"
+      ]
+    },
+    {
+      "id": "b7ed86126bd934ba",
+      "title": "Codex bundles LibreOffice",
+      "url": "https://simonwillison.net/2026/Sep/1/codex-libreoffice/",
+      "summary": "I was poking around in my ~/.cache/ folder using OmniDiskSweeper when I spotted something interesting. The OpenAI Codex desktop app (since rebranded to just ChatGPT) has 1.7GB of stuff in there in a folder called codex-primary-runtime , including a full Python installation, a full Node.js installation, and native binar",
+      "published_at": "2026-09-01T19:03:01+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_category": "ai_tools",
+      "content_type": "blog",
+      "score": 3.9,
+      "rank_score": 5.78,
+      "matched_interests": [
+        "ai_tools",
+        "software_building"
+      ],
+      "matched_labels": [
+        "AI・AIツール",
+        "ソフトウェア制作"
       ]
     },
     {
@@ -124,7 +192,7 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
@@ -143,7 +211,7 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
@@ -162,7 +230,7 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
@@ -181,7 +249,26 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
+      ]
+    },
+    {
+      "id": "8de4b6665f3be7e0",
+      "title": "llm-anthropic 0.28",
+      "url": "https://simonwillison.net/2026/Sep/2/llm-anthropic/",
+      "summary": "Release: llm-anthropic 0.28 Claude Fable 5.1 , reasoning traces are now displayed by default for models that support them, plus a new llm_anthropic.ClaudeRefusal exception for when Claude throws a refusal. Tags: llm , anthropic , claude , claude-mythos-fable",
+      "published_at": "2026-09-02T17:59:32+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_category": "ai_tools",
+      "content_type": "blog",
+      "score": 3.0,
+      "rank_score": 4.94,
+      "matched_interests": [
+        "ai_tools"
+      ],
+      "matched_labels": [
+        "AI・AIツール"
       ]
     },
     {
@@ -200,7 +287,7 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
@@ -219,26 +306,47 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
-      "id": "b7ed86126bd934ba",
-      "title": "Codex bundles LibreOffice",
-      "url": "https://simonwillison.net/2026/Sep/1/codex-libreoffice/",
-      "summary": "I was poking around in my ~/.cache/ folder using OmniDiskSweeper when I spotted something interesting. The OpenAI Codex desktop app (since rebranded to just ChatGPT) has 1.7GB of stuff in there in a folder called codex-primary-runtime , including a full Python installation, a full Node.js installation, and native binar",
-      "published_at": "2026-09-01T19:03:01+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_category": "ai_tools",
-      "content_type": "blog",
-      "score": 3.0,
-      "rank_score": 4.91,
+      "id": "434ac5bdc849ee6f",
+      "title": "GitHub Copilot app for Beginners: Using the diff, terminal, and browser",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-using-the-diff-terminal-and-browser/",
+      "summary": "Checking agent-generated code usually means hopping between tabs. Learn how to view diffs, run terminal commands, and preview web apps side by side in the GitHub Copilot app. The post GitHub Copilot app for Beginners: Using the diff, terminal, and browser appeared first on The GitHub Blog .",
+      "published_at": "2026-09-10T21:31:19+00:00",
+      "source": "GitHub Blog",
+      "source_id": "github_blog",
+      "source_category": "software_building",
+      "content_type": "article",
+      "score": 2.7,
+      "rank_score": 4.85,
       "matched_interests": [
-        "ai_tools"
+        "software_building"
       ],
       "matched_labels": [
-        "AI tools"
+        "ソフトウェア制作"
+      ]
+    },
+    {
+      "id": "36eba6780bea0af8",
+      "title": "Obsidian 1.14.1 Mobile (Early access)",
+      "url": "https://obsidian.md/changelog/2026-09-08-mobile-v1.14.1/",
+      "summary": "Includes all new features and bug fixes up to Obsidian Desktop 1.14.1. New iOS 26: Added a configurable Quick Capture Home Screen widget. Add shortcuts to capture directly to different Locations. Improvements Text and interface elements now scale with your system's preferred text size, including larger accessibility si",
+      "published_at": "2026-09-08T00:00:00+00:00",
+      "source": "Obsidian Changelog",
+      "source_id": "obsidian_changelog",
+      "source_category": "knowledge_tools",
+      "content_type": "release",
+      "score": 2.7,
+      "rank_score": 4.81,
+      "matched_interests": [
+        "knowledge_tools",
+        "personal_devices"
+      ],
+      "matched_labels": [
+        "ナレッジ・ノート",
+        "小型デバイス・iOS"
       ]
     },
     {
@@ -257,7 +365,28 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
+      ]
+    },
+    {
+      "id": "72247e4b0f615a8f",
+      "title": "Obsidian 1.14.0 Mobile (Early access)",
+      "url": "https://obsidian.md/changelog/2026-09-02-mobile-v1.14.0/",
+      "summary": "Includes all new features and bug fixes up to Obsidian Desktop v1.14.0. Improvements Settings are now shown in a dismissable sheet over the app. Swipe anywhere to dismiss. iOS Native Quick Capture on iOS 26. Capture notes from the Lock Screen, Control Center, or Shortcuts without waiting for your vault to load. While e",
+      "published_at": "2026-09-02T00:00:00+00:00",
+      "source": "Obsidian Changelog",
+      "source_id": "obsidian_changelog",
+      "source_category": "knowledge_tools",
+      "content_type": "release",
+      "score": 2.7,
+      "rank_score": 4.65,
+      "matched_interests": [
+        "knowledge_tools",
+        "personal_devices"
+      ],
+      "matched_labels": [
+        "ナレッジ・ノート",
+        "小型デバイス・iOS"
       ]
     },
     {
@@ -277,8 +406,8 @@
         "education_childcare"
       ],
       "matched_labels": [
-        "AI tools",
-        "Education and childcare"
+        "AI・AIツール",
+        "保育・教育"
       ]
     },
     {
@@ -297,7 +426,7 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
@@ -316,7 +445,7 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
@@ -335,7 +464,7 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
@@ -354,7 +483,7 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
@@ -373,45 +502,26 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
-      "id": "a19db2f9483a6838",
-      "title": "Supporting independent journalism in Ukraine",
-      "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
-      "summary": "OpenAI, AIRPPU and WAN-IFRA launch an AI program to help Ukrainian news organizations strengthen innovation, resilience, and independent journalism.",
-      "published_at": "2026-09-07T00:00:00+00:00",
-      "source": "OpenAI News",
-      "source_id": "openai_news",
+      "id": "7d6c35ddd546687d",
+      "title": "llm 0.35",
+      "url": "https://simonwillison.net/2026/Sep/7/llm/",
+      "summary": "Release: llm 0.35 New OpenAI model: gpt-6-astra for GPT-6 Astra . Tags: openai , llm , gpt-6-astra",
+      "published_at": "2026-09-07T23:54:54+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
       "source_category": "ai_tools",
-      "content_type": "news",
-      "score": 2.0,
-      "rank_score": 4.11,
-      "matched_interests": [
-        "ai_tools"
-      ],
-      "matched_labels": [
-        "AI tools"
-      ]
-    },
-    {
-      "id": "300052dde8dca54b",
-      "title": "OpenAI Agents API",
-      "url": "https://developers.openai.com/api/docs/guides/agents-api/overview",
-      "summary": "Article URL: https://developers.openai.com/api/docs/guides/agents-api/overview Comments URL: https://news.ycombinator.com/item?id=49649213 Points: 38 # Comments: 29",
-      "published_at": "2026-09-10T19:43:22+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_category": "discovery",
-      "content_type": "news",
+      "content_type": "blog",
       "score": 2.0,
       "rank_score": 4.1,
       "matched_interests": [
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
@@ -430,7 +540,26 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
+      ]
+    },
+    {
+      "id": "a19db2f9483a6838",
+      "title": "Supporting independent journalism in Ukraine",
+      "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
+      "summary": "OpenAI, AIRPPU and WAN-IFRA launch an AI program to help Ukrainian news organizations strengthen innovation, resilience, and independent journalism.",
+      "published_at": "2026-09-07T00:00:00+00:00",
+      "source": "OpenAI News",
+      "source_id": "openai_news",
+      "source_category": "ai_tools",
+      "content_type": "news",
+      "score": 2.0,
+      "rank_score": 4.1,
+      "matched_interests": [
+        "ai_tools"
+      ],
+      "matched_labels": [
+        "AI・AIツール"
       ]
     },
     {
@@ -450,8 +579,8 @@
         "software_building"
       ],
       "matched_labels": [
-        "AI tools",
-        "Software building"
+        "AI・AIツール",
+        "ソフトウェア制作"
       ]
     },
     {
@@ -470,7 +599,7 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
@@ -489,7 +618,7 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
@@ -508,7 +637,7 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
@@ -527,7 +656,28 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
+      ]
+    },
+    {
+      "id": "c1498ff3dcd6f63f",
+      "title": "Native is now the future of mobile at Shopify",
+      "url": "https://simonwillison.net/2026/Sep/10/shopify-react-native/",
+      "summary": "Native is now the future of mobile at Shopify Shopify are moving from React Native back to separate Swift and Kotlin codebases for their native apps, for the exact reason you would expect: We decided to switch from native to React Native in 2020 for three reasons: Stop building the same features twice Allow developers ",
+      "published_at": "2026-09-10T21:11:15+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_category": "ai_tools",
+      "content_type": "blog",
+      "score": 1.85,
+      "rank_score": 4.02,
+      "matched_interests": [
+        "ai_tools",
+        "personal_devices"
+      ],
+      "matched_labels": [
+        "AI・AIツール",
+        "小型デバイス・iOS"
       ]
     },
     {
@@ -546,7 +696,7 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
@@ -565,7 +715,28 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
+      ]
+    },
+    {
+      "id": "b1abb4baa4c07576",
+      "title": "Quoting Calif Research",
+      "url": "https://simonwillison.net/2026/Sep/10/calif-research/",
+      "summary": "Today, we're releasing a demo of WeWorm, the first zero-click worm to spread through WeChat calls across iOS and Android. [...] The victim does not need to answer the call, or interact with their phone at all. Even if they do answer, they hear nothing, and the exploit still succeeds. [...] Working with AI, our team fou",
+      "published_at": "2026-09-10T00:56:41+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_category": "ai_tools",
+      "content_type": "blog",
+      "score": 1.85,
+      "rank_score": 4.0,
+      "matched_interests": [
+        "ai_tools",
+        "personal_devices"
+      ],
+      "matched_labels": [
+        "AI・AIツール",
+        "小型デバイス・iOS"
       ]
     },
     {
@@ -584,7 +755,7 @@
         "software_building"
       ],
       "matched_labels": [
-        "Software building"
+        "ソフトウェア制作"
       ]
     },
     {
@@ -603,15 +774,15 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
-      "id": "9ea4208917a11c6b",
-      "title": "llm-gemini 0.34",
-      "url": "https://simonwillison.net/2026/Sep/2/llm-gemini/",
-      "summary": "Release: llm-gemini 0.34 New model gemini-3.8-flash for Gemini 3.8 Flash , with low, medium and high thinking levels. #146 Fixed async responses failing to record the resolved model version. Thanks, Charlie Tonneslan . #137 Google released Gemini 3.8 Flash (and 3.8 Flash Cyber, but that's available to \"trusted defender",
-      "published_at": "2026-09-02T16:39:38+00:00",
+      "id": "d5086cee3bfcbc97",
+      "title": "llm-openrouter 0.7.1",
+      "url": "https://simonwillison.net/2026/Sep/2/llm-openrouter/",
+      "summary": "Release: llm-openrouter 0.7.1 Performance fix for loading OpenRouter models. Thanks, waveplate . #59 Tags: llm , openrouter",
+      "published_at": "2026-09-02T20:23:26+00:00",
       "source": "Simon Willison's Weblog",
       "source_id": "simon_willison",
       "source_category": "ai_tools",
@@ -622,7 +793,7 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
@@ -641,26 +812,7 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
-      ]
-    },
-    {
-      "id": "434ac5bdc849ee6f",
-      "title": "GitHub Copilot app for Beginners: Using the diff, terminal, and browser",
-      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-using-the-diff-terminal-and-browser/",
-      "summary": "Checking agent-generated code usually means hopping between tabs. Learn how to view diffs, run terminal commands, and preview web apps side by side in the GitHub Copilot app. The post GitHub Copilot app for Beginners: Using the diff, terminal, and browser appeared first on The GitHub Blog .",
-      "published_at": "2026-09-10T21:31:19+00:00",
-      "source": "GitHub Blog",
-      "source_id": "github_blog",
-      "source_category": "software_building",
-      "content_type": "article",
-      "score": 1.8,
-      "rank_score": 3.95,
-      "matched_interests": [
-        "software_building"
-      ],
-      "matched_labels": [
-        "Software building"
+        "AI・AIツール"
       ]
     },
     {
@@ -679,7 +831,7 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
@@ -698,7 +850,7 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
@@ -717,7 +869,7 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
@@ -736,28 +888,28 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
-      "id": "590eedef8f336fc5",
-      "title": "llm 0.34",
-      "url": "https://simonwillison.net/2026/Sep/2/llm/",
-      "summary": "Release: llm 0.34 One new feature: llm logs --usage Markdown output now includes the response duration in milliseconds and as a human-readable duration. llm logs --short includes a new duration_ms field. #1653 Plus several contributed bug fixes, and a significant performance improvement to llm logs thanks to waveplate ",
-      "published_at": "2026-09-02T19:23:52+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_category": "ai_tools",
-      "content_type": "blog",
-      "score": 1.9,
-      "rank_score": 3.88,
+      "id": "10ebd5a8648d8b52",
+      "title": "Obsidian 1.13 Mobile (Public)",
+      "url": "https://obsidian.md/changelog/2026-07-30-mobile-v1.13.4/",
+      "summary": "This update introduces a new searchable Settings panel and iOS Share Sheet. Scrolling large files and selecting text should also be improved on both iOS and Android. Includes all new features and bug fixes up to Obsidian Desktop v1.13.4 . iOS Share Sheet The new iOS Share Sheet lets you save content from Safari, YouTub",
+      "published_at": "2026-07-30T00:00:00+00:00",
+      "source": "Obsidian Changelog",
+      "source_id": "obsidian_changelog",
+      "source_category": "knowledge_tools",
+      "content_type": "release",
+      "score": 2.85,
+      "rank_score": 3.87,
       "matched_interests": [
-        "ai_tools",
-        "software_building"
+        "knowledge_tools",
+        "personal_devices"
       ],
       "matched_labels": [
-        "AI tools",
-        "Software building"
+        "ナレッジ・ノート",
+        "小型デバイス・iOS"
       ]
     },
     {
@@ -777,8 +929,8 @@
         "software_building"
       ],
       "matched_labels": [
-        "AI tools",
-        "Software building"
+        "AI・AIツール",
+        "ソフトウェア制作"
       ]
     },
     {
@@ -798,8 +950,8 @@
         "software_building"
       ],
       "matched_labels": [
-        "AI tools",
-        "Software building"
+        "AI・AIツール",
+        "ソフトウェア制作"
       ]
     },
     {
@@ -818,7 +970,7 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
@@ -837,7 +989,7 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
@@ -851,12 +1003,113 @@
       "source_category": "ai_tools",
       "content_type": "news",
       "score": 2.0,
-      "rank_score": 3.82,
+      "rank_score": 3.81,
       "matched_interests": [
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
+      ]
+    },
+    {
+      "id": "4154766599c41495",
+      "title": "Obsidian 1.13.3 Mobile (Early access)",
+      "url": "https://obsidian.md/changelog/2026-07-21-mobile-v1.13.3/",
+      "summary": "Includes all new features and bug fixes up to Obsidian Desktop v1.13.3. Improvements Added \"swipe down\" gesture to dismiss an image in the lightbox. No longer broken Tapping an image no longer shows the keyboard. Fixed double-tap to zoom on images. Live Preview: Fixed buttons for creating new columns and new rows not w",
+      "published_at": "2026-07-21T00:00:00+00:00",
+      "source": "Obsidian Changelog",
+      "source_id": "obsidian_changelog",
+      "source_category": "knowledge_tools",
+      "content_type": "release",
+      "score": 2.85,
+      "rank_score": 3.62,
+      "matched_interests": [
+        "knowledge_tools",
+        "personal_devices"
+      ],
+      "matched_labels": [
+        "ナレッジ・ノート",
+        "小型デバイス・iOS"
+      ]
+    },
+    {
+      "id": "5086a94035ddaff2",
+      "title": "Obsidian 1.13.6 Desktop (Public)",
+      "url": "https://obsidian.md/changelog/2026-08-10-desktop-v1.13.6/",
+      "summary": "Improvements The app now waits for configuration files to finish saving when quitting to avoid the file getting corrupted. Improved \"Undo close tab\" behavior. Tabs now reopen in the correct tab group, and if the currently active tab is the \"New tab\" page, it will no longer be reused. Removed dialog to approve URI actio",
+      "published_at": "2026-08-10T00:00:00+00:00",
+      "source": "Obsidian Changelog",
+      "source_id": "obsidian_changelog",
+      "source_category": "knowledge_tools",
+      "content_type": "release",
+      "score": 2.0,
+      "rank_score": 3.42,
+      "matched_interests": [
+        "knowledge_tools"
+      ],
+      "matched_labels": [
+        "ナレッジ・ノート"
+      ]
+    },
+    {
+      "id": "7f9545c864c64b66",
+      "title": "Obsidian 1.13.6 Desktop (Early access)",
+      "url": "https://obsidian.md/changelog/2026-08-07-desktop-v1.13.6/",
+      "summary": "Improvements Sliders in settings now use the accent color. Removed dialog to approve URI actions because it was creating even more confusion for non-technical users. 1.13 already introduced some new guardrails like Mermaid diagrams being off by default. No longer broken Settings: Fixed bug where pressing the back butto",
+      "published_at": "2026-08-07T00:00:00+00:00",
+      "source": "Obsidian Changelog",
+      "source_id": "obsidian_changelog",
+      "source_category": "knowledge_tools",
+      "content_type": "release",
+      "score": 2.0,
+      "rank_score": 3.35,
+      "matched_interests": [
+        "knowledge_tools"
+      ],
+      "matched_labels": [
+        "ナレッジ・ノート"
+      ]
+    },
+    {
+      "id": "322b7bb856954e6c",
+      "title": "Obsidian 1.13.6 Mobile (Public)",
+      "url": "https://obsidian.md/changelog/2026-08-10-mobile-v1.13.6/",
+      "summary": "Includes all new features and bug fixes up to Obsidian Desktop v1.13.6 . New Added swipe-to-close to close tabs in the tab switcher. Improvements Tabs now animate to their new position after closing a tab from the tab switcher. The mobile toolbar settings page now shows icons next to each command. Checkboxes now scale ",
+      "published_at": "2026-08-10T00:00:00+00:00",
+      "source": "Obsidian Changelog",
+      "source_id": "obsidian_changelog",
+      "source_category": "knowledge_tools",
+      "content_type": "release",
+      "score": 1.85,
+      "rank_score": 3.29,
+      "matched_interests": [
+        "knowledge_tools",
+        "personal_devices"
+      ],
+      "matched_labels": [
+        "ナレッジ・ノート",
+        "小型デバイス・iOS"
+      ]
+    },
+    {
+      "id": "b3829fa4954b8916",
+      "title": "Obsidian 1.13.6 Mobile (Early access)",
+      "url": "https://obsidian.md/changelog/2026-08-07-mobile-v1.13.6/",
+      "summary": "Includes all new features and bug fixes up to Obsidian Desktop v1.13.6. No longer broken iOS: Fixed editor sometimes selecting entire paragraph after double-tapping on text or dragging cursor",
+      "published_at": "2026-08-07T00:00:00+00:00",
+      "source": "Obsidian Changelog",
+      "source_id": "obsidian_changelog",
+      "source_category": "knowledge_tools",
+      "content_type": "release",
+      "score": 1.85,
+      "rank_score": 3.22,
+      "matched_interests": [
+        "knowledge_tools",
+        "personal_devices"
+      ],
+      "matched_labels": [
+        "ナレッジ・ノート",
+        "小型デバイス・iOS"
       ]
     },
     {
@@ -875,7 +1128,7 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
@@ -894,26 +1147,7 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
-      ]
-    },
-    {
-      "id": "c1498ff3dcd6f63f",
-      "title": "Native is now the future of mobile at Shopify",
-      "url": "https://simonwillison.net/2026/Sep/10/shopify-react-native/",
-      "summary": "Native is now the future of mobile at Shopify Shopify are moving from React Native back to separate Swift and Kotlin codebases for their native apps, for the exact reason you would expect: We decided to switch from native to React Native in 2020 for three reasons: Stop building the same features twice Allow developers ",
-      "published_at": "2026-09-10T21:11:15+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_category": "ai_tools",
-      "content_type": "blog",
-      "score": 1.0,
-      "rank_score": 3.17,
-      "matched_interests": [
-        "ai_tools"
-      ],
-      "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
@@ -932,7 +1166,7 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
@@ -951,26 +1185,7 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
-      ]
-    },
-    {
-      "id": "b1abb4baa4c07576",
-      "title": "Quoting Calif Research",
-      "url": "https://simonwillison.net/2026/Sep/10/calif-research/",
-      "summary": "Today, we're releasing a demo of WeWorm, the first zero-click worm to spread through WeChat calls across iOS and Android. [...] The victim does not need to answer the call, or interact with their phone at all. Even if they do answer, they hear nothing, and the exploit still succeeds. [...] Working with AI, our team fou",
-      "published_at": "2026-09-10T00:56:41+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_category": "ai_tools",
-      "content_type": "blog",
-      "score": 1.0,
-      "rank_score": 3.15,
-      "matched_interests": [
-        "ai_tools"
-      ],
-      "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
@@ -989,7 +1204,7 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
@@ -1008,7 +1223,7 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
@@ -1027,7 +1242,26 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
+      ]
+    },
+    {
+      "id": "6b4d4044decf07c1",
+      "title": "Obsidian 1.13 Desktop (Public)",
+      "url": "https://obsidian.md/changelog/2026-07-30-desktop-v1.13.4/",
+      "summary": "This update introduces a new searchable Settings panel and new experience for working with images, including a full-screen image viewer. Settings Settings have been completely revamped with keyboard navigation, search, and new APIs for plugin developers. Settings now open in a new window. You can turn this off in Setti",
+      "published_at": "2026-07-30T00:00:00+00:00",
+      "source": "Obsidian Changelog",
+      "source_id": "obsidian_changelog",
+      "source_category": "knowledge_tools",
+      "content_type": "release",
+      "score": 2.0,
+      "rank_score": 3.15,
+      "matched_interests": [
+        "knowledge_tools"
+      ],
+      "matched_labels": [
+        "ナレッジ・ノート"
       ]
     },
     {
@@ -1046,7 +1280,7 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
@@ -1065,26 +1299,7 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
-      ]
-    },
-    {
-      "id": "36eba6780bea0af8",
-      "title": "Obsidian 1.14.1 Mobile (Early access)",
-      "url": "https://obsidian.md/changelog/2026-09-08-mobile-v1.14.1/",
-      "summary": "Includes all new features and bug fixes up to Obsidian Desktop 1.14.1. New iOS 26: Added a configurable Quick Capture Home Screen widget. Add shortcuts to capture directly to different Locations. Improvements Text and interface elements now scale with your system's preferred text size, including larger accessibility si",
-      "published_at": "2026-09-08T00:00:00+00:00",
-      "source": "Obsidian Changelog",
-      "source_id": "obsidian_changelog",
-      "source_category": "knowledge_tools",
-      "content_type": "release",
-      "score": 1.0,
-      "rank_score": 3.13,
-      "matched_interests": [
-        "knowledge_tools"
-      ],
-      "matched_labels": [
-        "Knowledge tools"
+        "AI・AIツール"
       ]
     },
     {
@@ -1103,26 +1318,7 @@
         "knowledge_tools"
       ],
       "matched_labels": [
-        "Knowledge tools"
-      ]
-    },
-    {
-      "id": "7d6c35ddd546687d",
-      "title": "llm 0.35",
-      "url": "https://simonwillison.net/2026/Sep/7/llm/",
-      "summary": "Release: llm 0.35 New OpenAI model: gpt-6-astra for GPT-6 Astra . Tags: openai , llm , gpt-6-astra",
-      "published_at": "2026-09-07T23:54:54+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_category": "ai_tools",
-      "content_type": "blog",
-      "score": 1.0,
-      "rank_score": 3.11,
-      "matched_interests": [
-        "ai_tools"
-      ],
-      "matched_labels": [
-        "AI tools"
+        "ナレッジ・ノート"
       ]
     },
     {
@@ -1141,7 +1337,7 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
@@ -1160,7 +1356,7 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
@@ -1179,45 +1375,7 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
-      ]
-    },
-    {
-      "id": "0c0d8751baac2b7e",
-      "title": "Detecting and countering misuse of AI: September 2026",
-      "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
-      "summary": "Article URL: https://www.anthropic.com/threat-intelligence-report-september-2026 Comments URL: https://news.ycombinator.com/item?id=49647300 Points: 41 # Comments: 20",
-      "published_at": "2026-09-10T17:23:42+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_category": "discovery",
-      "content_type": "news",
-      "score": 1.0,
-      "rank_score": 3.1,
-      "matched_interests": [
-        "ai_tools"
-      ],
-      "matched_labels": [
-        "AI tools"
-      ]
-    },
-    {
-      "id": "c01c5be52bc2cd7c",
-      "title": "Cognition's SWE-2 achieves 92.8 on Terminal-Bench 2.1",
-      "url": "https://tokenstead.ai/models/swe-2",
-      "summary": "Article URL: https://tokenstead.ai/models/swe-2 Comments URL: https://news.ycombinator.com/item?id=49646778 Points: 44 # Comments: 20",
-      "published_at": "2026-09-10T16:52:11+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_category": "discovery",
-      "content_type": "news",
-      "score": 1.0,
-      "rank_score": 3.1,
-      "matched_interests": [
-        "ai_tools"
-      ],
-      "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
@@ -1236,7 +1394,7 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
@@ -1255,7 +1413,7 @@
         "software_building"
       ],
       "matched_labels": [
-        "Software building"
+        "ソフトウェア制作"
       ]
     },
     {
@@ -1274,7 +1432,7 @@
         "software_building"
       ],
       "matched_labels": [
-        "Software building"
+        "ソフトウェア制作"
       ]
     },
     {
@@ -1293,7 +1451,26 @@
         "software_building"
       ],
       "matched_labels": [
-        "Software building"
+        "ソフトウェア制作"
+      ]
+    },
+    {
+      "id": "7d417d5d22ae3b45",
+      "title": "Obsidian 1.13.4 Desktop (Early access)",
+      "url": "https://obsidian.md/changelog/2026-07-27-desktop-v1.13.4/",
+      "summary": "Improvements The image lightbox now displays the file name of the current image. Improved layout of Page Preview settings. Settings: Download counts are now abbreviated for plugins and themes. Settings: Moved the \"Interface\" tab above \"Editor\" in the settings sidebar. Live Preview: Improved alignment of images inline w",
+      "published_at": "2026-07-27T00:00:00+00:00",
+      "source": "Obsidian Changelog",
+      "source_id": "obsidian_changelog",
+      "source_category": "knowledge_tools",
+      "content_type": "release",
+      "score": 2.0,
+      "rank_score": 3.08,
+      "matched_interests": [
+        "knowledge_tools"
+      ],
+      "matched_labels": [
+        "ナレッジ・ノート"
       ]
     },
     {
@@ -1312,7 +1489,7 @@
         "software_building"
       ],
       "matched_labels": [
-        "Software building"
+        "ソフトウェア制作"
       ]
     },
     {
@@ -1331,7 +1508,7 @@
         "software_building"
       ],
       "matched_labels": [
-        "Software building"
+        "ソフトウェア制作"
       ]
     },
     {
@@ -1350,7 +1527,7 @@
         "software_building"
       ],
       "matched_labels": [
-        "Software building"
+        "ソフトウェア制作"
       ]
     },
     {
@@ -1369,7 +1546,7 @@
         "software_building"
       ],
       "matched_labels": [
-        "Software building"
+        "ソフトウェア制作"
       ]
     },
     {
@@ -1388,7 +1565,7 @@
         "software_building"
       ],
       "matched_labels": [
-        "Software building"
+        "ソフトウェア制作"
       ]
     },
     {
@@ -1407,7 +1584,7 @@
         "software_building"
       ],
       "matched_labels": [
-        "Software building"
+        "ソフトウェア制作"
       ]
     },
     {
@@ -1426,45 +1603,26 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
-      "id": "d5086cee3bfcbc97",
-      "title": "llm-openrouter 0.7.1",
-      "url": "https://simonwillison.net/2026/Sep/2/llm-openrouter/",
-      "summary": "Release: llm-openrouter 0.7.1 Performance fix for loading OpenRouter models. Thanks, waveplate . #59 Tags: llm , openrouter",
-      "published_at": "2026-09-02T20:23:26+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_category": "ai_tools",
-      "content_type": "blog",
-      "score": 1.0,
-      "rank_score": 3.01,
+      "id": "e9711708a81b74e3",
+      "title": "Open Source Acoustic Drone Detection",
+      "url": "https://hackaday.com/2026/09/10/open-source-acoustic-drone-detection/",
+      "summary": "Drones have become a potent military threat, particularly on the small scale. Nimble multi-rotor drones are fast, difficult to spot, and can cause plenty of harm if allowed to go …read more",
+      "published_at": "2026-09-10T11:00:38+00:00",
+      "source": "Hackaday",
+      "source_id": "hackaday",
+      "source_category": "making",
+      "content_type": "article",
+      "score": 0.9,
+      "rank_score": 3.02,
       "matched_interests": [
-        "ai_tools"
+        "software_building"
       ],
       "matched_labels": [
-        "AI tools"
-      ]
-    },
-    {
-      "id": "72247e4b0f615a8f",
-      "title": "Obsidian 1.14.0 Mobile (Early access)",
-      "url": "https://obsidian.md/changelog/2026-09-02-mobile-v1.14.0/",
-      "summary": "Includes all new features and bug fixes up to Obsidian Desktop v1.14.0. Improvements Settings are now shown in a dismissable sheet over the app. Swipe anywhere to dismiss. iOS Native Quick Capture on iOS 26. Capture notes from the Lock Screen, Control Center, or Shortcuts without waiting for your vault to load. While e",
-      "published_at": "2026-09-02T00:00:00+00:00",
-      "source": "Obsidian Changelog",
-      "source_id": "obsidian_changelog",
-      "source_category": "knowledge_tools",
-      "content_type": "release",
-      "score": 1.0,
-      "rank_score": 3.01,
-      "matched_interests": [
-        "knowledge_tools"
-      ],
-      "matched_labels": [
-        "Knowledge tools"
+        "ソフトウェア制作"
       ]
     },
     {
@@ -1483,7 +1641,7 @@
         "knowledge_tools"
       ],
       "matched_labels": [
-        "Knowledge tools"
+        "ナレッジ・ノート"
       ]
     },
     {
@@ -1502,7 +1660,7 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
@@ -1521,26 +1679,66 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
-      "id": "8de4b6665f3be7e0",
-      "title": "llm-anthropic 0.28",
-      "url": "https://simonwillison.net/2026/Sep/2/llm-anthropic/",
-      "summary": "Release: llm-anthropic 0.28 Claude Fable 5.1 , reasoning traces are now displayed by default for models that support them, plus a new llm_anthropic.ClaudeRefusal exception for when Claude throws a refusal. Tags: llm , anthropic , claude , claude-mythos-fable",
-      "published_at": "2026-09-02T17:59:32+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_category": "ai_tools",
-      "content_type": "blog",
-      "score": 1.0,
-      "rank_score": 3.0,
+      "id": "6f85dcbde774b631",
+      "title": "Custom AMOLED Wearable Makes Great Icebreaker",
+      "url": "https://hackaday.com/2026/09/10/custom-amoled-wearable-makes-great-icebreaker/",
+      "summary": "Nifty little AMOLED screens are easy to get nowadays, and [Sophie D] demonstrates they are both thin and light enough to be worn with OpenChoker, a design for a choker …read more",
+      "published_at": "2026-09-10T15:30:16+00:00",
+      "source": "Hackaday",
+      "source_id": "hackaday",
+      "source_category": "making",
+      "content_type": "article",
+      "score": 0.85,
+      "rank_score": 2.97,
       "matched_interests": [
-        "ai_tools"
+        "personal_devices"
       ],
       "matched_labels": [
-        "AI tools"
+        "小型デバイス・iOS"
+      ]
+    },
+    {
+      "id": "8b88d8b8dec9112b",
+      "title": "Origami Sensors That You Can Wear",
+      "url": "https://hackaday.com/2026/09/09/origami-sensors-that-you-can-wear/",
+      "summary": "Origami is a wonderful art form, but as a new project from the Shibaura Institute of Technology demonstrates, it can also have applications in the world of wearable tech. The …read more",
+      "published_at": "2026-09-10T05:00:16+00:00",
+      "source": "Hackaday",
+      "source_id": "hackaday",
+      "source_category": "making",
+      "content_type": "article",
+      "score": 0.85,
+      "rank_score": 2.97,
+      "matched_interests": [
+        "personal_devices"
+      ],
+      "matched_labels": [
+        "小型デバイス・iOS"
+      ]
+    },
+    {
+      "id": "a83aa90dce55eaa5",
+      "title": "Obsidian 1.13.4 Mobile (Early access)",
+      "url": "https://obsidian.md/changelog/2026-07-27-mobile-v1.13.4/",
+      "summary": "Includes all new features and bug fixes up to Obsidian Desktop v1.13.4. Improvements Improved overall appearance of settings in dark mode. No longer broken Fixed search input getting automatically focused when browsing Community plugins. iOS: Fixed the Share Sheet not including article content when sharing X links. iOS",
+      "published_at": "2026-07-27T00:00:00+00:00",
+      "source": "Obsidian Changelog",
+      "source_id": "obsidian_changelog",
+      "source_category": "knowledge_tools",
+      "content_type": "release",
+      "score": 1.85,
+      "rank_score": 2.96,
+      "matched_interests": [
+        "knowledge_tools",
+        "personal_devices"
+      ],
+      "matched_labels": [
+        "ナレッジ・ノート",
+        "小型デバイス・iOS"
       ]
     },
     {
@@ -1559,7 +1757,26 @@
         "productivity"
       ],
       "matched_labels": [
-        "Productivity and work design"
+        "タスク・仕事設計"
+      ]
+    },
+    {
+      "id": "60858916a3eb4c88",
+      "title": "Obsidian 1.13.3 Desktop (Early access)",
+      "url": "https://obsidian.md/changelog/2026-07-21-desktop-v1.13.3/",
+      "summary": "Improvements Live Preview: When the image is the only text on a line, the editor line height is no longer preserved to match the image height. Live Preview: Added a new selection state to image embeds. Added a \"zoom\" button to image embeds. The image lightbox now supports click and drag to pan within an image. File Rec",
+      "published_at": "2026-07-21T00:00:00+00:00",
+      "source": "Obsidian Changelog",
+      "source_id": "obsidian_changelog",
+      "source_category": "knowledge_tools",
+      "content_type": "release",
+      "score": 2.0,
+      "rank_score": 2.93,
+      "matched_interests": [
+        "knowledge_tools"
+      ],
+      "matched_labels": [
+        "ナレッジ・ノート"
       ]
     },
     {
@@ -1578,7 +1795,7 @@
         "software_building"
       ],
       "matched_labels": [
-        "Software building"
+        "ソフトウェア制作"
       ]
     },
     {
@@ -1597,7 +1814,7 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
@@ -1616,7 +1833,7 @@
         "software_building"
       ],
       "matched_labels": [
-        "Software building"
+        "ソフトウェア制作"
       ]
     },
     {
@@ -1635,7 +1852,7 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
@@ -1654,7 +1871,7 @@
         "ai_tools"
       ],
       "matched_labels": [
-        "AI tools"
+        "AI・AIツール"
       ]
     },
     {
@@ -1673,7 +1890,7 @@
         "software_building"
       ],
       "matched_labels": [
-        "Software building"
+        "ソフトウェア制作"
       ]
     },
     {
@@ -1692,7 +1909,7 @@
         "software_building"
       ],
       "matched_labels": [
-        "Software building"
+        "ソフトウェア制作"
       ]
     },
     {
@@ -1711,7 +1928,7 @@
         "knowledge_tools"
       ],
       "matched_labels": [
-        "Knowledge tools"
+        "ナレッジ・ノート"
       ]
     },
     {
@@ -1730,7 +1947,7 @@
         "software_building"
       ],
       "matched_labels": [
-        "Software building"
+        "ソフトウェア制作"
       ]
     },
     {
@@ -1749,7 +1966,28 @@
         "software_building"
       ],
       "matched_labels": [
-        "Software building"
+        "ソフトウェア制作"
+      ]
+    },
+    {
+      "id": "21dd0cfb3d8b0e92",
+      "title": "Obsidian 1.13.2 Mobile (Early access)",
+      "url": "https://obsidian.md/changelog/2026-07-14-mobile-v1.13.2/",
+      "summary": "Includes all new features and bug fixes up to Obsidian Desktop v1.13.2. Improvements iOS: Added a url variable to the Share Sheet template for inserting the shared link into your note. No longer broken Settings: Updated the size of toggles inside settings. Settings: Fixed the display of settings with validation errors.",
+      "published_at": "2026-07-14T00:00:00+00:00",
+      "source": "Obsidian Changelog",
+      "source_id": "obsidian_changelog",
+      "source_category": "knowledge_tools",
+      "content_type": "release",
+      "score": 1.85,
+      "rank_score": 2.65,
+      "matched_interests": [
+        "knowledge_tools",
+        "personal_devices"
+      ],
+      "matched_labels": [
+        "ナレッジ・ノート",
+        "小型デバイス・iOS"
       ]
     },
     {
@@ -1768,7 +2006,7 @@
         "knowledge_tools"
       ],
       "matched_labels": [
-        "Knowledge tools"
+        "ナレッジ・ノート"
       ]
     },
     {
@@ -1787,7 +2025,7 @@
         "knowledge_tools"
       ],
       "matched_labels": [
-        "Knowledge tools"
+        "ナレッジ・ノート"
       ]
     },
     {
@@ -1806,7 +2044,7 @@
         "knowledge_tools"
       ],
       "matched_labels": [
-        "Knowledge tools"
+        "ナレッジ・ノート"
       ]
     },
     {
@@ -1825,83 +2063,28 @@
         "knowledge_tools"
       ],
       "matched_labels": [
-        "Knowledge tools"
+        "ナレッジ・ノート"
       ]
     },
     {
-      "id": "322b7bb856954e6c",
-      "title": "Obsidian 1.13.6 Mobile (Public)",
-      "url": "https://obsidian.md/changelog/2026-08-10-mobile-v1.13.6/",
-      "summary": "Includes all new features and bug fixes up to Obsidian Desktop v1.13.6 . New Added swipe-to-close to close tabs in the tab switcher. Improvements Tabs now animate to their new position after closing a tab from the tab switcher. The mobile toolbar settings page now shows icons next to each command. Checkboxes now scale ",
-      "published_at": "2026-08-10T00:00:00+00:00",
+      "id": "5cc715ece107a180",
+      "title": "Obsidian 1.13.1 Mobile (Early access)",
+      "url": "https://obsidian.md/changelog/2026-06-09-mobile-v1.13.1/",
+      "summary": "Includes all new features and bug fixes up to Obsidian Desktop v1.13.1. Improvements Settings pages now have enough padding to scroll fully into view when the onscreen keyboard is showing. No longer broken iOS: Fixed app crashing when sharing screenshots via the Share Sheet. Live Preview: Fixed \"Enter\" from the iOS key",
+      "published_at": "2026-06-09T00:00:00+00:00",
       "source": "Obsidian Changelog",
       "source_id": "obsidian_changelog",
       "source_category": "knowledge_tools",
       "content_type": "release",
-      "score": 1.0,
-      "rank_score": 2.54,
+      "score": 2.85,
+      "rank_score": 2.47,
       "matched_interests": [
-        "knowledge_tools"
+        "knowledge_tools",
+        "personal_devices"
       ],
       "matched_labels": [
-        "Knowledge tools"
-      ]
-    },
-    {
-      "id": "5086a94035ddaff2",
-      "title": "Obsidian 1.13.6 Desktop (Public)",
-      "url": "https://obsidian.md/changelog/2026-08-10-desktop-v1.13.6/",
-      "summary": "Improvements The app now waits for configuration files to finish saving when quitting to avoid the file getting corrupted. Improved \"Undo close tab\" behavior. Tabs now reopen in the correct tab group, and if the currently active tab is the \"New tab\" page, it will no longer be reused. Removed dialog to approve URI actio",
-      "published_at": "2026-08-10T00:00:00+00:00",
-      "source": "Obsidian Changelog",
-      "source_id": "obsidian_changelog",
-      "source_category": "knowledge_tools",
-      "content_type": "release",
-      "score": 1.0,
-      "rank_score": 2.54,
-      "matched_interests": [
-        "knowledge_tools"
-      ],
-      "matched_labels": [
-        "Knowledge tools"
-      ]
-    },
-    {
-      "id": "b3829fa4954b8916",
-      "title": "Obsidian 1.13.6 Mobile (Early access)",
-      "url": "https://obsidian.md/changelog/2026-08-07-mobile-v1.13.6/",
-      "summary": "Includes all new features and bug fixes up to Obsidian Desktop v1.13.6. No longer broken iOS: Fixed editor sometimes selecting entire paragraph after double-tapping on text or dragging cursor",
-      "published_at": "2026-08-07T00:00:00+00:00",
-      "source": "Obsidian Changelog",
-      "source_id": "obsidian_changelog",
-      "source_category": "knowledge_tools",
-      "content_type": "release",
-      "score": 1.0,
-      "rank_score": 2.48,
-      "matched_interests": [
-        "knowledge_tools"
-      ],
-      "matched_labels": [
-        "Knowledge tools"
-      ]
-    },
-    {
-      "id": "7f9545c864c64b66",
-      "title": "Obsidian 1.13.6 Desktop (Early access)",
-      "url": "https://obsidian.md/changelog/2026-08-07-desktop-v1.13.6/",
-      "summary": "Improvements Sliders in settings now use the accent color. Removed dialog to approve URI actions because it was creating even more confusion for non-technical users. 1.13 already introduced some new guardrails like Mermaid diagrams being off by default. No longer broken Settings: Fixed bug where pressing the back butto",
-      "published_at": "2026-08-07T00:00:00+00:00",
-      "source": "Obsidian Changelog",
-      "source_id": "obsidian_changelog",
-      "source_category": "knowledge_tools",
-      "content_type": "release",
-      "score": 1.0,
-      "rank_score": 2.48,
-      "matched_interests": [
-        "knowledge_tools"
-      ],
-      "matched_labels": [
-        "Knowledge tools"
+        "ナレッジ・ノート",
+        "小型デバイス・iOS"
       ]
     },
     {
@@ -1920,7 +2103,7 @@
         "knowledge_tools"
       ],
       "matched_labels": [
-        "Knowledge tools"
+        "ナレッジ・ノート"
       ]
     },
     {
@@ -1939,83 +2122,7 @@
         "knowledge_tools"
       ],
       "matched_labels": [
-        "Knowledge tools"
-      ]
-    },
-    {
-      "id": "10ebd5a8648d8b52",
-      "title": "Obsidian 1.13 Mobile (Public)",
-      "url": "https://obsidian.md/changelog/2026-07-30-mobile-v1.13.4/",
-      "summary": "This update introduces a new searchable Settings panel and iOS Share Sheet. Scrolling large files and selecting text should also be improved on both iOS and Android. Includes all new features and bug fixes up to Obsidian Desktop v1.13.4 . iOS Share Sheet The new iOS Share Sheet lets you save content from Safari, YouTub",
-      "published_at": "2026-07-30T00:00:00+00:00",
-      "source": "Obsidian Changelog",
-      "source_id": "obsidian_changelog",
-      "source_category": "knowledge_tools",
-      "content_type": "release",
-      "score": 1.0,
-      "rank_score": 2.31,
-      "matched_interests": [
-        "knowledge_tools"
-      ],
-      "matched_labels": [
-        "Knowledge tools"
-      ]
-    },
-    {
-      "id": "6b4d4044decf07c1",
-      "title": "Obsidian 1.13 Desktop (Public)",
-      "url": "https://obsidian.md/changelog/2026-07-30-desktop-v1.13.4/",
-      "summary": "This update introduces a new searchable Settings panel and new experience for working with images, including a full-screen image viewer. Settings Settings have been completely revamped with keyboard navigation, search, and new APIs for plugin developers. Settings now open in a new window. You can turn this off in Setti",
-      "published_at": "2026-07-30T00:00:00+00:00",
-      "source": "Obsidian Changelog",
-      "source_id": "obsidian_changelog",
-      "source_category": "knowledge_tools",
-      "content_type": "release",
-      "score": 1.0,
-      "rank_score": 2.31,
-      "matched_interests": [
-        "knowledge_tools"
-      ],
-      "matched_labels": [
-        "Knowledge tools"
-      ]
-    },
-    {
-      "id": "a83aa90dce55eaa5",
-      "title": "Obsidian 1.13.4 Mobile (Early access)",
-      "url": "https://obsidian.md/changelog/2026-07-27-mobile-v1.13.4/",
-      "summary": "Includes all new features and bug fixes up to Obsidian Desktop v1.13.4. Improvements Improved overall appearance of settings in dark mode. No longer broken Fixed search input getting automatically focused when browsing Community plugins. iOS: Fixed the Share Sheet not including article content when sharing X links. iOS",
-      "published_at": "2026-07-27T00:00:00+00:00",
-      "source": "Obsidian Changelog",
-      "source_id": "obsidian_changelog",
-      "source_category": "knowledge_tools",
-      "content_type": "release",
-      "score": 1.0,
-      "rank_score": 2.25,
-      "matched_interests": [
-        "knowledge_tools"
-      ],
-      "matched_labels": [
-        "Knowledge tools"
-      ]
-    },
-    {
-      "id": "7d417d5d22ae3b45",
-      "title": "Obsidian 1.13.4 Desktop (Early access)",
-      "url": "https://obsidian.md/changelog/2026-07-27-desktop-v1.13.4/",
-      "summary": "Improvements The image lightbox now displays the file name of the current image. Improved layout of Page Preview settings. Settings: Download counts are now abbreviated for plugins and themes. Settings: Moved the \"Interface\" tab above \"Editor\" in the settings sidebar. Live Preview: Improved alignment of images inline w",
-      "published_at": "2026-07-27T00:00:00+00:00",
-      "source": "Obsidian Changelog",
-      "source_id": "obsidian_changelog",
-      "source_category": "knowledge_tools",
-      "content_type": "release",
-      "score": 1.0,
-      "rank_score": 2.25,
-      "matched_interests": [
-        "knowledge_tools"
-      ],
-      "matched_labels": [
-        "Knowledge tools"
+        "ナレッジ・ノート"
       ]
     },
     {
@@ -2094,79 +2201,11 @@
       "matched_labels": []
     },
     {
-      "id": "6f85dcbde774b631",
-      "title": "Custom AMOLED Wearable Makes Great Icebreaker",
-      "url": "https://hackaday.com/2026/09/10/custom-amoled-wearable-makes-great-icebreaker/",
-      "summary": "Nifty little AMOLED screens are easy to get nowadays, and [Sophie D] demonstrates they are both thin and light enough to be worn with OpenChoker, a design for a choker …read more",
-      "published_at": "2026-09-10T15:30:16+00:00",
-      "source": "Hackaday",
-      "source_id": "hackaday",
-      "source_category": "making",
-      "content_type": "article",
-      "score": 0.0,
-      "rank_score": 2.13,
-      "matched_interests": [],
-      "matched_labels": []
-    },
-    {
-      "id": "4154766599c41495",
-      "title": "Obsidian 1.13.3 Mobile (Early access)",
-      "url": "https://obsidian.md/changelog/2026-07-21-mobile-v1.13.3/",
-      "summary": "Includes all new features and bug fixes up to Obsidian Desktop v1.13.3. Improvements Added \"swipe down\" gesture to dismiss an image in the lightbox. No longer broken Tapping an image no longer shows the keyboard. Fixed double-tap to zoom on images. Live Preview: Fixed buttons for creating new columns and new rows not w",
-      "published_at": "2026-07-21T00:00:00+00:00",
-      "source": "Obsidian Changelog",
-      "source_id": "obsidian_changelog",
-      "source_category": "knowledge_tools",
-      "content_type": "release",
-      "score": 1.0,
-      "rank_score": 2.13,
-      "matched_interests": [
-        "knowledge_tools"
-      ],
-      "matched_labels": [
-        "Knowledge tools"
-      ]
-    },
-    {
-      "id": "60858916a3eb4c88",
-      "title": "Obsidian 1.13.3 Desktop (Early access)",
-      "url": "https://obsidian.md/changelog/2026-07-21-desktop-v1.13.3/",
-      "summary": "Improvements Live Preview: When the image is the only text on a line, the editor line height is no longer preserved to match the image height. Live Preview: Added a new selection state to image embeds. Added a \"zoom\" button to image embeds. The image lightbox now supports click and drag to pan within an image. File Rec",
-      "published_at": "2026-07-21T00:00:00+00:00",
-      "source": "Obsidian Changelog",
-      "source_id": "obsidian_changelog",
-      "source_category": "knowledge_tools",
-      "content_type": "release",
-      "score": 1.0,
-      "rank_score": 2.13,
-      "matched_interests": [
-        "knowledge_tools"
-      ],
-      "matched_labels": [
-        "Knowledge tools"
-      ]
-    },
-    {
       "id": "cb25e60269d1fb07",
       "title": "Tech In Plain Sight: Meet The Robot That Does CPR",
       "url": "https://hackaday.com/2026/09/10/tech-in-plain-sight-meet-the-robot-that-does-cpr/",
       "summary": "Usually in Tech In Plain Sight, we talk about technology you probably see every day, even if you don’t notice it. But we hope you don’t get to see one …read more",
       "published_at": "2026-09-10T14:00:02+00:00",
-      "source": "Hackaday",
-      "source_id": "hackaday",
-      "source_category": "making",
-      "content_type": "article",
-      "score": 0.0,
-      "rank_score": 2.12,
-      "matched_interests": [],
-      "matched_labels": []
-    },
-    {
-      "id": "e9711708a81b74e3",
-      "title": "Open Source Acoustic Drone Detection",
-      "url": "https://hackaday.com/2026/09/10/open-source-acoustic-drone-detection/",
-      "summary": "Drones have become a potent military threat, particularly on the small scale. Nimble multi-rotor drones are fast, difficult to spot, and can cause plenty of harm if allowed to go …read more",
-      "published_at": "2026-09-10T11:00:38+00:00",
       "source": "Hackaday",
       "source_id": "hackaday",
       "source_category": "making",
@@ -2192,216 +2231,6 @@
       "matched_labels": []
     },
     {
-      "id": "8b88d8b8dec9112b",
-      "title": "Origami Sensors That You Can Wear",
-      "url": "https://hackaday.com/2026/09/09/origami-sensors-that-you-can-wear/",
-      "summary": "Origami is a wonderful art form, but as a new project from the Shibaura Institute of Technology demonstrates, it can also have applications in the world of wearable tech. The …read more",
-      "published_at": "2026-09-10T05:00:16+00:00",
-      "source": "Hackaday",
-      "source_id": "hackaday",
-      "source_category": "making",
-      "content_type": "article",
-      "score": 0.0,
-      "rank_score": 2.12,
-      "matched_interests": [],
-      "matched_labels": []
-    },
-    {
-      "id": "2430ed23f79f7414",
-      "title": "NTSB Issues Investigative Update on B-767 Runway Excursion Accident in Miami",
-      "url": "https://www.ntsb.gov:443/news/press-releases/Pages/NR20260909.aspx",
-      "summary": "Article URL: https://www.ntsb.gov:443/news/press-releases/Pages/NR20260909.aspx Comments URL: https://news.ycombinator.com/item?id=49650418 Points: 13 # Comments: 7",
-      "published_at": "2026-09-10T21:30:55+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_category": "discovery",
-      "content_type": "news",
-      "score": 0.0,
-      "rank_score": 2.1,
-      "matched_interests": [],
-      "matched_labels": []
-    },
-    {
-      "id": "d4b04e74047b6af5",
-      "title": "The part of Navier-Stokes no one is talking about",
-      "url": "https://www.johndcook.com/blog/2026/09/09/formal-method-revolution/",
-      "summary": "Article URL: https://www.johndcook.com/blog/2026/09/09/formal-method-revolution/ Comments URL: https://news.ycombinator.com/item?id=49650326 Points: 56 # Comments: 23",
-      "published_at": "2026-09-10T21:22:59+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_category": "discovery",
-      "content_type": "news",
-      "score": 0.0,
-      "rank_score": 2.1,
-      "matched_interests": [],
-      "matched_labels": []
-    },
-    {
-      "id": "eee5d7afd749dc16",
-      "title": "Bodily Oddities",
-      "url": "https://vester.si/bodily-oddities/",
-      "summary": "Article URL: https://vester.si/bodily-oddities/ Comments URL: https://news.ycombinator.com/item?id=49649789 Points: 8 # Comments: 9",
-      "published_at": "2026-09-10T20:33:11+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_category": "discovery",
-      "content_type": "news",
-      "score": 0.0,
-      "rank_score": 2.1,
-      "matched_interests": [],
-      "matched_labels": []
-    },
-    {
-      "id": "e38e55b793ac5187",
-      "title": "Proof of Capture: Apple Reference Image, but open source and using steganography",
-      "url": "https://merybenavente.me/blog/proof-of-capture",
-      "summary": "Article URL: https://merybenavente.me/blog/proof-of-capture Comments URL: https://news.ycombinator.com/item?id=49649222 Points: 22 # Comments: 23",
-      "published_at": "2026-09-10T19:44:15+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_category": "discovery",
-      "content_type": "news",
-      "score": 0.0,
-      "rank_score": 2.1,
-      "matched_interests": [],
-      "matched_labels": []
-    },
-    {
-      "id": "d278c430afc3927d",
-      "title": "Creativity is the New Moat",
-      "url": "https://www.inventbuild.studio/blog/genuine-creativity-is-your-new-moat",
-      "summary": "Article URL: https://www.inventbuild.studio/blog/genuine-creativity-is-your-new-moat Comments URL: https://news.ycombinator.com/item?id=49648732 Points: 96 # Comments: 48",
-      "published_at": "2026-09-10T19:03:34+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_category": "discovery",
-      "content_type": "news",
-      "score": 0.0,
-      "rank_score": 2.1,
-      "matched_interests": [],
-      "matched_labels": []
-    },
-    {
-      "id": "b8bb0b0720894fe8",
-      "title": "JEP 544: Ahead-of-Time Code Compilation",
-      "url": "https://openjdk.org/jeps/544",
-      "summary": "Article URL: https://openjdk.org/jeps/544 Comments URL: https://news.ycombinator.com/item?id=49647404 Points: 52 # Comments: 22",
-      "published_at": "2026-09-10T17:30:39+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_category": "discovery",
-      "content_type": "news",
-      "score": 0.0,
-      "rank_score": 2.1,
-      "matched_interests": [],
-      "matched_labels": []
-    },
-    {
-      "id": "9495b3c72ced3b38",
-      "title": "Music Theory for the 21st-Century Classroom",
-      "url": "https://musictheory.pugetsound.edu/mt21c/MusicTheory.html",
-      "summary": "Article URL: https://musictheory.pugetsound.edu/mt21c/MusicTheory.html Comments URL: https://news.ycombinator.com/item?id=49647134 Points: 111 # Comments: 56",
-      "published_at": "2026-09-10T17:14:12+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_category": "discovery",
-      "content_type": "news",
-      "score": 0.0,
-      "rank_score": 2.1,
-      "matched_interests": [],
-      "matched_labels": []
-    },
-    {
-      "id": "97a98fc60d4a3f17",
-      "title": "Forgejo <=16.0.3 Critical RCE",
-      "url": "https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/16.0.4.md",
-      "summary": "Article URL: https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/16.0.4.md Comments URL: https://news.ycombinator.com/item?id=49645907 Points: 118 # Comments: 43",
-      "published_at": "2026-09-10T15:57:40+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_category": "discovery",
-      "content_type": "news",
-      "score": 0.0,
-      "rank_score": 2.1,
-      "matched_interests": [],
-      "matched_labels": []
-    },
-    {
-      "id": "30ff8c90880fa60d",
-      "title": "Silicon Valley Is Transforming the Military-Industrial Complex",
-      "url": "https://costsofwar.watson.brown.edu/paper/how-big-tech-and-silicon-valley-are-transforming-military-industrial-complex",
-      "summary": "Article URL: https://costsofwar.watson.brown.edu/paper/how-big-tech-and-silicon-valley-are-transforming-military-industrial-complex Comments URL: https://news.ycombinator.com/item?id=49645754 Points: 128 # Comments: 236",
-      "published_at": "2026-09-10T15:47:50+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_category": "discovery",
-      "content_type": "news",
-      "score": 0.0,
-      "rank_score": 2.1,
-      "matched_interests": [],
-      "matched_labels": []
-    },
-    {
-      "id": "c92c60cb42a81674",
-      "title": "Neki",
-      "url": "https://planetscale.com/blog/introducing-neki",
-      "summary": "Article URL: https://planetscale.com/blog/introducing-neki Comments URL: https://news.ycombinator.com/item?id=49645686 Points: 176 # Comments: 72",
-      "published_at": "2026-09-10T15:43:49+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_category": "discovery",
-      "content_type": "news",
-      "score": 0.0,
-      "rank_score": 2.1,
-      "matched_interests": [],
-      "matched_labels": []
-    },
-    {
-      "id": "bbfe29c66ab58088",
-      "title": "Cognition launches new SWE-2 model, Rivaling Fable 5.1 and GPT-Astra",
-      "url": "https://cognition.com/blog/swe-2",
-      "summary": "Article URL: https://cognition.com/blog/swe-2 Comments URL: https://news.ycombinator.com/item?id=49645443 Points: 310 # Comments: 129",
-      "published_at": "2026-09-10T15:29:47+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_category": "discovery",
-      "content_type": "news",
-      "score": 0.0,
-      "rank_score": 2.1,
-      "matched_interests": [],
-      "matched_labels": []
-    },
-    {
-      "id": "f34dd3c1887c15bc",
-      "title": "NASA Color Trick Was Meant for Mars. Now It's Unveiling Rock Art on Earth",
-      "url": "https://gizmodo.com/this-nasa-color-trick-was-meant-for-mars-now-its-unveiling-rock-art-on-earth-2000809844",
-      "summary": "Article URL: https://gizmodo.com/this-nasa-color-trick-was-meant-for-mars-now-its-unveiling-rock-art-on-earth-2000809844 Comments URL: https://news.ycombinator.com/item?id=49645437 Points: 221 # Comments: 35",
-      "published_at": "2026-09-10T15:29:30+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_category": "discovery",
-      "content_type": "news",
-      "score": 0.0,
-      "rank_score": 2.1,
-      "matched_interests": [],
-      "matched_labels": []
-    },
-    {
-      "id": "245c58b89ac9572e",
-      "title": "Don't let anyone take away your big box of cables",
-      "url": "https://blog.jim-nielsen.com/2026/hands-off-my-cables/",
-      "summary": "Article URL: https://blog.jim-nielsen.com/2026/hands-off-my-cables/ Comments URL: https://news.ycombinator.com/item?id=49645393 Points: 203 # Comments: 159",
-      "published_at": "2026-09-10T15:27:22+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_category": "discovery",
-      "content_type": "news",
-      "score": 0.0,
-      "rank_score": 2.1,
-      "matched_interests": [],
-      "matched_labels": []
-    },
-    {
       "id": "f8307e70995acead",
       "title": "The purpose of DNS is to spread scams",
       "url": "https://simonwillison.net/2026/Sep/6/the-purpose-of-dns-is-to-spread-scams/",
@@ -2413,66 +2242,6 @@
       "content_type": "blog",
       "score": 0.0,
       "rank_score": 2.1,
-      "matched_interests": [],
-      "matched_labels": []
-    },
-    {
-      "id": "e95a59d59c66e9fd",
-      "title": "Shopify moves back to Native from React Native",
-      "url": "https://shopify.engineering/back-to-native",
-      "summary": "Article URL: https://shopify.engineering/back-to-native Comments URL: https://news.ycombinator.com/item?id=49643982 Points: 623 # Comments: 423",
-      "published_at": "2026-09-10T14:09:31+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_category": "discovery",
-      "content_type": "news",
-      "score": 0.0,
-      "rank_score": 2.09,
-      "matched_interests": [],
-      "matched_labels": []
-    },
-    {
-      "id": "6bac3566f5147f3a",
-      "title": "Rust is tier-1 language at Microsoft",
-      "url": "https://rustfoundation.org/media/guest-post-rust-is-tier-1-language-at-microsoft/",
-      "summary": "Article URL: https://rustfoundation.org/media/guest-post-rust-is-tier-1-language-at-microsoft/ Comments URL: https://news.ycombinator.com/item?id=49643546 Points: 552 # Comments: 301",
-      "published_at": "2026-09-10T13:39:16+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_category": "discovery",
-      "content_type": "news",
-      "score": 0.0,
-      "rank_score": 2.09,
-      "matched_interests": [],
-      "matched_labels": []
-    },
-    {
-      "id": "c232b0b5e6c9e800",
-      "title": "List of references on Sony websites to players \"owning\" their digital games",
-      "url": "https://consumerrights.wiki/w/Sony_PlayStation_digital_game_ownership_lawsuit",
-      "summary": "Article URL: https://consumerrights.wiki/w/Sony_PlayStation_digital_game_ownership_lawsuit Comments URL: https://news.ycombinator.com/item?id=49642531 Points: 332 # Comments: 109",
-      "published_at": "2026-09-10T12:18:06+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_category": "discovery",
-      "content_type": "news",
-      "score": 0.0,
-      "rank_score": 2.09,
-      "matched_interests": [],
-      "matched_labels": []
-    },
-    {
-      "id": "dd168ff7e29ab9fa",
-      "title": "What algorithm did Windows XP use to choose your initial user picture?",
-      "url": "https://devblogs.microsoft.com/oldnewthing/20260909-00/?p=112683",
-      "summary": "Article URL: https://devblogs.microsoft.com/oldnewthing/20260909-00/?p=112683 Comments URL: https://news.ycombinator.com/item?id=49640646 Points: 325 # Comments: 160",
-      "published_at": "2026-09-10T09:04:14+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_category": "discovery",
-      "content_type": "news",
-      "score": 0.0,
-      "rank_score": 2.09,
       "matched_interests": [],
       "matched_labels": []
     },
@@ -2567,25 +2336,6 @@
       "matched_labels": []
     },
     {
-      "id": "21dd0cfb3d8b0e92",
-      "title": "Obsidian 1.13.2 Mobile (Early access)",
-      "url": "https://obsidian.md/changelog/2026-07-14-mobile-v1.13.2/",
-      "summary": "Includes all new features and bug fixes up to Obsidian Desktop v1.13.2. Improvements iOS: Added a url variable to the Share Sheet template for inserting the shared link into your note. No longer broken Settings: Updated the size of toggles inside settings. Settings: Fixed the display of settings with validation errors.",
-      "published_at": "2026-07-14T00:00:00+00:00",
-      "source": "Obsidian Changelog",
-      "source_id": "obsidian_changelog",
-      "source_category": "knowledge_tools",
-      "content_type": "release",
-      "score": 1.0,
-      "rank_score": 1.99,
-      "matched_interests": [
-        "knowledge_tools"
-      ],
-      "matched_labels": [
-        "Knowledge tools"
-      ]
-    },
-    {
       "id": "4fb225fee377eb7e",
       "title": "Obsidian 1.13.2 Desktop (Early access)",
       "url": "https://obsidian.md/changelog/2026-07-14-desktop-v1.13.2/",
@@ -2601,26 +2351,7 @@
         "knowledge_tools"
       ],
       "matched_labels": [
-        "Knowledge tools"
-      ]
-    },
-    {
-      "id": "5cc715ece107a180",
-      "title": "Obsidian 1.13.1 Mobile (Early access)",
-      "url": "https://obsidian.md/changelog/2026-06-09-mobile-v1.13.1/",
-      "summary": "Includes all new features and bug fixes up to Obsidian Desktop v1.13.1. Improvements Settings pages now have enough padding to scroll fully into view when the onscreen keyboard is showing. No longer broken iOS: Fixed app crashing when sharing screenshots via the Share Sheet. Live Preview: Fixed \"Enter\" from the iOS key",
-      "published_at": "2026-06-09T00:00:00+00:00",
-      "source": "Obsidian Changelog",
-      "source_id": "obsidian_changelog",
-      "source_category": "knowledge_tools",
-      "content_type": "release",
-      "score": 1.0,
-      "rank_score": 1.27,
-      "matched_interests": [
-        "knowledge_tools"
-      ],
-      "matched_labels": [
-        "Knowledge tools"
+        "ナレッジ・ノート"
       ]
     },
     {
@@ -2633,13 +2364,13 @@
       "source_id": "obsidian_changelog",
       "source_category": "knowledge_tools",
       "content_type": "release",
-      "score": 1.0,
-      "rank_score": 1.27,
+      "score": 2.0,
+      "rank_score": 1.92,
       "matched_interests": [
         "knowledge_tools"
       ],
       "matched_labels": [
-        "Knowledge tools"
+        "ナレッジ・ノート"
       ]
     },
     {
@@ -2652,13 +2383,15 @@
       "source_id": "obsidian_changelog",
       "source_category": "knowledge_tools",
       "content_type": "release",
-      "score": 1.0,
-      "rank_score": 1.03,
+      "score": 1.85,
+      "rank_score": 1.54,
       "matched_interests": [
-        "knowledge_tools"
+        "knowledge_tools",
+        "personal_devices"
       ],
       "matched_labels": [
-        "Knowledge tools"
+        "ナレッジ・ノート",
+        "小型デバイス・iOS"
       ]
     },
     {
@@ -2677,7 +2410,7 @@
         "knowledge_tools"
       ],
       "matched_labels": [
-        "Knowledge tools"
+        "ナレッジ・ノート"
       ]
     }
   ]
