@@ -21,6 +21,7 @@ sources:
     category: knowledge_tools
     content_type: blog
     priority: 1.0
+    max_age_days: 240
     enabled: true
 
   - id: obsidian_changelog
