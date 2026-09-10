@@ -5,6 +5,7 @@ Public data only. The collector:
 - reads public RSS/Atom feeds from config/sources.yml
 - scores items against the generic public profile in config/interests.yml
 - removes common tracking parameters and duplicates
+- favors recent items and drops stale feed history
 - records feed health without failing the whole run when one source is down
 - writes the same dataset to repository data and the GitHub Pages tree
 """
@@ -33,6 +34,8 @@ OUTPUT_FILES = (
 
 MAX_ITEMS = 250
 MAX_ITEMS_PER_SOURCE = 40
+MAX_AGE_DAYS = 120
+SUMMARY_LIMIT = 320
 FETCH_TIMEOUT_SECONDS = 20
 TRACKING_KEYS = {
     "fbclid",
@@ -87,14 +90,14 @@ def item_id(url: str, title: str) -> str:
     return hashlib.sha256(f"{url}\n{title}".encode("utf-8")).hexdigest()[:16]
 
 
-def parsed_date(entry) -> str | None:
+def parsed_datetime(entry) -> datetime | None:
     parsed = getattr(entry, "published_parsed", None) or getattr(
         entry, "updated_parsed", None
     )
     if not parsed:
         return None
     try:
-        return datetime(*parsed[:6], tzinfo=timezone.utc).isoformat()
+        return datetime(*parsed[:6], tzinfo=timezone.utc)
     except Exception:
         return None
 
@@ -160,6 +163,7 @@ def collect() -> dict:
 
     items: list[dict] = []
     source_status: list[dict] = []
+    now = datetime.now(timezone.utc)
 
     enabled_sources = [
         source
@@ -176,11 +180,13 @@ def collect() -> dict:
         category = str(source.get("category", "other"))
         content_type = str(source.get("content_type", "article"))
         source_priority = float(source.get("priority", 0.5))
+        source_max_age = int(source.get("max_age_days", MAX_AGE_DAYS))
 
         try:
             parsed = fetch_feed(feed_url)
             source_name = configured_name or parsed.feed.get("title") or source_id
             added = 0
+            stale = 0
 
             for entry in parsed.entries[:MAX_ITEMS_PER_SOURCE]:
                 title = clean_text(entry.get("title"))
@@ -188,6 +194,20 @@ def collect() -> dict:
                 url = canonical_url(raw_url)
                 if not title or not url:
                     continue
+
+                published_dt = parsed_datetime(entry)
+                if published_dt:
+                    age_days = max(
+                        0.0, (now - published_dt).total_seconds() / 86400
+                    )
+                    if age_days > source_max_age:
+                        stale += 1
+                        continue
+                    freshness = max(0.0, 1.0 - (age_days / source_max_age))
+                    published_at = published_dt.isoformat()
+                else:
+                    freshness = 0.2
+                    published_at = None
 
                 summary = clean_text(
                     entry.get("summary")
@@ -197,15 +217,23 @@ def collect() -> dict:
                 score, matched_interests, matched_labels = score_item(
                     title, summary, interests
                 )
-                rank_score = round(score + (source_priority * 0.2), 2)
+
+                # Relevance still matters, but freshness prevents old feed history
+                # from dominating the "FOR YOU" view.
+                rank_score = round(
+                    (score * (0.55 + 0.45 * freshness))
+                    + (2.0 * freshness)
+                    + (source_priority * 0.2),
+                    2,
+                )
 
                 items.append(
                     {
                         "id": item_id(url, title),
                         "title": title,
                         "url": url,
-                        "summary": summary[:700],
-                        "published_at": parsed_date(entry),
+                        "summary": summary[:SUMMARY_LIMIT],
+                        "published_at": published_at,
                         "source": source_name,
                         "source_id": source_id,
                         "source_category": category,
@@ -224,6 +252,7 @@ def collect() -> dict:
                     "name": source_name,
                     "ok": True,
                     "items": added,
+                    "stale_skipped": stale,
                 }
             )
         except Exception as exc:
@@ -233,6 +262,7 @@ def collect() -> dict:
                     "name": configured_name or source_id,
                     "ok": False,
                     "items": 0,
+                    "stale_skipped": 0,
                     "error": clean_text(str(exc))[:180],
                 }
             )
@@ -258,7 +288,7 @@ def collect() -> dict:
         raise RuntimeError("All configured feeds failed; keeping the previous dataset.")
 
     return {
-        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "generated_at": now.isoformat(),
         "count": len(ranked),
         "sources": {
             "configured": len(enabled_sources),
