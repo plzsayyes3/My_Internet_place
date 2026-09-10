@@ -1,6 +1,78 @@
-# Initial public sources for My Internet Place.
-# Add sources gradually. RSS/Atom feeds are preferred when available.
+# Public feed sources for My Internet Place.
+# Keep this list generic and safe for a public repository.
+# Official/primary feeds are preferred; discovery feeds are intentionally lower priority.
 
 version: 1
 
-sources: []
+sources:
+  - id: openai_news
+    name: OpenAI News
+    type: rss
+    url: https://openai.com/news/rss.xml
+    category: ai_tools
+    content_type: news
+    priority: 1.0
+    enabled: true
+
+  - id: obsidian_blog
+    name: Obsidian Blog
+    type: rss
+    url: https://obsidian.md/feed.xml
+    category: knowledge_tools
+    content_type: blog
+    priority: 1.0
+    enabled: true
+
+  - id: obsidian_changelog
+    name: Obsidian Changelog
+    type: rss
+    url: https://obsidian.md/changelog.xml
+    category: knowledge_tools
+    content_type: release
+    priority: 0.95
+    enabled: true
+
+  - id: github_changelog
+    name: GitHub Changelog
+    type: rss
+    url: https://github.blog/changelog/feed/
+    category: software_building
+    content_type: release
+    priority: 0.95
+    enabled: true
+
+  - id: github_blog
+    name: GitHub Blog
+    type: rss
+    url: https://github.blog/feed/
+    category: software_building
+    content_type: article
+    priority: 0.75
+    enabled: true
+
+  - id: simon_willison
+    name: Simon Willison's Weblog
+    type: atom
+    url: https://simonwillison.net/atom/everything/
+    category: ai_tools
+    content_type: blog
+    priority: 0.85
+    enabled: true
+
+  - id: hackaday
+    name: Hackaday
+    type: rss
+    url: https://hackaday.com/blog/feed/
+    category: making
+    content_type: article
+    priority: 0.65
+    enabled: true
+
+  - id: hacker_news
+    name: Hacker News via HNRSS
+    type: rss
+    url: https://hnrss.org/frontpage
+    category: discovery
+    content_type: news
+    priority: 0.5
+    enabled: true
