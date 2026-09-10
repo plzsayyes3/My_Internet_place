@@ -31,7 +31,9 @@ main {
 
 .eyebrow,
 .meta,
+.health,
 .source,
+.kind,
 .score,
 .card-footer {
   font-size: 12px;
@@ -42,7 +44,9 @@ main {
 .eyebrow { margin: 0 0 10px; }
 h1 { margin: 0; font-size: clamp(28px, 6vw, 54px); line-height: 1.03; max-width: 760px; }
 .lead { margin: 14px 0 0; color: #68665f; }
+.meta-block { text-align: right; }
 .meta { white-space: nowrap; color: #77736a; }
+.health { margin-top: 6px; color: #77736a; }
 
 .filters {
   display: flex;
@@ -76,16 +80,27 @@ h1 { margin: 0; font-size: clamp(28px, 6vw, 54px); line-height: 1.03; max-width:
 .feed { padding: 8px 0 64px; }
 .card { padding: 28px 0; border-bottom: 1px solid #d8d3c8; }
 .card-topline, .card-footer { display: flex; justify-content: space-between; gap: 16px; color: #77736a; }
-.score { color: #35372f; }
+.source-line { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.source { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.kind {
+  border: 1px solid #c8c3b7;
+  border-radius: 999px;
+  padding: 2px 6px;
+  letter-spacing: .05em;
+  flex: 0 0 auto;
+}
+.score { color: #35372f; white-space: nowrap; }
 .card h2 { margin: 10px 0 12px; font-size: clamp(22px, 4vw, 34px); line-height: 1.15; }
 .card h2 a { color: inherit; text-decoration: none; }
 .card h2 a:hover { text-decoration: underline; text-underline-offset: 4px; }
 .summary { max-width: 760px; line-height: 1.65; color: #56544e; margin: 0 0 18px; }
 .reason { text-transform: none; letter-spacing: 0; }
+.published { white-space: nowrap; }
 .empty { padding: 64px 0; color: #77736a; }
 
 @media (max-width: 640px) {
   .site-header { display: block; padding-top: 36px; }
-  .meta { margin-top: 24px; }
+  .meta-block { margin-top: 24px; text-align: left; }
   .card-footer { align-items: start; }
+  .card-topline { align-items: start; }
 }
