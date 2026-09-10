@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-10T22:21:01.186363+00:00",
-  "count": 124,
+  "generated_at": "2026-09-10T22:23:06.790054+00:00",
+  "count": 146,
   "sources": {
     "configured": 8,
-    "healthy": 7,
+    "healthy": 8,
     "status": [
       {
         "id": "openai_news",
@@ -16,8 +16,8 @@
         "id": "obsidian_blog",
         "name": "Obsidian Blog",
         "ok": true,
-        "items": 0,
-        "stale_skipped": 40
+        "items": 2,
+        "stale_skipped": 38
       },
       {
         "id": "obsidian_changelog",
@@ -57,10 +57,9 @@
       {
         "id": "hacker_news",
         "name": "Hacker News via HNRSS",
-        "ok": false,
-        "items": 0,
-        "stale_skipped": 0,
-        "error": "502 Server Error: Bad Gateway for url: https://hnrss.org/frontpage"
+        "ok": true,
+        "items": 20,
+        "stale_skipped": 0
       }
     ]
   },
@@ -506,6 +505,25 @@
       ]
     },
     {
+      "id": "300052dde8dca54b",
+      "title": "OpenAI Agents API",
+      "url": "https://developers.openai.com/api/docs/guides/agents-api/overview",
+      "summary": "Article URL: https://developers.openai.com/api/docs/guides/agents-api/overview Comments URL: https://news.ycombinator.com/item?id=49649213 Points: 43 # Comments: 38",
+      "published_at": "2026-09-10T19:43:22+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_category": "discovery",
+      "content_type": "news",
+      "score": 2.0,
+      "rank_score": 4.1,
+      "matched_interests": [
+        "ai_tools"
+      ],
+      "matched_labels": [
+        "AI・AIツール"
+      ]
+    },
+    {
       "id": "7d6c35ddd546687d",
       "title": "llm 0.35",
       "url": "https://simonwillison.net/2026/Sep/7/llm/",
@@ -581,6 +599,25 @@
       "matched_labels": [
         "AI・AIツール",
         "ソフトウェア制作"
+      ]
+    },
+    {
+      "id": "0c0d8751baac2b7e",
+      "title": "Detecting and countering misuse of AI: September 2026",
+      "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+      "summary": "Article URL: https://www.anthropic.com/threat-intelligence-report-september-2026 Comments URL: https://news.ycombinator.com/item?id=49647300 Points: 42 # Comments: 22",
+      "published_at": "2026-09-10T17:23:42+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_category": "discovery",
+      "content_type": "news",
+      "score": 2.0,
+      "rank_score": 4.09,
+      "matched_interests": [
+        "ai_tools"
+      ],
+      "matched_labels": [
+        "AI・AIツール"
       ]
     },
     {
@@ -1379,6 +1416,25 @@
       ]
     },
     {
+      "id": "c01c5be52bc2cd7c",
+      "title": "Cognition's SWE-2 achieves 92.8 on Terminal-Bench 2.1",
+      "url": "https://tokenstead.ai/models/swe-2",
+      "summary": "Article URL: https://tokenstead.ai/models/swe-2 Comments URL: https://news.ycombinator.com/item?id=49646778 Points: 46 # Comments: 22",
+      "published_at": "2026-09-10T16:52:11+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_category": "discovery",
+      "content_type": "news",
+      "score": 1.0,
+      "rank_score": 3.1,
+      "matched_interests": [
+        "ai_tools"
+      ],
+      "matched_labels": [
+        "AI・AIツール"
+      ]
+    },
+    {
       "id": "d866438263d8a47d",
       "title": "Mercator ↔ Equal Earth",
       "url": "https://simonwillison.net/2026/Sep/7/equal-earth/",
@@ -1680,6 +1736,25 @@
       ],
       "matched_labels": [
         "AI・AIツール"
+      ]
+    },
+    {
+      "id": "e38e55b793ac5187",
+      "title": "Proof of Capture: Apple Reference Image, but open source and using steganography",
+      "url": "https://merybenavente.me/blog/proof-of-capture",
+      "summary": "Article URL: https://merybenavente.me/blog/proof-of-capture Comments URL: https://news.ycombinator.com/item?id=49649222 Points: 29 # Comments: 28",
+      "published_at": "2026-09-10T19:44:15+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_category": "discovery",
+      "content_type": "news",
+      "score": 0.9,
+      "rank_score": 3.0,
+      "matched_interests": [
+        "software_building"
+      ],
+      "matched_labels": [
+        "ソフトウェア制作"
       ]
     },
     {
@@ -1991,6 +2066,27 @@
       ]
     },
     {
+      "id": "f3c01256eea9b091",
+      "title": "The future of Obsidian plugins",
+      "url": "https://obsidian.md/blog/future-of-plugins/",
+      "summary": "Today we're excited to launch Obsidian Community , the new directory and developer dashboard for Obsidian plugins and themes. Since the Obsidian API release in 2020, more than 4,000 plugins and themes have been created by our amazing community. Incredibly, Obsidian plugins have passed 120 million total downloads! Our g",
+      "published_at": "2026-05-12T00:00:00+00:00",
+      "source": "Obsidian Blog",
+      "source_id": "obsidian_blog",
+      "source_category": "knowledge_tools",
+      "content_type": "blog",
+      "score": 1.9,
+      "rank_score": 2.65,
+      "matched_interests": [
+        "knowledge_tools",
+        "software_building"
+      ],
+      "matched_labels": [
+        "ナレッジ・ノート",
+        "ソフトウェア制作"
+      ]
+    },
+    {
       "id": "0b707ac1f19ed2e4",
       "title": "Obsidian 1.13.7 Mobile (Public)",
       "url": "https://obsidian.md/changelog/2026-08-12-mobile-v1.13.7/",
@@ -2231,6 +2327,186 @@
       "matched_labels": []
     },
     {
+      "id": "2430ed23f79f7414",
+      "title": "NTSB Issues Investigative Update on B-767 Runway Excursion Accident in Miami",
+      "url": "https://www.ntsb.gov:443/news/press-releases/Pages/NR20260909.aspx",
+      "summary": "Article URL: https://www.ntsb.gov:443/news/press-releases/Pages/NR20260909.aspx Comments URL: https://news.ycombinator.com/item?id=49650418 Points: 20 # Comments: 15",
+      "published_at": "2026-09-10T21:30:55+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_category": "discovery",
+      "content_type": "news",
+      "score": 0.0,
+      "rank_score": 2.1,
+      "matched_interests": [],
+      "matched_labels": []
+    },
+    {
+      "id": "d4b04e74047b6af5",
+      "title": "The part of Navier-Stokes no one is talking about",
+      "url": "https://www.johndcook.com/blog/2026/09/09/formal-method-revolution/",
+      "summary": "Article URL: https://www.johndcook.com/blog/2026/09/09/formal-method-revolution/ Comments URL: https://news.ycombinator.com/item?id=49650326 Points: 78 # Comments: 55",
+      "published_at": "2026-09-10T21:22:59+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_category": "discovery",
+      "content_type": "news",
+      "score": 0.0,
+      "rank_score": 2.1,
+      "matched_interests": [],
+      "matched_labels": []
+    },
+    {
+      "id": "eee5d7afd749dc16",
+      "title": "Bodily Oddities",
+      "url": "https://vester.si/bodily-oddities/",
+      "summary": "Article URL: https://vester.si/bodily-oddities/ Comments URL: https://news.ycombinator.com/item?id=49649789 Points: 11 # Comments: 12",
+      "published_at": "2026-09-10T20:33:11+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_category": "discovery",
+      "content_type": "news",
+      "score": 0.0,
+      "rank_score": 2.1,
+      "matched_interests": [],
+      "matched_labels": []
+    },
+    {
+      "id": "d278c430afc3927d",
+      "title": "Creativity is the New Moat",
+      "url": "https://www.inventbuild.studio/blog/genuine-creativity-is-your-new-moat",
+      "summary": "Article URL: https://www.inventbuild.studio/blog/genuine-creativity-is-your-new-moat Comments URL: https://news.ycombinator.com/item?id=49648732 Points: 98 # Comments: 53",
+      "published_at": "2026-09-10T19:03:34+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_category": "discovery",
+      "content_type": "news",
+      "score": 0.0,
+      "rank_score": 2.1,
+      "matched_interests": [],
+      "matched_labels": []
+    },
+    {
+      "id": "b8bb0b0720894fe8",
+      "title": "JEP 544: Ahead-of-Time Code Compilation",
+      "url": "https://openjdk.org/jeps/544",
+      "summary": "Article URL: https://openjdk.org/jeps/544 Comments URL: https://news.ycombinator.com/item?id=49647404 Points: 54 # Comments: 22",
+      "published_at": "2026-09-10T17:30:39+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_category": "discovery",
+      "content_type": "news",
+      "score": 0.0,
+      "rank_score": 2.1,
+      "matched_interests": [],
+      "matched_labels": []
+    },
+    {
+      "id": "9495b3c72ced3b38",
+      "title": "Music Theory for the 21st-Century Classroom",
+      "url": "https://musictheory.pugetsound.edu/mt21c/MusicTheory.html",
+      "summary": "Article URL: https://musictheory.pugetsound.edu/mt21c/MusicTheory.html Comments URL: https://news.ycombinator.com/item?id=49647134 Points: 116 # Comments: 58",
+      "published_at": "2026-09-10T17:14:12+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_category": "discovery",
+      "content_type": "news",
+      "score": 0.0,
+      "rank_score": 2.1,
+      "matched_interests": [],
+      "matched_labels": []
+    },
+    {
+      "id": "97a98fc60d4a3f17",
+      "title": "Forgejo <=16.0.3 Critical RCE",
+      "url": "https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/16.0.4.md",
+      "summary": "Article URL: https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/16.0.4.md Comments URL: https://news.ycombinator.com/item?id=49645907 Points: 122 # Comments: 47",
+      "published_at": "2026-09-10T15:57:40+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_category": "discovery",
+      "content_type": "news",
+      "score": 0.0,
+      "rank_score": 2.1,
+      "matched_interests": [],
+      "matched_labels": []
+    },
+    {
+      "id": "30ff8c90880fa60d",
+      "title": "Silicon Valley Is Transforming the Military-Industrial Complex",
+      "url": "https://costsofwar.watson.brown.edu/paper/how-big-tech-and-silicon-valley-are-transforming-military-industrial-complex",
+      "summary": "Article URL: https://costsofwar.watson.brown.edu/paper/how-big-tech-and-silicon-valley-are-transforming-military-industrial-complex Comments URL: https://news.ycombinator.com/item?id=49645754 Points: 129 # Comments: 243",
+      "published_at": "2026-09-10T15:47:50+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_category": "discovery",
+      "content_type": "news",
+      "score": 0.0,
+      "rank_score": 2.1,
+      "matched_interests": [],
+      "matched_labels": []
+    },
+    {
+      "id": "c92c60cb42a81674",
+      "title": "Neki",
+      "url": "https://planetscale.com/blog/introducing-neki",
+      "summary": "Article URL: https://planetscale.com/blog/introducing-neki Comments URL: https://news.ycombinator.com/item?id=49645686 Points: 178 # Comments: 72",
+      "published_at": "2026-09-10T15:43:49+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_category": "discovery",
+      "content_type": "news",
+      "score": 0.0,
+      "rank_score": 2.1,
+      "matched_interests": [],
+      "matched_labels": []
+    },
+    {
+      "id": "bbfe29c66ab58088",
+      "title": "Cognition launches new SWE-2 model, Rivaling Fable 5.1 and GPT-Astra",
+      "url": "https://cognition.com/blog/swe-2",
+      "summary": "Article URL: https://cognition.com/blog/swe-2 Comments URL: https://news.ycombinator.com/item?id=49645443 Points: 318 # Comments: 130",
+      "published_at": "2026-09-10T15:29:47+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_category": "discovery",
+      "content_type": "news",
+      "score": 0.0,
+      "rank_score": 2.1,
+      "matched_interests": [],
+      "matched_labels": []
+    },
+    {
+      "id": "f34dd3c1887c15bc",
+      "title": "NASA Color Trick Was Meant for Mars. Now It's Unveiling Rock Art on Earth",
+      "url": "https://gizmodo.com/this-nasa-color-trick-was-meant-for-mars-now-its-unveiling-rock-art-on-earth-2000809844",
+      "summary": "Article URL: https://gizmodo.com/this-nasa-color-trick-was-meant-for-mars-now-its-unveiling-rock-art-on-earth-2000809844 Comments URL: https://news.ycombinator.com/item?id=49645437 Points: 227 # Comments: 36",
+      "published_at": "2026-09-10T15:29:30+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_category": "discovery",
+      "content_type": "news",
+      "score": 0.0,
+      "rank_score": 2.1,
+      "matched_interests": [],
+      "matched_labels": []
+    },
+    {
+      "id": "245c58b89ac9572e",
+      "title": "Don't let anyone take away your big box of cables",
+      "url": "https://blog.jim-nielsen.com/2026/hands-off-my-cables/",
+      "summary": "Article URL: https://blog.jim-nielsen.com/2026/hands-off-my-cables/ Comments URL: https://news.ycombinator.com/item?id=49645393 Points: 218 # Comments: 170",
+      "published_at": "2026-09-10T15:27:22+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_category": "discovery",
+      "content_type": "news",
+      "score": 0.0,
+      "rank_score": 2.1,
+      "matched_interests": [],
+      "matched_labels": []
+    },
+    {
       "id": "f8307e70995acead",
       "title": "The purpose of DNS is to spread scams",
       "url": "https://simonwillison.net/2026/Sep/6/the-purpose-of-dns-is-to-spread-scams/",
@@ -2242,6 +2518,66 @@
       "content_type": "blog",
       "score": 0.0,
       "rank_score": 2.1,
+      "matched_interests": [],
+      "matched_labels": []
+    },
+    {
+      "id": "e95a59d59c66e9fd",
+      "title": "Shopify moves back to Native from React Native",
+      "url": "https://shopify.engineering/back-to-native",
+      "summary": "Article URL: https://shopify.engineering/back-to-native Comments URL: https://news.ycombinator.com/item?id=49643982 Points: 631 # Comments: 426",
+      "published_at": "2026-09-10T14:09:31+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_category": "discovery",
+      "content_type": "news",
+      "score": 0.0,
+      "rank_score": 2.09,
+      "matched_interests": [],
+      "matched_labels": []
+    },
+    {
+      "id": "6bac3566f5147f3a",
+      "title": "Rust is tier-1 language at Microsoft",
+      "url": "https://rustfoundation.org/media/guest-post-rust-is-tier-1-language-at-microsoft/",
+      "summary": "Article URL: https://rustfoundation.org/media/guest-post-rust-is-tier-1-language-at-microsoft/ Comments URL: https://news.ycombinator.com/item?id=49643546 Points: 557 # Comments: 304",
+      "published_at": "2026-09-10T13:39:16+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_category": "discovery",
+      "content_type": "news",
+      "score": 0.0,
+      "rank_score": 2.09,
+      "matched_interests": [],
+      "matched_labels": []
+    },
+    {
+      "id": "c232b0b5e6c9e800",
+      "title": "List of references on Sony websites to players \"owning\" their digital games",
+      "url": "https://consumerrights.wiki/w/Sony_PlayStation_digital_game_ownership_lawsuit",
+      "summary": "Article URL: https://consumerrights.wiki/w/Sony_PlayStation_digital_game_ownership_lawsuit Comments URL: https://news.ycombinator.com/item?id=49642531 Points: 337 # Comments: 111",
+      "published_at": "2026-09-10T12:18:06+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_category": "discovery",
+      "content_type": "news",
+      "score": 0.0,
+      "rank_score": 2.09,
+      "matched_interests": [],
+      "matched_labels": []
+    },
+    {
+      "id": "dd168ff7e29ab9fa",
+      "title": "What algorithm did Windows XP use to choose your initial user picture?",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260909-00/?p=112683",
+      "summary": "Article URL: https://devblogs.microsoft.com/oldnewthing/20260909-00/?p=112683 Comments URL: https://news.ycombinator.com/item?id=49640646 Points: 329 # Comments: 160",
+      "published_at": "2026-09-10T09:04:14+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_category": "discovery",
+      "content_type": "news",
+      "score": 0.0,
+      "rank_score": 2.09,
       "matched_interests": [],
       "matched_labels": []
     },
@@ -2347,6 +2683,25 @@
       "content_type": "release",
       "score": 1.0,
       "rank_score": 1.99,
+      "matched_interests": [
+        "knowledge_tools"
+      ],
+      "matched_labels": [
+        "ナレッジ・ノート"
+      ]
+    },
+    {
+      "id": "e17a3c7ff9bb6752",
+      "title": "Obsidian Sync audits by Cure53 and Trail of Bits",
+      "url": "https://obsidian.md/blog/cure53-tob-sync-audits/",
+      "summary": "Obsidian regularly performs security audits with independent research firms to ensure that our code and procedures meet the highest security standards. Previously we shared audits assessing Obsidian's desktop and mobile apps in January 2024 and December 2024 . Two new audits are now available on our Security page asses",
+      "published_at": "2026-05-13T00:00:00+00:00",
+      "source": "Obsidian Blog",
+      "source_id": "obsidian_blog",
+      "source_category": "knowledge_tools",
+      "content_type": "blog",
+      "score": 1.0,
+      "rank_score": 1.97,
       "matched_interests": [
         "knowledge_tools"
       ],
