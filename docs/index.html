@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="最近の自分が気になるインターネットを、公開フィードから集める個人用記事レーダー。" />
   <title>My Internet Place</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -13,11 +14,15 @@
       <h1>最近の自分が気になるインターネット</h1>
       <p class="lead">ニュース、記事、ブログ、ツール、リリースをひとつの流れに。</p>
     </div>
-    <div class="meta" id="generated">loading…</div>
+    <div class="meta-block">
+      <div class="meta" id="generated">loading…</div>
+      <div class="health" id="health"></div>
+    </div>
   </header>
 
-  <nav class="filters" id="filters">
-    <button class="filter is-active" data-filter="all">FOR YOU</button>
+  <nav class="filters" id="filters" aria-label="記事フィルター">
+    <button class="filter is-active" data-view="for-you">FOR YOU</button>
+    <button class="filter" data-view="latest">LATEST</button>
   </nav>
 
   <main>
@@ -28,7 +33,10 @@
   <template id="card-template">
     <article class="card">
       <div class="card-topline">
-        <span class="source"></span>
+        <div class="source-line">
+          <span class="source"></span>
+          <span class="kind"></span>
+        </div>
         <span class="score"></span>
       </div>
       <h2><a class="title" target="_blank" rel="noopener noreferrer"></a></h2>
