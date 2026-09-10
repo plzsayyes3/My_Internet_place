@@ -1,58 +1,98 @@
-# Public interest profile for My Internet Place
-# Keep this file generic and safe for a public repository.
+# Public interest profile for My Internet Place.
+# This file is intentionally generic and safe for a public repository.
+# It is derived from broad interests only; no private notes or personal identifiers belong here.
 
-version: 1
+version: 2
 
 interests:
   - id: ai_tools
-    label: AI tools
+    label: AI・AIツール
     weight: 1.0
     keywords:
       - AI
+      - LLM
       - OpenAI
       - ChatGPT
       - Gemini
       - Claude
+      - Anthropic
       - OpenRouter
       - AI agents
+      - agentic
       - automation
+      - 生成AI
+      - AIエージェント
 
   - id: knowledge_tools
-    label: Knowledge tools
+    label: ナレッジ・ノート
     weight: 1.0
     keywords:
       - Obsidian
       - personal knowledge management
+      - knowledge management
       - PKM
       - second brain
       - note taking
       - local first
+      - markdown
+      - ナレッジ管理
+      - ノート術
+      - 第二の脳
 
   - id: making
-    label: Making
+    label: メイキング
     weight: 0.9
     keywords:
       - ESP32
       - M5Stack
+      - Raspberry Pi
       - microcontroller
       - e-paper
       - Bluetooth keyboard
       - 3D printing
       - maker
+      - DIY electronics
+      - 電子ペーパー
+      - 3Dプリンタ
+      - 自作キーボード
 
   - id: software_building
-    label: Software building
+    label: ソフトウェア制作
     weight: 0.9
     keywords:
       - GitHub
       - GitHub Actions
+      - GitHub Pages
       - web app
       - static site
+      - browser app
       - indie software
       - automation workflow
+      - open source
+      - plugin development
+      - 自動化
+      - Webアプリ
+
+  - id: personal_devices
+    label: 小型デバイス・iOS
+    weight: 0.85
+    keywords:
+      - Apple Watch
+      - iOS
+      - iPhone
+      - Shortcuts
+      - Scriptable
+      - wearable
+      - smartwatch
+      - Watchy
+      - Bluetooth HID
+      - input device
+      - e-paper watch
+      - ウェアラブル
+      - 小型端末
 
   - id: education_childcare
-    label: Education and childcare
+    label: 保育・教育
     weight: 0.8
     keywords:
       - childcare
@@ -60,9 +100,15 @@ interests:
       - education
       - child development
       - non-cognitive skills
+      - parenting
+      - 保育
+      - 幼児教育
+      - 子ども
+      - 非認知能力
+      - 子育て
 
   - id: productivity
-    label: Productivity and work design
+    label: タスク・仕事設計
     weight: 0.8
     keywords:
       - productivity
@@ -71,17 +117,26 @@ interests:
       - personal workflow
       - work design
       - Shape Up
+      - task planning
+      - タスク管理
+      - 手帳
+      - ワークフロー
 
   - id: personal_web
-    label: Personal web
+    label: 個人Web・RSS
     weight: 0.7
     keywords:
       - personal website
       - indie web
+      - indieweb
       - digital garden
       - RSS
       - Atom
       - feed reader
+      - personal web
+      - blogroll
+      - 個人サイト
+      - フィード
 
 content_types:
   - news
@@ -94,11 +149,13 @@ content_types:
 
 ranking:
   prefer:
+    - recent_items
     - primary_sources
     - technical_details
     - practical_examples
     - thoughtful_long_form
   downrank:
+    - stale_items
     - duplicate_stories
     - clickbait
     - thin_content
