@@ -1,0 +1,104 @@
+# Public interest profile for My Internet Place
+# Keep this file generic and safe for a public repository.
+
+version: 1
+
+interests:
+  - id: ai_tools
+    label: AI tools
+    weight: 1.0
+    keywords:
+      - AI
+      - OpenAI
+      - ChatGPT
+      - Gemini
+      - Claude
+      - OpenRouter
+      - AI agents
+      - automation
+
+  - id: knowledge_tools
+    label: Knowledge tools
+    weight: 1.0
+    keywords:
+      - Obsidian
+      - personal knowledge management
+      - PKM
+      - second brain
+      - note taking
+      - local first
+
+  - id: making
+    label: Making
+    weight: 0.9
+    keywords:
+      - ESP32
+      - M5Stack
+      - microcontroller
+      - e-paper
+      - Bluetooth keyboard
+      - 3D printing
+      - maker
+
+  - id: software_building
+    label: Software building
+    weight: 0.9
+    keywords:
+      - GitHub
+      - GitHub Actions
+      - web app
+      - static site
+      - indie software
+      - automation workflow
+
+  - id: education_childcare
+    label: Education and childcare
+    weight: 0.8
+    keywords:
+      - childcare
+      - early childhood education
+      - education
+      - child development
+      - non-cognitive skills
+
+  - id: productivity
+    label: Productivity and work design
+    weight: 0.8
+    keywords:
+      - productivity
+      - task management
+      - time management
+      - personal workflow
+      - work design
+      - Shape Up
+
+  - id: personal_web
+    label: Personal web
+    weight: 0.7
+    keywords:
+      - personal website
+      - indie web
+      - digital garden
+      - RSS
+      - Atom
+      - feed reader
+
+content_types:
+  - news
+  - article
+  - blog
+  - release
+  - tool
+  - paper
+  - long_read
+
+ranking:
+  prefer:
+    - primary_sources
+    - technical_details
+    - practical_examples
+    - thoughtful_long_form
+  downrank:
+    - duplicate_stories
+    - clickbait
+    - thin_content
