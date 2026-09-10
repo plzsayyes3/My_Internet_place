@@ -5,6 +5,7 @@ Public data only. The collector:
 - reads public RSS/Atom feeds from config/sources.yml
 - scores items against the generic public profile in config/interests.yml
 - removes common tracking parameters and duplicates
+- accepts only HTTP(S) article links
 - favors recent items and drops stale feed history
 - retries short-lived network failures
 - records feed health without failing the whole run when one source is down
@@ -88,6 +89,14 @@ def canonical_url(url: str) -> str:
         )
     except Exception:
         return url
+
+
+def is_safe_article_url(url: str) -> bool:
+    try:
+        parts = urlsplit(url)
+        return parts.scheme in {"http", "https"} and bool(parts.netloc)
+    except Exception:
+        return False
 
 
 def item_id(url: str, title: str) -> str:
@@ -209,7 +218,7 @@ def collect() -> dict:
                 title = clean_text(entry.get("title"))
                 raw_url = str(entry.get("link", "")).strip()
                 url = canonical_url(raw_url)
-                if not title or not url:
+                if not title or not url or not is_safe_article_url(url):
                     continue
 
                 published_dt = parsed_datetime(entry)
