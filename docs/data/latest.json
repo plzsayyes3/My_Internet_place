@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T22:23:06.790054+00:00",
+  "generated_at": "2026-09-10T22:25:15.441256+00:00",
   "count": 146,
   "sources": {
     "configured": 8,
@@ -1021,7 +1021,7 @@
       "source_category": "ai_tools",
       "content_type": "news",
       "score": 2.0,
-      "rank_score": 3.83,
+      "rank_score": 3.82,
       "matched_interests": [
         "ai_tools"
       ],
