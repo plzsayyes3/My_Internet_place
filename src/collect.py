@@ -1,30 +1,50 @@
 #!/usr/bin/env python3
-"""Collect RSS/Atom items into data/latest.json.
+"""Collect RSS/Atom items into data/latest.json and docs/data/latest.json.
 
-This first version deliberately stays simple:
-- public RSS/Atom feeds only
-- no private data
-- keyword-based interest scoring
-- no external AI API required
+Public data only. The collector:
+- reads public RSS/Atom feeds from config/sources.yml
+- scores items against the generic public profile in config/interests.yml
+- removes common tracking parameters and duplicates
+- records feed health without failing the whole run when one source is down
+- writes the same dataset to repository data and the GitHub Pages tree
 """
 
 from __future__ import annotations
 
 import hashlib
+import html
 import json
 import re
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 import feedparser
+import requests
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCES_FILE = ROOT / "config" / "sources.yml"
 INTERESTS_FILE = ROOT / "config" / "interests.yml"
-OUTPUT_FILE = ROOT / "data" / "latest.json"
-MAX_ITEMS = 200
+OUTPUT_FILES = (
+    ROOT / "data" / "latest.json",
+    ROOT / "docs" / "data" / "latest.json",
+)
+
+MAX_ITEMS = 250
+MAX_ITEMS_PER_SOURCE = 40
+FETCH_TIMEOUT_SECONDS = 20
+TRACKING_KEYS = {
+    "fbclid",
+    "gclid",
+    "mc_cid",
+    "mc_eid",
+    "ref_src",
+}
+USER_AGENT = (
+    "MyInternetPlace/0.1 "
+    "(public RSS collector; https://github.com/plzsayyes3/My_Internet_place)"
+)
 
 
 def load_yaml(path: Path) -> dict:
@@ -35,8 +55,32 @@ def load_yaml(path: Path) -> dict:
 def clean_text(value: str | None) -> str:
     if not value:
         return ""
+    value = html.unescape(value)
     value = re.sub(r"<[^>]+>", " ", value)
     return re.sub(r"\s+", " ", value).strip()
+
+
+def canonical_url(url: str) -> str:
+    """Remove fragments and common tracking query parameters."""
+    try:
+        parts = urlsplit(url)
+        query = []
+        for key, value in parse_qsl(parts.query, keep_blank_values=True):
+            key_lower = key.lower()
+            if key_lower.startswith("utm_") or key_lower in TRACKING_KEYS:
+                continue
+            query.append((key, value))
+        return urlunsplit(
+            (
+                parts.scheme.lower(),
+                parts.netloc.lower(),
+                parts.path,
+                urlencode(query, doseq=True),
+                "",
+            )
+        )
+    except Exception:
+        return url
 
 
 def item_id(url: str, title: str) -> str:
@@ -44,7 +88,9 @@ def item_id(url: str, title: str) -> str:
 
 
 def parsed_date(entry) -> str | None:
-    parsed = getattr(entry, "published_parsed", None) or getattr(entry, "updated_parsed", None)
+    parsed = getattr(entry, "published_parsed", None) or getattr(
+        entry, "updated_parsed", None
+    )
     if not parsed:
         return None
     try:
@@ -53,20 +99,57 @@ def parsed_date(entry) -> str | None:
         return None
 
 
-def score_item(title: str, summary: str, interests: list[dict]) -> tuple[float, list[str]]:
+def keyword_matches(keyword: str, haystack: str) -> bool:
+    needle = keyword.strip().lower()
+    if not needle:
+        return False
+    # Short keywords such as "AI" should match as words, not inside "said".
+    if len(needle) <= 3 and re.fullmatch(r"[a-z0-9+#.-]+", needle):
+        return (
+            re.search(
+                rf"(?<![a-z0-9]){re.escape(needle)}(?![a-z0-9])", haystack
+            )
+            is not None
+        )
+    return needle in haystack
+
+
+def score_item(
+    title: str, summary: str, interests: list[dict]
+) -> tuple[float, list[str], list[str]]:
     haystack = f"{title} {summary}".lower()
     score = 0.0
-    matches: list[str] = []
+    matched_ids: list[str] = []
+    matched_labels: list[str] = []
 
     for interest in interests:
         weight = float(interest.get("weight", 1.0))
-        keywords = interest.get("keywords", [])
-        matched = [k for k in keywords if str(k).lower() in haystack]
-        if matched:
-            score += weight * min(len(matched), 3)
-            matches.append(interest.get("id", "unknown"))
+        keywords = [str(k) for k in interest.get("keywords", [])]
+        matches = [k for k in keywords if keyword_matches(k, haystack)]
+        if matches:
+            score += weight * min(len(matches), 3)
+            matched_ids.append(str(interest.get("id", "unknown")))
+            matched_labels.append(
+                str(interest.get("label") or interest.get("id", "Interest"))
+            )
 
-    return round(score, 2), matches
+    return round(score, 2), matched_ids, matched_labels
+
+
+def fetch_feed(url: str):
+    response = requests.get(
+        url,
+        headers={
+            "User-Agent": USER_AGENT,
+            "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, */*",
+        },
+        timeout=FETCH_TIMEOUT_SECONDS,
+    )
+    response.raise_for_status()
+    parsed = feedparser.parse(response.content)
+    if getattr(parsed, "bozo", False) and not parsed.entries:
+        raise RuntimeError(str(getattr(parsed, "bozo_exception", "invalid feed")))
+    return parsed
 
 
 def collect() -> dict:
@@ -76,69 +159,126 @@ def collect() -> dict:
     interests = interest_config.get("interests", [])
 
     items: list[dict] = []
+    source_status: list[dict] = []
 
-    for source in sources:
-        if not source.get("enabled", True):
-            continue
-        if source.get("type", "rss") not in {"rss", "atom", "feed"}:
-            continue
+    enabled_sources = [
+        source
+        for source in sources
+        if source.get("enabled", True)
+        and source.get("type", "rss") in {"rss", "atom", "feed"}
+        and source.get("url")
+    ]
 
-        feed_url = source.get("url")
-        if not feed_url:
-            continue
+    for source in enabled_sources:
+        feed_url = str(source["url"])
+        source_id = str(source.get("id") or source.get("name") or feed_url)
+        configured_name = str(source.get("name") or "")
+        category = str(source.get("category", "other"))
+        content_type = str(source.get("content_type", "article"))
+        source_priority = float(source.get("priority", 0.5))
 
-        parsed = feedparser.parse(feed_url)
-        source_name = source.get("name") or parsed.feed.get("title") or urlparse(feed_url).netloc
-        category = source.get("category", "other")
+        try:
+            parsed = fetch_feed(feed_url)
+            source_name = configured_name or parsed.feed.get("title") or source_id
+            added = 0
 
-        for entry in parsed.entries:
-            title = clean_text(entry.get("title"))
-            url = entry.get("link", "")
-            if not title or not url:
-                continue
+            for entry in parsed.entries[:MAX_ITEMS_PER_SOURCE]:
+                title = clean_text(entry.get("title"))
+                raw_url = str(entry.get("link", "")).strip()
+                url = canonical_url(raw_url)
+                if not title or not url:
+                    continue
 
-            summary = clean_text(entry.get("summary") or entry.get("description"))
-            score, matched_interests = score_item(title, summary, interests)
+                summary = clean_text(
+                    entry.get("summary")
+                    or entry.get("description")
+                    or entry.get("subtitle")
+                )
+                score, matched_interests, matched_labels = score_item(
+                    title, summary, interests
+                )
+                rank_score = round(score + (source_priority * 0.2), 2)
 
-            items.append(
+                items.append(
+                    {
+                        "id": item_id(url, title),
+                        "title": title,
+                        "url": url,
+                        "summary": summary[:700],
+                        "published_at": parsed_date(entry),
+                        "source": source_name,
+                        "source_id": source_id,
+                        "source_category": category,
+                        "content_type": content_type,
+                        "score": score,
+                        "rank_score": rank_score,
+                        "matched_interests": matched_interests,
+                        "matched_labels": matched_labels,
+                    }
+                )
+                added += 1
+
+            source_status.append(
                 {
-                    "id": item_id(url, title),
-                    "title": title,
-                    "url": url,
-                    "summary": summary[:500],
-                    "published_at": parsed_date(entry),
-                    "source": source_name,
-                    "source_category": category,
-                    "score": score,
-                    "matched_interests": matched_interests,
+                    "id": source_id,
+                    "name": source_name,
+                    "ok": True,
+                    "items": added,
                 }
             )
+        except Exception as exc:
+            source_status.append(
+                {
+                    "id": source_id,
+                    "name": configured_name or source_id,
+                    "ok": False,
+                    "items": 0,
+                    "error": clean_text(str(exc))[:180],
+                }
+            )
+            print(f"[WARN] {source_id}: {exc}")
 
-    # Deduplicate by canonical URL, then rank by interest score and recency string.
     deduped: dict[str, dict] = {}
     for item in items:
         existing = deduped.get(item["url"])
-        if not existing or item["score"] > existing["score"]:
+        if not existing or item["rank_score"] > existing["rank_score"]:
             deduped[item["url"]] = item
 
     ranked = sorted(
         deduped.values(),
-        key=lambda x: (x.get("score", 0), x.get("published_at") or ""),
+        key=lambda x: (
+            x.get("rank_score", 0),
+            x.get("published_at") or "",
+        ),
         reverse=True,
     )[:MAX_ITEMS]
+
+    healthy = sum(1 for status in source_status if status["ok"])
+    if enabled_sources and healthy == 0:
+        raise RuntimeError("All configured feeds failed; keeping the previous dataset.")
 
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "count": len(ranked),
+        "sources": {
+            "configured": len(enabled_sources),
+            "healthy": healthy,
+            "status": source_status,
+        },
         "items": ranked,
     }
 
 
 def main() -> None:
-    OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     result = collect()
-    OUTPUT_FILE.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"Collected {result['count']} items")
+    payload = json.dumps(result, ensure_ascii=False, indent=2) + "\n"
+    for output_file in OUTPUT_FILES:
+        output_file.parent.mkdir(parents=True, exist_ok=True)
+        output_file.write_text(payload, encoding="utf-8")
+    print(
+        f"Collected {result['count']} items "
+        f"from {result['sources']['healthy']}/{result['sources']['configured']} feeds"
+    )
 
 
 if __name__ == "__main__":
