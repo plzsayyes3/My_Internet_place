@@ -1,0 +1,1 @@
+Automation lives in workflows/.
