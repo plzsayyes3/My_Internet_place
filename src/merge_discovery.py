@@ -11,6 +11,7 @@ from __future__ import annotations
 import json
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import urlsplit
 
 from collect import (
     ROOT,
@@ -200,6 +201,10 @@ def _build_discovery_item(
             labels.append(marker)
 
     source = clean_text(str(raw.get("source") or raw.get("publisher") or "Web discovery"))
+    host = urlsplit(url).netloc.lower()
+    if host.startswith("www."):
+        host = host[4:]
+    source_id = str(raw.get("source_id") or f"search:{host or 'web-discovery'}")
     discovered_at = _parse_datetime(raw.get("discovered_at")) or now
     return {
         "id": item_id(url, title),
@@ -208,7 +213,7 @@ def _build_discovery_item(
         "summary": summary,
         "published_at": published_at,
         "source": source,
-        "source_id": str(raw.get("source_id") or "chatgpt_web_discovery"),
+        "source_id": source_id,
         "source_kind": source_kind,
         "source_category": fallback_category,
         "primary_category": category,
