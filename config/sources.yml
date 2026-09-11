@@ -1,17 +1,17 @@
-# Public feed sources for My Internet Place.
-# Keep this list generic and safe for a public repository.
-# Official/primary feeds are preferred; discovery feeds are intentionally lower priority.
-# default_category/default_item_type are fallbacks only; articles are classified individually.
+# Public RSS/Atom sources for My Internet Place.
+# default_topics are fallback hints only; each article is classified from its own text.
+# BLOG is represented by source_kind, not content_type.
 
-version: 3
+version: 4
 
 sources:
   - id: openai_news
     name: OpenAI News
     type: rss
     url: https://openai.com/news/rss.xml
-    default_category: ai
-    default_item_type: news
+    default_topics: [llm_ai_tools, ai_agents_automation]
+    source_kind: official
+    default_content_type: news
     priority: 1.0
     enabled: true
 
@@ -19,8 +19,9 @@ sources:
     name: OpenRouter Blog
     type: rss
     url: https://openrouter.ai/blog/feed.xml
-    default_category: ai
-    default_item_type: blog
+    default_topics: [llm_ai_tools]
+    source_kind: official
+    default_content_type: news
     priority: 0.95
     enabled: true
 
@@ -28,8 +29,9 @@ sources:
     name: Google AI Blog
     type: rss
     url: https://blog.google/technology/ai/rss/
-    default_category: ai
-    default_item_type: blog
+    default_topics: [llm_ai_tools]
+    source_kind: official
+    default_content_type: news
     priority: 0.9
     enabled: true
 
@@ -37,8 +39,9 @@ sources:
     name: Obsidian Blog
     type: rss
     url: https://obsidian.md/feed.xml
-    default_category: knowledge
-    default_item_type: blog
+    default_topics: [obsidian_pkm, personal_knowledge]
+    source_kind: official
+    default_content_type: news
     priority: 1.0
     max_age_days: 240
     enabled: true
@@ -47,8 +50,9 @@ sources:
     name: Obsidian Changelog
     type: rss
     url: https://obsidian.md/changelog.xml
-    default_category: knowledge
-    default_item_type: release
+    default_topics: [obsidian_pkm]
+    source_kind: official
+    default_content_type: release
     priority: 0.95
     max_age_days: 240
     enabled: true
@@ -57,8 +61,9 @@ sources:
     name: GitHub Changelog
     type: rss
     url: https://github.blog/changelog/feed/
-    default_category: software
-    default_item_type: release
+    default_topics: [github_devops]
+    source_kind: official
+    default_content_type: release
     priority: 0.95
     enabled: true
 
@@ -66,8 +71,9 @@ sources:
     name: GitHub Blog
     type: rss
     url: https://github.blog/feed/
-    default_category: software
-    default_item_type: article
+    default_topics: [github_devops, indie_open_source]
+    source_kind: official
+    default_content_type: news
     priority: 0.75
     enabled: true
 
@@ -75,8 +81,9 @@ sources:
     name: Apple Developer News (JP)
     type: rss
     url: https://developer.apple.com/jp/news/rss/news.rss
-    default_category: devices
-    default_item_type: news
+    default_topics: [apple_ecosystem]
+    source_kind: official
+    default_content_type: news
     priority: 0.9
     enabled: true
 
@@ -84,8 +91,9 @@ sources:
     name: Raspberry Pi News
     type: rss
     url: https://www.raspberrypi.com/news/feed/
-    default_category: devices
-    default_item_type: article
+    default_topics: [embedded_devices]
+    source_kind: official
+    default_content_type: news
     priority: 0.85
     enabled: true
 
@@ -93,8 +101,9 @@ sources:
     name: Simon Willison's Weblog
     type: atom
     url: https://simonwillison.net/atom/everything/
-    default_category: ai
-    default_item_type: blog
+    default_topics: [llm_ai_tools, ai_coding]
+    source_kind: blog
+    default_content_type: analysis
     priority: 0.85
     enabled: true
 
@@ -102,8 +111,9 @@ sources:
     name: Hackaday
     type: rss
     url: https://hackaday.com/blog/feed/
-    default_category: make
-    default_item_type: article
+    default_topics: [embedded_devices, 3d_printing]
+    source_kind: publication
+    default_content_type: news
     priority: 0.65
     enabled: true
 
@@ -111,7 +121,8 @@ sources:
     name: Hacker News via HNRSS
     type: rss
     url: https://hnrss.org/frontpage
-    default_category: other
-    default_item_type: news
+    default_topics: []
+    source_kind: community
+    default_content_type: news
     priority: 0.5
     enabled: true

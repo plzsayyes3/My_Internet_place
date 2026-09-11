@@ -1,38 +1,38 @@
-# Public interest profile for My Internet Place.
-# This file intentionally contains only broad, public-safe preferences.
-# Taxonomy structure lives in taxonomy.yml; active-search terms live in discovery.yml.
+# Public-safe personal interest weights for My Internet Place.
+# Stable category/topic definitions live in taxonomy.yml.
+# Active-search queries live in discovery.yml.
 
 version: 3
 
 topic_weights:
-  llm_tools: 1.0
+  llm_ai_tools: 1.00
   ai_agents_automation: 1.35
-  ai_coding: 1.2
+  ai_coding: 1.20
   obsidian_pkm: 1.25
-  personal_knowledge_recording: 1.15
-  local_first: 1.0
+  personal_knowledge: 1.15
+  local_first: 1.00
   systems_thinking: 0.95
-  web_app_development: 1.05
   github_devops: 1.05
-  personal_web_rss: 1.0
-  hci_interfaces: 1.0
-  small_computing: 1.45
-  epaper_wearables: 1.45
-  apple_ios: 1.05
+  web_apps: 1.05
+  indie_open_source: 0.90
+  embedded_devices: 1.45
+  e_paper: 1.45
+  wearables: 1.25
   input_devices: 1.45
-  3d_printing: 1.0
-  diy_electronics: 0.95
-  task_time_management: 1.0
-  workflow_design: 1.05
+  3d_printing: 1.00
+  task_time_management: 1.00
   management_teams: 0.95
-  early_childhood: 1.0
-  child_development: 1.0
-  education_practice: 0.9
+  work_design: 1.05
+  early_childhood: 1.00
+  child_development: 1.00
+  noncognitive_learning: 0.95
   life_design: 0.85
-  slow_productivity: 0.9
+  apple_ecosystem: 1.05
+  personal_web_rss: 1.00
+  hci_interfaces: 1.00
 
-# Signals are not navigation categories. They describe what tends to catch attention
-# inside a broader topic. Positive weights boost; negative weights downrank.
+# Signals refine attention inside a topic. They are not navigation categories.
+# Positive weights boost; negative weights downrank.
 interest_signals:
   - id: compact_devices
     label: 小型・携帯デバイス
@@ -148,7 +148,6 @@ interest_signals:
       - 大型ロボット
       - ロボットアーム
 
-# Combination bonuses express preferences that are stronger than individual words.
 combinations:
   - id: pocket_epaper
     label: 小型電子ペーパー端末
@@ -175,6 +174,34 @@ combinations:
     bonus: 1.15
 
 ranking:
+  signals:
+    direct_interest: 1.0
+    related_interest: 0.35
+    freshness: 0.60
+    source_priority: 0.20
+    content_type_preference: 0.20
+
+  penalties:
+    duplicate_story: 1.0
+    source_repetition: 0.20
+    topic_repetition: 0.15
+    stale_item: 0.50
+    thin_content: 0.30
+
+  discovery:
+    enabled: false
+    relation_min: 0.35
+    relation_max: 0.80
+    bonus: 0.25
+
+  feedback:
+    interested:
+      direct_topic: 0.15
+      related_topic: 0.04
+    not_interested:
+      direct_topic: -0.20
+      related_topic: -0.02
+
   prefer:
     - recent_items
     - primary_sources
@@ -182,6 +209,7 @@ ranking:
     - practical_examples
     - thoughtful_long_form
     - compact_personal_devices
+
   downrank:
     - stale_items
     - duplicate_stories

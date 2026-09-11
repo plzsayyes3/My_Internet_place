@@ -3,47 +3,56 @@ from pathlib import Path
 
 from src.collect import classify_item, load_yaml, score_preferences
 
-
 ROOT = Path(__file__).resolve().parents[1]
 TAXONOMY = load_yaml(ROOT / "config" / "taxonomy.yml")
 INTERESTS = load_yaml(ROOT / "config" / "interests.yml")
+DISCOVERY = load_yaml(ROOT / "config" / "discovery.yml")
 TOPICS = TAXONOMY.get("topics", [])
-VALID_CATEGORIES = {
-    str(category["id"])
-    for category in TAXONOMY.get("categories", [])
-    if category.get("id")
-}
+VALID_CATEGORIES = {str(x["id"]) for x in TAXONOMY.get("categories", []) if x.get("id")}
+CLASSIFICATION = TAXONOMY.get("classification", {})
 
 
-def classify_and_score(title: str, summary: str, fallback: str = "make"):
-    category, matched_topics = classify_item(
-        title,
-        summary,
-        TOPICS,
-        VALID_CATEGORIES,
-        fallback,
+def classify_and_score(title: str, summary: str, fallback: str = "make", default_topics=None):
+    category, topics = classify_item(
+        title, summary, TOPICS, VALID_CATEGORIES, fallback,
+        fallback_topic_ids=default_topics or [], classification=CLASSIFICATION,
     )
-    score, signals, combinations, components = score_preferences(
-        title,
-        summary,
-        matched_topics,
-        INTERESTS,
-    )
-    return category, matched_topics, score, signals, combinations, components
+    score, signals, combinations, components = score_preferences(title, summary, topics, INTERESTS)
+    return category, topics, score, signals, combinations, components
 
 
-class PersonalScoringTests(unittest.TestCase):
-    def test_cyberdeck_epaper_is_strongly_boosted(self):
+class TaxonomyV3Tests(unittest.TestCase):
+    def test_display_categories_are_the_approved_eight(self):
+        self.assertEqual(
+            [x["id"] for x in TAXONOMY["categories"]],
+            ["ai", "knowledge", "software", "make", "work", "education", "life", "web"],
+        )
+
+    def test_topic_vocabulary_is_capped_at_25(self):
+        self.assertEqual(len(TOPICS), 25)
+        self.assertLessEqual(int(CLASSIFICATION["max_topics_per_item"]), 3)
+
+    def test_blog_and_long_read_are_separate_axes(self):
+        content_types = {x["id"] for x in TAXONOMY["content_types"]}
+        source_kinds = {x["id"] for x in TAXONOMY["source_kinds"]}
+        depths = {x["id"] for x in TAXONOMY["reading_depths"]}
+        self.assertNotIn("blog", content_types)
+        self.assertIn("blog", source_kinds)
+        self.assertNotIn("long_read", content_types)
+        self.assertIn("long", depths)
+
+    def test_cyberdeck_epaper_is_make_and_strongly_boosted(self):
         category, topics, score, signals, combinations, _ = classify_and_score(
             "Build a pocket ESP32 e-paper cyberdeck",
             "A handheld low-power terminal with a keyboard and e-paper display.",
         )
-
-        self.assertEqual(category, "devices")
-        self.assertIn("small_computing", {topic["id"] for topic in topics})
-        self.assertIn("epaper_wearables", {topic["id"] for topic in topics})
-        self.assertIn("cyberdeck", {signal["id"] for signal in signals})
-        self.assertIn("cyberdeck_build", {combo["id"] for combo in combinations})
+        ids = {x["id"] for x in topics}
+        self.assertEqual(category, "make")
+        self.assertIn("embedded_devices", ids)
+        self.assertIn("e_paper", ids)
+        self.assertLessEqual(len(topics), 3)
+        self.assertIn("cyberdeck", {x["id"] for x in signals})
+        self.assertIn("cyberdeck_build", {x["id"] for x in combinations})
         self.assertGreater(score, 8.0)
 
     def test_large_industrial_robotics_is_downranked(self):
@@ -51,35 +60,33 @@ class PersonalScoringTests(unittest.TestCase):
             "New industrial robot arm for warehouse automation",
             "A large industrial robotics platform for factories.",
         )
-
-        self.assertIn("large_robotics", {signal["id"] for signal in signals})
+        self.assertIn("large_robotics", {x["id"] for x in signals})
         self.assertEqual(combinations, [])
         self.assertLess(components["signals"], 0)
         self.assertLess(score, 0)
 
-    def test_general_small_electronics_still_matches_without_cyberdeck_bonus(self):
-        _, topics, score, signals, combinations, _ = classify_and_score(
-            "ESP32 electronics project with PCB",
-            "A general maker tutorial for a development board.",
-        )
-
-        self.assertIn("small_computing", {topic["id"] for topic in topics})
-        self.assertIn("diy_electronics", {topic["id"] for topic in topics})
-        self.assertIn(
-            "practical_small_computing", {signal["id"] for signal in signals}
-        )
-        self.assertNotIn("cyberdeck_build", {combo["id"] for combo in combinations})
-        self.assertGreater(score, 0)
-
-    def test_source_category_is_only_a_fallback(self):
+    def test_source_default_topics_are_fallback_only(self):
         category, topics, *_ = classify_and_score(
-            "A quiet unrelated essay",
-            "No configured topic terms appear here.",
-            fallback="education",
+            "A quiet unrelated essay", "No configured topic terms appear here.",
+            fallback="other", default_topics=["early_childhood"],
         )
-
         self.assertEqual(category, "education")
-        self.assertEqual(topics, [])
+        self.assertEqual([x["id"] for x in topics], ["early_childhood"])
+        self.assertTrue(topics[0]["fallback"])
+
+    def test_article_text_overrides_source_default_topic(self):
+        category, topics, *_ = classify_and_score(
+            "Obsidian local-first notes", "A local-first PKM workflow.",
+            fallback="education", default_topics=["early_childhood"],
+        )
+        self.assertEqual(category, "knowledge")
+        self.assertIn("obsidian_pkm", {x["id"] for x in topics})
+        self.assertNotIn("early_childhood", {x["id"] for x in topics})
+
+    def test_discovery_queries_reference_valid_topics(self):
+        valid = {x["id"] for x in TOPICS}
+        referenced = {topic for query in DISCOVERY.get("queries", []) for topic in query.get("topics", [])}
+        self.assertTrue(referenced.issubset(valid), referenced - valid)
 
 
 if __name__ == "__main__":

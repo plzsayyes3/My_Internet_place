@@ -1,52 +1,32 @@
 # My Internet Place — Genre / Recommendation Taxonomy v3
 
-Status: **approved design, implementation not started**  
+Status: **base v3 implementation prepared**  
 Updated: 2026-09-11
 
-This document is the current source of truth for the next classification-system change in `plzsayyes3/My_Internet_place`.
+This document is the source of truth for classification and recommendation taxonomy in `plzsayyes3/My_Internet_place`.
 
 ## For other AI / contributors
 
-Before editing implementation files for this work:
+Before changing taxonomy, scoring, sources, or recommendation behavior:
 
 1. Read this document first.
-2. Check the latest `main` HEAD and the current blob SHA of every file you intend to edit.
-3. Do not perform unrelated refactors.
-4. Preserve the currently working RSS/Atom collection, `FOR YOU`, and `LATEST` behavior while migrating.
-5. Do not invent a competing taxonomy without first updating this design decision.
-6. Internal IDs defined here should be treated as stable once implemented. UI labels may change later.
-7. `DISCOVERY` is a recommendation surface, not a genre.
-8. `BLOG` is a source kind, not a content type.
-9. `LONG READ` is reading depth, not a content type.
-
-The intended implementation unit is:
-
-- `config/interests.yml` v3
-- `config/sources.yml` migration
-- `src/collect.py` compatibility / classification changes
-
-Do not start UI redesign or feedback-learning implementation until the v3 data flow is stable.
+2. Check the latest `main` HEAD and blob SHA of every file you will edit.
+3. Preserve the working RSS/Atom collection and existing `FOR YOU` / `LATEST` behavior.
+4. Do not perform unrelated refactors in the same change.
+5. Internal category/topic IDs below are stable. UI labels may change.
+6. `DISCOVERY` is a recommendation surface, not a genre.
+7. `BLOG` is a source kind, not a content type.
+8. `LONG READ` is reading depth, not a content type.
+9. Active-search phrases belong in `config/discovery.yml`, not in the taxonomy.
+10. If another AI is working in parallel, re-read HEAD and target SHAs immediately before writing.
 
 ---
 
-## 1. Design goal
+## 1. Goal
 
-My Internet Place is not a general-purpose news classifier. Its taxonomy should model the owner's recurring interests closely enough to support:
+My Internet Place is not a general-purpose news classifier. It is a personal information radar: classification should model recurring interests well enough to support ranking, feedback learning, source-bias correction, nearby-interest recommendations, and controlled serendipity.
 
-- `FOR YOU` ranking
-- `気になる` / `興味なし` feedback later
-- source-bias correction
-- recommendations from nearby interests
-- controlled serendipity / `DISCOVERY`
-- search-term expansion later
-
-The system separates **what an item is about** from **what kind of item it is**, **where it came from**, **how heavy it is to read**, and **why it was recommended**.
-
----
-
-## 2. Five independent axes
-
-Each article/item should eventually have these independent properties:
+The system separates:
 
 ```text
 ARTICLE
@@ -57,7 +37,7 @@ ARTICLE
 └─ reading_depth      # reading weight
 ```
 
-Recommendation reason is separate from classification:
+Recommendation reason is separate:
 
 ```text
 recommendation_reason:
@@ -66,9 +46,63 @@ recommendation_reason:
 
 ---
 
+## 2. Configuration architecture
+
+The conceptual v3 model is split across four files so stable taxonomy and changing interests do not conflict.
+
+### `config/taxonomy.yml`
+
+Stable classification vocabulary:
+
+- 8 display categories
+- 25 internal topics
+- classification keywords
+- topic relations
+- content types
+- source kinds
+- reading depths
+- classification rules
+
+### `config/interests.yml`
+
+Public-safe personal preference profile:
+
+- topic weights
+- attention signals
+- combination bonuses
+- ranking parameters
+- future feedback/discovery parameters
+
+### `config/discovery.yml`
+
+Active-search vocabulary:
+
+- search queries
+- query weights
+- related topic IDs
+
+This is intentionally separate from taxonomy keywords. A temporary interest such as `cyberdeck` or `ポケモン` must not force a new permanent topic.
+
+### `config/sources.yml`
+
+Feed acquisition metadata:
+
+- RSS/Atom URL
+- `default_topics`
+- `source_kind`
+- `default_content_type`
+- source priority
+- freshness limit
+
+`default_topics` are fallback hints only. Article text has priority.
+
+This four-file split replaces the earlier draft idea of putting taxonomy structure, weights, and search terms together in `interests.yml`. The conceptual five-axis model is unchanged.
+
+---
+
 ## 3. Display categories
 
-Only these eight coarse categories should be exposed as the main genre navigation.
+Only these eight categories are permanent main navigation:
 
 | ID | UI label |
 |---|---|
@@ -84,14 +118,14 @@ Only these eight coarse categories should be exposed as the main genre navigatio
 Rules:
 
 - Keep top-level categories around 7–8.
-- Do not add a new top-level category merely because a new keyword or product becomes interesting.
-- `DISCOVERY` must not become a category. It belongs beside `FOR YOU` / `LATEST` as a recommendation mode.
+- Do not add a category just because a product or temporary interest appears.
+- `DISCOVERY` belongs beside `FOR YOU` / `LATEST`, never inside this list.
 
 ---
 
 ## 4. Internal topics
 
-Use the following 25 topics as the initial active vocabulary.
+Initial active vocabulary is exactly 25 topics.
 
 ### AI
 
@@ -142,63 +176,51 @@ Use the following 25 topics as the initial active vocabulary.
 - `personal_web_rss` — 個人Web・RSS
 - `hci_interfaces` — HCI・インターフェース
 
-### Topic growth rule
+Each item receives at most 3 topics.
 
-The active topic vocabulary should normally stay at **25 or fewer**.
+### Growth rule
 
-Create a new topic only when an existing topic cannot distinguish recommendation behavior. Product names and temporary interests should normally become keywords or search terms, not new topics.
-
-Examples:
+Create a new topic only when existing topics cannot distinguish recommendation behavior. Normally:
 
 - ESP32 / M5Stack / Raspberry Pi → `embedded_devices`
-- specific keyboard products → `input_devices`
-- a temporary interest such as `cyberdeck` → usually a search term under related topics, not a new topic
-
-Each item should have at most **3 topics**.
+- e-paper products → `e_paper`
+- keyboards / T9 / HID → `input_devices`
+- Cyberdeck → search query / signal connected to existing topics
 
 ---
 
-## 5. Keywords and search terms are different
+## 5. Keywords vs search queries
 
-`keywords` and `search_terms` must remain separate.
+Classification keywords answer:
 
-```yaml
-keywords:
-  - ESP32
-  - M5Stack
-  - microcontroller
+> What is this collected item about?
 
-search_terms:
-  - compact ESP32 device
-  - pocket cyberdeck
-  - tiny e-paper computer
-```
+They live in `taxonomy.yml`.
 
-Meaning:
+Search queries answer:
 
-- `keywords` = classify / score items already collected
-- `search_terms` = later, actively search the web for more material
+> What should the system actively look for next?
 
-A changing search interest should not force a taxonomy change.
+They live in `discovery.yml`.
+
+These must remain separate. Search interests can change rapidly without changing stable topic IDs.
 
 ---
 
 ## 6. Content types
 
-Initial values:
+Initial stable values:
 
-| ID | UI label |
-|---|---|
-| `news` | NEWS |
-| `release` | RELEASE |
-| `tool` | TOOL |
-| `paper` | PAPER |
-| `how_to` | HOW-TO |
-| `analysis` | ANALYSIS |
-| `essay` | ESSAY |
-| `case_study` | CASE STUDY |
+- `news` — NEWS
+- `release` — RELEASE
+- `tool` — TOOL
+- `paper` — PAPER
+- `how_to` — HOW-TO
+- `analysis` — ANALYSIS
+- `essay` — ESSAY
+- `case_study` — CASE STUDY
 
-Do not use `blog` as a content type. A blog post can be a release, how-to, analysis, essay, etc.
+`blog` is not a content type.
 
 ---
 
@@ -213,7 +235,7 @@ Initial values:
 - `community`
 - `repository`
 
-`BLOG` belongs here.
+A blog article may still have content type `analysis`, `essay`, `release`, etc.
 
 ---
 
@@ -227,244 +249,149 @@ Initial values:
 
 The UI may display `long` as `LONG READ`.
 
-`LONG READ` must not be encoded as a content type.
+---
+
+## 9. Topic relations
+
+Topics form a small weighted undirected graph rather than a strict tree. Categories are shelves; relations are recommendation distance.
+
+Important examples:
+
+```text
+llm_ai_tools ↔ ai_agents_automation
+ai_agents_automation ↔ ai_coding
+obsidian_pkm ↔ personal_knowledge
+obsidian_pkm ↔ local_first
+github_devops ↔ web_apps
+embedded_devices ↔ e_paper
+e_paper ↔ wearables
+input_devices ↔ hci_interfaces
+task_time_management ↔ work_design
+early_childhood ↔ child_development
+early_childhood ↔ noncognitive_learning
+apple_ecosystem ↔ wearables
+```
+
+Exact weights are stored in `taxonomy.yml`.
 
 ---
 
-## 9. Topic relationships
+## 10. Current classification behavior
 
-Topics are not a strict tree. The category → topic hierarchy is for coarse organization, while topic-to-topic relations form a small weighted graph for recommendation expansion.
+The collector should:
 
-Representative relations:
+1. Match article title and summary against topic keywords.
+2. Weight title matches more strongly than summary matches.
+3. Keep at most 3 highest-scoring topics.
+4. Derive `primary_category` from the highest topic.
+5. Only when article text produces no topic, use source `default_topics` as fallback.
+6. Apply personal topic weights, signals, and combination bonuses from `interests.yml`.
+7. Preserve compatibility fields until the current Pages UI no longer needs them.
 
-```yaml
-relations:
-  - topics: [llm_ai_tools, ai_agents_automation]
-    weight: 0.90
-  - topics: [ai_agents_automation, ai_coding]
-    weight: 0.85
-  - topics: [obsidian_pkm, personal_knowledge]
-    weight: 0.95
-  - topics: [obsidian_pkm, local_first]
-    weight: 0.80
-  - topics: [github_devops, web_apps]
-    weight: 0.85
-  - topics: [embedded_devices, e_paper]
-    weight: 0.85
-  - topics: [e_paper, wearables]
-    weight: 0.90
-  - topics: [input_devices, hci_interfaces]
-    weight: 0.90
-  - topics: [task_time_management, work_design]
-    weight: 0.90
-  - topics: [early_childhood, child_development]
-    weight: 0.95
-  - topics: [early_childhood, noncognitive_learning]
-    weight: 0.90
-  - topics: [apple_ecosystem, wearables]
-    weight: 0.80
-```
+Temporary preference signals already retained include:
 
-Relations should be treated as undirected unless a future design explicitly requires directionality.
+- compact / handheld devices
+- cyberdecks
+- e-paper devices
+- practical small computing
+- custom input devices
+- local-first personal tools
+- calm personal technology
+- negative weight for large industrial robotics
+
+These are preference signals, not navigation topics.
 
 ---
 
-## 10. Planned `interests.yml` v3 shape
+## 11. Source migration
 
-The intended top-level structure is:
-
-```yaml
-version: 3
-
-categories: []
-topics: []
-relations: []
-content_types: []
-source_kinds: []
-reading_depths: []
-classification: {}
-ranking: {}
-```
-
-Each topic should support at least:
-
-```yaml
-- id: e_paper
-  label: 電子ペーパー
-  category: make
-  weight: 1.0
-  keywords: []
-  search_terms: []
-```
-
-Classification defaults:
-
-```yaml
-classification:
-  max_topics_per_item: 3
-  minimum_topic_score: 0.25
-
-  primary_category:
-    strategy: highest_scoring_topic
-
-  topic_matching:
-    title_multiplier: 2.0
-    summary_multiplier: 1.0
-    max_keyword_matches_per_topic: 3
-
-  fallback:
-    use_source_default_topics: true
-
-  unknown:
-    allow_unclassified: true
-```
-
----
-
-## 11. Planned `sources.yml` migration
-
-Current source-level `category` should eventually be replaced by fallback metadata such as:
+Sources use this shape:
 
 ```yaml
 - id: hackaday
   name: Hackaday
   type: rss
   url: https://hackaday.com/blog/feed/
-
   default_topics:
     - embedded_devices
     - 3d_printing
-
   source_kind: publication
   default_content_type: news
-
   priority: 0.65
   enabled: true
 ```
 
-Important:
-
-- `default_topics` are fallback hints, not the final article classification.
-- Article text should be allowed to classify an individual Hackaday item as `e_paper`, `wearables`, `input_devices`, etc.
-- Migration should preserve current sources and collection behavior.
+Do not classify every Hackaday item as MAKE merely because of the source. Article text may classify it as `e_paper`, `wearables`, `input_devices`, etc.
 
 ---
 
-## 12. Planned item JSON
+## 12. Generated item shape
 
-Target shape:
+The v3 base dataset should expose the new fields while retaining compatibility aliases:
 
 ```json
 {
-  "id": "abc123",
-  "title": "Building an E-Ink Wrist Computer with ESP32",
-  "url": "https://example.com/article",
-  "published_at": "2026-09-11T01:00:00+00:00",
-
-  "source": "Example Blog",
-  "source_id": "example_blog",
-  "source_kind": "blog",
-
+  "source_kind": "publication",
   "primary_category": "make",
-
   "topics": [
-    {"id": "e_paper", "score": 0.94},
-    {"id": "wearables", "score": 0.81},
-    {"id": "embedded_devices", "score": 0.73}
+    {"id": "e_paper", "score": 0.83},
+    {"id": "embedded_devices", "score": 0.67}
   ],
-
-  "content_type": "how_to",
-  "reading_depth": "long",
-
+  "content_type": "news",
+  "reading_depth": "standard",
   "signals": {
-    "direct_interest": 0.91,
-    "related_interest": 0.21,
-    "freshness": 0.88,
+    "direct_interest": 6.2,
+    "related_interest": 0.0,
+    "freshness": 0.9,
     "source_priority": 0.65
   },
-
-  "recommendation_reason": "direct",
-  "rank_score": 4.82
+  "recommendation_reason": "direct"
 }
 ```
 
-Not every field needs to be introduced in the first migration commit. The important first milestone is stable `primary_category` + `topics` while preserving existing ranking/output compatibility.
+Compatibility fields such as `source_category`, `item_type`, `topic_ids`, `topic_labels`, `matched_interests`, and `matched_labels` may remain during migration.
 
 ---
 
 ## 13. Recommendation connection
 
-Future ranking should be able to combine:
+Future ranking can combine:
 
 ```text
-score =
-  direct_interest
-+ related_interest
-+ content_type_preference
+direct interest
++ related-topic interest
++ content-type preference
 + freshness
-+ source_quality / source_priority
-+ discovery_bonus
-- source_repetition
-- topic_repetition
++ source priority / quality
++ discovery bonus
+- source repetition
+- topic repetition
 ```
 
-Feedback should update topics primarily, not entire categories.
+Feedback should primarily update topic affinity, not whole categories.
 
-Example:
-
-```text
-Interested in an e-paper article:
-  e_paper          +0.15
-  wearables        +0.05
-  embedded_devices +0.04
-
-Not interested:
-  e_paper          -0.20
-  closely related topics only slightly negative
-```
-
-Do not downrank the whole `MAKE` category because one specific topic received negative feedback.
+A negative reaction to one `e_paper` item must not automatically downrank all of MAKE.
 
 ---
 
-## 14. DISCOVERY behavior
+## 14. DISCOVERY
 
-`DISCOVERY` should produce **nearby but not identical** interests rather than random unrelated content.
+`DISCOVERY` should later use the topic graph to find nearby-but-not-identical material, roughly 1–2 hops from strong interests. It should not be random unrelated content.
 
-Conceptually:
-
-```text
-high-interest topic
-    ↓
-related topic graph
-    ↓
-1–2 hops away
-    ↓
-high-quality candidate
-```
-
-Initial relation window under consideration:
-
-```yaml
-discovery:
-  relation_min: 0.35
-  relation_max: 0.80
-```
-
-This should be implemented only after the base v3 classification is stable.
+The active-search file currently remains disabled. Its query vocabulary can evolve independently before the search collector is implemented.
 
 ---
 
 ## 15. UI rule
 
-Do **not** expose all 25 topics as permanent top-level navigation.
+Do not expose all 25 topics as permanent navigation.
 
 Main navigation remains compact:
 
 ```text
 FOR YOU
 LATEST
-DISCOVERY
+DISCOVERY   # future recommendation surface
 
 AI
 KNOWLEDGE
@@ -476,50 +403,28 @@ LIFE
 WEB
 ```
 
-Individual cards may show small topic/type/depth badges when useful, for example:
-
-```text
-MAKE
-E-PAPER · WEARABLE · HOW-TO · LONG READ
-```
+Cards may later show compact topic/type/depth badges.
 
 ---
 
-## 16. Safe implementation order
+## 16. Migration status and next steps
 
-Implement in this order:
+Base v3 implementation scope:
 
-1. Convert `config/interests.yml` to the v3 schema.
-2. Migrate `config/sources.yml` to `default_topics`, `source_kind`, and `default_content_type` while retaining compatibility as needed.
-3. Update `src/collect.py` to read the v3 schema.
-4. Add `primary_category` and scored `topics` to generated item JSON.
-5. Verify existing collection and existing `FOR YOU` / `LATEST` views still work.
-6. Add the 8-category UI filtering/navigation.
-7. Only after that, implement `DISCOVERY` and feedback learning.
+- migrate stable taxonomy to approved 8 categories / 25 topics
+- migrate source metadata to `default_topics`, `source_kind`, `default_content_type`
+- emit scored `topics` and `primary_category`
+- preserve existing scoring signals and compatibility fields
+- update minimal category filtering in the current Pages UI
+- add regression tests for taxonomy invariants and key personal-interest behavior
 
-The first implementation should favor backward compatibility over redesign purity.
+After this base is stable:
 
----
+1. observe actual collected classifications and tune keywords/weights
+2. improve content-type and reading-depth inference if needed
+3. design `気になる` / `興味なし` storage without exposing private history
+4. implement related-topic ranking
+5. implement `DISCOVERY`
+6. implement active web search from `discovery.yml`
 
-## 17. Scope guard for parallel AI work
-
-Until the v3 base migration is complete:
-
-### In scope
-
-- `config/interests.yml`
-- `config/sources.yml`
-- `src/collect.py`
-- generated JSON compatibility related to taxonomy
-- minimal UI compatibility required to avoid breakage
-
-### Out of scope unless separately assigned
-
-- broad visual redesign
-- unrelated feed-source expansion
-- translation
-- AI summarization
-- user-history publication/storage changes
-- large refactors outside taxonomy/classification
-
-If another AI is working in parallel, re-read the latest HEAD and target file SHA immediately before writing.
+Out of scope for the base migration: broad visual redesign, translation, AI summaries, private history publication, and unrelated feed expansion.

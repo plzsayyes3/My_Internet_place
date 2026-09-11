@@ -1,187 +1,276 @@
 # Stable public taxonomy for My Internet Place.
-# Categories are for browsing. Topics are for classification and recommendation.
-# Keep this file generic and safe for a public repository.
+# Categories are for browsing. Topics are for classification/recommendation.
+# Personal weights live in interests.yml; active-search queries live in discovery.yml.
 
-version: 1
+version: 3
 
 categories:
   - id: ai
     label: AI
+    order: 10
   - id: knowledge
     label: KNOWLEDGE
+    order: 20
   - id: software
     label: SOFTWARE
-  - id: devices
-    label: DEVICES
+    order: 30
   - id: make
     label: MAKE
+    order: 40
   - id: work
     label: WORK
+    order: 50
   - id: education
     label: EDUCATION
+    order: 60
   - id: life
     label: LIFE
+    order: 70
+  - id: web
+    label: WEB
+    order: 80
 
 topics:
-  - id: llm_tools
+  - id: llm_ai_tools
     label: LLM・AIツール
     category: ai
-    keywords: [LLM, OpenAI, ChatGPT, Gemini, Claude, Anthropic, OpenRouter, 生成AI]
+    keywords: [LLM, large language model, OpenAI, ChatGPT, Gemini, Claude, Anthropic, OpenRouter, 生成AI]
 
   - id: ai_agents_automation
     label: AIエージェント・自動化
     category: ai
-    keywords: [AI agent, AI agents, agentic, agent workflow, MCP, automation, AIエージェント]
+    keywords: [AI agent, AI agents, agentic, autonomous agent, agent workflow, MCP, tool calling, AI automation, AIエージェント]
 
   - id: ai_coding
     label: AIコーディング
     category: ai
-    keywords: [AI coding, coding agent, code assistant, Codex, Claude Code, GitHub Copilot]
+    keywords: [AI coding, coding agent, coding assistant, Codex, Claude Code, Gemini CLI, GitHub Copilot, vibe coding]
 
   - id: obsidian_pkm
     label: Obsidian・PKM
     category: knowledge
-    keywords: [Obsidian, PKM, personal knowledge management, second brain, 第二の脳]
+    keywords: [Obsidian, PKM, personal knowledge management, second brain, backlink, graph view, 第二の脳, ナレッジ管理]
 
-  - id: personal_knowledge_recording
-    label: 個人知識・記録
+  - id: personal_knowledge
+    label: 記録・知識管理
     category: knowledge
-    keywords: [note taking, personal knowledge, journaling, digital garden, knowledge management, 記録, ノート術]
+    legacy_ids: [personal_knowledge_recording]
+    keywords: [note taking, journaling, personal archive, knowledge base, digital garden, personal knowledge, life logging, 記録, 知識管理, ノート術]
 
   - id: local_first
     label: Local-first
     category: knowledge
-    keywords: [local-first, local first, offline first, CRDT, Markdown]
+    keywords: [local-first, local first, offline first, CRDT, local data, data ownership, file over app]
 
   - id: systems_thinking
     label: 思考法・システム思考
     category: knowledge
-    keywords: [systems thinking, system thinking, thinking tools, mental model, HCI, システム思考, 思考法]
-
-  - id: web_app_development
-    label: Webアプリ制作
-    category: software
-    keywords: [web app, browser app, frontend, JavaScript, TypeScript, static site, Webアプリ]
+    keywords: [systems thinking, system thinking, mental model, cognitive tools, sensemaking, thinking tools, tools for thought, システム思考, 思考法]
 
   - id: github_devops
     label: GitHub・Actions
     category: software
-    keywords: [GitHub, GitHub Actions, GitHub Pages, CI/CD, workflow, open source]
+    keywords: [GitHub, GitHub Actions, GitHub Pages, CI/CD, repository, Git workflow]
 
-  - id: personal_web_rss
-    label: 個人Web・RSS
+  - id: web_apps
+    label: Webアプリ
     category: software
-    keywords: [RSS, Atom, feed reader, IndieWeb, indie web, personal web, personal website, blogroll, 個人サイト, フィード]
+    legacy_ids: [web_app_development]
+    keywords: [web app, web application, browser app, JavaScript, TypeScript, PWA, static site, frontend, Webアプリ]
 
-  - id: hci_interfaces
-    label: HCI・インターフェース
+  - id: indie_open_source
+    label: Indie Software・OSS
     category: software
-    keywords: [HCI, human computer interaction, interface design, interaction design, UI experiment]
+    keywords: [open source, OSS, indie software, indie hacker, solo developer, self hosted, self-hosted]
 
-  - id: small_computing
-    label: 小型コンピューティング
-    category: devices
-    keywords: [ESP32, M5Stack, M5Stick, Raspberry Pi, microcontroller, micro computer, handheld computer, pocket computer, 小型端末, 小型デバイス]
+  - id: embedded_devices
+    label: ESP32・小型デバイス
+    category: make
+    legacy_ids: [small_computing, diy_electronics]
+    keywords: [ESP32, ESP32-S3, M5Stack, M5Stick, Raspberry Pi, microcontroller, micro computer, handheld computer, pocket computer, embedded device, Arduino, PCB, 小型端末, 小型デバイス, 電子工作]
 
-  - id: epaper_wearables
-    label: 電子ペーパー・ウェアラブル
-    category: devices
-    keywords: [e-paper, epaper, e-ink, eink, electronic paper, wearable, smartwatch, Watchy, 電子ペーパー, ウェアラブル]
+  - id: e_paper
+    label: 電子ペーパー
+    category: make
+    legacy_ids: [epaper_wearables]
+    keywords: [e-paper, epaper, e-ink, eink, E Ink, electronic paper, Waveshare, 電子ペーパー]
 
-  - id: apple_ios
-    label: Apple Watch・iPhone・iOS
-    category: devices
-    keywords: [Apple Watch, iPhone, iOS, Shortcuts, Scriptable, watchOS]
+  - id: wearables
+    label: ウェアラブル
+    category: make
+    keywords: [wearable, wearable computer, smartwatch, smart watch, Watchy, wrist computer, wearable device, ウェアラブル]
 
   - id: input_devices
-    label: 自作キーボード・入力デバイス
+    label: 入力デバイス・自作キーボード
     category: make
-    keywords: [custom keyboard, mechanical keyboard, one handed keyboard, chorded keyboard, input device, Bluetooth HID, HID, 自作キーボード, 入力デバイス]
+    keywords: [mechanical keyboard, custom keyboard, DIY keyboard, Bluetooth keyboard, Bluetooth HID, HID, input device, chorded keyboard, one handed keyboard, one-handed keyboard, thumb keyboard, macropad, macro pad, T9 keyboard, 自作キーボード, 入力デバイス]
 
   - id: 3d_printing
-    label: 3Dプリント
+    label: 3Dプリント・Maker
     category: make
-    keywords: [3D printing, 3D printer, STL, parametric CAD, OpenSCAD, 3Dプリンタ, 3Dプリント]
-
-  - id: diy_electronics
-    label: 電子工作・Maker
-    category: make
-    keywords: [DIY electronics, electronics project, maker, soldering, PCB, electronics, 電子工作]
+    keywords: [3D printing, 3D printer, STL, parametric design, parametric CAD, OpenSCAD, fabrication, maker project, 3Dプリント, 3Dプリンタ]
 
   - id: task_time_management
     label: タスク・時間管理
     category: work
-    keywords: [task management, time management, task planning, time tracking, タスク管理, 時間管理, 手帳]
-
-  - id: workflow_design
-    label: ワークフロー設計
-    category: work
-    keywords: [workflow design, personal workflow, work design, automation workflow, process design, ワークフロー]
+    keywords: [task management, time management, time blocking, task planning, time tracking, productivity system, calendar workflow, task workflow, タスク管理, 時間管理, 手帳]
 
   - id: management_teams
     label: マネジメント・チーム
     category: work
-    keywords: [management, team building, leadership, one-on-one, 1on1, organization design, マネジメント, チームづくり]
+    keywords: [management, team building, leadership, one-on-one, 1on1, psychological safety, organizational design, organization design, team communication, チームづくり, マネジメント]
+
+  - id: work_design
+    label: 働き方・仕事設計
+    category: work
+    legacy_ids: [workflow_design, slow_productivity]
+    keywords: [work design, workflow design, personal workflow, future of work, slow productivity, sustainable productivity, humane productivity, meaningful work, work life, 働き方, 仕事設計, ワークフロー]
 
   - id: early_childhood
     label: 保育・幼児教育
     category: education
-    keywords: [childcare, early childhood education, preschool, nursery school, 保育, 幼児教育]
+    keywords: [childcare, preschool, nursery, nursery school, early childhood education, early years, 保育, 保育園, 幼児教育]
 
   - id: child_development
-    label: 子どもの発達・非認知能力
+    label: 子どもの発達
     category: education
-    keywords: [child development, non-cognitive skills, social emotional learning, SEL, 子どもの発達, 非認知能力]
+    keywords: [child development, developmental psychology, childhood development, developmental science, 子どもの発達, 発達心理]
 
-  - id: education_practice
-    label: 教育実践・組織
+  - id: noncognitive_learning
+    label: 非認知能力・学び
     category: education
-    keywords: [education practice, teaching practice, school management, educator development, 教育実践, 人材育成]
+    legacy_ids: [education_practice]
+    keywords: [non-cognitive skills, noncognitive skills, executive function, self regulation, self-regulation, social emotional learning, SEL, play based learning, play-based learning, 非認知能力, 自己調整, 遊びを通した学び]
 
   - id: life_design
-    label: 生活・働き方設計
+    label: 生活設計
     category: life
-    keywords: [life design, work life, lifestyle design, intentional living, 働き方, 生活設計]
+    keywords: [life design, intentional living, simple living, everyday systems, personal systems, slow living, lifestyle design, 生活設計, 暮らし]
 
-  - id: slow_productivity
-    label: 持続可能な生産性
+  - id: apple_ecosystem
+    label: Apple Watch・iPhone・iOS
     category: life
-    keywords: [slow productivity, sustainable productivity, burnout, deep work, calm technology, 生産性, 持続可能]
+    legacy_ids: [apple_ios]
+    keywords: [Apple Watch, iPhone, iOS, watchOS, Shortcuts, Apple Shortcuts, Scriptable, Apple ecosystem]
+
+  - id: personal_web_rss
+    label: 個人Web・RSS
+    category: web
+    keywords: [personal website, personal web, IndieWeb, indie web, RSS, Atom, Atom feed, feed reader, blogroll, weblog, 個人サイト, フィード]
+
+  - id: hci_interfaces
+    label: HCI・インターフェース
+    category: web
+    keywords: [HCI, human computer interaction, user interface, tangible interface, calm technology, ubiquitous computing, interaction design, interface design, ambient computing]
 
 relations:
-  - [ai_coding, github_devops, 0.9]
-  - [ai_coding, web_app_development, 0.8]
-  - [ai_coding, ai_agents_automation, 0.8]
-  - [obsidian_pkm, personal_knowledge_recording, 0.9]
-  - [obsidian_pkm, local_first, 0.8]
-  - [obsidian_pkm, workflow_design, 0.6]
-  - [personal_web_rss, local_first, 0.7]
-  - [small_computing, epaper_wearables, 0.8]
-  - [small_computing, diy_electronics, 0.8]
-  - [small_computing, input_devices, 0.7]
-  - [input_devices, hci_interfaces, 0.9]
-  - [input_devices, diy_electronics, 0.8]
-  - [task_time_management, workflow_design, 0.9]
-  - [management_teams, education_practice, 0.7]
-  - [systems_thinking, hci_interfaces, 0.7]
-  - [life_design, slow_productivity, 0.9]
+  - topics: [llm_ai_tools, ai_agents_automation]
+    weight: 0.90
+  - topics: [llm_ai_tools, ai_coding]
+    weight: 0.80
+  - topics: [ai_agents_automation, ai_coding]
+    weight: 0.85
+  - topics: [ai_agents_automation, github_devops]
+    weight: 0.65
+  - topics: [ai_agents_automation, task_time_management]
+    weight: 0.50
+  - topics: [obsidian_pkm, personal_knowledge]
+    weight: 0.95
+  - topics: [obsidian_pkm, local_first]
+    weight: 0.80
+  - topics: [obsidian_pkm, personal_web_rss]
+    weight: 0.50
+  - topics: [personal_knowledge, systems_thinking]
+    weight: 0.60
+  - topics: [personal_knowledge, personal_web_rss]
+    weight: 0.65
+  - topics: [github_devops, web_apps]
+    weight: 0.85
+  - topics: [github_devops, indie_open_source]
+    weight: 0.70
+  - topics: [web_apps, personal_web_rss]
+    weight: 0.70
+  - topics: [embedded_devices, e_paper]
+    weight: 0.85
+  - topics: [embedded_devices, wearables]
+    weight: 0.80
+  - topics: [embedded_devices, input_devices]
+    weight: 0.75
+  - topics: [embedded_devices, 3d_printing]
+    weight: 0.65
+  - topics: [e_paper, wearables]
+    weight: 0.90
+  - topics: [input_devices, hci_interfaces]
+    weight: 0.90
+  - topics: [wearables, hci_interfaces]
+    weight: 0.80
+  - topics: [apple_ecosystem, wearables]
+    weight: 0.80
+  - topics: [apple_ecosystem, hci_interfaces]
+    weight: 0.65
+  - topics: [task_time_management, work_design]
+    weight: 0.90
+  - topics: [management_teams, work_design]
+    weight: 0.75
+  - topics: [systems_thinking, management_teams]
+    weight: 0.65
+  - topics: [early_childhood, child_development]
+    weight: 0.95
+  - topics: [early_childhood, noncognitive_learning]
+    weight: 0.90
+  - topics: [child_development, noncognitive_learning]
+    weight: 0.95
 
-item_types:
-  - news
-  - release
-  - tool
-  - paper
-  - blog
-  - documentation
-  - project
-  - article
+content_types:
+  - id: news
+    label: NEWS
+  - id: release
+    label: RELEASE
+  - id: tool
+    label: TOOL
+  - id: paper
+    label: PAPER
+  - id: how_to
+    label: HOW-TO
+  - id: analysis
+    label: ANALYSIS
+  - id: essay
+    label: ESSAY
+  - id: case_study
+    label: CASE STUDY
 
-traits:
-  - how_to
-  - essay
-  - analysis
-  - case_study
-  - long_read
-  - research
-  - opinion
-  - reference
+source_kinds:
+  - id: official
+    label: OFFICIAL
+  - id: blog
+    label: BLOG
+  - id: publication
+    label: PUBLICATION
+  - id: research
+    label: RESEARCH
+  - id: community
+    label: COMMUNITY
+  - id: repository
+    label: REPOSITORY
+
+reading_depths:
+  - id: quick
+    label: QUICK
+  - id: standard
+    label: STANDARD
+  - id: long
+    label: LONG READ
+
+classification:
+  max_topics_per_item: 3
+  minimum_topic_score: 0.25
+  primary_category:
+    strategy: highest_scoring_topic
+  topic_matching:
+    title_multiplier: 2.0
+    summary_multiplier: 1.0
+    max_keyword_matches_per_topic: 3
+  fallback:
+    use_source_default_topics: true
+  unknown:
+    allow_unclassified: true
