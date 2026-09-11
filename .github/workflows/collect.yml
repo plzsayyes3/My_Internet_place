@@ -36,7 +36,6 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-          cache: pip
 
       - name: Cache Argos English to Japanese model
         uses: actions/cache@v4
@@ -44,8 +43,10 @@ jobs:
           path: ~/.local/share/argos-translate/packages
           key: argos-en-ja-v1
 
-      - name: Install dependencies
-        run: pip install -r requirements.txt
+      - name: Install CPU translation runtime and dependencies
+        run: |
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -r requirements.txt
 
       - name: Test taxonomy scoring
         run: python -m unittest discover -s tests
@@ -59,6 +60,7 @@ jobs:
       - name: Translate English fields to Japanese
         env:
           ARGOS_DEVICE_TYPE: cpu
+          ARGOS_CHUNK_TYPE: MINISBD
         run: python src/translate.py --previous /tmp/previous-latest.json
 
       - name: Commit updated feed data
