@@ -1,11 +1,12 @@
 # Active-search configuration for My Internet Place.
 # Public-safe search terms only. This file is intentionally separate from RSS/Atom sources.
-# The current collector does not execute these searches yet.
+# A scheduled ChatGPT task searches these queries and writes data/discovery.json.
+# GitHub Actions then merges those results with RSS/Atom before ranking and translation.
 # Optional signals connect a query to public-safe preference signals in interests.yml.
 
 version: 3
 
-enabled: false
+enabled: true
 
 defaults:
   max_results_per_query: 8
