@@ -1,6 +1,6 @@
 # Public interest profile for My Internet Place.
 # This file intentionally contains only broad, public-safe preferences.
-# Taxonomy structure lives in taxonomy.yml; this file expresses attention and ranking.
+# Taxonomy structure lives in taxonomy.yml; active-search terms live in discovery.yml.
 
 version: 3
 
@@ -173,26 +173,6 @@ combinations:
     terms: [e-paper, RSS, reader, feed, offline, personal]
     min_match: 2
     bonus: 1.15
-
-# These queries are for future active discovery beyond RSS/Atom. They are not
-# executed by the current collector yet, but live here so discovery can reuse
-# the same preference model later.
-discovery_queries:
-  - cyberdeck
-  - DIY cyberdeck
-  - ESP32 handheld
-  - ESP32 e-paper
-  - M5Stack e-paper
-  - portable e-paper computer
-  - Raspberry Pi cyberdeck
-  - DIY handheld terminal
-  - custom input device
-  - one handed keyboard
-  - thumb keyboard DIY
-  - tiny computer DIY
-  - pocket computer open source
-  - low power personal device
-  - local-first personal tools
 
 ranking:
   prefer:
