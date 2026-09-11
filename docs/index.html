@@ -24,7 +24,7 @@
     <button class="filter is-active" data-view="for-you">FOR YOU</button>
     <button class="filter" data-view="latest">LATEST</button>
   </nav>
-  <nav class="filters topic-filters" id="topic-filters" aria-label="詳細ジャンルフィルター" hidden style="position: static; padding-top: 0;"></nav>
+  <nav class="filters topic-filters" id="topic-filters" aria-label="詳細ジャンルフィルター" hidden></nav>
 
   <main>
     <section class="feed" id="feed" aria-live="polite"></section>
@@ -37,11 +37,13 @@
         <div class="source-line">
           <span class="source"></span>
           <span class="kind"></span>
+          <span class="category"></span>
         </div>
         <span class="score"></span>
       </div>
       <h2><a class="title" target="_blank" rel="noopener noreferrer"></a></h2>
       <p class="summary"></p>
+      <div class="topic-tags" aria-label="詳細ジャンル"></div>
       <div class="card-footer">
         <span class="reason"></span>
         <time class="published"></time>
