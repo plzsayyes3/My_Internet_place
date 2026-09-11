@@ -1,8 +1,9 @@
 # Active-search configuration for My Internet Place.
 # Public-safe search terms only. This file is intentionally separate from RSS/Atom sources.
 # The current collector does not execute these searches yet.
+# Optional signals connect a query to public-safe preference signals in interests.yml.
 
-version: 2
+version: 3
 
 enabled: false
 
@@ -120,6 +121,23 @@ queries:
   - id: pokemon
     label: ポケモン
     query: ポケモン
-    weight: 1.0
+    weight: 1.3
     topics: []
+    signals: [pokemon]
+    enabled: true
+
+  - id: pokemon_en
+    label: Pokémon
+    query: Pokémon
+    weight: 1.3
+    topics: []
+    signals: [pokemon]
+    enabled: true
+
+  - id: pokemon_news
+    label: Pokemon News
+    query: Pokemon news
+    weight: 1.2
+    topics: []
+    signals: [pokemon]
     enabled: true
