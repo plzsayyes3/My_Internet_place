@@ -159,12 +159,15 @@ function renderFeed() {
     node.querySelector(".score").textContent = scoreLabel(Number(item.score || 0));
 
     const title = node.querySelector(".title");
-    title.textContent = item.title;
+    const displayedTitle = item.title_ja || item.title || "";
+    title.textContent = displayedTitle;
     title.href = item.url;
+    if (item.title_ja && item.title_ja !== item.title) title.title = item.title;
 
     const summary = node.querySelector(".summary");
-    summary.textContent = item.summary || "";
-    summary.hidden = !item.summary;
+    const displayedSummary = item.summary_ja || item.summary || "";
+    summary.textContent = displayedSummary;
+    summary.hidden = !displayedSummary;
 
     const labels = item.matched_labels || item.topic_labels || item.matched_interests || [];
     node.querySelector(".reason").textContent = labels.length
@@ -175,13 +178,14 @@ function renderFeed() {
   }
 }
 
-function renderHealth(sources) {
+function renderHealth(sources, translation) {
   if (!healthEl) return;
   if (!sources || !sources.configured) {
     healthEl.textContent = "";
     return;
   }
-  healthEl.textContent = `${sources.healthy}/${sources.configured} feeds`;
+  const translationLabel = translation?.engine ? " · JA" : "";
+  healthEl.textContent = `${sources.healthy}/${sources.configured} feeds${translationLabel}`;
   healthEl.title = (sources.status || [])
     .map((source) => `${source.ok ? "✓" : "×"} ${source.name}`)
     .join("\n");
@@ -196,7 +200,7 @@ async function boot() {
     generatedEl.textContent = data.generated_at
       ? `updated ${formatDate(data.generated_at)}`
       : "waiting for first collection";
-    renderHealth(data.sources);
+    renderHealth(data.sources, data.translation);
     renderFilters(allItems);
     renderFeed();
   } catch (error) {
