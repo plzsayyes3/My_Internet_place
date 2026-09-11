@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T08:11:05.781669+00:00",
+  "generated_at": "2026-09-11T08:26:33.031255+00:00",
   "count": 204,
   "taxonomy_version": 1,
   "interest_profile_version": 3,
@@ -95,6 +95,50 @@
   },
   "items": [
     {
+      "id": "a5b94f6b1cc02666",
+      "title": "This Circuit Sculpture is an ESP32-Powered Console",
+      "url": "https://hackaday.com/2026/09/11/this-circuit-sculpture-is-an-esp32-powered-console/",
+      "summary": "Expressif might not have intended the ESP32-S3 to become an emulation powerhouse, but that’s certainly what has happened. The little microcontroller seems perfect for recreating the Game Boys or Game …read more",
+      "published_at": "2026-09-11T08:00:47+00:00",
+      "source": "Hackaday",
+      "source_id": "hackaday",
+      "source_category": "make",
+      "primary_category": "devices",
+      "topics": [
+        "small_computing"
+      ],
+      "topic_labels": [
+        "小型コンピューティング"
+      ],
+      "topic_scores": {
+        "small_computing": 2.0
+      },
+      "matched_signals": [
+        "practical_small_computing"
+      ],
+      "positive_signals": [
+        "practical_small_computing"
+      ],
+      "matched_combinations": [],
+      "item_type": "article",
+      "content_type": "article",
+      "traits": [],
+      "score": 5.6,
+      "score_components": {
+        "topics": 2.9,
+        "signals": 2.7,
+        "combinations": 0.0
+      },
+      "rank_score": 7.73,
+      "matched_interests": [
+        "small_computing"
+      ],
+      "matched_labels": [
+        "小型コンピューティング",
+        "実用小型コンピューティング"
+      ]
+    },
+    {
       "id": "e549139bba381241",
       "title": "Create your own cyberdeck",
       "url": "https://www.raspberrypi.com/news/create-your-own-cyberdeck/",
@@ -178,7 +222,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 6.56,
+      "rank_score": 6.55,
       "matched_interests": [
         "github_devops",
         "ai_coding",
@@ -194,7 +238,7 @@
       "id": "300052dde8dca54b",
       "title": "OpenAI Agents API",
       "url": "https://developers.openai.com/api/docs/guides/agents-api/overview",
-      "summary": "Article URL: https://developers.openai.com/api/docs/guides/agents-api/overview Comments URL: https://news.ycombinator.com/item?id=49649213 Points: 242 # Comments: 133",
+      "summary": "Article URL: https://developers.openai.com/api/docs/guides/agents-api/overview Comments URL: https://news.ycombinator.com/item?id=49649213 Points: 244 # Comments: 134",
       "published_at": "2026-09-10T19:43:22+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -545,7 +589,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 5.08,
+      "rank_score": 5.07,
       "matched_interests": [
         "github_devops",
         "ai_coding"
@@ -2014,7 +2058,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.81,
+      "rank_score": 3.8,
       "matched_interests": [
         "obsidian_pkm"
       ],
@@ -2563,7 +2607,7 @@
       "id": "e38e55b793ac5187",
       "title": "Proof of Capture: Apple Reference Image, but open source and using steganography",
       "url": "https://merybenavente.me/blog/proof-of-capture",
-      "summary": "Article URL: https://merybenavente.me/blog/proof-of-capture Comments URL: https://news.ycombinator.com/item?id=49649222 Points: 100 # Comments: 54",
+      "summary": "Article URL: https://merybenavente.me/blog/proof-of-capture Comments URL: https://news.ycombinator.com/item?id=49649222 Points: 102 # Comments: 55",
       "published_at": "2026-09-10T19:44:15+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -2841,7 +2885,7 @@
       "id": "35785ab00b53ffaa",
       "title": "The Gemini app is now available for Windows",
       "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/",
-      "summary": "Article URL: https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/ Comments URL: https://news.ycombinator.com/item?id=49653699 Points: 35 # Comments: 17",
+      "summary": "Article URL: https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/ Comments URL: https://news.ycombinator.com/item?id=49653699 Points: 38 # Comments: 20",
       "published_at": "2026-09-11T04:52:20+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -3366,7 +3410,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.03,
+      "rank_score": 3.02,
       "matched_interests": [
         "llm_tools"
       ],
@@ -4268,7 +4312,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.67,
+      "rank_score": 2.66,
       "matched_interests": [
         "llm_tools"
       ],
@@ -4346,7 +4390,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.65,
+      "rank_score": 2.64,
       "matched_interests": [
         "llm_tools"
       ],
@@ -4436,7 +4480,7 @@
       "id": "b3ed6e9e3367b764",
       "title": "YuE2 · Frontier Music with Symbolic Planning",
       "url": "https://map-yue2.github.io/",
-      "summary": "Article URL: https://map-yue2.github.io/ Comments URL: https://news.ycombinator.com/item?id=49652028 Points: 85 # Comments: 73",
+      "summary": "Article URL: https://map-yue2.github.io/ Comments URL: https://news.ycombinator.com/item?id=49652028 Points: 86 # Comments: 73",
       "published_at": "2026-09-11T00:33:26+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -4670,7 +4714,7 @@
       "id": "0c0d8751baac2b7e",
       "title": "Detecting and countering misuse of AI: September 2026",
       "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
-      "summary": "https://www-cdn.anthropic.com/e50be2e51e7695dc4b1366a37a245a... Comments URL: https://news.ycombinator.com/item?id=49647300 Points: 123 # Comments: 188",
+      "summary": "https://www-cdn.anthropic.com/e50be2e51e7695dc4b1366a37a245a... Comments URL: https://news.ycombinator.com/item?id=49647300 Points: 123 # Comments: 190",
       "published_at": "2026-09-10T17:23:42+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -5683,35 +5727,6 @@
       "matched_labels": []
     },
     {
-      "id": "cb25e60269d1fb07",
-      "title": "Tech In Plain Sight: Meet The Robot That Does CPR",
-      "url": "https://hackaday.com/2026/09/10/tech-in-plain-sight-meet-the-robot-that-does-cpr/",
-      "summary": "Usually in Tech In Plain Sight, we talk about technology you probably see every day, even if you don’t notice it. But we hope you don’t get to see one …read more",
-      "published_at": "2026-09-10T14:00:02+00:00",
-      "source": "Hackaday",
-      "source_id": "hackaday",
-      "source_category": "make",
-      "primary_category": "make",
-      "topics": [],
-      "topic_labels": [],
-      "topic_scores": {},
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "item_type": "article",
-      "content_type": "article",
-      "traits": [],
-      "score": 0.0,
-      "score_components": {
-        "topics": 0.0,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.12,
-      "matched_interests": [],
-      "matched_labels": []
-    },
-    {
       "id": "d6088d0604066b74",
       "title": "An Alien Mind",
       "url": "https://openai.com/index/an-alien-mind",
@@ -5773,7 +5788,7 @@
       "id": "c76bd3fcb97ddd0c",
       "title": "DeepSeek v4.1 Flash Uncensored",
       "url": "https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8",
-      "summary": "Article URL: https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8 Comments URL: https://news.ycombinator.com/item?id=49654387 Points: 17 # Comments: 2",
+      "summary": "Article URL: https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8 Comments URL: https://news.ycombinator.com/item?id=49654387 Points: 24 # Comments: 2",
       "published_at": "2026-09-11T06:46:19+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -5802,7 +5817,7 @@
       "id": "874fb4b8773334d5",
       "title": "Astra for Coding: Why Are We Doing This Again?",
       "url": "https://lucumr.pocoo.org/2026/9/7/astra-why/",
-      "summary": "Article URL: https://lucumr.pocoo.org/2026/9/7/astra-why/ Comments URL: https://news.ycombinator.com/item?id=49654229 Points: 229 # Comments: 134",
+      "summary": "Article URL: https://lucumr.pocoo.org/2026/9/7/astra-why/ Comments URL: https://news.ycombinator.com/item?id=49654229 Points: 269 # Comments: 161",
       "published_at": "2026-09-11T06:23:06+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -5831,7 +5846,7 @@
       "id": "d6c6ada3985d1e00",
       "title": "We Replaced MMAP with Io_uring in Our Rust Query Engine. It Got Slower",
       "url": "https://www.conviva.ai/resource/we-replaced-mmap-with-io_uring-in-our-rust-query-engine-it-got-slower/",
-      "summary": "Article URL: https://www.conviva.ai/resource/we-replaced-mmap-with-io_uring-in-our-rust-query-engine-it-got-slower/ Comments URL: https://news.ycombinator.com/item?id=49653882 Points: 26 # Comments: 12",
+      "summary": "Article URL: https://www.conviva.ai/resource/we-replaced-mmap-with-io_uring-in-our-rust-query-engine-it-got-slower/ Comments URL: https://news.ycombinator.com/item?id=49653882 Points: 30 # Comments: 13",
       "published_at": "2026-09-11T05:26:58+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -5860,7 +5875,7 @@
       "id": "d3801d9f47f888e6",
       "title": "Exercise intensity is associated with cardiometabolic health",
       "url": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00405-2",
-      "summary": "Article URL: https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00405-2 Comments URL: https://news.ycombinator.com/item?id=49653328 Points: 84 # Comments: 39",
+      "summary": "Article URL: https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00405-2 Comments URL: https://news.ycombinator.com/item?id=49653328 Points: 88 # Comments: 40",
       "published_at": "2026-09-11T03:48:10+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -5889,7 +5904,7 @@
       "id": "2917e7d11bbea25d",
       "title": "What Comes After Git",
       "url": "https://ersc.io/blog/what-comes-after-git",
-      "summary": "Article URL: https://ersc.io/blog/what-comes-after-git Comments URL: https://news.ycombinator.com/item?id=49652985 Points: 34 # Comments: 7",
+      "summary": "Article URL: https://ersc.io/blog/what-comes-after-git Comments URL: https://news.ycombinator.com/item?id=49652985 Points: 40 # Comments: 10",
       "published_at": "2026-09-11T02:49:52+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -5918,7 +5933,7 @@
       "id": "ac33704195dc7010",
       "title": "Mexican student creates an acoustic fire extinguisher to put out fire in seconds",
       "url": "https://www.upsocl.com/en/16-year-old-mexican-student-creates-an-acoustic-fire-extinguisher-that-uses-sound-waves-to-put-out-fires-in-seconds/",
-      "summary": "Article URL: https://www.upsocl.com/en/16-year-old-mexican-student-creates-an-acoustic-fire-extinguisher-that-uses-sound-waves-to-put-out-fires-in-seconds/ Comments URL: https://news.ycombinator.com/item?id=49652237 Points: 180 # Comments: 67",
+      "summary": "Article URL: https://www.upsocl.com/en/16-year-old-mexican-student-creates-an-acoustic-fire-extinguisher-that-uses-sound-waves-to-put-out-fires-in-seconds/ Comments URL: https://news.ycombinator.com/item?id=49652237 Points: 181 # Comments: 68",
       "published_at": "2026-09-11T01:00:56+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -5939,7 +5954,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.1,
+      "rank_score": 2.09,
       "matched_interests": [],
       "matched_labels": []
     },
@@ -5947,7 +5962,7 @@
       "id": "692462a9077ae9e1",
       "title": "Thelio Mira AI Linux Workstation: 192 GB GPU Memory",
       "url": "https://system76.com/workstations/thelio-mira-ai",
-      "summary": "Article URL: https://system76.com/workstations/thelio-mira-ai Comments URL: https://news.ycombinator.com/item?id=49651372 Points: 89 # Comments: 70",
+      "summary": "Article URL: https://system76.com/workstations/thelio-mira-ai Comments URL: https://news.ycombinator.com/item?id=49651372 Points: 91 # Comments: 71",
       "published_at": "2026-09-10T23:10:06+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -5976,7 +5991,7 @@
       "id": "effa8971aeee6b61",
       "title": "Nine coding harnesses vs. your laptop",
       "url": "https://nasutton.notion.site/Nine-coding-harnesses-vs-your-laptop-3d139990182b80d59fa3cf500f0450ba?pvs=74",
-      "summary": "Article URL: https://nasutton.notion.site/Nine-coding-harnesses-vs-your-laptop-3d139990182b80d59fa3cf500f0450ba?pvs=74 Comments URL: https://news.ycombinator.com/item?id=49651221 Points: 72 # Comments: 13",
+      "summary": "Article URL: https://nasutton.notion.site/Nine-coding-harnesses-vs-your-laptop-3d139990182b80d59fa3cf500f0450ba?pvs=74 Comments URL: https://news.ycombinator.com/item?id=49651221 Points: 80 # Comments: 18",
       "published_at": "2026-09-10T22:54:01+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -6005,7 +6020,7 @@
       "id": "dab5a33129228fa5",
       "title": "NTSB issues investigative update on B-767 runway excursion accident in Miami",
       "url": "https://www.ntsb.gov:443/news/press-releases/Pages/NR20260909.aspx",
-      "summary": "Article URL: https://www.ntsb.gov:443/news/press-releases/Pages/NR20260909.aspx Comments URL: https://news.ycombinator.com/item?id=49650418 Points: 96 # Comments: 163",
+      "summary": "Article URL: https://www.ntsb.gov:443/news/press-releases/Pages/NR20260909.aspx Comments URL: https://news.ycombinator.com/item?id=49650418 Points: 96 # Comments: 166",
       "published_at": "2026-09-10T21:30:55+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -6034,7 +6049,7 @@
       "id": "83fc2559f87bcfb8",
       "title": "The Deathray: A simple way for an untrusted site to freeze a Mac",
       "url": "https://auberon.xyz/blog/posts/deathray/",
-      "summary": "Article URL: https://auberon.xyz/blog/posts/deathray/ Comments URL: https://news.ycombinator.com/item?id=49649124 Points: 156 # Comments: 103",
+      "summary": "Article URL: https://auberon.xyz/blog/posts/deathray/ Comments URL: https://news.ycombinator.com/item?id=49649124 Points: 162 # Comments: 105",
       "published_at": "2026-09-10T19:34:20+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -6063,7 +6078,7 @@
       "id": "9495b3c72ced3b38",
       "title": "Music Theory for the 21st-Century Classroom",
       "url": "https://musictheory.pugetsound.edu/mt21c/MusicTheory.html",
-      "summary": "Article URL: https://musictheory.pugetsound.edu/mt21c/MusicTheory.html Comments URL: https://news.ycombinator.com/item?id=49647134 Points: 215 # Comments: 89",
+      "summary": "Article URL: https://musictheory.pugetsound.edu/mt21c/MusicTheory.html Comments URL: https://news.ycombinator.com/item?id=49647134 Points: 216 # Comments: 89",
       "published_at": "2026-09-10T17:14:12+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -6092,7 +6107,7 @@
       "id": "97a98fc60d4a3f17",
       "title": "Forgejo <=16.0.3 Critical RCE",
       "url": "https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/16.0.4.md",
-      "summary": "Article URL: https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/16.0.4.md Comments URL: https://news.ycombinator.com/item?id=49645907 Points: 174 # Comments: 63",
+      "summary": "Article URL: https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/16.0.4.md Comments URL: https://news.ycombinator.com/item?id=49645907 Points: 176 # Comments: 64",
       "published_at": "2026-09-10T15:57:40+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -6121,7 +6136,7 @@
       "id": "7b24a73c35d8dbdb",
       "title": "Neki – Sharded Postgres",
       "url": "https://planetscale.com/blog/introducing-neki",
-      "summary": "Article URL: https://planetscale.com/blog/introducing-neki Comments URL: https://news.ycombinator.com/item?id=49645686 Points: 237 # Comments: 129",
+      "summary": "Article URL: https://planetscale.com/blog/introducing-neki Comments URL: https://news.ycombinator.com/item?id=49645686 Points: 237 # Comments: 131",
       "published_at": "2026-09-10T15:43:49+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -6179,7 +6194,7 @@
       "id": "4116347b68447b29",
       "title": "Technique for Manipulating Satellite Photos Now Reveals Ancient Images (2025)",
       "url": "https://spinoff.nasa.gov/Manipulating_Satellite_Photos_Now_Reveals_Ancient_Images",
-      "summary": "https://dstretch.com/DecorrelationStretch.pdf https://www.nasa.gov/technology/tech-transfer-spinoffs/nasa-... Comments URL: https://news.ycombinator.com/item?id=49645437 Points: 324 # Comments: 53",
+      "summary": "https://dstretch.com/DecorrelationStretch.pdf https://www.nasa.gov/technology/tech-transfer-spinoffs/nasa-... Comments URL: https://news.ycombinator.com/item?id=49645437 Points: 325 # Comments: 53",
       "published_at": "2026-09-10T15:29:30+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
