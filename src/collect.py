@@ -133,7 +133,8 @@ def keyword_matches(keyword: str, haystack: str) -> bool:
 def score_item(
     title: str, summary: str, interests: list[dict]
 ) -> tuple[float, list[str], list[str]]:
-    haystack = f"{title} {summary}".lower()
+    title_haystack = title.lower()
+    summary_haystack = summary.lower()
     score = 0.0
     matched_ids: list[str] = []
     matched_labels: list[str] = []
@@ -141,9 +142,26 @@ def score_item(
     for interest in interests:
         weight = float(interest.get("weight", 1.0))
         keywords = [str(k) for k in interest.get("keywords", [])]
-        matches = [k for k in keywords if keyword_matches(k, haystack)]
-        if matches:
-            score += weight * min(len(matches), 3)
+        title_matches = [
+            k for k in keywords if keyword_matches(k, title_haystack)
+        ]
+        title_match_set = {k.lower() for k in title_matches}
+        summary_matches = [
+            k
+            for k in keywords
+            if k.lower() not in title_match_set
+            and keyword_matches(k, summary_haystack)
+        ]
+
+        if title_matches or summary_matches:
+            # A title match is a much stronger signal that the article is truly
+            # about an interest. Summary-only matches still count, but less.
+            match_signal = min(
+                3.0,
+                (1.5 * min(len(title_matches), 2))
+                + (0.5 * min(len(summary_matches), 2)),
+            )
+            score += weight * match_signal
             matched_ids.append(str(interest.get("id", "unknown")))
             matched_labels.append(
                 str(interest.get("label") or interest.get("id", "Interest"))
