@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T09:45:14.546846+00:00",
+  "generated_at": "2026-09-11T09:50:51.956535+00:00",
   "count": 204,
   "taxonomy_version": 3,
   "interest_profile_version": 3,
@@ -221,7 +221,7 @@
       "id": "300052dde8dca54b",
       "title": "OpenAI Agents API",
       "url": "https://developers.openai.com/api/docs/guides/agents-api/overview",
-      "summary": "Article URL: https://developers.openai.com/api/docs/guides/agents-api/overview Comments URL: https://news.ycombinator.com/item?id=49649213 Points: 260 # Comments: 144",
+      "summary": "Article URL: https://developers.openai.com/api/docs/guides/agents-api/overview Comments URL: https://news.ycombinator.com/item?id=49649213 Points: 265 # Comments: 145",
       "published_at": "2026-09-10T19:43:22+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -279,7 +279,7 @@
         "LLM・AIツール"
       ],
       "title_ja": "OpenAI エージェント API",
-      "summary_ja": "記事のURL: https://developers.openai.com/api/docs/guides/agents-api/overview コメントのURL: https://news.ycombinator.com/item?id=49649213 ポイント: 260 # コメント: 144"
+      "summary_ja": "記事のURL: https://developers.openai.com/api/docs/guides/agents-api/overview コメントのURL: https://news.ycombinator.com/item?id=49649213 ポイント: 265 # コメント: 145"
     },
     {
       "id": "434ac5bdc849ee6f",
@@ -959,7 +959,7 @@
       "signals": {
         "direct_interest": 2.25,
         "related_interest": 0.0,
-        "freshness": 0.936,
+        "freshness": 0.935,
         "source_priority": 0.75
       },
       "recommendation_reason": "direct",
@@ -1238,70 +1238,6 @@
       "summary_ja": "スターウォーズのデススターの残酷なコリダーの周りの小さなドロイドは、それらを覚えていますか? [heychaostheory]は、それらの魅力的な小さなモバイルのラインに沿って漠然と何かを置く...もっと"
     },
     {
-      "id": "69682de2c934e2c8",
-      "title": "3D Imaging Without a Lens",
-      "url": "https://hackaday.com/2026/09/10/3d-imaging-without-a-lens/",
-      "summary": "There are plenty of ways to capture 3D images or simulations of such if you know what you’re doing with camera hardware and fancy mathematics. However, a little more unusual …read more",
-      "published_at": "2026-09-10T18:30:48+00:00",
-      "source": "Hackaday",
-      "source_id": "hackaday",
-      "source_kind": "publication",
-      "source_category": "make",
-      "primary_category": "make",
-      "topics": [
-        {
-          "id": "embedded_devices",
-          "score": 0.25
-        },
-        {
-          "id": "3d_printing",
-          "score": 0.25
-        }
-      ],
-      "topic_ids": [
-        "embedded_devices",
-        "3d_printing"
-      ],
-      "topic_labels": [
-        "ESP32・小型デバイス",
-        "3Dプリント・Maker"
-      ],
-      "topic_scores": {
-        "embedded_devices": 0.25,
-        "3d_printing": 0.25
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 1.84,
-        "related_interest": 0.0,
-        "freshness": 0.995,
-        "source_priority": 0.65
-      },
-      "recommendation_reason": "direct",
-      "score": 1.84,
-      "score_components": {
-        "topics": 1.84,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 3.96,
-      "matched_interests": [
-        "embedded_devices",
-        "3d_printing"
-      ],
-      "matched_labels": [
-        "ESP32・小型デバイス",
-        "3Dプリント・Maker"
-      ],
-      "title_ja": "レンズのない3Dイメージ",
-      "summary_ja": "カメラのハードウェアとファンシーの数学で何をしているかを知ったら、このような3D画像やシミュレーションをキャプチャする方法はたくさんあります。 しかし、もう少し珍しい...もっと読む"
-    },
-    {
       "id": "d5086cee3bfcbc97",
       "title": "llm-openrouter 0.7.1",
       "url": "https://simonwillison.net/2026/Sep/2/llm-openrouter/",
@@ -1355,6 +1291,70 @@
       ],
       "title_ja": "llm-openrouter 0.7.1 リリース",
       "summary_ja": "リリース: llm-openrouter 0.7.1 OpenRouterモデルをロードするためのパフォーマンス修正。 ありがとうございます。 #59 タグ: llm 、 openrouter"
+    },
+    {
+      "id": "69682de2c934e2c8",
+      "title": "3D Imaging Without a Lens",
+      "url": "https://hackaday.com/2026/09/10/3d-imaging-without-a-lens/",
+      "summary": "There are plenty of ways to capture 3D images or simulations of such if you know what you’re doing with camera hardware and fancy mathematics. However, a little more unusual …read more",
+      "published_at": "2026-09-10T18:30:48+00:00",
+      "source": "Hackaday",
+      "source_id": "hackaday",
+      "source_kind": "publication",
+      "source_category": "make",
+      "primary_category": "make",
+      "topics": [
+        {
+          "id": "embedded_devices",
+          "score": 0.25
+        },
+        {
+          "id": "3d_printing",
+          "score": 0.25
+        }
+      ],
+      "topic_ids": [
+        "embedded_devices",
+        "3d_printing"
+      ],
+      "topic_labels": [
+        "ESP32・小型デバイス",
+        "3Dプリント・Maker"
+      ],
+      "topic_scores": {
+        "embedded_devices": 0.25,
+        "3d_printing": 0.25
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 1.84,
+        "related_interest": 0.0,
+        "freshness": 0.995,
+        "source_priority": 0.65
+      },
+      "recommendation_reason": "direct",
+      "score": 1.84,
+      "score_components": {
+        "topics": 1.84,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 3.95,
+      "matched_interests": [
+        "embedded_devices",
+        "3d_printing"
+      ],
+      "matched_labels": [
+        "ESP32・小型デバイス",
+        "3Dプリント・Maker"
+      ],
+      "title_ja": "レンズのない3Dイメージ",
+      "summary_ja": "カメラのハードウェアとファンシーの数学で何をしているかを知ったら、このような3D画像やシミュレーションをキャプチャする方法はたくさんあります。 しかし、もう少し珍しい...もっと読む"
     },
     {
       "id": "8947313248ec49aa",
@@ -1782,7 +1782,7 @@
       "signals": {
         "direct_interest": 1.76,
         "related_interest": 0.0,
-        "freshness": 0.978,
+        "freshness": 0.977,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -2285,7 +2285,7 @@
       "signals": {
         "direct_interest": 1.65,
         "related_interest": 0.0,
-        "freshness": 0.997,
+        "freshness": 0.996,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -2692,70 +2692,6 @@
       "summary_ja": "レゴラは、GPT-6 Astraを使用して41の文書を数分で見直し、すべての4つの植えられたエラーを見つけて、この財務レビューワークフローでほぼ40%のパフォーマンスを改善しました。"
     },
     {
-      "id": "b5b916c8ff88f3ff",
-      "title": "GPT-6 Astra: A new generation of intelligence",
-      "url": "https://openai.com/index/gpt-6-astra",
-      "summary": "Introducing GPT-6 Astra, our most intelligent and aligned model yet, with state-of-the-art capabilities across computer use, coding, cybersecurity, and science.",
-      "published_at": "2026-09-03T11:00:00+00:00",
-      "source": "OpenAI News",
-      "source_id": "openai_news",
-      "source_kind": "official",
-      "source_category": "ai",
-      "primary_category": "ai",
-      "topics": [
-        {
-          "id": "llm_ai_tools",
-          "score": 0.25
-        },
-        {
-          "id": "ai_agents_automation",
-          "score": 0.25
-        }
-      ],
-      "topic_ids": [
-        "llm_ai_tools",
-        "ai_agents_automation"
-      ],
-      "topic_labels": [
-        "LLM・AIツール",
-        "AIエージェント・自動化"
-      ],
-      "topic_scores": {
-        "llm_ai_tools": 0.25,
-        "ai_agents_automation": 0.25
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 1.76,
-        "related_interest": 0.0,
-        "freshness": 0.934,
-        "source_priority": 1.0
-      },
-      "recommendation_reason": "direct",
-      "score": 1.76,
-      "score_components": {
-        "topics": 1.76,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 3.78,
-      "matched_interests": [
-        "llm_ai_tools",
-        "ai_agents_automation"
-      ],
-      "matched_labels": [
-        "LLM・AIツール",
-        "AIエージェント・自動化"
-      ],
-      "title_ja": "GPT-6 Astra:新しい世代のインテリジェンス",
-      "summary_ja": "GPT-6 Astra は、コンピューター使用、コーディング、サイバーセキュリティ、科学の最先端機能を備えた、インテリジェントで一直線に並ぶモデルです。"
-    },
-    {
       "id": "5f48b006c40fe10b",
       "title": "Quoting Terence Tao",
       "url": "https://simonwillison.net/2026/Sep/9/terence-tao/",
@@ -2818,6 +2754,70 @@
       ],
       "title_ja": "テレンス・タオ",
       "summary_ja": "私は最近、良いのコレクションについて書いています, 実りあるオープンの問題は、非更新可能なファッションで採掘されています, これらの問題の潜在的なシナリオにつながる. 2018年6月6日 問題に取り組んでいる人の噂でさえ、大量のAIを搭載した大量の努力をflにトリガーできると見てきました。"
+    },
+    {
+      "id": "b5b916c8ff88f3ff",
+      "title": "GPT-6 Astra: A new generation of intelligence",
+      "url": "https://openai.com/index/gpt-6-astra",
+      "summary": "Introducing GPT-6 Astra, our most intelligent and aligned model yet, with state-of-the-art capabilities across computer use, coding, cybersecurity, and science.",
+      "published_at": "2026-09-03T11:00:00+00:00",
+      "source": "OpenAI News",
+      "source_id": "openai_news",
+      "source_kind": "official",
+      "source_category": "ai",
+      "primary_category": "ai",
+      "topics": [
+        {
+          "id": "llm_ai_tools",
+          "score": 0.25
+        },
+        {
+          "id": "ai_agents_automation",
+          "score": 0.25
+        }
+      ],
+      "topic_ids": [
+        "llm_ai_tools",
+        "ai_agents_automation"
+      ],
+      "topic_labels": [
+        "LLM・AIツール",
+        "AIエージェント・自動化"
+      ],
+      "topic_scores": {
+        "llm_ai_tools": 0.25,
+        "ai_agents_automation": 0.25
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 1.76,
+        "related_interest": 0.0,
+        "freshness": 0.934,
+        "source_priority": 1.0
+      },
+      "recommendation_reason": "direct",
+      "score": 1.76,
+      "score_components": {
+        "topics": 1.76,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 3.77,
+      "matched_interests": [
+        "llm_ai_tools",
+        "ai_agents_automation"
+      ],
+      "matched_labels": [
+        "LLM・AIツール",
+        "AIエージェント・自動化"
+      ],
+      "title_ja": "GPT-6 Astra:新しい世代のインテリジェンス",
+      "summary_ja": "GPT-6 Astra は、コンピューター使用、コーディング、サイバーセキュリティ、科学の最先端機能を備えた、インテリジェントで一直線に並ぶモデルです。"
     },
     {
       "id": "b16619c31ce49170",
@@ -3769,7 +3769,7 @@
       "signals": {
         "direct_interest": 1.5,
         "related_interest": 0.0,
-        "freshness": 0.98,
+        "freshness": 0.979,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -5488,7 +5488,7 @@
       "id": "35785ab00b53ffaa",
       "title": "The Gemini app is now available for Windows",
       "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/",
-      "summary": "Article URL: https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/ Comments URL: https://news.ycombinator.com/item?id=49653699 Points: 48 # Comments: 33",
+      "summary": "Article URL: https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/ Comments URL: https://news.ycombinator.com/item?id=49653699 Points: 48 # Comments: 35",
       "published_at": "2026-09-11T04:52:20+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -5537,7 +5537,7 @@
         "LLM・AIツール"
       ],
       "title_ja": "GeminiアプリがWindowsで利用可能になりました",
-      "summary_ja": "記事のURL: https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/ コメント URL: https://news.ycombinator.com/item?id=49653699 ポイント: 48 # コメント: 33"
+      "summary_ja": "記事のURL: https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/ コメント URL: https://news.ycombinator.com/item?id=49653699 ポイント: 48 # コメント: 35"
     },
     {
       "id": "225e055e536d422f",
@@ -6958,7 +6958,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.986,
+        "freshness": 0.985,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -7013,7 +7013,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.986,
+        "freshness": 0.985,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -8333,7 +8333,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.861,
+        "freshness": 0.86,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -9897,7 +9897,7 @@
       "id": "1c91bbcbc4e6ac24",
       "title": "Cherenkov Radiation - traveling faster than light",
       "url": "http://www.iaea.org/newscenter/news/what-is-cherenkov-radiation",
-      "summary": "Article URL: http://www.iaea.org/newscenter/news/what-is-cherenkov-radiation Comments URL: https://news.ycombinator.com/item?id=49655286 Points: 22 # Comments: 7",
+      "summary": "Article URL: http://www.iaea.org/newscenter/news/what-is-cherenkov-radiation Comments URL: https://news.ycombinator.com/item?id=49655286 Points: 31 # Comments: 19",
       "published_at": "2026-09-11T08:42:04+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -9931,13 +9931,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "シレンコフ放射線 - 光よりも速く旅行",
-      "summary_ja": "記事のURL: http://www.iaeaea.org/newscenter/news/what-is-cherenkov-radiation コメントのURL: https://news.ycombinator.com/item?id=49655286 ポイント: 22 #コメント: 7"
+      "summary_ja": "記事のURL: http://www.iaeaea.org/newscenter/news/what-is-cherenkov-radiation コメントのURL: https://news.ycombinator.com/item?id=49655286 ポイント: 31 #コメント: 19"
     },
     {
       "id": "26a81019d1e66f46",
       "title": "Neijuan",
       "url": "https://en.wikipedia.org/wiki/Neijuan",
-      "summary": "Article URL: https://en.wikipedia.org/wiki/Neijuan Comments URL: https://news.ycombinator.com/item?id=49655176 Points: 12 # Comments: 2",
+      "summary": "Article URL: https://en.wikipedia.org/wiki/Neijuan Comments URL: https://news.ycombinator.com/item?id=49655176 Points: 19 # Comments: 7",
       "published_at": "2026-09-11T08:26:56+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -9971,14 +9971,14 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "ナイジュアン",
-      "summary_ja": "記事のURL: https://en.wikipedia.org/wiki/Neijuan コメントのURL: https://news.ycombinator.com/item?id=49655176 ポイント: 12 # コメント: 2"
+      "summary_ja": "記事のURL: https://en.wikipedia.org/wiki/Neijuan コメントのURL: https://news.ycombinator.com/item?id=49655176 ポイント: 19 # コメント: 7"
     },
     {
-      "id": "801048063339f9e1",
-      "title": "US diesel hits record $6 a gallon on Iran supply shock",
-      "url": "https://www.ft.com/content/ebfa69a3-323b-450d-8bfd-0b12e01d2a5b",
-      "summary": "Article URL: https://www.ft.com/content/ebfa69a3-323b-450d-8bfd-0b12e01d2a5b Comments URL: https://news.ycombinator.com/item?id=49655012 Points: 28 # Comments: 21",
-      "published_at": "2026-09-11T08:03:59+00:00",
+      "id": "c76bd3fcb97ddd0c",
+      "title": "DeepSeek v4.1 Flash Uncensored",
+      "url": "https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8",
+      "summary": "Article URL: https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8 Comments URL: https://news.ycombinator.com/item?id=49654387 Points: 39 # Comments: 7",
+      "published_at": "2026-09-11T06:46:19+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
       "source_kind": "community",
@@ -10010,14 +10010,14 @@
       "rank_score": 2.1,
       "matched_interests": [],
       "matched_labels": [],
-      "title_ja": "米国のディーゼルはイランの供給の衝撃の記録$ 6をガロン衝突します",
-      "summary_ja": "記事のURL: https://www.ft.com/content/ebfa69a3-323b-450d-8bfd-0b12e01d2a5b コメントのURL: https://news.ycombinator.com/item?id=49655012 ポイント: 28 #コメント: 21"
+      "title_ja": "DeepSeek v4.1 フラッシュ 無修正",
+      "summary_ja": "記事のURL: https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8 コメントのURL: https://news.ycombinator.com/item?id=49654387 ポイント: 39 #コメント: 7"
     },
     {
       "id": "874fb4b8773334d5",
       "title": "Astra for Coding: Why Are We Doing This Again?",
       "url": "https://lucumr.pocoo.org/2026/9/7/astra-why/",
-      "summary": "Article URL: https://lucumr.pocoo.org/2026/9/7/astra-why/ Comments URL: https://news.ycombinator.com/item?id=49654229 Points: 309 # Comments: 227",
+      "summary": "Article URL: https://lucumr.pocoo.org/2026/9/7/astra-why/ Comments URL: https://news.ycombinator.com/item?id=49654229 Points: 319 # Comments: 237",
       "published_at": "2026-09-11T06:23:06+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10051,13 +10051,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "コーディングのためのアストラ: なぜ私たちはこれをやりますか?",
-      "summary_ja": "記事のURL: https://lucumr.pocoo.org/2026/9/7/astra-why/ コメントのURL: https://news.ycombinator.com/item?id=49654229 ポイント: 309 # コメント: 227"
+      "summary_ja": "記事のURL: https://lucumr.pocoo.org/2026/9/7/astra-why/ コメントURL: https://news.ycombinator.com/item?id=49654229 ポイント: 319 # コメント: 237"
     },
     {
       "id": "2eea758f38383eed",
       "title": "GPT‑Live‑1 in the API",
       "url": "https://openai.com/index/introducing-gpt-live-1-in-the-api/",
-      "summary": "Article URL: https://openai.com/index/introducing-gpt-live-1-in-the-api/ Comments URL: https://news.ycombinator.com/item?id=49653985 Points: 11 # Comments: 6",
+      "summary": "Article URL: https://openai.com/index/introducing-gpt-live-1-in-the-api/ Comments URL: https://news.ycombinator.com/item?id=49653985 Points: 14 # Comments: 6",
       "published_at": "2026-09-11T05:45:19+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10091,13 +10091,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "APIのGPT‐Live‐1",
-      "summary_ja": "記事のURL: https://openai.com/index/introducing-gpt-live-1-in-the-api/ コメントのURL: https://news.ycombinator.com/item?id=49653985 ポイント: 11 #コメント: 6"
+      "summary_ja": "記事のURL: https://openai.com/index/introducing-gpt-live-1-in-the-api/ コメントのURL: https://news.ycombinator.com/item?id=49653985 ポイント: 14 # コメント: 6"
     },
     {
       "id": "d3801d9f47f888e6",
       "title": "Exercise intensity is associated with cardiometabolic health",
       "url": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00405-2",
-      "summary": "Article URL: https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00405-2 Comments URL: https://news.ycombinator.com/item?id=49653328 Points: 97 # Comments: 43",
+      "summary": "Article URL: https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00405-2 Comments URL: https://news.ycombinator.com/item?id=49653328 Points: 97 # Comments: 44",
       "published_at": "2026-09-11T03:48:10+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10131,13 +10131,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "運動強度は心臓metabolic健康に関連付けられます",
-      "summary_ja": "記事のURL: https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00405-2 コメントURL: https://news.ycombinator.com/item?id=49653328 ポイント: 97 #コメント: 43"
+      "summary_ja": "記事のURL:https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00405-2 コメントURL:https://news.ycombinator.com/item?id=49653328 ポイント:97 #コメント: 44"
     },
     {
       "id": "ac33704195dc7010",
       "title": "Mexican student creates an acoustic fire extinguisher to put out fire in seconds",
       "url": "https://www.upsocl.com/en/16-year-old-mexican-student-creates-an-acoustic-fire-extinguisher-that-uses-sound-waves-to-put-out-fires-in-seconds/",
-      "summary": "Article URL: https://www.upsocl.com/en/16-year-old-mexican-student-creates-an-acoustic-fire-extinguisher-that-uses-sound-waves-to-put-out-fires-in-seconds/ Comments URL: https://news.ycombinator.com/item?id=49652237 Points: 201 # Comments: 74",
+      "summary": "Article URL: https://www.upsocl.com/en/16-year-old-mexican-student-creates-an-acoustic-fire-extinguisher-that-uses-sound-waves-to-put-out-fires-in-seconds/ Comments URL: https://news.ycombinator.com/item?id=49652237 Points: 207 # Comments: 75",
       "published_at": "2026-09-11T01:00:56+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10171,13 +10171,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "メキシコの学生は数秒で火を出すために音響消火器を作成します",
-      "summary_ja": "記事のURL: https://www.upsocl.com/en/16-year-old-mexican-student-creates-an-acoustic-fire-extinguisher-that-uses-sound-waves-to-put-out-fires-in-seconds/ コメント URL: https://news.ycombinator.com/item?id=49652237 ポイント: 201 # コメント: 74"
+      "summary_ja": "記事のURL: https://www.upsocl.com/en/16-year-old-mexican-student-creates-an-acoustic-fire-extinguisher-that-uses-sound-waves-to-put-out-fires-in-seconds/ コメント URL: https://news.ycombinator.com/item?id=49652237 ポイント: 207 # コメント: 75"
     },
     {
       "id": "b3ed6e9e3367b764",
       "title": "YuE2 · Frontier Music with Symbolic Planning",
       "url": "https://map-yue2.github.io/",
-      "summary": "Article URL: https://map-yue2.github.io/ Comments URL: https://news.ycombinator.com/item?id=49652028 Points: 94 # Comments: 77",
+      "summary": "Article URL: https://map-yue2.github.io/ Comments URL: https://news.ycombinator.com/item?id=49652028 Points: 94 # Comments: 78",
       "published_at": "2026-09-11T00:33:26+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10211,13 +10211,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "YuE2・シンボル・プランニングによるフロンティア・ミュージック",
-      "summary_ja": "記事のURL: https://map-yue2.github.io/ コメント URL: https://news.ycombinator.com/item?id=49652028 ポイント: 94 # コメント: 77"
+      "summary_ja": "記事のURL: https://map-yue2.github.io/ コメント URL: https://news.ycombinator.com/item?id=49652028 ポイント: 94 # コメント: 78"
     },
     {
       "id": "692462a9077ae9e1",
       "title": "Thelio Mira AI Linux Workstation: 192 GB GPU Memory",
       "url": "https://system76.com/workstations/thelio-mira-ai",
-      "summary": "Article URL: https://system76.com/workstations/thelio-mira-ai Comments URL: https://news.ycombinator.com/item?id=49651372 Points: 104 # Comments: 80",
+      "summary": "Article URL: https://system76.com/workstations/thelio-mira-ai Comments URL: https://news.ycombinator.com/item?id=49651372 Points: 105 # Comments: 85",
       "published_at": "2026-09-10T23:10:06+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10251,13 +10251,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "Thelio Mira AI Linux ワークステーション:192 GB GPU メモリ",
-      "summary_ja": "記事のURL: https://system76.com/workstations/thelio-mira-ai コメントのURL: https://news.ycombinator.com/item?id=49651372 ポイント: 104 # コメント: 80"
+      "summary_ja": "記事のURL:https://system76.com/workstations/thelio-mira-aiコメントURL:https://news.ycombinator.com/item?id=49651372 ポイント:105 #コメント:85"
     },
     {
       "id": "effa8971aeee6b61",
       "title": "Nine coding harnesses vs. your laptop",
       "url": "https://nasutton.notion.site/Nine-coding-harnesses-vs-your-laptop-3d139990182b80d59fa3cf500f0450ba?pvs=74",
-      "summary": "Article URL: https://nasutton.notion.site/Nine-coding-harnesses-vs-your-laptop-3d139990182b80d59fa3cf500f0450ba?pvs=74 Comments URL: https://news.ycombinator.com/item?id=49651221 Points: 94 # Comments: 23",
+      "summary": "Article URL: https://nasutton.notion.site/Nine-coding-harnesses-vs-your-laptop-3d139990182b80d59fa3cf500f0450ba?pvs=74 Comments URL: https://news.ycombinator.com/item?id=49651221 Points: 96 # Comments: 25",
       "published_at": "2026-09-10T22:54:01+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10291,13 +10291,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "ナインコーディングは、あなたのラップトップとハーネス",
-      "summary_ja": "記事のURL: https://nasutton.notion.site/Nine-coding-harnesses-vs-your-laptop-3d139990182b80d59fa3cf500f0450ba?pvs=74 注釈 URL: https://news.ycombinator.com/item?id=49651221 ポイント: 94 #コメント: 23"
+      "summary_ja": "記事のURL: https://nasutton.notion.site/Nine-coding-harnesses-vs-your-laptop-3d139990182b80d59fa3cf500f0450ba?pvs=74 注釈 URL: https://news.ycombinator.com/item?id=49651221 ポイント: 96 # コメント: 25"
     },
     {
       "id": "dab5a33129228fa5",
       "title": "NTSB issues investigative update on B-767 runway excursion accident in Miami",
       "url": "https://www.ntsb.gov:443/news/press-releases/Pages/NR20260909.aspx",
-      "summary": "Article URL: https://www.ntsb.gov:443/news/press-releases/Pages/NR20260909.aspx Comments URL: https://news.ycombinator.com/item?id=49650418 Points: 102 # Comments: 174",
+      "summary": "Article URL: https://www.ntsb.gov:443/news/press-releases/Pages/NR20260909.aspx Comments URL: https://news.ycombinator.com/item?id=49650418 Points: 104 # Comments: 177",
       "published_at": "2026-09-10T21:30:55+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10331,13 +10331,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "NTSBはマイアミのB-767滑走路の遠足事故に関する調査更新を問題に",
-      "summary_ja": "記事のURL: https://www.ntsb.gov:443/news/press-releases/Pages/NR20260909.aspx コメント URL: https://news.ycombinator.com/item?id=49650418 ポイント: 102 # コメント: 174"
+      "summary_ja": "記事のURL: https://www.ntsb.gov:443/news/press-releases/Pages/NR20260909.aspx コメント URL: https://news.ycombinator.com/item?id=49650418 ポイント: 104 # コメント: 177"
     },
     {
       "id": "83fc2559f87bcfb8",
       "title": "The Deathray: A simple way for an untrusted site to freeze a Mac",
       "url": "https://auberon.xyz/blog/posts/deathray/",
-      "summary": "Article URL: https://auberon.xyz/blog/posts/deathray/ Comments URL: https://news.ycombinator.com/item?id=49649124 Points: 186 # Comments: 111",
+      "summary": "Article URL: https://auberon.xyz/blog/posts/deathray/ Comments URL: https://news.ycombinator.com/item?id=49649124 Points: 190 # Comments: 114",
       "published_at": "2026-09-10T19:34:20+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10371,13 +10371,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "デスレイ:Macを凍結するための信頼できるサイトのための簡単な方法",
-      "summary_ja": "記事のURL: https://auberon.xyz/blog/posts/deathray/ コメントのURL: https://news.ycombinator.com/item?id=49649124 ポイント: 186 # コメント: 111"
+      "summary_ja": "記事のURL: https://auberon.xyz/blog/posts/deathray/ コメントのURL: https://news.ycombinator.com/item?id=49649124 ポイント: 190 # コメント: 114"
     },
     {
       "id": "0c0d8751baac2b7e",
       "title": "Detecting and countering misuse of AI: September 2026",
       "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
-      "summary": "https://www-cdn.anthropic.com/e50be2e51e7695dc4b1366a37a245a... Comments URL: https://news.ycombinator.com/item?id=49647300 Points: 130 # Comments: 196",
+      "summary": "https://www-cdn.anthropic.com/e50be2e51e7695dc4b1366a37a245a... Comments URL: https://news.ycombinator.com/item?id=49647300 Points: 130 # Comments: 200",
       "published_at": "2026-09-10T17:23:42+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10411,13 +10411,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "AIの誤用の検知と対向:2026年9月",
-      "summary_ja": "https://www.cdn.anthropic.com/e50be2e51e7695dc4b1366a37a245a... コメントURL:https://news.ycombinator.com/item?id=49647300 ポイント: 130 # 注釈: 196"
+      "summary_ja": "https://www.cdn.anthropic.com/e50be2e51e7695dc4b1366a37a245a... コメントURL:https://news.ycombinator.com/item?id=49647300 ポイント: 130 # 注釈: 200"
     },
     {
       "id": "9495b3c72ced3b38",
       "title": "Music Theory for the 21st-Century Classroom",
       "url": "https://musictheory.pugetsound.edu/mt21c/MusicTheory.html",
-      "summary": "Article URL: https://musictheory.pugetsound.edu/mt21c/MusicTheory.html Comments URL: https://news.ycombinator.com/item?id=49647134 Points: 222 # Comments: 94",
+      "summary": "Article URL: https://musictheory.pugetsound.edu/mt21c/MusicTheory.html Comments URL: https://news.ycombinator.com/item?id=49647134 Points: 224 # Comments: 95",
       "published_at": "2026-09-10T17:14:12+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10451,13 +10451,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "第21世紀教室音楽理論",
-      "summary_ja": "記事のURL: https://musictheory.pugetsound.edu/mt21c/MusicTheory.html コメント URL: https://news.ycombinator.com/item?id=49647134 ポイント: 222 # コメント: 94"
+      "summary_ja": "記事のURL: https://musictheory.pugetsound.edu/mt21c/MusicTheory.html コメント URL: https://news.ycombinator.com/item?id=49647134 ポイント: 224 # コメント: 95"
     },
     {
       "id": "97a98fc60d4a3f17",
       "title": "Forgejo <=16.0.3 Critical RCE",
       "url": "https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/16.0.4.md",
-      "summary": "Article URL: https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/16.0.4.md Comments URL: https://news.ycombinator.com/item?id=49645907 Points: 184 # Comments: 67",
+      "summary": "Article URL: https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/16.0.4.md Comments URL: https://news.ycombinator.com/item?id=49645907 Points: 185 # Comments: 68",
       "published_at": "2026-09-10T15:57:40+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10491,7 +10491,7 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "Forgejo <=16.0.3 重要な RCE",
-      "summary_ja": "記事のURL: https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/16.0.4.md コメントURL:https://news.ycombinator.com/item?id=49645907 ポイント: 184 # コメント: 67"
+      "summary_ja": "記事のURL: https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/16.0.4.md コメントURL:https://news.ycombinator.com/item?id=49645907 ポイント: 185 # コメント: 68"
     },
     {
       "id": "7b24a73c35d8dbdb",
@@ -10537,7 +10537,7 @@
       "id": "bbfe29c66ab58088",
       "title": "Cognition launches new SWE-2 model, Rivaling Fable 5.1 and GPT-Astra",
       "url": "https://cognition.com/blog/swe-2",
-      "summary": "Article URL: https://cognition.com/blog/swe-2 Comments URL: https://news.ycombinator.com/item?id=49645443 Points: 412 # Comments: 172",
+      "summary": "Article URL: https://cognition.com/blog/swe-2 Comments URL: https://news.ycombinator.com/item?id=49645443 Points: 414 # Comments: 173",
       "published_at": "2026-09-10T15:29:47+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10571,7 +10571,7 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "認知が新しいSWE-2モデルを発売し、Fable 5.1とGPT-Astraをライバル",
-      "summary_ja": "記事のURL: https://cognition.com/blog/swe-2 コメントURL: https://news.ycombinator.com/item?id=49645443 ポイント: 412 # コメント: 172"
+      "summary_ja": "記事のURL: https://cognition.com/blog/swe-2 コメントURL: https://news.ycombinator.com/item?id=49645443 ポイント: 414 # コメント: 173"
     },
     {
       "id": "b84ad156fb943dde",
@@ -11568,9 +11568,9 @@
     "engine": "argos-translate",
     "source_language": "en",
     "target_language": "ja",
-    "generated_at": "2026-09-11T09:47:39.327530+00:00",
-    "translated_fields": 358,
-    "reused_fields": 0,
+    "generated_at": "2026-09-11T09:51:19.792845+00:00",
+    "translated_fields": 24,
+    "reused_fields": 334,
     "native_japanese_fields": 50,
     "failed_fields": 0
   }
