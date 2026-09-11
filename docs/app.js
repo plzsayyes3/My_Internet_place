@@ -10,6 +10,9 @@ const template = document.querySelector("#card-template");
 let allItems = [];
 let activeView = "for-you";
 
+const SOURCE_REPEAT_PENALTY = 0.65;
+const CONSECUTIVE_SOURCE_PENALTY = 0.35;
+
 const CATEGORY_LABELS = {
   ai_tools: "AI",
   knowledge_tools: "KNOWLEDGE",
@@ -49,6 +52,52 @@ function categoryLabel(category) {
   return CATEGORY_LABELS[category] || String(category || "OTHER").toUpperCase();
 }
 
+function sourceKey(item) {
+  return item.source_id || item.source || "unknown";
+}
+
+function diversifyForYou(items) {
+  const remaining = [...items];
+  const selected = [];
+  const sourceCounts = new Map();
+  let previousSource = null;
+
+  while (remaining.length) {
+    let bestIndex = 0;
+    let bestAdjustedScore = -Infinity;
+    let bestPublishedAt = 0;
+
+    for (let index = 0; index < remaining.length; index += 1) {
+      const item = remaining[index];
+      const source = sourceKey(item);
+      const sourceCount = sourceCounts.get(source) || 0;
+      const baseScore = Number(item.rank_score || item.score || 0);
+      const adjustedScore =
+        baseScore
+        - (sourceCount * SOURCE_REPEAT_PENALTY)
+        - (source === previousSource ? CONSECUTIVE_SOURCE_PENALTY : 0);
+      const publishedAt = numericTime(item.published_at);
+
+      if (
+        adjustedScore > bestAdjustedScore
+        || (adjustedScore === bestAdjustedScore && publishedAt > bestPublishedAt)
+      ) {
+        bestIndex = index;
+        bestAdjustedScore = adjustedScore;
+        bestPublishedAt = publishedAt;
+      }
+    }
+
+    const [nextItem] = remaining.splice(bestIndex, 1);
+    const nextSource = sourceKey(nextItem);
+    selected.push(nextItem);
+    sourceCounts.set(nextSource, (sourceCounts.get(nextSource) || 0) + 1);
+    previousSource = nextSource;
+  }
+
+  return selected;
+}
+
 function renderFilters(items) {
   const categories = [...new Set(items.map((item) => item.source_category).filter(Boolean))];
 
@@ -80,11 +129,7 @@ function itemsForView() {
   }
 
   if (activeView === "for-you") {
-    return items.sort((a, b) => {
-      const scoreDiff = Number(b.rank_score || b.score || 0) - Number(a.rank_score || a.score || 0);
-      if (scoreDiff !== 0) return scoreDiff;
-      return numericTime(b.published_at) - numericTime(a.published_at);
-    });
+    return diversifyForYou(items);
   }
 
   return items
