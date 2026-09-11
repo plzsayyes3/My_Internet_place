@@ -13,17 +13,39 @@ let activeView = "for-you";
 const SOURCE_REPEAT_PENALTY = 0.65;
 const CONSECUTIVE_SOURCE_PENALTY = 0.35;
 
+const CATEGORY_ORDER = [
+  "ai",
+  "knowledge",
+  "software",
+  "devices",
+  "make",
+  "work",
+  "education",
+  "life",
+];
+
 const CATEGORY_LABELS = {
-  ai_tools: "AI",
-  knowledge_tools: "KNOWLEDGE",
-  software_building: "SOFTWARE",
-  making: "MAKE",
-  personal_devices: "DEVICES",
-  education_childcare: "EDUCATION",
-  productivity: "WORKFLOW",
-  personal_web: "WEB",
-  discovery: "DISCOVERY",
+  ai: "AI",
+  knowledge: "KNOWLEDGE",
+  software: "SOFTWARE",
+  devices: "DEVICES",
+  make: "MAKE",
+  work: "WORK",
+  education: "EDUCATION",
+  life: "LIFE",
   other: "OTHER",
+};
+
+const LEGACY_CATEGORY_MAP = {
+  ai_tools: "ai",
+  knowledge_tools: "knowledge",
+  software_building: "software",
+  personal_devices: "devices",
+  making: "make",
+  productivity: "work",
+  education_childcare: "education",
+  personal_web: "software",
+  discovery: "other",
 };
 
 function formatDate(value) {
@@ -49,8 +71,16 @@ function scoreLabel(score) {
   return "DISCOVER";
 }
 
+function normalizedCategory(category) {
+  return LEGACY_CATEGORY_MAP[category] || category || "other";
+}
+
+function itemCategory(item) {
+  return normalizedCategory(item.primary_category || item.source_category);
+}
+
 function categoryLabel(category) {
-  return CATEGORY_LABELS[category] || String(category || "OTHER").toUpperCase();
+  return CATEGORY_LABELS[normalizedCategory(category)] || String(category || "OTHER").toUpperCase();
 }
 
 function sourceKey(item) {
@@ -100,7 +130,8 @@ function diversifyForYou(items) {
 }
 
 function renderFilters(items) {
-  const categories = [...new Set(items.map((item) => item.source_category).filter(Boolean))];
+  const available = new Set(items.map(itemCategory));
+  const categories = CATEGORY_ORDER.filter((category) => available.has(category));
 
   for (const category of categories) {
     if (filtersEl.querySelector(`[data-view="${CSS.escape(category)}"]`)) continue;
@@ -134,7 +165,7 @@ function itemsForView() {
   }
 
   return items
-    .filter((item) => item.source_category === activeView)
+    .filter((item) => itemCategory(item) === activeView)
     .sort((a, b) => numericTime(b.published_at) - numericTime(a.published_at));
 }
 
@@ -147,7 +178,7 @@ function renderFeed() {
   for (const item of items) {
     const node = template.content.cloneNode(true);
     node.querySelector(".source").textContent = item.source || "Unknown source";
-    node.querySelector(".kind").textContent = (item.content_type || "article").toUpperCase();
+    node.querySelector(".kind").textContent = (item.item_type || item.content_type || "article").toUpperCase();
     node.querySelector(".score").textContent = scoreLabel(Number(item.score || 0));
 
     const title = node.querySelector(".title");
@@ -158,7 +189,7 @@ function renderFeed() {
     summary.textContent = item.summary || "";
     summary.hidden = !item.summary;
 
-    const labels = item.matched_labels || item.matched_interests || [];
+    const labels = item.matched_labels || item.topic_labels || item.matched_interests || [];
     node.querySelector(".reason").textContent = labels.length
       ? `関心: ${labels.join(" · ")}`
       : "発見枠";

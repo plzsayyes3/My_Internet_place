@@ -1,0 +1,187 @@
+# Stable public taxonomy for My Internet Place.
+# Categories are for browsing. Topics are for classification and recommendation.
+# Keep this file generic and safe for a public repository.
+
+version: 1
+
+categories:
+  - id: ai
+    label: AI
+  - id: knowledge
+    label: KNOWLEDGE
+  - id: software
+    label: SOFTWARE
+  - id: devices
+    label: DEVICES
+  - id: make
+    label: MAKE
+  - id: work
+    label: WORK
+  - id: education
+    label: EDUCATION
+  - id: life
+    label: LIFE
+
+topics:
+  - id: llm_tools
+    label: LLM・AIツール
+    category: ai
+    keywords: [LLM, OpenAI, ChatGPT, Gemini, Claude, Anthropic, OpenRouter, 生成AI]
+
+  - id: ai_agents_automation
+    label: AIエージェント・自動化
+    category: ai
+    keywords: [AI agent, AI agents, agentic, agent workflow, MCP, automation, AIエージェント]
+
+  - id: ai_coding
+    label: AIコーディング
+    category: ai
+    keywords: [AI coding, coding agent, code assistant, Codex, Claude Code, GitHub Copilot]
+
+  - id: obsidian_pkm
+    label: Obsidian・PKM
+    category: knowledge
+    keywords: [Obsidian, PKM, personal knowledge management, second brain, 第二の脳]
+
+  - id: personal_knowledge_recording
+    label: 個人知識・記録
+    category: knowledge
+    keywords: [note taking, personal knowledge, journaling, digital garden, knowledge management, 記録, ノート術]
+
+  - id: local_first
+    label: Local-first
+    category: knowledge
+    keywords: [local-first, local first, offline first, CRDT, Markdown]
+
+  - id: systems_thinking
+    label: 思考法・システム思考
+    category: knowledge
+    keywords: [systems thinking, system thinking, thinking tools, mental model, HCI, システム思考, 思考法]
+
+  - id: web_app_development
+    label: Webアプリ制作
+    category: software
+    keywords: [web app, browser app, frontend, JavaScript, TypeScript, static site, Webアプリ]
+
+  - id: github_devops
+    label: GitHub・Actions
+    category: software
+    keywords: [GitHub, GitHub Actions, GitHub Pages, CI/CD, workflow, open source]
+
+  - id: personal_web_rss
+    label: 個人Web・RSS
+    category: software
+    keywords: [RSS, Atom, feed reader, IndieWeb, indie web, personal web, personal website, blogroll, 個人サイト, フィード]
+
+  - id: hci_interfaces
+    label: HCI・インターフェース
+    category: software
+    keywords: [HCI, human computer interaction, interface design, interaction design, UI experiment]
+
+  - id: small_computing
+    label: 小型コンピューティング
+    category: devices
+    keywords: [ESP32, M5Stack, M5Stick, Raspberry Pi, microcontroller, micro computer, handheld computer, pocket computer, 小型端末, 小型デバイス]
+
+  - id: epaper_wearables
+    label: 電子ペーパー・ウェアラブル
+    category: devices
+    keywords: [e-paper, epaper, e-ink, eink, electronic paper, wearable, smartwatch, Watchy, 電子ペーパー, ウェアラブル]
+
+  - id: apple_ios
+    label: Apple Watch・iPhone・iOS
+    category: devices
+    keywords: [Apple Watch, iPhone, iOS, Shortcuts, Scriptable, watchOS]
+
+  - id: input_devices
+    label: 自作キーボード・入力デバイス
+    category: make
+    keywords: [custom keyboard, mechanical keyboard, one handed keyboard, chorded keyboard, input device, Bluetooth HID, HID, 自作キーボード, 入力デバイス]
+
+  - id: 3d_printing
+    label: 3Dプリント
+    category: make
+    keywords: [3D printing, 3D printer, STL, parametric CAD, OpenSCAD, 3Dプリンタ, 3Dプリント]
+
+  - id: diy_electronics
+    label: 電子工作・Maker
+    category: make
+    keywords: [DIY electronics, electronics project, maker, soldering, PCB, electronics, 電子工作]
+
+  - id: task_time_management
+    label: タスク・時間管理
+    category: work
+    keywords: [task management, time management, task planning, time tracking, タスク管理, 時間管理, 手帳]
+
+  - id: workflow_design
+    label: ワークフロー設計
+    category: work
+    keywords: [workflow design, personal workflow, work design, automation workflow, process design, ワークフロー]
+
+  - id: management_teams
+    label: マネジメント・チーム
+    category: work
+    keywords: [management, team building, leadership, one-on-one, 1on1, organization design, マネジメント, チームづくり]
+
+  - id: early_childhood
+    label: 保育・幼児教育
+    category: education
+    keywords: [childcare, early childhood education, preschool, nursery school, 保育, 幼児教育]
+
+  - id: child_development
+    label: 子どもの発達・非認知能力
+    category: education
+    keywords: [child development, non-cognitive skills, social emotional learning, SEL, 子どもの発達, 非認知能力]
+
+  - id: education_practice
+    label: 教育実践・組織
+    category: education
+    keywords: [education practice, teaching practice, school management, educator development, 教育実践, 人材育成]
+
+  - id: life_design
+    label: 生活・働き方設計
+    category: life
+    keywords: [life design, work life, lifestyle design, intentional living, 働き方, 生活設計]
+
+  - id: slow_productivity
+    label: 持続可能な生産性
+    category: life
+    keywords: [slow productivity, sustainable productivity, burnout, deep work, calm technology, 生産性, 持続可能]
+
+relations:
+  - [ai_coding, github_devops, 0.9]
+  - [ai_coding, web_app_development, 0.8]
+  - [ai_coding, ai_agents_automation, 0.8]
+  - [obsidian_pkm, personal_knowledge_recording, 0.9]
+  - [obsidian_pkm, local_first, 0.8]
+  - [obsidian_pkm, workflow_design, 0.6]
+  - [personal_web_rss, local_first, 0.7]
+  - [small_computing, epaper_wearables, 0.8]
+  - [small_computing, diy_electronics, 0.8]
+  - [small_computing, input_devices, 0.7]
+  - [input_devices, hci_interfaces, 0.9]
+  - [input_devices, diy_electronics, 0.8]
+  - [task_time_management, workflow_design, 0.9]
+  - [management_teams, education_practice, 0.7]
+  - [systems_thinking, hci_interfaces, 0.7]
+  - [life_design, slow_productivity, 0.9]
+
+item_types:
+  - news
+  - release
+  - tool
+  - paper
+  - blog
+  - documentation
+  - project
+  - article
+
+traits:
+  - how_to
+  - essay
+  - analysis
+  - case_study
+  - long_read
+  - research
+  - opinion
+  - reference

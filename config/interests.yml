@@ -1,151 +1,198 @@
 # Public interest profile for My Internet Place.
-# This file is intentionally generic and safe for a public repository.
-# It is derived from broad interests only; no private notes or personal identifiers belong here.
+# This file intentionally contains only broad, public-safe preferences.
+# Taxonomy structure lives in taxonomy.yml; this file expresses attention and ranking.
 
-version: 2
+version: 3
 
-interests:
-  - id: ai_tools
-    label: AI・AIツール
-    weight: 1.0
-    keywords:
-      - AI
-      - LLM
-      - OpenAI
-      - ChatGPT
-      - Gemini
-      - Claude
-      - Anthropic
-      - OpenRouter
-      - AI agents
-      - agentic
-      - automation
-      - 生成AI
-      - AIエージェント
+topic_weights:
+  llm_tools: 1.0
+  ai_agents_automation: 1.35
+  ai_coding: 1.2
+  obsidian_pkm: 1.25
+  personal_knowledge_recording: 1.15
+  local_first: 1.0
+  systems_thinking: 0.95
+  web_app_development: 1.05
+  github_devops: 1.05
+  personal_web_rss: 1.0
+  hci_interfaces: 1.0
+  small_computing: 1.45
+  epaper_wearables: 1.45
+  apple_ios: 1.05
+  input_devices: 1.45
+  3d_printing: 1.0
+  diy_electronics: 0.95
+  task_time_management: 1.0
+  workflow_design: 1.05
+  management_teams: 0.95
+  early_childhood: 1.0
+  child_development: 1.0
+  education_practice: 0.9
+  life_design: 0.85
+  slow_productivity: 0.9
 
-  - id: knowledge_tools
-    label: ナレッジ・ノート
-    weight: 1.0
-    keywords:
-      - Obsidian
-      - personal knowledge management
-      - knowledge management
-      - PKM
-      - second brain
-      - note taking
-      - local first
-      - markdown
-      - ナレッジ管理
-      - ノート術
-      - 第二の脳
+# Signals are not navigation categories. They describe what tends to catch attention
+# inside a broader topic. Positive weights boost; negative weights downrank.
+interest_signals:
+  - id: compact_devices
+    label: 小型・携帯デバイス
+    weight: 1.5
+    terms:
+      - small device
+      - compact device
+      - tiny computer
+      - handheld
+      - handheld computer
+      - pocket computer
+      - portable terminal
+      - palm-sized
+      - small form factor
+      - 小型端末
+      - 小型デバイス
+      - 携帯端末
+      - 手のひらサイズ
 
-  - id: making
-    label: メイキング
-    weight: 0.9
-    keywords:
-      - ESP32
-      - M5Stack
-      - Raspberry Pi
-      - microcontroller
+  - id: cyberdeck
+    label: Cyberdeck
+    weight: 1.9
+    terms:
+      - cyberdeck
+      - cyber deck
+      - portable terminal
+      - portable computer
+      - DIY terminal
+      - handheld terminal
+      - writerdeck
+      - writer deck
+
+  - id: epaper_device
+    label: 電子ペーパー端末
+    weight: 1.6
+    terms:
       - e-paper
-      - Bluetooth keyboard
-      - 3D printing
-      - maker
-      - DIY electronics
+      - epaper
+      - e-ink
+      - eink
+      - electronic paper
+      - e-paper display
       - 電子ペーパー
-      - 3Dプリンタ
-      - 自作キーボード
 
-  - id: software_building
-    label: ソフトウェア制作
-    weight: 0.9
-    keywords:
-      - GitHub
-      - GitHub Actions
-      - GitHub Pages
-      - web app
-      - static site
-      - browser app
-      - indie software
-      - automation workflow
-      - open source
-      - plugin development
-      - 自動化
-      - Webアプリ
+  - id: practical_small_computing
+    label: 実用小型コンピューティング
+    weight: 1.35
+    terms:
+      - ESP32
+      - ESP32-S3
+      - M5Stack
+      - M5Stick
+      - Raspberry Pi Zero
+      - Raspberry Pi Pico
+      - Seeed Studio XIAO
+      - battery powered
+      - low power
 
-  - id: personal_devices
-    label: 小型デバイス・iOS
-    weight: 0.85
-    keywords:
-      - Apple Watch
-      - iOS
-      - iPhone
-      - Shortcuts
-      - Scriptable
-      - wearable
-      - smartwatch
-      - Watchy
+  - id: custom_input
+    label: 小型入力デバイス
+    weight: 1.5
+    terms:
+      - custom keyboard
+      - one handed keyboard
+      - one-handed keyboard
+      - chorded keyboard
+      - thumb keyboard
       - Bluetooth HID
       - input device
-      - e-paper watch
-      - ウェアラブル
-      - 小型端末
+      - macro pad
+      - macropad
+      - T9 keyboard
+      - 自作キーボード
+      - 片手キーボード
+      - 入力デバイス
 
-  - id: education_childcare
-    label: 保育・教育
-    weight: 0.8
-    keywords:
-      - childcare
-      - early childhood education
-      - education
-      - child development
-      - non-cognitive skills
-      - parenting
-      - 保育
-      - 幼児教育
-      - 子ども
-      - 非認知能力
-      - 子育て
+  - id: local_personal_tools
+    label: 個人向け・Local-first
+    weight: 1.1
+    terms:
+      - local-first
+      - local first
+      - personal tool
+      - personal software
+      - single user
+      - offline first
+      - self hosted
+      - self-hosted
 
-  - id: productivity
-    label: タスク・仕事設計
-    weight: 0.8
-    keywords:
-      - productivity
-      - task management
-      - time management
-      - personal workflow
-      - work design
-      - Shape Up
-      - task planning
-      - タスク管理
-      - 手帳
-      - ワークフロー
+  - id: calm_personal_tech
+    label: 静かな個人技術
+    weight: 1.0
+    terms:
+      - calm technology
+      - distraction free
+      - minimalist device
+      - focused device
+      - ambient computing
 
-  - id: personal_web
-    label: 個人Web・RSS
-    weight: 0.7
-    keywords:
-      - personal website
-      - indie web
-      - indieweb
-      - digital garden
-      - RSS
-      - Atom
-      - feed reader
-      - personal web
-      - blogroll
-      - 個人サイト
-      - フィード
+  - id: large_robotics
+    label: 大型・産業ロボティクス
+    weight: -0.75
+    terms:
+      - industrial robot
+      - industrial robotics
+      - humanoid robot
+      - robot arm
+      - robotic arm
+      - warehouse robot
+      - autonomous warehouse
+      - factory automation robot
+      - 産業用ロボット
+      - 大型ロボット
+      - ロボットアーム
 
-content_types:
-  - news
-  - article
-  - blog
-  - release
-  - tool
-  - paper
-  - long_read
+# Combination bonuses express preferences that are stronger than individual words.
+combinations:
+  - id: pocket_epaper
+    label: 小型電子ペーパー端末
+    terms: [ESP32, M5Stack, e-paper, epaper, handheld, pocket, wearable, Watchy]
+    min_match: 2
+    bonus: 1.4
+
+  - id: cyberdeck_build
+    label: Cyberdeck制作
+    terms: [cyberdeck, Raspberry Pi, ESP32, keyboard, display, battery, portable terminal]
+    min_match: 2
+    bonus: 1.6
+
+  - id: tiny_input_device
+    label: 小型入力装置
+    terms: [keyboard, Bluetooth HID, one handed, thumb, handheld, ESP32, M5Stack]
+    min_match: 2
+    bonus: 1.25
+
+  - id: personal_epaper_reader
+    label: 個人向けE-paper Reader
+    terms: [e-paper, RSS, reader, feed, offline, personal]
+    min_match: 2
+    bonus: 1.15
+
+# These queries are for future active discovery beyond RSS/Atom. They are not
+# executed by the current collector yet, but live here so discovery can reuse
+# the same preference model later.
+discovery_queries:
+  - cyberdeck
+  - DIY cyberdeck
+  - ESP32 handheld
+  - ESP32 e-paper
+  - M5Stack e-paper
+  - portable e-paper computer
+  - Raspberry Pi cyberdeck
+  - DIY handheld terminal
+  - custom input device
+  - one handed keyboard
+  - thumb keyboard DIY
+  - tiny computer DIY
+  - pocket computer open source
+  - low power personal device
+  - local-first personal tools
 
 ranking:
   prefer:
@@ -154,8 +201,10 @@ ranking:
     - technical_details
     - practical_examples
     - thoughtful_long_form
+    - compact_personal_devices
   downrank:
     - stale_items
     - duplicate_stories
     - clickbait
     - thin_content
+    - large_industrial_hardware
