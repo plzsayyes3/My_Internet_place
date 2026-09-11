@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T23:53:28.263335+00:00",
+  "generated_at": "2026-09-11T23:54:48.313313+00:00",
   "count": 211,
   "taxonomy_version": 3,
   "interest_profile_version": 3,
@@ -101,7 +101,7 @@
       "summary": "Hackaday covers an ESP32-C3 Xteink e-paper reader fork that implements Internet Printing Protocol, letting computers send documents to the reader as if it were a printer while also saving output to SD card.",
       "published_at": "2026-09-10T00:00:00+00:00",
       "source": "Hackaday",
-      "source_id": "chatgpt_web_discovery",
+      "source_id": "search:hackaday.com",
       "source_kind": "publication",
       "source_category": "make",
       "primary_category": "make",
@@ -311,7 +311,7 @@
       "id": "68409805c1b9c25e",
       "title": "OpenAI agents carried out an undisclosed attack on RubyGems",
       "url": "https://www.rubyhack.ai/",
-      "summary": "Article URL: https://www.rubyhack.ai/ Comments URL: https://news.ycombinator.com/item?id=49666735 Points: 5 # Comments: 2",
+      "summary": "Article URL: https://www.rubyhack.ai/ Comments URL: https://news.ycombinator.com/item?id=49666735 Points: 37 # Comments: 9",
       "published_at": "2026-09-11T23:17:42+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -369,7 +369,7 @@
         "LLM・AIツール"
       ],
       "title_ja": "OpenAI エージェントは、RubyGems の未公開攻撃を実施しました",
-      "summary_ja": "記事のURL: https://www.rubyhack.ai/ コメント URL: https://news.ycombinator.com/item?id=49666735 ポイント: 5 # コメント: 2"
+      "summary_ja": "記事のURL: https://www.rubyhack.ai/ コメント URL: https://news.ycombinator.com/item?id=49666735 ポイント: 37 # コメント: 9"
     },
     {
       "id": "434ac5bdc849ee6f",
@@ -2157,7 +2157,7 @@
       "summary": "A comparison of private and local-first task apps focusing on where data lives, whether accounts are required, sync and encryption models, export options, and how offline-first claims differ from true local-first capture.",
       "published_at": "2026-09-07T00:00:00+00:00",
       "source": "Zero-Friction Tasks",
-      "source_id": "chatgpt_web_discovery",
+      "source_id": "search:zerofriction.app",
       "source_kind": "blog",
       "source_category": "knowledge",
       "primary_category": "knowledge",
@@ -2230,7 +2230,7 @@
       "summary": "A recent note explains local-first software as keeping the primary truth on the device, with sync treated as optional infrastructure, and connects that idea to privacy, data sovereignty, offline use, and PKM.",
       "published_at": "2026-09-07T00:00:00+00:00",
       "source": "JoRap Notes",
-      "source_id": "chatgpt_web_discovery",
+      "source_id": "search:jorap.com",
       "source_kind": "blog",
       "source_category": "knowledge",
       "primary_category": "knowledge",
@@ -4563,7 +4563,7 @@
       "summary": "Pellet describes a local-first approach to letting an AI agent work directly with personal markdown notes on the user’s machine instead of requiring the knowledge base to be uploaded to a hosted service.",
       "published_at": "2026-09-08T00:00:00+00:00",
       "source": "Pellet blog",
-      "source_id": "chatgpt_web_discovery",
+      "source_id": "search:getpellet.app",
       "source_kind": "blog",
       "source_category": "knowledge",
       "primary_category": "ai",
@@ -4920,7 +4920,7 @@
       "summary": "A compact 36-key split keyboard was designed around measured hand geometry and refined through roughly 50 prototypes, using angled finger columns, low-profile switches, and thumb layer keys.",
       "published_at": "2026-09-03T00:00:00+00:00",
       "source": "Hackaday",
-      "source_id": "chatgpt_web_discovery",
+      "source_id": "search:hackaday.com",
       "source_kind": "publication",
       "source_category": "make",
       "primary_category": "make",
@@ -6170,7 +6170,7 @@
       "id": "289bb59f3eebf081",
       "title": "Claude is only available to people over 18 years",
       "url": "https://support.claude.com/en/articles/15171100-age-assurance-on-claude",
-      "summary": "Article URL: https://support.claude.com/en/articles/15171100-age-assurance-on-claude Comments URL: https://news.ycombinator.com/item?id=49656225 Points: 551 # Comments: 584",
+      "summary": "Article URL: https://support.claude.com/en/articles/15171100-age-assurance-on-claude Comments URL: https://news.ycombinator.com/item?id=49656225 Points: 555 # Comments: 584",
       "published_at": "2026-09-11T10:48:00+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -6219,7 +6219,7 @@
         "LLM・AIツール"
       ],
       "title_ja": "クラウデは18歳以上の方のみご利用いただけます。",
-      "summary_ja": "記事のURL: https://support.claude.com/en/articles/15171100-age-assurance-on-claude コメントのURL: https://news.ycombinator.com/item?id=49656225 ポイント: 551 # コメント: 584"
+      "summary_ja": "記事のURL: https://support.claude.com/en/articles/15171100-age-assurance-on-claude コメントのURL: https://news.ycombinator.com/item?id=49656225 ポイント: 555 # コメント: 584"
     },
     {
       "id": "322b7bb856954e6c",
@@ -6720,7 +6720,7 @@
       "id": "53a9835ab826d34f",
       "title": "Rune is now open source",
       "url": "https://rune.build/blog/rune-is-now-open-source",
-      "summary": "Article URL: https://rune.build/blog/rune-is-now-open-source Comments URL: https://news.ycombinator.com/item?id=49660149 Points: 127 # Comments: 52",
+      "summary": "Article URL: https://rune.build/blog/rune-is-now-open-source Comments URL: https://news.ycombinator.com/item?id=49660149 Points: 129 # Comments: 52",
       "published_at": "2026-09-11T15:31:47+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -6769,7 +6769,7 @@
         "Indie Software・OSS"
       ],
       "title_ja": "Rune は現在オープンソースです",
-      "summary_ja": "記事のURL: https://rune.build/blog/rune-is-now-open-source コメントのURL: https://news.ycombinator.com/item?id=49660149 ポイント: 127 # コメント: 52"
+      "summary_ja": "記事のURL: https://rune.build/blog/rune-is-now-open-source コメント URL: https://news.ycombinator.com/item?id=49660149 ポイント: 129 # コメント: 52"
     },
     {
       "id": "d3d32e8628746617",
@@ -7392,7 +7392,7 @@
       "summary": "The official Pokémon news page currently highlights September 2026 updates across games and the Trading Card Game, including 30th Celebration coverage, Pokopia expansion-pass information, and Pokémon GO updates.",
       "published_at": null,
       "source": "Pokémon",
-      "source_id": "chatgpt_web_discovery",
+      "source_id": "search:pokemon.com",
       "source_kind": "official",
       "source_category": "other",
       "primary_category": "other",
@@ -9437,7 +9437,7 @@
       "summary": "ポケモンカードゲーム公式のニュース一覧。9月11日にはチャンピオンズリーグ2027横浜のライブ配信や学園祭2026、9月9日には30th CELEBRATION関連情報などが掲載されている。",
       "published_at": null,
       "source": "ポケモンカードゲーム",
-      "source_id": "chatgpt_web_discovery",
+      "source_id": "search:pokemon-card.com",
       "source_kind": "official",
       "source_category": "other",
       "primary_category": "other",
@@ -10541,7 +10541,7 @@
       "id": "88bf5f4583f1d837",
       "title": "DeCloudflare",
       "url": "https://0xacab.org/dCF/deCloudflare/-/blob/master/README.md",
-      "summary": "Article URL: https://0xacab.org/dCF/deCloudflare/-/blob/master/README.md Comments URL: https://news.ycombinator.com/item?id=49666587 Points: 18 # Comments: 24",
+      "summary": "Article URL: https://0xacab.org/dCF/deCloudflare/-/blob/master/README.md Comments URL: https://news.ycombinator.com/item?id=49666587 Points: 27 # Comments: 38",
       "published_at": "2026-09-11T22:59:09+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10575,7 +10575,7 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "デクラウドフレア",
-      "summary_ja": "記事のURL: https://0xacab.org/dCF/deCloudflare/-/blob/master/README.md コメント URL: https://news.ycombinator.com/item?id=49666587 ポイント: 18 # コメント: 24"
+      "summary_ja": "記事のURL: https://0xacab.org/dCF/deCloudflare/-/blob/master/README.md コメント URL: https://news.ycombinator.com/item?id=49666587 ポイント: 27 # コメント: 38"
     },
     {
       "id": "15b8bf567928f1e3",
@@ -10621,7 +10621,7 @@
       "id": "c4c19e619bf53435",
       "title": "Project Blinkenlights",
       "url": "https://blinkenlights.de/en/",
-      "summary": "Article URL: https://blinkenlights.de/en/ Comments URL: https://news.ycombinator.com/item?id=49666146 Points: 23 # Comments: 12",
+      "summary": "Article URL: https://blinkenlights.de/en/ Comments URL: https://news.ycombinator.com/item?id=49666146 Points: 27 # Comments: 12",
       "published_at": "2026-09-11T22:15:00+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10655,13 +10655,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "プロジェクトBlinkenlights",
-      "summary_ja": "記事URL: https://blinkenlights.de/en/ コメントURL: https://news.ycombinator.com/item?id=49666146 ポイント: 23 #コメント: 12"
+      "summary_ja": "記事のURL: https://blinkenlights.de/en/ コメントのURL: https://news.ycombinator.com/item?id=49666146 ポイント: 27 # 注釈: 12"
     },
     {
       "id": "066bca0fbcd83753",
       "title": "Show HN: ResolveHQ – A Helpdesk Built on Cloudflare Workers, D1, R2 and Queues",
       "url": "https://github.com/mirza-rizvi/ResolveHQ",
-      "summary": "Article URL: https://github.com/mirza-rizvi/ResolveHQ Comments URL: https://news.ycombinator.com/item?id=49665864 Points: 17 # Comments: 6",
+      "summary": "Article URL: https://github.com/mirza-rizvi/ResolveHQ Comments URL: https://news.ycombinator.com/item?id=49665864 Points: 18 # Comments: 8",
       "published_at": "2026-09-11T21:48:00+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10695,13 +10695,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "ショーHN:ResolveHQ - クラウドフレアワーカー、D1、R2、キューエスで構築されたヘルプデスク",
-      "summary_ja": "記事のURL: https://github.com/mirza-rizvi/ResolveHQ コメント URL: https://news.ycombinator.com/item?id=49665864 ポイント: 17 # コメント: 6"
+      "summary_ja": "記事のURL: https://github.com/mirza-rizvi/ResolveHQ コメント URL: https://news.ycombinator.com/item?id=49665864 ポイント: 18 # コメント: 8"
     },
     {
       "id": "97a333de512e565b",
       "title": "GrapheneOS' rewritten Messages app is released",
       "url": "https://github.com/GrapheneOS/Messaging/releases/tag/13",
-      "summary": "Article URL: https://github.com/GrapheneOS/Messaging/releases/tag/13 Comments URL: https://news.ycombinator.com/item?id=49663373 Points: 168 # Comments: 96",
+      "summary": "Article URL: https://github.com/GrapheneOS/Messaging/releases/tag/13 Comments URL: https://news.ycombinator.com/item?id=49663373 Points: 171 # Comments: 98",
       "published_at": "2026-09-11T18:50:36+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10735,13 +10735,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "グラフェンOSの書き換えメッセージアプリがリリースされました",
-      "summary_ja": "記事のURL: https://github.com/GrapheneOS/Messaging/releases/tag/13 注釈 URL: https://news.ycombinator.com/item?id=496373 ポイント: 168 # コメント: 96"
+      "summary_ja": "記事のURL: https://github.com/GrapheneOS/Messaging/releases/tag/13 コメントのURL: https://news.ycombinator.com/item?id=496373 ポイント: 171 # コメント: 98"
     },
     {
       "id": "23ec78d44972d7ae",
       "title": "CIA Releases President's Daily Briefs in Commemoration of 9/11",
       "url": "https://www.cia.gov/stories/story/cia-releases-presidents-daily-briefs-in-commemoration-of-the-25th-anniversary-of-9-11/",
-      "summary": "https://www.cia.gov/stories/story/cia-releases-presidents-da... Comments URL: https://news.ycombinator.com/item?id=49663054 Points: 88 # Comments: 54",
+      "summary": "https://www.cia.gov/stories/story/cia-releases-presidents-da... Comments URL: https://news.ycombinator.com/item?id=49663054 Points: 92 # Comments: 53",
       "published_at": "2026-09-11T18:30:07+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10775,13 +10775,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "CIAが9/11の記念に社長のデイリー・ブリーフを発表",
-      "summary_ja": "https://www.cia.gov/stories/story/cia-releases-presidents-da... コメントURL: https://news.ycombinator.com/item?id=49663054 ポイント: 88 #コメント: 54"
+      "summary_ja": "https://www.cia.gov/stories/story/cia-releases-presidents-da... コメント URL: https://news.ycombinator.com/item?id=49663054 ポイント: 92 # コメント: 53"
     },
     {
       "id": "3990004c22c157ff",
       "title": "I spent $220 on Google app ads and 60% of the installs were robots",
       "url": "https://dayzlegame.com/blog/google-ads-bot-farm/",
-      "summary": "Article URL: https://dayzlegame.com/blog/google-ads-bot-farm/ Comments URL: https://news.ycombinator.com/item?id=49662990 Points: 223 # Comments: 117",
+      "summary": "Article URL: https://dayzlegame.com/blog/google-ads-bot-farm/ Comments URL: https://news.ycombinator.com/item?id=49662990 Points: 232 # Comments: 122",
       "published_at": "2026-09-11T18:24:55+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10815,13 +10815,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "Googleアプリ広告に$220を費やし、インストールの60%はロボットだった",
-      "summary_ja": "記事のURL: https://dayzlegame.com/blog/google-ads-bot-farm/ コメントURL: https://news.ycombinator.com/item?id=49662990 ポイント: 223 # コメント: 117"
+      "summary_ja": "記事のURL: https://dayzlegame.com/blog/google-ads-bot-farm/ コメント URL: https://news.ycombinator.com/item?id=49662990 ポイント: 232 # コメント: 122"
     },
     {
       "id": "6fae8841317f92c0",
       "title": "Litelm: LiteLLM Without the Bloat",
       "url": "https://github.com/kennethwolters/litelm",
-      "summary": "Article URL: https://github.com/kennethwolters/litelm Comments URL: https://news.ycombinator.com/item?id=49662767 Points: 82 # Comments: 31",
+      "summary": "Article URL: https://github.com/kennethwolters/litelm Comments URL: https://news.ycombinator.com/item?id=49662767 Points: 83 # Comments: 34",
       "published_at": "2026-09-11T18:10:20+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10855,13 +10855,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "Litelm:ライトルム ブロアなしで",
-      "summary_ja": "記事のURL: https://github.com/kennethwolters/litelm コメント URL: https://news.ycombinator.com/item?id=49662767 ポイント: 82 # コメント: 31"
+      "summary_ja": "記事のURL: https://github.com/kennethwolters/litelm コメント URL: https://news.ycombinator.com/item?id=49662767 ポイント: 83 # コメント: 34"
     },
     {
       "id": "64b7a813fe3bacec",
       "title": "The EPA is planning to scrap public review rules for data center pollution",
       "url": "https://capitalbnews.org/data-centers-permit-rules-epa/",
-      "summary": "Article URL: https://capitalbnews.org/data-centers-permit-rules-epa/ Comments URL: https://news.ycombinator.com/item?id=49662672 Points: 301 # Comments: 207",
+      "summary": "Article URL: https://capitalbnews.org/data-centers-permit-rules-epa/ Comments URL: https://news.ycombinator.com/item?id=49662672 Points: 311 # Comments: 211",
       "published_at": "2026-09-11T18:05:21+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10895,13 +10895,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "EPAは、データセンターの汚染に関するパブリックレビュー規則をスクラップする計画です",
-      "summary_ja": "記事のURL: https://capitalbnews.org/data-centers-permit-rules-epa/ コメントのURL: https://news.ycombinator.com/item?id=49662672 ポイント: 301 # コメント: 207"
+      "summary_ja": "記事のURL: https://capitalbnews.org/data-centers-permit-rules-epa/ コメントのURL: https://news.ycombinator.com/item?id=49662672 ポイント: 311 # コメント: 211"
     },
     {
       "id": "5280e08e103088da",
       "title": "A misalignment of AI in mathematics",
       "url": "https://mathandai.org/",
-      "summary": "https://terrytao.wordpress.com/2026/09/11/a-severe-misalignm... https://www.economist.com/science-and-technology/2026/09/11/... , https://unwall.app/www.economist.com/science-and-technology/... Comments URL: https://news.ycombinator.com/item?id=49662371 Points: 542 # Comments: 607",
+      "summary": "https://terrytao.wordpress.com/2026/09/11/a-severe-misalignm... https://www.economist.com/science-and-technology/2026/09/11/... , https://unwall.app/www.economist.com/science-and-technology/... Comments URL: https://news.ycombinator.com/item?id=49662371 Points: 556 # Comments: 614",
       "published_at": "2026-09-11T17:45:12+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10935,13 +10935,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "数学におけるAIの不整列",
-      "summary_ja": "https://terrytao.wordpress.com/2026/09/11/a-severe-misalignm... https://www.economist.com/science-and-technology/2026/09/11/... , https://unwall.app/www.economist.com/science-and-technology/... コメント URL: https://news.ycombinator.com/item?id=49662371 ポイント: 542 # コメント: 607"
+      "summary_ja": "https://terrytao.wordpress.com/2026/09/11/a-severe-misalignm... https://www.economist.com/science-and-technology/2026/09/11/... , https://unwall.app/www.economist.com/science-and-technology/... コメントURL: https://news.ycombinator.com/item?id=49662371 ポイント: 556 # コメント: 614"
     },
     {
       "id": "2dc0d58ec7277e6d",
       "title": "Λ Snap – An inviting programming language for kids and adults for CS study",
       "url": "https://snap.berkeley.edu/",
-      "summary": "Article URL: https://snap.berkeley.edu/ Comments URL: https://news.ycombinator.com/item?id=49662214 Points: 97 # Comments: 53",
+      "summary": "Article URL: https://snap.berkeley.edu/ Comments URL: https://news.ycombinator.com/item?id=49662214 Points: 100 # Comments: 53",
       "published_at": "2026-09-11T17:36:11+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10975,13 +10975,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "ゾンビスナップ - CS勉強のための子供と大人のためのプログラミング言語を招待",
-      "summary_ja": "記事URL: https://snap.berkeley.edu/ コメント URL: https://news.ycombinator.com/item?id=49662214 ポイント: 97 # コメント: 53"
+      "summary_ja": "記事のURL: https://snap.berkeley.edu/ コメント URL: https://news.ycombinator.com/item?id=49662214 ポイント: 100 # コメント: 53"
     },
     {
       "id": "4627430f06ef4218",
       "title": "Mind-altering drugs played key role in rise of Andean civilization",
       "url": "https://www.science.org/content/article/mind-altering-drugs-played-key-role-rise-andean-civilization",
-      "summary": "Article URL: https://www.science.org/content/article/mind-altering-drugs-played-key-role-rise-andean-civilization Comments URL: https://news.ycombinator.com/item?id=49662020 Points: 84 # Comments: 62",
+      "summary": "Article URL: https://www.science.org/content/article/mind-altering-drugs-played-key-role-rise-andean-civilization Comments URL: https://news.ycombinator.com/item?id=49662020 Points: 85 # Comments: 65",
       "published_at": "2026-09-11T17:25:23+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -11015,7 +11015,7 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "マインドフルーティング薬は、アンデス文明の上昇に重要な役割を果たしました",
-      "summary_ja": "記事のURL: https://www.science.org/content/article/mind-altering-drugs-played-key-role-rise-andean-civilization コメントのURL: https://news.ycombinator.com/item?id=49662020 ポイント: 84 #コメント: 62"
+      "summary_ja": "記事のURL: https://www.science.org/content/article/mind-altering-drugs-played-key-role-rise-andean-civilization コメント URL: https://news.ycombinator.com/item?id=49662020 ポイント: 85 #コメント: 65"
     },
     {
       "id": "e40727c46bd1b990",
@@ -11098,11 +11098,11 @@
       "summary_ja": "記事のURL:https://glacierextinction.com コメント URL: https://news.ycombinator.com/item?id=49660576 ポイント: 148 # コメント: 49"
     },
     {
-      "id": "f9d53a58a76f169d",
-      "title": "118M Queries per Second on Neki",
-      "url": "https://planetscale.com/blog/118-million-queries-per-second-on-neki",
-      "summary": "Article URL: https://planetscale.com/blog/118-million-queries-per-second-on-neki Comments URL: https://news.ycombinator.com/item?id=49660555 Points: 83 # Comments: 41",
-      "published_at": "2026-09-11T15:56:37+00:00",
+      "id": "6cdca9e43207e338",
+      "title": "Measuring the sloppiness of code",
+      "url": "https://earendil.com/posts/measuring-code-sloppiness/",
+      "summary": "Article URL: https://earendil.com/posts/measuring-code-sloppiness/ Comments URL: https://news.ycombinator.com/item?id=49658311 Points: 238 # Comments: 222",
+      "published_at": "2026-09-11T13:42:28+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
       "source_kind": "community",
@@ -11121,7 +11121,7 @@
       "signals": {
         "direct_interest": 0.0,
         "related_interest": 0.0,
-        "freshness": 0.997,
+        "freshness": 0.996,
         "source_priority": 0.5
       },
       "recommendation_reason": "latest",
@@ -11134,8 +11134,8 @@
       "rank_score": 2.09,
       "matched_interests": [],
       "matched_labels": [],
-      "title_ja": "Nekiで1秒あたりの118M Queries",
-      "summary_ja": "記事のURL: https://planetscale.com/blog/118-million-queries-per-second-on-neki コメントのURL: https://news.ycombinator.com/item?id=49660555 ポイント: 83 # コメント: 41"
+      "title_ja": "コードのスロピネスを測定する",
+      "summary_ja": "記事URL: https://earendil.com/posts/measuring-code-sloppiness/ コメント URL: https://news.ycombinator.com/item?id=49658311 ポイント: 238 # コメント: 222"
     },
     {
       "id": "a7cfffb235c8637a",
@@ -12126,9 +12126,9 @@
     "engine": "argos-translate",
     "source_language": "en",
     "target_language": "ja",
-    "generated_at": "2026-09-11T23:53:47.793993+00:00",
-    "translated_fields": 24,
-    "reused_fields": 346,
+    "generated_at": "2026-09-11T23:55:12.016150+00:00",
+    "translated_fields": 20,
+    "reused_fields": 350,
     "native_japanese_fields": 52,
     "failed_fields": 0
   }
