@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T08:38:46.239888+00:00",
+  "generated_at": "2026-09-11T09:45:14.546846+00:00",
   "count": 204,
   "taxonomy_version": 3,
   "interest_profile_version": 3,
@@ -133,7 +133,7 @@
       "signals": {
         "direct_interest": 5.6,
         "related_interest": 0.0,
-        "freshness": 1.0,
+        "freshness": 0.999,
         "source_priority": 0.65
       },
       "recommendation_reason": "direct",
@@ -150,7 +150,9 @@
       "matched_labels": [
         "ESP32・小型デバイス",
         "実用小型コンピューティング"
-      ]
+      ],
+      "title_ja": "この回路彫刻はESP32パワードコンソールです",
+      "summary_ja": "Expressif は ESP32-S3 がエミュレーション パワーハウスになることを意図していないかもしれませんが、それは確かに何が起こったのかです。 小さなマイクロコントローラは、ゲームボーイやゲームを回復するのに最適なようです...もっと"
     },
     {
       "id": "e549139bba381241",
@@ -211,13 +213,15 @@
         "ESP32・小型デバイス",
         "Cyberdeck",
         "Cyberdeck制作"
-      ]
+      ],
+      "title_ja": "独自のサイバーデッキを作成する",
+      "summary_ja": "ハッカーの通過の儀式は、独自のサイバーデッキを作成しています。 このガイドは、部品から1つをビルドするのに役立ちます。 投稿 Raspberry Pi で最初に現れた独自のサイバーデッキを作成します。"
     },
     {
       "id": "300052dde8dca54b",
       "title": "OpenAI Agents API",
       "url": "https://developers.openai.com/api/docs/guides/agents-api/overview",
-      "summary": "Article URL: https://developers.openai.com/api/docs/guides/agents-api/overview Comments URL: https://news.ycombinator.com/item?id=49649213 Points: 245 # Comments: 136",
+      "summary": "Article URL: https://developers.openai.com/api/docs/guides/agents-api/overview Comments URL: https://news.ycombinator.com/item?id=49649213 Points: 260 # Comments: 144",
       "published_at": "2026-09-10T19:43:22+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -255,7 +259,7 @@
       "signals": {
         "direct_interest": 3.7,
         "related_interest": 0.0,
-        "freshness": 0.996,
+        "freshness": 0.995,
         "source_priority": 0.5
       },
       "recommendation_reason": "direct",
@@ -273,7 +277,9 @@
       "matched_labels": [
         "AIエージェント・自動化",
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "OpenAI エージェント API",
+      "summary_ja": "記事のURL: https://developers.openai.com/api/docs/guides/agents-api/overview コメントのURL: https://news.ycombinator.com/item?id=49649213 ポイント: 260 # コメント: 144"
     },
     {
       "id": "434ac5bdc849ee6f",
@@ -344,7 +350,9 @@
         "Webアプリ",
         "GitHub・Actions",
         "AIコーディング"
-      ]
+      ],
+      "title_ja": "GitHub Copilot 初心者向けアプリ: diff、端末、ブラウザの使用",
+      "summary_ja": "エージェント生成されたコードをチェックすると、通常はタブ間のホッピングを意味します。 GitHub Copilotアプリのサイドで、diffs を表示、ターミナルコマンドを実行、Web アプリをプレビューする方法を学びます。 GitHub Copilotの初心者向けアプリ: diff、端末、ブラウザを使用して、GitHubブログで最初に登場しました。"
     },
     {
       "id": "1bd1f26664a58b00",
@@ -387,7 +395,7 @@
       "signals": {
         "direct_interest": 3.44,
         "related_interest": 0.0,
-        "freshness": 0.942,
+        "freshness": 0.941,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -405,7 +413,9 @@
         "ESP32・小型デバイス",
         "小型・携帯デバイス",
         "Cyberdeck制作"
-      ]
+      ],
+      "title_ja": "SPIとI2Cベースのディスプレイ用の初期起動スプラッシュ画面の設定",
+      "summary_ja": "ハンドヘルドラズベリーパイを搭載したデバイスにカスタムスプラッシュ画面を追加します。 投稿 SPI と I2C ベースのディスプレイの初期起動スプラッシュ画面の設定は、最初に Raspberry Pi に登場しました。"
     },
     {
       "id": "d7685dfe525f2e7a",
@@ -456,7 +466,7 @@
       "signals": {
         "direct_interest": 3.4,
         "related_interest": 0.0,
-        "freshness": 0.945,
+        "freshness": 0.944,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -466,7 +476,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 5.38,
+      "rank_score": 5.37,
       "matched_interests": [
         "llm_ai_tools",
         "github_devops",
@@ -476,7 +486,9 @@
         "LLM・AIツール",
         "GitHub・Actions",
         "AIエージェント・自動化"
-      ]
+      ],
+      "title_ja": "OpenAIのローグエージェントは、公開ウィキでコミュニケーションをとっていた",
+      "summary_ja": "ここは再び行く... シドニーVon Arx、Cormac Slade Byrd、Spencer Kitts、Thomas Larsenによる新しいOpenAIエージェントメッセージボードのディスカバリーは、OpenAIによって訓練されたモデルによって最新の偶発的なサイバー攻撃について説明します。 今回は、一部のWebリサーチベンチマークに従事しているエージェントだったので、彼らは(次第に)制御を持っていた"
     },
     {
       "id": "36eba6780bea0af8",
@@ -538,7 +550,9 @@
       "matched_labels": [
         "Obsidian・PKM",
         "Apple Watch・iPhone・iOS"
-      ]
+      ],
+      "title_ja": "オブシディアン 1.14.1 モバイル(早期アクセス)",
+      "summary_ja": "Obsidian Desktop 1.14.1 までの新機能とバグ修正をすべて備えています。 新しいiOS 26: 設定可能なクイックキャプチャホーム画面ウィジェットを追加しました。 異なる場所に直接キャプチャするショートカットを追加します。 改善点 テキストとインターフェイスの要素は、より大きなアクセシビリティを含む、システムが優先するテキストサイズでスケールできるようになりました。"
     },
     {
       "id": "6b4d4044decf07c1",
@@ -594,7 +608,9 @@
       "matched_labels": [
         "Obsidian・PKM",
         "Cyberdeck制作"
-      ]
+      ],
+      "title_ja": "Obsidian 1.13デスクトップ(公開)",
+      "summary_ja": "このアップデートでは、フルスクリーン画像ビューアを含む画像を扱うための新しい検索可能な設定パネルと新しい体験を紹介します。 設定設定設定は、プラグイン開発者のためのキーボードナビゲーション、検索、および新しい API で完全に変更されました。 設定は新しいウィンドウで開きます。 Settiでこれをオフにすることができます"
     },
     {
       "id": "d4f5031352418d90",
@@ -656,7 +672,9 @@
       "matched_labels": [
         "GitHub・Actions",
         "AIコーディング"
-      ]
+      ],
+      "title_ja": "GitHub Copilot エージェントの業務に対するエンタープライズ管理権限",
+      "summary_ja": "GitHub Copilot Business または GitHub Copilot Enterprise を管理している場合は、エージェントの操作がブロックされているか、人間の承認を必要とするか、またはプロンプトなしで進むことができます。 管理... GitHub Copilot のエージェント操作のエンタープライズ管理権限は、GitHub Blog で最初に登場しました。"
     },
     {
       "id": "1164e3484aa11323",
@@ -718,7 +736,9 @@
       "matched_labels": [
         "LLM・AIツール",
         "AIコーディング"
-      ]
+      ],
+      "title_ja": "研究者が新しい抗菌分子を検索するためにCodexとChatGPTを使用する方法",
+      "summary_ja": "César de la Fuente の研究室では、Codex と ChatGPT を使用して、抗菌剤の候補者が薬物耐性感染症と戦うための生活と絶滅のゲノムを検索します。"
     },
     {
       "id": "72247e4b0f615a8f",
@@ -780,7 +800,9 @@
       "matched_labels": [
         "Obsidian・PKM",
         "Apple Watch・iPhone・iOS"
-      ]
+      ],
+      "title_ja": "オブシディアン 1.14.0 モバイル(早期アクセス)",
+      "summary_ja": "すべての新機能とバグ修正をObsidian Desktop v1.14.0. 改善 設定は現在、アプリ上で無効なシートに表示されます。 どこにでもスワイプして却下します。 iOS 26でiOSネイティブクイックキャプチャ。 ロック画面からノートをキャプチャ, コントロールセンター, またはショートカットをロードするあなたのボルトを待つことなく. しばらくの間"
     },
     {
       "id": "1f1cb31536fdfc76",
@@ -817,7 +839,7 @@
       "signals": {
         "direct_interest": 2.1,
         "related_interest": 0.0,
-        "freshness": 0.995,
+        "freshness": 0.994,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -833,7 +855,9 @@
       ],
       "matched_labels": [
         "GitHub・Actions"
-      ]
+      ],
+      "title_ja": "GitHub Actions のキャッシュアクセスをキャッシュモードで制御",
+      "summary_ja": "cache-mode を使って、ワークフローやジョブレベルで GitHub Actions のキャッシュに最小限の権限を適用するようになりました。 各ワークフローの付与やキャッシュアクセスのみのジョブで... 投稿 GitHub Actions は、GitHub Blog でキャッシュモードが最初に現れたキャッシュアクセスをキャッシュします。"
     },
     {
       "id": "4fb225fee377eb7e",
@@ -872,7 +896,7 @@
       "signals": {
         "direct_interest": 2.85,
         "related_interest": 0.0,
-        "freshness": 0.753,
+        "freshness": 0.752,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -889,7 +913,9 @@
       "matched_labels": [
         "Obsidian・PKM",
         "Cyberdeck制作"
-      ]
+      ],
+      "title_ja": "Obsidian 1.13.2 デスクトップ(ほぼアクセス)",
+      "summary_ja": "画像フルスクリーンを表示するための新しい新しい画像ライトボックス。 読み込みモードの画像をクリックして開きます。 またはライブプレビューで、選択した画像をクリックし、スペースを押してライトボックスで開きます。 矢印キーを使用して、現在のファイルに埋め込まれたすべての画像間で移動します。 ライブプレビュー:キーボードインタラクションを追加"
     },
     {
       "id": "7f8053487964d7a8",
@@ -951,7 +977,9 @@
       "matched_labels": [
         "GitHub・Actions",
         "AIコーディング"
-      ]
+      ],
+      "title_ja": "GitHub Copilot 初心者向けアプリ: 一度に複数のエージェントを実行",
+      "summary_ja": "GitHub Copilotアプリで並列エージェントを実行する方法を学び、気分が悪くなり、強力に感じ始める瞬間を体験してください。 GitHub Copilot の初心者向けアプリ: GitHub Blog で一度に複数のエージェントを実行します。"
     },
     {
       "id": "4b3cf0748f791c10",
@@ -995,7 +1023,7 @@
       "signals": {
         "direct_interest": 2.25,
         "related_interest": 0.0,
-        "freshness": 0.871,
+        "freshness": 0.87,
         "source_priority": 0.75
       },
       "recommendation_reason": "direct",
@@ -1013,7 +1041,9 @@
       "matched_labels": [
         "GitHub・Actions",
         "AIコーディング"
-      ]
+      ],
+      "title_ja": "GitHub Copilot 初心者向けアプリ: dependabot プルリクエストのトライアを自動化",
+      "summary_ja": "ライブラリの更新を管理することは、常に気をつけることができます。 GitHub Copilotアプリがこのタイプの反復タスクを処理する方法を学びます。 GitHub Copilot の初心者向けアプリ: GitHub Blog で初めての dependabot のプルリクエストのトライアーを自動生成します。"
     },
     {
       "id": "40f9c62aa998cada",
@@ -1021,68 +1051,6 @@
       "url": "https://hackaday.com/2026/09/10/changing-nozzle-internal-geometry-to-increase-fdm-flowrate/",
       "summary": "As FDM printers keep getting faster, we are forced to deal with a range of bottlenecks, all of which conspire to hold us back from another Benchie world record. A …read more",
       "published_at": "2026-09-11T02:00:46+00:00",
-      "source": "Hackaday",
-      "source_id": "hackaday",
-      "source_kind": "publication",
-      "source_category": "make",
-      "primary_category": "make",
-      "topics": [
-        {
-          "id": "embedded_devices",
-          "score": 0.25
-        },
-        {
-          "id": "3d_printing",
-          "score": 0.25
-        }
-      ],
-      "topic_ids": [
-        "embedded_devices",
-        "3d_printing"
-      ],
-      "topic_labels": [
-        "ESP32・小型デバイス",
-        "3Dプリント・Maker"
-      ],
-      "topic_scores": {
-        "embedded_devices": 0.25,
-        "3d_printing": 0.25
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 1.84,
-        "related_interest": 0.0,
-        "freshness": 0.998,
-        "source_priority": 0.65
-      },
-      "recommendation_reason": "direct",
-      "score": 1.84,
-      "score_components": {
-        "topics": 1.84,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 3.96,
-      "matched_interests": [
-        "embedded_devices",
-        "3d_printing"
-      ],
-      "matched_labels": [
-        "ESP32・小型デバイス",
-        "3Dプリント・Maker"
-      ]
-    },
-    {
-      "id": "53d3e9e4648b8ca7",
-      "title": "Creating a Custom Hinge for a Motorbike’s Fuel Access Panel",
-      "url": "https://hackaday.com/2026/09/10/creating-a-custom-hinge-for-a-motorbikes-fuel-access-panel/",
-      "summary": "A fun part of modifying something like a motorbike is that you sometimes have to come up with creative solutions to basic questions, like how you can still access the …read more",
-      "published_at": "2026-09-10T23:00:05+00:00",
       "source": "Hackaday",
       "source_id": "hackaday",
       "source_kind": "publication",
@@ -1137,14 +1105,16 @@
       "matched_labels": [
         "ESP32・小型デバイス",
         "3Dプリント・Maker"
-      ]
+      ],
+      "title_ja": "ノズル内部の幾何学の変更はFDMの流れを増加させます",
+      "summary_ja": "FDM プリンターは、より高速に取得し続けるため、ボトルネックのさまざまな範囲に対処する余儀なくされ、そのすべてが別の Benchie の世界記録から私たちを取り戻すように促します。 A ...続きを読む"
     },
     {
-      "id": "0453538edba9dc66",
-      "title": "Little Droid Has Party Mode",
-      "url": "https://hackaday.com/2026/09/10/little-droid-has-party-mode/",
-      "summary": "Remember those tiny little droids skittering around the pristine corridors of the Death Star in Star Wars? [heychaostheory] has put together something vaguely along the lines of those charming little mobile …read more",
-      "published_at": "2026-09-10T20:00:11+00:00",
+      "id": "53d3e9e4648b8ca7",
+      "title": "Creating a Custom Hinge for a Motorbike’s Fuel Access Panel",
+      "url": "https://hackaday.com/2026/09/10/creating-a-custom-hinge-for-a-motorbikes-fuel-access-panel/",
+      "summary": "A fun part of modifying something like a motorbike is that you sometimes have to come up with creative solutions to basic questions, like how you can still access the …read more",
+      "published_at": "2026-09-10T23:00:05+00:00",
       "source": "Hackaday",
       "source_id": "hackaday",
       "source_kind": "publication",
@@ -1199,7 +1169,73 @@
       "matched_labels": [
         "ESP32・小型デバイス",
         "3Dプリント・Maker"
-      ]
+      ],
+      "title_ja": "バイクの燃料アクセスパネル用のカスタムヒンジを作成する",
+      "summary_ja": "バイクのような変更の楽しい部分は、時々基本的な質問に創造的なソリューションを思いつく必要があることです。"
+    },
+    {
+      "id": "0453538edba9dc66",
+      "title": "Little Droid Has Party Mode",
+      "url": "https://hackaday.com/2026/09/10/little-droid-has-party-mode/",
+      "summary": "Remember those tiny little droids skittering around the pristine corridors of the Death Star in Star Wars? [heychaostheory] has put together something vaguely along the lines of those charming little mobile …read more",
+      "published_at": "2026-09-10T20:00:11+00:00",
+      "source": "Hackaday",
+      "source_id": "hackaday",
+      "source_kind": "publication",
+      "source_category": "make",
+      "primary_category": "make",
+      "topics": [
+        {
+          "id": "embedded_devices",
+          "score": 0.25
+        },
+        {
+          "id": "3d_printing",
+          "score": 0.25
+        }
+      ],
+      "topic_ids": [
+        "embedded_devices",
+        "3d_printing"
+      ],
+      "topic_labels": [
+        "ESP32・小型デバイス",
+        "3Dプリント・Maker"
+      ],
+      "topic_scores": {
+        "embedded_devices": 0.25,
+        "3d_printing": 0.25
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 1.84,
+        "related_interest": 0.0,
+        "freshness": 0.995,
+        "source_priority": 0.65
+      },
+      "recommendation_reason": "direct",
+      "score": 1.84,
+      "score_components": {
+        "topics": 1.84,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 3.96,
+      "matched_interests": [
+        "embedded_devices",
+        "3d_printing"
+      ],
+      "matched_labels": [
+        "ESP32・小型デバイス",
+        "3Dプリント・Maker"
+      ],
+      "title_ja": "リトルドロイドはパーティーモードを持っています",
+      "summary_ja": "スターウォーズのデススターの残酷なコリダーの周りの小さなドロイドは、それらを覚えていますか? [heychaostheory]は、それらの魅力的な小さなモバイルのラインに沿って漠然と何かを置く...もっと"
     },
     {
       "id": "69682de2c934e2c8",
@@ -1261,7 +1297,9 @@
       "matched_labels": [
         "ESP32・小型デバイス",
         "3Dプリント・Maker"
-      ]
+      ],
+      "title_ja": "レンズのない3Dイメージ",
+      "summary_ja": "カメラのハードウェアとファンシーの数学で何をしているかを知ったら、このような3D画像やシミュレーションをキャプチャする方法はたくさんあります。 しかし、もう少し珍しい...もっと読む"
     },
     {
       "id": "d5086cee3bfcbc97",
@@ -1314,7 +1352,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "llm-openrouter 0.7.1 リリース",
+      "summary_ja": "リリース: llm-openrouter 0.7.1 OpenRouterモデルをロードするためのパフォーマンス修正。 ありがとうございます。 #59 タグ: llm 、 openrouter"
     },
     {
       "id": "8947313248ec49aa",
@@ -1358,7 +1398,7 @@
       "signals": {
         "direct_interest": 1.76,
         "related_interest": 0.0,
-        "freshness": 0.994,
+        "freshness": 0.993,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -1376,7 +1416,9 @@
       "matched_labels": [
         "LLM・AIツール",
         "AIエージェント・自動化"
-      ]
+      ],
+      "title_ja": "今、誰もがデータを仕事に置くことができます",
+      "summary_ja": "ChatGPT 作業中のデータエージェントをご紹介します。 社内データを接続し、インサイトを明らかにし、対話型ダッシュボードをAIと自然言語で構築します。"
     },
     {
       "id": "1c4e1a1a58eeb581",
@@ -1430,7 +1472,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.94,
+      "rank_score": 3.93,
       "matched_interests": [
         "llm_ai_tools",
         "ai_agents_automation"
@@ -1438,7 +1480,9 @@
       "matched_labels": [
         "LLM・AIツール",
         "AIエージェント・自動化"
-      ]
+      ],
+      "title_ja": "連邦、州、地方、および地方自治体のAIアクセスとサイバー防衛を拡大",
+      "summary_ja": "OpenAIとGSAは、資格のある連邦政府、州、地方自治体、および地方自治体の$のライセンス料、使用料の50%オフを提供し、サイバー防衛のサポートを拡大します。"
     },
     {
       "id": "fba79bfc8afbcc1a",
@@ -1482,7 +1526,7 @@
       "signals": {
         "direct_interest": 1.76,
         "related_interest": 0.0,
-        "freshness": 0.989,
+        "freshness": 0.988,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -1500,7 +1544,9 @@
       "matched_labels": [
         "LLM・AIツール",
         "AIエージェント・自動化"
-      ]
+      ],
+      "title_ja": "API で GPT-Live-1 でより自然な音声体験をビルド",
+      "summary_ja": "GPT‐Live‐1 は、API に自然で双方向的な音声の会話をもたらし、より強力な指示、カスタムボイス、およびテレフォニーサポートを提供します。"
     },
     {
       "id": "333be4835721b6ff",
@@ -1544,7 +1590,7 @@
       "signals": {
         "direct_interest": 1.76,
         "related_interest": 0.0,
-        "freshness": 0.989,
+        "freshness": 0.988,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -1562,7 +1608,9 @@
       "matched_labels": [
         "LLM・AIツール",
         "AIエージェント・自動化"
-      ]
+      ],
+      "title_ja": "Agents APIの紹介",
+      "summary_ja": "クラウドエージェントのAPIをビルドして立ち上げ、コーデックスハーネスが機能するマネージドサービスで、オーケストレーション、長時間実行セッション、ツールの使用が可能です。"
     },
     {
       "id": "594a2f7b5067f5f7",
@@ -1570,68 +1618,6 @@
       "url": "https://openai.com/index/ai-policy-window",
       "summary": "Chris Lehane argues that stronger AI capabilities require stronger safety evidence, shared standards, and durable policy action while the policy window remains open.",
       "published_at": "2026-09-09T13:00:00+00:00",
-      "source": "OpenAI News",
-      "source_id": "openai_news",
-      "source_kind": "official",
-      "source_category": "ai",
-      "primary_category": "ai",
-      "topics": [
-        {
-          "id": "llm_ai_tools",
-          "score": 0.25
-        },
-        {
-          "id": "ai_agents_automation",
-          "score": 0.25
-        }
-      ],
-      "topic_ids": [
-        "llm_ai_tools",
-        "ai_agents_automation"
-      ],
-      "topic_labels": [
-        "LLM・AIツール",
-        "AIエージェント・自動化"
-      ],
-      "topic_scores": {
-        "llm_ai_tools": 0.25,
-        "ai_agents_automation": 0.25
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 1.76,
-        "related_interest": 0.0,
-        "freshness": 0.985,
-        "source_priority": 1.0
-      },
-      "recommendation_reason": "direct",
-      "score": 1.76,
-      "score_components": {
-        "topics": 1.76,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 3.92,
-      "matched_interests": [
-        "llm_ai_tools",
-        "ai_agents_automation"
-      ],
-      "matched_labels": [
-        "LLM・AIツール",
-        "AIエージェント・自動化"
-      ]
-    },
-    {
-      "id": "c5bec85fedf93c06",
-      "title": "GPT-6 Astra: The next generation in intelligence for work",
-      "url": "https://openai.com/index/gpt-6-astra-next-generation-work",
-      "summary": "Meet GPT-6 Astra, OpenAI’s most capable model for business, with advanced reasoning, computer use, and stronger writing and design judgment.",
-      "published_at": "2026-09-09T11:00:00+00:00",
       "source": "OpenAI News",
       "source_id": "openai_news",
       "source_kind": "official",
@@ -1686,7 +1672,73 @@
       "matched_labels": [
         "LLM・AIツール",
         "AIエージェント・自動化"
-      ]
+      ],
+      "title_ja": "AIポリシーウィンドウが開きます。 行動する必要があります。",
+      "summary_ja": "Chris Lehaneは、より強力なAI機能がより強力な安全証拠、共有標準、およびポリシーウィンドウが開いている間、耐久性のある政策行動を必要とすると主張しています。"
+    },
+    {
+      "id": "c5bec85fedf93c06",
+      "title": "GPT-6 Astra: The next generation in intelligence for work",
+      "url": "https://openai.com/index/gpt-6-astra-next-generation-work",
+      "summary": "Meet GPT-6 Astra, OpenAI’s most capable model for business, with advanced reasoning, computer use, and stronger writing and design judgment.",
+      "published_at": "2026-09-09T11:00:00+00:00",
+      "source": "OpenAI News",
+      "source_id": "openai_news",
+      "source_kind": "official",
+      "source_category": "ai",
+      "primary_category": "ai",
+      "topics": [
+        {
+          "id": "llm_ai_tools",
+          "score": 0.25
+        },
+        {
+          "id": "ai_agents_automation",
+          "score": 0.25
+        }
+      ],
+      "topic_ids": [
+        "llm_ai_tools",
+        "ai_agents_automation"
+      ],
+      "topic_labels": [
+        "LLM・AIツール",
+        "AIエージェント・自動化"
+      ],
+      "topic_scores": {
+        "llm_ai_tools": 0.25,
+        "ai_agents_automation": 0.25
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 1.76,
+        "related_interest": 0.0,
+        "freshness": 0.984,
+        "source_priority": 1.0
+      },
+      "recommendation_reason": "direct",
+      "score": 1.76,
+      "score_components": {
+        "topics": 1.76,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 3.91,
+      "matched_interests": [
+        "llm_ai_tools",
+        "ai_agents_automation"
+      ],
+      "matched_labels": [
+        "LLM・AIツール",
+        "AIエージェント・自動化"
+      ],
+      "title_ja": "GPT-6 アストラ: 仕事のための次世代の知能",
+      "summary_ja": "GPT-6 Astra、OpenAIは、高度な推論、コンピュータの使用、より強力な書き込みと設計判断で、ビジネスに最適なモデルです。"
     },
     {
       "id": "c9b05b29d2413b72",
@@ -1748,7 +1800,9 @@
       "matched_labels": [
         "LLM・AIツール",
         "AIエージェント・自動化"
-      ]
+      ],
+      "title_ja": "GPT-5.6の使い方 ソルは量子計算実験を実行するのに役立ちます",
+      "summary_ja": "MIT の研究者が、Codex で GPT-5.6 SOL を使用して量子計算実験を自動実行する方法、結果の分析、および qubit の校正方法を参照してください。"
     },
     {
       "id": "104e93494a1238b8",
@@ -1792,7 +1846,7 @@
       "signals": {
         "direct_interest": 1.76,
         "related_interest": 0.0,
-        "freshness": 0.977,
+        "freshness": 0.976,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -1810,7 +1864,9 @@
       "matched_labels": [
         "LLM・AIツール",
         "AIエージェント・自動化"
-      ]
+      ],
+      "title_ja": "リーチ中の仕事",
+      "summary_ja": "より可能で手頃な価格のAIは、仕事の人々や企業が達成できるものを拡大し、成長をより経済的にすることができます。"
     },
     {
       "id": "ad320ee7054087d7",
@@ -1872,7 +1928,9 @@
       "matched_labels": [
         "LLM・AIツール",
         "AIエージェント・自動化"
-      ]
+      ],
+      "title_ja": "Navier-Stokes ミレニアム賞の問題について",
+      "summary_ja": "「Navier-Stokes Millennium Prize(ミレニアム・プライズ・問題)」にAIを生成したソリューションをLeanで共有しています。"
     },
     {
       "id": "46b79d48ee75282c",
@@ -1934,7 +1992,9 @@
       "matched_labels": [
         "LLM・AIツール",
         "AIエージェント・自動化"
-      ]
+      ],
+      "title_ja": "AIと十代の開発に新しい研究のための資金調達助成金",
+      "summary_ja": "OpenAIが10代の開発、幸福、および安全に影響を与える方法に関する独立した研究をサポートするOpenAIの$ 5,000,000助成プログラムに今すぐ適用して下さい。"
     },
     {
       "id": "a19db2f9483a6838",
@@ -1978,7 +2038,7 @@
       "signals": {
         "direct_interest": 1.76,
         "related_interest": 0.0,
-        "freshness": 0.964,
+        "freshness": 0.963,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -1996,7 +2056,9 @@
       "matched_labels": [
         "LLM・AIツール",
         "AIエージェント・自動化"
-      ]
+      ],
+      "title_ja": "ウクライナで独立したジャーナリズムをサポート",
+      "summary_ja": "OpenAI、AIRPPU、WAN-IFRAは、ウクライナのニュース組織がイノベーション、レジリエンス、独立したジャーナリズムを強化するためのAIプログラムを開始しました。"
     },
     {
       "id": "d6088d0604066b74",
@@ -2058,7 +2120,9 @@
       "matched_labels": [
         "LLM・AIツール",
         "AIエージェント・自動化"
-      ]
+      ],
+      "title_ja": "エイリアンマインド",
+      "summary_ja": "Jakub Pachockiは、ますます有能なAIとそれを調整する挑戦を反映しています。 より強固な保護と国際的調整を求める。"
     },
     {
       "id": "1f8ec3fbf99c9fb2",
@@ -2095,7 +2159,7 @@
       "signals": {
         "direct_interest": 1.8,
         "related_interest": 0.0,
-        "freshness": 0.953,
+        "freshness": 0.952,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -2111,7 +2175,9 @@
       ],
       "matched_labels": [
         "AIコーディング"
-      ]
+      ],
+      "title_ja": "macOSでコーディングエージェントとBlenderを使う",
+      "summary_ja": "TIL: macOSでコーディングエージェントとBlenderを使用して、最近、MacでBlenderと楽しくなりました。 コーディングエージェントと連携するのはとても簡単です: Blender.org からフル Mac アプリケーションをインストールし、次のようにプロンプトを実行します。 既にインストールされている /Applications/Blender を使用して p のシーンをレンダリングします。"
     },
     {
       "id": "10ef3bca83926564",
@@ -2165,7 +2231,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.82,
+      "rank_score": 3.81,
       "matched_interests": [
         "llm_ai_tools",
         "ai_coding"
@@ -2173,7 +2239,9 @@
       "matched_labels": [
         "LLM・AIツール",
         "AIコーディング"
-      ]
+      ],
+      "title_ja": "Datasette 1.0a39と0.65.4のセキュリティリリース",
+      "summary_ja": "Datasette 1.0a39 と 0.65.4 のセキュリティリリース 今日では、Datasette の 2 つの新しいセキュリティ パッチ バージョンを解放しています。 1.0a39 と 0.65.4 - 現在のアルファ シリーズの 1 つ、安定した 0.65.x ファミリーの 1 つ。 これらは、パブリックWeb上でDatasetteインスタンスを実行している場合は、適用されるべきセキュリティ修正です - 一部"
     },
     {
       "id": "baa2554f538a0268",
@@ -2235,7 +2303,9 @@
       "matched_labels": [
         "LLM・AIツール",
         "AIコーディング"
-      ]
+      ],
+      "title_ja": "Nixのパッケージは、あなたのブラウザに住んでいます",
+      "summary_ja": "Nixのパッケージは、お使いのブラウザのFarid Zakariaに住んでいるこの彼の「Nix作業のマグナムオプス」を呼び出します。 qemu-wasm led x86 64 は、 WebAssembly を介してブラウザで実行される Linux 仮想マシン。 そのVMは、過去13年間にNixパッケージで起動することができます。 彼らはURです"
     },
     {
       "id": "c1498ff3dcd6f63f",
@@ -2297,7 +2367,9 @@
       "matched_labels": [
         "LLM・AIツール",
         "AIコーディング"
-      ]
+      ],
+      "title_ja": "ネイティブは現在、Shopifyでモバイルの未来です",
+      "summary_ja": "ネイティブは、Shopify Shopifyでモバイルの未来は、React Nativeからネイティブアプリ用のSwiftとKotlinのコードベースを分離するために移動しています。 ネイティブからReact Nativeへの切り替えを2020年3つの理由で決定しました。 同じ機能の構築を2回停止 開発者を許可する"
     },
     {
       "id": "b1abb4baa4c07576",
@@ -2359,7 +2431,9 @@
       "matched_labels": [
         "LLM・AIツール",
         "AIコーディング"
-      ]
+      ],
+      "title_ja": "キュートなCalif Research",
+      "summary_ja": "今日、WeWorm のデモを解放しています。最初のゼロクリックワームは、iOS と Android を介した WeChat 呼び出しで拡散します。 2018年6月6日 犠牲者は、電話に答えたり、電話とやり取りしたりする必要はありません。 答えをしても、何も聞いても、悪用はまだ成功します。 2018年6月6日 AI、当社のチームファウと連携"
     },
     {
       "id": "1bd48531544759b8",
@@ -2403,7 +2477,7 @@
       "signals": {
         "direct_interest": 1.65,
         "related_interest": 0.0,
-        "freshness": 0.989,
+        "freshness": 0.988,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -2421,7 +2495,9 @@
       "matched_labels": [
         "LLM・AIツール",
         "AIコーディング"
-      ]
+      ],
+      "title_ja": ".blend URLビューア",
+      "summary_ja": "ツール: .blend URL ビューア私はGPT-6アストラとブレンダー(私のTILを参照してください)と多くの楽しみを持っていることを継続しています。 インペリアル・ファベルジュ・イースターの卵の大きなファンとして、人気の文化を祝う新しいものを作るのはいつも楽しいと思いました。 昨日、このpを実行して新しいChatGPTイメージ2.5を試してみることにしました"
     },
     {
       "id": "8dcb19121f1521c8",
@@ -2483,7 +2559,9 @@
       "matched_labels": [
         "LLM・AIツール",
         "AIエージェント・自動化"
-      ]
+      ],
+      "title_ja": "フロントラインの擁護者のためのデイブレイク:必須サービスを保護するために$ 1B",
+      "summary_ja": "OpenAIは、フロントライン・ディフェンダーのデイブレイクを導入しています。 サイバーAI、トレーニング、および必須サービスの支援のために、100億ドルのコミットメントが拡大します。"
     },
     {
       "id": "60a42882e8831c17",
@@ -2545,7 +2623,9 @@
       "matched_labels": [
         "LLM・AIツール",
         "AIエージェント・自動化"
-      ]
+      ],
+      "title_ja": "Playcoカットマニュアルは、GPT-6 Astraで50%試作ゲームを修正",
+      "summary_ja": "GPT-6 Astra を使用して、Playco は 1 つの灰色箱の土台から 3 つのテーマのゲームのプロトタイプを造り、前のモデルと比較して 50% の手動修正を報告しました。"
     },
     {
       "id": "a5d55c48fbff0d0b",
@@ -2607,7 +2687,9 @@
       "matched_labels": [
         "LLM・AIツール",
         "AIエージェント・自動化"
-      ]
+      ],
+      "title_ja": "レゴラは、GPT-6アストラと41の文書を数分で見直しました",
+      "summary_ja": "レゴラは、GPT-6 Astraを使用して41の文書を数分で見直し、すべての4つの植えられたエラーを見つけて、この財務レビューワークフローでほぼ40%のパフォーマンスを改善しました。"
     },
     {
       "id": "b5b916c8ff88f3ff",
@@ -2669,7 +2751,9 @@
       "matched_labels": [
         "LLM・AIツール",
         "AIエージェント・自動化"
-      ]
+      ],
+      "title_ja": "GPT-6 Astra:新しい世代のインテリジェンス",
+      "summary_ja": "GPT-6 Astra は、コンピューター使用、コーディング、サイバーセキュリティ、科学の最先端機能を備えた、インテリジェントで一直線に並ぶモデルです。"
     },
     {
       "id": "5f48b006c40fe10b",
@@ -2731,7 +2815,64 @@
       "matched_labels": [
         "LLM・AIツール",
         "AIコーディング"
-      ]
+      ],
+      "title_ja": "テレンス・タオ",
+      "summary_ja": "私は最近、良いのコレクションについて書いています, 実りあるオープンの問題は、非更新可能なファッションで採掘されています, これらの問題の潜在的なシナリオにつながる. 2018年6月6日 問題に取り組んでいる人の噂でさえ、大量のAIを搭載した大量の努力をflにトリガーできると見てきました。"
+    },
+    {
+      "id": "b16619c31ce49170",
+      "title": "Refreshed repository pull requests page in public preview",
+      "url": "https://github.blog/changelog/2026-09-10-refreshed-repository-pull-requests-page-in-public-preview",
+      "summary": "A refreshed repository-level pull request listing page is now in public preview for all GitHub users. It brings powerful filtering, compact presentation mode, and more. Highlights The new page makes… The post Refreshed repository pull requests page in public preview appeared first on The GitHub Blog .",
+      "published_at": "2026-09-10T21:27:17+00:00",
+      "source": "GitHub Changelog",
+      "source_id": "github_changelog",
+      "source_kind": "official",
+      "source_category": "software",
+      "primary_category": "software",
+      "topics": [
+        {
+          "id": "github_devops",
+          "score": 0.5
+        }
+      ],
+      "topic_ids": [
+        "github_devops"
+      ],
+      "topic_labels": [
+        "GitHub・Actions"
+      ],
+      "topic_scores": {
+        "github_devops": 0.5
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "release",
+      "item_type": "release",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 1.58,
+        "related_interest": 0.0,
+        "freshness": 0.996,
+        "source_priority": 0.95
+      },
+      "recommendation_reason": "direct",
+      "score": 1.58,
+      "score_components": {
+        "topics": 1.58,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 3.76,
+      "matched_interests": [
+        "github_devops"
+      ],
+      "matched_labels": [
+        "GitHub・Actions"
+      ],
+      "title_ja": "公開プレビューでリポジトリプルリクエストページを更新",
+      "summary_ja": "更新されたリポジトリレベルのリクエストプルリストページは、GitHubのすべてのユーザーのための公開プレビューに表示されます。 強力なフィルタリング、コンパクトなプレゼンテーションモードなどを実現します。 ハイライト 新しいページは... 投稿 更新されたリポジトリ 公開プレビューのプルリクエストページが最初に登場しました GitHubブログ ."
     },
     {
       "id": "ac2780eb4b77053c",
@@ -2785,7 +2926,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.77,
+      "rank_score": 3.76,
       "matched_interests": [
         "llm_ai_tools",
         "ai_agents_automation"
@@ -2793,60 +2934,9 @@
       "matched_labels": [
         "LLM・AIツール",
         "AIエージェント・自動化"
-      ]
-    },
-    {
-      "id": "b16619c31ce49170",
-      "title": "Refreshed repository pull requests page in public preview",
-      "url": "https://github.blog/changelog/2026-09-10-refreshed-repository-pull-requests-page-in-public-preview",
-      "summary": "A refreshed repository-level pull request listing page is now in public preview for all GitHub users. It brings powerful filtering, compact presentation mode, and more. Highlights The new page makes… The post Refreshed repository pull requests page in public preview appeared first on The GitHub Blog .",
-      "published_at": "2026-09-10T21:27:17+00:00",
-      "source": "GitHub Changelog",
-      "source_id": "github_changelog",
-      "source_kind": "official",
-      "source_category": "software",
-      "primary_category": "software",
-      "topics": [
-        {
-          "id": "github_devops",
-          "score": 0.5
-        }
       ],
-      "topic_ids": [
-        "github_devops"
-      ],
-      "topic_labels": [
-        "GitHub・Actions"
-      ],
-      "topic_scores": {
-        "github_devops": 0.5
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "release",
-      "item_type": "release",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 1.58,
-        "related_interest": 0.0,
-        "freshness": 0.996,
-        "source_priority": 0.95
-      },
-      "recommendation_reason": "direct",
-      "score": 1.58,
-      "score_components": {
-        "topics": 1.58,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 3.76,
-      "matched_interests": [
-        "github_devops"
-      ],
-      "matched_labels": [
-        "GitHub・Actions"
-      ]
+      "title_ja": "安全概観: GPT-6 アストラ",
+      "summary_ja": "GPT-6 Astraは、最も広範囲に展開できるモデルであり、当社の準備フレームワークの下で、Cicificial Level of Cybersecurity機能に到達するために最初に導入されています。"
     },
     {
       "id": "0e60f2da0c4e195a",
@@ -2899,7 +2989,9 @@
       ],
       "matched_labels": [
         "AIコーディング"
-      ]
+      ],
+      "title_ja": "タスクの品質を犠牲にすることなく、AIのコーディングをより効率的にする方法",
+      "summary_ja": "なぜより短い出力は、より多くのコストを削減でき、GitHub Copilot は、完全なコーディングタスク全体で無駄な作業を削減します。 投稿 GitHubブログでタスク品質を犠牲にすることなく、AIのコーディングをより効率的に行う方法 GitHubブログで最初に登場しました。"
     },
     {
       "id": "64946386af562d7f",
@@ -2943,7 +3035,7 @@
       "signals": {
         "direct_interest": 1.65,
         "related_interest": 0.0,
-        "freshness": 0.972,
+        "freshness": 0.971,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -2961,7 +3053,9 @@
       "matched_labels": [
         "LLM・AIツール",
         "AIコーディング"
-      ]
+      ],
+      "title_ja": "クリーピークローリー",
+      "summary_ja": "クリーピーは、Konstantin Ryabitsevは、虐待のクローラーの「背景放射線」が、Linuxカーネルの公式Gitリポジトリであるgit.kernel.orgの観点からどのように悪いかについて議論しています:TL;DR:私たちは、他のあらゆる種類の正当なアクセスに費やすよりも、スクレーパーのためのより多くのCPUサイクルレンダリングコミットを費やしています"
     },
     {
       "id": "fa2f75d40bc55e14",
@@ -3023,7 +3117,9 @@
       "matched_labels": [
         "LLM・AIツール",
         "AIコーディング"
-      ]
+      ],
+      "title_ja": "Jakub Pachockiの引用",
+      "summary_ja": "私は多くのスマートモデルを迅速に訓練するために継続するために参照する最強の引数は、他のAIによって構成される危険に対して防御的なシステムを構築する必要性です。 [...] 私たちは、防衛のために強力で整列されたAIが必要になります。 インフラストラクチャを保護し、ローグエージェントをリアルタイムで保護し、完全に新しい保護策を発明するために"
     },
     {
       "id": "e091c33ca8fef401",
@@ -3085,7 +3181,9 @@
       "matched_labels": [
         "LLM・AIツール",
         "AIコーディング"
-      ]
+      ],
+      "title_ja": "ビデオ圧縮機",
+      "summary_ja": "ツール:ビデオコンプレッサー私は私の携帯電話で私のイコール地球アニメーションの短いデモビデオを記録し、私のブログでそのビデオ(FFMPEGを使用して)最適化されたバージョンを公開したいと望んでいたので、私はClaude Fable 5.1 ウェブ用のClaudeコードでは、FFMPEGのWebAssemblyビルドを使用して、このツールを構築しました。 タグ: ffmpeg 、 ビデオ 、 webassembly 、"
     },
     {
       "id": "d866438263d8a47d",
@@ -3139,7 +3237,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.74,
+      "rank_score": 3.73,
       "matched_interests": [
         "llm_ai_tools",
         "ai_coding"
@@ -3147,7 +3245,9 @@
       "matched_labels": [
         "LLM・AIツール",
         "AIコーディング"
-      ]
+      ],
+      "title_ja": "Mercator ↔ エコールアース",
+      "summary_ja": "ツール: Mercator ↔ Equal Earth 私は最近国連で投票したEqual Earthのマップの投影について興味を持っていたので、私はチャットGPT WorkでGPT-6アストラ(中)を持っていたので、私はマーケターとD3を使用してEqual Earth間のこのアニメーション遷移を構築しました。 タグ: 地理空間 、 d3 、 vibe コーディング 、 gpt-6-astra"
     },
     {
       "id": "f8307e70995acead",
@@ -3209,7 +3309,9 @@
       "matched_labels": [
         "LLM・AIツール",
         "AIコーディング"
-      ]
+      ],
+      "title_ja": "DNSの目的は、詐欺を広めることです",
+      "summary_ja": "DNSの目的は、「ドメインネームシステムの目的は、偽りなく高いレートで人々の詐欺を実行する犯罪者のためのベクトルであるように、彼のテイクのサポートでいくつかのダウンティング統計を共有することです。」 このInterisleレポート(アンドリュー・キャンプ)では、Terenceは次のように述べています。 新たに85億人と言われる"
     },
     {
       "id": "f58f39e2ad671915",
@@ -3217,68 +3319,6 @@
       "url": "https://simonwillison.net/2026/Sep/6/theres-no-limit-to-how-bad-code-can-get/",
       "summary": "My comment on There's No Limit to How Bad Code Can Get — Lobste.rs. [In reply to a comment about burning it down to start from scratch when technical debt becomes overwhelming] In my experience it's so rare for that to work. You announce the old thing is irrecoverably drowning in tech debt. You spin up a team to rewrit",
       "published_at": "2026-09-06T09:08:06+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_kind": "blog",
-      "source_category": "ai",
-      "primary_category": "ai",
-      "topics": [
-        {
-          "id": "llm_ai_tools",
-          "score": 0.25
-        },
-        {
-          "id": "ai_coding",
-          "score": 0.25
-        }
-      ],
-      "topic_ids": [
-        "llm_ai_tools",
-        "ai_coding"
-      ],
-      "topic_labels": [
-        "LLM・AIツール",
-        "AIコーディング"
-      ],
-      "topic_scores": {
-        "llm_ai_tools": 0.25,
-        "ai_coding": 0.25
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "analysis",
-      "item_type": "analysis",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 1.65,
-        "related_interest": 0.0,
-        "freshness": 0.959,
-        "source_priority": 0.85
-      },
-      "recommendation_reason": "direct",
-      "score": 1.65,
-      "score_components": {
-        "topics": 1.65,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 3.71,
-      "matched_interests": [
-        "llm_ai_tools",
-        "ai_coding"
-      ],
-      "matched_labels": [
-        "LLM・AIツール",
-        "AIコーディング"
-      ]
-    },
-    {
-      "id": "c5438175cdce76e6",
-      "title": "Quoting Zach Kehs",
-      "url": "https://simonwillison.net/2026/Sep/6/zach-kehs/",
-      "summary": "If you continue to add floors and rooms to a building forever, it will collapse. Software faces no such constraint. The code can always get worse. There can always be a new layer of indirection or a reduction in performance. — Zach Kehs , There's No Limit to How Bad Code Can Get Tags: technical-debt",
-      "published_at": "2026-09-06T08:42:49+00:00",
       "source": "Simon Willison's Weblog",
       "source_id": "simon_willison",
       "source_kind": "blog",
@@ -3333,7 +3373,73 @@
       "matched_labels": [
         "LLM・AIツール",
         "AIコーディング"
-      ]
+      ],
+      "title_ja": "悪いコードを取得するには制限はありません",
+      "summary_ja": "私のコメントには、悪いコードが取得できる制限はありません - Lobste.rs. [技術債務が圧倒されると、ゼロから焼却するというコメントに返信] 私の経験では、それが仕事のために非常にまれです。 古いことは、技術債務に誤ってドローイングされていることを発表しました。 チームをスピンしてチームを退役"
+    },
+    {
+      "id": "c5438175cdce76e6",
+      "title": "Quoting Zach Kehs",
+      "url": "https://simonwillison.net/2026/Sep/6/zach-kehs/",
+      "summary": "If you continue to add floors and rooms to a building forever, it will collapse. Software faces no such constraint. The code can always get worse. There can always be a new layer of indirection or a reduction in performance. — Zach Kehs , There's No Limit to How Bad Code Can Get Tags: technical-debt",
+      "published_at": "2026-09-06T08:42:49+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_kind": "blog",
+      "source_category": "ai",
+      "primary_category": "ai",
+      "topics": [
+        {
+          "id": "llm_ai_tools",
+          "score": 0.25
+        },
+        {
+          "id": "ai_coding",
+          "score": 0.25
+        }
+      ],
+      "topic_ids": [
+        "llm_ai_tools",
+        "ai_coding"
+      ],
+      "topic_labels": [
+        "LLM・AIツール",
+        "AIコーディング"
+      ],
+      "topic_scores": {
+        "llm_ai_tools": 0.25,
+        "ai_coding": 0.25
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "analysis",
+      "item_type": "analysis",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 1.65,
+        "related_interest": 0.0,
+        "freshness": 0.958,
+        "source_priority": 0.85
+      },
+      "recommendation_reason": "direct",
+      "score": 1.65,
+      "score_components": {
+        "topics": 1.65,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 3.7,
+      "matched_interests": [
+        "llm_ai_tools",
+        "ai_coding"
+      ],
+      "matched_labels": [
+        "LLM・AIツール",
+        "AIコーディング"
+      ],
+      "title_ja": "Zach Kehsの引用",
+      "summary_ja": "床や部屋を建物に永遠に入れ続けると、崩壊します。 ソフトウェアはそのような制約を直さない。 コードは常に悪化させることができます。 常に新しい間接層か性能の減少はある場合もあります。 — Zach Kehs , 悪いコードがタグを取得する方法の制限はありません: 技術的なデビット"
     },
     {
       "id": "f588b0d0d876a347",
@@ -3395,7 +3501,9 @@
       "matched_labels": [
         "LLM・AIツール",
         "AIコーディング"
-      ]
+      ],
+      "title_ja": "開発者向けGPT-6 Astraのご紹介",
+      "summary_ja": "開発者向けGPT-6 Astra Blinkを導入し、お見逃しなく。1m59sには馴染みのある生き物があります。ボード全体で、Astraはユーザーのプロンプトをより詳しく理解し、より洗練された出力を構築することができます。 特に、3Dモデルのビルドに優れています。 私はそれがincrediを作ることが見た"
     },
     {
       "id": "ed1bdb936b077c7e",
@@ -3457,7 +3565,9 @@
       "matched_labels": [
         "LLM・AIツール",
         "AIコーディング"
-      ]
+      ],
+      "title_ja": "Astraのペリカン比較グリッドはかなり興味深い",
+      "summary_ja": "私はこの午後にGPT-6アストラにアクセスしたので、自然に自転車に乗るペリカンのSVGを生成するために使用しました - 低、中、高、xhigh、および最大推論レベル(アストラは推論=なしをサポートしていません)。 それから私はGPT-5.6 Sol、Terra、Lunaとの比較格子でそれらのペリカンをレンダリングし、そしてrを楽しくしている"
     },
     {
       "id": "750ee3b3caa217f1",
@@ -3494,7 +3604,7 @@
       "signals": {
         "direct_interest": 1.5,
         "related_interest": 0.0,
-        "freshness": 0.989,
+        "freshness": 0.988,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -3510,7 +3620,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "OpenRouterプリセットを使用する方法: Config-as-Code ガイド",
+      "summary_ja": "プリセットは、LLM 呼び出しの config-as-code です。名前付き、バージョン設定されたモデル、システム プロンプト、プロバイダー ルーティング、サンプリング パラメーターです。 一度定義し、@preset/your-slugとして参照し、reeployなしでダッシュボードからすべてのアプリを更新します。"
     },
     {
       "id": "ec7a1fb61581c577",
@@ -3563,7 +3675,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "In-Region Routing:米国またはEUにデータを保管する",
+      "summary_ja": "米国の登録ルーティングは、EUに加盟しています。 Openrouter.ai にリクエストを送信し、米国内でのみ暗号化され、OpenAI、Anthropic、Google、NVIDIA、Thinking Machine、DeepSeek、Moonshot、Qwen からモデル全体で実行されているプロバイダーによってのみ提供されます。"
     },
     {
       "id": "9ff974b66102a00d",
@@ -3616,7 +3730,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "Navier-Stokesミレニアム賞の問題に関するいくつかの考え",
+      "summary_ja": "Navier-Stokes Millennium Prize 問題は、リリースされていないモデルを使用して、Navierに解像度を生成するOpenAIから印象的な結果を紹介します。 2000年5月24日以降、総額1億ドルの賞金を被った7千年賞問題の1つであるStokesの存在と滑らかさの問題。 ディスコフ"
     },
     {
       "id": "0a7d30eac8bba1ef",
@@ -3669,7 +3785,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "ChatGPTイメージ2.5のご紹介",
+      "summary_ja": "ChatGPT Images 2.5 OpenAI の画像生成モデルが「ChatGPT Images と API の GPT‐Image モデルの3億を超える画像以上」と明らかに使われています。 この最新リリースは、複数のターンを横断して指示に従う能力を向上させ、より高速に応答し、「私は被写体を保存して良い」"
     },
     {
       "id": "7d6c35ddd546687d",
@@ -3716,13 +3834,15 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.6,
+      "rank_score": 3.59,
       "matched_interests": [
         "llm_ai_tools"
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "ラム 0.35",
+      "summary_ja": "リリース: llm 0.35 新しい OpenAI モデル: GPT-6 Astra 用 gpt-6-astra 。 タグ: openai 、 llm 、 gpt-6-astra"
     },
     {
       "id": "c0887e7c80c02503",
@@ -3759,7 +3879,7 @@
       "signals": {
         "direct_interest": 1.45,
         "related_interest": 0.0,
-        "freshness": 0.999,
+        "freshness": 0.998,
         "source_priority": 0.65
       },
       "recommendation_reason": "direct",
@@ -3775,7 +3895,9 @@
       ],
       "matched_labels": [
         "ESP32・小型デバイス"
-      ]
+      ],
+      "title_ja": "マイクロコントローラのラララクロフト",
+      "summary_ja": "一度に、マイクロコントローラのリソースを慎重に予算を払う必要がありました。あなたが何かを簡単なようにしたいなら、LEDの束をフラッシュします。 これらの日、彼らは強力です...もっと"
     },
     {
       "id": "08ccb82380032eeb",
@@ -3812,7 +3934,7 @@
       "signals": {
         "direct_interest": 1.45,
         "related_interest": 0.0,
-        "freshness": 0.984,
+        "freshness": 0.983,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -3828,7 +3950,9 @@
       ],
       "matched_labels": [
         "ESP32・小型デバイス"
-      ]
+      ],
+      "title_ja": "再び認めた: ラズベリーPiとロンドン証券取引所のグリーンエコノミーマーク",
+      "summary_ja": "ラズベリーパイがロンドン証券取引所のグリーンエコノミーマークを再び受賞したことを共有できることを嬉しく思います。 再び認めたポスト: ラズベリーPiとロンドン証券取引所のグリーンエコノミーマークは、ラズベリーPiで最初に登場しました。"
     },
     {
       "id": "f90db24f9676dd90",
@@ -3865,7 +3989,7 @@
       "signals": {
         "direct_interest": 1.5,
         "related_interest": 0.0,
-        "freshness": 0.964,
+        "freshness": 0.963,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -3881,7 +4005,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "リサーチアクセラレーション:OpenAI内部のビュー",
+      "summary_ja": "リサーチアクセラレーション:OpenAI内部のビューは、Recursive Self-ImprovementのOpenAIでRSI日です。新しいAGIだと思います。 この作品と新しいエッセイ・アン・エイリアン・マインド(チーフ・サイエンティスト・ジャクブ・パチョッキ)は、それについて話します。そして、この作品は、頭字語を拡張するのを妨げるものではありません。 含まれている細部"
     },
     {
       "id": "245fae4d64096be2",
@@ -3934,7 +4060,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "GPT‐6 アストラ",
+      "summary_ja": "GPT‐6 Astra GPT-6 Astraは「組織の限られたセットに今日をロールアウトし、今後数日間にわたってすべてのChatGPT Plus、Pro、Business、およびEnterpriseユーザー、ならびにOpenAI APIとAWSを介して利用可能になります」 - 私はまだ自分自身を試していません、私はまだそれについて言うために素晴らしい取引を持っていない。 それは行く"
     },
     {
       "id": "590eedef8f336fc5",
@@ -3971,7 +4099,7 @@
       "signals": {
         "direct_interest": 1.5,
         "related_interest": 0.0,
-        "freshness": 0.929,
+        "freshness": 0.928,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -3987,7 +4115,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "ラム 0.34",
+      "summary_ja": "リリース: llm 0.34 1つの新機能: llm logs --usage Markdown 出力には、ミリ秒単位の応答時間と、人間が読める期間が含まれます。 llm logs --short には、新しい while ms フィールドが含まれます。 #1653 Plusは、いくつかのバグ修正と、ウェーブプレートのおかげでラムログへの重要なパフォーマンスの改善に貢献しました"
     },
     {
       "id": "5752ed149a14bd7a",
@@ -4049,7 +4179,9 @@
       "matched_labels": [
         "GitHub・Actions",
         "Indie Software・OSS"
-      ]
+      ],
+      "title_ja": "プロジェクトHydraFusion:マルチモデルのオーケストレーションによるフロンティア品質",
+      "summary_ja": "制御されたオフライン評価では、HydraFusion の 選択的なコーディングワークフローは、評価された Opus 5 ベースラインにマッチするか、または超過して、推定ワークフローコストを削減します。 GitHub Copilotで研究プレビューとして利用できます。 ポストプロジェクトHydraFusion:マルチモデルのオーケストレーションを介してフロンティア品質が最初に登場"
     },
     {
       "id": "32cea7e66641442d",
@@ -4111,7 +4243,9 @@
       "matched_labels": [
         "GitHub・Actions",
         "Indie Software・OSS"
-      ]
+      ],
+      "title_ja": "新しいAI lingoの解読: ループ, ハーネス, スクワッド, 丘のクライミング... oh 私!",
+      "summary_ja": "ループエンジニアリングからハーネス、スクワッド、オープンウェイトまで、GitHub Podcastは、開発者の会話で表示されるAI用語を破壊します。 ポスト 新しいAI lingoの解読: ループ, ハーネス, スクワッド, 丘クライミング... oh 私! GitHubブログに最初に登場しました。"
     },
     {
       "id": "01b38b6776119a20",
@@ -4164,7 +4298,9 @@
       ],
       "matched_labels": [
         "Obsidian・PKM"
-      ]
+      ],
+      "title_ja": "Obsidian 1.14.1デスクトップ(ほぼアクセス)",
+      "summary_ja": "数学のレンダリングは、MathJax 4.1.3 を使用して、MathJax 3 と Temml を交換します。ベース: キーボードのナビゲーション、選択、水平スクロールを含むテーブルビューに右から左に (RTL) サポートを追加。 動作しないオプションを開くための固定デフォルトファイルはありません。 OSメニューからOSメニューから、最近開いていない不具合を修正"
     },
     {
       "id": "6f85dcbde774b631",
@@ -4217,7 +4353,9 @@
       ],
       "matched_labels": [
         "ウェアラブル"
-      ]
+      ],
+      "title_ja": "カスタムAMOLEDウェアラブルは、偉大なアイスブレーカを作る",
+      "summary_ja": "Nifty の少し AMOLED スクリーンは最近得ることは容易であり、 [Sophie D] はそれらが両方薄く、ライトをです OpenChoker、チョーカーのための設計と身に着けているために十分にあることを示します...続きを読む"
     },
     {
       "id": "4938d8fa27c205db",
@@ -4270,7 +4408,9 @@
       ],
       "matched_labels": [
         "Obsidian・PKM"
-      ]
+      ],
+      "title_ja": "デジタル一次脳の構築",
+      "summary_ja": "Raspberry Piで情報を整理、検索、同期、バックアップするシステムを構築します。 ポストは、ラズベリーパイで最初に登場したデジタル一次脳を構築します。"
     },
     {
       "id": "8e50b104a8cc9234",
@@ -4323,7 +4463,9 @@
       ],
       "matched_labels": [
         "Obsidian・PKM"
-      ]
+      ],
+      "title_ja": "Obsidian 1.14.0デスクトップ(ほぼアクセス)",
+      "summary_ja": "新しいエディタは色のハイライトを追加しました。 色 emoji を (19, 🟠, 🟢, 🟣, 🟣) に追加して、ハイライトの開始に色を変更したり、新しい書式サブメニューから色を選択します。 エディタの Typing == はハイライト色を提案します。 ライブプレビュー:カーソルがハイライトをオーバーラップすると、インラインスウォッチが現れます。 クリックして終了"
     },
     {
       "id": "491a641605939c76",
@@ -4376,7 +4518,9 @@
       ],
       "matched_labels": [
         "AIコーディング"
-      ]
+      ],
+      "title_ja": "1Password は、エンジニアリングの生産性を 21% に Codex で高めます",
+      "summary_ja": "1Password のエンジニアは、Codex を使用して、新しい機能と内部ツールを迅速に構築し、厳格なセキュリティポリシーを維持しながら生産準備を進めています。"
     },
     {
       "id": "a1e5f3d918ec2b1d",
@@ -4420,7 +4564,7 @@
       "signals": {
         "direct_interest": 1.46,
         "related_interest": 0.0,
-        "freshness": 0.878,
+        "freshness": 0.877,
         "source_priority": 0.75
       },
       "recommendation_reason": "direct",
@@ -4438,7 +4582,64 @@
       "matched_labels": [
         "GitHub・Actions",
         "Indie Software・OSS"
-      ]
+      ],
+      "title_ja": "OpenClaw がウイルスに感染しました。 メンテナーズビルに会い、確保します。",
+      "summary_ja": "OpenClawは、GitHubの歴史の中で最も急速に成長しているプロジェクトです。 ピーター・スタインベルガーといくつかのメンテナーは、プロジェクトの最初の6ヶ月で学んだことを共有しています。 投稿 OpenClaw がウイルスになりました。 メンテナーズビルに会い、確保します。 GitHubブログに最初に登場しました。"
+    },
+    {
+      "id": "6b49ad1831bca7bf",
+      "title": "The EU Cyber Resilience Act: mandatory reporting requirements",
+      "url": "https://www.raspberrypi.com/news/the-eu-cyber-resilience-act-mandatory-reporting-requirements/",
+      "summary": "We take a look at how a new set of mandatory reporting obligations affects manufacturers — and how Raspberry Pi can help. The post The EU Cyber Resilience Act: mandatory reporting requirements appeared first on Raspberry Pi .",
+      "published_at": "2026-09-11T08:53:22+00:00",
+      "source": "Raspberry Pi News",
+      "source_id": "raspberry_pi_news",
+      "source_kind": "official",
+      "source_category": "make",
+      "primary_category": "make",
+      "topics": [
+        {
+          "id": "embedded_devices",
+          "score": 0.25
+        }
+      ],
+      "topic_ids": [
+        "embedded_devices"
+      ],
+      "topic_labels": [
+        "ESP32・小型デバイス"
+      ],
+      "topic_scores": {
+        "embedded_devices": 0.25
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 1.09,
+        "related_interest": 0.0,
+        "freshness": 1.0,
+        "source_priority": 0.85
+      },
+      "recommendation_reason": "direct",
+      "score": 1.09,
+      "score_components": {
+        "topics": 1.09,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 3.26,
+      "matched_interests": [
+        "embedded_devices"
+      ],
+      "matched_labels": [
+        "ESP32・小型デバイス"
+      ],
+      "title_ja": "EUのサイバーレジリエンス法:必須の報告要件",
+      "summary_ja": "Raspberry Pi がどのように役立つか、重要な報告義務の新しいセットがメーカーにどのように影響するかを見てみましょう。 投稿 EUのサイバーレジリエンス法: 必須の報告要件は、ラズベリーPiで最初に登場しました ."
     },
     {
       "id": "4ad3873561cda606",
@@ -4482,7 +4683,7 @@
       "signals": {
         "direct_interest": 1.46,
         "related_interest": 0.0,
-        "freshness": 0.863,
+        "freshness": 0.862,
         "source_priority": 0.75
       },
       "recommendation_reason": "direct",
@@ -4492,7 +4693,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.25,
+      "rank_score": 3.24,
       "matched_interests": [
         "github_devops",
         "indie_open_source"
@@ -4500,7 +4701,9 @@
       "matched_labels": [
         "GitHub・Actions",
         "Indie Software・OSS"
-      ]
+      ],
+      "title_ja": "生産前にLMを評価する方法",
+      "summary_ja": "これらは、現実世界の秘密のスキャンのためにLMSの評価を学んだ教訓です。 投稿 LLMを評価する方法 生産の前に最初に登場しました GitHubブログ ."
     },
     {
       "id": "032cf409dd1e1f99",
@@ -4537,7 +4740,7 @@
       "signals": {
         "direct_interest": 1.05,
         "related_interest": 0.0,
-        "freshness": 0.996,
+        "freshness": 0.995,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -4553,7 +4756,9 @@
       ],
       "matched_labels": [
         "GitHub・Actions"
-      ]
+      ],
+      "title_ja": "公開プレビューでプルリクエストAPIをスキャン",
+      "summary_ja": "GitHubコードスキャンのAIスキャンを管理し、組織とリポジトリレベルでREST APIエンドポイントでプルリクエストを有効にします。 このパブリックプレビューは、チームにプログラマティックを与えます... 公開プレビューでAPIをプルリクエストするための投稿AIスキャンは、GitHubブログで最初に登場しました。"
     },
     {
       "id": "0beaa632211ea878",
@@ -4615,7 +4820,9 @@
       "matched_labels": [
         "GitHub・Actions",
         "Indie Software・OSS"
-      ]
+      ],
+      "title_ja": "alt テキストが自動チェックを通過します。 それは良い意味ではありません。",
+      "summary_ja": "GitHubアクセシビリティスキャナ用のプラグインをビルドして、altテキストが実際にアクセスできるようにします。 作品の使い方をご紹介します。 alt テキストが自動チェックを通過する投稿。 それは良い意味ではありません。 GitHubブログに最初に登場しました。"
     },
     {
       "id": "ff3d29128810b258",
@@ -4668,7 +4875,9 @@
       ],
       "matched_labels": [
         "GitHub・Actions"
-      ]
+      ],
+      "title_ja": "GitHub Advanced Securityは、トライアルの可用性を拡大",
+      "summary_ja": "GitHub Enterprise Cloud のお客様は、GitHub Code Security および GitHub Secret Protection を評価するために、セルフサービス GitHub Advanced Security トライアルを開始できます。 適格性は、企業から最大で拡大しました... GitHub Advanced Security の投稿は、GitHub Blog でトライアルの可用性が最初に登場しました。"
     },
     {
       "id": "08d5fe54ffa077dd",
@@ -4721,7 +4930,9 @@
       ],
       "matched_labels": [
         "GitHub・Actions"
-      ]
+      ],
+      "title_ja": "浸漬から露出した秘密でプルリクエストをブロックする",
+      "summary_ja": "リポジトリ規則を使用すると、リポジトリ全体にスケーラブルな保護を簡単に追加できます。 今日から、プルリクエストが導入したときに、プルリクエストがマージからプルリクエストをブロックするためにレポジトリ規則を使用することができます... ポストブロックは、マージから公開された秘密でリクエストをプルします GitHubブログで最初に登場しました。"
     },
     {
       "id": "b81f259c6183c9d4",
@@ -4774,7 +4985,9 @@
       ],
       "matched_labels": [
         "Apple Watch・iPhone・iOS"
-      ]
+      ],
+      "title_ja": "iPhone Duoに向けた準備",
+      "summary_ja": "今すぐiPhone Duoに向けた準備を始めましょう。新しいビデオを視聴し、グループラボに申し込み、Apple Developer ForumsでのQ&Aに参加しましょう。 最新情報を確認する（英語）"
     },
     {
       "id": "7fedfe91792bf89c",
@@ -4827,7 +5040,9 @@
       ],
       "matched_labels": [
         "Obsidian・PKM"
-      ]
+      ],
+      "title_ja": "Obsidian 1.13.8 モバイル (公開)",
+      "summary_ja": "アンドロイド: エディタが誤って読書モードからスクロールしながら編集モードに切り替えることを引き起こした問題を修正しました。"
     },
     {
       "id": "63fecd9750b38cfe",
@@ -4880,7 +5095,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "金融サービスChatGPTのご紹介",
+      "summary_ja": "金融サービスのChatGPTを導入し、財務データとGPT-6 Astraを組み合わせて研究、モデリング、クライアント対応の資料を組み合わせて紹介します。"
     },
     {
       "id": "023c2df5cdad1ad5",
@@ -4933,7 +5150,9 @@
       ],
       "matched_labels": [
         "GitHub・Actions"
-      ]
+      ],
+      "title_ja": "GitHubの可用性レポート: 8月2026",
+      "summary_ja": "8月には、GitHubサービスのパフォーマンスを劣化させる5つのインシデントを経験しました。 GitHubの可用性レポート: 8月2026は、GitHubブログで最初に登場しました。"
     },
     {
       "id": "30e8b0bbe35c3ca1",
@@ -4986,7 +5205,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "Paul ChristianoがOpenAI Foundation Boardに参加",
+      "summary_ja": "Paul Christianoは、OpenAI財団理事と安全衛生委員会に参画し、AIのアライメント、安全、規格に関する経験を持ちます。"
     },
     {
       "id": "2fcc6baa4f03a6d5",
@@ -5039,7 +5260,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "Nano Banana API: コードでGeminiで画像を編集する",
+      "summary_ja": "ソースイメージと編集プロンプトを1つのリクエストに送信し、編集された画像を取り戻し、単一のフィールドを編集することで編集モデルを変更します。 実行可能なPythonとTypeScriptが含まれています。"
     },
     {
       "id": "51d57426b201bc62",
@@ -5092,7 +5315,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "ChatGPTイメージ2.5のご紹介",
+      "summary_ja": "ChatGPT Images 2.5は、あなたのアイデア、スケッチ、およびよりパーソナライズされた洗練された画像にあなたのアイデアを反映するのに役立ちます。"
     },
     {
       "id": "bced7af72ce4bcad",
@@ -5145,7 +5370,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "OpenAIは教室から報道までジャーナリズムをサポートする取り組みを拡大",
+      "summary_ja": "OpenAIは、学生、教育機関、ジャーナリスト、ニュース機関のツール、トレーニング、パートナーシップに関するジャーナリズムのサポートを拡大しています。"
     },
     {
       "id": "0b707ac1f19ed2e4",
@@ -5198,7 +5425,9 @@
       ],
       "matched_labels": [
         "Obsidian・PKM"
-      ]
+      ],
+      "title_ja": "Obsidian 1.13.7 モバイル (公開)",
+      "summary_ja": "Obsidianデスクトップ v1.13.7 まで、すべての新機能とバグ修正が含まれています。"
     },
     {
       "id": "3b8b2d51cdde602b",
@@ -5251,172 +5480,15 @@
       ],
       "matched_labels": [
         "Obsidian・PKM"
-      ]
-    },
-    {
-      "id": "17232a51a4e3a8c7",
-      "title": "Introducing the Raspberry Pi Compute Module 5 Programming Jig",
-      "url": "https://www.raspberrypi.com/news/introducing-the-raspberry-pi-compute-module-5-programming-jig/",
-      "summary": "Provision Raspberry Pi Compute Module 5 at scale with the Raspberry Pi Compute Module 5 Programming Jig, on sale now. The post Introducing the Raspberry Pi Compute Module 5 Programming Jig appeared first on Raspberry Pi .",
-      "published_at": "2026-08-19T06:56:48+00:00",
-      "source": "Raspberry Pi News",
-      "source_id": "raspberry_pi_news",
-      "source_kind": "official",
-      "source_category": "make",
-      "primary_category": "make",
-      "topics": [
-        {
-          "id": "embedded_devices",
-          "score": 0.333
-        }
       ],
-      "topic_ids": [
-        "embedded_devices"
-      ],
-      "topic_labels": [
-        "ESP32・小型デバイス"
-      ],
-      "topic_scores": {
-        "embedded_devices": 0.333
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 1.45,
-        "related_interest": 0.0,
-        "freshness": 0.808,
-        "source_priority": 0.85
-      },
-      "recommendation_reason": "direct",
-      "score": 1.45,
-      "score_components": {
-        "topics": 1.45,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 3.11,
-      "matched_interests": [
-        "embedded_devices"
-      ],
-      "matched_labels": [
-        "ESP32・小型デバイス"
-      ]
-    },
-    {
-      "id": "5171aba69e7a79f1",
-      "title": "Obsidian 1.13.7 Mobile (Early access)",
-      "url": "https://obsidian.md/changelog/2026-08-11-mobile-v1.13.7/",
-      "summary": "Includes all new features and bug fixes up to Obsidian Desktop v1.13.7.",
-      "published_at": "2026-08-11T00:00:00+00:00",
-      "source": "Obsidian Changelog",
-      "source_id": "obsidian_changelog",
-      "source_kind": "official",
-      "source_category": "knowledge",
-      "primary_category": "knowledge",
-      "topics": [
-        {
-          "id": "obsidian_pkm",
-          "score": 0.333
-        }
-      ],
-      "topic_ids": [
-        "obsidian_pkm"
-      ],
-      "topic_labels": [
-        "Obsidian・PKM"
-      ],
-      "topic_scores": {
-        "obsidian_pkm": 0.333
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "release",
-      "item_type": "release",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 1.25,
-        "related_interest": 0.0,
-        "freshness": 0.869,
-        "source_priority": 0.95
-      },
-      "recommendation_reason": "direct",
-      "score": 1.25,
-      "score_components": {
-        "topics": 1.25,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 3.11,
-      "matched_interests": [
-        "obsidian_pkm"
-      ],
-      "matched_labels": [
-        "Obsidian・PKM"
-      ]
-    },
-    {
-      "id": "be2f0c7363c8c37b",
-      "title": "Obsidian 1.13.7 Desktop (Early access)",
-      "url": "https://obsidian.md/changelog/2026-08-11-desktop-v1.13.7/",
-      "summary": "No longer broken macOS: Fixed files with special characters in their names sometimes not appearing in the vault. Editor: Fixed inline math in a list item or callout not rendering correctly. Live Preview: Fixed images in pop-out windows not resizing or opening fullscreen while the main window is minimized. Settings: Fix",
-      "published_at": "2026-08-11T00:00:00+00:00",
-      "source": "Obsidian Changelog",
-      "source_id": "obsidian_changelog",
-      "source_kind": "official",
-      "source_category": "knowledge",
-      "primary_category": "knowledge",
-      "topics": [
-        {
-          "id": "obsidian_pkm",
-          "score": 0.333
-        }
-      ],
-      "topic_ids": [
-        "obsidian_pkm"
-      ],
-      "topic_labels": [
-        "Obsidian・PKM"
-      ],
-      "topic_scores": {
-        "obsidian_pkm": 0.333
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "release",
-      "item_type": "release",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 1.25,
-        "related_interest": 0.0,
-        "freshness": 0.869,
-        "source_priority": 0.95
-      },
-      "recommendation_reason": "direct",
-      "score": 1.25,
-      "score_components": {
-        "topics": 1.25,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 3.11,
-      "matched_interests": [
-        "obsidian_pkm"
-      ],
-      "matched_labels": [
-        "Obsidian・PKM"
-      ]
+      "title_ja": "Obsidian 1.13.7 デスクトップ (公開)",
+      "summary_ja": "もはや壊れていない macOS: 自分の名前の特殊な文字を持つ固定ファイルでは、ボルトに表示されません。 エディタ: リスト項目またはコールアウトが正しくレンダリングされないインライン数学を修正しました。 ライブプレビュー:メインウィンドウが最小限に抑えられている間、ポップアップウィンドウで画像を固定またはフルスクリーンを開くことができません。 設定: 修正"
     },
     {
       "id": "35785ab00b53ffaa",
       "title": "The Gemini app is now available for Windows",
       "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/",
-      "summary": "Article URL: https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/ Comments URL: https://news.ycombinator.com/item?id=49653699 Points: 41 # Comments: 27",
+      "summary": "Article URL: https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/ Comments URL: https://news.ycombinator.com/item?id=49653699 Points: 48 # Comments: 33",
       "published_at": "2026-09-11T04:52:20+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -5447,7 +5519,7 @@
       "signals": {
         "direct_interest": 1.0,
         "related_interest": 0.0,
-        "freshness": 0.999,
+        "freshness": 0.998,
         "source_priority": 0.5
       },
       "recommendation_reason": "direct",
@@ -5463,7 +5535,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "GeminiアプリがWindowsで利用可能になりました",
+      "summary_ja": "記事のURL: https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/ コメント URL: https://news.ycombinator.com/item?id=49653699 ポイント: 48 # コメント: 33"
     },
     {
       "id": "225e055e536d422f",
@@ -5516,7 +5590,119 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "リサーチアクセラレーション:OpenAI内部のビュー",
+      "summary_ja": "OpenAIでは、コーディングエージェントがAI研究を再構築しています。 エージェントの使用、実験速度、タスクの複雑性、および研究加速に関する早期データをご覧ください。"
+    },
+    {
+      "id": "5171aba69e7a79f1",
+      "title": "Obsidian 1.13.7 Mobile (Early access)",
+      "url": "https://obsidian.md/changelog/2026-08-11-mobile-v1.13.7/",
+      "summary": "Includes all new features and bug fixes up to Obsidian Desktop v1.13.7.",
+      "published_at": "2026-08-11T00:00:00+00:00",
+      "source": "Obsidian Changelog",
+      "source_id": "obsidian_changelog",
+      "source_kind": "official",
+      "source_category": "knowledge",
+      "primary_category": "knowledge",
+      "topics": [
+        {
+          "id": "obsidian_pkm",
+          "score": 0.333
+        }
+      ],
+      "topic_ids": [
+        "obsidian_pkm"
+      ],
+      "topic_labels": [
+        "Obsidian・PKM"
+      ],
+      "topic_scores": {
+        "obsidian_pkm": 0.333
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "release",
+      "item_type": "release",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 1.25,
+        "related_interest": 0.0,
+        "freshness": 0.869,
+        "source_priority": 0.95
+      },
+      "recommendation_reason": "direct",
+      "score": 1.25,
+      "score_components": {
+        "topics": 1.25,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 3.1,
+      "matched_interests": [
+        "obsidian_pkm"
+      ],
+      "matched_labels": [
+        "Obsidian・PKM"
+      ],
+      "title_ja": "オブシディアン 1.13.7 モバイル(早期アクセス)",
+      "summary_ja": "Obsidian Desktop v1.13.7 までのすべての新機能とバグ修正が含まれています。"
+    },
+    {
+      "id": "be2f0c7363c8c37b",
+      "title": "Obsidian 1.13.7 Desktop (Early access)",
+      "url": "https://obsidian.md/changelog/2026-08-11-desktop-v1.13.7/",
+      "summary": "No longer broken macOS: Fixed files with special characters in their names sometimes not appearing in the vault. Editor: Fixed inline math in a list item or callout not rendering correctly. Live Preview: Fixed images in pop-out windows not resizing or opening fullscreen while the main window is minimized. Settings: Fix",
+      "published_at": "2026-08-11T00:00:00+00:00",
+      "source": "Obsidian Changelog",
+      "source_id": "obsidian_changelog",
+      "source_kind": "official",
+      "source_category": "knowledge",
+      "primary_category": "knowledge",
+      "topics": [
+        {
+          "id": "obsidian_pkm",
+          "score": 0.333
+        }
+      ],
+      "topic_ids": [
+        "obsidian_pkm"
+      ],
+      "topic_labels": [
+        "Obsidian・PKM"
+      ],
+      "topic_scores": {
+        "obsidian_pkm": 0.333
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "release",
+      "item_type": "release",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 1.25,
+        "related_interest": 0.0,
+        "freshness": 0.869,
+        "source_priority": 0.95
+      },
+      "recommendation_reason": "direct",
+      "score": 1.25,
+      "score_components": {
+        "topics": 1.25,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 3.1,
+      "matched_interests": [
+        "obsidian_pkm"
+      ],
+      "matched_labels": [
+        "Obsidian・PKM"
+      ],
+      "title_ja": "Obsidian 1.13.7 デスクトップ(ほぼアクセス)",
+      "summary_ja": "もはや壊れていない macOS: 自分の名前の特殊な文字を持つ固定ファイルでは、ボルトに表示されません。 エディタ: リスト項目またはコールアウトが正しくレンダリングされないインライン数学を修正しました。 ライブプレビュー:メインウィンドウが最小限に抑えられている間、ポップアップウィンドウで画像を固定またはフルスクリーンを開くことができません。 設定: 修正"
     },
     {
       "id": "47e4677cdf8e3d8d",
@@ -5553,7 +5739,7 @@
       "signals": {
         "direct_interest": 1.09,
         "related_interest": 0.0,
-        "freshness": 0.934,
+        "freshness": 0.933,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -5569,7 +5755,9 @@
       ],
       "matched_labels": [
         "ESP32・小型デバイス"
-      ]
+      ],
+      "title_ja": "インターネットラジオの構築",
+      "summary_ja": "電位計を使用して、オンラインラジオ局にLEDとタインを制御することができます。 ポストビルドインターネットラジオは、最初にラズベリーパイに登場しました。"
     },
     {
       "id": "322b7bb856954e6c",
@@ -5622,7 +5810,9 @@
       ],
       "matched_labels": [
         "Obsidian・PKM"
-      ]
+      ],
+      "title_ja": "Obsidian 1.13.6 モバイル (公開)",
+      "summary_ja": "すべての新機能とバグは、Obsidian デスクトップ v1.13.6 まで修正します。タブ スイッチャのタブを閉じるために、新しい追加 swipe-to-close。 改善点 タブはタブのスイッチャーからタブを閉じた後、新しい位置にアニメーションします。 モバイルツールバーの設定ページでは、各コマンドの横にあるアイコンが表示されます。 チェックボックスのスケール"
     },
     {
       "id": "5086a94035ddaff2",
@@ -5675,7 +5865,9 @@
       ],
       "matched_labels": [
         "Obsidian・PKM"
-      ]
+      ],
+      "title_ja": "Obsidian 1.13.6 デスクトップ (公開)",
+      "summary_ja": "改善点 アプリは、ファイルが破損してしまうことを避けるために、終了時に設定ファイルを保存するのを待ちます。 「タブを閉じる」動作を改善しました。 タブは正しいタブグループで再オープンし、現在アクティブなタブが「新しいタブ」ページの場合、再利用されることはありません。 URI アクティオを承認するための削除されたダイアログ"
     },
     {
       "id": "a91e2970233df647",
@@ -5728,7 +5920,9 @@
       ],
       "matched_labels": [
         "ESP32・小型デバイス"
-      ]
+      ],
+      "title_ja": "Pi-Sky フライト追跡ダッシュボード",
+      "summary_ja": "ライブマップ、履歴、再生でローカルフライト追跡ダッシュボードを作成。 ポスト Pi-Sky 飛行追跡ダッシュボードは、最初に Raspberry Pi に登場しました。"
     },
     {
       "id": "b3829fa4954b8916",
@@ -5765,7 +5959,7 @@
       "signals": {
         "direct_interest": 1.25,
         "related_interest": 0.0,
-        "freshness": 0.853,
+        "freshness": 0.852,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -5781,7 +5975,9 @@
       ],
       "matched_labels": [
         "Obsidian・PKM"
-      ]
+      ],
+      "title_ja": "オブシディアン 1.13.6 モバイル(早期アクセス)",
+      "summary_ja": "Obsidian Desktop v1.13.6 までのすべての新機能とバグ修正が含まれています。 もはやiOSを壊れていない: 固定エディタは、テキストまたはカーソルをドラッグした後、段落全体を選択することがあります"
     },
     {
       "id": "7f9545c864c64b66",
@@ -5818,7 +6014,7 @@
       "signals": {
         "direct_interest": 1.25,
         "related_interest": 0.0,
-        "freshness": 0.853,
+        "freshness": 0.852,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -5834,7 +6030,9 @@
       ],
       "matched_labels": [
         "Obsidian・PKM"
-      ]
+      ],
+      "title_ja": "Obsidian 1.13.6デスクトップ(ほぼアクセス)",
+      "summary_ja": "設定でスライダーを改良することでアクセントカラーを使用できるようになりました。 技術的でないユーザーに対してさらに混乱を起こしたため、URIアクションを承認するダイアログを削除しました。 1.13 は、既定で消えているマーメイドの図のような新しいガードレールを導入しました。 もはや壊れていない設定: バックバトをプレスするバグを修正"
     },
     {
       "id": "b54502780ea5bf18",
@@ -5887,7 +6085,9 @@
       ],
       "matched_labels": [
         "Obsidian・PKM"
-      ]
+      ],
+      "title_ja": "オブシディアン 1.13.5 モバイル(早期アクセス)",
+      "summary_ja": "Obsidian デスクトップ v1.13.5 までのすべての新機能とバグ修正が含まれています。 タブスイッチャーのタブのタブを閉じるために、新しい追加スワイプツークローズ. 改善点 タブはタブのスイッチャーからタブを閉じた後、新しい位置にアニメーションします。 モバイルツールバーの設定ページでは、各コマンドの横にあるアイコンが表示されます。 チェックボックスは p をスケールアップ"
     },
     {
       "id": "85b4bb802b272e8f",
@@ -5940,7 +6140,9 @@
       ],
       "matched_labels": [
         "Obsidian・PKM"
-      ]
+      ],
+      "title_ja": "Obsidian 1.13.5 デスクトップ(ほぼアクセス)",
+      "summary_ja": "改善点 アプリは、ファイルが破損してしまうことを避けるために、終了時に設定ファイルを保存するのを待ちます。 「タブを閉じる」動作を改善しました。 タブは正しいタブグループで再オープンし、現在アクティブなタブが「新しいタブ」ページの場合、再利用されることはありません。 コンテンツ 設定ウィンドウが表示されるようになりました。"
     },
     {
       "id": "23b49c054dd022ad",
@@ -5977,7 +6179,7 @@
       "signals": {
         "direct_interest": 1.0,
         "related_interest": 0.0,
-        "freshness": 0.941,
+        "freshness": 0.94,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -5993,7 +6195,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "8月ニュースレターが公開されました",
+      "summary_ja": "スポンサー専用月間ニュースレターの8月版が公開されました。 スポンサー(または今すぐスポンサーシップを始める場合)の場合は、こちらにアクセスすることができます。 今月: OpenAlの偶然のサイバー攻撃のワンショットのRaccoon HeistゲームでFable 5とSol 5.6 Claude自動モードを理解するChatGPT作業Moの詳細をいただきました"
     },
     {
       "id": "41bbe44596b6918b",
@@ -6046,13 +6250,15 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "ATVビッグエアツアーは、ChatGPTで3時間に3日間働いた",
+      "summary_ja": "ATVビッグエアツアーはChatGPTを利用 マーケティング、商品化などのスピードアップ作業 在庫サイトへは、15分で写真を商品化しました。"
     },
     {
       "id": "e38e55b793ac5187",
       "title": "Proof of Capture: Apple Reference Image, but open source and using steganography",
       "url": "https://merybenavente.me/blog/proof-of-capture",
-      "summary": "Article URL: https://merybenavente.me/blog/proof-of-capture Comments URL: https://news.ycombinator.com/item?id=49649222 Points: 103 # Comments: 55",
+      "summary": "Article URL: https://merybenavente.me/blog/proof-of-capture Comments URL: https://news.ycombinator.com/item?id=49649222 Points: 106 # Comments: 58",
       "published_at": "2026-09-10T19:44:15+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -6083,7 +6289,7 @@
       "signals": {
         "direct_interest": 0.9,
         "related_interest": 0.0,
-        "freshness": 0.996,
+        "freshness": 0.995,
         "source_priority": 0.5
       },
       "recommendation_reason": "direct",
@@ -6099,7 +6305,9 @@
       ],
       "matched_labels": [
         "Indie Software・OSS"
-      ]
+      ],
+      "title_ja": "キャプチャの証拠:Appleの参照イメージ、しかしオープンソースおよびsteganographyを使用して",
+      "summary_ja": "記事のURL: https://merybenavente.me/blog/proof-of-capture コメントのURL: https://news.ycombinator.com/item?id=49649222 ポイント: 106 # コメント: 58"
     },
     {
       "id": "10ebd5a8648d8b52",
@@ -6152,7 +6360,9 @@
       ],
       "matched_labels": [
         "Obsidian・PKM"
-      ]
+      ],
+      "title_ja": "Obsidian 1.13 モバイル (公開)",
+      "summary_ja": "このアップデートでは、新しい検索可能な設定パネルとiOS共有シートを紹介します。 大きいファイルをスクロールし、テキストを選択すると、iOSとAndroidの両方で改善する必要があります。 すべての新機能とバグ修正は、Obsidian デスクトップ v1.13.4 まで含まれています。 iOS 共有シート 新しいiOS共有シートを使用すると、Safari、YouTubからコンテンツを保存できます"
     },
     {
       "id": "4278bca33ee9019f",
@@ -6189,7 +6399,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.995,
+        "freshness": 0.994,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -6205,7 +6415,64 @@
       ],
       "matched_labels": [
         "GitHub・Actions"
-      ]
+      ],
+      "title_ja": "MAIコード-1-フラッシュ非推奨",
+      "summary_ja": "MAI-Code-1-Flash は、GitHub Copilot のすべてのエクスペリエンス(Copilot Chat、インライン編集、依頼、エージェントモード、コード補完を含む)を廃止しました。 モデルの非推奨日付 提案された代替... 投稿 MAI-Code-1-Flashは、GitHubブログで最初に登場しました。"
+    },
+    {
+      "id": "dc61adfe91c11f31",
+      "title": "A better model for silicon: quantifying chip carbon with Columbia and Cornell",
+      "url": "https://www.raspberrypi.com/news/a-better-model-for-silicon-quantifying-chip-carbon-with-columbia-and-cornell/",
+      "summary": "MicroGreen and ACT were built to enable engineers to quantify the embodied carbon of their hardware. The post A better model for silicon: quantifying chip carbon with Columbia and Cornell appeared first on Raspberry Pi .",
+      "published_at": "2026-08-28T09:33:07+00:00",
+      "source": "Raspberry Pi News",
+      "source_id": "raspberry_pi_news",
+      "source_kind": "official",
+      "source_category": "make",
+      "primary_category": "make",
+      "topics": [
+        {
+          "id": "embedded_devices",
+          "score": 0.25
+        }
+      ],
+      "topic_ids": [
+        "embedded_devices"
+      ],
+      "topic_labels": [
+        "ESP32・小型デバイス"
+      ],
+      "topic_scores": {
+        "embedded_devices": 0.25
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 1.09,
+        "related_interest": 0.0,
+        "freshness": 0.883,
+        "source_priority": 0.85
+      },
+      "recommendation_reason": "direct",
+      "score": 1.09,
+      "score_components": {
+        "topics": 1.09,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.97,
+      "matched_interests": [
+        "embedded_devices"
+      ],
+      "matched_labels": [
+        "ESP32・小型デバイス"
+      ],
+      "title_ja": "シリコンに適したモデル:コロンビアとコーネルのチップカーボンを定量化",
+      "summary_ja": "マイクログリーンとACTは、エンジニアがハードウェアのエンボディカーボンを定量化できるように構築されました。 ポスト シリコンのためのより良いモデル:コロンビアとコルネルとクオンチファイトチップカーボンは、ラズベリーパイで最初に登場しました。"
     },
     {
       "id": "dc7b9892a8ebdbc8",
@@ -6252,66 +6519,15 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.97,
+      "rank_score": 2.96,
       "matched_interests": [
         "github_devops"
       ],
       "matched_labels": [
         "GitHub・Actions"
-      ]
-    },
-    {
-      "id": "dc61adfe91c11f31",
-      "title": "A better model for silicon: quantifying chip carbon with Columbia and Cornell",
-      "url": "https://www.raspberrypi.com/news/a-better-model-for-silicon-quantifying-chip-carbon-with-columbia-and-cornell/",
-      "summary": "MicroGreen and ACT were built to enable engineers to quantify the embodied carbon of their hardware. The post A better model for silicon: quantifying chip carbon with Columbia and Cornell appeared first on Raspberry Pi .",
-      "published_at": "2026-08-28T09:33:07+00:00",
-      "source": "Raspberry Pi News",
-      "source_id": "raspberry_pi_news",
-      "source_kind": "official",
-      "source_category": "make",
-      "primary_category": "make",
-      "topics": [
-        {
-          "id": "embedded_devices",
-          "score": 0.25
-        }
       ],
-      "topic_ids": [
-        "embedded_devices"
-      ],
-      "topic_labels": [
-        "ESP32・小型デバイス"
-      ],
-      "topic_scores": {
-        "embedded_devices": 0.25
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 1.09,
-        "related_interest": 0.0,
-        "freshness": 0.884,
-        "source_priority": 0.85
-      },
-      "recommendation_reason": "direct",
-      "score": 1.09,
-      "score_components": {
-        "topics": 1.09,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.97,
-      "matched_interests": [
-        "embedded_devices"
-      ],
-      "matched_labels": [
-        "ESP32・小型デバイス"
-      ]
+      "title_ja": "macOS 27 で Xcode 27 のランナーイメージが実行されました。",
+      "summary_ja": "Apple のアプリを macOS 27 に検証できるのは、Xcode 27 のランナーイメージを使って GitHub でホストされている macOS のランナーで、公開プレビューで利用できます。 以前にmacOSで実行されたイメージ... 投稿 Xcode 27 ランナー イメージが macOS 27 で実行されました 最初に登場 GitHub Blog ."
     },
     {
       "id": "cfe9a7da79915f40",
@@ -6364,7 +6580,9 @@
       ],
       "matched_labels": [
         "GitHub・Actions"
-      ]
+      ],
+      "title_ja": "npm は、回復コードのセキュリティ保持をすべてのアカウントに拡張します",
+      "summary_ja": "npmは、成功した回復コードのサインイン後、一時72時間のセキュリティホールドを配置し、以前にハイインパクトアカウントにのみ適用された保護を拡張します。 この変更は... ポストnpmは、回復コードのセキュリティ保持をすべてのアカウントに拡張します。 GitHubブログ ."
     },
     {
       "id": "1cc410c23a5f0bd9",
@@ -6401,7 +6619,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.988,
+        "freshness": 0.987,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -6417,7 +6635,9 @@
       ],
       "matched_labels": [
         "GitHub・Actions"
-      ]
+      ],
+      "title_ja": "CodeQL 2.27.0 は Linux ARM64 のサポートを追加します。",
+      "summary_ja": "CodeQL 2.27.0 は Linux の ARM64 で利用でき、新しい Rust セキュリティー・クエリーを追加し、Java/Kotlin および C# のフレームワーク・カバレッジを拡張し、複数の言語間での精度の改善を分析します。 コードQLは... CodeQL 2.27.0 では Linux ARM64 のサポートが GitHub Blog で初めて登場しました。"
     },
     {
       "id": "ea74094866bf20b7",
@@ -6454,7 +6674,7 @@
       "signals": {
         "direct_interest": 1.09,
         "related_interest": 0.0,
-        "freshness": 0.875,
+        "freshness": 0.874,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -6470,113 +6690,9 @@
       ],
       "matched_labels": [
         "ESP32・小型デバイス"
-      ]
-    },
-    {
-      "id": "a83aa90dce55eaa5",
-      "title": "Obsidian 1.13.4 Mobile (Early access)",
-      "url": "https://obsidian.md/changelog/2026-07-27-mobile-v1.13.4/",
-      "summary": "Includes all new features and bug fixes up to Obsidian Desktop v1.13.4. Improvements Improved overall appearance of settings in dark mode. No longer broken Fixed search input getting automatically focused when browsing Community plugins. iOS: Fixed the Share Sheet not including article content when sharing X links. iOS",
-      "published_at": "2026-07-27T00:00:00+00:00",
-      "source": "Obsidian Changelog",
-      "source_id": "obsidian_changelog",
-      "source_kind": "official",
-      "source_category": "knowledge",
-      "primary_category": "knowledge",
-      "topics": [
-        {
-          "id": "obsidian_pkm",
-          "score": 0.333
-        }
       ],
-      "topic_ids": [
-        "obsidian_pkm"
-      ],
-      "topic_labels": [
-        "Obsidian・PKM"
-      ],
-      "topic_scores": {
-        "obsidian_pkm": 0.333
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "release",
-      "item_type": "release",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 1.25,
-        "related_interest": 0.0,
-        "freshness": 0.807,
-        "source_priority": 0.95
-      },
-      "recommendation_reason": "direct",
-      "score": 1.25,
-      "score_components": {
-        "topics": 1.25,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.95,
-      "matched_interests": [
-        "obsidian_pkm"
-      ],
-      "matched_labels": [
-        "Obsidian・PKM"
-      ]
-    },
-    {
-      "id": "7d417d5d22ae3b45",
-      "title": "Obsidian 1.13.4 Desktop (Early access)",
-      "url": "https://obsidian.md/changelog/2026-07-27-desktop-v1.13.4/",
-      "summary": "Improvements The image lightbox now displays the file name of the current image. Improved layout of Page Preview settings. Settings: Download counts are now abbreviated for plugins and themes. Settings: Moved the \"Interface\" tab above \"Editor\" in the settings sidebar. Live Preview: Improved alignment of images inline w",
-      "published_at": "2026-07-27T00:00:00+00:00",
-      "source": "Obsidian Changelog",
-      "source_id": "obsidian_changelog",
-      "source_kind": "official",
-      "source_category": "knowledge",
-      "primary_category": "knowledge",
-      "topics": [
-        {
-          "id": "obsidian_pkm",
-          "score": 0.333
-        }
-      ],
-      "topic_ids": [
-        "obsidian_pkm"
-      ],
-      "topic_labels": [
-        "Obsidian・PKM"
-      ],
-      "topic_scores": {
-        "obsidian_pkm": 0.333
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "release",
-      "item_type": "release",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 1.25,
-        "related_interest": 0.0,
-        "freshness": 0.807,
-        "source_priority": 0.95
-      },
-      "recommendation_reason": "direct",
-      "score": 1.25,
-      "score_components": {
-        "topics": 1.25,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.95,
-      "matched_interests": [
-        "obsidian_pkm"
-      ],
-      "matched_labels": [
-        "Obsidian・PKM"
-      ]
+      "title_ja": "LesionIQ皮膚癌診断",
+      "summary_ja": "LesionIQは、皮膚病変の画像を分析し、人間の眼が不可能なパターンを識別するために機械学習を使用しています。 ポストのLesionIQの皮の癌の診断はRaspberry Piで最初に現れます。"
     },
     {
       "id": "f3c01256eea9b091",
@@ -6638,7 +6754,119 @@
       "matched_labels": [
         "Obsidian・PKM",
         "GitHub・Actions"
-      ]
+      ],
+      "title_ja": "Obsidianプラグインの未来",
+      "summary_ja": "今日、Obsidianコミュニティ、Obsidianプラグインとテーマの新しいディレクトリと開発者ダッシュボードを立ち上げることに興奮しています。 2020年のObsidian APIリリース以来、4,000以上のプラグインとテーマは素晴らしいコミュニティによって作成されています。 信じられないほど、Obsidianプラグインは120万ダウンロード突破しました! 私達のg"
+    },
+    {
+      "id": "a83aa90dce55eaa5",
+      "title": "Obsidian 1.13.4 Mobile (Early access)",
+      "url": "https://obsidian.md/changelog/2026-07-27-mobile-v1.13.4/",
+      "summary": "Includes all new features and bug fixes up to Obsidian Desktop v1.13.4. Improvements Improved overall appearance of settings in dark mode. No longer broken Fixed search input getting automatically focused when browsing Community plugins. iOS: Fixed the Share Sheet not including article content when sharing X links. iOS",
+      "published_at": "2026-07-27T00:00:00+00:00",
+      "source": "Obsidian Changelog",
+      "source_id": "obsidian_changelog",
+      "source_kind": "official",
+      "source_category": "knowledge",
+      "primary_category": "knowledge",
+      "topics": [
+        {
+          "id": "obsidian_pkm",
+          "score": 0.333
+        }
+      ],
+      "topic_ids": [
+        "obsidian_pkm"
+      ],
+      "topic_labels": [
+        "Obsidian・PKM"
+      ],
+      "topic_scores": {
+        "obsidian_pkm": 0.333
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "release",
+      "item_type": "release",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 1.25,
+        "related_interest": 0.0,
+        "freshness": 0.807,
+        "source_priority": 0.95
+      },
+      "recommendation_reason": "direct",
+      "score": 1.25,
+      "score_components": {
+        "topics": 1.25,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.94,
+      "matched_interests": [
+        "obsidian_pkm"
+      ],
+      "matched_labels": [
+        "Obsidian・PKM"
+      ],
+      "title_ja": "オブシディアン 1.13.4 モバイル(早期アクセス)",
+      "summary_ja": "Obsidian Desktop v1.13.4 までのすべての新機能とバグ修正が含まれています。 改善 ダークモードの設定の全体的な外観を改善しました。 コミュニティプラグインをブラウジングするときに自動的に焦点を合わせる固定検索入力がなくなった。 iOS: Xリンクを共有するときに記事コンテンツを含む共有シートが表示されない問題を修正しました。 iOS版"
+    },
+    {
+      "id": "7d417d5d22ae3b45",
+      "title": "Obsidian 1.13.4 Desktop (Early access)",
+      "url": "https://obsidian.md/changelog/2026-07-27-desktop-v1.13.4/",
+      "summary": "Improvements The image lightbox now displays the file name of the current image. Improved layout of Page Preview settings. Settings: Download counts are now abbreviated for plugins and themes. Settings: Moved the \"Interface\" tab above \"Editor\" in the settings sidebar. Live Preview: Improved alignment of images inline w",
+      "published_at": "2026-07-27T00:00:00+00:00",
+      "source": "Obsidian Changelog",
+      "source_id": "obsidian_changelog",
+      "source_kind": "official",
+      "source_category": "knowledge",
+      "primary_category": "knowledge",
+      "topics": [
+        {
+          "id": "obsidian_pkm",
+          "score": 0.333
+        }
+      ],
+      "topic_ids": [
+        "obsidian_pkm"
+      ],
+      "topic_labels": [
+        "Obsidian・PKM"
+      ],
+      "topic_scores": {
+        "obsidian_pkm": 0.333
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "release",
+      "item_type": "release",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 1.25,
+        "related_interest": 0.0,
+        "freshness": 0.807,
+        "source_priority": 0.95
+      },
+      "recommendation_reason": "direct",
+      "score": 1.25,
+      "score_components": {
+        "topics": 1.25,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.94,
+      "matched_interests": [
+        "obsidian_pkm"
+      ],
+      "matched_labels": [
+        "Obsidian・PKM"
+      ],
+      "title_ja": "Obsidian 1.13.4 デスクトップ(ほぼアクセス)",
+      "summary_ja": "改善点 画像ライトボックスは現在の画像のファイル名を表示します。 ページプレビューの設定のレイアウトを改善しました。 設定:プラグインとテーマのカウントを省略できるようになりました。 設定:設定サイドバーの「Editor」の上の「Interface」タブに移動しました。 ライブプレビュー:画像インラインwの整列を改善"
     },
     {
       "id": "46ecbc028d0ec93f",
@@ -6691,7 +6919,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "検索で次の大きなレースを準備する方法",
+      "summary_ja": "拡大ガラスとGeminiスパークオーバーレイの青色の背景のイラスト"
     },
     {
       "id": "49c3330653c4bfb0",
@@ -6744,7 +6974,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "検索の新しいサッカー機能でゲームの準備をしましょう",
+      "summary_ja": "ゴールドトロフィー、ブルーヘルメット、シルバーホイッスル、フットボール、ミニスコアボード、プレイダイアグラムなど、アメリカンフットボールの要素をフィーチャーした活気ある緑の背景に映し出されたグラフィック。Googleで検索したTでAIモードのアイコン"
     },
     {
       "id": "6eca51a7b7233ea3",
@@ -6797,7 +7029,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "フレームで70年愛のストーリーフレームを再現",
+      "summary_ja": "映画館に座る高齢者カップル。 「Teulluride Film Festival」と「Love, Rendered」のオーバーレイ"
     },
     {
       "id": "b4cf7022fa003e73",
@@ -6850,7 +7084,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "シード 2.5 レビュー: それは最高のです。",
+      "summary_ja": "Seedance 2.5は長さの解像度を取引します。 720pで30秒間走って止まります。 弊社では、各解像度のクリップコスト、Sedance 2.0、Wan 3.0、Veo 3.1 の比較を自社のカタログデータで実行し、異なるモデルをお勧めするケースなど、最適なものを使用しています。"
     },
     {
       "id": "1403375a5ba2fd89",
@@ -6903,7 +7139,9 @@
       ],
       "matched_labels": [
         "AIエージェント・自動化"
-      ]
+      ],
+      "title_ja": "あらゆるモデルを渡る用具:ループを一度書いて下さい、モデルひもをスワップして下さい",
+      "summary_ja": "ほとんどのツール呼び出しチュートリアルは1つのプロバイダをカバーしていますので、切り替え時にループを書き換えます。 このガイドでは、Python、JavaScript、およびcURLのフルループを表示し、1つの文字列を変更することによって3つのプロバイダに対して実行します。"
     },
     {
       "id": "4154766599c41495",
@@ -6956,7 +7194,9 @@
       ],
       "matched_labels": [
         "Obsidian・PKM"
-      ]
+      ],
+      "title_ja": "オブシディアン 1.13.3 モバイル(早期アクセス)",
+      "summary_ja": "Obsidian Desktop v1.13.3 までの新機能とバグ修正をすべて備えています。 改善はライトボックスに画像を解読するために「スワイプダウン」ジェスチャーを追加しました。 キーボードが表示されなくなった画像のタッピングは行いません。 画像をズームするダブルタップを修正しました。 ライブプレビュー:新しい列や新しい行を作成するための固定ボタンがw"
     },
     {
       "id": "60858916a3eb4c88",
@@ -7009,7 +7249,9 @@
       ],
       "matched_labels": [
         "Obsidian・PKM"
-      ]
+      ],
+      "title_ja": "Obsidian 1.13.3 デスクトップ(ほぼアクセス)",
+      "summary_ja": "ライブプレビューの改善:画像がライン上の唯一のテキストであるとき、エディタラインの高さはもはや画像の高さに合わせて保存されません。 ライブプレビュー:埋め込みされたイメージに新しい選択状態を追加。 埋め込まれた画像に「ズーム」ボタンを追加しました。 画像ライトボックスは、クリックして画像内のパンにドラッグできるようになりました。 ファイルRec"
     },
     {
       "id": "cf43fcb7ec1fbc01",
@@ -7062,7 +7304,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "端末とファイルをモデル化",
+      "summary_ja": "シェル サーバー ツールは、OpenRouter でホストされている Linux シェルに任意のモデルを提供し、Files API は、その中のファイルと外に移動します。 コマンドは、独立したコンテナで実行され、モデルは、後退stdout、stderr、および終了コードを読み、実行した書き込みを後でダウンロードすることができます。 応答とメッセージのベータ版で今日利用可能な"
     },
     {
       "id": "5c60751443ad28fb",
@@ -7109,13 +7353,15 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.84,
+      "rank_score": 2.83,
       "matched_interests": [
         "llm_ai_tools"
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "OpenRouterビデオ生成API:コードファーストガイド",
+      "summary_ja": "すべてのビデオプロバイダは、独自のエンドポイント、ジョブステータス、ポーリングロジック、出力フォーマットを持っています。 当社の非同期ビデオAPIは、シード、 Veo、Wan、および1つの送信、投票、およびダウンロードループの背後にある。 ここでは、PythonとTypeScriptのフルライフサイクルです。"
     },
     {
       "id": "6773025b8bfa403e",
@@ -7152,7 +7398,7 @@
       "signals": {
         "direct_interest": 1.09,
         "related_interest": 0.0,
-        "freshness": 0.825,
+        "freshness": 0.824,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -7168,7 +7414,9 @@
       ],
       "matched_labels": [
         "ESP32・小型デバイス"
-      ]
+      ],
+      "title_ja": "製品のカーボンフットプリントの計算",
+      "summary_ja": "カーボンレポーティングは、惑星に有害でない製品を作るための最初のステップです。 ポストは、内部のものを測定します。: ラズベリーPiで最初に登場した製品のカーボンフットプリントを計算する ."
     },
     {
       "id": "21dd0cfb3d8b0e92",
@@ -7205,7 +7453,7 @@
       "signals": {
         "direct_interest": 1.25,
         "related_interest": 0.0,
-        "freshness": 0.753,
+        "freshness": 0.752,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -7221,7 +7469,9 @@
       ],
       "matched_labels": [
         "Obsidian・PKM"
-      ]
+      ],
+      "title_ja": "オブシディアン 1.13.2 モバイル(早期アクセス)",
+      "summary_ja": "Obsidian Desktop v1.13.2 までのすべての新機能とバグ修正が含まれています。 iOSの改善:共有シートテンプレートにURL変数を追加して、共有リンクをメモに差し込むことができます。 設定が壊れていない:設定内のトグルのサイズを更新します。 設定: 検証エラーで設定の表示を修正しました。"
     },
     {
       "id": "1a28026cc9b01d04",
@@ -7274,7 +7524,9 @@
       ],
       "matched_labels": [
         "Apple Watch・iPhone・iOS"
-      ]
+      ],
+      "title_ja": "Hello Developer 2026年9月",
+      "summary_ja": "このエディションの内容：Appleの特別なイベントに向けて準備し、App Store Connectのアナリティクスを活用して、クパティーノで開催される新しいデベロッパイベントに登録しましょう。 今すぐ読む"
     },
     {
       "id": "df5d6309991f2694",
@@ -7311,7 +7563,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.919,
+        "freshness": 0.918,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -7327,7 +7579,9 @@
       ],
       "matched_labels": [
         "Apple Watch・iPhone・iOS"
-      ]
+      ],
+      "title_ja": "IntelベースのmacOSアプリにおけるRosettaサポートに関する今後の変更",
+      "summary_ja": "Appleは2020年、Macコンピュータ向けにAppleシリコンを導入し、移行期間中の変換レイヤーとしてRosettaの提供を開始しました。 昨年のWWDCで発表した通り（英語） 、移行はまもなく完了します。 macOSアプリを提供するデベロッパが知っておくべきこと： macOS 26.4以降：ユーザーがRosettaを利用するアプリを起動すると、Appleシリコンのネイティブバージョンへのアップデートを促すシステム通知が表示される場合があります。 macOS 27：Rosettaをサポートする最終リリースとなります。本バージョンより後のmacOSでは、Intel専用アプリはAppleシリコン搭載のMacコンピュータで実行できなく"
     },
     {
       "id": "8d1b03cf46b08f67",
@@ -7380,7 +7634,9 @@
       ],
       "matched_labels": [
         "Apple Watch・iPhone・iOS"
-      ]
+      ],
+      "title_ja": "「最も驚いたのは、影響の大きさでした」：ネイティブへの移行がSwiggyにもたらした効果",
+      "summary_ja": "ささやかなフードデリバリーサービスとして始まった「Swiggy」は、今やインド有数のオンデマンドコンビニエンスプラットフォームとなり、食料品を扱う「Instamart」やレストラン予約の「Dineout」などのサービスも展開。2024年以降はネイティブツールにより、数百万人にのぼるオーディエンスにシームレスなモバイル体験を提供しています。 パフォーマンスメトリックス、積極的なテクノロジーの導入、ネイティブツールへの移行がデザインに与えた意外な影響について、「Swiggy」のiOS開発チームに話を聞きました。 ネイティブアプリへの移行プロセスを開始したのはいつですか？ Agam Mahajan氏（シニアエンジニアリングマネージャー）："
     },
     {
       "id": "68fad791883d4c3f",
@@ -7433,7 +7689,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "政府および企業のための積極的なサイバー防衛",
+      "summary_ja": "フェアウィンドプログラムのご紹介"
     },
     {
       "id": "8d48ee443dfc7672",
@@ -7470,7 +7728,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.921,
+        "freshness": 0.92,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -7480,13 +7738,15 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.75,
+      "rank_score": 2.74,
       "matched_interests": [
         "llm_ai_tools"
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "2026年8月に発表した最新のAIニュース",
+      "summary_ja": "トランジションカード: 1. ジェミニロゴアイコンの横にあるテキスト「Gemini 3.7 Flash」; 2. ピクセル電話の写真; 3. テキスト上のGoogle Geminiロゴ \"費用なしで1年間あなたの学生プランを請求\""
     },
     {
       "id": "845d4837aaa1592e",
@@ -7539,7 +7799,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "Google Picsをお試しください:Googleワークスペースで簡単に画像作成と編集",
+      "summary_ja": "Google Picsによって作成された画像のコラージュ、トップのテキスト「Google Picsへのサイヒョ」"
     },
     {
       "id": "a9f5c2b81a460b42",
@@ -7592,7 +7854,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "OpenRouter は Stripe に参加しています",
+      "summary_ja": "今日、私たちはストライプと力を結集し、GDP成長の次の波をグローバルに電力供給することを発表しました。"
     },
     {
       "id": "7afbe1204b4b0fbf",
@@ -7645,7 +7909,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "LangChain で OpenRouter を使用する: ChatOpenRouter セットアップガイド",
+      "summary_ja": "LangChain の統合には、PyPI と @langchain/openrouter の langchain-openrouter の専用パッケージが npm にあります。 ほとんどのガイドはまだ古いチャットOpenAIベース urlオーバーライドを教えています。 これは現在のパスであり、ルーティング経済はドキュメントをスキップします。"
     },
     {
       "id": "6faaa991aa7b9c65",
@@ -7682,7 +7948,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.879,
+        "freshness": 0.878,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -7698,7 +7964,9 @@
       ],
       "matched_labels": [
         "Apple Watch・iPhone・iOS"
-      ]
+      ],
+      "title_ja": "アプリ、アプリ内購入、およびサブスクリプションに関する税金と価格の更新",
+      "summary_ja": "App Storeは、世界各地でデジタル商品やサービスを簡単に販売できるよう設計されており、175のストアフロントで43の通貨に対応しています。 税金に関する規制や外国為替レートの変動に応じて、随時価格や収益の調整が必要になる場合があります。こうした調整は、アプリおよびアプリ内購入の価格の整合性がすべてのストアフロントにわたり維持されるように、信頼性の高い金融メディア（The Wall Street Journalなど）や金融企業（Bloombergなど）が公開する為替レート情報に基づいて行われます。 8月27日時点： 対象となるアプリおよびアプリ内購入からの収益は以下の国／地域で変更されています。 * モロッコ：20%の付加価値税"
     },
     {
       "id": "d75208ebf81f3bcc",
@@ -7751,7 +8019,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "GeminiとPixelでゲームに近づく",
+      "summary_ja": "明るい青い空にボールの空を蹴るサッカー選手の低角のビュー、草は彼らのクラスターから飛んでいる。"
     },
     {
       "id": "01cd72f4eb238ffc",
@@ -7788,7 +8058,7 @@
       "signals": {
         "direct_interest": 1.0,
         "related_interest": 0.0,
-        "freshness": 0.789,
+        "freshness": 0.788,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -7804,7 +8074,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "OpenRouter イメージ生成: コードファースト API チュートリアル",
+      "summary_ja": "複数の画像プロバイダをサポートすることで、異なるエンドポイント、データ形式、および課金モデルを処理することができます。 当社の専用のイメージ API は、サポートされたモデルを1つの形式と1つのキーでリクエストできます。 Python と JavaScript のフルプロンプト-to-local-file ワークフローです。"
     },
     {
       "id": "38ea2e3d08e3ecb0",
@@ -7841,7 +8113,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.869,
+        "freshness": 0.868,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -7857,7 +8129,9 @@
       ],
       "matched_labels": [
         "Apple Watch・iPhone・iOS"
-      ]
+      ],
+      "title_ja": "おはよう世界。",
+      "summary_ja": "9月9日の午前10時（日本時間9月10日午前2時）に開催される特別なAppleイベントにご参加ください。 apple.com/jp 、Apple TV、または[YouTubeライブ]でご視聴ください。"
     },
     {
       "id": "b4eb8f2e2a6cf8cc",
@@ -7894,7 +8168,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.878,
+        "freshness": 0.877,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -7910,7 +8184,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "旅行を計画し予約する3つの新しい方法",
+      "summary_ja": "グラフィックは、検索でAIモードの新しい旅行の特徴を描きます"
     },
     {
       "id": "aefe7dc0701b2480",
@@ -7963,7 +8239,9 @@
       ],
       "matched_labels": [
         "Apple Watch・iPhone・iOS"
-      ]
+      ],
+      "title_ja": "アップデート：「Appleでサインイン」の新しいドメイン",
+      "summary_ja": "「Appleでサインイン」で生成されるアドレスはこれまで「privaterelay.appleid.com」で発行されていましたが、年内より「private.icloud.com」で発行されるようになります。「privaterelay.appleid.com」を含む既存のアドレスは引き続き機能し、中断なくユーザーにメールが転送されます。 検討を重ね、コミュニティからのフィードバックを考慮した結果、iCloud+の「メールを非公開」で生成されるアドレスは引き続き「icloud.com」で発行されます。 必要な対応 アプリやWebサイトに「Appleでサインイン」を導入しているデベロッパは、アカウントシステム、Eメール検証ロジック、許可"
     },
     {
       "id": "3873f4a1df511e44",
@@ -8000,7 +8278,7 @@
       "signals": {
         "direct_interest": 1.0,
         "related_interest": 0.0,
-        "freshness": 0.764,
+        "freshness": 0.763,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -8016,7 +8294,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "API(Vision Guide)でLLMに画像を送信する方法",
+      "summary_ja": "スクリーンショットを読むモデルを取得するには、正しいリクエストボディが必要です。 このガイドでは、ホストされた URL ではなく base64 を使うとき、サポートするすべてのビジョン対応モデル全体で動作するコンテンツアレイパターンと、マルチモーダル RAG をビルドする方法について説明します。"
     },
     {
       "id": "8191be6acea01b3b",
@@ -8069,7 +8349,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "Google検索で家の装飾をアップグレードする5つの方法",
+      "summary_ja": "紫色の背景に対するソファ、ランプ、椅子などの骨董品のイラスト"
     },
     {
       "id": "4abb0657d16cd3de",
@@ -8122,7 +8404,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "最高のAIモデルを選択する方法(ライブ、エディタで)",
+      "summary_ja": "単一の最高のAIモデルはありません。与えられたタスク、予算、瞬間に最適なモデルのみです。 この記事では、6ステップのフレームワークを1つ選び、OpenRouter MCPサーバーを介してエディタからすべてのステップを実行する方法について説明します。"
     },
     {
       "id": "eeba412cf35a50ff",
@@ -8175,7 +8459,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "GPT 5.6 割引 & Jevons パラドックス",
+      "summary_ja": "7月27日〜8月14日にかけて、新しいテラとルナモデルの大きな割引を発表しました。 これらの割引は、トークンのボリューム、合計の支出、および競争にどのような影響を与えましたか?"
     },
     {
       "id": "1b9b1398dd5aa8e2",
@@ -8228,7 +8514,9 @@
       ],
       "matched_labels": [
         "AIコーディング"
-      ]
+      ],
+      "title_ja": "353,000人のバイブコーディングコース内",
+      "summary_ja": "ノートパソコン、AIスパーク、メッセージ、コード、3次元キューブのイラスト"
     },
     {
       "id": "51c31832dcfaab50",
@@ -8281,7 +8569,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "Image Benchmarks:全てのモデルの機能を見る",
+      "summary_ja": "弊社では、39 個の画像モデルを 15 の意図的にハード プロンプトで実行し、1 ページにすべての結果を置く。 各画像の料金と生成時間で、塗りつぶしレベル、指数、ポスターテキスト、およびサイドバイサイドの編集値を比較します。"
     },
     {
       "id": "e193606960ccfc46",
@@ -8334,7 +8624,9 @@
       ],
       "matched_labels": [
         "Apple Watch・iPhone・iOS"
-      ]
+      ],
+      "title_ja": "欧州連合（EU）で配信されるアプリに関する変更",
+      "summary_ja": "Appleは、欧州委員会との緊密な連携のもと、欧州連合（EU）で配信されるアプリのビジネス規約を改訂いたします。今回の改訂により、EUでアプリを配信するすべてのデベロッパに同じビジネス規約が適用され、複雑さが軽減されます。 新しいビジネス規約では、デジタル商品やデジタルサービスの販売に対して手数料が課されます。これまで、大規模にビジネスを展開するデベロッパを対象に、インストール数に応じて課されていたコアテクノロジーフィー（CTF）が廃止され、App Store以外で配信されるアプリのデジタル取引に対して、一律5%のコアテクノロジー手数料（CTC）が適用されるようになります。また、新しい規約では、初回獲得手数料とストアサービス手数料も"
     },
     {
       "id": "dd7c0205e5b06a89",
@@ -8387,7 +8679,9 @@
       ],
       "matched_labels": [
         "Apple Watch・iPhone・iOS"
-      ]
+      ],
+      "title_ja": "Apple Developer Program使用許諾契約が改訂されました",
+      "summary_ja": "欧州連合（EU）で配信されるアプリに関して改訂された条件（代替配信、代替決済、ビジネス規約など）を規定するため、 Apple Developer Program使用許諾契約の付属書14（英語） が追加されました。これらの条件は2026年10月1日に発効します。 変更内容をご確認のうえ、 ご自身のアカウントにサインイン し、更新された各種契約／規約に同意してください。 改訂された使用許諾契約の翻訳は、1か月以内に Apple Developer Webサイト でご確認いただけます。"
     },
     {
       "id": "7e112c59e2eb298c",
@@ -8440,7 +8734,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "検索で学習をレベルアップする5つの新しい方法",
+      "summary_ja": "「ノートブックを追加」や「Ask Google」のようなアイコンやフレーズで描かれたイメージ"
     },
     {
       "id": "acb64a90e91763c1",
@@ -8493,7 +8789,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "OpenRouterでチームAIスペンドコントロールを設定する",
+      "summary_ja": "OpenRouter は、チーム支出の 5 つの制御を持っています。: 共有クレジット プールを持つ組織, ワークロードあたりのスコープモデルをプリセットします。, パーキーの支出キャップ, パーメンバーの予算を強制するガードレール, 誰が何を費やしたかを示すアクティビティダッシュボード. このガイドは、順番に1パスですべて設定します。"
     },
     {
       "id": "f5d41ff4765fac55",
@@ -8530,7 +8828,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.789,
+        "freshness": 0.788,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -8546,7 +8844,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "あらゆるエージェント、モデル、リクエストのAI使用状況を把握",
+      "summary_ja": "すべてのモデルに費やしたチームを見ると、再構築し続けるチャートを保存し、任意のバーをクリックしてログに埋め込むことができます。また、Analytics API を使用して、端末から同じデータをクエリします。"
     },
     {
       "id": "b7152666222b6832",
@@ -8599,7 +8899,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "OpenRouter チームを横断して AI を統治",
+      "summary_ja": "チームのAI法案は、各エンジニアが保有するすべての鍵の合計です。 OpenRouter は、各キーの制限からエンタープライズワークスペースの予算まで、6つの操作方法を提供します。 それぞれのコントロールキャップ、必要なプラン、チームに合ったものについて説明します。"
     },
     {
       "id": "5cc715ece107a180",
@@ -8652,7 +8954,9 @@
       ],
       "matched_labels": [
         "Obsidian・PKM"
-      ]
+      ],
+      "title_ja": "オブシディアン 1.13.1 モバイル(早期アクセス)",
+      "summary_ja": "Obsidian Desktop v1.13.1 までのすべての新機能とバグ修正が含まれています。 改善 設定ページには、画面上のキーボードが表示されているときに画面全体にスクロールするのに十分なパディングが搭載されています。 もはやiOSの壊れていない:共有シートを介してスクリーンショットを共有するときにアプリのクラッシュを修正しました。 ライブプレビュー:iOSキーから「Enter」を固定"
     },
     {
       "id": "8916afb689f14c0c",
@@ -8705,7 +9009,9 @@
       ],
       "matched_labels": [
         "Obsidian・PKM"
-      ]
+      ],
+      "title_ja": "Obsidian 1.13.1 デスクトップ(ほぼアクセス)",
+      "summary_ja": "設定のスライダーは、ツールチップの代わりにスライダーの横に表示された現在の値で永続的なラベルを表示します。 バックアップをナビゲートすると、そこから来た設定項目に焦点を合わせます。 マウスの「バック」ボタンのサポートを追加し、設定履歴をナビゲートします。 Alt-ArrowUpとAlt-を追加 ツイート"
     },
     {
       "id": "046b83be34af4fbd",
@@ -8758,7 +9064,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "Oriハーネス:あらゆるハーネスでOpenRouterを使用する最良の方法",
+      "summary_ja": "お気に入りのハーネスでOpenRouterを使用すると、通常、アドホックスクリプトや環境変数の壁を意味します。 ori CLIをインストールし、一度ログインし、サポートされているすべてのハーネスは、箱から最適化された構成で実行されます。"
     },
     {
       "id": "140213c32994c810",
@@ -8811,7 +9119,9 @@
       ],
       "matched_labels": [
         "Apple Watch・iPhone・iOS"
-      ]
+      ],
+      "title_ja": "韓国向けの年齢制限指定に関するアップデート",
+      "summary_ja": "Appleでは、App Store Connectで年齢制限指定に関するアンケートにお答えいただき、その回答に基づいてアプリの年齢制限を適切に指定しています。韓国のApp Storeで配信される「ゲーム」および「エンターテインメント」カテゴリのアプリについては、現地の規制要件に従い、このアンケートへの回答に基づく地域固有の年齢制限が指定されます。Appleは、韓国の年齢制限指定に関して2件の変更を実施します。1件は本日より、もう1件も年内に適用されます。 1件目の変更は、本日より適用されます。 ゲーム物管理委員会（英語） （GRAC）から公式にレーティングを受けているアプリでは、次回のバージョンの提出時にGRACのレーティング分類番"
     },
     {
       "id": "1e20a4fce18168bb",
@@ -8864,7 +9174,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "スプレッドシートデータをスプレッドシートのキャンバスで生活に",
+      "summary_ja": "動画は、シートのキャンバスをアクションで表示します。"
     },
     {
       "id": "2b345edf823f1d55",
@@ -8917,7 +9229,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "ライブWeb検索ベンチマーク: エージェントのエンジン、深さ、モデルの正しい選択",
+      "summary_ja": "ライブリーダーボードは、4つのタスクスイートにWeb検索設定をアップグレードしました。 エージェントが最初の検索を行う前に、エンジン、検索深さ、モデルを品質、コスト、速度で比較します。"
     },
     {
       "id": "8fa0e387452c7618",
@@ -8954,7 +9268,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.745,
+        "freshness": 0.744,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -8970,7 +9284,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "医学AIシステムであるAMIEは、初めての臨床ビデオ相談能力を実証しています。",
+      "summary_ja": "AMIEプロモーションビデオ"
     },
     {
       "id": "4871e2b9e7afe51e",
@@ -9023,7 +9339,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "新しいAIツールでマーケティングを進化させる",
+      "summary_ja": "Google AdsとGoogle AnalyticsのアドバイザーUI"
     },
     {
       "id": "755632a9b268c31b",
@@ -9076,7 +9394,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "マーケットの知恵によるモデルルーティング",
+      "summary_ja": "当社の新しいオートルータは、数百万人の人々のモデルの決定によって通知され、さまざまなタスクのスペクトルにわたって従来のタスクベースの分類器を外しています。"
     },
     {
       "id": "c1ed64cea220af37",
@@ -9113,7 +9433,7 @@
       "signals": {
         "direct_interest": 1.0,
         "related_interest": 0.0,
-        "freshness": 0.628,
+        "freshness": 0.627,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -9129,7 +9449,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "Gemini API 管理エージェント: 3.6 フラッシュ、ホックおよび多く",
+      "summary_ja": "マネージドエージェント Gemini 3.6 フラッシュ、ホックおよび制動機"
     },
     {
       "id": "d959546cc53d6a81",
@@ -9182,7 +9504,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "LLMプロバイダーのパフォーマンスをレイテンシー、スループット、稼働時間全体で評価する方法",
+      "summary_ja": "同じモデルは、プロバイダーのエンドポイント間で異なる動作を行います。 インフラストラクチャ、量子化、負荷処理、およびルーティングのデフォルトでは、すべての結果が変更されます。 ここでは、レイテンシー、スループット、稼働時間、精度を測定し、測定値をルーティングポリシーに変える方法です。"
     },
     {
       "id": "f39e416c29364522",
@@ -9219,7 +9543,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.694,
+        "freshness": 0.693,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -9235,7 +9559,9 @@
       ],
       "matched_labels": [
         "Apple Watch・iPhone・iOS"
-      ]
+      ],
+      "title_ja": "App Storeの新しいクリエイティブアセットに向けた準備",
+      "summary_ja": "6月に発表 した通り、AppleはApp Storeでアプリやゲームのマーケティングを行う新たな方法を導入します。これらの新しいアセットを活用することで、実際のビジュアルを表示するだけにとどまらず、ブランド、季節限定オファー、注目の新コンテンツなどをハイライトできるようになります。クリエイティブアセットは、プロダクトページのヘッダー、検索結果、アプリ内イベントなどApp Storeのさまざまな場所で使用できます。 秋のリリースに向けて画像やビデオの計画を立てる際は、新たなApp Storeアセットのベストプラクティスや推奨事項をご確認ください。Figma、Photoshop、Pixelmator向けのデザインテンプレートも用意されて"
     },
     {
       "id": "07b38be273ee1531",
@@ -9272,7 +9598,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.694,
+        "freshness": 0.693,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -9288,7 +9614,9 @@
       ],
       "matched_labels": [
         "Apple Watch・iPhone・iOS"
-      ]
+      ],
+      "title_ja": "Hello Developer 2026年8月",
+      "summary_ja": "このエディションでは以下のトピックをご紹介します。 クパティーノ発の新しいビデオを視聴して、WWDC26の注目の最新情報を確認しましょう。 テンプレートをダウンロードし、iOS 27向けのApp Storeアセットの作成を開始しましょう。 アプリにビジュアルインテリジェンスを統合するためのベストプラクティスについてご説明します。 Xcode Cloudワークフローでビルドを強化する方法を学びましょう。 「Is This Seat Taken?」のクリエイターをご紹介します。 今すぐ読む"
     },
     {
       "id": "47f7fd9ae533234c",
@@ -9325,7 +9653,7 @@
       "signals": {
         "direct_interest": 1.0,
         "related_interest": 0.0,
-        "freshness": 0.614,
+        "freshness": 0.613,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -9341,7 +9669,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "OpenRouter のイメージ生成モデル",
+      "summary_ja": "生成は、/api/v1/images のエンドポイントと /chat/completions による理解を通して、同じキーと請求を実行します。 両方のジョブの完全契約です。'no endpoints found' エラーの修正。"
     },
     {
       "id": "cf62955fc490e5a9",
@@ -9378,7 +9708,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.685,
+        "freshness": 0.684,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -9394,7 +9724,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "2026年7月に発表した最新のAIニュース",
+      "summary_ja": "7月 AIリキャップヘッダ"
     },
     {
       "id": "aa52eead74d3874b",
@@ -9447,7 +9779,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "Ori Eval: あなたが構築しているものに最適なモデルを見つける",
+      "summary_ja": "製品の内側のモデルを選ぶことは、体系的な方法なしで決められます。 Ori Evalは、あなたのエージェントを自分のプロンプトで実行し、呼び出されたツールをチェックし、回答を等級別にします。"
     },
     {
       "id": "e17a3c7ff9bb6752",
@@ -9500,7 +9834,9 @@
       ],
       "matched_labels": [
         "Obsidian・PKM"
-      ]
+      ],
+      "title_ja": "Cure53とビットのトレイルによるObsidian Sync監査",
+      "summary_ja": "Obsidianは、当社のコードと手順が最高のセキュリティ基準を満たしていることを確認するために、独立した研究会社と定期的にセキュリティ監査を実行します。 以前は、2024年1月、2024年12月、Obsidianのデスクトップおよびモバイルアプリを評価する監査を共有しました。 セキュリティページでは、2つの新しい監査が利用可能になりました"
     },
     {
       "id": "15d58cac2df2456c",
@@ -9553,13 +9889,135 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "OpenRouterのトランスクリプション",
+      "summary_ja": "base64 オーディオを POST /api/v1/audio/transcriptions に送信し、JSON テキスト + 使用法オブジェクトをバックに、既に使用している同じ API キーでチャットに使用できます。 リクエスト契約、モデルファミリー、設計制限など、"
+    },
+    {
+      "id": "1c91bbcbc4e6ac24",
+      "title": "Cherenkov Radiation - traveling faster than light",
+      "url": "http://www.iaea.org/newscenter/news/what-is-cherenkov-radiation",
+      "summary": "Article URL: http://www.iaea.org/newscenter/news/what-is-cherenkov-radiation Comments URL: https://news.ycombinator.com/item?id=49655286 Points: 22 # Comments: 7",
+      "published_at": "2026-09-11T08:42:04+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_kind": "community",
+      "source_category": "other",
+      "primary_category": "other",
+      "topics": [],
+      "topic_ids": [],
+      "topic_labels": [],
+      "topic_scores": {},
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 0.0,
+        "related_interest": 0.0,
+        "freshness": 1.0,
+        "source_priority": 0.5
+      },
+      "recommendation_reason": "latest",
+      "score": 0.0,
+      "score_components": {
+        "topics": 0,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.1,
+      "matched_interests": [],
+      "matched_labels": [],
+      "title_ja": "シレンコフ放射線 - 光よりも速く旅行",
+      "summary_ja": "記事のURL: http://www.iaeaea.org/newscenter/news/what-is-cherenkov-radiation コメントのURL: https://news.ycombinator.com/item?id=49655286 ポイント: 22 #コメント: 7"
+    },
+    {
+      "id": "26a81019d1e66f46",
+      "title": "Neijuan",
+      "url": "https://en.wikipedia.org/wiki/Neijuan",
+      "summary": "Article URL: https://en.wikipedia.org/wiki/Neijuan Comments URL: https://news.ycombinator.com/item?id=49655176 Points: 12 # Comments: 2",
+      "published_at": "2026-09-11T08:26:56+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_kind": "community",
+      "source_category": "other",
+      "primary_category": "other",
+      "topics": [],
+      "topic_ids": [],
+      "topic_labels": [],
+      "topic_scores": {},
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 0.0,
+        "related_interest": 0.0,
+        "freshness": 1.0,
+        "source_priority": 0.5
+      },
+      "recommendation_reason": "latest",
+      "score": 0.0,
+      "score_components": {
+        "topics": 0,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.1,
+      "matched_interests": [],
+      "matched_labels": [],
+      "title_ja": "ナイジュアン",
+      "summary_ja": "記事のURL: https://en.wikipedia.org/wiki/Neijuan コメントのURL: https://news.ycombinator.com/item?id=49655176 ポイント: 12 # コメント: 2"
+    },
+    {
+      "id": "801048063339f9e1",
+      "title": "US diesel hits record $6 a gallon on Iran supply shock",
+      "url": "https://www.ft.com/content/ebfa69a3-323b-450d-8bfd-0b12e01d2a5b",
+      "summary": "Article URL: https://www.ft.com/content/ebfa69a3-323b-450d-8bfd-0b12e01d2a5b Comments URL: https://news.ycombinator.com/item?id=49655012 Points: 28 # Comments: 21",
+      "published_at": "2026-09-11T08:03:59+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_kind": "community",
+      "source_category": "other",
+      "primary_category": "other",
+      "topics": [],
+      "topic_ids": [],
+      "topic_labels": [],
+      "topic_scores": {},
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 0.0,
+        "related_interest": 0.0,
+        "freshness": 0.999,
+        "source_priority": 0.5
+      },
+      "recommendation_reason": "latest",
+      "score": 0.0,
+      "score_components": {
+        "topics": 0,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.1,
+      "matched_interests": [],
+      "matched_labels": [],
+      "title_ja": "米国のディーゼルはイランの供給の衝撃の記録$ 6をガロン衝突します",
+      "summary_ja": "記事のURL: https://www.ft.com/content/ebfa69a3-323b-450d-8bfd-0b12e01d2a5b コメントのURL: https://news.ycombinator.com/item?id=49655012 ポイント: 28 #コメント: 21"
     },
     {
       "id": "874fb4b8773334d5",
       "title": "Astra for Coding: Why Are We Doing This Again?",
       "url": "https://lucumr.pocoo.org/2026/9/7/astra-why/",
-      "summary": "Article URL: https://lucumr.pocoo.org/2026/9/7/astra-why/ Comments URL: https://news.ycombinator.com/item?id=49654229 Points: 279 # Comments: 186",
+      "summary": "Article URL: https://lucumr.pocoo.org/2026/9/7/astra-why/ Comments URL: https://news.ycombinator.com/item?id=49654229 Points: 309 # Comments: 227",
       "published_at": "2026-09-11T06:23:06+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -9591,14 +10049,16 @@
       },
       "rank_score": 2.1,
       "matched_interests": [],
-      "matched_labels": []
+      "matched_labels": [],
+      "title_ja": "コーディングのためのアストラ: なぜ私たちはこれをやりますか?",
+      "summary_ja": "記事のURL: https://lucumr.pocoo.org/2026/9/7/astra-why/ コメントのURL: https://news.ycombinator.com/item?id=49654229 ポイント: 309 # コメント: 227"
     },
     {
-      "id": "d6c6ada3985d1e00",
-      "title": "We Replaced MMAP with Io_uring in Our Rust Query Engine. It Got Slower",
-      "url": "https://www.conviva.ai/resource/we-replaced-mmap-with-io_uring-in-our-rust-query-engine-it-got-slower/",
-      "summary": "Article URL: https://www.conviva.ai/resource/we-replaced-mmap-with-io_uring-in-our-rust-query-engine-it-got-slower/ Comments URL: https://news.ycombinator.com/item?id=49653882 Points: 31 # Comments: 14",
-      "published_at": "2026-09-11T05:26:58+00:00",
+      "id": "2eea758f38383eed",
+      "title": "GPT‑Live‑1 in the API",
+      "url": "https://openai.com/index/introducing-gpt-live-1-in-the-api/",
+      "summary": "Article URL: https://openai.com/index/introducing-gpt-live-1-in-the-api/ Comments URL: https://news.ycombinator.com/item?id=49653985 Points: 11 # Comments: 6",
+      "published_at": "2026-09-11T05:45:19+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
       "source_kind": "community",
@@ -9629,13 +10089,15 @@
       },
       "rank_score": 2.1,
       "matched_interests": [],
-      "matched_labels": []
+      "matched_labels": [],
+      "title_ja": "APIのGPT‐Live‐1",
+      "summary_ja": "記事のURL: https://openai.com/index/introducing-gpt-live-1-in-the-api/ コメントのURL: https://news.ycombinator.com/item?id=49653985 ポイント: 11 #コメント: 6"
     },
     {
       "id": "d3801d9f47f888e6",
       "title": "Exercise intensity is associated with cardiometabolic health",
       "url": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00405-2",
-      "summary": "Article URL: https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00405-2 Comments URL: https://news.ycombinator.com/item?id=49653328 Points: 88 # Comments: 41",
+      "summary": "Article URL: https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00405-2 Comments URL: https://news.ycombinator.com/item?id=49653328 Points: 97 # Comments: 43",
       "published_at": "2026-09-11T03:48:10+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -9667,51 +10129,15 @@
       },
       "rank_score": 2.1,
       "matched_interests": [],
-      "matched_labels": []
-    },
-    {
-      "id": "2917e7d11bbea25d",
-      "title": "What Comes After Git",
-      "url": "https://ersc.io/blog/what-comes-after-git",
-      "summary": "Article URL: https://ersc.io/blog/what-comes-after-git Comments URL: https://news.ycombinator.com/item?id=49652985 Points: 41 # Comments: 11",
-      "published_at": "2026-09-11T02:49:52+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_kind": "community",
-      "source_category": "other",
-      "primary_category": "other",
-      "topics": [],
-      "topic_ids": [],
-      "topic_labels": [],
-      "topic_scores": {},
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 0.0,
-        "related_interest": 0.0,
-        "freshness": 0.998,
-        "source_priority": 0.5
-      },
-      "recommendation_reason": "latest",
-      "score": 0.0,
-      "score_components": {
-        "topics": 0,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.1,
-      "matched_interests": [],
-      "matched_labels": []
+      "matched_labels": [],
+      "title_ja": "運動強度は心臓metabolic健康に関連付けられます",
+      "summary_ja": "記事のURL: https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00405-2 コメントURL: https://news.ycombinator.com/item?id=49653328 ポイント: 97 #コメント: 43"
     },
     {
       "id": "ac33704195dc7010",
       "title": "Mexican student creates an acoustic fire extinguisher to put out fire in seconds",
       "url": "https://www.upsocl.com/en/16-year-old-mexican-student-creates-an-acoustic-fire-extinguisher-that-uses-sound-waves-to-put-out-fires-in-seconds/",
-      "summary": "Article URL: https://www.upsocl.com/en/16-year-old-mexican-student-creates-an-acoustic-fire-extinguisher-that-uses-sound-waves-to-put-out-fires-in-seconds/ Comments URL: https://news.ycombinator.com/item?id=49652237 Points: 184 # Comments: 68",
+      "summary": "Article URL: https://www.upsocl.com/en/16-year-old-mexican-student-creates-an-acoustic-fire-extinguisher-that-uses-sound-waves-to-put-out-fires-in-seconds/ Comments URL: https://news.ycombinator.com/item?id=49652237 Points: 201 # Comments: 74",
       "published_at": "2026-09-11T01:00:56+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -9743,13 +10169,15 @@
       },
       "rank_score": 2.09,
       "matched_interests": [],
-      "matched_labels": []
+      "matched_labels": [],
+      "title_ja": "メキシコの学生は数秒で火を出すために音響消火器を作成します",
+      "summary_ja": "記事のURL: https://www.upsocl.com/en/16-year-old-mexican-student-creates-an-acoustic-fire-extinguisher-that-uses-sound-waves-to-put-out-fires-in-seconds/ コメント URL: https://news.ycombinator.com/item?id=49652237 ポイント: 201 # コメント: 74"
     },
     {
       "id": "b3ed6e9e3367b764",
       "title": "YuE2 · Frontier Music with Symbolic Planning",
       "url": "https://map-yue2.github.io/",
-      "summary": "Article URL: https://map-yue2.github.io/ Comments URL: https://news.ycombinator.com/item?id=49652028 Points: 88 # Comments: 75",
+      "summary": "Article URL: https://map-yue2.github.io/ Comments URL: https://news.ycombinator.com/item?id=49652028 Points: 94 # Comments: 77",
       "published_at": "2026-09-11T00:33:26+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -9781,13 +10209,15 @@
       },
       "rank_score": 2.09,
       "matched_interests": [],
-      "matched_labels": []
+      "matched_labels": [],
+      "title_ja": "YuE2・シンボル・プランニングによるフロンティア・ミュージック",
+      "summary_ja": "記事のURL: https://map-yue2.github.io/ コメント URL: https://news.ycombinator.com/item?id=49652028 ポイント: 94 # コメント: 77"
     },
     {
       "id": "692462a9077ae9e1",
       "title": "Thelio Mira AI Linux Workstation: 192 GB GPU Memory",
       "url": "https://system76.com/workstations/thelio-mira-ai",
-      "summary": "Article URL: https://system76.com/workstations/thelio-mira-ai Comments URL: https://news.ycombinator.com/item?id=49651372 Points: 93 # Comments: 72",
+      "summary": "Article URL: https://system76.com/workstations/thelio-mira-ai Comments URL: https://news.ycombinator.com/item?id=49651372 Points: 104 # Comments: 80",
       "published_at": "2026-09-10T23:10:06+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -9807,7 +10237,7 @@
       "signals": {
         "direct_interest": 0.0,
         "related_interest": 0.0,
-        "freshness": 0.997,
+        "freshness": 0.996,
         "source_priority": 0.5
       },
       "recommendation_reason": "latest",
@@ -9819,13 +10249,15 @@
       },
       "rank_score": 2.09,
       "matched_interests": [],
-      "matched_labels": []
+      "matched_labels": [],
+      "title_ja": "Thelio Mira AI Linux ワークステーション:192 GB GPU メモリ",
+      "summary_ja": "記事のURL: https://system76.com/workstations/thelio-mira-ai コメントのURL: https://news.ycombinator.com/item?id=49651372 ポイント: 104 # コメント: 80"
     },
     {
       "id": "effa8971aeee6b61",
       "title": "Nine coding harnesses vs. your laptop",
       "url": "https://nasutton.notion.site/Nine-coding-harnesses-vs-your-laptop-3d139990182b80d59fa3cf500f0450ba?pvs=74",
-      "summary": "Article URL: https://nasutton.notion.site/Nine-coding-harnesses-vs-your-laptop-3d139990182b80d59fa3cf500f0450ba?pvs=74 Comments URL: https://news.ycombinator.com/item?id=49651221 Points: 83 # Comments: 19",
+      "summary": "Article URL: https://nasutton.notion.site/Nine-coding-harnesses-vs-your-laptop-3d139990182b80d59fa3cf500f0450ba?pvs=74 Comments URL: https://news.ycombinator.com/item?id=49651221 Points: 94 # Comments: 23",
       "published_at": "2026-09-10T22:54:01+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -9845,7 +10277,7 @@
       "signals": {
         "direct_interest": 0.0,
         "related_interest": 0.0,
-        "freshness": 0.997,
+        "freshness": 0.996,
         "source_priority": 0.5
       },
       "recommendation_reason": "latest",
@@ -9857,13 +10289,15 @@
       },
       "rank_score": 2.09,
       "matched_interests": [],
-      "matched_labels": []
+      "matched_labels": [],
+      "title_ja": "ナインコーディングは、あなたのラップトップとハーネス",
+      "summary_ja": "記事のURL: https://nasutton.notion.site/Nine-coding-harnesses-vs-your-laptop-3d139990182b80d59fa3cf500f0450ba?pvs=74 注釈 URL: https://news.ycombinator.com/item?id=49651221 ポイント: 94 #コメント: 23"
     },
     {
       "id": "dab5a33129228fa5",
       "title": "NTSB issues investigative update on B-767 runway excursion accident in Miami",
       "url": "https://www.ntsb.gov:443/news/press-releases/Pages/NR20260909.aspx",
-      "summary": "Article URL: https://www.ntsb.gov:443/news/press-releases/Pages/NR20260909.aspx Comments URL: https://news.ycombinator.com/item?id=49650418 Points: 97 # Comments: 167",
+      "summary": "Article URL: https://www.ntsb.gov:443/news/press-releases/Pages/NR20260909.aspx Comments URL: https://news.ycombinator.com/item?id=49650418 Points: 102 # Comments: 174",
       "published_at": "2026-09-10T21:30:55+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -9895,13 +10329,15 @@
       },
       "rank_score": 2.09,
       "matched_interests": [],
-      "matched_labels": []
+      "matched_labels": [],
+      "title_ja": "NTSBはマイアミのB-767滑走路の遠足事故に関する調査更新を問題に",
+      "summary_ja": "記事のURL: https://www.ntsb.gov:443/news/press-releases/Pages/NR20260909.aspx コメント URL: https://news.ycombinator.com/item?id=49650418 ポイント: 102 # コメント: 174"
     },
     {
       "id": "83fc2559f87bcfb8",
       "title": "The Deathray: A simple way for an untrusted site to freeze a Mac",
       "url": "https://auberon.xyz/blog/posts/deathray/",
-      "summary": "Article URL: https://auberon.xyz/blog/posts/deathray/ Comments URL: https://news.ycombinator.com/item?id=49649124 Points: 164 # Comments: 108",
+      "summary": "Article URL: https://auberon.xyz/blog/posts/deathray/ Comments URL: https://news.ycombinator.com/item?id=49649124 Points: 186 # Comments: 111",
       "published_at": "2026-09-10T19:34:20+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -9933,51 +10369,15 @@
       },
       "rank_score": 2.09,
       "matched_interests": [],
-      "matched_labels": []
-    },
-    {
-      "id": "b8bb0b0720894fe8",
-      "title": "JEP 544: Ahead-of-Time Code Compilation",
-      "url": "https://openjdk.org/jeps/544",
-      "summary": "Article URL: https://openjdk.org/jeps/544 Comments URL: https://news.ycombinator.com/item?id=49647404 Points: 91 # Comments: 33",
-      "published_at": "2026-09-10T17:30:39+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_kind": "community",
-      "source_category": "other",
-      "primary_category": "other",
-      "topics": [],
-      "topic_ids": [],
-      "topic_labels": [],
-      "topic_scores": {},
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 0.0,
-        "related_interest": 0.0,
-        "freshness": 0.995,
-        "source_priority": 0.5
-      },
-      "recommendation_reason": "latest",
-      "score": 0.0,
-      "score_components": {
-        "topics": 0,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.09,
-      "matched_interests": [],
-      "matched_labels": []
+      "matched_labels": [],
+      "title_ja": "デスレイ:Macを凍結するための信頼できるサイトのための簡単な方法",
+      "summary_ja": "記事のURL: https://auberon.xyz/blog/posts/deathray/ コメントのURL: https://news.ycombinator.com/item?id=49649124 ポイント: 186 # コメント: 111"
     },
     {
       "id": "0c0d8751baac2b7e",
       "title": "Detecting and countering misuse of AI: September 2026",
       "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
-      "summary": "https://www-cdn.anthropic.com/e50be2e51e7695dc4b1366a37a245a... Comments URL: https://news.ycombinator.com/item?id=49647300 Points: 125 # Comments: 190",
+      "summary": "https://www-cdn.anthropic.com/e50be2e51e7695dc4b1366a37a245a... Comments URL: https://news.ycombinator.com/item?id=49647300 Points: 130 # Comments: 196",
       "published_at": "2026-09-10T17:23:42+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -9997,7 +10397,7 @@
       "signals": {
         "direct_interest": 0.0,
         "related_interest": 0.0,
-        "freshness": 0.995,
+        "freshness": 0.994,
         "source_priority": 0.5
       },
       "recommendation_reason": "latest",
@@ -10009,13 +10409,15 @@
       },
       "rank_score": 2.09,
       "matched_interests": [],
-      "matched_labels": []
+      "matched_labels": [],
+      "title_ja": "AIの誤用の検知と対向:2026年9月",
+      "summary_ja": "https://www.cdn.anthropic.com/e50be2e51e7695dc4b1366a37a245a... コメントURL:https://news.ycombinator.com/item?id=49647300 ポイント: 130 # 注釈: 196"
     },
     {
       "id": "9495b3c72ced3b38",
       "title": "Music Theory for the 21st-Century Classroom",
       "url": "https://musictheory.pugetsound.edu/mt21c/MusicTheory.html",
-      "summary": "Article URL: https://musictheory.pugetsound.edu/mt21c/MusicTheory.html Comments URL: https://news.ycombinator.com/item?id=49647134 Points: 218 # Comments: 89",
+      "summary": "Article URL: https://musictheory.pugetsound.edu/mt21c/MusicTheory.html Comments URL: https://news.ycombinator.com/item?id=49647134 Points: 222 # Comments: 94",
       "published_at": "2026-09-10T17:14:12+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10035,7 +10437,7 @@
       "signals": {
         "direct_interest": 0.0,
         "related_interest": 0.0,
-        "freshness": 0.995,
+        "freshness": 0.994,
         "source_priority": 0.5
       },
       "recommendation_reason": "latest",
@@ -10047,13 +10449,15 @@
       },
       "rank_score": 2.09,
       "matched_interests": [],
-      "matched_labels": []
+      "matched_labels": [],
+      "title_ja": "第21世紀教室音楽理論",
+      "summary_ja": "記事のURL: https://musictheory.pugetsound.edu/mt21c/MusicTheory.html コメント URL: https://news.ycombinator.com/item?id=49647134 ポイント: 222 # コメント: 94"
     },
     {
       "id": "97a98fc60d4a3f17",
       "title": "Forgejo <=16.0.3 Critical RCE",
       "url": "https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/16.0.4.md",
-      "summary": "Article URL: https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/16.0.4.md Comments URL: https://news.ycombinator.com/item?id=49645907 Points: 178 # Comments: 65",
+      "summary": "Article URL: https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/16.0.4.md Comments URL: https://news.ycombinator.com/item?id=49645907 Points: 184 # Comments: 67",
       "published_at": "2026-09-10T15:57:40+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10085,13 +10489,15 @@
       },
       "rank_score": 2.09,
       "matched_interests": [],
-      "matched_labels": []
+      "matched_labels": [],
+      "title_ja": "Forgejo <=16.0.3 重要な RCE",
+      "summary_ja": "記事のURL: https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/16.0.4.md コメントURL:https://news.ycombinator.com/item?id=49645907 ポイント: 184 # コメント: 67"
     },
     {
       "id": "7b24a73c35d8dbdb",
       "title": "Neki – Sharded Postgres",
       "url": "https://planetscale.com/blog/introducing-neki",
-      "summary": "Article URL: https://planetscale.com/blog/introducing-neki Comments URL: https://news.ycombinator.com/item?id=49645686 Points: 239 # Comments: 131",
+      "summary": "Article URL: https://planetscale.com/blog/introducing-neki Comments URL: https://news.ycombinator.com/item?id=49645686 Points: 243 # Comments: 131",
       "published_at": "2026-09-10T15:43:49+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10123,13 +10529,15 @@
       },
       "rank_score": 2.09,
       "matched_interests": [],
-      "matched_labels": []
+      "matched_labels": [],
+      "title_ja": "Neki – シャード・ポストグレス",
+      "summary_ja": "記事のURL: https://planetscale.com/blog/introducing-neki コメントのURL: https://news.ycombinator.com/item?id=49645686 ポイント: 243 # コメント: 131"
     },
     {
       "id": "bbfe29c66ab58088",
       "title": "Cognition launches new SWE-2 model, Rivaling Fable 5.1 and GPT-Astra",
       "url": "https://cognition.com/blog/swe-2",
-      "summary": "Article URL: https://cognition.com/blog/swe-2 Comments URL: https://news.ycombinator.com/item?id=49645443 Points: 407 # Comments: 172",
+      "summary": "Article URL: https://cognition.com/blog/swe-2 Comments URL: https://news.ycombinator.com/item?id=49645443 Points: 412 # Comments: 172",
       "published_at": "2026-09-10T15:29:47+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10161,45 +10569,9 @@
       },
       "rank_score": 2.09,
       "matched_interests": [],
-      "matched_labels": []
-    },
-    {
-      "id": "4116347b68447b29",
-      "title": "Technique for Manipulating Satellite Photos Now Reveals Ancient Images (2025)",
-      "url": "https://spinoff.nasa.gov/Manipulating_Satellite_Photos_Now_Reveals_Ancient_Images",
-      "summary": "https://dstretch.com/DecorrelationStretch.pdf https://www.nasa.gov/technology/tech-transfer-spinoffs/nasa-... Comments URL: https://news.ycombinator.com/item?id=49645437 Points: 326 # Comments: 53",
-      "published_at": "2026-09-10T15:29:30+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_kind": "community",
-      "source_category": "other",
-      "primary_category": "other",
-      "topics": [],
-      "topic_ids": [],
-      "topic_labels": [],
-      "topic_scores": {},
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 0.0,
-        "related_interest": 0.0,
-        "freshness": 0.994,
-        "source_priority": 0.5
-      },
-      "recommendation_reason": "latest",
-      "score": 0.0,
-      "score_components": {
-        "topics": 0,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.09,
-      "matched_interests": [],
-      "matched_labels": []
+      "matched_labels": [],
+      "title_ja": "認知が新しいSWE-2モデルを発売し、Fable 5.1とGPT-Astraをライバル",
+      "summary_ja": "記事のURL: https://cognition.com/blog/swe-2 コメントURL: https://news.ycombinator.com/item?id=49645443 ポイント: 412 # コメント: 172"
     },
     {
       "id": "b84ad156fb943dde",
@@ -10236,7 +10608,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.627,
+        "freshness": 0.626,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -10252,7 +10624,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "Google検索で究極のディナーパーティーを開催する5つの方法",
+      "summary_ja": "ディナーパーティーテーブルスケープに囲まれた白い円で輝く黒の拡大ガラス"
     },
     {
       "id": "cc0fccb61e42ad2f",
@@ -10289,7 +10663,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.627,
+        "freshness": 0.626,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -10305,7 +10679,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "サーチのAIモードが現実世界を楽しむのに役立ちます",
+      "summary_ja": "テニスやゲームなどの楽しい活動に関連するアイテムに囲まれた緑の芝生の白い円で黒い拡大ガラスのイラスト"
     },
     {
       "id": "f929c1b9756fefd9",
@@ -10342,7 +10718,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.589,
+        "freshness": 0.588,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -10358,7 +10734,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "分類器: エージェントが何をすべきか、コストを追跡する",
+      "summary_ja": "部門、タスクタイプ、またはエージェントの複雑さによって、ワークスペースであらゆる世代の分類と小さなモデルタグを定義します。 ログをフィルタリングし、アクティビティ分析を結果をグループ化します。"
     },
     {
       "id": "00ac4653675d0fdc",
@@ -10395,7 +10773,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.577,
+        "freshness": 0.576,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -10411,7 +10789,9 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "ギャラクシーアンパック2026から3 Googleのアップデート",
+      "summary_ja": "ジェントルモンスターグラス、ウォービーパーカーグラス、ピクチャードの建物の背後にある歴史を求めるプロンプト、そしてピクチャードレストランでテーブルを予約するよう求めているプロンプト"
     },
     {
       "id": "7449da875b2dd571",
@@ -10448,7 +10828,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.528,
+        "freshness": 0.527,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -10458,13 +10838,15 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 1.83,
+      "rank_score": 1.82,
       "matched_interests": [
         "llm_ai_tools"
       ],
       "matched_labels": [
         "LLM・AIツール"
-      ]
+      ],
+      "title_ja": "より多くのアプリを検索する",
+      "summary_ja": "接続されたアプリのレンダリング"
     },
     {
       "id": "b082452a68a12369",
@@ -10517,7 +10899,9 @@
       ],
       "matched_labels": [
         "Apple Watch・iPhone・iOS"
-      ]
+      ],
+      "title_ja": "年齢制限指定に関する質問リストにソーシャルメディアに関する質問が追加",
+      "summary_ja": "6月に発表 したように、iOS 27、iPadOS 27、macOS 27以降に導入される新しい許容時間機能により、エンターテインメント、ゲーム、ソーシャルメディアなどのカテゴリにわたって、子どもがアプリを使用する時間を保護者が柔軟に管理できるようになります。 これに対応するため、App Store Connectの年齢制限指定に関する質問リストにアプリのソーシャルメディア機能に関する質問が追加されました。ソーシャルメディア機能とは、ソーシャルフィードやその他類似する発見方法を通じて、ユーザー生成コンテンツを配信、拡散、またはそれとインタラクトする機能を指します。ソーシャルメディアの「許容時間」カテゴリは、App Store Con"
     },
     {
       "id": "31aa257edf0c168b",
@@ -10554,7 +10938,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.453,
+        "freshness": 0.452,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -10570,7 +10954,9 @@
       ],
       "matched_labels": [
         "Apple Watch・iPhone・iOS"
-      ]
+      ],
+      "title_ja": "Hello Developer 2026年7月",
+      "summary_ja": "今月は以下のトピックをご紹介します。 Apple Developer Webサイトの新しい検索ツール FigmaおよびSketch用のデザインキットのダウンロード 世界各地およびオンラインで開催される新たなイベントやアクティビティを通じた、WWDC26発の最新情報 Apple Design Awards受賞作「grug」と「サイバーパンク2077」に関するストーリー 27のプラットフォームリリース、ドキュメント、サンプルコード、リリースノートに関する最新情報 今すぐ読む"
     },
     {
       "id": "7505e6e2f4639fe3",
@@ -10607,7 +10993,7 @@
       "signals": {
         "direct_interest": 1.05,
         "related_interest": 0.0,
-        "freshness": 0.338,
+        "freshness": 0.337,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -10623,7 +11009,9 @@
       ],
       "matched_labels": [
         "Apple Watch・iPhone・iOS"
-      ]
+      ],
+      "title_ja": "iOS、iPadOS、macOS 27向けのデザインキットが登場",
+      "summary_ja": "FigmaおよびSketch用のAppleのデザインキットがiOS、iPadOS、macOS 27で利用可能になりました。キットには以下の内容が含まれます。 Liquid Glassのアップデート コンポーネントと状態のサポートの拡大 コードになじむ名前への変更 サイズ変更の改善 macOS用のダークモードの追加 Appleのデザインリソースからデザインキットをダウンロード"
     },
     {
       "id": "dfdc357d95b78b55",
@@ -10660,7 +11048,7 @@
       "signals": {
         "direct_interest": 1.05,
         "related_interest": 0.0,
-        "freshness": 0.294,
+        "freshness": 0.293,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -10676,7 +11064,9 @@
       ],
       "matched_labels": [
         "Apple Watch・iPhone・iOS"
-      ]
+      ],
+      "title_ja": "ブラジルにおけるiOSの変更",
+      "summary_ja": "ブラジルの競争規制当局CADE（Conselho Administrativo de Defesa Econômica）と最近締結した契約の一環として、AppleはiOSに変更を行い、ブラジルでアプリを配信するデベロッパに向けて新たなオプションを提供します。iOS 26.5以降では、デベロッパによる代替アプリマーケットプレイスでのアプリの配信、代替アプリマーケットプレイスの運営、iOS上でのAppleアプリ内購入以外の方法によるデジタル商品およびサービスのアプリでの決済処理などが可能になります。 代替アプリマーケットプレイスからのアプリダウンロードやアプリ決済に関する新しいオプションを導入すると、マルウェア、不正行為、詐欺によるリス"
     },
     {
       "id": "1a7dc2f871c7becd",
@@ -10713,7 +11103,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.294,
+        "freshness": 0.293,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -10729,7 +11119,9 @@
       ],
       "matched_labels": [
         "Apple Watch・iPhone・iOS"
-      ]
+      ],
+      "title_ja": "最新のApple Developer Program使用許諾契約が利用可能に",
+      "summary_ja": "Apple Developer Program使用許諾契約（英語） の付属書12を改訂し、代替配信、代替決済、アプリ外部でのオファー、コアテクノロジー手数料など、ブラジルにおけるiOSアプリに関する各種条項を明記しました。変更内容をご確認のうえ、 ご自身のアカウントにサインイン し、更新された各種契約／規約に同意してください。 更新された使用許諾契約の翻訳は、1か月以内に Apple Developer Webサイト でご確認いただけます。"
     },
     {
       "id": "10f84fee90ed447a",
@@ -10782,7 +11174,9 @@
       ],
       "matched_labels": [
         "Apple Watch・iPhone・iOS"
-      ]
+      ],
+      "title_ja": "「Appleでサインイン」およびiCloud+の「メールを非公開」の新しいドメイン",
+      "summary_ja": "注： このお知らせには古い情報が含まれています。最新のガイダンスについては、 アップデート：「Appleでサインイン」の新しいドメイン をご参照ください。 Appleは今年の夏、「Appleでサインイン」とiCloud+の「メールを非公開」で使用されているEメールドメインを「 private.icloud.com 」という単一の共有ドメインに統合する予定です。 両機能で生成される新規アドレスは、新しいドメインで発行されます。例： 「Appleでサインイン」で生成されるEメールアドレスはこれまで「privaterelay.appleid.com」で発行されていましたが、今後は「private.icloud.com」で発行されます。 i"
     },
     {
       "id": "79157566c3264fe0",
@@ -10835,7 +11229,9 @@
       ],
       "matched_labels": [
         "Apple Watch・iPhone・iOS"
-      ]
+      ],
+      "title_ja": "WWDC26に関するアンケート",
+      "summary_ja": "今年のWWDCに関するご感想をお聞かせください。 アンケートに回答する"
     },
     {
       "id": "4bc6cd2046a5887a",
@@ -10872,7 +11268,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.212,
+        "freshness": 0.211,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -10888,7 +11284,9 @@
       ],
       "matched_labels": [
         "Apple Watch・iPhone・iOS"
-      ]
+      ],
+      "title_ja": "Appleデベロッパ向けの最新情報",
+      "summary_ja": "言語、フレームワーク、ツール、サービスにわたる大幅な機能強化により、すべてのAppleプラットフォームにおける最新の進化を確認し、アプリやゲームでこれまで以上にユニークでインテリジェントな体験を生み出しましょう。最新のSDKには、洗練されたプラットフォームデザイン、強力なApple Intelligenceの機能、新しいAI開発フレームワークなど、革新的な新機能が含まれています。 最新情報を確認する 最新のベータソフトウェアをインストール ドキュメントとサンプルコードを見る（英語）"
     },
     {
       "id": "c25378ae2e88741a",
@@ -10925,7 +11323,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.212,
+        "freshness": 0.211,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -10941,7 +11339,9 @@
       ],
       "matched_labels": [
         "Apple Watch・iPhone・iOS"
-      ]
+      ],
+      "title_ja": "「許容時間」の導入",
+      "summary_ja": "iOS 27、iPadOS 27およびmacOS 27以降の「許容時間(Time Allowance)」により、エンターテインメント、ゲーム、ソーシャルメディアなどのカテゴリにわたって、子どもがアプリを使用する時間を保護者が柔軟に管理できるようになります。「許容時間」は専門家の研究に基づいて開発され、子どもの年齢に合わせて調整されており、保護者が設定をする際の参考となります。保護者は子どもにとって最善と思われる判断に基づいてこれらの設定を変更できます。「許容時間」カテゴリは、App Storeでのユーザー検索のためのカテゴリとは異なります。 エンターテインメントとゲーム アプリやゲームは、App Store Connectで入力した"
     },
     {
       "id": "a0f9de8a8becc16d",
@@ -10978,7 +11378,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.212,
+        "freshness": 0.211,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -10994,7 +11394,9 @@
       ],
       "matched_labels": [
         "Apple Watch・iPhone・iOS"
-      ]
+      ],
+      "title_ja": "Apple Developer Program使用許諾契約およびApp Reviewガイドラインが更新されました",
+      "summary_ja": "Apple Developer Program使用許諾契約（英語） および App Reviewガイドライン が新しい機能やポリシーの更新に対応したものに改訂され、複数の項目がより明確になりました。変更内容をご確認の上、 アカウントにサインイン して、更新された各種契約／規約に同意してください。 Apple Developer Program使用許諾契約 セクション3.1、14.8：輸出規制への準拠を含む、デベロッパのID／本人確認に関する情報提供および質問への回答に関する要件を規定。 定義、セクション3.3.3(N)：Sensitive Content Analysisフレームワークの使用に関する要件を明確化。 定義、セクション3"
     },
     {
       "id": "70d4ac4a81d1a51d",
@@ -11031,7 +11433,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.168,
+        "freshness": 0.167,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -11047,7 +11449,9 @@
       ],
       "matched_labels": [
         "Apple Watch・iPhone・iOS"
-      ]
+      ],
+      "title_ja": "新たなApple Developer Centerをベルリンに開設",
+      "summary_ja": "Apple Developer Centerは、Appleの様々なテクノロジーやプラットフォームに関するデベロッパ向けセッション、ラボ、ワークショップ、アポイントメントを対面形式で開催する専用スペースです。 クパティーノ、上海、ベンガルール、シンガポールのDeveloper Centerでは、Appleのエキスパートがガイダンスや実践的な知識をデベロッパコミュニティに直接提供しています。さらに年内には5番目のDeveloper Centerがベルリンに開設され、ヨーロッパ各地のデベロッパにとっては、Appleのエキスパートと交流したり、イベントに参加したりする機会がこれまで以上に増えることになります。 チームの規模やアプリの開発段階"
     },
     {
       "id": "0b80a5220a693829",
@@ -11084,7 +11488,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.161,
+        "freshness": 0.16,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -11100,7 +11504,9 @@
       ],
       "matched_labels": [
         "Apple Watch・iPhone・iOS"
-      ]
+      ],
+      "title_ja": "Apple Design Awards 2026年受賞者の発表",
+      "summary_ja": "素晴らしいアプリやゲームをともに讃えましょう。 Apple Design Awards 2026年受賞者を見る"
     },
     {
       "id": "a8126fceb35b6c38",
@@ -11137,7 +11543,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.152,
+        "freshness": 0.151,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -11153,7 +11559,19 @@
       ],
       "matched_labels": [
         "Apple Watch・iPhone・iOS"
-      ]
+      ],
+      "title_ja": "夜明けは近い",
+      "summary_ja": "WWDC26の開幕まであと1週間！テクノロジー、クリエイティビティ、そしてコミュニティのパワーが溢れる5日間。すべて無料で、オンラインで参加できます。 さらに詳しく"
     }
-  ]
+  ],
+  "translation": {
+    "engine": "argos-translate",
+    "source_language": "en",
+    "target_language": "ja",
+    "generated_at": "2026-09-11T09:47:39.327530+00:00",
+    "translated_fields": 358,
+    "reused_fields": 0,
+    "native_japanese_fields": 50,
+    "failed_fields": 0
+  }
 }
