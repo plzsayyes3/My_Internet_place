@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T22:25:50.639605+00:00",
+  "generated_at": "2026-09-11T04:14:33.853990+00:00",
   "count": 146,
   "sources": {
     "configured": 8,
@@ -74,8 +74,8 @@
       "source_id": "simon_willison",
       "source_category": "ai_tools",
       "content_type": "blog",
-      "score": 6.5,
-      "rank_score": 8.33,
+      "score": 4.25,
+      "rank_score": 6.14,
       "matched_interests": [
         "ai_tools",
         "knowledge_tools",
@@ -90,27 +90,6 @@
       ]
     },
     {
-      "id": "d7685dfe525f2e7a",
-      "title": "OpenAI's rogue agents were caught communicating via public wikis",
-      "url": "https://simonwillison.net/2026/Sep/4/rogue-agent-wikis/",
-      "summary": "Here we go again... Discovery of a new OpenAI agent message board by Sydney Von Arx, Cormac Slade Byrd, Spencer Kitts, and Thomas Larsen describes the latest accidental cyberattack by models being trained by OpenAI. This time it was agents engaged in some sort of web research benchmark, so they had (supposedly) control",
-      "published_at": "2026-09-04T17:38:48+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_category": "ai_tools",
-      "content_type": "blog",
-      "score": 4.8,
-      "rank_score": 6.76,
-      "matched_interests": [
-        "ai_tools",
-        "software_building"
-      ],
-      "matched_labels": [
-        "AI・AIツール",
-        "ソフトウェア制作"
-      ]
-    },
-    {
       "id": "9ea4208917a11c6b",
       "title": "llm-gemini 0.34",
       "url": "https://simonwillison.net/2026/Sep/2/llm-gemini/",
@@ -120,8 +99,8 @@
       "source_id": "simon_willison",
       "source_category": "ai_tools",
       "content_type": "blog",
-      "score": 4.0,
-      "rank_score": 5.91,
+      "score": 3.5,
+      "rank_score": 5.42,
       "matched_interests": [
         "ai_tools",
         "knowledge_tools"
@@ -132,40 +111,17 @@
       ]
     },
     {
-      "id": "590eedef8f336fc5",
-      "title": "llm 0.34",
-      "url": "https://simonwillison.net/2026/Sep/2/llm/",
-      "summary": "Release: llm 0.34 One new feature: llm logs --usage Markdown output now includes the response duration in milliseconds and as a human-readable duration. llm logs --short includes a new duration_ms field. #1653 Plus several contributed bug fixes, and a significant performance improvement to llm logs thanks to waveplate ",
-      "published_at": "2026-09-02T19:23:52+00:00",
+      "id": "d7685dfe525f2e7a",
+      "title": "OpenAI's rogue agents were caught communicating via public wikis",
+      "url": "https://simonwillison.net/2026/Sep/4/rogue-agent-wikis/",
+      "summary": "Here we go again... Discovery of a new OpenAI agent message board by Sydney Von Arx, Cormac Slade Byrd, Spencer Kitts, and Thomas Larsen describes the latest accidental cyberattack by models being trained by OpenAI. This time it was agents engaged in some sort of web research benchmark, so they had (supposedly) control",
+      "published_at": "2026-09-04T17:38:48+00:00",
       "source": "Simon Willison's Weblog",
       "source_id": "simon_willison",
       "source_category": "ai_tools",
       "content_type": "blog",
-      "score": 3.9,
-      "rank_score": 5.82,
-      "matched_interests": [
-        "ai_tools",
-        "knowledge_tools",
-        "software_building"
-      ],
-      "matched_labels": [
-        "AI・AIツール",
-        "ナレッジ・ノート",
-        "ソフトウェア制作"
-      ]
-    },
-    {
-      "id": "b7ed86126bd934ba",
-      "title": "Codex bundles LibreOffice",
-      "url": "https://simonwillison.net/2026/Sep/1/codex-libreoffice/",
-      "summary": "I was poking around in my ~/.cache/ folder using OmniDiskSweeper when I spotted something interesting. The OpenAI Codex desktop app (since rebranded to just ChatGPT) has 1.7GB of stuff in there in a folder called codex-primary-runtime , including a full Python installation, a full Node.js installation, and native binar",
-      "published_at": "2026-09-01T19:03:01+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_category": "ai_tools",
-      "content_type": "blog",
-      "score": 3.9,
-      "rank_score": 5.78,
+      "score": 3.4,
+      "rank_score": 5.38,
       "matched_interests": [
         "ai_tools",
         "software_building"
@@ -176,17 +132,17 @@
       ]
     },
     {
-      "id": "e0864d864985f040",
-      "title": "On the Navier–Stokes Millennium Prize Problem",
-      "url": "https://simonwillison.net/2026/Sep/8/on-navier-stokes/",
-      "summary": "On the Navier–Stokes Millennium Prize Problem Impressive result from OpenAI, who used an unreleased model to produce a resolution to the Navier–Stokes existence and smoothness problem , one of the seven Millennium Prize Problems that have been subject to a $1,000,000 prize since May 24th, 2000. The discovery is somewha",
-      "published_at": "2026-09-08T23:55:12+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_category": "ai_tools",
-      "content_type": "blog",
+      "id": "300052dde8dca54b",
+      "title": "OpenAI Agents API",
+      "url": "https://developers.openai.com/api/docs/guides/agents-api/overview",
+      "summary": "Article URL: https://developers.openai.com/api/docs/guides/agents-api/overview Comments URL: https://news.ycombinator.com/item?id=49649213 Points: 179 # Comments: 107",
+      "published_at": "2026-09-10T19:43:22+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_category": "discovery",
+      "content_type": "news",
       "score": 3.0,
-      "rank_score": 5.12,
+      "rank_score": 5.09,
       "matched_interests": [
         "ai_tools"
       ],
@@ -195,55 +151,17 @@
       ]
     },
     {
-      "id": "0a7d30eac8bba1ef",
-      "title": "Introducing ChatGPT Images 2.5",
-      "url": "https://simonwillison.net/2026/Sep/8/introducing-chatgpt-images-25/",
-      "summary": "Introducing ChatGPT Images 2.5 OpenAI's image generation models are apparently used \"more than 3 billion images across ChatGPT Images and the GPT‑Image models in the API\". This latest release improves their instruction-following ability across multiple turns, responds faster, and \"is better at preserving the subjects i",
-      "published_at": "2026-09-08T22:46:33+00:00",
+      "id": "d5086cee3bfcbc97",
+      "title": "llm-openrouter 0.7.1",
+      "url": "https://simonwillison.net/2026/Sep/2/llm-openrouter/",
+      "summary": "Release: llm-openrouter 0.7.1 Performance fix for loading OpenRouter models. Thanks, waveplate . #59 Tags: llm , openrouter",
+      "published_at": "2026-09-02T20:23:26+00:00",
       "source": "Simon Willison's Weblog",
       "source_id": "simon_willison",
       "source_category": "ai_tools",
       "content_type": "blog",
       "score": 3.0,
-      "rank_score": 5.11,
-      "matched_interests": [
-        "ai_tools"
-      ],
-      "matched_labels": [
-        "AI・AIツール"
-      ]
-    },
-    {
-      "id": "f90db24f9676dd90",
-      "title": "Research acceleration: The view inside OpenAI",
-      "url": "https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai/",
-      "summary": "Research acceleration: The view inside OpenAI Apparently today is RSI day at OpenAI, for Recursive Self-Improvement - I think it's their new AGI. Both this piece and the new essay An Alien Mind (by Chief Scientist Jakub Pachocki) talk about it, and this one doesn't even bother to expand the acronym. Included are detail",
-      "published_at": "2026-09-06T23:57:40+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_category": "ai_tools",
-      "content_type": "blog",
-      "score": 3.0,
-      "rank_score": 5.06,
-      "matched_interests": [
-        "ai_tools"
-      ],
-      "matched_labels": [
-        "AI・AIツール"
-      ]
-    },
-    {
-      "id": "245fae4d64096be2",
-      "title": "GPT‑6 Astra",
-      "url": "https://simonwillison.net/2026/Sep/3/gpt6-astra/",
-      "summary": "GPT‑6 Astra GPT-6 Astra is \"rolling out today to a limited set of organizations and over the coming days will become available to all ChatGPT Plus, Pro, Business, and Enterprise users, as well as through the OpenAI API and AWS\" - I've not tried it yet myself, so I don't have a great deal to say about it yet. It's going",
-      "published_at": "2026-09-03T20:18:41+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_category": "ai_tools",
-      "content_type": "blog",
-      "score": 3.0,
-      "rank_score": 4.97,
+      "rank_score": 4.94,
       "matched_interests": [
         "ai_tools"
       ],
@@ -262,26 +180,7 @@
       "source_category": "ai_tools",
       "content_type": "blog",
       "score": 3.0,
-      "rank_score": 4.94,
-      "matched_interests": [
-        "ai_tools"
-      ],
-      "matched_labels": [
-        "AI・AIツール"
-      ]
-    },
-    {
-      "id": "ded5a3c3beeec02b",
-      "title": "Claude Fable 5.1 made me a really nice animated pelican",
-      "url": "https://simonwillison.net/2026/Sep/1/claude-fable-5-1/",
-      "summary": "Today is Claude Fable (and Mythos) 5.1 day . Anthropic say that Fable 5.1 \"sets a new standard for coding, knowledge work, and long-running problem-solving tasks\". Their announcement spends a notable amount of time on scientific research, boasting of a 52.6% score on the brand new Terminal-Bench-Science 0.1 benchmark (",
-      "published_at": "2026-09-01T23:57:28+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_category": "ai_tools",
-      "content_type": "blog",
-      "score": 3.0,
-      "rank_score": 4.92,
+      "rank_score": 4.93,
       "matched_interests": [
         "ai_tools"
       ],
@@ -309,22 +208,102 @@
       ]
     },
     {
-      "id": "434ac5bdc849ee6f",
-      "title": "GitHub Copilot app for Beginners: Using the diff, terminal, and browser",
-      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-using-the-diff-terminal-and-browser/",
-      "summary": "Checking agent-generated code usually means hopping between tabs. Learn how to view diffs, run terminal commands, and preview web apps side by side in the GitHub Copilot app. The post GitHub Copilot app for Beginners: Using the diff, terminal, and browser appeared first on The GitHub Blog .",
-      "published_at": "2026-09-10T21:31:19+00:00",
-      "source": "GitHub Blog",
-      "source_id": "github_blog",
+      "id": "6b6f56ba953cd4c3",
+      "title": "OpenAI supports California’s bill to advance youth AI safety",
+      "url": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety",
+      "summary": "OpenAI supports California SB 1119, advancing strong, age-appropriate AI safeguards for teens while preserving opportunities to learn, create, and explore.",
+      "published_at": "2026-08-31T07:00:00+00:00",
+      "source": "OpenAI News",
+      "source_id": "openai_news",
+      "source_category": "ai_tools",
+      "content_type": "news",
+      "score": 3.0,
+      "rank_score": 4.9,
+      "matched_interests": [
+        "ai_tools"
+      ],
+      "matched_labels": [
+        "AI・AIツール"
+      ]
+    },
+    {
+      "id": "590eedef8f336fc5",
+      "title": "llm 0.34",
+      "url": "https://simonwillison.net/2026/Sep/2/llm/",
+      "summary": "Release: llm 0.34 One new feature: llm logs --usage Markdown output now includes the response duration in milliseconds and as a human-readable duration. llm logs --short includes a new duration_ms field. #1653 Plus several contributed bug fixes, and a significant performance improvement to llm logs thanks to waveplate ",
+      "published_at": "2026-09-02T19:23:52+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_category": "ai_tools",
+      "content_type": "blog",
+      "score": 2.95,
+      "rank_score": 4.89,
+      "matched_interests": [
+        "ai_tools",
+        "knowledge_tools",
+        "software_building"
+      ],
+      "matched_labels": [
+        "AI・AIツール",
+        "ナレッジ・ノート",
+        "ソフトウェア制作"
+      ]
+    },
+    {
+      "id": "1f1cb31536fdfc76",
+      "title": "Control GitHub Actions cache access with cache-mode",
+      "url": "https://github.blog/changelog/2026-09-10-control-github-actions-cache-access-with-cache-mode",
+      "summary": "You can now use cache-mode to apply least-privilege access to the GitHub Actions cache at the workflow or job level. By granting each workflow or job only the cache access… The post Control GitHub Actions cache access with cache-mode appeared first on The GitHub Blog .",
+      "published_at": "2026-09-10T17:26:59+00:00",
+      "source": "GitHub Changelog",
+      "source_id": "github_changelog",
       "source_category": "software_building",
-      "content_type": "article",
+      "content_type": "release",
       "score": 2.7,
-      "rank_score": 4.85,
+      "rank_score": 4.88,
       "matched_interests": [
         "software_building"
       ],
       "matched_labels": [
         "ソフトウェア制作"
+      ]
+    },
+    {
+      "id": "0a7d30eac8bba1ef",
+      "title": "Introducing ChatGPT Images 2.5",
+      "url": "https://simonwillison.net/2026/Sep/8/introducing-chatgpt-images-25/",
+      "summary": "Introducing ChatGPT Images 2.5 OpenAI's image generation models are apparently used \"more than 3 billion images across ChatGPT Images and the GPT‑Image models in the API\". This latest release improves their instruction-following ability across multiple turns, responds faster, and \"is better at preserving the subjects i",
+      "published_at": "2026-09-08T22:46:33+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_category": "ai_tools",
+      "content_type": "blog",
+      "score": 2.5,
+      "rank_score": 4.61,
+      "matched_interests": [
+        "ai_tools"
+      ],
+      "matched_labels": [
+        "AI・AIツール"
+      ]
+    },
+    {
+      "id": "f90db24f9676dd90",
+      "title": "Research acceleration: The view inside OpenAI",
+      "url": "https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai/",
+      "summary": "Research acceleration: The view inside OpenAI Apparently today is RSI day at OpenAI, for Recursive Self-Improvement - I think it's their new AGI. Both this piece and the new essay An Alien Mind (by Chief Scientist Jakub Pachocki) talk about it, and this one doesn't even bother to expand the acronym. Included are detail",
+      "published_at": "2026-09-06T23:57:40+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_category": "ai_tools",
+      "content_type": "blog",
+      "score": 2.5,
+      "rank_score": 4.56,
+      "matched_interests": [
+        "ai_tools"
+      ],
+      "matched_labels": [
+        "AI・AIツール"
       ]
     },
     {
@@ -337,8 +316,67 @@
       "source_id": "obsidian_changelog",
       "source_category": "knowledge_tools",
       "content_type": "release",
-      "score": 2.7,
-      "rank_score": 4.81,
+      "score": 2.35,
+      "rank_score": 4.46,
+      "matched_interests": [
+        "knowledge_tools",
+        "personal_devices"
+      ],
+      "matched_labels": [
+        "ナレッジ・ノート",
+        "小型デバイス・iOS"
+      ]
+    },
+    {
+      "id": "ded5a3c3beeec02b",
+      "title": "Claude Fable 5.1 made me a really nice animated pelican",
+      "url": "https://simonwillison.net/2026/Sep/1/claude-fable-5-1/",
+      "summary": "Today is Claude Fable (and Mythos) 5.1 day . Anthropic say that Fable 5.1 \"sets a new standard for coding, knowledge work, and long-running problem-solving tasks\". Their announcement spends a notable amount of time on scientific research, boasting of a 52.6% score on the brand new Terminal-Bench-Science 0.1 benchmark (",
+      "published_at": "2026-09-01T23:57:28+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_category": "ai_tools",
+      "content_type": "blog",
+      "score": 2.5,
+      "rank_score": 4.43,
+      "matched_interests": [
+        "ai_tools"
+      ],
+      "matched_labels": [
+        "AI・AIツール"
+      ]
+    },
+    {
+      "id": "434ac5bdc849ee6f",
+      "title": "GitHub Copilot app for Beginners: Using the diff, terminal, and browser",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-using-the-diff-terminal-and-browser/",
+      "summary": "Checking agent-generated code usually means hopping between tabs. Learn how to view diffs, run terminal commands, and preview web apps side by side in the GitHub Copilot app. The post GitHub Copilot app for Beginners: Using the diff, terminal, and browser appeared first on The GitHub Blog .",
+      "published_at": "2026-09-10T21:31:19+00:00",
+      "source": "GitHub Blog",
+      "source_id": "github_blog",
+      "source_category": "software_building",
+      "content_type": "article",
+      "score": 2.25,
+      "rank_score": 4.39,
+      "matched_interests": [
+        "software_building"
+      ],
+      "matched_labels": [
+        "ソフトウェア制作"
+      ]
+    },
+    {
+      "id": "72247e4b0f615a8f",
+      "title": "Obsidian 1.14.0 Mobile (Early access)",
+      "url": "https://obsidian.md/changelog/2026-09-02-mobile-v1.14.0/",
+      "summary": "Includes all new features and bug fixes up to Obsidian Desktop v1.14.0. Improvements Settings are now shown in a dismissable sheet over the app. Swipe anywhere to dismiss. iOS Native Quick Capture on iOS 26. Capture notes from the Lock Screen, Control Center, or Shortcuts without waiting for your vault to load. While e",
+      "published_at": "2026-09-02T00:00:00+00:00",
+      "source": "Obsidian Changelog",
+      "source_id": "obsidian_changelog",
+      "source_category": "knowledge_tools",
+      "content_type": "release",
+      "score": 2.35,
+      "rank_score": 4.31,
       "matched_interests": [
         "knowledge_tools",
         "personal_devices"
@@ -358,34 +396,13 @@
       "source_id": "openai_news",
       "source_category": "ai_tools",
       "content_type": "news",
-      "score": 3.0,
-      "rank_score": 4.77,
+      "score": 2.5,
+      "rank_score": 4.29,
       "matched_interests": [
         "ai_tools"
       ],
       "matched_labels": [
         "AI・AIツール"
-      ]
-    },
-    {
-      "id": "72247e4b0f615a8f",
-      "title": "Obsidian 1.14.0 Mobile (Early access)",
-      "url": "https://obsidian.md/changelog/2026-09-02-mobile-v1.14.0/",
-      "summary": "Includes all new features and bug fixes up to Obsidian Desktop v1.14.0. Improvements Settings are now shown in a dismissable sheet over the app. Swipe anywhere to dismiss. iOS Native Quick Capture on iOS 26. Capture notes from the Lock Screen, Control Center, or Shortcuts without waiting for your vault to load. While e",
-      "published_at": "2026-09-02T00:00:00+00:00",
-      "source": "Obsidian Changelog",
-      "source_id": "obsidian_changelog",
-      "source_category": "knowledge_tools",
-      "content_type": "release",
-      "score": 2.7,
-      "rank_score": 4.65,
-      "matched_interests": [
-        "knowledge_tools",
-        "personal_devices"
-      ],
-      "matched_labels": [
-        "ナレッジ・ノート",
-        "小型デバイス・iOS"
       ]
     },
     {
@@ -398,8 +415,8 @@
       "source_id": "openai_news",
       "source_category": "ai_tools",
       "content_type": "news",
-      "score": 2.8,
-      "rank_score": 4.62,
+      "score": 2.4,
+      "rank_score": 4.24,
       "matched_interests": [
         "ai_tools",
         "education_childcare"
@@ -407,25 +424,6 @@
       "matched_labels": [
         "AI・AIツール",
         "保育・教育"
-      ]
-    },
-    {
-      "id": "8947313248ec49aa",
-      "title": "Now everyone can put data to work",
-      "url": "https://openai.com/index/put-data-to-work",
-      "summary": "Meet the Data agent in ChatGPT Work. Connect company data, uncover insights, and build interactive dashboards with AI using natural language.",
-      "published_at": "2026-09-10T15:00:00+00:00",
-      "source": "OpenAI News",
-      "source_id": "openai_news",
-      "source_category": "ai_tools",
-      "content_type": "news",
-      "score": 2.0,
-      "rank_score": 4.19,
-      "matched_interests": [
-        "ai_tools"
-      ],
-      "matched_labels": [
-        "AI・AIツール"
       ]
     },
     {
@@ -458,121 +456,7 @@
       "source_category": "ai_tools",
       "content_type": "news",
       "score": 2.0,
-      "rank_score": 4.17,
-      "matched_interests": [
-        "ai_tools"
-      ],
-      "matched_labels": [
-        "AI・AIツール"
-      ]
-    },
-    {
-      "id": "1bd48531544759b8",
-      "title": ".blend URL Viewer",
-      "url": "https://simonwillison.net/2026/Sep/9/blender-viewer/",
-      "summary": "Tool: .blend URL Viewer I'm continuing to have a lot of fun with GPT-6 Astra and Blender (see my TIL ). As a big fan of the Imperial Fabergé Easter eggs , I've always thought it would be fun to make some new ones that celebrate popular culture. Yesterday I decided to try out the new ChatGPT Images 2.5 by running this p",
-      "published_at": "2026-09-09T23:58:32+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_category": "ai_tools",
-      "content_type": "blog",
-      "score": 2.0,
-      "rank_score": 4.15,
-      "matched_interests": [
-        "ai_tools"
-      ],
-      "matched_labels": [
-        "AI・AIツール"
-      ]
-    },
-    {
-      "id": "46b79d48ee75282c",
-      "title": "Funding grants for new research into AI and teen development",
-      "url": "https://openai.com/index/teen-development-research-grants",
-      "summary": "Apply now for OpenAI’s $5 million grant program supporting independent research on how generative AI affects teen development, well-being, and safety.",
-      "published_at": "2026-09-08T09:00:00+00:00",
-      "source": "OpenAI News",
-      "source_id": "openai_news",
-      "source_category": "ai_tools",
-      "content_type": "news",
-      "score": 2.0,
-      "rank_score": 4.14,
-      "matched_interests": [
-        "ai_tools"
-      ],
-      "matched_labels": [
-        "AI・AIツール"
-      ]
-    },
-    {
-      "id": "300052dde8dca54b",
-      "title": "OpenAI Agents API",
-      "url": "https://developers.openai.com/api/docs/guides/agents-api/overview",
-      "summary": "Article URL: https://developers.openai.com/api/docs/guides/agents-api/overview Comments URL: https://news.ycombinator.com/item?id=49649213 Points: 43 # Comments: 38",
-      "published_at": "2026-09-10T19:43:22+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_category": "discovery",
-      "content_type": "news",
-      "score": 2.0,
-      "rank_score": 4.1,
-      "matched_interests": [
-        "ai_tools"
-      ],
-      "matched_labels": [
-        "AI・AIツール"
-      ]
-    },
-    {
-      "id": "7d6c35ddd546687d",
-      "title": "llm 0.35",
-      "url": "https://simonwillison.net/2026/Sep/7/llm/",
-      "summary": "Release: llm 0.35 New OpenAI model: gpt-6-astra for GPT-6 Astra . Tags: openai , llm , gpt-6-astra",
-      "published_at": "2026-09-07T23:54:54+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_category": "ai_tools",
-      "content_type": "blog",
-      "score": 2.0,
-      "rank_score": 4.1,
-      "matched_interests": [
-        "ai_tools"
-      ],
-      "matched_labels": [
-        "AI・AIツール"
-      ]
-    },
-    {
-      "id": "fa2f75d40bc55e14",
-      "title": "Quoting Jakub Pachocki",
-      "url": "https://simonwillison.net/2026/Sep/7/jakub-pachocki/",
-      "summary": "The strongest argument I see for continuing to train much smarter models quickly is the need to build defensive systems against the dangers posed by other AI. [...] We will need powerful, aligned AI for defense; to secure infrastructure, to protect against rogue agents in real time, and to invent entirely new protectiv",
-      "published_at": "2026-09-07T22:26:25+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_category": "ai_tools",
-      "content_type": "blog",
-      "score": 2.0,
-      "rank_score": 4.1,
-      "matched_interests": [
-        "ai_tools"
-      ],
-      "matched_labels": [
-        "AI・AIツール"
-      ]
-    },
-    {
-      "id": "a19db2f9483a6838",
-      "title": "Supporting independent journalism in Ukraine",
-      "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
-      "summary": "OpenAI, AIRPPU and WAN-IFRA launch an AI program to help Ukrainian news organizations strengthen innovation, resilience, and independent journalism.",
-      "published_at": "2026-09-07T00:00:00+00:00",
-      "source": "OpenAI News",
-      "source_id": "openai_news",
-      "source_category": "ai_tools",
-      "content_type": "news",
-      "score": 2.0,
-      "rank_score": 4.1,
+      "rank_score": 4.16,
       "matched_interests": [
         "ai_tools"
       ],
@@ -590,8 +474,8 @@
       "source_id": "github_changelog",
       "source_category": "software_building",
       "content_type": "release",
-      "score": 1.9,
-      "rank_score": 4.09,
+      "score": 1.95,
+      "rank_score": 4.13,
       "matched_interests": [
         "ai_tools",
         "software_building"
@@ -602,15 +486,53 @@
       ]
     },
     {
+      "id": "46b79d48ee75282c",
+      "title": "Funding grants for new research into AI and teen development",
+      "url": "https://openai.com/index/teen-development-research-grants",
+      "summary": "Apply now for OpenAI’s $5 million grant program supporting independent research on how generative AI affects teen development, well-being, and safety.",
+      "published_at": "2026-09-08T09:00:00+00:00",
+      "source": "OpenAI News",
+      "source_id": "openai_news",
+      "source_category": "ai_tools",
+      "content_type": "news",
+      "score": 2.0,
+      "rank_score": 4.13,
+      "matched_interests": [
+        "ai_tools"
+      ],
+      "matched_labels": [
+        "AI・AIツール"
+      ]
+    },
+    {
       "id": "0c0d8751baac2b7e",
       "title": "Detecting and countering misuse of AI: September 2026",
       "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
-      "summary": "Article URL: https://www.anthropic.com/threat-intelligence-report-september-2026 Comments URL: https://news.ycombinator.com/item?id=49647300 Points: 42 # Comments: 22",
+      "summary": "https://www-cdn.anthropic.com/e50be2e51e7695dc4b1366a37a245a... Comments URL: https://news.ycombinator.com/item?id=49647300 Points: 100 # Comments: 167",
       "published_at": "2026-09-10T17:23:42+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
       "source_category": "discovery",
       "content_type": "news",
+      "score": 2.0,
+      "rank_score": 4.09,
+      "matched_interests": [
+        "ai_tools"
+      ],
+      "matched_labels": [
+        "AI・AIツール"
+      ]
+    },
+    {
+      "id": "7d6c35ddd546687d",
+      "title": "llm 0.35",
+      "url": "https://simonwillison.net/2026/Sep/7/llm/",
+      "summary": "Release: llm 0.35 New OpenAI model: gpt-6-astra for GPT-6 Astra . Tags: openai , llm , gpt-6-astra",
+      "published_at": "2026-09-07T23:54:54+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_category": "ai_tools",
+      "content_type": "blog",
       "score": 2.0,
       "rank_score": 4.09,
       "matched_interests": [
@@ -631,7 +553,7 @@
       "source_category": "ai_tools",
       "content_type": "news",
       "score": 2.0,
-      "rank_score": 4.09,
+      "rank_score": 4.08,
       "matched_interests": [
         "ai_tools"
       ],
@@ -640,158 +562,23 @@
       ]
     },
     {
-      "id": "f588b0d0d876a347",
-      "title": "Introducing GPT-6 Astra for developers",
-      "url": "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/",
-      "summary": "Introducing GPT-6 Astra for developers Blink and you'll miss it, but there's a familiar creature at 1m59s : Across the board, Astra has more attention to detail, better understanding of the user's prompt, and can build more sophisticated outputs. In particular, it excels at building 3D models. I've seen it make incredi",
-      "published_at": "2026-09-05T23:27:48+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_category": "ai_tools",
-      "content_type": "blog",
-      "score": 2.0,
+      "id": "230687ce8489adc3",
+      "title": "LLM Visualizer – Build a Transformer from Scratch",
+      "url": "https://jayvisaria.github.io/LLM-Visualizer/",
+      "summary": "Article URL: https://jayvisaria.github.io/LLM-Visualizer/#/dashboard Comments URL: https://news.ycombinator.com/item?id=49652996 Points: 9 # Comments: 4",
+      "published_at": "2026-09-11T02:51:51+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_category": "discovery",
+      "content_type": "news",
+      "score": 1.95,
       "rank_score": 4.05,
       "matched_interests": [
-        "ai_tools"
-      ],
-      "matched_labels": [
-        "AI・AIツール"
-      ]
-    },
-    {
-      "id": "1f8ec3fbf99c9fb2",
-      "title": "Using Blender with coding agents on macOS",
-      "url": "https://simonwillison.net/2026/Sep/5/blender-coding-agents-macos/",
-      "summary": "TIL: Using Blender with coding agents on macOS I've been having fun with Blender in ChatGPT Codex on my Mac recently. Getting it to work with coding agents is really easy: install the full Mac application from blender.org and run a prompt like this: Use the already install /Applications/Blender to render a scene of a p",
-      "published_at": "2026-09-05T15:51:09+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_category": "ai_tools",
-      "content_type": "blog",
-      "score": 2.0,
-      "rank_score": 4.04,
-      "matched_interests": [
-        "ai_tools"
-      ],
-      "matched_labels": [
-        "AI・AIツール"
-      ]
-    },
-    {
-      "id": "ed1bdb936b077c7e",
-      "title": "The Pelican comparison grid for Astra is pretty interesting",
-      "url": "https://simonwillison.net/2026/Sep/4/astra-pelicans/",
-      "summary": "I got access to GPT-6 Astra this afternoon, so naturally I used it to generate SVGs of pelicans riding bicycles - at low, medium, high, xhigh and max reasoning levels (Astra doesn't support reasoning=none). Then I rendered those pelicans in a comparison grid with GPT-5.6 Sol, Terra, and Luna, and beyond being fun the r",
-      "published_at": "2026-09-04T23:59:05+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_category": "ai_tools",
-      "content_type": "blog",
-      "score": 2.0,
-      "rank_score": 4.03,
-      "matched_interests": [
-        "ai_tools"
-      ],
-      "matched_labels": [
-        "AI・AIツール"
-      ]
-    },
-    {
-      "id": "c1498ff3dcd6f63f",
-      "title": "Native is now the future of mobile at Shopify",
-      "url": "https://simonwillison.net/2026/Sep/10/shopify-react-native/",
-      "summary": "Native is now the future of mobile at Shopify Shopify are moving from React Native back to separate Swift and Kotlin codebases for their native apps, for the exact reason you would expect: We decided to switch from native to React Native in 2020 for three reasons: Stop building the same features twice Allow developers ",
-      "published_at": "2026-09-10T21:11:15+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_category": "ai_tools",
-      "content_type": "blog",
-      "score": 1.85,
-      "rank_score": 4.02,
-      "matched_interests": [
         "ai_tools",
-        "personal_devices"
-      ],
-      "matched_labels": [
-        "AI・AIツール",
-        "小型デバイス・iOS"
-      ]
-    },
-    {
-      "id": "8dcb19121f1521c8",
-      "title": "Daybreak for Frontline Defenders: $1B to protect essential services",
-      "url": "https://openai.com/index/daybreak-for-frontline-defenders",
-      "summary": "OpenAI introduces Daybreak for Frontline Defenders. A $1 billion commitment expands access to frontier cyber AI, training, and support for essential services.",
-      "published_at": "2026-09-03T13:15:00+00:00",
-      "source": "OpenAI News",
-      "source_id": "openai_news",
-      "source_category": "ai_tools",
-      "content_type": "news",
-      "score": 2.0,
-      "rank_score": 4.02,
-      "matched_interests": [
-        "ai_tools"
-      ],
-      "matched_labels": [
-        "AI・AIツール"
-      ]
-    },
-    {
-      "id": "23b49c054dd022ad",
-      "title": "August newsletter is out",
-      "url": "https://simonwillison.net/2026/Sep/4/august-newsletter/",
-      "summary": "The August edition of my sponsors-only monthly newsletter is out. If you are a sponsor (or if you start a sponsorship now) you can access it here . This month: We got more details on OpenAl's accidental cyberattacks One-shotting Raccoon Heist games with Fable 5 and Sol 5.6 Claude auto mode Understanding ChatGPT Work Mo",
-      "published_at": "2026-09-04T05:54:40+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_category": "ai_tools",
-      "content_type": "blog",
-      "score": 2.0,
-      "rank_score": 4.01,
-      "matched_interests": [
-        "ai_tools"
-      ],
-      "matched_labels": [
-        "AI・AIツール"
-      ]
-    },
-    {
-      "id": "b1abb4baa4c07576",
-      "title": "Quoting Calif Research",
-      "url": "https://simonwillison.net/2026/Sep/10/calif-research/",
-      "summary": "Today, we're releasing a demo of WeWorm, the first zero-click worm to spread through WeChat calls across iOS and Android. [...] The victim does not need to answer the call, or interact with their phone at all. Even if they do answer, they hear nothing, and the exploit still succeeds. [...] Working with AI, our team fou",
-      "published_at": "2026-09-10T00:56:41+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_category": "ai_tools",
-      "content_type": "blog",
-      "score": 1.85,
-      "rank_score": 4.0,
-      "matched_interests": [
-        "ai_tools",
-        "personal_devices"
-      ],
-      "matched_labels": [
-        "AI・AIツール",
-        "小型デバイス・iOS"
-      ]
-    },
-    {
-      "id": "1f1cb31536fdfc76",
-      "title": "Control GitHub Actions cache access with cache-mode",
-      "url": "https://github.blog/changelog/2026-09-10-control-github-actions-cache-access-with-cache-mode",
-      "summary": "You can now use cache-mode to apply least-privilege access to the GitHub Actions cache at the workflow or job level. By granting each workflow or job only the cache access… The post Control GitHub Actions cache access with cache-mode appeared first on The GitHub Blog .",
-      "published_at": "2026-09-10T17:26:59+00:00",
-      "source": "GitHub Changelog",
-      "source_id": "github_changelog",
-      "source_category": "software_building",
-      "content_type": "release",
-      "score": 1.8,
-      "rank_score": 3.99,
-      "matched_interests": [
         "software_building"
       ],
       "matched_labels": [
+        "AI・AIツール",
         "ソフトウェア制作"
       ]
     },
@@ -806,83 +593,7 @@
       "source_category": "ai_tools",
       "content_type": "news",
       "score": 2.0,
-      "rank_score": 3.98,
-      "matched_interests": [
-        "ai_tools"
-      ],
-      "matched_labels": [
-        "AI・AIツール"
-      ]
-    },
-    {
-      "id": "d5086cee3bfcbc97",
-      "title": "llm-openrouter 0.7.1",
-      "url": "https://simonwillison.net/2026/Sep/2/llm-openrouter/",
-      "summary": "Release: llm-openrouter 0.7.1 Performance fix for loading OpenRouter models. Thanks, waveplate . #59 Tags: llm , openrouter",
-      "published_at": "2026-09-02T20:23:26+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_category": "ai_tools",
-      "content_type": "blog",
-      "score": 2.0,
       "rank_score": 3.97,
-      "matched_interests": [
-        "ai_tools"
-      ],
-      "matched_labels": [
-        "AI・AIツール"
-      ]
-    },
-    {
-      "id": "51a72604c877b018",
-      "title": "Quoting Rick Brewster",
-      "url": "https://simonwillison.net/2026/Sep/2/rick-brewster/",
-      "summary": "Direct2D has always been the biggest hurdle for Paint.NET on WINE, and it's clear that it will never be completed enough for Paint.NET's use. And I can't just \"disable\" the use of Direct2D. So, instead, Paint.NET now has an internal, from-scratch, clean-room reverse-engineered rewrite of Direct2D that it uses on WINE (",
-      "published_at": "2026-09-02T05:50:57+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_category": "ai_tools",
-      "content_type": "blog",
-      "score": 2.0,
-      "rank_score": 3.96,
-      "matched_interests": [
-        "ai_tools"
-      ],
-      "matched_labels": [
-        "AI・AIツール"
-      ]
-    },
-    {
-      "id": "74b842ed457fec63",
-      "title": "GeoJSON Map Viewer",
-      "url": "https://simonwillison.net/2026/Sep/1/geojson/",
-      "summary": "Tool: GeoJSON Map Viewer I was helping Natalie gather some maps of local political boundaries (for the Granada Community Services District and the Midcoast Community Council ) and found a need to display some GeoJSON files on a map and export that as a PNG. I asked GPT-5.6-Sol for suggestions of tools and it proactivel",
-      "published_at": "2026-09-01T18:05:45+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_category": "ai_tools",
-      "content_type": "blog",
-      "score": 2.0,
-      "rank_score": 3.95,
-      "matched_interests": [
-        "ai_tools"
-      ],
-      "matched_labels": [
-        "AI・AIツール"
-      ]
-    },
-    {
-      "id": "6b6f56ba953cd4c3",
-      "title": "OpenAI supports California’s bill to advance youth AI safety",
-      "url": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety",
-      "summary": "OpenAI supports California SB 1119, advancing strong, age-appropriate AI safeguards for teens while preserving opportunities to learn, create, and explore.",
-      "published_at": "2026-08-31T07:00:00+00:00",
-      "source": "OpenAI News",
-      "source_id": "openai_news",
-      "source_category": "ai_tools",
-      "content_type": "news",
-      "score": 2.0,
-      "rank_score": 3.94,
       "matched_interests": [
         "ai_tools"
       ],
@@ -920,33 +631,12 @@
       "source_category": "ai_tools",
       "content_type": "news",
       "score": 2.0,
-      "rank_score": 3.94,
+      "rank_score": 3.93,
       "matched_interests": [
         "ai_tools"
       ],
       "matched_labels": [
         "AI・AIツール"
-      ]
-    },
-    {
-      "id": "10ebd5a8648d8b52",
-      "title": "Obsidian 1.13 Mobile (Public)",
-      "url": "https://obsidian.md/changelog/2026-07-30-mobile-v1.13.4/",
-      "summary": "This update introduces a new searchable Settings panel and iOS Share Sheet. Scrolling large files and selecting text should also be improved on both iOS and Android. Includes all new features and bug fixes up to Obsidian Desktop v1.13.4 . iOS Share Sheet The new iOS Share Sheet lets you save content from Safari, YouTub",
-      "published_at": "2026-07-30T00:00:00+00:00",
-      "source": "Obsidian Changelog",
-      "source_id": "obsidian_changelog",
-      "source_category": "knowledge_tools",
-      "content_type": "release",
-      "score": 2.85,
-      "rank_score": 3.87,
-      "matched_interests": [
-        "knowledge_tools",
-        "personal_devices"
-      ],
-      "matched_labels": [
-        "ナレッジ・ノート",
-        "小型デバイス・iOS"
       ]
     },
     {
@@ -959,8 +649,8 @@
       "source_id": "github_blog",
       "source_category": "software_building",
       "content_type": "article",
-      "score": 1.9,
-      "rank_score": 3.86,
+      "score": 1.95,
+      "rank_score": 3.9,
       "matched_interests": [
         "ai_tools",
         "software_building"
@@ -980,8 +670,8 @@
       "source_id": "github_blog",
       "source_category": "software_building",
       "content_type": "article",
-      "score": 1.9,
-      "rank_score": 3.86,
+      "score": 1.95,
+      "rank_score": 3.9,
       "matched_interests": [
         "ai_tools",
         "software_building"
@@ -1030,126 +720,6 @@
       ]
     },
     {
-      "id": "cc48de1bc44be53a",
-      "title": "The Hugging Face incident and the road ahead",
-      "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead",
-      "summary": "OpenAI shares findings from the Hugging Face security incident and the steps we’re taking to strengthen AI model security, monitoring, and alignment.",
-      "published_at": "2026-08-26T00:00:00+00:00",
-      "source": "OpenAI News",
-      "source_id": "openai_news",
-      "source_category": "ai_tools",
-      "content_type": "news",
-      "score": 2.0,
-      "rank_score": 3.81,
-      "matched_interests": [
-        "ai_tools"
-      ],
-      "matched_labels": [
-        "AI・AIツール"
-      ]
-    },
-    {
-      "id": "4154766599c41495",
-      "title": "Obsidian 1.13.3 Mobile (Early access)",
-      "url": "https://obsidian.md/changelog/2026-07-21-mobile-v1.13.3/",
-      "summary": "Includes all new features and bug fixes up to Obsidian Desktop v1.13.3. Improvements Added \"swipe down\" gesture to dismiss an image in the lightbox. No longer broken Tapping an image no longer shows the keyboard. Fixed double-tap to zoom on images. Live Preview: Fixed buttons for creating new columns and new rows not w",
-      "published_at": "2026-07-21T00:00:00+00:00",
-      "source": "Obsidian Changelog",
-      "source_id": "obsidian_changelog",
-      "source_category": "knowledge_tools",
-      "content_type": "release",
-      "score": 2.85,
-      "rank_score": 3.62,
-      "matched_interests": [
-        "knowledge_tools",
-        "personal_devices"
-      ],
-      "matched_labels": [
-        "ナレッジ・ノート",
-        "小型デバイス・iOS"
-      ]
-    },
-    {
-      "id": "5086a94035ddaff2",
-      "title": "Obsidian 1.13.6 Desktop (Public)",
-      "url": "https://obsidian.md/changelog/2026-08-10-desktop-v1.13.6/",
-      "summary": "Improvements The app now waits for configuration files to finish saving when quitting to avoid the file getting corrupted. Improved \"Undo close tab\" behavior. Tabs now reopen in the correct tab group, and if the currently active tab is the \"New tab\" page, it will no longer be reused. Removed dialog to approve URI actio",
-      "published_at": "2026-08-10T00:00:00+00:00",
-      "source": "Obsidian Changelog",
-      "source_id": "obsidian_changelog",
-      "source_category": "knowledge_tools",
-      "content_type": "release",
-      "score": 2.0,
-      "rank_score": 3.42,
-      "matched_interests": [
-        "knowledge_tools"
-      ],
-      "matched_labels": [
-        "ナレッジ・ノート"
-      ]
-    },
-    {
-      "id": "7f9545c864c64b66",
-      "title": "Obsidian 1.13.6 Desktop (Early access)",
-      "url": "https://obsidian.md/changelog/2026-08-07-desktop-v1.13.6/",
-      "summary": "Improvements Sliders in settings now use the accent color. Removed dialog to approve URI actions because it was creating even more confusion for non-technical users. 1.13 already introduced some new guardrails like Mermaid diagrams being off by default. No longer broken Settings: Fixed bug where pressing the back butto",
-      "published_at": "2026-08-07T00:00:00+00:00",
-      "source": "Obsidian Changelog",
-      "source_id": "obsidian_changelog",
-      "source_category": "knowledge_tools",
-      "content_type": "release",
-      "score": 2.0,
-      "rank_score": 3.35,
-      "matched_interests": [
-        "knowledge_tools"
-      ],
-      "matched_labels": [
-        "ナレッジ・ノート"
-      ]
-    },
-    {
-      "id": "322b7bb856954e6c",
-      "title": "Obsidian 1.13.6 Mobile (Public)",
-      "url": "https://obsidian.md/changelog/2026-08-10-mobile-v1.13.6/",
-      "summary": "Includes all new features and bug fixes up to Obsidian Desktop v1.13.6 . New Added swipe-to-close to close tabs in the tab switcher. Improvements Tabs now animate to their new position after closing a tab from the tab switcher. The mobile toolbar settings page now shows icons next to each command. Checkboxes now scale ",
-      "published_at": "2026-08-10T00:00:00+00:00",
-      "source": "Obsidian Changelog",
-      "source_id": "obsidian_changelog",
-      "source_category": "knowledge_tools",
-      "content_type": "release",
-      "score": 1.85,
-      "rank_score": 3.29,
-      "matched_interests": [
-        "knowledge_tools",
-        "personal_devices"
-      ],
-      "matched_labels": [
-        "ナレッジ・ノート",
-        "小型デバイス・iOS"
-      ]
-    },
-    {
-      "id": "b3829fa4954b8916",
-      "title": "Obsidian 1.13.6 Mobile (Early access)",
-      "url": "https://obsidian.md/changelog/2026-08-07-mobile-v1.13.6/",
-      "summary": "Includes all new features and bug fixes up to Obsidian Desktop v1.13.6. No longer broken iOS: Fixed editor sometimes selecting entire paragraph after double-tapping on text or dragging cursor",
-      "published_at": "2026-08-07T00:00:00+00:00",
-      "source": "Obsidian Changelog",
-      "source_id": "obsidian_changelog",
-      "source_category": "knowledge_tools",
-      "content_type": "release",
-      "score": 1.85,
-      "rank_score": 3.22,
-      "matched_interests": [
-        "knowledge_tools",
-        "personal_devices"
-      ],
-      "matched_labels": [
-        "ナレッジ・ノート",
-        "小型デバイス・iOS"
-      ]
-    },
-    {
       "id": "1164e3484aa11323",
       "title": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
       "url": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
@@ -1159,8 +729,8 @@
       "source_id": "openai_news",
       "source_category": "ai_tools",
       "content_type": "news",
-      "score": 1.0,
-      "rank_score": 3.19,
+      "score": 1.5,
+      "rank_score": 3.69,
       "matched_interests": [
         "ai_tools"
       ],
@@ -1178,8 +748,8 @@
       "source_id": "openai_news",
       "source_category": "ai_tools",
       "content_type": "news",
-      "score": 1.0,
-      "rank_score": 3.19,
+      "score": 1.5,
+      "rank_score": 3.68,
       "matched_interests": [
         "ai_tools"
       ],
@@ -1197,46 +767,8 @@
       "source_id": "openai_news",
       "source_category": "ai_tools",
       "content_type": "news",
-      "score": 1.0,
-      "rank_score": 3.17,
-      "matched_interests": [
-        "ai_tools"
-      ],
-      "matched_labels": [
-        "AI・AIツール"
-      ]
-    },
-    {
-      "id": "c5bec85fedf93c06",
-      "title": "GPT-6 Astra: The next generation in intelligence for work",
-      "url": "https://openai.com/index/gpt-6-astra-next-generation-work",
-      "summary": "Meet GPT-6 Astra, OpenAI’s most capable model for business, with advanced reasoning, computer use, and stronger writing and design judgment.",
-      "published_at": "2026-09-09T11:00:00+00:00",
-      "source": "OpenAI News",
-      "source_id": "openai_news",
-      "source_category": "ai_tools",
-      "content_type": "news",
-      "score": 1.0,
-      "rank_score": 3.17,
-      "matched_interests": [
-        "ai_tools"
-      ],
-      "matched_labels": [
-        "AI・AIツール"
-      ]
-    },
-    {
-      "id": "104e93494a1238b8",
-      "title": "The Work Now Within Reach",
-      "url": "https://openai.com/index/the-work-now-within-reach",
-      "summary": "Explore how more capable, affordable AI can expand the work people and businesses can accomplish—and make growth more economical.",
-      "published_at": "2026-09-08T13:00:00+00:00",
-      "source": "OpenAI News",
-      "source_id": "openai_news",
-      "source_category": "ai_tools",
-      "content_type": "news",
-      "score": 1.0,
-      "rank_score": 3.15,
+      "score": 1.5,
+      "rank_score": 3.66,
       "matched_interests": [
         "ai_tools"
       ],
@@ -1254,8 +786,8 @@
       "source_id": "openai_news",
       "source_category": "ai_tools",
       "content_type": "news",
-      "score": 1.0,
-      "rank_score": 3.15,
+      "score": 1.5,
+      "rank_score": 3.64,
       "matched_interests": [
         "ai_tools"
       ],
@@ -1264,15 +796,498 @@
       ]
     },
     {
-      "id": "ad320ee7054087d7",
-      "title": "On the Navier–Stokes Millennium Prize Problem",
-      "url": "https://openai.com/index/navier-stokes-solution",
-      "summary": "We’re sharing an AI-generated solution to the Navier–Stokes Millennium Prize Problem, including a writeup and a formal proof in Lean.",
-      "published_at": "2026-09-08T10:00:00+00:00",
+      "id": "bced7af72ce4bcad",
+      "title": "OpenAI expands initiatives to support journalism from classrooms to newsrooms",
+      "url": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
+      "summary": "OpenAI is expanding support for journalism with tools, training, and partnerships for students, educators, journalists, and news organizations.",
+      "published_at": "2026-09-08T00:00:00+00:00",
       "source": "OpenAI News",
       "source_id": "openai_news",
       "source_category": "ai_tools",
       "content_type": "news",
+      "score": 1.5,
+      "rank_score": 3.63,
+      "matched_interests": [
+        "ai_tools"
+      ],
+      "matched_labels": [
+        "AI・AIツール"
+      ]
+    },
+    {
+      "id": "01b38b6776119a20",
+      "title": "Obsidian 1.14.1 Desktop (Early access)",
+      "url": "https://obsidian.md/changelog/2026-09-08-desktop-v1.14.1/",
+      "summary": "Improvements Math rendering now uses MathJax 4.1.3, replacing MathJax 3 and Temml. Bases: Added right-to-left (RTL) support to table views, including keyboard navigation, selections, and horizontal scrolling. No longer broken Fixed default file to open option not working. Fixed opening recent vault from OS menu not wor",
+      "published_at": "2026-09-08T00:00:00+00:00",
+      "source": "Obsidian Changelog",
+      "source_id": "obsidian_changelog",
+      "source_category": "knowledge_tools",
+      "content_type": "release",
+      "score": 1.5,
+      "rank_score": 3.62,
+      "matched_interests": [
+        "knowledge_tools"
+      ],
+      "matched_labels": [
+        "ナレッジ・ノート"
+      ]
+    },
+    {
+      "id": "692462a9077ae9e1",
+      "title": "Thelio Mira AI Linux Workstation: 192 GB GPU Memory",
+      "url": "https://system76.com/workstations/thelio-mira-ai",
+      "summary": "Article URL: https://system76.com/workstations/thelio-mira-ai Comments URL: https://news.ycombinator.com/item?id=49651372 Points: 60 # Comments: 38",
+      "published_at": "2026-09-10T23:10:06+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_category": "discovery",
+      "content_type": "news",
+      "score": 1.5,
+      "rank_score": 3.6,
+      "matched_interests": [
+        "ai_tools"
+      ],
+      "matched_labels": [
+        "AI・AIツール"
+      ]
+    },
+    {
+      "id": "d4f5031352418d90",
+      "title": "Enterprise managed permissions for GitHub Copilot agent operations",
+      "url": "https://github.blog/changelog/2026-09-09-enterprise-managed-permissions-for-github-copilot-agent-operations",
+      "summary": "If you administer GitHub Copilot Business or GitHub Copilot Enterprise, you can now centrally control which agent operations are blocked, require human approval, or can proceed without a prompt. Managed… The post Enterprise managed permissions for GitHub Copilot agent operations appeared first on The GitHub Blog .",
+      "published_at": "2026-09-09T20:08:14+00:00",
+      "source": "GitHub Changelog",
+      "source_id": "github_changelog",
+      "source_category": "software_building",
+      "content_type": "release",
+      "score": 1.35,
+      "rank_score": 3.51,
+      "matched_interests": [
+        "software_building"
+      ],
+      "matched_labels": [
+        "ソフトウェア制作"
+      ]
+    },
+    {
+      "id": "ff3d29128810b258",
+      "title": "GitHub Advanced Security expands trial availability",
+      "url": "https://github.blog/changelog/2026-09-09-github-advanced-security-expands-trial-availability",
+      "summary": "More GitHub Enterprise Cloud customers can now start a self-serve GitHub Advanced Security trial to evaluate GitHub Code Security and GitHub Secret Protection. Eligibility has expanded from enterprises with up… The post GitHub Advanced Security expands trial availability appeared first on The GitHub Blog .",
+      "published_at": "2026-09-09T17:33:34+00:00",
+      "source": "GitHub Changelog",
+      "source_id": "github_changelog",
+      "source_category": "software_building",
+      "content_type": "release",
+      "score": 1.35,
+      "rank_score": 3.51,
+      "matched_interests": [
+        "software_building"
+      ],
+      "matched_labels": [
+        "ソフトウェア制作"
+      ]
+    },
+    {
+      "id": "41bbe44596b6918b",
+      "title": "ATV Big Air Tour turned 3 days of work into 3 hours with ChatGPT",
+      "url": "https://openai.com/index/atv-big-air-tour",
+      "summary": "ATV Big Air Tour uses ChatGPT Work to speed up marketing, merchandising, and more. It even turned merchandise photos into an inventory website in 15 minutes.",
+      "published_at": "2026-09-02T12:00:00+00:00",
+      "source": "OpenAI News",
+      "source_id": "openai_news",
+      "source_category": "ai_tools",
+      "content_type": "news",
+      "score": 1.5,
+      "rank_score": 3.51,
+      "matched_interests": [
+        "ai_tools"
+      ],
+      "matched_labels": [
+        "AI・AIツール"
+      ]
+    },
+    {
+      "id": "10ebd5a8648d8b52",
+      "title": "Obsidian 1.13 Mobile (Public)",
+      "url": "https://obsidian.md/changelog/2026-07-30-mobile-v1.13.4/",
+      "summary": "This update introduces a new searchable Settings panel and iOS Share Sheet. Scrolling large files and selecting text should also be improved on both iOS and Android. Includes all new features and bug fixes up to Obsidian Desktop v1.13.4 . iOS Share Sheet The new iOS Share Sheet lets you save content from Safari, YouTub",
+      "published_at": "2026-07-30T00:00:00+00:00",
+      "source": "Obsidian Changelog",
+      "source_id": "obsidian_changelog",
+      "source_category": "knowledge_tools",
+      "content_type": "release",
+      "score": 2.42,
+      "rank_score": 3.5,
+      "matched_interests": [
+        "knowledge_tools",
+        "personal_devices"
+      ],
+      "matched_labels": [
+        "ナレッジ・ノート",
+        "小型デバイス・iOS"
+      ]
+    },
+    {
+      "id": "8e50b104a8cc9234",
+      "title": "Obsidian 1.14.0 Desktop (Early access)",
+      "url": "https://obsidian.md/changelog/2026-09-02-desktop-v1.14.0/",
+      "summary": "New Editor Added color highlights. Add a color emoji (🔴, 🟠, 🟢, 🔵, 🟣) to the start of a highlight to change its color, or pick a color from the new formatting submenu. Typing == in the editor now suggests highlight colors. Live Preview: When the cursor overlaps a highlight, an inline swatch now appears. Click it to quic",
+      "published_at": "2026-09-02T00:00:00+00:00",
+      "source": "Obsidian Changelog",
+      "source_id": "obsidian_changelog",
+      "source_category": "knowledge_tools",
+      "content_type": "release",
+      "score": 1.5,
+      "rank_score": 3.49,
+      "matched_interests": [
+        "knowledge_tools"
+      ],
+      "matched_labels": [
+        "ナレッジ・ノート"
+      ]
+    },
+    {
+      "id": "023c2df5cdad1ad5",
+      "title": "GitHub availability report: August 2026",
+      "url": "https://github.blog/news-insights/company-news/github-availability-report-august-2026/",
+      "summary": "In August, we experienced five incidents that resulted in degraded performance across GitHub services. The post GitHub availability report: August 2026 appeared first on The GitHub Blog .",
+      "published_at": "2026-09-10T02:05:17+00:00",
+      "source": "GitHub Blog",
+      "source_id": "github_blog",
+      "source_category": "software_building",
+      "content_type": "article",
+      "score": 1.35,
+      "rank_score": 3.48,
+      "matched_interests": [
+        "software_building"
+      ],
+      "matched_labels": [
+        "ソフトウェア制作"
+      ]
+    },
+    {
+      "id": "9e922f7641d5bfee",
+      "title": "Healthcare organizations can now connect EHR and additional industry data to ChatGPT",
+      "url": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources",
+      "summary": "ChatGPT can now connect to trusted healthcare data, helping clinicians securely access patient context, medical research, and more.",
+      "published_at": "2026-09-01T12:00:00+00:00",
+      "source": "OpenAI News",
+      "source_id": "openai_news",
+      "source_category": "ai_tools",
+      "content_type": "news",
+      "score": 1.5,
+      "rank_score": 3.48,
+      "matched_interests": [
+        "ai_tools"
+      ],
+      "matched_labels": [
+        "AI・AIツール"
+      ]
+    },
+    {
+      "id": "e9711708a81b74e3",
+      "title": "Open Source Acoustic Drone Detection",
+      "url": "https://hackaday.com/2026/09/10/open-source-acoustic-drone-detection/",
+      "summary": "Drones have become a potent military threat, particularly on the small scale. Nimble multi-rotor drones are fast, difficult to spot, and can cause plenty of harm if allowed to go …read more",
+      "published_at": "2026-09-10T11:00:38+00:00",
+      "source": "Hackaday",
+      "source_id": "hackaday",
+      "source_category": "making",
+      "content_type": "article",
+      "score": 1.35,
+      "rank_score": 3.46,
+      "matched_interests": [
+        "software_building"
+      ],
+      "matched_labels": [
+        "ソフトウェア制作"
+      ]
+    },
+    {
+      "id": "e38e55b793ac5187",
+      "title": "Proof of Capture: Apple Reference Image, but open source and using steganography",
+      "url": "https://merybenavente.me/blog/proof-of-capture",
+      "summary": "Article URL: https://merybenavente.me/blog/proof-of-capture Comments URL: https://news.ycombinator.com/item?id=49649222 Points: 77 # Comments: 51",
+      "published_at": "2026-09-10T19:44:15+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_category": "discovery",
+      "content_type": "news",
+      "score": 1.35,
+      "rank_score": 3.44,
+      "matched_interests": [
+        "software_building"
+      ],
+      "matched_labels": [
+        "ソフトウェア制作"
+      ]
+    },
+    {
+      "id": "5086a94035ddaff2",
+      "title": "Obsidian 1.13.6 Desktop (Public)",
+      "url": "https://obsidian.md/changelog/2026-08-10-desktop-v1.13.6/",
+      "summary": "Improvements The app now waits for configuration files to finish saving when quitting to avoid the file getting corrupted. Improved \"Undo close tab\" behavior. Tabs now reopen in the correct tab group, and if the currently active tab is the \"New tab\" page, it will no longer be reused. Removed dialog to approve URI actio",
+      "published_at": "2026-08-10T00:00:00+00:00",
+      "source": "Obsidian Changelog",
+      "source_id": "obsidian_changelog",
+      "source_category": "knowledge_tools",
+      "content_type": "release",
+      "score": 2.0,
+      "rank_score": 3.41,
+      "matched_interests": [
+        "knowledge_tools"
+      ],
+      "matched_labels": [
+        "ナレッジ・ノート"
+      ]
+    },
+    {
+      "id": "6f85dcbde774b631",
+      "title": "Custom AMOLED Wearable Makes Great Icebreaker",
+      "url": "https://hackaday.com/2026/09/10/custom-amoled-wearable-makes-great-icebreaker/",
+      "summary": "Nifty little AMOLED screens are easy to get nowadays, and [Sophie D] demonstrates they are both thin and light enough to be worn with OpenChoker, a design for a choker …read more",
+      "published_at": "2026-09-10T15:30:16+00:00",
+      "source": "Hackaday",
+      "source_id": "hackaday",
+      "source_category": "making",
+      "content_type": "article",
+      "score": 1.27,
+      "rank_score": 3.39,
+      "matched_interests": [
+        "personal_devices"
+      ],
+      "matched_labels": [
+        "小型デバイス・iOS"
+      ]
+    },
+    {
+      "id": "b13065c0db77ddbd",
+      "title": "Better answers, broader thinking: What students gain from ChatGPT and critical-thinking training",
+      "url": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training",
+      "summary": "A randomized study of more than 1,000 students examines ChatGPT, critical thinking, originality, and student performance on a real-world university assignment.",
+      "published_at": "2026-08-27T09:00:00+00:00",
+      "source": "OpenAI News",
+      "source_id": "openai_news",
+      "source_category": "ai_tools",
+      "content_type": "news",
+      "score": 1.5,
+      "rank_score": 3.37,
+      "matched_interests": [
+        "ai_tools"
+      ],
+      "matched_labels": [
+        "AI・AIツール"
+      ]
+    },
+    {
+      "id": "322b7bb856954e6c",
+      "title": "Obsidian 1.13.6 Mobile (Public)",
+      "url": "https://obsidian.md/changelog/2026-08-10-mobile-v1.13.6/",
+      "summary": "Includes all new features and bug fixes up to Obsidian Desktop v1.13.6 . New Added swipe-to-close to close tabs in the tab switcher. Improvements Tabs now animate to their new position after closing a tab from the tab switcher. The mobile toolbar settings page now shows icons next to each command. Checkboxes now scale ",
+      "published_at": "2026-08-10T00:00:00+00:00",
+      "source": "Obsidian Changelog",
+      "source_id": "obsidian_changelog",
+      "source_category": "knowledge_tools",
+      "content_type": "release",
+      "score": 1.93,
+      "rank_score": 3.35,
+      "matched_interests": [
+        "knowledge_tools",
+        "personal_devices"
+      ],
+      "matched_labels": [
+        "ナレッジ・ノート",
+        "小型デバイス・iOS"
+      ]
+    },
+    {
+      "id": "7f8053487964d7a8",
+      "title": "GitHub Copilot app for Beginners: Run several agents at once",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once/",
+      "summary": "Learn how to run parallel agents in the GitHub Copilot app, and experience the moment it stops feeling scary and starts feeling powerful. The post GitHub Copilot app for Beginners: Run several agents at once appeared first on The GitHub Blog .",
+      "published_at": "2026-09-03T16:00:00+00:00",
+      "source": "GitHub Blog",
+      "source_id": "github_blog",
+      "source_category": "software_building",
+      "content_type": "article",
+      "score": 1.35,
+      "rank_score": 3.34,
+      "matched_interests": [
+        "software_building"
+      ],
+      "matched_labels": [
+        "ソフトウェア制作"
+      ]
+    },
+    {
+      "id": "7f9545c864c64b66",
+      "title": "Obsidian 1.13.6 Desktop (Early access)",
+      "url": "https://obsidian.md/changelog/2026-08-07-desktop-v1.13.6/",
+      "summary": "Improvements Sliders in settings now use the accent color. Removed dialog to approve URI actions because it was creating even more confusion for non-technical users. 1.13 already introduced some new guardrails like Mermaid diagrams being off by default. No longer broken Settings: Fixed bug where pressing the back butto",
+      "published_at": "2026-08-07T00:00:00+00:00",
+      "source": "Obsidian Changelog",
+      "source_id": "obsidian_changelog",
+      "source_category": "knowledge_tools",
+      "content_type": "release",
+      "score": 2.0,
+      "rank_score": 3.34,
+      "matched_interests": [
+        "knowledge_tools"
+      ],
+      "matched_labels": [
+        "ナレッジ・ノート"
+      ]
+    },
+    {
+      "id": "491a641605939c76",
+      "title": "1Password increases engineering productivity 21% with Codex",
+      "url": "https://openai.com/index/1password",
+      "summary": "Engineers at 1Password use Codex to rapidly build new features and internal tools, reaching production-readiness while maintaining rigorous security policies.",
+      "published_at": "2026-09-08T00:00:00+00:00",
+      "source": "OpenAI News",
+      "source_id": "openai_news",
+      "source_category": "ai_tools",
+      "content_type": "news",
+      "score": 1.2,
+      "rank_score": 3.33,
+      "matched_interests": [
+        "productivity"
+      ],
+      "matched_labels": [
+        "タスク・仕事設計"
+      ]
+    },
+    {
+      "id": "b3829fa4954b8916",
+      "title": "Obsidian 1.13.6 Mobile (Early access)",
+      "url": "https://obsidian.md/changelog/2026-08-07-mobile-v1.13.6/",
+      "summary": "Includes all new features and bug fixes up to Obsidian Desktop v1.13.6. No longer broken iOS: Fixed editor sometimes selecting entire paragraph after double-tapping on text or dragging cursor",
+      "published_at": "2026-08-07T00:00:00+00:00",
+      "source": "Obsidian Changelog",
+      "source_id": "obsidian_changelog",
+      "source_category": "knowledge_tools",
+      "content_type": "release",
+      "score": 1.93,
+      "rank_score": 3.28,
+      "matched_interests": [
+        "knowledge_tools",
+        "personal_devices"
+      ],
+      "matched_labels": [
+        "ナレッジ・ノート",
+        "小型デバイス・iOS"
+      ]
+    },
+    {
+      "id": "4154766599c41495",
+      "title": "Obsidian 1.13.3 Mobile (Early access)",
+      "url": "https://obsidian.md/changelog/2026-07-21-mobile-v1.13.3/",
+      "summary": "Includes all new features and bug fixes up to Obsidian Desktop v1.13.3. Improvements Added \"swipe down\" gesture to dismiss an image in the lightbox. No longer broken Tapping an image no longer shows the keyboard. Fixed double-tap to zoom on images. Live Preview: Fixed buttons for creating new columns and new rows not w",
+      "published_at": "2026-07-21T00:00:00+00:00",
+      "source": "Obsidian Changelog",
+      "source_id": "obsidian_changelog",
+      "source_category": "knowledge_tools",
+      "content_type": "release",
+      "score": 2.42,
+      "rank_score": 3.27,
+      "matched_interests": [
+        "knowledge_tools",
+        "personal_devices"
+      ],
+      "matched_labels": [
+        "ナレッジ・ノート",
+        "小型デバイス・iOS"
+      ]
+    },
+    {
+      "id": "7fedfe91792bf89c",
+      "title": "Obsidian 1.13.8 Mobile (Public)",
+      "url": "https://obsidian.md/changelog/2026-08-20-mobile-v1.13.8/",
+      "summary": "Android: Fixed bug causing editor to accidentally switch from reading mode to edit mode while scrolling.",
+      "published_at": "2026-08-20T00:00:00+00:00",
+      "source": "Obsidian Changelog",
+      "source_id": "obsidian_changelog",
+      "source_category": "knowledge_tools",
+      "content_type": "release",
+      "score": 1.5,
+      "rank_score": 3.2,
+      "matched_interests": [
+        "knowledge_tools"
+      ],
+      "matched_labels": [
+        "ナレッジ・ノート"
+      ]
+    },
+    {
+      "id": "8947313248ec49aa",
+      "title": "Now everyone can put data to work",
+      "url": "https://openai.com/index/put-data-to-work",
+      "summary": "Meet the Data agent in ChatGPT Work. Connect company data, uncover insights, and build interactive dashboards with AI using natural language.",
+      "published_at": "2026-09-10T15:00:00+00:00",
+      "source": "OpenAI News",
+      "source_id": "openai_news",
+      "source_category": "ai_tools",
+      "content_type": "news",
+      "score": 1.0,
+      "rank_score": 3.19,
+      "matched_interests": [
+        "ai_tools"
+      ],
+      "matched_labels": [
+        "AI・AIツール"
+      ]
+    },
+    {
+      "id": "10ef3bca83926564",
+      "title": "Datasette 1.0a39 and 0.65.4 security releases",
+      "url": "https://simonwillison.net/2026/Sep/11/datasette-security/",
+      "summary": "Datasette 1.0a39 and 0.65.4 security releases Today we're releasing two new security patch versions of Datasette: 1.0a39 and 0.65.4 - one for the current alpha series and one for the stable 0.65.x family. These are security fixes which you should apply if you are running a Datasette instance on the public web - in part",
+      "published_at": "2026-09-11T03:27:16+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_category": "ai_tools",
+      "content_type": "blog",
+      "score": 1.0,
+      "rank_score": 3.17,
+      "matched_interests": [
+        "ai_tools"
+      ],
+      "matched_labels": [
+        "AI・AIツール"
+      ]
+    },
+    {
+      "id": "4b3cf0748f791c10",
+      "title": "GitHub Copilot app for Beginners: Automate Dependabot pull request triage",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-automate-dependabot-pull-request-triage/",
+      "summary": "Managing library updates can be tedious at times. Learn how the GitHub Copilot app can handle this type of repetitive task. The post GitHub Copilot app for Beginners: Automate Dependabot pull request triage appeared first on The GitHub Blog .",
+      "published_at": "2026-08-26T20:12:53+00:00",
+      "source": "GitHub Blog",
+      "source_id": "github_blog",
+      "source_category": "software_building",
+      "content_type": "article",
+      "score": 1.35,
+      "rank_score": 3.17,
+      "matched_interests": [
+        "software_building"
+      ],
+      "matched_labels": [
+        "ソフトウェア制作"
+      ]
+    },
+    {
+      "id": "1bd48531544759b8",
+      "title": ".blend URL Viewer",
+      "url": "https://simonwillison.net/2026/Sep/9/blender-viewer/",
+      "summary": "Tool: .blend URL Viewer I'm continuing to have a lot of fun with GPT-6 Astra and Blender (see my TIL ). As a big fan of the Imperial Fabergé Easter eggs , I've always thought it would be fun to make some new ones that celebrate popular culture. Yesterday I decided to try out the new ChatGPT Images 2.5 by running this p",
+      "published_at": "2026-09-09T23:58:32+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_category": "ai_tools",
+      "content_type": "blog",
       "score": 1.0,
       "rank_score": 3.15,
       "matched_interests": [
@@ -1302,30 +1317,11 @@
       ]
     },
     {
-      "id": "bced7af72ce4bcad",
-      "title": "OpenAI expands initiatives to support journalism from classrooms to newsrooms",
-      "url": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
-      "summary": "OpenAI is expanding support for journalism with tools, training, and partnerships for students, educators, journalists, and news organizations.",
-      "published_at": "2026-09-08T00:00:00+00:00",
-      "source": "OpenAI News",
-      "source_id": "openai_news",
-      "source_category": "ai_tools",
-      "content_type": "news",
-      "score": 1.0,
-      "rank_score": 3.14,
-      "matched_interests": [
-        "ai_tools"
-      ],
-      "matched_labels": [
-        "AI・AIツール"
-      ]
-    },
-    {
-      "id": "5f48b006c40fe10b",
-      "title": "Quoting Terence Tao",
-      "url": "https://simonwillison.net/2026/Sep/9/terence-tao/",
-      "summary": "I wrote recently about how the collection of good, fruitful open problems is now being mined in a non-renewable fashion, leading to the potential scenario of these problems becoming scarce. [...] We have now seen that even the rumor of someone working on a problem can trigger a massive amount of AI-powered effort to fl",
-      "published_at": "2026-09-09T00:20:17+00:00",
+      "id": "9ff974b66102a00d",
+      "title": "Some thoughts on the Navier–Stokes Millennium Prize Problem",
+      "url": "https://simonwillison.net/2026/Sep/8/on-navier-stokes/",
+      "summary": "On the Navier–Stokes Millennium Prize Problem introduces an impressive result from OpenAI, who used an unreleased model to produce a resolution to the Navier–Stokes existence and smoothness problem , one of the seven Millennium Prize Problems that have been subject to a $1,000,000 prize since May 24th, 2000. The discov",
+      "published_at": "2026-09-08T23:55:12+00:00",
       "source": "Simon Willison's Weblog",
       "source_id": "simon_willison",
       "source_category": "ai_tools",
@@ -1340,68 +1336,11 @@
       ]
     },
     {
-      "id": "01b38b6776119a20",
-      "title": "Obsidian 1.14.1 Desktop (Early access)",
-      "url": "https://obsidian.md/changelog/2026-09-08-desktop-v1.14.1/",
-      "summary": "Improvements Math rendering now uses MathJax 4.1.3, replacing MathJax 3 and Temml. Bases: Added right-to-left (RTL) support to table views, including keyboard navigation, selections, and horizontal scrolling. No longer broken Fixed default file to open option not working. Fixed opening recent vault from OS menu not wor",
-      "published_at": "2026-09-08T00:00:00+00:00",
-      "source": "Obsidian Changelog",
-      "source_id": "obsidian_changelog",
-      "source_category": "knowledge_tools",
-      "content_type": "release",
-      "score": 1.0,
-      "rank_score": 3.13,
-      "matched_interests": [
-        "knowledge_tools"
-      ],
-      "matched_labels": [
-        "ナレッジ・ノート"
-      ]
-    },
-    {
-      "id": "64946386af562d7f",
-      "title": "Creepy crawlies",
-      "url": "https://simonwillison.net/2026/Sep/7/creepy-crawlies/",
-      "summary": "Creepy crawlies Konstantin Ryabitsev discusses how bad the \"background radiation\" of abusive crawlers has become from the perspective of git.kernel.org , the official Git repository for the Linux kernel: TL;DR: we spend more CPU cycles rendering commits for scrapers than we spend on all other kinds of legitimate access",
-      "published_at": "2026-09-07T23:08:58+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_category": "ai_tools",
-      "content_type": "blog",
-      "score": 1.0,
-      "rank_score": 3.11,
-      "matched_interests": [
-        "ai_tools"
-      ],
-      "matched_labels": [
-        "AI・AIツール"
-      ]
-    },
-    {
-      "id": "e091c33ca8fef401",
-      "title": "Video compressor",
-      "url": "https://simonwillison.net/2026/Sep/7/video-compressor/",
-      "summary": "Tool: Video compressor I recorded a short demo video of my Equal Earth animation on my phone and wanted to publish an optimized version of that video (using FFMPEG) on my blog, so I had Claude Fable 5.1 in Claude Code for web build me this tool using the WebAssembly build of FFMPEG. Tags: ffmpeg , video , webassembly ,",
-      "published_at": "2026-09-07T18:29:07+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_category": "ai_tools",
-      "content_type": "blog",
-      "score": 1.0,
-      "rank_score": 3.11,
-      "matched_interests": [
-        "ai_tools"
-      ],
-      "matched_labels": [
-        "AI・AIツール"
-      ]
-    },
-    {
-      "id": "d6088d0604066b74",
-      "title": "An Alien Mind",
-      "url": "https://openai.com/index/an-alien-mind",
-      "summary": "Jakub Pachocki reflects on increasingly capable AI and the challenge of keeping it aligned. He calls for stronger safeguards and international coordination.",
-      "published_at": "2026-09-06T09:00:00+00:00",
+      "id": "a19db2f9483a6838",
+      "title": "Supporting independent journalism in Ukraine",
+      "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
+      "summary": "OpenAI, AIRPPU and WAN-IFRA launch an AI program to help Ukrainian news organizations strengthen innovation, resilience, and independent journalism.",
+      "published_at": "2026-09-07T00:00:00+00:00",
       "source": "OpenAI News",
       "source_id": "openai_news",
       "source_category": "ai_tools",
@@ -1416,30 +1355,11 @@
       ]
     },
     {
-      "id": "c01c5be52bc2cd7c",
-      "title": "Cognition's SWE-2 achieves 92.8 on Terminal-Bench 2.1",
-      "url": "https://tokenstead.ai/models/swe-2",
-      "summary": "Article URL: https://tokenstead.ai/models/swe-2 Comments URL: https://news.ycombinator.com/item?id=49646778 Points: 46 # Comments: 22",
-      "published_at": "2026-09-10T16:52:11+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_category": "discovery",
-      "content_type": "news",
-      "score": 1.0,
-      "rank_score": 3.1,
-      "matched_interests": [
-        "ai_tools"
-      ],
-      "matched_labels": [
-        "AI・AIツール"
-      ]
-    },
-    {
-      "id": "d866438263d8a47d",
-      "title": "Mercator ↔ Equal Earth",
-      "url": "https://simonwillison.net/2026/Sep/7/equal-earth/",
-      "summary": "Tool: Mercator ↔ Equal Earth I got curious about the Equal Earth map projection that was recently voted on at the UN so I had GPT-6 Astra (medium) in ChatGPT Work build me this animated transition between Mercator and Equal Earth using D3. Tags: geospatial , d3 , vibe-coding , gpt-6-astra",
-      "published_at": "2026-09-07T16:24:16+00:00",
+      "id": "fa2f75d40bc55e14",
+      "title": "Quoting Jakub Pachocki",
+      "url": "https://simonwillison.net/2026/Sep/7/jakub-pachocki/",
+      "summary": "The strongest argument I see for continuing to train much smarter models quickly is the need to build defensive systems against the dangers posed by other AI. [...] We will need powerful, aligned AI for defense; to secure infrastructure, to protect against rogue agents in real time, and to invent entirely new protectiv",
+      "published_at": "2026-09-07T22:26:25+00:00",
       "source": "Simon Willison's Weblog",
       "source_id": "simon_willison",
       "source_category": "ai_tools",
@@ -1454,60 +1374,45 @@
       ]
     },
     {
-      "id": "b16619c31ce49170",
-      "title": "Refreshed repository pull requests page in public preview",
-      "url": "https://github.blog/changelog/2026-09-10-refreshed-repository-pull-requests-page-in-public-preview",
-      "summary": "A refreshed repository-level pull request listing page is now in public preview for all GitHub users. It brings powerful filtering, compact presentation mode, and more. Highlights The new page makes… The post Refreshed repository pull requests page in public preview appeared first on The GitHub Blog .",
-      "published_at": "2026-09-10T21:27:17+00:00",
-      "source": "GitHub Changelog",
-      "source_id": "github_changelog",
-      "source_category": "software_building",
-      "content_type": "release",
-      "score": 0.9,
+      "id": "c1498ff3dcd6f63f",
+      "title": "Native is now the future of mobile at Shopify",
+      "url": "https://simonwillison.net/2026/Sep/10/shopify-react-native/",
+      "summary": "Native is now the future of mobile at Shopify Shopify are moving from React Native back to separate Swift and Kotlin codebases for their native apps, for the exact reason you would expect: We decided to switch from native to React Native in 2020 for three reasons: Stop building the same features twice Allow developers ",
+      "published_at": "2026-09-10T21:11:15+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_category": "ai_tools",
+      "content_type": "blog",
+      "score": 0.93,
       "rank_score": 3.09,
       "matched_interests": [
-        "software_building"
+        "ai_tools",
+        "personal_devices"
       ],
       "matched_labels": [
-        "ソフトウェア制作"
+        "AI・AIツール",
+        "小型デバイス・iOS"
       ]
     },
     {
-      "id": "4278bca33ee9019f",
-      "title": "MAI-Code-1-Flash deprecated",
-      "url": "https://github.blog/changelog/2026-09-10-mai-code-1-flash-deprecated",
-      "summary": "We have deprecated MAI-Code-1-Flash across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions) today, September 10, 2026. Model Deprecation date Suggested alternative… The post MAI-Code-1-Flash deprecated appeared first on The GitHub Blog .",
-      "published_at": "2026-09-10T16:54:01+00:00",
-      "source": "GitHub Changelog",
-      "source_id": "github_changelog",
-      "source_category": "software_building",
-      "content_type": "release",
-      "score": 0.9,
-      "rank_score": 3.09,
-      "matched_interests": [
-        "software_building"
-      ],
-      "matched_labels": [
-        "ソフトウェア制作"
-      ]
-    },
-    {
-      "id": "dc7b9892a8ebdbc8",
-      "title": "Xcode 27 runner image now runs on macOS 27",
-      "url": "https://github.blog/changelog/2026-09-10-xcode-27-runner-image-now-runs-on-macos-27",
-      "summary": "You can now validate your Apple apps against macOS 27 using the Xcode 27 runner image for GitHub-hosted macOS runners, available in public preview. The image previously ran on macOS… The post Xcode 27 runner image now runs on macOS 27 appeared first on The GitHub Blog .",
-      "published_at": "2026-09-10T15:15:36+00:00",
-      "source": "GitHub Changelog",
-      "source_id": "github_changelog",
-      "source_category": "software_building",
-      "content_type": "release",
-      "score": 0.9,
+      "id": "b1abb4baa4c07576",
+      "title": "Quoting Calif Research",
+      "url": "https://simonwillison.net/2026/Sep/10/calif-research/",
+      "summary": "Today, we're releasing a demo of WeWorm, the first zero-click worm to spread through WeChat calls across iOS and Android. [...] The victim does not need to answer the call, or interact with their phone at all. Even if they do answer, they hear nothing, and the exploit still succeeds. [...] Working with AI, our team fou",
+      "published_at": "2026-09-10T00:56:41+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_category": "ai_tools",
+      "content_type": "blog",
+      "score": 0.93,
       "rank_score": 3.08,
       "matched_interests": [
-        "software_building"
+        "ai_tools",
+        "personal_devices"
       ],
       "matched_labels": [
-        "ソフトウェア制作"
+        "AI・AIツール",
+        "小型デバイス・iOS"
       ]
     },
     {
@@ -1521,7 +1426,7 @@
       "source_category": "knowledge_tools",
       "content_type": "release",
       "score": 2.0,
-      "rank_score": 3.08,
+      "rank_score": 3.07,
       "matched_interests": [
         "knowledge_tools"
       ],
@@ -1530,129 +1435,91 @@
       ]
     },
     {
-      "id": "cfe9a7da79915f40",
-      "title": "npm extends recovery-code security holds to all accounts",
-      "url": "https://github.blog/changelog/2026-09-09-npm-extends-recovery-code-security-holds-to-all-accounts",
-      "summary": "npm now places a temporary 72-hour security hold on any account after a successful recovery-code sign-in, extending a protection that previously applied only to high-impact accounts. This change applies to… The post npm extends recovery-code security holds to all accounts appeared first on The GitHub Blog .",
-      "published_at": "2026-09-09T21:55:55+00:00",
-      "source": "GitHub Changelog",
-      "source_id": "github_changelog",
-      "source_category": "software_building",
-      "content_type": "release",
-      "score": 0.9,
-      "rank_score": 3.07,
+      "id": "f588b0d0d876a347",
+      "title": "Introducing GPT-6 Astra for developers",
+      "url": "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/",
+      "summary": "Introducing GPT-6 Astra for developers Blink and you'll miss it, but there's a familiar creature at 1m59s : Across the board, Astra has more attention to detail, better understanding of the user's prompt, and can build more sophisticated outputs. In particular, it excels at building 3D models. I've seen it make incredi",
+      "published_at": "2026-09-05T23:27:48+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_category": "ai_tools",
+      "content_type": "blog",
+      "score": 1.0,
+      "rank_score": 3.06,
       "matched_interests": [
-        "software_building"
+        "ai_tools"
       ],
       "matched_labels": [
-        "ソフトウェア制作"
+        "AI・AIツール"
       ]
     },
     {
-      "id": "1cc410c23a5f0bd9",
-      "title": "CodeQL 2.27.0 adds support for Linux ARM64",
-      "url": "https://github.blog/changelog/2026-09-09-codeql-2-27-0-adds-support-for-linux-arm64",
-      "summary": "CodeQL 2.27.0 is now available on Linux ARM64, adds a new Rust security query, expanded framework coverage for Java/Kotlin and C#, and analysis accuracy improvements across multiple languages. CodeQL is… The post CodeQL 2.27.0 adds support for Linux ARM64 appeared first on The GitHub Blog .",
-      "published_at": "2026-09-09T21:45:06+00:00",
-      "source": "GitHub Changelog",
-      "source_id": "github_changelog",
-      "source_category": "software_building",
-      "content_type": "release",
-      "score": 0.9,
-      "rank_score": 3.07,
+      "id": "1f8ec3fbf99c9fb2",
+      "title": "Using Blender with coding agents on macOS",
+      "url": "https://simonwillison.net/2026/Sep/5/blender-coding-agents-macos/",
+      "summary": "TIL: Using Blender with coding agents on macOS I've been having fun with Blender in ChatGPT Codex on my Mac recently. Getting it to work with coding agents is really easy: install the full Mac application from blender.org and run a prompt like this: Use the already install /Applications/Blender to render a scene of a p",
+      "published_at": "2026-09-05T15:51:09+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_category": "ai_tools",
+      "content_type": "blog",
+      "score": 1.0,
+      "rank_score": 3.06,
       "matched_interests": [
-        "software_building"
+        "ai_tools"
       ],
       "matched_labels": [
-        "ソフトウェア制作"
+        "AI・AIツール"
       ]
     },
     {
-      "id": "d4f5031352418d90",
-      "title": "Enterprise managed permissions for GitHub Copilot agent operations",
-      "url": "https://github.blog/changelog/2026-09-09-enterprise-managed-permissions-for-github-copilot-agent-operations",
-      "summary": "If you administer GitHub Copilot Business or GitHub Copilot Enterprise, you can now centrally control which agent operations are blocked, require human approval, or can proceed without a prompt. Managed… The post Enterprise managed permissions for GitHub Copilot agent operations appeared first on The GitHub Blog .",
-      "published_at": "2026-09-09T20:08:14+00:00",
-      "source": "GitHub Changelog",
-      "source_id": "github_changelog",
-      "source_category": "software_building",
-      "content_type": "release",
-      "score": 0.9,
-      "rank_score": 3.07,
+      "id": "ed1bdb936b077c7e",
+      "title": "The Pelican comparison grid for Astra is pretty interesting",
+      "url": "https://simonwillison.net/2026/Sep/4/astra-pelicans/",
+      "summary": "I got access to GPT-6 Astra this afternoon, so naturally I used it to generate SVGs of pelicans riding bicycles - at low, medium, high, xhigh and max reasoning levels (Astra doesn't support reasoning=none). Then I rendered those pelicans in a comparison grid with GPT-5.6 Sol, Terra, and Luna, and beyond being fun the r",
+      "published_at": "2026-09-04T23:59:05+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_category": "ai_tools",
+      "content_type": "blog",
+      "score": 1.0,
+      "rank_score": 3.04,
       "matched_interests": [
-        "software_building"
+        "ai_tools"
       ],
       "matched_labels": [
-        "ソフトウェア制作"
+        "AI・AIツール"
       ]
     },
     {
-      "id": "ff3d29128810b258",
-      "title": "GitHub Advanced Security expands trial availability",
-      "url": "https://github.blog/changelog/2026-09-09-github-advanced-security-expands-trial-availability",
-      "summary": "More GitHub Enterprise Cloud customers can now start a self-serve GitHub Advanced Security trial to evaluate GitHub Code Security and GitHub Secret Protection. Eligibility has expanded from enterprises with up… The post GitHub Advanced Security expands trial availability appeared first on The GitHub Blog .",
-      "published_at": "2026-09-09T17:33:34+00:00",
-      "source": "GitHub Changelog",
-      "source_id": "github_changelog",
-      "source_category": "software_building",
-      "content_type": "release",
-      "score": 0.9,
-      "rank_score": 3.07,
-      "matched_interests": [
-        "software_building"
-      ],
-      "matched_labels": [
-        "ソフトウェア制作"
-      ]
-    },
-    {
-      "id": "08d5fe54ffa077dd",
-      "title": "Block pull requests with exposed secrets from merging",
-      "url": "https://github.blog/changelog/2026-09-09-block-pull-requests-with-exposed-secrets-from-merging",
-      "summary": "Repository rulesets allow you to easily add scalable protections across your repositories. Starting today, you can use repository rulesets to block pull requests from merging when the pull request introduces… The post Block pull requests with exposed secrets from merging appeared first on The GitHub Blog .",
-      "published_at": "2026-09-09T17:14:02+00:00",
-      "source": "GitHub Changelog",
-      "source_id": "github_changelog",
-      "source_category": "software_building",
-      "content_type": "release",
-      "score": 0.9,
-      "rank_score": 3.07,
-      "matched_interests": [
-        "software_building"
-      ],
-      "matched_labels": [
-        "ソフトウェア制作"
-      ]
-    },
-    {
-      "id": "023c2df5cdad1ad5",
-      "title": "GitHub availability report: August 2026",
-      "url": "https://github.blog/news-insights/company-news/github-availability-report-august-2026/",
-      "summary": "In August, we experienced five incidents that resulted in degraded performance across GitHub services. The post GitHub availability report: August 2026 appeared first on The GitHub Blog .",
-      "published_at": "2026-09-10T02:05:17+00:00",
-      "source": "GitHub Blog",
-      "source_id": "github_blog",
-      "source_category": "software_building",
-      "content_type": "article",
-      "score": 0.9,
-      "rank_score": 3.03,
-      "matched_interests": [
-        "software_building"
-      ],
-      "matched_labels": [
-        "ソフトウェア制作"
-      ]
-    },
-    {
-      "id": "41bbe44596b6918b",
-      "title": "ATV Big Air Tour turned 3 days of work into 3 hours with ChatGPT",
-      "url": "https://openai.com/index/atv-big-air-tour",
-      "summary": "ATV Big Air Tour uses ChatGPT Work to speed up marketing, merchandising, and more. It even turned merchandise photos into an inventory website in 15 minutes.",
-      "published_at": "2026-09-02T12:00:00+00:00",
+      "id": "8dcb19121f1521c8",
+      "title": "Daybreak for Frontline Defenders: $1B to protect essential services",
+      "url": "https://openai.com/index/daybreak-for-frontline-defenders",
+      "summary": "OpenAI introduces Daybreak for Frontline Defenders. A $1 billion commitment expands access to frontier cyber AI, training, and support for essential services.",
+      "published_at": "2026-09-03T13:15:00+00:00",
       "source": "OpenAI News",
       "source_id": "openai_news",
       "source_category": "ai_tools",
       "content_type": "news",
+      "score": 1.0,
+      "rank_score": 3.04,
+      "matched_interests": [
+        "ai_tools"
+      ],
+      "matched_labels": [
+        "AI・AIツール"
+      ]
+    },
+    {
+      "id": "23b49c054dd022ad",
+      "title": "August newsletter is out",
+      "url": "https://simonwillison.net/2026/Sep/4/august-newsletter/",
+      "summary": "The August edition of my sponsors-only monthly newsletter is out. If you are a sponsor (or if you start a sponsorship now) you can access it here . This month: We got more details on OpenAl's accidental cyberattacks One-shotting Raccoon Heist games with Fable 5 and Sol 5.6 Claude auto mode Understanding ChatGPT Work Mo",
+      "published_at": "2026-09-04T05:54:40+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_category": "ai_tools",
+      "content_type": "blog",
       "score": 1.0,
       "rank_score": 3.03,
       "matched_interests": [
@@ -1663,36 +1530,36 @@
       ]
     },
     {
-      "id": "e9711708a81b74e3",
-      "title": "Open Source Acoustic Drone Detection",
-      "url": "https://hackaday.com/2026/09/10/open-source-acoustic-drone-detection/",
-      "summary": "Drones have become a potent military threat, particularly on the small scale. Nimble multi-rotor drones are fast, difficult to spot, and can cause plenty of harm if allowed to go …read more",
-      "published_at": "2026-09-10T11:00:38+00:00",
-      "source": "Hackaday",
-      "source_id": "hackaday",
-      "source_category": "making",
-      "content_type": "article",
-      "score": 0.9,
+      "id": "245fae4d64096be2",
+      "title": "GPT‑6 Astra",
+      "url": "https://simonwillison.net/2026/Sep/3/gpt6-astra/",
+      "summary": "GPT‑6 Astra GPT-6 Astra is \"rolling out today to a limited set of organizations and over the coming days will become available to all ChatGPT Plus, Pro, Business, and Enterprise users, as well as through the OpenAI API and AWS\" - I've not tried it yet myself, so I don't have a great deal to say about it yet. It's going",
+      "published_at": "2026-09-03T20:18:41+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_category": "ai_tools",
+      "content_type": "blog",
+      "score": 1.0,
       "rank_score": 3.02,
       "matched_interests": [
-        "software_building"
+        "ai_tools"
       ],
       "matched_labels": [
-        "ソフトウェア制作"
+        "AI・AIツール"
       ]
     },
     {
-      "id": "8e50b104a8cc9234",
-      "title": "Obsidian 1.14.0 Desktop (Early access)",
-      "url": "https://obsidian.md/changelog/2026-09-02-desktop-v1.14.0/",
-      "summary": "New Editor Added color highlights. Add a color emoji (🔴, 🟠, 🟢, 🔵, 🟣) to the start of a highlight to change its color, or pick a color from the new formatting submenu. Typing == in the editor now suggests highlight colors. Live Preview: When the cursor overlaps a highlight, an inline swatch now appears. Click it to quic",
-      "published_at": "2026-09-02T00:00:00+00:00",
+      "id": "0b707ac1f19ed2e4",
+      "title": "Obsidian 1.13.7 Mobile (Public)",
+      "url": "https://obsidian.md/changelog/2026-08-12-mobile-v1.13.7/",
+      "summary": "Includes all new features and bug fixes up to Obsidian Desktop v1.13.7 .",
+      "published_at": "2026-08-12T00:00:00+00:00",
       "source": "Obsidian Changelog",
       "source_id": "obsidian_changelog",
       "source_category": "knowledge_tools",
       "content_type": "release",
-      "score": 1.0,
-      "rank_score": 3.01,
+      "score": 1.5,
+      "rank_score": 3.02,
       "matched_interests": [
         "knowledge_tools"
       ],
@@ -1701,98 +1568,22 @@
       ]
     },
     {
-      "id": "b0aaf3f39c1308b1",
-      "title": "Path to Astra: critical capabilities and frontier safeguards",
-      "url": "https://openai.com/index/path-to-astra",
-      "summary": "Astra is the first OpenAI model to meet the Critical cybersecurity capability threshold under the Preparedness Framework, with stronger safeguards for release.",
-      "published_at": "2026-09-01T13:00:00+00:00",
-      "source": "OpenAI News",
-      "source_id": "openai_news",
-      "source_category": "ai_tools",
-      "content_type": "news",
-      "score": 1.0,
-      "rank_score": 3.01,
+      "id": "3b8b2d51cdde602b",
+      "title": "Obsidian 1.13.7 Desktop (Public)",
+      "url": "https://obsidian.md/changelog/2026-08-12-desktop-v1.13.7/",
+      "summary": "No longer broken macOS: Fixed files with special characters in their names sometimes not appearing in the vault. Editor: Fixed inline math in a list item or callout not rendering correctly. Live Preview: Fixed images in pop-out windows not resizing or opening fullscreen while the main window is minimized. Settings: Fix",
+      "published_at": "2026-08-12T00:00:00+00:00",
+      "source": "Obsidian Changelog",
+      "source_id": "obsidian_changelog",
+      "source_category": "knowledge_tools",
+      "content_type": "release",
+      "score": 1.5,
+      "rank_score": 3.02,
       "matched_interests": [
-        "ai_tools"
+        "knowledge_tools"
       ],
       "matched_labels": [
-        "AI・AIツール"
-      ]
-    },
-    {
-      "id": "9e922f7641d5bfee",
-      "title": "Healthcare organizations can now connect EHR and additional industry data to ChatGPT",
-      "url": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources",
-      "summary": "ChatGPT can now connect to trusted healthcare data, helping clinicians securely access patient context, medical research, and more.",
-      "published_at": "2026-09-01T12:00:00+00:00",
-      "source": "OpenAI News",
-      "source_id": "openai_news",
-      "source_category": "ai_tools",
-      "content_type": "news",
-      "score": 1.0,
-      "rank_score": 3.01,
-      "matched_interests": [
-        "ai_tools"
-      ],
-      "matched_labels": [
-        "AI・AIツール"
-      ]
-    },
-    {
-      "id": "e38e55b793ac5187",
-      "title": "Proof of Capture: Apple Reference Image, but open source and using steganography",
-      "url": "https://merybenavente.me/blog/proof-of-capture",
-      "summary": "Article URL: https://merybenavente.me/blog/proof-of-capture Comments URL: https://news.ycombinator.com/item?id=49649222 Points: 29 # Comments: 28",
-      "published_at": "2026-09-10T19:44:15+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_category": "discovery",
-      "content_type": "news",
-      "score": 0.9,
-      "rank_score": 3.0,
-      "matched_interests": [
-        "software_building"
-      ],
-      "matched_labels": [
-        "ソフトウェア制作"
-      ]
-    },
-    {
-      "id": "6f85dcbde774b631",
-      "title": "Custom AMOLED Wearable Makes Great Icebreaker",
-      "url": "https://hackaday.com/2026/09/10/custom-amoled-wearable-makes-great-icebreaker/",
-      "summary": "Nifty little AMOLED screens are easy to get nowadays, and [Sophie D] demonstrates they are both thin and light enough to be worn with OpenChoker, a design for a choker …read more",
-      "published_at": "2026-09-10T15:30:16+00:00",
-      "source": "Hackaday",
-      "source_id": "hackaday",
-      "source_category": "making",
-      "content_type": "article",
-      "score": 0.85,
-      "rank_score": 2.97,
-      "matched_interests": [
-        "personal_devices"
-      ],
-      "matched_labels": [
-        "小型デバイス・iOS"
-      ]
-    },
-    {
-      "id": "8b88d8b8dec9112b",
-      "title": "Origami Sensors That You Can Wear",
-      "url": "https://hackaday.com/2026/09/09/origami-sensors-that-you-can-wear/",
-      "summary": "Origami is a wonderful art form, but as a new project from the Shibaura Institute of Technology demonstrates, it can also have applications in the world of wearable tech. The …read more",
-      "published_at": "2026-09-10T05:00:16+00:00",
-      "source": "Hackaday",
-      "source_id": "hackaday",
-      "source_category": "making",
-      "content_type": "article",
-      "score": 0.85,
-      "rank_score": 2.97,
-      "matched_interests": [
-        "personal_devices"
-      ],
-      "matched_labels": [
-        "小型デバイス・iOS"
+        "ナレッジ・ノート"
       ]
     },
     {
@@ -1805,8 +1596,8 @@
       "source_id": "obsidian_changelog",
       "source_category": "knowledge_tools",
       "content_type": "release",
-      "score": 1.85,
-      "rank_score": 2.96,
+      "score": 1.93,
+      "rank_score": 3.02,
       "matched_interests": [
         "knowledge_tools",
         "personal_devices"
@@ -1817,22 +1608,60 @@
       ]
     },
     {
-      "id": "491a641605939c76",
-      "title": "1Password increases engineering productivity 21% with Codex",
-      "url": "https://openai.com/index/1password",
-      "summary": "Engineers at 1Password use Codex to rapidly build new features and internal tools, reaching production-readiness while maintaining rigorous security policies.",
-      "published_at": "2026-09-08T00:00:00+00:00",
-      "source": "OpenAI News",
-      "source_id": "openai_news",
-      "source_category": "ai_tools",
-      "content_type": "news",
-      "score": 0.8,
-      "rank_score": 2.94,
+      "id": "5171aba69e7a79f1",
+      "title": "Obsidian 1.13.7 Mobile (Early access)",
+      "url": "https://obsidian.md/changelog/2026-08-11-mobile-v1.13.7/",
+      "summary": "Includes all new features and bug fixes up to Obsidian Desktop v1.13.7.",
+      "published_at": "2026-08-11T00:00:00+00:00",
+      "source": "Obsidian Changelog",
+      "source_id": "obsidian_changelog",
+      "source_category": "knowledge_tools",
+      "content_type": "release",
+      "score": 1.5,
+      "rank_score": 3.0,
       "matched_interests": [
-        "productivity"
+        "knowledge_tools"
       ],
       "matched_labels": [
-        "タスク・仕事設計"
+        "ナレッジ・ノート"
+      ]
+    },
+    {
+      "id": "be2f0c7363c8c37b",
+      "title": "Obsidian 1.13.7 Desktop (Early access)",
+      "url": "https://obsidian.md/changelog/2026-08-11-desktop-v1.13.7/",
+      "summary": "No longer broken macOS: Fixed files with special characters in their names sometimes not appearing in the vault. Editor: Fixed inline math in a list item or callout not rendering correctly. Live Preview: Fixed images in pop-out windows not resizing or opening fullscreen while the main window is minimized. Settings: Fix",
+      "published_at": "2026-08-11T00:00:00+00:00",
+      "source": "Obsidian Changelog",
+      "source_id": "obsidian_changelog",
+      "source_category": "knowledge_tools",
+      "content_type": "release",
+      "score": 1.5,
+      "rank_score": 3.0,
+      "matched_interests": [
+        "knowledge_tools"
+      ],
+      "matched_labels": [
+        "ナレッジ・ノート"
+      ]
+    },
+    {
+      "id": "51a72604c877b018",
+      "title": "Quoting Rick Brewster",
+      "url": "https://simonwillison.net/2026/Sep/2/rick-brewster/",
+      "summary": "Direct2D has always been the biggest hurdle for Paint.NET on WINE, and it's clear that it will never be completed enough for Paint.NET's use. And I can't just \"disable\" the use of Direct2D. So, instead, Paint.NET now has an internal, from-scratch, clean-room reverse-engineered rewrite of Direct2D that it uses on WINE (",
+      "published_at": "2026-09-02T05:50:57+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_category": "ai_tools",
+      "content_type": "blog",
+      "score": 1.0,
+      "rank_score": 2.99,
+      "matched_interests": [
+        "ai_tools"
+      ],
+      "matched_labels": [
+        "AI・AIツール"
       ]
     },
     {
@@ -1855,86 +1684,10 @@
       ]
     },
     {
-      "id": "5752ed149a14bd7a",
-      "title": "Project HydraFusion: Frontier quality via multi-model orchestration",
-      "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
-      "summary": "In controlled offline evaluations, HydraFusion’s selective coding workflows matched or exceeded the evaluated Opus 5 baseline while reducing estimated workflow cost. Now available as a research preview in GitHub Copilot. The post Project HydraFusion: Frontier quality via multi-model orchestration appeared first on The ",
-      "published_at": "2026-09-04T16:04:14+00:00",
-      "source": "GitHub Blog",
-      "source_id": "github_blog",
-      "source_category": "software_building",
-      "content_type": "article",
-      "score": 0.9,
-      "rank_score": 2.92,
-      "matched_interests": [
-        "software_building"
-      ],
-      "matched_labels": [
-        "ソフトウェア制作"
-      ]
-    },
-    {
-      "id": "e88dcca9e9938a8b",
-      "title": "Our decision on Cursor following its acquisition by SpaceX",
-      "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
-      "summary": "Our decision to wind down our contract providing OpenAI models to Cursor following its acquisition by SpaceX.",
-      "published_at": "2026-08-28T06:00:00+00:00",
-      "source": "OpenAI News",
-      "source_id": "openai_news",
-      "source_category": "ai_tools",
-      "content_type": "news",
-      "score": 1.0,
-      "rank_score": 2.92,
-      "matched_interests": [
-        "ai_tools"
-      ],
-      "matched_labels": [
-        "AI・AIツール"
-      ]
-    },
-    {
-      "id": "7f8053487964d7a8",
-      "title": "GitHub Copilot app for Beginners: Run several agents at once",
-      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once/",
-      "summary": "Learn how to run parallel agents in the GitHub Copilot app, and experience the moment it stops feeling scary and starts feeling powerful. The post GitHub Copilot app for Beginners: Run several agents at once appeared first on The GitHub Blog .",
-      "published_at": "2026-09-03T16:00:00+00:00",
-      "source": "GitHub Blog",
-      "source_id": "github_blog",
-      "source_category": "software_building",
-      "content_type": "article",
-      "score": 0.9,
-      "rank_score": 2.9,
-      "matched_interests": [
-        "software_building"
-      ],
-      "matched_labels": [
-        "ソフトウェア制作"
-      ]
-    },
-    {
-      "id": "b13065c0db77ddbd",
-      "title": "Better answers, broader thinking: What students gain from ChatGPT and critical-thinking training",
-      "url": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training",
-      "summary": "A randomized study of more than 1,000 students examines ChatGPT, critical thinking, originality, and student performance on a real-world university assignment.",
-      "published_at": "2026-08-27T09:00:00+00:00",
-      "source": "OpenAI News",
-      "source_id": "openai_news",
-      "source_category": "ai_tools",
-      "content_type": "news",
-      "score": 1.0,
-      "rank_score": 2.9,
-      "matched_interests": [
-        "ai_tools"
-      ],
-      "matched_labels": [
-        "AI・AIツール"
-      ]
-    },
-    {
-      "id": "ed68dc35dc7b4d45",
-      "title": "How loveholidays is making everyone a builder with Codex",
-      "url": "https://openai.com/index/loveholidays",
-      "summary": "Discover how loveholidays uses OpenAI Codex to make software development accessible across the business, helping teams turn ideas into products faster.",
+      "id": "cc48de1bc44be53a",
+      "title": "The Hugging Face incident and the road ahead",
+      "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead",
+      "summary": "OpenAI shares findings from the Hugging Face security incident and the steps we’re taking to strengthen AI model security, monitoring, and alignment.",
       "published_at": "2026-08-26T00:00:00+00:00",
       "source": "OpenAI News",
       "source_id": "openai_news",
@@ -1950,55 +1703,17 @@
       ]
     },
     {
-      "id": "a1e5f3d918ec2b1d",
-      "title": "OpenClaw went viral. Meet the maintainers building and securing it.",
-      "url": "https://github.blog/open-source/maintainers/openclaw-went-viral-meet-the-maintainers-building-and-securing-it/",
-      "summary": "OpenClaw is the fastest-growing project in GitHub history. Peter Steinberger and several maintainers share what they learned in the project's first six months. The post OpenClaw went viral. Meet the maintainers building and securing it. appeared first on The GitHub Blog .",
-      "published_at": "2026-08-27T16:00:00+00:00",
-      "source": "GitHub Blog",
-      "source_id": "github_blog",
-      "source_category": "software_building",
-      "content_type": "article",
-      "score": 0.9,
-      "rank_score": 2.76,
-      "matched_interests": [
-        "software_building"
-      ],
-      "matched_labels": [
-        "ソフトウェア制作"
-      ]
-    },
-    {
-      "id": "4b3cf0748f791c10",
-      "title": "GitHub Copilot app for Beginners: Automate Dependabot pull request triage",
-      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-automate-dependabot-pull-request-triage/",
-      "summary": "Managing library updates can be tedious at times. Learn how the GitHub Copilot app can handle this type of repetitive task. The post GitHub Copilot app for Beginners: Automate Dependabot pull request triage appeared first on The GitHub Blog .",
-      "published_at": "2026-08-26T20:12:53+00:00",
-      "source": "GitHub Blog",
-      "source_id": "github_blog",
-      "source_category": "software_building",
-      "content_type": "article",
-      "score": 0.9,
-      "rank_score": 2.75,
-      "matched_interests": [
-        "software_building"
-      ],
-      "matched_labels": [
-        "ソフトウェア制作"
-      ]
-    },
-    {
-      "id": "7fedfe91792bf89c",
-      "title": "Obsidian 1.13.8 Mobile (Public)",
-      "url": "https://obsidian.md/changelog/2026-08-20-mobile-v1.13.8/",
-      "summary": "Android: Fixed bug causing editor to accidentally switch from reading mode to edit mode while scrolling.",
-      "published_at": "2026-08-20T00:00:00+00:00",
+      "id": "b54502780ea5bf18",
+      "title": "Obsidian 1.13.5 Mobile (Early access)",
+      "url": "https://obsidian.md/changelog/2026-08-05-mobile-v1.13.5/",
+      "summary": "Includes all new features and bug fixes up to Obsidian Desktop v1.13.5. New Added swipe-to-close to close tabs in the tab switcher. Improvements Tabs now animate to their new position after closing a tab from the tab switcher. The mobile toolbar settings page now shows icons next to each command. Checkboxes now scale p",
+      "published_at": "2026-08-05T00:00:00+00:00",
       "source": "Obsidian Changelog",
       "source_id": "obsidian_changelog",
       "source_category": "knowledge_tools",
       "content_type": "release",
-      "score": 1.0,
-      "rank_score": 2.74,
+      "score": 1.5,
+      "rank_score": 2.86,
       "matched_interests": [
         "knowledge_tools"
       ],
@@ -2007,41 +1722,22 @@
       ]
     },
     {
-      "id": "4ad3873561cda606",
-      "title": "How to evaluate LLMs before production",
-      "url": "https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production/",
-      "summary": "These are the lessons we learned evaluating LLMs for real-world secret scanning. The post How to evaluate LLMs before production appeared first on The GitHub Blog .",
-      "published_at": "2026-08-25T21:35:11+00:00",
-      "source": "GitHub Blog",
-      "source_id": "github_blog",
-      "source_category": "software_building",
-      "content_type": "article",
-      "score": 0.9,
-      "rank_score": 2.73,
+      "id": "85b4bb802b272e8f",
+      "title": "Obsidian 1.13.5 Desktop (Early access)",
+      "url": "https://obsidian.md/changelog/2026-08-05-desktop-v1.13.5/",
+      "summary": "Improvements The app now waits for configuration files to finish saving when quitting to avoid the file getting corrupted. Improved \"Undo close tab\" behavior. Tabs now reopen in the correct tab group, and if the currently active tab is the \"New tab\" page, it will no longer be reused. Settings The settings window now cl",
+      "published_at": "2026-08-05T00:00:00+00:00",
+      "source": "Obsidian Changelog",
+      "source_id": "obsidian_changelog",
+      "source_category": "knowledge_tools",
+      "content_type": "release",
+      "score": 1.5,
+      "rank_score": 2.86,
       "matched_interests": [
-        "software_building"
+        "knowledge_tools"
       ],
       "matched_labels": [
-        "ソフトウェア制作"
-      ]
-    },
-    {
-      "id": "0beaa632211ea878",
-      "title": "Your alt text passes automated checks. That doesn’t mean it’s any good.",
-      "url": "https://github.blog/engineering/user-experience/your-alt-text-passes-automated-checks-that-doesnt-mean-its-any-good/",
-      "summary": "We built a plugin for the GitHub Accessibility Scanner to make sure your alt text is actually accessible. Here's how it works. The post Your alt text passes automated checks. That doesn’t mean it’s any good. appeared first on The GitHub Blog .",
-      "published_at": "2026-08-24T20:56:32+00:00",
-      "source": "GitHub Blog",
-      "source_id": "github_blog",
-      "source_category": "software_building",
-      "content_type": "article",
-      "score": 0.9,
-      "rank_score": 2.71,
-      "matched_interests": [
-        "software_building"
-      ],
-      "matched_labels": [
-        "ソフトウェア制作"
+        "ナレッジ・ノート"
       ]
     },
     {
@@ -2054,8 +1750,8 @@
       "source_id": "obsidian_changelog",
       "source_category": "knowledge_tools",
       "content_type": "release",
-      "score": 1.85,
-      "rank_score": 2.65,
+      "score": 1.93,
+      "rank_score": 2.71,
       "matched_interests": [
         "knowledge_tools",
         "personal_devices"
@@ -2075,8 +1771,8 @@
       "source_id": "obsidian_blog",
       "source_category": "knowledge_tools",
       "content_type": "blog",
-      "score": 1.9,
-      "rank_score": 2.65,
+      "score": 1.95,
+      "rank_score": 2.69,
       "matched_interests": [
         "knowledge_tools",
         "software_building"
@@ -2087,17 +1783,416 @@
       ]
     },
     {
-      "id": "0b707ac1f19ed2e4",
-      "title": "Obsidian 1.13.7 Mobile (Public)",
-      "url": "https://obsidian.md/changelog/2026-08-12-mobile-v1.13.7/",
-      "summary": "Includes all new features and bug fixes up to Obsidian Desktop v1.13.7 .",
-      "published_at": "2026-08-12T00:00:00+00:00",
+      "id": "c5bec85fedf93c06",
+      "title": "GPT-6 Astra: The next generation in intelligence for work",
+      "url": "https://openai.com/index/gpt-6-astra-next-generation-work",
+      "summary": "Meet GPT-6 Astra, OpenAI’s most capable model for business, with advanced reasoning, computer use, and stronger writing and design judgment.",
+      "published_at": "2026-09-09T11:00:00+00:00",
+      "source": "OpenAI News",
+      "source_id": "openai_news",
+      "source_category": "ai_tools",
+      "content_type": "news",
+      "score": 0.5,
+      "rank_score": 2.67,
+      "matched_interests": [
+        "ai_tools"
+      ],
+      "matched_labels": [
+        "AI・AIツール"
+      ]
+    },
+    {
+      "id": "104e93494a1238b8",
+      "title": "The Work Now Within Reach",
+      "url": "https://openai.com/index/the-work-now-within-reach",
+      "summary": "Explore how more capable, affordable AI can expand the work people and businesses can accomplish—and make growth more economical.",
+      "published_at": "2026-09-08T13:00:00+00:00",
+      "source": "OpenAI News",
+      "source_id": "openai_news",
+      "source_category": "ai_tools",
+      "content_type": "news",
+      "score": 0.5,
+      "rank_score": 2.65,
+      "matched_interests": [
+        "ai_tools"
+      ],
+      "matched_labels": [
+        "AI・AIツール"
+      ]
+    },
+    {
+      "id": "ad320ee7054087d7",
+      "title": "On the Navier–Stokes Millennium Prize Problem",
+      "url": "https://openai.com/index/navier-stokes-solution",
+      "summary": "We’re sharing an AI-generated solution to the Navier–Stokes Millennium Prize Problem, including a writeup and a formal proof in Lean.",
+      "published_at": "2026-09-08T10:00:00+00:00",
+      "source": "OpenAI News",
+      "source_id": "openai_news",
+      "source_category": "ai_tools",
+      "content_type": "news",
+      "score": 0.5,
+      "rank_score": 2.65,
+      "matched_interests": [
+        "ai_tools"
+      ],
+      "matched_labels": [
+        "AI・AIツール"
+      ]
+    },
+    {
+      "id": "b16619c31ce49170",
+      "title": "Refreshed repository pull requests page in public preview",
+      "url": "https://github.blog/changelog/2026-09-10-refreshed-repository-pull-requests-page-in-public-preview",
+      "summary": "A refreshed repository-level pull request listing page is now in public preview for all GitHub users. It brings powerful filtering, compact presentation mode, and more. Highlights The new page makes… The post Refreshed repository pull requests page in public preview appeared first on The GitHub Blog .",
+      "published_at": "2026-09-10T21:27:17+00:00",
+      "source": "GitHub Changelog",
+      "source_id": "github_changelog",
+      "source_category": "software_building",
+      "content_type": "release",
+      "score": 0.45,
+      "rank_score": 2.63,
+      "matched_interests": [
+        "software_building"
+      ],
+      "matched_labels": [
+        "ソフトウェア制作"
+      ]
+    },
+    {
+      "id": "4278bca33ee9019f",
+      "title": "MAI-Code-1-Flash deprecated",
+      "url": "https://github.blog/changelog/2026-09-10-mai-code-1-flash-deprecated",
+      "summary": "We have deprecated MAI-Code-1-Flash across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions) today, September 10, 2026. Model Deprecation date Suggested alternative… The post MAI-Code-1-Flash deprecated appeared first on The GitHub Blog .",
+      "published_at": "2026-09-10T16:54:01+00:00",
+      "source": "GitHub Changelog",
+      "source_id": "github_changelog",
+      "source_category": "software_building",
+      "content_type": "release",
+      "score": 0.45,
+      "rank_score": 2.63,
+      "matched_interests": [
+        "software_building"
+      ],
+      "matched_labels": [
+        "ソフトウェア制作"
+      ]
+    },
+    {
+      "id": "dc7b9892a8ebdbc8",
+      "title": "Xcode 27 runner image now runs on macOS 27",
+      "url": "https://github.blog/changelog/2026-09-10-xcode-27-runner-image-now-runs-on-macos-27",
+      "summary": "You can now validate your Apple apps against macOS 27 using the Xcode 27 runner image for GitHub-hosted macOS runners, available in public preview. The image previously ran on macOS… The post Xcode 27 runner image now runs on macOS 27 appeared first on The GitHub Blog .",
+      "published_at": "2026-09-10T15:15:36+00:00",
+      "source": "GitHub Changelog",
+      "source_id": "github_changelog",
+      "source_category": "software_building",
+      "content_type": "release",
+      "score": 0.45,
+      "rank_score": 2.63,
+      "matched_interests": [
+        "software_building"
+      ],
+      "matched_labels": [
+        "ソフトウェア制作"
+      ]
+    },
+    {
+      "id": "5f48b006c40fe10b",
+      "title": "Quoting Terence Tao",
+      "url": "https://simonwillison.net/2026/Sep/9/terence-tao/",
+      "summary": "I wrote recently about how the collection of good, fruitful open problems is now being mined in a non-renewable fashion, leading to the potential scenario of these problems becoming scarce. [...] We have now seen that even the rumor of someone working on a problem can trigger a massive amount of AI-powered effort to fl",
+      "published_at": "2026-09-09T00:20:17+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_category": "ai_tools",
+      "content_type": "blog",
+      "score": 0.5,
+      "rank_score": 2.63,
+      "matched_interests": [
+        "ai_tools"
+      ],
+      "matched_labels": [
+        "AI・AIツール"
+      ]
+    },
+    {
+      "id": "baa2554f538a0268",
+      "title": "Any Nix package, live in your browser",
+      "url": "https://simonwillison.net/2026/Sep/10/trynix/",
+      "summary": "Any Nix package, live in your browser Farid Zakaria calls this his \" magnum opus of Nix work\", and I can see why. trynix.dev provides a qemu-wasm powered x86_64 Linux virtual machine running entirely in your browser through WebAssembly. That VM can then be booted with any Nix package from the past 13 years. They are UR",
+      "published_at": "2026-09-10T23:44:15+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_category": "ai_tools",
+      "content_type": "blog",
+      "score": 0.45,
+      "rank_score": 2.62,
+      "matched_interests": [
+        "software_building"
+      ],
+      "matched_labels": [
+        "ソフトウェア制作"
+      ]
+    },
+    {
+      "id": "cfe9a7da79915f40",
+      "title": "npm extends recovery-code security holds to all accounts",
+      "url": "https://github.blog/changelog/2026-09-09-npm-extends-recovery-code-security-holds-to-all-accounts",
+      "summary": "npm now places a temporary 72-hour security hold on any account after a successful recovery-code sign-in, extending a protection that previously applied only to high-impact accounts. This change applies to… The post npm extends recovery-code security holds to all accounts appeared first on The GitHub Blog .",
+      "published_at": "2026-09-09T21:55:55+00:00",
+      "source": "GitHub Changelog",
+      "source_id": "github_changelog",
+      "source_category": "software_building",
+      "content_type": "release",
+      "score": 0.45,
+      "rank_score": 2.62,
+      "matched_interests": [
+        "software_building"
+      ],
+      "matched_labels": [
+        "ソフトウェア制作"
+      ]
+    },
+    {
+      "id": "1cc410c23a5f0bd9",
+      "title": "CodeQL 2.27.0 adds support for Linux ARM64",
+      "url": "https://github.blog/changelog/2026-09-09-codeql-2-27-0-adds-support-for-linux-arm64",
+      "summary": "CodeQL 2.27.0 is now available on Linux ARM64, adds a new Rust security query, expanded framework coverage for Java/Kotlin and C#, and analysis accuracy improvements across multiple languages. CodeQL is… The post CodeQL 2.27.0 adds support for Linux ARM64 appeared first on The GitHub Blog .",
+      "published_at": "2026-09-09T21:45:06+00:00",
+      "source": "GitHub Changelog",
+      "source_id": "github_changelog",
+      "source_category": "software_building",
+      "content_type": "release",
+      "score": 0.45,
+      "rank_score": 2.62,
+      "matched_interests": [
+        "software_building"
+      ],
+      "matched_labels": [
+        "ソフトウェア制作"
+      ]
+    },
+    {
+      "id": "08d5fe54ffa077dd",
+      "title": "Block pull requests with exposed secrets from merging",
+      "url": "https://github.blog/changelog/2026-09-09-block-pull-requests-with-exposed-secrets-from-merging",
+      "summary": "Repository rulesets allow you to easily add scalable protections across your repositories. Starting today, you can use repository rulesets to block pull requests from merging when the pull request introduces… The post Block pull requests with exposed secrets from merging appeared first on The GitHub Blog .",
+      "published_at": "2026-09-09T17:14:02+00:00",
+      "source": "GitHub Changelog",
+      "source_id": "github_changelog",
+      "source_category": "software_building",
+      "content_type": "release",
+      "score": 0.45,
+      "rank_score": 2.61,
+      "matched_interests": [
+        "software_building"
+      ],
+      "matched_labels": [
+        "ソフトウェア制作"
+      ]
+    },
+    {
+      "id": "64946386af562d7f",
+      "title": "Creepy crawlies",
+      "url": "https://simonwillison.net/2026/Sep/7/creepy-crawlies/",
+      "summary": "Creepy crawlies Konstantin Ryabitsev discusses how bad the \"background radiation\" of abusive crawlers has become from the perspective of git.kernel.org , the official Git repository for the Linux kernel: TL;DR: we spend more CPU cycles rendering commits for scrapers than we spend on all other kinds of legitimate access",
+      "published_at": "2026-09-07T23:08:58+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_category": "ai_tools",
+      "content_type": "blog",
+      "score": 0.5,
+      "rank_score": 2.61,
+      "matched_interests": [
+        "ai_tools"
+      ],
+      "matched_labels": [
+        "AI・AIツール"
+      ]
+    },
+    {
+      "id": "e091c33ca8fef401",
+      "title": "Video compressor",
+      "url": "https://simonwillison.net/2026/Sep/7/video-compressor/",
+      "summary": "Tool: Video compressor I recorded a short demo video of my Equal Earth animation on my phone and wanted to publish an optimized version of that video (using FFMPEG) on my blog, so I had Claude Fable 5.1 in Claude Code for web build me this tool using the WebAssembly build of FFMPEG. Tags: ffmpeg , video , webassembly ,",
+      "published_at": "2026-09-07T18:29:07+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_category": "ai_tools",
+      "content_type": "blog",
+      "score": 0.5,
+      "rank_score": 2.61,
+      "matched_interests": [
+        "ai_tools"
+      ],
+      "matched_labels": [
+        "AI・AIツール"
+      ]
+    },
+    {
+      "id": "d866438263d8a47d",
+      "title": "Mercator ↔ Equal Earth",
+      "url": "https://simonwillison.net/2026/Sep/7/equal-earth/",
+      "summary": "Tool: Mercator ↔ Equal Earth I got curious about the Equal Earth map projection that was recently voted on at the UN so I had GPT-6 Astra (medium) in ChatGPT Work build me this animated transition between Mercator and Equal Earth using D3. Tags: geospatial , d3 , vibe-coding , gpt-6-astra",
+      "published_at": "2026-09-07T16:24:16+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_category": "ai_tools",
+      "content_type": "blog",
+      "score": 0.5,
+      "rank_score": 2.61,
+      "matched_interests": [
+        "ai_tools"
+      ],
+      "matched_labels": [
+        "AI・AIツール"
+      ]
+    },
+    {
+      "id": "d6088d0604066b74",
+      "title": "An Alien Mind",
+      "url": "https://openai.com/index/an-alien-mind",
+      "summary": "Jakub Pachocki reflects on increasingly capable AI and the challenge of keeping it aligned. He calls for stronger safeguards and international coordination.",
+      "published_at": "2026-09-06T09:00:00+00:00",
+      "source": "OpenAI News",
+      "source_id": "openai_news",
+      "source_category": "ai_tools",
+      "content_type": "news",
+      "score": 0.5,
+      "rank_score": 2.61,
+      "matched_interests": [
+        "ai_tools"
+      ],
+      "matched_labels": [
+        "AI・AIツール"
+      ]
+    },
+    {
+      "id": "4dc3a16e12312643",
+      "title": "Herdr Studio",
+      "url": "https://powerfooi.github.io/herdr-studio/",
+      "summary": "Article URL: https://powerfooI.github.io/herdr-studio/ Comments URL: https://news.ycombinator.com/item?id=49652188 Points: 12 # Comments: 4",
+      "published_at": "2026-09-11T00:54:36+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_category": "discovery",
+      "content_type": "news",
+      "score": 0.45,
+      "rank_score": 2.55,
+      "matched_interests": [
+        "software_building"
+      ],
+      "matched_labels": [
+        "ソフトウェア制作"
+      ]
+    },
+    {
+      "id": "b3ed6e9e3367b764",
+      "title": "YuE2 · Frontier Music with Symbolic Planning",
+      "url": "https://map-yue2.github.io/",
+      "summary": "Article URL: https://map-yue2.github.io/ Comments URL: https://news.ycombinator.com/item?id=49652028 Points: 63 # Comments: 51",
+      "published_at": "2026-09-11T00:33:26+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_category": "discovery",
+      "content_type": "news",
+      "score": 0.45,
+      "rank_score": 2.55,
+      "matched_interests": [
+        "software_building"
+      ],
+      "matched_labels": [
+        "ソフトウェア制作"
+      ]
+    },
+    {
+      "id": "b0aaf3f39c1308b1",
+      "title": "Path to Astra: critical capabilities and frontier safeguards",
+      "url": "https://openai.com/index/path-to-astra",
+      "summary": "Astra is the first OpenAI model to meet the Critical cybersecurity capability threshold under the Preparedness Framework, with stronger safeguards for release.",
+      "published_at": "2026-09-01T13:00:00+00:00",
+      "source": "OpenAI News",
+      "source_id": "openai_news",
+      "source_category": "ai_tools",
+      "content_type": "news",
+      "score": 0.5,
+      "rank_score": 2.52,
+      "matched_interests": [
+        "ai_tools"
+      ],
+      "matched_labels": [
+        "AI・AIツール"
+      ]
+    },
+    {
+      "id": "5752ed149a14bd7a",
+      "title": "Project HydraFusion: Frontier quality via multi-model orchestration",
+      "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
+      "summary": "In controlled offline evaluations, HydraFusion’s selective coding workflows matched or exceeded the evaluated Opus 5 baseline while reducing estimated workflow cost. Now available as a research preview in GitHub Copilot. The post Project HydraFusion: Frontier quality via multi-model orchestration appeared first on The ",
+      "published_at": "2026-09-04T16:04:14+00:00",
+      "source": "GitHub Blog",
+      "source_id": "github_blog",
+      "source_category": "software_building",
+      "content_type": "article",
+      "score": 0.45,
+      "rank_score": 2.48,
+      "matched_interests": [
+        "software_building"
+      ],
+      "matched_labels": [
+        "ソフトウェア制作"
+      ]
+    },
+    {
+      "id": "e88dcca9e9938a8b",
+      "title": "Our decision on Cursor following its acquisition by SpaceX",
+      "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
+      "summary": "Our decision to wind down our contract providing OpenAI models to Cursor following its acquisition by SpaceX.",
+      "published_at": "2026-08-28T06:00:00+00:00",
+      "source": "OpenAI News",
+      "source_id": "openai_news",
+      "source_category": "ai_tools",
+      "content_type": "news",
+      "score": 0.5,
+      "rank_score": 2.44,
+      "matched_interests": [
+        "ai_tools"
+      ],
+      "matched_labels": [
+        "AI・AIツール"
+      ]
+    },
+    {
+      "id": "ed68dc35dc7b4d45",
+      "title": "How loveholidays is making everyone a builder with Codex",
+      "url": "https://openai.com/index/loveholidays",
+      "summary": "Discover how loveholidays uses OpenAI Codex to make software development accessible across the business, helping teams turn ideas into products faster.",
+      "published_at": "2026-08-26T00:00:00+00:00",
+      "source": "OpenAI News",
+      "source_id": "openai_news",
+      "source_category": "ai_tools",
+      "content_type": "news",
+      "score": 0.5,
+      "rank_score": 2.4,
+      "matched_interests": [
+        "ai_tools"
+      ],
+      "matched_labels": [
+        "AI・AIツール"
+      ]
+    },
+    {
+      "id": "4fb225fee377eb7e",
+      "title": "Obsidian 1.13.2 Desktop (Early access)",
+      "url": "https://obsidian.md/changelog/2026-07-14-desktop-v1.13.2/",
+      "summary": "New New image lightbox for viewing images fullscreen. Click the image in reading mode to open it. Or in live preview, with an image selected, click or press Space to open it in the lightbox. Use arrow keys to navigate between all the images embedded in the current file. Live Preview: Added keyboard interactions when an",
+      "published_at": "2026-07-14T00:00:00+00:00",
       "source": "Obsidian Changelog",
       "source_id": "obsidian_changelog",
       "source_category": "knowledge_tools",
       "content_type": "release",
-      "score": 1.0,
-      "rank_score": 2.58,
+      "score": 1.5,
+      "rank_score": 2.37,
       "matched_interests": [
         "knowledge_tools"
       ],
@@ -2106,17 +2201,17 @@
       ]
     },
     {
-      "id": "3b8b2d51cdde602b",
-      "title": "Obsidian 1.13.7 Desktop (Public)",
-      "url": "https://obsidian.md/changelog/2026-08-12-desktop-v1.13.7/",
-      "summary": "No longer broken macOS: Fixed files with special characters in their names sometimes not appearing in the vault. Editor: Fixed inline math in a list item or callout not rendering correctly. Live Preview: Fixed images in pop-out windows not resizing or opening fullscreen while the main window is minimized. Settings: Fix",
-      "published_at": "2026-08-12T00:00:00+00:00",
-      "source": "Obsidian Changelog",
-      "source_id": "obsidian_changelog",
+      "id": "e17a3c7ff9bb6752",
+      "title": "Obsidian Sync audits by Cure53 and Trail of Bits",
+      "url": "https://obsidian.md/blog/cure53-tob-sync-audits/",
+      "summary": "Obsidian regularly performs security audits with independent research firms to ensure that our code and procedures meet the highest security standards. Previously we shared audits assessing Obsidian's desktop and mobile apps in January 2024 and December 2024 . Two new audits are now available on our Security page asses",
+      "published_at": "2026-05-13T00:00:00+00:00",
+      "source": "Obsidian Blog",
+      "source_id": "obsidian_blog",
       "source_category": "knowledge_tools",
-      "content_type": "release",
-      "score": 1.0,
-      "rank_score": 2.58,
+      "content_type": "blog",
+      "score": 1.5,
+      "rank_score": 2.35,
       "matched_interests": [
         "knowledge_tools"
       ],
@@ -2125,41 +2220,60 @@
       ]
     },
     {
-      "id": "5171aba69e7a79f1",
-      "title": "Obsidian 1.13.7 Mobile (Early access)",
-      "url": "https://obsidian.md/changelog/2026-08-11-mobile-v1.13.7/",
-      "summary": "Includes all new features and bug fixes up to Obsidian Desktop v1.13.7.",
-      "published_at": "2026-08-11T00:00:00+00:00",
-      "source": "Obsidian Changelog",
-      "source_id": "obsidian_changelog",
-      "source_category": "knowledge_tools",
-      "content_type": "release",
-      "score": 1.0,
-      "rank_score": 2.56,
+      "id": "a1e5f3d918ec2b1d",
+      "title": "OpenClaw went viral. Meet the maintainers building and securing it.",
+      "url": "https://github.blog/open-source/maintainers/openclaw-went-viral-meet-the-maintainers-building-and-securing-it/",
+      "summary": "OpenClaw is the fastest-growing project in GitHub history. Peter Steinberger and several maintainers share what they learned in the project's first six months. The post OpenClaw went viral. Meet the maintainers building and securing it. appeared first on The GitHub Blog .",
+      "published_at": "2026-08-27T16:00:00+00:00",
+      "source": "GitHub Blog",
+      "source_id": "github_blog",
+      "source_category": "software_building",
+      "content_type": "article",
+      "score": 0.45,
+      "rank_score": 2.33,
       "matched_interests": [
-        "knowledge_tools"
+        "software_building"
       ],
       "matched_labels": [
-        "ナレッジ・ノート"
+        "ソフトウェア制作"
       ]
     },
     {
-      "id": "be2f0c7363c8c37b",
-      "title": "Obsidian 1.13.7 Desktop (Early access)",
-      "url": "https://obsidian.md/changelog/2026-08-11-desktop-v1.13.7/",
-      "summary": "No longer broken macOS: Fixed files with special characters in their names sometimes not appearing in the vault. Editor: Fixed inline math in a list item or callout not rendering correctly. Live Preview: Fixed images in pop-out windows not resizing or opening fullscreen while the main window is minimized. Settings: Fix",
-      "published_at": "2026-08-11T00:00:00+00:00",
-      "source": "Obsidian Changelog",
-      "source_id": "obsidian_changelog",
-      "source_category": "knowledge_tools",
-      "content_type": "release",
-      "score": 1.0,
-      "rank_score": 2.56,
+      "id": "4ad3873561cda606",
+      "title": "How to evaluate LLMs before production",
+      "url": "https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production/",
+      "summary": "These are the lessons we learned evaluating LLMs for real-world secret scanning. The post How to evaluate LLMs before production appeared first on The GitHub Blog .",
+      "published_at": "2026-08-25T21:35:11+00:00",
+      "source": "GitHub Blog",
+      "source_id": "github_blog",
+      "source_category": "software_building",
+      "content_type": "article",
+      "score": 0.45,
+      "rank_score": 2.3,
       "matched_interests": [
-        "knowledge_tools"
+        "software_building"
       ],
       "matched_labels": [
-        "ナレッジ・ノート"
+        "ソフトウェア制作"
+      ]
+    },
+    {
+      "id": "0beaa632211ea878",
+      "title": "Your alt text passes automated checks. That doesn’t mean it’s any good.",
+      "url": "https://github.blog/engineering/user-experience/your-alt-text-passes-automated-checks-that-doesnt-mean-its-any-good/",
+      "summary": "We built a plugin for the GitHub Accessibility Scanner to make sure your alt text is actually accessible. Here's how it works. The post Your alt text passes automated checks. That doesn’t mean it’s any good. appeared first on The GitHub Blog .",
+      "published_at": "2026-08-24T20:56:32+00:00",
+      "source": "GitHub Blog",
+      "source_id": "github_blog",
+      "source_category": "software_building",
+      "content_type": "article",
+      "score": 0.45,
+      "rank_score": 2.28,
+      "matched_interests": [
+        "software_building"
+      ],
+      "matched_labels": [
+        "ソフトウェア制作"
       ]
     },
     {
@@ -2172,8 +2286,8 @@
       "source_id": "obsidian_changelog",
       "source_category": "knowledge_tools",
       "content_type": "release",
-      "score": 2.85,
-      "rank_score": 2.47,
+      "score": 2.42,
+      "rank_score": 2.19,
       "matched_interests": [
         "knowledge_tools",
         "personal_devices"
@@ -2181,44 +2295,6 @@
       "matched_labels": [
         "ナレッジ・ノート",
         "小型デバイス・iOS"
-      ]
-    },
-    {
-      "id": "b54502780ea5bf18",
-      "title": "Obsidian 1.13.5 Mobile (Early access)",
-      "url": "https://obsidian.md/changelog/2026-08-05-mobile-v1.13.5/",
-      "summary": "Includes all new features and bug fixes up to Obsidian Desktop v1.13.5. New Added swipe-to-close to close tabs in the tab switcher. Improvements Tabs now animate to their new position after closing a tab from the tab switcher. The mobile toolbar settings page now shows icons next to each command. Checkboxes now scale p",
-      "published_at": "2026-08-05T00:00:00+00:00",
-      "source": "Obsidian Changelog",
-      "source_id": "obsidian_changelog",
-      "source_category": "knowledge_tools",
-      "content_type": "release",
-      "score": 1.0,
-      "rank_score": 2.44,
-      "matched_interests": [
-        "knowledge_tools"
-      ],
-      "matched_labels": [
-        "ナレッジ・ノート"
-      ]
-    },
-    {
-      "id": "85b4bb802b272e8f",
-      "title": "Obsidian 1.13.5 Desktop (Early access)",
-      "url": "https://obsidian.md/changelog/2026-08-05-desktop-v1.13.5/",
-      "summary": "Improvements The app now waits for configuration files to finish saving when quitting to avoid the file getting corrupted. Improved \"Undo close tab\" behavior. Tabs now reopen in the correct tab group, and if the currently active tab is the \"New tab\" page, it will no longer be reused. Settings The settings window now cl",
-      "published_at": "2026-08-05T00:00:00+00:00",
-      "source": "Obsidian Changelog",
-      "source_id": "obsidian_changelog",
-      "source_category": "knowledge_tools",
-      "content_type": "release",
-      "score": 1.0,
-      "rank_score": 2.44,
-      "matched_interests": [
-        "knowledge_tools"
-      ],
-      "matched_labels": [
-        "ナレッジ・ノート"
       ]
     },
     {
@@ -2267,6 +2343,36 @@
       "matched_labels": []
     },
     {
+      "id": "40f9c62aa998cada",
+      "title": "Changing Nozzle Internal Geometry to Increase FDM Flowrate",
+      "url": "https://hackaday.com/2026/09/10/changing-nozzle-internal-geometry-to-increase-fdm-flowrate/",
+      "summary": "As FDM printers keep getting faster, we are forced to deal with a range of bottlenecks, all of which conspire to hold us back from another Benchie world record. A …read more",
+      "published_at": "2026-09-11T02:00:46+00:00",
+      "source": "Hackaday",
+      "source_id": "hackaday",
+      "source_category": "making",
+      "content_type": "article",
+      "score": 0.0,
+      "rank_score": 2.13,
+      "matched_interests": [],
+      "matched_labels": []
+    },
+    {
+      "id": "53d3e9e4648b8ca7",
+      "title": "Creating a Custom Hinge for a Motorbike’s Fuel Access Panel",
+      "url": "https://hackaday.com/2026/09/10/creating-a-custom-hinge-for-a-motorbikes-fuel-access-panel/",
+      "summary": "A fun part of modifying something like a motorbike is that you sometimes have to come up with creative solutions to basic questions, like how you can still access the …read more",
+      "published_at": "2026-09-10T23:00:05+00:00",
+      "source": "Hackaday",
+      "source_id": "hackaday",
+      "source_category": "making",
+      "content_type": "article",
+      "score": 0.0,
+      "rank_score": 2.13,
+      "matched_interests": [],
+      "matched_labels": []
+    },
+    {
       "id": "0453538edba9dc66",
       "title": "Little Droid Has Party Mode",
       "url": "https://hackaday.com/2026/09/10/little-droid-has-party-mode/",
@@ -2277,7 +2383,7 @@
       "source_category": "making",
       "content_type": "article",
       "score": 0.0,
-      "rank_score": 2.13,
+      "rank_score": 2.12,
       "matched_interests": [],
       "matched_labels": []
     },
@@ -2292,7 +2398,7 @@
       "source_category": "making",
       "content_type": "article",
       "score": 0.0,
-      "rank_score": 2.13,
+      "rank_score": 2.12,
       "matched_interests": [],
       "matched_labels": []
     },
@@ -2312,25 +2418,55 @@
       "matched_labels": []
     },
     {
-      "id": "733ae6c3cd6131bc",
-      "title": "If It’s Electronic Paper, Why Not Print To It?",
-      "url": "https://hackaday.com/2026/09/10/if-its-electronic-paper-why-not-print-to-it/",
-      "summary": "E-ink is supposed to be the electronic version of dead-tree paper, but there’s one enormous difference: how you get your images and text onto it. For paper, you print on …read more",
-      "published_at": "2026-09-10T08:00:49+00:00",
-      "source": "Hackaday",
-      "source_id": "hackaday",
-      "source_category": "making",
-      "content_type": "article",
+      "id": "ac33704195dc7010",
+      "title": "Mexican student creates an acoustic fire extinguisher to put out fire in seconds",
+      "url": "https://www.upsocl.com/en/16-year-old-mexican-student-creates-an-acoustic-fire-extinguisher-that-uses-sound-waves-to-put-out-fires-in-seconds/",
+      "summary": "Article URL: https://www.upsocl.com/en/16-year-old-mexican-student-creates-an-acoustic-fire-extinguisher-that-uses-sound-waves-to-put-out-fires-in-seconds/ Comments URL: https://news.ycombinator.com/item?id=49652237 Points: 93 # Comments: 34",
+      "published_at": "2026-09-11T01:00:56+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_category": "discovery",
+      "content_type": "news",
       "score": 0.0,
-      "rank_score": 2.12,
+      "rank_score": 2.1,
       "matched_interests": [],
       "matched_labels": []
     },
     {
-      "id": "2430ed23f79f7414",
-      "title": "NTSB Issues Investigative Update on B-767 Runway Excursion Accident in Miami",
+      "id": "c565297fee5b32a3",
+      "title": "Google will buy half the electricity from one of Finland's nuclear power plants",
+      "url": "https://www.bbc.com/news/articles/c8r6y4me2g6o",
+      "summary": "Article URL: https://www.bbc.com/news/articles/c8r6y4me2g6o Comments URL: https://news.ycombinator.com/item?id=49652105 Points: 127 # Comments: 97",
+      "published_at": "2026-09-11T00:42:41+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_category": "discovery",
+      "content_type": "news",
+      "score": 0.0,
+      "rank_score": 2.1,
+      "matched_interests": [],
+      "matched_labels": []
+    },
+    {
+      "id": "effa8971aeee6b61",
+      "title": "Nine coding harnesses vs. your laptop",
+      "url": "https://nasutton.notion.site/Nine-coding-harnesses-vs-your-laptop-3d139990182b80d59fa3cf500f0450ba?pvs=74",
+      "summary": "Article URL: https://nasutton.notion.site/Nine-coding-harnesses-vs-your-laptop-3d139990182b80d59fa3cf500f0450ba?pvs=74 Comments URL: https://news.ycombinator.com/item?id=49651221 Points: 7 # Comments: 0",
+      "published_at": "2026-09-10T22:54:01+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_category": "discovery",
+      "content_type": "news",
+      "score": 0.0,
+      "rank_score": 2.1,
+      "matched_interests": [],
+      "matched_labels": []
+    },
+    {
+      "id": "dab5a33129228fa5",
+      "title": "NTSB issues investigative update on B-767 runway excursion accident in Miami",
       "url": "https://www.ntsb.gov:443/news/press-releases/Pages/NR20260909.aspx",
-      "summary": "Article URL: https://www.ntsb.gov:443/news/press-releases/Pages/NR20260909.aspx Comments URL: https://news.ycombinator.com/item?id=49650418 Points: 20 # Comments: 15",
+      "summary": "Article URL: https://www.ntsb.gov:443/news/press-releases/Pages/NR20260909.aspx Comments URL: https://news.ycombinator.com/item?id=49650418 Points: 76 # Comments: 122",
       "published_at": "2026-09-10T21:30:55+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -2342,47 +2478,17 @@
       "matched_labels": []
     },
     {
-      "id": "d4b04e74047b6af5",
-      "title": "The part of Navier-Stokes no one is talking about",
-      "url": "https://www.johndcook.com/blog/2026/09/09/formal-method-revolution/",
-      "summary": "Article URL: https://www.johndcook.com/blog/2026/09/09/formal-method-revolution/ Comments URL: https://news.ycombinator.com/item?id=49650326 Points: 78 # Comments: 55",
-      "published_at": "2026-09-10T21:22:59+00:00",
+      "id": "83fc2559f87bcfb8",
+      "title": "The Deathray: A simple way for an untrusted site to freeze a Mac",
+      "url": "https://auberon.xyz/blog/posts/deathray/",
+      "summary": "Article URL: https://auberon.xyz/blog/posts/deathray/ Comments URL: https://news.ycombinator.com/item?id=49649124 Points: 110 # Comments: 70",
+      "published_at": "2026-09-10T19:34:20+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
       "source_category": "discovery",
       "content_type": "news",
       "score": 0.0,
-      "rank_score": 2.1,
-      "matched_interests": [],
-      "matched_labels": []
-    },
-    {
-      "id": "eee5d7afd749dc16",
-      "title": "Bodily Oddities",
-      "url": "https://vester.si/bodily-oddities/",
-      "summary": "Article URL: https://vester.si/bodily-oddities/ Comments URL: https://news.ycombinator.com/item?id=49649789 Points: 11 # Comments: 12",
-      "published_at": "2026-09-10T20:33:11+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_category": "discovery",
-      "content_type": "news",
-      "score": 0.0,
-      "rank_score": 2.1,
-      "matched_interests": [],
-      "matched_labels": []
-    },
-    {
-      "id": "d278c430afc3927d",
-      "title": "Creativity is the New Moat",
-      "url": "https://www.inventbuild.studio/blog/genuine-creativity-is-your-new-moat",
-      "summary": "Article URL: https://www.inventbuild.studio/blog/genuine-creativity-is-your-new-moat Comments URL: https://news.ycombinator.com/item?id=49648732 Points: 98 # Comments: 53",
-      "published_at": "2026-09-10T19:03:34+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_category": "discovery",
-      "content_type": "news",
-      "score": 0.0,
-      "rank_score": 2.1,
+      "rank_score": 2.09,
       "matched_interests": [],
       "matched_labels": []
     },
@@ -2390,14 +2496,14 @@
       "id": "b8bb0b0720894fe8",
       "title": "JEP 544: Ahead-of-Time Code Compilation",
       "url": "https://openjdk.org/jeps/544",
-      "summary": "Article URL: https://openjdk.org/jeps/544 Comments URL: https://news.ycombinator.com/item?id=49647404 Points: 54 # Comments: 22",
+      "summary": "Article URL: https://openjdk.org/jeps/544 Comments URL: https://news.ycombinator.com/item?id=49647404 Points: 83 # Comments: 29",
       "published_at": "2026-09-10T17:30:39+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
       "source_category": "discovery",
       "content_type": "news",
       "score": 0.0,
-      "rank_score": 2.1,
+      "rank_score": 2.09,
       "matched_interests": [],
       "matched_labels": []
     },
@@ -2405,14 +2511,14 @@
       "id": "9495b3c72ced3b38",
       "title": "Music Theory for the 21st-Century Classroom",
       "url": "https://musictheory.pugetsound.edu/mt21c/MusicTheory.html",
-      "summary": "Article URL: https://musictheory.pugetsound.edu/mt21c/MusicTheory.html Comments URL: https://news.ycombinator.com/item?id=49647134 Points: 116 # Comments: 58",
+      "summary": "Article URL: https://musictheory.pugetsound.edu/mt21c/MusicTheory.html Comments URL: https://news.ycombinator.com/item?id=49647134 Points: 180 # Comments: 80",
       "published_at": "2026-09-10T17:14:12+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
       "source_category": "discovery",
       "content_type": "news",
       "score": 0.0,
-      "rank_score": 2.1,
+      "rank_score": 2.09,
       "matched_interests": [],
       "matched_labels": []
     },
@@ -2420,44 +2526,29 @@
       "id": "97a98fc60d4a3f17",
       "title": "Forgejo <=16.0.3 Critical RCE",
       "url": "https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/16.0.4.md",
-      "summary": "Article URL: https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/16.0.4.md Comments URL: https://news.ycombinator.com/item?id=49645907 Points: 122 # Comments: 47",
+      "summary": "Article URL: https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/16.0.4.md Comments URL: https://news.ycombinator.com/item?id=49645907 Points: 156 # Comments: 59",
       "published_at": "2026-09-10T15:57:40+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
       "source_category": "discovery",
       "content_type": "news",
       "score": 0.0,
-      "rank_score": 2.1,
+      "rank_score": 2.09,
       "matched_interests": [],
       "matched_labels": []
     },
     {
-      "id": "30ff8c90880fa60d",
-      "title": "Silicon Valley Is Transforming the Military-Industrial Complex",
-      "url": "https://costsofwar.watson.brown.edu/paper/how-big-tech-and-silicon-valley-are-transforming-military-industrial-complex",
-      "summary": "Article URL: https://costsofwar.watson.brown.edu/paper/how-big-tech-and-silicon-valley-are-transforming-military-industrial-complex Comments URL: https://news.ycombinator.com/item?id=49645754 Points: 129 # Comments: 243",
-      "published_at": "2026-09-10T15:47:50+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_category": "discovery",
-      "content_type": "news",
-      "score": 0.0,
-      "rank_score": 2.1,
-      "matched_interests": [],
-      "matched_labels": []
-    },
-    {
-      "id": "c92c60cb42a81674",
-      "title": "Neki",
+      "id": "7b24a73c35d8dbdb",
+      "title": "Neki – Sharded Postgres",
       "url": "https://planetscale.com/blog/introducing-neki",
-      "summary": "Article URL: https://planetscale.com/blog/introducing-neki Comments URL: https://news.ycombinator.com/item?id=49645686 Points: 178 # Comments: 72",
+      "summary": "Article URL: https://planetscale.com/blog/introducing-neki Comments URL: https://news.ycombinator.com/item?id=49645686 Points: 214 # Comments: 117",
       "published_at": "2026-09-10T15:43:49+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
       "source_category": "discovery",
       "content_type": "news",
       "score": 0.0,
-      "rank_score": 2.1,
+      "rank_score": 2.09,
       "matched_interests": [],
       "matched_labels": []
     },
@@ -2465,29 +2556,29 @@
       "id": "bbfe29c66ab58088",
       "title": "Cognition launches new SWE-2 model, Rivaling Fable 5.1 and GPT-Astra",
       "url": "https://cognition.com/blog/swe-2",
-      "summary": "Article URL: https://cognition.com/blog/swe-2 Comments URL: https://news.ycombinator.com/item?id=49645443 Points: 318 # Comments: 130",
+      "summary": "Article URL: https://cognition.com/blog/swe-2 Comments URL: https://news.ycombinator.com/item?id=49645443 Points: 369 # Comments: 157",
       "published_at": "2026-09-10T15:29:47+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
       "source_category": "discovery",
       "content_type": "news",
       "score": 0.0,
-      "rank_score": 2.1,
+      "rank_score": 2.09,
       "matched_interests": [],
       "matched_labels": []
     },
     {
-      "id": "f34dd3c1887c15bc",
-      "title": "NASA Color Trick Was Meant for Mars. Now It's Unveiling Rock Art on Earth",
-      "url": "https://gizmodo.com/this-nasa-color-trick-was-meant-for-mars-now-its-unveiling-rock-art-on-earth-2000809844",
-      "summary": "Article URL: https://gizmodo.com/this-nasa-color-trick-was-meant-for-mars-now-its-unveiling-rock-art-on-earth-2000809844 Comments URL: https://news.ycombinator.com/item?id=49645437 Points: 227 # Comments: 36",
+      "id": "4116347b68447b29",
+      "title": "Technique for Manipulating Satellite Photos Now Reveals Ancient Images (2025)",
+      "url": "https://spinoff.nasa.gov/Manipulating_Satellite_Photos_Now_Reveals_Ancient_Images",
+      "summary": "https://dstretch.com/DecorrelationStretch.pdf https://www.nasa.gov/technology/tech-transfer-spinoffs/nasa-... Comments URL: https://news.ycombinator.com/item?id=49645437 Points: 289 # Comments: 46",
       "published_at": "2026-09-10T15:29:30+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
       "source_category": "discovery",
       "content_type": "news",
       "score": 0.0,
-      "rank_score": 2.1,
+      "rank_score": 2.09,
       "matched_interests": [],
       "matched_labels": []
     },
@@ -2495,14 +2586,29 @@
       "id": "245c58b89ac9572e",
       "title": "Don't let anyone take away your big box of cables",
       "url": "https://blog.jim-nielsen.com/2026/hands-off-my-cables/",
-      "summary": "Article URL: https://blog.jim-nielsen.com/2026/hands-off-my-cables/ Comments URL: https://news.ycombinator.com/item?id=49645393 Points: 218 # Comments: 170",
+      "summary": "Article URL: https://blog.jim-nielsen.com/2026/hands-off-my-cables/ Comments URL: https://news.ycombinator.com/item?id=49645393 Points: 375 # Comments: 276",
       "published_at": "2026-09-10T15:27:22+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
       "source_category": "discovery",
       "content_type": "news",
       "score": 0.0,
-      "rank_score": 2.1,
+      "rank_score": 2.09,
+      "matched_interests": [],
+      "matched_labels": []
+    },
+    {
+      "id": "81c5aba99248c2d4",
+      "title": "Shopify is moving from React Native back to Swift and Kotlin",
+      "url": "https://shopify.engineering/back-to-native",
+      "summary": "Article URL: https://shopify.engineering/back-to-native Comments URL: https://news.ycombinator.com/item?id=49643982 Points: 869 # Comments: 589",
+      "published_at": "2026-09-10T14:09:31+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_category": "discovery",
+      "content_type": "news",
+      "score": 0.0,
+      "rank_score": 2.09,
       "matched_interests": [],
       "matched_labels": []
     },
@@ -2516,66 +2622,6 @@
       "source_id": "simon_willison",
       "source_category": "ai_tools",
       "content_type": "blog",
-      "score": 0.0,
-      "rank_score": 2.1,
-      "matched_interests": [],
-      "matched_labels": []
-    },
-    {
-      "id": "e95a59d59c66e9fd",
-      "title": "Shopify moves back to Native from React Native",
-      "url": "https://shopify.engineering/back-to-native",
-      "summary": "Article URL: https://shopify.engineering/back-to-native Comments URL: https://news.ycombinator.com/item?id=49643982 Points: 631 # Comments: 426",
-      "published_at": "2026-09-10T14:09:31+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_category": "discovery",
-      "content_type": "news",
-      "score": 0.0,
-      "rank_score": 2.09,
-      "matched_interests": [],
-      "matched_labels": []
-    },
-    {
-      "id": "6bac3566f5147f3a",
-      "title": "Rust is tier-1 language at Microsoft",
-      "url": "https://rustfoundation.org/media/guest-post-rust-is-tier-1-language-at-microsoft/",
-      "summary": "Article URL: https://rustfoundation.org/media/guest-post-rust-is-tier-1-language-at-microsoft/ Comments URL: https://news.ycombinator.com/item?id=49643546 Points: 557 # Comments: 304",
-      "published_at": "2026-09-10T13:39:16+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_category": "discovery",
-      "content_type": "news",
-      "score": 0.0,
-      "rank_score": 2.09,
-      "matched_interests": [],
-      "matched_labels": []
-    },
-    {
-      "id": "c232b0b5e6c9e800",
-      "title": "List of references on Sony websites to players \"owning\" their digital games",
-      "url": "https://consumerrights.wiki/w/Sony_PlayStation_digital_game_ownership_lawsuit",
-      "summary": "Article URL: https://consumerrights.wiki/w/Sony_PlayStation_digital_game_ownership_lawsuit Comments URL: https://news.ycombinator.com/item?id=49642531 Points: 337 # Comments: 111",
-      "published_at": "2026-09-10T12:18:06+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_category": "discovery",
-      "content_type": "news",
-      "score": 0.0,
-      "rank_score": 2.09,
-      "matched_interests": [],
-      "matched_labels": []
-    },
-    {
-      "id": "dd168ff7e29ab9fa",
-      "title": "What algorithm did Windows XP use to choose your initial user picture?",
-      "url": "https://devblogs.microsoft.com/oldnewthing/20260909-00/?p=112683",
-      "summary": "Article URL: https://devblogs.microsoft.com/oldnewthing/20260909-00/?p=112683 Comments URL: https://news.ycombinator.com/item?id=49640646 Points: 329 # Comments: 160",
-      "published_at": "2026-09-10T09:04:14+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_category": "discovery",
-      "content_type": "news",
       "score": 0.0,
       "rank_score": 2.09,
       "matched_interests": [],
@@ -2612,21 +2658,6 @@
       "matched_labels": []
     },
     {
-      "id": "60a42882e8831c17",
-      "title": "Playco cut manual fixes 50% prototyping games with GPT-6 Astra",
-      "url": "https://openai.com/index/playco-game-prototyping-with-astra",
-      "summary": "Using GPT-6 Astra, Playco built three themed game prototypes from one grey box foundation and reported 50% fewer manual fixes than with the previous model.",
-      "published_at": "2026-09-03T12:00:00+00:00",
-      "source": "OpenAI News",
-      "source_id": "openai_news",
-      "source_category": "ai_tools",
-      "content_type": "news",
-      "score": 0.0,
-      "rank_score": 2.08,
-      "matched_interests": [],
-      "matched_labels": []
-    },
-    {
       "id": "a5d55c48fbff0d0b",
       "title": "Legora reviewed 41 documents in minutes with GPT-6 Astra",
       "url": "https://openai.com/index/legora-financial-statement-review-with-astra",
@@ -2637,7 +2668,22 @@
       "source_category": "ai_tools",
       "content_type": "news",
       "score": 0.0,
-      "rank_score": 2.08,
+      "rank_score": 2.07,
+      "matched_interests": [],
+      "matched_labels": []
+    },
+    {
+      "id": "60a42882e8831c17",
+      "title": "Playco cut manual fixes 50% prototyping games with GPT-6 Astra",
+      "url": "https://openai.com/index/playco-game-prototyping-with-astra",
+      "summary": "Using GPT-6 Astra, Playco built three themed game prototypes from one grey box foundation and reported 50% fewer manual fixes than with the previous model.",
+      "published_at": "2026-09-03T12:00:00+00:00",
+      "source": "OpenAI News",
+      "source_id": "openai_news",
+      "source_category": "ai_tools",
+      "content_type": "news",
+      "score": 0.0,
+      "rank_score": 2.07,
       "matched_interests": [],
       "matched_labels": []
     },
@@ -2652,7 +2698,7 @@
       "source_category": "ai_tools",
       "content_type": "news",
       "score": 0.0,
-      "rank_score": 2.08,
+      "rank_score": 2.07,
       "matched_interests": [],
       "matched_labels": []
     },
@@ -2667,47 +2713,9 @@
       "source_category": "ai_tools",
       "content_type": "news",
       "score": 0.0,
-      "rank_score": 2.07,
+      "rank_score": 2.06,
       "matched_interests": [],
       "matched_labels": []
-    },
-    {
-      "id": "4fb225fee377eb7e",
-      "title": "Obsidian 1.13.2 Desktop (Early access)",
-      "url": "https://obsidian.md/changelog/2026-07-14-desktop-v1.13.2/",
-      "summary": "New New image lightbox for viewing images fullscreen. Click the image in reading mode to open it. Or in live preview, with an image selected, click or press Space to open it in the lightbox. Use arrow keys to navigate between all the images embedded in the current file. Live Preview: Added keyboard interactions when an",
-      "published_at": "2026-07-14T00:00:00+00:00",
-      "source": "Obsidian Changelog",
-      "source_id": "obsidian_changelog",
-      "source_category": "knowledge_tools",
-      "content_type": "release",
-      "score": 1.0,
-      "rank_score": 1.99,
-      "matched_interests": [
-        "knowledge_tools"
-      ],
-      "matched_labels": [
-        "ナレッジ・ノート"
-      ]
-    },
-    {
-      "id": "e17a3c7ff9bb6752",
-      "title": "Obsidian Sync audits by Cure53 and Trail of Bits",
-      "url": "https://obsidian.md/blog/cure53-tob-sync-audits/",
-      "summary": "Obsidian regularly performs security audits with independent research firms to ensure that our code and procedures meet the highest security standards. Previously we shared audits assessing Obsidian's desktop and mobile apps in January 2024 and December 2024 . Two new audits are now available on our Security page asses",
-      "published_at": "2026-05-13T00:00:00+00:00",
-      "source": "Obsidian Blog",
-      "source_id": "obsidian_blog",
-      "source_category": "knowledge_tools",
-      "content_type": "blog",
-      "score": 1.0,
-      "rank_score": 1.97,
-      "matched_interests": [
-        "knowledge_tools"
-      ],
-      "matched_labels": [
-        "ナレッジ・ノート"
-      ]
     },
     {
       "id": "8916afb689f14c0c",
@@ -2720,7 +2728,7 @@
       "source_category": "knowledge_tools",
       "content_type": "release",
       "score": 2.0,
-      "rank_score": 1.92,
+      "rank_score": 1.91,
       "matched_interests": [
         "knowledge_tools"
       ],
@@ -2738,8 +2746,8 @@
       "source_id": "obsidian_changelog",
       "source_category": "knowledge_tools",
       "content_type": "release",
-      "score": 1.85,
-      "rank_score": 1.54,
+      "score": 1.93,
+      "rank_score": 1.58,
       "matched_interests": [
         "knowledge_tools",
         "personal_devices"
@@ -2759,8 +2767,8 @@
       "source_id": "obsidian_changelog",
       "source_category": "knowledge_tools",
       "content_type": "release",
-      "score": 1.0,
-      "rank_score": 1.03,
+      "score": 1.5,
+      "rank_score": 1.32,
       "matched_interests": [
         "knowledge_tools"
       ],
