@@ -166,7 +166,7 @@ function renderTopicFilters() {
   }
 
   const allButton = document.createElement("button");
-  allButton.className = `topic-filter${activeTopic ? "" : " is-active"}`;
+  allButton.className = `filter topic-filter${activeTopic ? "" : " is-active"}`;
   allButton.dataset.topic = "";
   allButton.textContent = "すべて";
   topicFiltersEl.appendChild(allButton);
@@ -176,7 +176,7 @@ function renderTopicFilters() {
 
   for (const [id, label] of sortedTopics) {
     const button = document.createElement("button");
-    button.className = `topic-filter${activeTopic === id ? " is-active" : ""}`;
+    button.className = `filter topic-filter${activeTopic === id ? " is-active" : ""}`;
     button.dataset.topic = id;
     button.textContent = label;
     topicFiltersEl.appendChild(button);
@@ -201,7 +201,8 @@ function renderFilters(items) {
     if (!button) return;
     activeView = button.dataset.view;
     activeTopic = null;
-    document.querySelectorAll(".filter").forEach((el) => el.classList.toggle("is-active", el === button));
+    document.querySelectorAll(".filter[data-view]")
+      .forEach((el) => el.classList.toggle("is-active", el === button));
     renderTopicFilters();
     renderFeed();
   });
