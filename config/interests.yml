@@ -132,6 +132,16 @@ interest_signals:
       - focused device
       - ambient computing
 
+  - id: pokemon
+    label: ポケモン
+    weight: 1.3
+    terms:
+      - ポケモン
+      - Pokémon
+      - Pokemon
+      - ポケットモンスター
+      - Pocket Monsters
+
   - id: large_robotics
     label: 大型・産業ロボティクス
     weight: -0.75
