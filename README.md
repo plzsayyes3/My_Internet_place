@@ -71,6 +71,18 @@ GitHub Actionsのscheduled workflowは厳密な定刻実行を保証しないた
 
 このリポジトリから個人知識ベースを直接公開・複製することはしません。
 
+### Genre taxonomy v3
+
+次の分類設計は [`GENRE-DESIGN-V3.md`](GENRE-DESIGN-V3.md) を正本とします。
+
+- UI上の大分類は8個に抑える
+- 内部では25個程度のtopicを持つ
+- `content_type` / `source_kind` / `reading_depth` を別軸にする
+- topic間の関係を将来の推薦・DISCOVERYに使う
+- `DISCOVERY` はジャンルではなく推薦モードとして扱う
+
+実装担当AI・開発者は、分類関連コードを変更する前にこの設計書を確認してください。
+
 ## Privacy boundary
 
 このリポジトリは**公開前提**です。
@@ -111,7 +123,7 @@ docs/
 
 ## Next
 
-1. GitHub Pagesを `main` / `docs` から公開する
+1. Genre taxonomy v3を、既存動作を壊さず `interests.yml` / `sources.yml` / `collect.py` に導入する
 2. 実際に読んで、情報源とスコアリングの偏りを調整する
 3. 「気になる / 興味なし」のフィードバック設計を追加する
 4. ニュース以外の良質な記事・ブログ・リリース・論文へ取得範囲を広げる
