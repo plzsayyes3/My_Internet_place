@@ -240,6 +240,7 @@ function renderFeed() {
     const node = template.content.cloneNode(true);
     node.querySelector(".source").textContent = item.source || "Unknown source";
     node.querySelector(".kind").textContent = (item.content_type || item.item_type || "news").toUpperCase();
+    node.querySelector(".category").textContent = categoryLabel(itemCategory(item));
     node.querySelector(".score").textContent = scoreLabel(Number(item.score || 0));
 
     const title = node.querySelector(".title");
@@ -253,15 +254,26 @@ function renderFeed() {
     summary.textContent = displayedSummary;
     summary.hidden = !displayedSummary;
 
-    const topicLabels = itemTopics(item).map((topic) => topic.label);
+    const topics = itemTopics(item);
+    const topicLabels = topics.map((topic) => topic.label);
+    const topicTags = node.querySelector(".topic-tags");
+    topicTags.innerHTML = "";
+    for (const topic of topics) {
+      const tag = document.createElement("span");
+      tag.className = "topic-tag";
+      tag.textContent = topic.label;
+      topicTags.appendChild(tag);
+    }
+    topicTags.hidden = topics.length === 0;
+
     const matchedLabels = Array.isArray(item.matched_labels) ? item.matched_labels : [];
     const preferenceLabels = matchedLabels.filter((label) => !topicLabels.includes(label));
-    const detailParts = [];
-    if (topicLabels.length) detailParts.push(`ジャンル: ${topicLabels.join(" · ")}`);
-    if (preferenceLabels.length) detailParts.push(`関心: ${preferenceLabels.join(" · ")}`);
-    node.querySelector(".reason").textContent = detailParts.length
-      ? detailParts.join(" / ")
-      : "未分類";
+    const reason = node.querySelector(".reason");
+    reason.textContent = preferenceLabels.length
+      ? `関心: ${preferenceLabels.join(" · ")}`
+      : "";
+    reason.hidden = preferenceLabels.length === 0;
+
     node.querySelector(".published").textContent = formatDate(item.published_at);
     feedEl.appendChild(node);
   }
