@@ -88,6 +88,24 @@ class TaxonomyV3Tests(unittest.TestCase):
         referenced = {topic for query in DISCOVERY.get("queries", []) for topic in query.get("topics", [])}
         self.assertTrue(referenced.issubset(valid), referenced - valid)
 
+    def test_discovery_queries_reference_valid_interest_signals(self):
+        valid = {x["id"] for x in INTERESTS.get("interest_signals", [])}
+        referenced = {signal for query in DISCOVERY.get("queries", []) for signal in query.get("signals", [])}
+        self.assertTrue(referenced.issubset(valid), referenced - valid)
+
+    def test_pokemon_discovery_is_prepared_but_global_search_stays_disabled(self):
+        signals = {x["id"]: x for x in INTERESTS.get("interest_signals", [])}
+        self.assertIn("pokemon", signals)
+        self.assertAlmostEqual(float(signals["pokemon"]["weight"]), 1.3)
+
+        pokemon_queries = [
+            x for x in DISCOVERY.get("queries", [])
+            if "pokemon" in x.get("signals", [])
+        ]
+        self.assertEqual({x["query"] for x in pokemon_queries}, {"ポケモン", "Pokémon", "Pokemon news"})
+        self.assertTrue(all(x.get("enabled", False) for x in pokemon_queries))
+        self.assertFalse(DISCOVERY.get("enabled", False))
+
 
 if __name__ == "__main__":
     unittest.main()
