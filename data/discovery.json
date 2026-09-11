@@ -1,6 +1,91 @@
 {
   "schema_version": 1,
-  "generated_at": null,
+  "generated_at": "2026-09-11T23:51:04Z",
   "producer": "chatgpt_scheduled_search",
-  "items": []
+  "items": [
+    {
+      "title": "If It’s Electronic Paper, Why Not Print To It?",
+      "url": "https://hackaday.com/2026/09/10/if-its-electronic-paper-why-not-print-to-it/",
+      "summary": "Hackaday covers an ESP32-C3 Xteink e-paper reader fork that implements Internet Printing Protocol, letting computers send documents to the reader as if it were a printer while also saving output to SD card.",
+      "published_at": "2026-09-10T00:00:00Z",
+      "source": "Hackaday",
+      "source_kind": "publication",
+      "content_type": "news",
+      "discovery_query_ids": ["esp32_epaper", "portable_epaper_computer"],
+      "discovery_queries": ["ESP32 e-paper", "portable e-paper computer"],
+      "discovered_at": "2026-09-11T23:51:04Z"
+    },
+    {
+      "title": "A Split Keyboard Designed For Human Hands",
+      "url": "https://hackaday.com/2026/09/03/a-split-keyboard-designed-for-human-hands/",
+      "summary": "A compact 36-key split keyboard was designed around measured hand geometry and refined through roughly 50 prototypes, using angled finger columns, low-profile switches, and thumb layer keys.",
+      "published_at": "2026-09-03T00:00:00Z",
+      "source": "Hackaday",
+      "source_kind": "publication",
+      "content_type": "news",
+      "discovery_query_ids": ["custom_input_device"],
+      "discovery_queries": ["custom input device"],
+      "discovered_at": "2026-09-11T23:51:04Z"
+    },
+    {
+      "title": "Letting an AI agent work on your notes without uploading them",
+      "url": "https://getpellet.app/blog/an-ai-agent-on-your-own-notes",
+      "summary": "Pellet describes a local-first approach to letting an AI agent work directly with personal markdown notes on the user’s machine instead of requiring the knowledge base to be uploaded to a hosted service.",
+      "published_at": "2026-09-08T00:00:00Z",
+      "source": "Pellet blog",
+      "source_kind": "blog",
+      "content_type": "analysis",
+      "discovery_query_ids": ["local_first_personal_tools"],
+      "discovery_queries": ["local-first personal tools"],
+      "discovered_at": "2026-09-11T23:51:04Z"
+    },
+    {
+      "title": "Best Private and Local-First Task Apps in 2026",
+      "url": "https://zerofriction.app/blog/best-private-local-first-task-apps-2026",
+      "summary": "A comparison of private and local-first task apps focusing on where data lives, whether accounts are required, sync and encryption models, export options, and how offline-first claims differ from true local-first capture.",
+      "published_at": "2026-09-07T00:00:00Z",
+      "source": "Zero-Friction Tasks",
+      "source_kind": "blog",
+      "content_type": "analysis",
+      "discovery_query_ids": ["local_first_personal_tools"],
+      "discovery_queries": ["local-first personal tools"],
+      "discovered_at": "2026-09-11T23:51:04Z"
+    },
+    {
+      "title": "Local-first Software",
+      "url": "https://www.jorap.com/notes/local-first-software/",
+      "summary": "A recent note explains local-first software as keeping the primary truth on the device, with sync treated as optional infrastructure, and connects that idea to privacy, data sovereignty, offline use, and PKM.",
+      "published_at": "2026-09-07T00:00:00Z",
+      "source": "JoRap Notes",
+      "source_kind": "blog",
+      "content_type": "essay",
+      "discovery_query_ids": ["local_first_personal_tools"],
+      "discovery_queries": ["local-first personal tools"],
+      "discovered_at": "2026-09-11T23:51:04Z"
+    },
+    {
+      "title": "Latest News | Pokemon.com",
+      "url": "https://www.pokemon.com/us/news",
+      "summary": "The official Pokémon news page currently highlights September 2026 updates across games and the Trading Card Game, including 30th Celebration coverage, Pokopia expansion-pass information, and Pokémon GO updates.",
+      "published_at": null,
+      "source": "Pokémon",
+      "source_kind": "official",
+      "content_type": "news",
+      "discovery_query_ids": ["pokemon", "pokemon_en", "pokemon_news"],
+      "discovery_queries": ["ポケモン", "Pokémon", "Pokemon news"],
+      "discovered_at": "2026-09-11T23:51:04Z"
+    },
+    {
+      "title": "ニュース一覧 | ポケモンカードゲーム公式ホームページ",
+      "url": "https://www.pokemon-card.com/info/index.html",
+      "summary": "ポケモンカードゲーム公式のニュース一覧。9月11日にはチャンピオンズリーグ2027横浜のライブ配信や学園祭2026、9月9日には30th CELEBRATION関連情報などが掲載されている。",
+      "published_at": null,
+      "source": "ポケモンカードゲーム",
+      "source_kind": "official",
+      "content_type": "news",
+      "discovery_query_ids": ["pokemon", "pokemon_news"],
+      "discovery_queries": ["ポケモン", "Pokemon news"],
+      "discovered_at": "2026-09-11T23:51:04Z"
+    }
+  ]
 }
