@@ -1,0 +1,125 @@
+# Active-search configuration for My Internet Place.
+# Public-safe search terms only. This file is intentionally separate from RSS/Atom sources.
+# The current collector does not execute these searches yet.
+
+version: 1
+
+enabled: false
+
+defaults:
+  max_results_per_query: 8
+  max_age_days: 14
+  languages: [ja, en]
+
+queries:
+  - id: cyberdeck
+    label: Cyberdeck
+    query: cyberdeck
+    weight: 1.9
+    topics: [small_computing, diy_electronics, input_devices]
+    enabled: true
+
+  - id: diy_cyberdeck
+    label: DIY Cyberdeck
+    query: DIY cyberdeck
+    weight: 1.8
+    topics: [small_computing, diy_electronics, input_devices]
+    enabled: true
+
+  - id: esp32_handheld
+    label: ESP32 handheld
+    query: ESP32 handheld
+    weight: 1.6
+    topics: [small_computing, diy_electronics]
+    enabled: true
+
+  - id: esp32_epaper
+    label: ESP32 e-paper
+    query: ESP32 e-paper
+    weight: 1.7
+    topics: [small_computing, epaper_wearables, diy_electronics]
+    enabled: true
+
+  - id: m5stack_epaper
+    label: M5Stack e-paper
+    query: M5Stack e-paper
+    weight: 1.7
+    topics: [small_computing, epaper_wearables]
+    enabled: true
+
+  - id: portable_epaper_computer
+    label: Portable e-paper computer
+    query: portable e-paper computer
+    weight: 1.6
+    topics: [small_computing, epaper_wearables]
+    enabled: true
+
+  - id: raspberry_pi_cyberdeck
+    label: Raspberry Pi cyberdeck
+    query: Raspberry Pi cyberdeck
+    weight: 1.6
+    topics: [small_computing, diy_electronics]
+    enabled: true
+
+  - id: diy_handheld_terminal
+    label: DIY handheld terminal
+    query: DIY handheld terminal
+    weight: 1.5
+    topics: [small_computing, diy_electronics]
+    enabled: true
+
+  - id: custom_input_device
+    label: Custom input device
+    query: custom input device
+    weight: 1.5
+    topics: [input_devices, hci_interfaces]
+    enabled: true
+
+  - id: one_handed_keyboard
+    label: One-handed keyboard
+    query: one handed keyboard
+    weight: 1.6
+    topics: [input_devices, hci_interfaces]
+    enabled: true
+
+  - id: thumb_keyboard_diy
+    label: Thumb keyboard DIY
+    query: thumb keyboard DIY
+    weight: 1.6
+    topics: [input_devices, diy_electronics]
+    enabled: true
+
+  - id: tiny_computer_diy
+    label: Tiny computer DIY
+    query: tiny computer DIY
+    weight: 1.5
+    topics: [small_computing, diy_electronics]
+    enabled: true
+
+  - id: pocket_computer_open_source
+    label: Pocket computer open source
+    query: pocket computer open source
+    weight: 1.5
+    topics: [small_computing, github_devops]
+    enabled: true
+
+  - id: low_power_personal_device
+    label: Low-power personal device
+    query: low power personal device
+    weight: 1.4
+    topics: [small_computing, epaper_wearables]
+    enabled: true
+
+  - id: local_first_personal_tools
+    label: Local-first personal tools
+    query: local-first personal tools
+    weight: 1.3
+    topics: [local_first, personal_knowledge_recording]
+    enabled: true
+
+  - id: pokemon
+    label: ポケモン
+    query: ポケモン
+    weight: 1.0
+    topics: []
+    enabled: true
