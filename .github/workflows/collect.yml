@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - "config/**"
+      - "data/discovery.json"
       - "src/**"
       - "tests/**"
       - "requirements.txt"
@@ -56,6 +57,9 @@ jobs:
 
       - name: Collect feeds
         run: python src/collect.py
+
+      - name: Merge ChatGPT web discovery
+        run: python src/merge_discovery.py
 
       - name: Translate English fields to Japanese
         env:
