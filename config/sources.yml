@@ -3,7 +3,7 @@
 # Official/primary feeds are preferred; discovery feeds are intentionally lower priority.
 # default_category/default_item_type are fallbacks only; articles are classified individually.
 
-version: 2
+version: 3
 
 sources:
   - id: openai_news
@@ -13,6 +13,24 @@ sources:
     default_category: ai
     default_item_type: news
     priority: 1.0
+    enabled: true
+
+  - id: openrouter_blog
+    name: OpenRouter Blog
+    type: rss
+    url: https://openrouter.ai/blog/feed.xml
+    default_category: ai
+    default_item_type: blog
+    priority: 0.95
+    enabled: true
+
+  - id: google_ai_blog
+    name: Google AI Blog
+    type: rss
+    url: https://blog.google/technology/ai/rss/
+    default_category: ai
+    default_item_type: blog
+    priority: 0.9
     enabled: true
 
   - id: obsidian_blog
@@ -51,6 +69,24 @@ sources:
     default_category: software
     default_item_type: article
     priority: 0.75
+    enabled: true
+
+  - id: apple_developer_jp
+    name: Apple Developer News (JP)
+    type: rss
+    url: https://developer.apple.com/jp/news/rss/news.rss
+    default_category: devices
+    default_item_type: news
+    priority: 0.9
+    enabled: true
+
+  - id: raspberry_pi_news
+    name: Raspberry Pi News
+    type: rss
+    url: https://www.raspberrypi.com/news/feed/
+    default_category: devices
+    default_item_type: article
+    priority: 0.85
     enabled: true
 
   - id: simon_willison
