@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-11T23:50:05.661828+00:00",
-  "count": 204,
+  "generated_at": "2026-09-11T23:53:28.263335+00:00",
+  "count": 211,
   "taxonomy_version": 3,
   "interest_profile_version": 3,
   "sources": {
@@ -94,6 +94,89 @@
     ]
   },
   "items": [
+    {
+      "id": "733ae6c3cd6131bc",
+      "title": "If It’s Electronic Paper, Why Not Print To It?",
+      "url": "https://hackaday.com/2026/09/10/if-its-electronic-paper-why-not-print-to-it/",
+      "summary": "Hackaday covers an ESP32-C3 Xteink e-paper reader fork that implements Internet Printing Protocol, letting computers send documents to the reader as if it were a printer while also saving output to SD card.",
+      "published_at": "2026-09-10T00:00:00+00:00",
+      "source": "Hackaday",
+      "source_id": "chatgpt_web_discovery",
+      "source_kind": "publication",
+      "source_category": "make",
+      "primary_category": "make",
+      "topics": [
+        {
+          "id": "e_paper",
+          "score": 0.667
+        }
+      ],
+      "topic_ids": [
+        "e_paper"
+      ],
+      "topic_labels": [
+        "電子ペーパー"
+      ],
+      "topic_scores": {
+        "e_paper": 0.667
+      },
+      "matched_signals": [
+        "epaper_device",
+        "practical_small_computing"
+      ],
+      "positive_signals": [
+        "epaper_device",
+        "practical_small_computing"
+      ],
+      "matched_combinations": [
+        "pocket_epaper",
+        "personal_epaper_reader"
+      ],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 10.13,
+        "related_interest": 0.0,
+        "freshness": 0.857,
+        "source_priority": 0.7,
+        "active_discovery": 0.306
+      },
+      "recommendation_reason": "direct",
+      "score": 10.13,
+      "score_components": {
+        "topics": 2.9,
+        "signals": 4.67,
+        "combinations": 2.55
+      },
+      "rank_score": 11.64,
+      "matched_interests": [
+        "e_paper"
+      ],
+      "matched_labels": [
+        "電子ペーパー",
+        "電子ペーパー端末",
+        "実用小型コンピューティング",
+        "小型電子ペーパー端末",
+        "個人向けE-paper Reader",
+        "検索:ESP32 e-paper"
+      ],
+      "source_method": "chatgpt_search",
+      "discovered_via": [
+        "chatgpt_search"
+      ],
+      "discovery_query_ids": [
+        "esp32_epaper",
+        "portable_epaper_computer"
+      ],
+      "discovery_queries": [
+        "ESP32 e-paper",
+        "portable e-paper computer"
+      ],
+      "discovered_at": "2026-09-11T23:51:04+00:00",
+      "title_ja": "電子紙の場合、なぜ印刷しないのですか?",
+      "summary_ja": "Hackadayは、インターネット印刷プロトコルを実装するEPS32-C3 Xteink e-paperリーダーフォークをカバーしています。コンピューターは、SDカードへの出力を節約しながら、プリンターだったかのように、読者に文書を送ります。"
+    },
     {
       "id": "e549139bba381241",
       "title": "Create your own cyberdeck",
@@ -2068,6 +2151,152 @@
       "summary_ja": "OpenAIが10代の開発、幸福、および安全に影響を与える方法に関する独立した研究をサポートするOpenAIの$ 5,000,000助成プログラムに今すぐ適用して下さい。"
     },
     {
+      "id": "70bde82646ae7991",
+      "title": "Best Private and Local-First Task Apps in 2026",
+      "url": "https://zerofriction.app/blog/best-private-local-first-task-apps-2026",
+      "summary": "A comparison of private and local-first task apps focusing on where data lives, whether accounts are required, sync and encryption models, export options, and how offline-first claims differ from true local-first capture.",
+      "published_at": "2026-09-07T00:00:00+00:00",
+      "source": "Zero-Friction Tasks",
+      "source_id": "chatgpt_web_discovery",
+      "source_kind": "blog",
+      "source_category": "knowledge",
+      "primary_category": "knowledge",
+      "topics": [
+        {
+          "id": "local_first",
+          "score": 0.333
+        }
+      ],
+      "topic_ids": [
+        "local_first"
+      ],
+      "topic_labels": [
+        "Local-first"
+      ],
+      "topic_scores": {
+        "local_first": 0.333
+      },
+      "matched_signals": [
+        "local_personal_tools"
+      ],
+      "positive_signals": [
+        "local_personal_tools"
+      ],
+      "matched_combinations": [],
+      "content_type": "analysis",
+      "item_type": "analysis",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 2.65,
+        "related_interest": 0.0,
+        "freshness": 0.643,
+        "source_priority": 0.62,
+        "active_discovery": 0.234
+      },
+      "recommendation_reason": "direct",
+      "score": 2.65,
+      "score_components": {
+        "topics": 1.0,
+        "signals": 1.65,
+        "combinations": 0.0
+      },
+      "rank_score": 3.87,
+      "matched_interests": [
+        "local_first"
+      ],
+      "matched_labels": [
+        "Local-first",
+        "個人向け・Local-first",
+        "検索:Local-first personal tools"
+      ],
+      "source_method": "chatgpt_search",
+      "discovered_via": [
+        "chatgpt_search"
+      ],
+      "discovery_query_ids": [
+        "local_first_personal_tools"
+      ],
+      "discovery_queries": [
+        "local-first personal tools"
+      ],
+      "discovered_at": "2026-09-11T23:51:04+00:00",
+      "title_ja": "最高のプライベートとローカルファーストのタスクアプリで 2026",
+      "summary_ja": "データが要求されるかどうか、アカウントの同期と暗号化モデル、エクスポートオプション、およびオフライン優先のクレームが真のローカルファーストキャプチャとは異なる場所に焦点を当てたプライベートおよびローカルファーストのタスクアプリの比較。"
+    },
+    {
+      "id": "a259e8e23fa287c2",
+      "title": "Local-first Software",
+      "url": "https://www.jorap.com/notes/local-first-software/",
+      "summary": "A recent note explains local-first software as keeping the primary truth on the device, with sync treated as optional infrastructure, and connects that idea to privacy, data sovereignty, offline use, and PKM.",
+      "published_at": "2026-09-07T00:00:00+00:00",
+      "source": "JoRap Notes",
+      "source_id": "chatgpt_web_discovery",
+      "source_kind": "blog",
+      "source_category": "knowledge",
+      "primary_category": "knowledge",
+      "topics": [
+        {
+          "id": "local_first",
+          "score": 0.333
+        }
+      ],
+      "topic_ids": [
+        "local_first"
+      ],
+      "topic_labels": [
+        "Local-first"
+      ],
+      "topic_scores": {
+        "local_first": 0.333
+      },
+      "matched_signals": [
+        "local_personal_tools"
+      ],
+      "positive_signals": [
+        "local_personal_tools"
+      ],
+      "matched_combinations": [],
+      "content_type": "essay",
+      "item_type": "essay",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 2.65,
+        "related_interest": 0.0,
+        "freshness": 0.643,
+        "source_priority": 0.62,
+        "active_discovery": 0.234
+      },
+      "recommendation_reason": "direct",
+      "score": 2.65,
+      "score_components": {
+        "topics": 1.0,
+        "signals": 1.65,
+        "combinations": 0.0
+      },
+      "rank_score": 3.87,
+      "matched_interests": [
+        "local_first"
+      ],
+      "matched_labels": [
+        "Local-first",
+        "個人向け・Local-first",
+        "検索:Local-first personal tools"
+      ],
+      "source_method": "chatgpt_search",
+      "discovered_via": [
+        "chatgpt_search"
+      ],
+      "discovery_query_ids": [
+        "local_first_personal_tools"
+      ],
+      "discovery_queries": [
+        "local-first personal tools"
+      ],
+      "discovered_at": "2026-09-11T23:51:04+00:00",
+      "title_ja": "ローカルファーストソフトウェア",
+      "summary_ja": "最近のメモは、ローカルファーストソフトウェアをデバイス上で第一次真実を維持し、オプションのインフラとして扱われた同期を行い、そのアイデアをプライバシー、データ sovereignty、オフラインでの使用、および PKM に接続します。"
+    },
+    {
       "id": "a19db2f9483a6838",
       "title": "Supporting independent journalism in Ukraine",
       "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
@@ -2194,61 +2423,6 @@
       ],
       "title_ja": "エイリアンマインド",
       "summary_ja": "Jakub Pachockiは、ますます有能なAIとそれを調整する挑戦を反映しています。 より強固な保護と国際的調整を求める。"
-    },
-    {
-      "id": "1f8ec3fbf99c9fb2",
-      "title": "Using Blender with coding agents on macOS",
-      "url": "https://simonwillison.net/2026/Sep/5/blender-coding-agents-macos/",
-      "summary": "TIL: Using Blender with coding agents on macOS I've been having fun with Blender in ChatGPT Codex on my Mac recently. Getting it to work with coding agents is really easy: install the full Mac application from blender.org and run a prompt like this: Use the already install /Applications/Blender to render a scene of a p",
-      "published_at": "2026-09-05T15:51:09+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_kind": "blog",
-      "source_category": "ai",
-      "primary_category": "ai",
-      "topics": [
-        {
-          "id": "ai_coding",
-          "score": 0.5
-        }
-      ],
-      "topic_ids": [
-        "ai_coding"
-      ],
-      "topic_labels": [
-        "AIコーディング"
-      ],
-      "topic_scores": {
-        "ai_coding": 0.5
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "analysis",
-      "item_type": "analysis",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 1.8,
-        "related_interest": 0.0,
-        "freshness": 0.947,
-        "source_priority": 0.85
-      },
-      "recommendation_reason": "direct",
-      "score": 1.8,
-      "score_components": {
-        "topics": 1.8,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 3.82,
-      "matched_interests": [
-        "ai_coding"
-      ],
-      "matched_labels": [
-        "AIコーディング"
-      ],
-      "title_ja": "macOSでコーディングエージェントとBlenderを使う",
-      "summary_ja": "TIL: macOSでコーディングエージェントとBlenderを使用して、最近、MacでBlenderと楽しくなりました。 コーディングエージェントと連携するのはとても簡単です: Blender.org からフル Mac アプリケーションをインストールし、次のようにプロンプトを実行します。 既にインストールされている /Applications/Blender を使用して p のシーンをレンダリングします。"
     },
     {
       "id": "4fdc70c0b83edbe3",
@@ -2507,6 +2681,198 @@
       "summary_ja": "Datasette 1.0a39 と 0.65.4 のセキュリティリリース 今日では、Datasette の 2 つの新しいセキュリティ パッチ バージョンを解放しています。 1.0a39 と 0.65.4 - 現在のアルファ シリーズの 1 つ、安定した 0.65.x ファミリーの 1 つ。 これらは、パブリックWeb上でDatasetteインスタンスを実行している場合は、適用されるべきセキュリティ修正です - 一部"
     },
     {
+      "id": "50efcc91990a9df0",
+      "title": "datasette-publish-fly 1.4",
+      "url": "https://simonwillison.net/2026/Sep/11/datasette-publish-fly/",
+      "summary": "Release: datasette-publish-fly 1.4 Sets force_https=true in fly.toml . #31 Fix for Volume could not be found bug. #32 Compatible with app-scoped deploy tokens. #34 Tags: datasette , fly",
+      "published_at": "2026-09-11T02:58:52+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_kind": "blog",
+      "source_category": "ai",
+      "primary_category": "ai",
+      "topics": [
+        {
+          "id": "llm_ai_tools",
+          "score": 0.25
+        },
+        {
+          "id": "ai_coding",
+          "score": 0.25
+        }
+      ],
+      "topic_ids": [
+        "llm_ai_tools",
+        "ai_coding"
+      ],
+      "topic_labels": [
+        "LLM・AIツール",
+        "AIコーディング"
+      ],
+      "topic_scores": {
+        "llm_ai_tools": 0.25,
+        "ai_coding": 0.25
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "analysis",
+      "item_type": "analysis",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 1.65,
+        "related_interest": 0.0,
+        "freshness": 0.993,
+        "source_priority": 0.85
+      },
+      "recommendation_reason": "direct",
+      "score": 1.65,
+      "score_components": {
+        "topics": 1.65,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 3.8,
+      "matched_interests": [
+        "llm_ai_tools",
+        "ai_coding"
+      ],
+      "matched_labels": [
+        "LLM・AIツール",
+        "AIコーディング"
+      ],
+      "title_ja": "datasette-publish-fly 1.4 (データセット)",
+      "summary_ja": "リリース:datasette-publish-fly 1.4 Fly.toml で force https=true を設定します。Volumeの#31 Fix はバグが見つかりません。 #32 app-scoped デプロイトークンと互換性があります。 #34 タグ: データシート , 飛ぶ"
+    },
+    {
+      "id": "faf90e0df7ee16c4",
+      "title": "datasette 0.65.4",
+      "url": "https://simonwillison.net/2026/Sep/11/datasette/",
+      "summary": "Release: datasette 0.65.4 See Datasette 1.0a39 and 0.65.4 security releases on the Datasette blog. Tags: security , datasette",
+      "published_at": "2026-09-11T00:06:55+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_kind": "blog",
+      "source_category": "ai",
+      "primary_category": "ai",
+      "topics": [
+        {
+          "id": "llm_ai_tools",
+          "score": 0.25
+        },
+        {
+          "id": "ai_coding",
+          "score": 0.25
+        }
+      ],
+      "topic_ids": [
+        "llm_ai_tools",
+        "ai_coding"
+      ],
+      "topic_labels": [
+        "LLM・AIツール",
+        "AIコーディング"
+      ],
+      "topic_scores": {
+        "llm_ai_tools": 0.25,
+        "ai_coding": 0.25
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "analysis",
+      "item_type": "analysis",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 1.65,
+        "related_interest": 0.0,
+        "freshness": 0.992,
+        "source_priority": 0.85
+      },
+      "recommendation_reason": "direct",
+      "score": 1.65,
+      "score_components": {
+        "topics": 1.65,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 3.8,
+      "matched_interests": [
+        "llm_ai_tools",
+        "ai_coding"
+      ],
+      "matched_labels": [
+        "LLM・AIツール",
+        "AIコーディング"
+      ],
+      "title_ja": "データセット 0.65.4",
+      "summary_ja": "リリース:Datasette 0.65.4 Datasette 1.0a39と0.65.4のセキュリティリリースを参照してください。 タグ: セキュリティ 、 データシート"
+    },
+    {
+      "id": "368fe3e9d14f2571",
+      "title": "datasette 1.0a39",
+      "url": "https://simonwillison.net/2026/Sep/11/datasette-2/",
+      "summary": "Release: datasette 1.0a39 See Datasette 1.0a39 and 0.65.4 security releases on the Datasette blog. Tags: security , datasette",
+      "published_at": "2026-09-11T00:05:54+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_kind": "blog",
+      "source_category": "ai",
+      "primary_category": "ai",
+      "topics": [
+        {
+          "id": "llm_ai_tools",
+          "score": 0.25
+        },
+        {
+          "id": "ai_coding",
+          "score": 0.25
+        }
+      ],
+      "topic_ids": [
+        "llm_ai_tools",
+        "ai_coding"
+      ],
+      "topic_labels": [
+        "LLM・AIツール",
+        "AIコーディング"
+      ],
+      "topic_scores": {
+        "llm_ai_tools": 0.25,
+        "ai_coding": 0.25
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "analysis",
+      "item_type": "analysis",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 1.65,
+        "related_interest": 0.0,
+        "freshness": 0.992,
+        "source_priority": 0.85
+      },
+      "recommendation_reason": "direct",
+      "score": 1.65,
+      "score_components": {
+        "topics": 1.65,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 3.8,
+      "matched_interests": [
+        "llm_ai_tools",
+        "ai_coding"
+      ],
+      "matched_labels": [
+        "LLM・AIツール",
+        "AIコーディング"
+      ],
+      "title_ja": "データシート 1.0a39",
+      "summary_ja": "リリース: Datasette 1.0a39 で Datasette 1.0a39 と 0.65.4 のセキュリティリリースを参照してください。 タグ: セキュリティ 、 データシート"
+    },
+    {
       "id": "baa2554f538a0268",
       "title": "Any Nix package, live in your browser",
       "url": "https://simonwillison.net/2026/Sep/10/trynix/",
@@ -2632,7 +2998,7 @@
         "AIコーディング"
       ],
       "title_ja": "ネイティブは現在、Shopifyでモバイルの未来です",
-      "summary_ja": "ネイティブは現在、Shopify Shopifyでモバイルの未来は、React Nativeからネイティブアプリ用のSwiftとKotlinのコードベースを分離するために移動しています。 ネイティブからReact Nativeへの切り替えを2020年3つの理由で決定しました。 同じ機能の構築を2回停止 開発者を許可する"
+      "summary_ja": "ネイティブは、Shopify Shopifyでモバイルの未来は、React Nativeからネイティブアプリ用のSwiftとKotlinのコードベースを分離するために移動しています。 ネイティブからReact Nativeへの切り替えを2020年3つの理由で決定しました。 同じ機能の構築を2回停止 開発者を許可する"
     },
     {
       "id": "b1abb4baa4c07576",
@@ -3574,7 +3940,7 @@
         "AIコーディング"
       ],
       "title_ja": "DNSの目的は、詐欺を広めることです",
-      "summary_ja": "DNSの目的は、「ドメインネームシステムの目的は、偽りなく高いレートで人々の詐欺を実行するために犯罪者のためのベクトルであるようだ」と彼のテイクのサポートでいくつかのダウンティング統計を共有することです。 このInterisleレポート(アンドリュー・キャンプ)では、Terenceは次のように述べています。 新たに85億人と言われる"
+      "summary_ja": "DNSの目的は、「ドメインネームシステムの目的は、偽りなく高いレートで人々の詐欺を実行する犯罪者のためのベクトルであるように、彼のテイクのサポートでいくつかのダウンティング統計を共有することです。」 このInterisleレポート(アンドリュー・キャンプ)では、Terenceは次のように述べています。 新たに85億人と言われる"
     },
     {
       "id": "41b47a2aabbaf196",
@@ -3630,198 +3996,6 @@
       ],
       "title_ja": "ChatGPT ユーザーの 1 億を超えるオンラインストレージを迅速にスケーリング",
       "summary_ja": "OpenAI が Python ライブラリから Habitat をグローバルに分散ストレージ プラットフォームに進化させ、ChatGPT ユーザーの 1 億、毎秒 22M のリクエストを処理する方法を学びます。"
-    },
-    {
-      "id": "f58f39e2ad671915",
-      "title": "There's No Limit to How Bad Code Can Get",
-      "url": "https://simonwillison.net/2026/Sep/6/theres-no-limit-to-how-bad-code-can-get/",
-      "summary": "My comment on There's No Limit to How Bad Code Can Get — Lobste.rs. [In reply to a comment about burning it down to start from scratch when technical debt becomes overwhelming] In my experience it's so rare for that to work. You announce the old thing is irrecoverably drowning in tech debt. You spin up a team to rewrit",
-      "published_at": "2026-09-06T09:08:06+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_kind": "blog",
-      "source_category": "ai",
-      "primary_category": "ai",
-      "topics": [
-        {
-          "id": "llm_ai_tools",
-          "score": 0.25
-        },
-        {
-          "id": "ai_coding",
-          "score": 0.25
-        }
-      ],
-      "topic_ids": [
-        "llm_ai_tools",
-        "ai_coding"
-      ],
-      "topic_labels": [
-        "LLM・AIツール",
-        "AIコーディング"
-      ],
-      "topic_scores": {
-        "llm_ai_tools": 0.25,
-        "ai_coding": 0.25
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "analysis",
-      "item_type": "analysis",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 1.65,
-        "related_interest": 0.0,
-        "freshness": 0.953,
-        "source_priority": 0.85
-      },
-      "recommendation_reason": "direct",
-      "score": 1.65,
-      "score_components": {
-        "topics": 1.65,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 3.69,
-      "matched_interests": [
-        "llm_ai_tools",
-        "ai_coding"
-      ],
-      "matched_labels": [
-        "LLM・AIツール",
-        "AIコーディング"
-      ],
-      "title_ja": "悪いコードを取得するには制限はありません",
-      "summary_ja": "私のコメントには、悪いコードが取得できる制限はありません - Lobste.rs. [技術債務が圧倒されると、ゼロから焼却するというコメントに返信] 私の経験では、それが仕事のために非常にまれです。 古いことは、技術債務に誤ってドローイングされていることを発表しました。 チームをスピンしてチームを退役"
-    },
-    {
-      "id": "c5438175cdce76e6",
-      "title": "Quoting Zach Kehs",
-      "url": "https://simonwillison.net/2026/Sep/6/zach-kehs/",
-      "summary": "If you continue to add floors and rooms to a building forever, it will collapse. Software faces no such constraint. The code can always get worse. There can always be a new layer of indirection or a reduction in performance. — Zach Kehs , There's No Limit to How Bad Code Can Get Tags: technical-debt",
-      "published_at": "2026-09-06T08:42:49+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_kind": "blog",
-      "source_category": "ai",
-      "primary_category": "ai",
-      "topics": [
-        {
-          "id": "llm_ai_tools",
-          "score": 0.25
-        },
-        {
-          "id": "ai_coding",
-          "score": 0.25
-        }
-      ],
-      "topic_ids": [
-        "llm_ai_tools",
-        "ai_coding"
-      ],
-      "topic_labels": [
-        "LLM・AIツール",
-        "AIコーディング"
-      ],
-      "topic_scores": {
-        "llm_ai_tools": 0.25,
-        "ai_coding": 0.25
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "analysis",
-      "item_type": "analysis",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 1.65,
-        "related_interest": 0.0,
-        "freshness": 0.953,
-        "source_priority": 0.85
-      },
-      "recommendation_reason": "direct",
-      "score": 1.65,
-      "score_components": {
-        "topics": 1.65,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 3.69,
-      "matched_interests": [
-        "llm_ai_tools",
-        "ai_coding"
-      ],
-      "matched_labels": [
-        "LLM・AIツール",
-        "AIコーディング"
-      ],
-      "title_ja": "Zach Kehsの引用",
-      "summary_ja": "床や部屋を建物に永遠に入れ続けると、崩壊します。 ソフトウェアはそのような制約を直さない。 コードは常に悪化させることができます。 常に新しい間接層か性能の減少はある場合もあります。 — Zach Kehs , 悪いコードがタグを取得する方法の制限はありません: 技術的なデビット"
-    },
-    {
-      "id": "f588b0d0d876a347",
-      "title": "Introducing GPT-6 Astra for developers",
-      "url": "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/",
-      "summary": "Introducing GPT-6 Astra for developers Blink and you'll miss it, but there's a familiar creature at 1m59s : Across the board, Astra has more attention to detail, better understanding of the user's prompt, and can build more sophisticated outputs. In particular, it excels at building 3D models. I've seen it make incredi",
-      "published_at": "2026-09-05T23:27:48+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_kind": "blog",
-      "source_category": "ai",
-      "primary_category": "ai",
-      "topics": [
-        {
-          "id": "llm_ai_tools",
-          "score": 0.25
-        },
-        {
-          "id": "ai_coding",
-          "score": 0.25
-        }
-      ],
-      "topic_ids": [
-        "llm_ai_tools",
-        "ai_coding"
-      ],
-      "topic_labels": [
-        "LLM・AIツール",
-        "AIコーディング"
-      ],
-      "topic_scores": {
-        "llm_ai_tools": 0.25,
-        "ai_coding": 0.25
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "analysis",
-      "item_type": "analysis",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 1.65,
-        "related_interest": 0.0,
-        "freshness": 0.95,
-        "source_priority": 0.85
-      },
-      "recommendation_reason": "direct",
-      "score": 1.65,
-      "score_components": {
-        "topics": 1.65,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 3.68,
-      "matched_interests": [
-        "llm_ai_tools",
-        "ai_coding"
-      ],
-      "matched_labels": [
-        "LLM・AIツール",
-        "AIコーディング"
-      ],
-      "title_ja": "開発者向けGPT-6 Astraのご紹介",
-      "summary_ja": "開発者向けGPT-6 Astra Blinkを導入し、お見逃しなく。1m59sには馴染みのある生き物があります。ボード全体で、Astraはユーザーのプロンプトをより詳しく理解し、より洗練された出力を構築することができます。 特に、3Dモデルのビルドに優れています。 私はそれがincrediを作ることが見た"
     },
     {
       "id": "8e20575823c597ca",
@@ -4383,6 +4557,79 @@
       "summary_ja": "制御されたオフライン評価では、HydraFusion の 選択的なコーディングワークフローは、評価された Opus 5 ベースラインにマッチするか、または超過して、推定ワークフローコストを削減します。 GitHub Copilotで研究プレビューとして利用できます。 ポストプロジェクトHydraFusion:マルチモデルのオーケストレーションを介してフロンティア品質が最初に登場"
     },
     {
+      "id": "60b68b528bb6cb86",
+      "title": "Letting an AI agent work on your notes without uploading them",
+      "url": "https://getpellet.app/blog/an-ai-agent-on-your-own-notes",
+      "summary": "Pellet describes a local-first approach to letting an AI agent work directly with personal markdown notes on the user’s machine instead of requiring the knowledge base to be uploaded to a hosted service.",
+      "published_at": "2026-09-08T00:00:00+00:00",
+      "source": "Pellet blog",
+      "source_id": "chatgpt_web_discovery",
+      "source_kind": "blog",
+      "source_category": "knowledge",
+      "primary_category": "ai",
+      "topics": [
+        {
+          "id": "ai_agents_automation",
+          "score": 0.333
+        }
+      ],
+      "topic_ids": [
+        "ai_agents_automation"
+      ],
+      "topic_labels": [
+        "AIエージェント・自動化"
+      ],
+      "topic_scores": {
+        "ai_agents_automation": 0.333
+      },
+      "matched_signals": [
+        "local_personal_tools"
+      ],
+      "positive_signals": [
+        "local_personal_tools"
+      ],
+      "matched_combinations": [],
+      "content_type": "analysis",
+      "item_type": "analysis",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 1.9,
+        "related_interest": 0.0,
+        "freshness": 0.715,
+        "source_priority": 0.62,
+        "active_discovery": 0.234
+      },
+      "recommendation_reason": "direct",
+      "score": 1.9,
+      "score_components": {
+        "topics": 1.35,
+        "signals": 0.55,
+        "combinations": 0.0
+      },
+      "rank_score": 3.44,
+      "matched_interests": [
+        "ai_agents_automation"
+      ],
+      "matched_labels": [
+        "AIエージェント・自動化",
+        "個人向け・Local-first",
+        "検索:Local-first personal tools"
+      ],
+      "source_method": "chatgpt_search",
+      "discovered_via": [
+        "chatgpt_search"
+      ],
+      "discovery_query_ids": [
+        "local_first_personal_tools"
+      ],
+      "discovery_queries": [
+        "local-first personal tools"
+      ],
+      "discovered_at": "2026-09-11T23:51:04+00:00",
+      "title_ja": "それらをアップロードすることなく、AIエージェントがメモに動作させる",
+      "summary_ja": "Pellet は、AI エージェントがホストサービスにアップロードするナレッジベースを要求する代わりに、ユーザーのマシンに個人的なマークダウンノートで直接動作させるためのローカルファーストなアプローチについて説明します。"
+    },
+    {
       "id": "32cea7e66641442d",
       "title": "Decoding the new AI lingo: Loops, harnesses, squads, hill climbing… oh my!",
       "url": "https://github.blog/ai-and-ml/decoding-the-new-ai-lingo-loops-harnesses-squads-hill-climbing-oh-my/",
@@ -4665,6 +4912,86 @@
       ],
       "title_ja": "デジタル一次脳の構築",
       "summary_ja": "Raspberry Piで情報を整理、検索、同期、バックアップするシステムを構築します。 ポストは、ラズベリーパイで最初に登場したデジタル一次脳を構築します。"
+    },
+    {
+      "id": "0878853c27b5d554",
+      "title": "A Split Keyboard Designed For Human Hands",
+      "url": "https://hackaday.com/2026/09/03/a-split-keyboard-designed-for-human-hands/",
+      "summary": "A compact 36-key split keyboard was designed around measured hand geometry and refined through roughly 50 prototypes, using angled finger columns, low-profile switches, and thumb layer keys.",
+      "published_at": "2026-09-03T00:00:00+00:00",
+      "source": "Hackaday",
+      "source_id": "chatgpt_web_discovery",
+      "source_kind": "publication",
+      "source_category": "make",
+      "primary_category": "make",
+      "topics": [
+        {
+          "id": "input_devices",
+          "score": 0.25
+        },
+        {
+          "id": "hci_interfaces",
+          "score": 0.25
+        }
+      ],
+      "topic_ids": [
+        "input_devices",
+        "hci_interfaces"
+      ],
+      "topic_labels": [
+        "入力デバイス・自作キーボード",
+        "HCI・インターフェース"
+      ],
+      "topic_scores": {
+        "input_devices": 0.25,
+        "hci_interfaces": 0.25
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [
+        "tiny_input_device"
+      ],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 3.09,
+        "related_interest": 0.0,
+        "freshness": 0.357,
+        "source_priority": 0.7,
+        "active_discovery": 0.27
+      },
+      "recommendation_reason": "direct",
+      "score": 3.09,
+      "score_components": {
+        "topics": 1.84,
+        "signals": 0.0,
+        "combinations": 1.25
+      },
+      "rank_score": 3.32,
+      "matched_interests": [
+        "input_devices",
+        "hci_interfaces"
+      ],
+      "matched_labels": [
+        "入力デバイス・自作キーボード",
+        "HCI・インターフェース",
+        "小型入力装置",
+        "検索:Custom input device"
+      ],
+      "source_method": "chatgpt_search",
+      "discovered_via": [
+        "chatgpt_search"
+      ],
+      "discovery_query_ids": [
+        "custom_input_device"
+      ],
+      "discovery_queries": [
+        "custom input device"
+      ],
+      "discovered_at": "2026-09-11T23:51:04+00:00",
+      "title_ja": "人手のために設計されている割れたキーボード",
+      "summary_ja": "コンパクトな36キースプリットキーボードは、測定された手ジオメトリの周りに設計され、約50個のプロトタイプで洗練されたもので、角度の指の列、低プロファイルスイッチ、および親指レイヤーキーを使用します。"
     },
     {
       "id": "a1e5f3d918ec2b1d",
@@ -4958,6 +5285,61 @@
       ],
       "title_ja": "マーケティングはコードとしてops: GitHubでフォローアップする計画からイベントの自動化",
       "summary_ja": "あなたの仕事をする方法を書き留めることができるなら、それを自動化することができます。 GitHubのAPACマーケティングチームをサポートしました。 GitHubブログで最初に登場した GitHub でのフォローアップを計画から自動化するイベントが、コードとしてのマーケティングのオプスです。"
+    },
+    {
+      "id": "678ba8068e7a3a9f",
+      "title": "github-to-sqlite 2.9.1",
+      "url": "https://simonwillison.net/2026/Sep/11/github-to-sqlite/",
+      "summary": "Release: github-to-sqlite 2.9.1 Fix for compatibility with sqlite-utils 4.x . #85 Tags: github , sqlite",
+      "published_at": "2026-09-11T00:28:39+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_kind": "blog",
+      "source_category": "ai",
+      "primary_category": "software",
+      "topics": [
+        {
+          "id": "github_devops",
+          "score": 0.333
+        }
+      ],
+      "topic_ids": [
+        "github_devops"
+      ],
+      "topic_labels": [
+        "GitHub・Actions"
+      ],
+      "topic_scores": {
+        "github_devops": 0.333
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "analysis",
+      "item_type": "analysis",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 1.05,
+        "related_interest": 0.0,
+        "freshness": 0.992,
+        "source_priority": 0.85
+      },
+      "recommendation_reason": "direct",
+      "score": 1.05,
+      "score_components": {
+        "topics": 1.05,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 3.2,
+      "matched_interests": [
+        "github_devops"
+      ],
+      "matched_labels": [
+        "GitHub・Actions"
+      ],
+      "title_ja": "github-to-sqliteの2.9.1",
+      "summary_ja": "リリース: github-to-sqlite 2.9.1 sqlite-utils 4.x との互換性の修正 . #85 タグ: github , sqlite"
     },
     {
       "id": "b81f259c6183c9d4",
@@ -5892,7 +6274,7 @@
         "Obsidian・PKM"
       ],
       "title_ja": "Obsidian 1.13.6 モバイル (公開)",
-      "summary_ja": "Obsidianデスクトップ v1.13.6 まで、すべての新機能とバグ修正が含まれています。 タブスイッチャーのタブのタブを閉じるために、新しい追加スワイプツークローズ. 改善点 タブはタブのスイッチャーからタブを閉じた後、新しい位置にアニメーションします。 モバイルツールバーの設定ページでは、各コマンドの横にあるアイコンが表示されます。 チェックボックスのスケール"
+      "summary_ja": "すべての新機能とバグは、Obsidian デスクトップ v1.13.6 まで修正します。タブ スイッチャのタブを閉じるために、新しい追加 swipe-to-close。 改善点 タブはタブのスイッチャーからタブを閉じた後、新しい位置にアニメーションします。 モバイルツールバーの設定ページでは、各コマンドの横にあるアイコンが表示されます。 チェックボックスのスケール"
     },
     {
       "id": "5086a94035ddaff2",
@@ -7002,6 +7384,71 @@
       ],
       "title_ja": "Obsidianプラグインの未来",
       "summary_ja": "今日、Obsidianコミュニティ、Obsidianプラグインとテーマの新しいディレクトリと開発者ダッシュボードを立ち上げることに興奮しています。 2020年のObsidian APIリリース以来、4,000以上のプラグインとテーマは素晴らしいコミュニティによって作成されています。 信じられないほど、Obsidianプラグインは120万ダウンロード突破しました! 私達のg"
+    },
+    {
+      "id": "8ae964e0148b514d",
+      "title": "Latest News | Pokemon.com",
+      "url": "https://www.pokemon.com/us/news",
+      "summary": "The official Pokémon news page currently highlights September 2026 updates across games and the Trading Card Game, including 30th Celebration coverage, Pokopia expansion-pass information, and Pokémon GO updates.",
+      "published_at": null,
+      "source": "Pokémon",
+      "source_id": "chatgpt_web_discovery",
+      "source_kind": "official",
+      "source_category": "other",
+      "primary_category": "other",
+      "topics": [],
+      "topic_ids": [],
+      "topic_labels": [],
+      "topic_scores": {},
+      "matched_signals": [
+        "pokemon"
+      ],
+      "positive_signals": [
+        "pokemon"
+      ],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 2.6,
+        "related_interest": 0.0,
+        "freshness": 0.35,
+        "source_priority": 0.85,
+        "active_discovery": 0.234
+      },
+      "recommendation_reason": "direct",
+      "score": 2.6,
+      "score_components": {
+        "topics": 0,
+        "signals": 2.6,
+        "combinations": 0.0
+      },
+      "rank_score": 2.94,
+      "matched_interests": [],
+      "matched_labels": [
+        "ポケモン",
+        "検索:ポケモン",
+        "検索:Pokémon",
+        "検索:Pokemon News"
+      ],
+      "source_method": "chatgpt_search",
+      "discovered_via": [
+        "chatgpt_search"
+      ],
+      "discovery_query_ids": [
+        "pokemon",
+        "pokemon_en",
+        "pokemon_news"
+      ],
+      "discovery_queries": [
+        "ポケモン",
+        "Pokémon",
+        "Pokemon news"
+      ],
+      "discovered_at": "2026-09-11T23:51:04+00:00",
+      "title_ja": "最新ニュース | Pokemon.com",
+      "summary_ja": "「Pokémon」公式ニュースページでは、9月2026日(火)に「Pokémon GO」と「Pokémon GO」の30周年を記念して「Pokémon GO」のアップデートが紹介されています。"
     },
     {
       "id": "ea74094866bf20b7",
@@ -8982,6 +9429,68 @@
       ],
       "title_ja": "検索で学習をレベルアップする5つの新しい方法",
       "summary_ja": "「ノートブックを追加」や「Ask Google」のようなアイコンやフレーズで描かれたイメージ"
+    },
+    {
+      "id": "cef0a6bd28042cf7",
+      "title": "ニュース一覧 | ポケモンカードゲーム公式ホームページ",
+      "url": "https://www.pokemon-card.com/info/index.html",
+      "summary": "ポケモンカードゲーム公式のニュース一覧。9月11日にはチャンピオンズリーグ2027横浜のライブ配信や学園祭2026、9月9日には30th CELEBRATION関連情報などが掲載されている。",
+      "published_at": null,
+      "source": "ポケモンカードゲーム",
+      "source_id": "chatgpt_web_discovery",
+      "source_kind": "official",
+      "source_category": "other",
+      "primary_category": "other",
+      "topics": [],
+      "topic_ids": [],
+      "topic_labels": [],
+      "topic_scores": {},
+      "matched_signals": [
+        "pokemon"
+      ],
+      "positive_signals": [
+        "pokemon"
+      ],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 1.95,
+        "related_interest": 0.0,
+        "freshness": 0.35,
+        "source_priority": 0.85,
+        "active_discovery": 0.234
+      },
+      "recommendation_reason": "direct",
+      "score": 1.95,
+      "score_components": {
+        "topics": 0,
+        "signals": 1.95,
+        "combinations": 0.0
+      },
+      "rank_score": 2.48,
+      "matched_interests": [],
+      "matched_labels": [
+        "ポケモン",
+        "検索:ポケモン",
+        "検索:Pokemon News"
+      ],
+      "source_method": "chatgpt_search",
+      "discovered_via": [
+        "chatgpt_search"
+      ],
+      "discovery_query_ids": [
+        "pokemon",
+        "pokemon_news"
+      ],
+      "discovery_queries": [
+        "ポケモン",
+        "Pokemon news"
+      ],
+      "discovered_at": "2026-09-11T23:51:04+00:00",
+      "title_ja": "ニュース一覧 | ポケモンカードゲーム公式ホームページ",
+      "summary_ja": "ポケモンカードゲーム公式のニュース一覧。9月11日にはチャンピオンズリーグ2027横浜のライブ配信や学園祭2026、9月9日には30th CELEBRATION関連情報などが掲載されている。"
     },
     {
       "id": "acb64a90e91763c1",
@@ -11604,14 +12113,23 @@
       "summary_ja": "WWDC26の開幕まであと1週間！テクノロジー、クリエイティビティ、そしてコミュニティのパワーが溢れる5日間。すべて無料で、オンラインで参加できます。 さらに詳しく"
     }
   ],
+  "discovery": {
+    "enabled": true,
+    "producer": "chatgpt_scheduled_search",
+    "generated_at": "2026-09-11T23:51:04Z",
+    "configured_queries": 18,
+    "input_items": 7,
+    "accepted_items": 7,
+    "duplicate_hits": 0
+  },
   "translation": {
     "engine": "argos-translate",
     "source_language": "en",
     "target_language": "ja",
-    "generated_at": "2026-09-11T23:50:44.884384+00:00",
-    "translated_fields": 23,
-    "reused_fields": 335,
-    "native_japanese_fields": 50,
+    "generated_at": "2026-09-11T23:53:47.793993+00:00",
+    "translated_fields": 24,
+    "reused_fields": 346,
+    "native_japanese_fields": 52,
     "failed_fields": 0
   }
 }
