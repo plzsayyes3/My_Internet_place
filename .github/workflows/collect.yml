@@ -25,7 +25,7 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 20
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -38,14 +38,28 @@ jobs:
           python-version: "3.12"
           cache: pip
 
+      - name: Cache Argos English to Japanese model
+        uses: actions/cache@v4
+        with:
+          path: ~/.local/share/argos-translate/packages
+          key: argos-en-ja-v1
+
       - name: Install dependencies
         run: pip install -r requirements.txt
 
       - name: Test taxonomy scoring
         run: python -m unittest discover -s tests
 
+      - name: Preserve previous translations
+        run: cp data/latest.json /tmp/previous-latest.json 2>/dev/null || true
+
       - name: Collect feeds
         run: python src/collect.py
+
+      - name: Translate English fields to Japanese
+        env:
+          ARGOS_DEVICE_TYPE: cpu
+        run: python src/translate.py --previous /tmp/previous-latest.json
 
       - name: Commit updated feed data
         run: |
