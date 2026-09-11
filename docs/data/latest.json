@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T06:07:02.814737+00:00",
+  "generated_at": "2026-09-11T08:11:05.781669+00:00",
   "count": 204,
   "taxonomy_version": 1,
   "interest_profile_version": 3,
@@ -194,7 +194,7 @@
       "id": "300052dde8dca54b",
       "title": "OpenAI Agents API",
       "url": "https://developers.openai.com/api/docs/guides/agents-api/overview",
-      "summary": "Article URL: https://developers.openai.com/api/docs/guides/agents-api/overview Comments URL: https://news.ycombinator.com/item?id=49649213 Points: 207 # Comments: 123",
+      "summary": "Article URL: https://developers.openai.com/api/docs/guides/agents-api/overview Comments URL: https://news.ycombinator.com/item?id=49649213 Points: 242 # Comments: 133",
       "published_at": "2026-09-10T19:43:22+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -224,7 +224,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 6.29,
+      "rank_score": 6.28,
       "matched_interests": [
         "ai_agents_automation",
         "llm_tools"
@@ -271,7 +271,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 5.87,
+      "rank_score": 5.86,
       "matched_interests": [
         "llm_tools",
         "github_devops",
@@ -455,7 +455,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 5.33,
+      "rank_score": 5.32,
       "matched_interests": [
         "llm_tools",
         "ai_coding",
@@ -501,7 +501,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 5.31,
+      "rank_score": 5.3,
       "matched_interests": [
         "github_devops",
         "ai_coding"
@@ -589,7 +589,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 5.07,
+      "rank_score": 5.06,
       "matched_interests": [
         "obsidian_pkm",
         "apple_ios"
@@ -636,7 +636,7 @@
         "signals": 0.75,
         "combinations": 1.6
       },
-      "rank_score": 5.06,
+      "rank_score": 5.05,
       "matched_interests": [
         "small_computing"
       ],
@@ -773,7 +773,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 4.92,
+      "rank_score": 4.91,
       "matched_interests": [
         "ai_coding",
         "llm_tools"
@@ -817,7 +817,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 4.84,
+      "rank_score": 4.83,
       "matched_interests": [
         "ai_coding",
         "github_devops"
@@ -1134,45 +1134,6 @@
       ]
     },
     {
-      "id": "1f1cb31536fdfc76",
-      "title": "Control GitHub Actions cache access with cache-mode",
-      "url": "https://github.blog/changelog/2026-09-10-control-github-actions-cache-access-with-cache-mode",
-      "summary": "You can now use cache-mode to apply least-privilege access to the GitHub Actions cache at the workflow or job level. By granting each workflow or job only the cache access… The post Control GitHub Actions cache access with cache-mode appeared first on The GitHub Blog .",
-      "published_at": "2026-09-10T17:26:59+00:00",
-      "source": "GitHub Changelog",
-      "source_id": "github_changelog",
-      "source_category": "software",
-      "primary_category": "software",
-      "topics": [
-        "github_devops"
-      ],
-      "topic_labels": [
-        "GitHub・Actions"
-      ],
-      "topic_scores": {
-        "github_devops": 3.0
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "item_type": "release",
-      "content_type": "release",
-      "traits": [],
-      "score": 2.1,
-      "score_components": {
-        "topics": 2.1,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 4.28,
-      "matched_interests": [
-        "github_devops"
-      ],
-      "matched_labels": [
-        "GitHub・Actions"
-      ]
-    },
-    {
       "id": "6f85dcbde774b631",
       "title": "Custom AMOLED Wearable Makes Great Icebreaker",
       "url": "https://hackaday.com/2026/09/10/custom-amoled-wearable-makes-great-icebreaker/",
@@ -1209,6 +1170,45 @@
       ],
       "matched_labels": [
         "電子ペーパー・ウェアラブル"
+      ]
+    },
+    {
+      "id": "1f1cb31536fdfc76",
+      "title": "Control GitHub Actions cache access with cache-mode",
+      "url": "https://github.blog/changelog/2026-09-10-control-github-actions-cache-access-with-cache-mode",
+      "summary": "You can now use cache-mode to apply least-privilege access to the GitHub Actions cache at the workflow or job level. By granting each workflow or job only the cache access… The post Control GitHub Actions cache access with cache-mode appeared first on The GitHub Blog .",
+      "published_at": "2026-09-10T17:26:59+00:00",
+      "source": "GitHub Changelog",
+      "source_id": "github_changelog",
+      "source_category": "software",
+      "primary_category": "software",
+      "topics": [
+        "github_devops"
+      ],
+      "topic_labels": [
+        "GitHub・Actions"
+      ],
+      "topic_scores": {
+        "github_devops": 3.0
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "item_type": "release",
+      "content_type": "release",
+      "traits": [],
+      "score": 2.1,
+      "score_components": {
+        "topics": 2.1,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 4.27,
+      "matched_interests": [
+        "github_devops"
+      ],
+      "matched_labels": [
+        "GitHub・Actions"
       ]
     },
     {
@@ -1289,7 +1289,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 4.18,
+      "rank_score": 4.17,
       "matched_interests": [
         "obsidian_pkm",
         "apple_ios"
@@ -1297,6 +1297,45 @@
       "matched_labels": [
         "Obsidian・PKM",
         "Apple Watch・iPhone・iOS"
+      ]
+    },
+    {
+      "id": "750ee3b3caa217f1",
+      "title": "How to Use OpenRouter Presets: Config-as-Code Guide",
+      "url": "https://openrouter.ai/blog/tutorials/presets/",
+      "summary": "A preset is config-as-code for your LLM calls: a named, versioned set of models, system prompts, provider routing, and sampling parameters. Define it once, reference it as @preset/your-slug everywhere, and update every app from the dashboard without a redeploy.",
+      "published_at": "2026-09-10T00:00:00+00:00",
+      "source": "OpenRouter Blog",
+      "source_id": "openrouter_blog",
+      "source_category": "ai",
+      "primary_category": "ai",
+      "topics": [
+        "llm_tools"
+      ],
+      "topic_labels": [
+        "LLM・AIツール"
+      ],
+      "topic_scores": {
+        "llm_tools": 2.0
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "item_type": "blog",
+      "content_type": "blog",
+      "traits": [],
+      "score": 2.0,
+      "score_components": {
+        "topics": 2.0,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 4.16,
+      "matched_interests": [
+        "llm_tools"
+      ],
+      "matched_labels": [
+        "LLM・AIツール"
       ]
     },
     {
@@ -1341,6 +1380,50 @@
       "matched_labels": [
         "Obsidian・PKM",
         "Local-first"
+      ]
+    },
+    {
+      "id": "2fcc6baa4f03a6d5",
+      "title": "Nano Banana API: Edit Images with Gemini in Code",
+      "url": "https://openrouter.ai/blog/tutorials/nano-banana/",
+      "summary": "Send a source image and an edit prompt in one request, get the edited image back, and change the editing model by editing a single field. Runnable Python and TypeScript included.",
+      "published_at": "2026-09-09T00:00:00+00:00",
+      "source": "OpenRouter Blog",
+      "source_id": "openrouter_blog",
+      "source_category": "ai",
+      "primary_category": "ai",
+      "topics": [
+        "llm_tools",
+        "web_app_development"
+      ],
+      "topic_labels": [
+        "LLM・AIツール",
+        "Webアプリ制作"
+      ],
+      "topic_scores": {
+        "llm_tools": 1.5,
+        "web_app_development": 0.5
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "item_type": "blog",
+      "content_type": "blog",
+      "traits": [],
+      "score": 2.02,
+      "score_components": {
+        "topics": 2.02,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 4.15,
+      "matched_interests": [
+        "llm_tools",
+        "web_app_development"
+      ],
+      "matched_labels": [
+        "LLM・AIツール",
+        "Webアプリ制作"
       ]
     },
     {
@@ -1677,7 +1760,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.97,
+      "rank_score": 3.96,
       "matched_interests": [
         "llm_tools"
       ],
@@ -2121,45 +2204,6 @@
       ]
     },
     {
-      "id": "ff3d29128810b258",
-      "title": "GitHub Advanced Security expands trial availability",
-      "url": "https://github.blog/changelog/2026-09-09-github-advanced-security-expands-trial-availability",
-      "summary": "More GitHub Enterprise Cloud customers can now start a self-serve GitHub Advanced Security trial to evaluate GitHub Code Security and GitHub Secret Protection. Eligibility has expanded from enterprises with up… The post GitHub Advanced Security expands trial availability appeared first on The GitHub Blog .",
-      "published_at": "2026-09-09T17:33:34+00:00",
-      "source": "GitHub Changelog",
-      "source_id": "github_changelog",
-      "source_category": "software",
-      "primary_category": "software",
-      "topics": [
-        "github_devops"
-      ],
-      "topic_labels": [
-        "GitHub・Actions"
-      ],
-      "topic_scores": {
-        "github_devops": 1.5
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "item_type": "release",
-      "content_type": "release",
-      "traits": [],
-      "score": 1.58,
-      "score_components": {
-        "topics": 1.58,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 3.74,
-      "matched_interests": [
-        "github_devops"
-      ],
-      "matched_labels": [
-        "GitHub・Actions"
-      ]
-    },
-    {
       "id": "b81f259c6183c9d4",
       "title": "iPhone Duoに向けた準備",
       "url": "https://developer.apple.com/jp/news/?id=vn8abkxx",
@@ -2196,6 +2240,45 @@
       ],
       "matched_labels": [
         "Apple Watch・iPhone・iOS"
+      ]
+    },
+    {
+      "id": "ff3d29128810b258",
+      "title": "GitHub Advanced Security expands trial availability",
+      "url": "https://github.blog/changelog/2026-09-09-github-advanced-security-expands-trial-availability",
+      "summary": "More GitHub Enterprise Cloud customers can now start a self-serve GitHub Advanced Security trial to evaluate GitHub Code Security and GitHub Secret Protection. Eligibility has expanded from enterprises with up… The post GitHub Advanced Security expands trial availability appeared first on The GitHub Blog .",
+      "published_at": "2026-09-09T17:33:34+00:00",
+      "source": "GitHub Changelog",
+      "source_id": "github_changelog",
+      "source_category": "software",
+      "primary_category": "software",
+      "topics": [
+        "github_devops"
+      ],
+      "topic_labels": [
+        "GitHub・Actions"
+      ],
+      "topic_scores": {
+        "github_devops": 1.5
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "item_type": "release",
+      "content_type": "release",
+      "traits": [],
+      "score": 1.58,
+      "score_components": {
+        "topics": 1.58,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 3.73,
+      "matched_interests": [
+        "github_devops"
+      ],
+      "matched_labels": [
+        "GitHub・Actions"
       ]
     },
     {
@@ -2480,7 +2563,7 @@
       "id": "e38e55b793ac5187",
       "title": "Proof of Capture: Apple Reference Image, but open source and using steganography",
       "url": "https://merybenavente.me/blog/proof-of-capture",
-      "summary": "Article URL: https://merybenavente.me/blog/proof-of-capture Comments URL: https://news.ycombinator.com/item?id=49649222 Points: 88 # Comments: 52",
+      "summary": "Article URL: https://merybenavente.me/blog/proof-of-capture Comments URL: https://news.ycombinator.com/item?id=49649222 Points: 100 # Comments: 54",
       "published_at": "2026-09-10T19:44:15+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -2546,7 +2629,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.67,
+      "rank_score": 3.66,
       "matched_interests": [
         "llm_tools"
       ],
@@ -2758,7 +2841,7 @@
       "id": "35785ab00b53ffaa",
       "title": "The Gemini app is now available for Windows",
       "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/",
-      "summary": "Article URL: https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/ Comments URL: https://news.ycombinator.com/item?id=49653699 Points: 9 # Comments: 4",
+      "summary": "Article URL: https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/ Comments URL: https://news.ycombinator.com/item?id=49653699 Points: 35 # Comments: 17",
       "published_at": "2026-09-11T04:52:20+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -3325,7 +3408,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.01,
+      "rank_score": 3.0,
       "matched_interests": [
         "llm_tools",
         "ai_agents_automation"
@@ -3483,7 +3566,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.78,
+      "rank_score": 2.77,
       "matched_interests": [
         "ai_coding"
       ],
@@ -3687,45 +3770,6 @@
       ]
     },
     {
-      "id": "baa2554f538a0268",
-      "title": "Any Nix package, live in your browser",
-      "url": "https://simonwillison.net/2026/Sep/10/trynix/",
-      "summary": "Any Nix package, live in your browser Farid Zakaria calls this his \" magnum opus of Nix work\", and I can see why. trynix.dev provides a qemu-wasm powered x86_64 Linux virtual machine running entirely in your browser through WebAssembly. That VM can then be booted with any Nix package from the past 13 years. They are UR",
-      "published_at": "2026-09-10T23:44:15+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_category": "ai",
-      "primary_category": "software",
-      "topics": [
-        "github_devops"
-      ],
-      "topic_labels": [
-        "GitHub・Actions"
-      ],
-      "topic_scores": {
-        "github_devops": 0.5
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "item_type": "blog",
-      "content_type": "blog",
-      "traits": [],
-      "score": 0.53,
-      "score_components": {
-        "topics": 0.53,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.7,
-      "matched_interests": [
-        "github_devops"
-      ],
-      "matched_labels": [
-        "GitHub・Actions"
-      ]
-    },
-    {
       "id": "a91e2970233df647",
       "title": "Pi-Sky flight-tracking dashboard",
       "url": "https://www.raspberrypi.com/news/pi-sky-flight-tracking-dashboard/",
@@ -3762,6 +3806,45 @@
       ],
       "matched_labels": [
         "小型コンピューティング"
+      ]
+    },
+    {
+      "id": "baa2554f538a0268",
+      "title": "Any Nix package, live in your browser",
+      "url": "https://simonwillison.net/2026/Sep/10/trynix/",
+      "summary": "Any Nix package, live in your browser Farid Zakaria calls this his \" magnum opus of Nix work\", and I can see why. trynix.dev provides a qemu-wasm powered x86_64 Linux virtual machine running entirely in your browser through WebAssembly. That VM can then be booted with any Nix package from the past 13 years. They are UR",
+      "published_at": "2026-09-10T23:44:15+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_category": "ai",
+      "primary_category": "software",
+      "topics": [
+        "github_devops"
+      ],
+      "topic_labels": [
+        "GitHub・Actions"
+      ],
+      "topic_scores": {
+        "github_devops": 0.5
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "item_type": "blog",
+      "content_type": "blog",
+      "traits": [],
+      "score": 0.53,
+      "score_components": {
+        "topics": 0.53,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.69,
+      "matched_interests": [
+        "github_devops"
+      ],
+      "matched_labels": [
+        "GitHub・Actions"
       ]
     },
     {
@@ -3960,45 +4043,6 @@
       ]
     },
     {
-      "id": "c1ed64cea220af37",
-      "title": "Gemini API Managed Agents: 3.6 Flash, hooks, and more",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/",
-      "summary": "Managed Agents Gemini 3.6 Flash, Hooks and Triggers",
-      "published_at": "2026-07-28T16:00:00+00:00",
-      "source": "Google AI Blog",
-      "source_id": "google_ai_blog",
-      "source_category": "ai",
-      "primary_category": "ai",
-      "topics": [
-        "llm_tools"
-      ],
-      "topic_labels": [
-        "LLM・AIツール"
-      ],
-      "topic_scores": {
-        "llm_tools": 1.5
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "item_type": "blog",
-      "content_type": "blog",
-      "traits": [],
-      "score": 1.5,
-      "score_components": {
-        "topics": 1.5,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.69,
-      "matched_interests": [
-        "llm_tools"
-      ],
-      "matched_labels": [
-        "LLM・AIツール"
-      ]
-    },
-    {
       "id": "1c4e1a1a58eeb581",
       "title": "Expanding AI access and cyber defense for federal, state, local, and tribal governments",
       "url": "https://openai.com/index/expanding-ai-access-us-government",
@@ -4074,6 +4118,45 @@
       ],
       "matched_labels": [
         "Apple Watch・iPhone・iOS"
+      ]
+    },
+    {
+      "id": "c1ed64cea220af37",
+      "title": "Gemini API Managed Agents: 3.6 Flash, hooks, and more",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/",
+      "summary": "Managed Agents Gemini 3.6 Flash, Hooks and Triggers",
+      "published_at": "2026-07-28T16:00:00+00:00",
+      "source": "Google AI Blog",
+      "source_id": "google_ai_blog",
+      "source_category": "ai",
+      "primary_category": "ai",
+      "topics": [
+        "llm_tools"
+      ],
+      "topic_labels": [
+        "LLM・AIツール"
+      ],
+      "topic_scores": {
+        "llm_tools": 1.5
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "item_type": "blog",
+      "content_type": "blog",
+      "traits": [],
+      "score": 1.5,
+      "score_components": {
+        "topics": 1.5,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.68,
+      "matched_interests": [
+        "llm_tools"
+      ],
+      "matched_labels": [
+        "LLM・AIツール"
       ]
     },
     {
@@ -4311,84 +4394,6 @@
       ]
     },
     {
-      "id": "4dc3a16e12312643",
-      "title": "Herdr Studio",
-      "url": "https://powerfooi.github.io/herdr-studio/",
-      "summary": "Article URL: https://powerfooI.github.io/herdr-studio/ Comments URL: https://news.ycombinator.com/item?id=49652188 Points: 22 # Comments: 14",
-      "published_at": "2026-09-11T00:54:36+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_category": "other",
-      "primary_category": "software",
-      "topics": [
-        "github_devops"
-      ],
-      "topic_labels": [
-        "GitHub・Actions"
-      ],
-      "topic_scores": {
-        "github_devops": 0.5
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "item_type": "news",
-      "content_type": "news",
-      "traits": [],
-      "score": 0.53,
-      "score_components": {
-        "topics": 0.53,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.63,
-      "matched_interests": [
-        "github_devops"
-      ],
-      "matched_labels": [
-        "GitHub・Actions"
-      ]
-    },
-    {
-      "id": "b3ed6e9e3367b764",
-      "title": "YuE2 · Frontier Music with Symbolic Planning",
-      "url": "https://map-yue2.github.io/",
-      "summary": "Article URL: https://map-yue2.github.io/ Comments URL: https://news.ycombinator.com/item?id=49652028 Points: 72 # Comments: 63",
-      "published_at": "2026-09-11T00:33:26+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_category": "other",
-      "primary_category": "software",
-      "topics": [
-        "github_devops"
-      ],
-      "topic_labels": [
-        "GitHub・Actions"
-      ],
-      "topic_scores": {
-        "github_devops": 0.5
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "item_type": "news",
-      "content_type": "news",
-      "traits": [],
-      "score": 0.53,
-      "score_components": {
-        "topics": 0.53,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.63,
-      "matched_interests": [
-        "github_devops"
-      ],
-      "matched_labels": [
-        "GitHub・Actions"
-      ]
-    },
-    {
       "id": "cf43fcb7ec1fbc01",
       "title": "Give any model a terminal and files",
       "url": "https://openrouter.ai/blog/announcements/shell-tool/",
@@ -4425,6 +4430,45 @@
       ],
       "matched_labels": [
         "LLM・AIツール"
+      ]
+    },
+    {
+      "id": "b3ed6e9e3367b764",
+      "title": "YuE2 · Frontier Music with Symbolic Planning",
+      "url": "https://map-yue2.github.io/",
+      "summary": "Article URL: https://map-yue2.github.io/ Comments URL: https://news.ycombinator.com/item?id=49652028 Points: 85 # Comments: 73",
+      "published_at": "2026-09-11T00:33:26+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_category": "other",
+      "primary_category": "software",
+      "topics": [
+        "github_devops"
+      ],
+      "topic_labels": [
+        "GitHub・Actions"
+      ],
+      "topic_scores": {
+        "github_devops": 0.5
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "item_type": "news",
+      "content_type": "news",
+      "traits": [],
+      "score": 0.53,
+      "score_components": {
+        "topics": 0.53,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.62,
+      "matched_interests": [
+        "github_devops"
+      ],
+      "matched_labels": [
+        "GitHub・Actions"
       ]
     },
     {
@@ -4626,7 +4670,7 @@
       "id": "0c0d8751baac2b7e",
       "title": "Detecting and countering misuse of AI: September 2026",
       "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
-      "summary": "https://www-cdn.anthropic.com/e50be2e51e7695dc4b1366a37a245a... Comments URL: https://news.ycombinator.com/item?id=49647300 Points: 108 # Comments: 181",
+      "summary": "https://www-cdn.anthropic.com/e50be2e51e7695dc4b1366a37a245a... Comments URL: https://news.ycombinator.com/item?id=49647300 Points: 123 # Comments: 188",
       "published_at": "2026-09-10T17:23:42+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -4692,7 +4736,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.59,
+      "rank_score": 2.58,
       "matched_interests": [
         "github_devops"
       ],
@@ -4965,7 +5009,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.51,
+      "rank_score": 2.5,
       "matched_interests": [
         "llm_tools"
       ],
@@ -5046,7 +5090,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.48,
+      "rank_score": 2.47,
       "matched_interests": [
         "workflow_design",
         "apple_ios"
@@ -5204,7 +5248,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.36,
+      "rank_score": 2.35,
       "matched_interests": [
         "github_devops"
       ],
@@ -5243,51 +5287,12 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.36,
+      "rank_score": 2.35,
       "matched_interests": [
         "personal_web_rss"
       ],
       "matched_labels": [
         "個人Web・RSS"
-      ]
-    },
-    {
-      "id": "450173472b69d6dc",
-      "title": "A New Look for OpenRouter",
-      "url": "https://openrouter.ai/blog/announcements/brand-refresh/",
-      "summary": "Built from first principles and grounded in timeless Bauhaus philosophy, our new brand identity marks the beginning of our next chapter.",
-      "published_at": "2026-07-13T15:00:00+00:00",
-      "source": "OpenRouter Blog",
-      "source_id": "openrouter_blog",
-      "source_category": "ai",
-      "primary_category": "ai",
-      "topics": [
-        "llm_tools"
-      ],
-      "topic_labels": [
-        "LLM・AIツール"
-      ],
-      "topic_scores": {
-        "llm_tools": 1.5
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "item_type": "blog",
-      "content_type": "blog",
-      "traits": [],
-      "score": 1.5,
-      "score_components": {
-        "topics": 1.5,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.36,
-      "matched_interests": [
-        "llm_tools"
-      ],
-      "matched_labels": [
-        "LLM・AIツール"
       ]
     },
     {
@@ -5349,45 +5354,6 @@
       "matched_labels": []
     },
     {
-      "id": "1403375a5ba2fd89",
-      "title": "Tool Calling Across Any Model: Write the Loop Once, Swap the Model String",
-      "url": "https://openrouter.ai/blog/tutorials/tool-calling/",
-      "summary": "Most tool-calling tutorials cover one provider, so you rewrite the loop when you switch. This guide shows the full loop in Python, JavaScript, and cURL, then runs it against three providers by changing one string.",
-      "published_at": "2026-08-12T00:00:00+00:00",
-      "source": "OpenRouter Blog",
-      "source_id": "openrouter_blog",
-      "source_category": "ai",
-      "primary_category": "software",
-      "topics": [
-        "web_app_development"
-      ],
-      "topic_labels": [
-        "Webアプリ制作"
-      ],
-      "topic_scores": {
-        "web_app_development": 0.5
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "item_type": "blog",
-      "content_type": "blog",
-      "traits": [],
-      "score": 0.53,
-      "score_components": {
-        "topics": 0.53,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.16,
-      "matched_interests": [
-        "web_app_development"
-      ],
-      "matched_labels": [
-        "Webアプリ制作"
-      ]
-    },
-    {
       "id": "49c3330653c4bfb0",
       "title": "Get ready for the game with new football features in Search",
       "url": "https://blog.google/products-and-platforms/products/search/football-features-google-search/",
@@ -5424,6 +5390,35 @@
       "published_at": "2026-09-09T16:00:00+00:00",
       "source": "Google AI Blog",
       "source_id": "google_ai_blog",
+      "source_category": "ai",
+      "primary_category": "ai",
+      "topics": [],
+      "topic_labels": [],
+      "topic_scores": {},
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "item_type": "blog",
+      "content_type": "blog",
+      "traits": [],
+      "score": 0.0,
+      "score_components": {
+        "topics": 0.0,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.15,
+      "matched_interests": [],
+      "matched_labels": []
+    },
+    {
+      "id": "b4cf7022fa003e73",
+      "title": "Seedance 2.5 Review: What It's Best At and When to Use It",
+      "url": "https://openrouter.ai/blog/insights/seedance-2-5-review/",
+      "summary": "Seedance 2.5 trades resolution for length. It runs to 30 seconds and stops at 720p. We work through what it's best at, what a clip costs at each resolution, how it compares to Seedance 2.0, Wan 3.0, and Veo 3.1 on our own catalog data, and the cases where we'd recommend a different model.",
+      "published_at": "2026-09-09T00:00:00+00:00",
+      "source": "OpenRouter Blog",
+      "source_id": "openrouter_blog",
       "source_category": "ai",
       "primary_category": "ai",
       "topics": [],
@@ -5504,40 +5499,50 @@
       "matched_labels": []
     },
     {
+      "id": "1403375a5ba2fd89",
+      "title": "Tool Calling Across Any Model: Write the Loop Once, Swap the Model String",
+      "url": "https://openrouter.ai/blog/tutorials/tool-calling/",
+      "summary": "Most tool-calling tutorials cover one provider, so you rewrite the loop when you switch. This guide shows the full loop in Python, JavaScript, and cURL, then runs it against three providers by changing one string.",
+      "published_at": "2026-08-12T00:00:00+00:00",
+      "source": "OpenRouter Blog",
+      "source_id": "openrouter_blog",
+      "source_category": "ai",
+      "primary_category": "software",
+      "topics": [
+        "web_app_development"
+      ],
+      "topic_labels": [
+        "Webアプリ制作"
+      ],
+      "topic_scores": {
+        "web_app_development": 0.5
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "item_type": "blog",
+      "content_type": "blog",
+      "traits": [],
+      "score": 0.53,
+      "score_components": {
+        "topics": 0.53,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.15,
+      "matched_interests": [
+        "web_app_development"
+      ],
+      "matched_labels": [
+        "Webアプリ制作"
+      ]
+    },
+    {
       "id": "40f9c62aa998cada",
       "title": "Changing Nozzle Internal Geometry to Increase FDM Flowrate",
       "url": "https://hackaday.com/2026/09/10/changing-nozzle-internal-geometry-to-increase-fdm-flowrate/",
       "summary": "As FDM printers keep getting faster, we are forced to deal with a range of bottlenecks, all of which conspire to hold us back from another Benchie world record. A …read more",
       "published_at": "2026-09-11T02:00:46+00:00",
-      "source": "Hackaday",
-      "source_id": "hackaday",
-      "source_category": "make",
-      "primary_category": "make",
-      "topics": [],
-      "topic_labels": [],
-      "topic_scores": {},
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "item_type": "article",
-      "content_type": "article",
-      "traits": [],
-      "score": 0.0,
-      "score_components": {
-        "topics": 0.0,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.13,
-      "matched_interests": [],
-      "matched_labels": []
-    },
-    {
-      "id": "53d3e9e4648b8ca7",
-      "title": "Creating a Custom Hinge for a Motorbike’s Fuel Access Panel",
-      "url": "https://hackaday.com/2026/09/10/creating-a-custom-hinge-for-a-motorbikes-fuel-access-panel/",
-      "summary": "A fun part of modifying something like a motorbike is that you sometimes have to come up with creative solutions to basic questions, like how you can still access the …read more",
-      "published_at": "2026-09-10T23:00:05+00:00",
       "source": "Hackaday",
       "source_id": "hackaday",
       "source_category": "make",
@@ -5587,6 +5592,35 @@
         "combinations": 0.0
       },
       "rank_score": 2.13,
+      "matched_interests": [],
+      "matched_labels": []
+    },
+    {
+      "id": "53d3e9e4648b8ca7",
+      "title": "Creating a Custom Hinge for a Motorbike’s Fuel Access Panel",
+      "url": "https://hackaday.com/2026/09/10/creating-a-custom-hinge-for-a-motorbikes-fuel-access-panel/",
+      "summary": "A fun part of modifying something like a motorbike is that you sometimes have to come up with creative solutions to basic questions, like how you can still access the …read more",
+      "published_at": "2026-09-10T23:00:05+00:00",
+      "source": "Hackaday",
+      "source_id": "hackaday",
+      "source_category": "make",
+      "primary_category": "make",
+      "topics": [],
+      "topic_labels": [],
+      "topic_scores": {},
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "item_type": "article",
+      "content_type": "article",
+      "traits": [],
+      "score": 0.0,
+      "score_components": {
+        "topics": 0.0,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.12,
       "matched_interests": [],
       "matched_labels": []
     },
@@ -5678,35 +5712,6 @@
       "matched_labels": []
     },
     {
-      "id": "64946386af562d7f",
-      "title": "Creepy crawlies",
-      "url": "https://simonwillison.net/2026/Sep/7/creepy-crawlies/",
-      "summary": "Creepy crawlies Konstantin Ryabitsev discusses how bad the \"background radiation\" of abusive crawlers has become from the perspective of git.kernel.org , the official Git repository for the Linux kernel: TL;DR: we spend more CPU cycles rendering commits for scrapers than we spend on all other kinds of legitimate access",
-      "published_at": "2026-09-07T23:08:58+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_category": "ai",
-      "primary_category": "ai",
-      "topics": [],
-      "topic_labels": [],
-      "topic_scores": {},
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "item_type": "blog",
-      "content_type": "blog",
-      "traits": [],
-      "score": 0.0,
-      "score_components": {
-        "topics": 0.0,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.12,
-      "matched_interests": [],
-      "matched_labels": []
-    },
-    {
       "id": "d6088d0604066b74",
       "title": "An Alien Mind",
       "url": "https://openai.com/index/an-alien-mind",
@@ -5736,11 +5741,156 @@
       "matched_labels": []
     },
     {
+      "id": "64946386af562d7f",
+      "title": "Creepy crawlies",
+      "url": "https://simonwillison.net/2026/Sep/7/creepy-crawlies/",
+      "summary": "Creepy crawlies Konstantin Ryabitsev discusses how bad the \"background radiation\" of abusive crawlers has become from the perspective of git.kernel.org , the official Git repository for the Linux kernel: TL;DR: we spend more CPU cycles rendering commits for scrapers than we spend on all other kinds of legitimate access",
+      "published_at": "2026-09-07T23:08:58+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_category": "ai",
+      "primary_category": "ai",
+      "topics": [],
+      "topic_labels": [],
+      "topic_scores": {},
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "item_type": "blog",
+      "content_type": "blog",
+      "traits": [],
+      "score": 0.0,
+      "score_components": {
+        "topics": 0.0,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.11,
+      "matched_interests": [],
+      "matched_labels": []
+    },
+    {
+      "id": "c76bd3fcb97ddd0c",
+      "title": "DeepSeek v4.1 Flash Uncensored",
+      "url": "https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8",
+      "summary": "Article URL: https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8 Comments URL: https://news.ycombinator.com/item?id=49654387 Points: 17 # Comments: 2",
+      "published_at": "2026-09-11T06:46:19+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_category": "other",
+      "primary_category": "other",
+      "topics": [],
+      "topic_labels": [],
+      "topic_scores": {},
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "item_type": "news",
+      "content_type": "news",
+      "traits": [],
+      "score": 0.0,
+      "score_components": {
+        "topics": 0.0,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.1,
+      "matched_interests": [],
+      "matched_labels": []
+    },
+    {
+      "id": "874fb4b8773334d5",
+      "title": "Astra for Coding: Why Are We Doing This Again?",
+      "url": "https://lucumr.pocoo.org/2026/9/7/astra-why/",
+      "summary": "Article URL: https://lucumr.pocoo.org/2026/9/7/astra-why/ Comments URL: https://news.ycombinator.com/item?id=49654229 Points: 229 # Comments: 134",
+      "published_at": "2026-09-11T06:23:06+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_category": "other",
+      "primary_category": "other",
+      "topics": [],
+      "topic_labels": [],
+      "topic_scores": {},
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "item_type": "news",
+      "content_type": "news",
+      "traits": [],
+      "score": 0.0,
+      "score_components": {
+        "topics": 0.0,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.1,
+      "matched_interests": [],
+      "matched_labels": []
+    },
+    {
+      "id": "d6c6ada3985d1e00",
+      "title": "We Replaced MMAP with Io_uring in Our Rust Query Engine. It Got Slower",
+      "url": "https://www.conviva.ai/resource/we-replaced-mmap-with-io_uring-in-our-rust-query-engine-it-got-slower/",
+      "summary": "Article URL: https://www.conviva.ai/resource/we-replaced-mmap-with-io_uring-in-our-rust-query-engine-it-got-slower/ Comments URL: https://news.ycombinator.com/item?id=49653882 Points: 26 # Comments: 12",
+      "published_at": "2026-09-11T05:26:58+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_category": "other",
+      "primary_category": "other",
+      "topics": [],
+      "topic_labels": [],
+      "topic_scores": {},
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "item_type": "news",
+      "content_type": "news",
+      "traits": [],
+      "score": 0.0,
+      "score_components": {
+        "topics": 0.0,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.1,
+      "matched_interests": [],
+      "matched_labels": []
+    },
+    {
       "id": "d3801d9f47f888e6",
       "title": "Exercise intensity is associated with cardiometabolic health",
       "url": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00405-2",
-      "summary": "Article URL: https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00405-2 Comments URL: https://news.ycombinator.com/item?id=49653328 Points: 61 # Comments: 27",
+      "summary": "Article URL: https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00405-2 Comments URL: https://news.ycombinator.com/item?id=49653328 Points: 84 # Comments: 39",
       "published_at": "2026-09-11T03:48:10+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_category": "other",
+      "primary_category": "other",
+      "topics": [],
+      "topic_labels": [],
+      "topic_scores": {},
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "item_type": "news",
+      "content_type": "news",
+      "traits": [],
+      "score": 0.0,
+      "score_components": {
+        "topics": 0.0,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.1,
+      "matched_interests": [],
+      "matched_labels": []
+    },
+    {
+      "id": "2917e7d11bbea25d",
+      "title": "What Comes After Git",
+      "url": "https://ersc.io/blog/what-comes-after-git",
+      "summary": "Article URL: https://ersc.io/blog/what-comes-after-git Comments URL: https://news.ycombinator.com/item?id=49652985 Points: 34 # Comments: 7",
+      "published_at": "2026-09-11T02:49:52+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
       "source_category": "other",
@@ -5768,37 +5918,8 @@
       "id": "ac33704195dc7010",
       "title": "Mexican student creates an acoustic fire extinguisher to put out fire in seconds",
       "url": "https://www.upsocl.com/en/16-year-old-mexican-student-creates-an-acoustic-fire-extinguisher-that-uses-sound-waves-to-put-out-fires-in-seconds/",
-      "summary": "Article URL: https://www.upsocl.com/en/16-year-old-mexican-student-creates-an-acoustic-fire-extinguisher-that-uses-sound-waves-to-put-out-fires-in-seconds/ Comments URL: https://news.ycombinator.com/item?id=49652237 Points: 124 # Comments: 48",
+      "summary": "Article URL: https://www.upsocl.com/en/16-year-old-mexican-student-creates-an-acoustic-fire-extinguisher-that-uses-sound-waves-to-put-out-fires-in-seconds/ Comments URL: https://news.ycombinator.com/item?id=49652237 Points: 180 # Comments: 67",
       "published_at": "2026-09-11T01:00:56+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_category": "other",
-      "primary_category": "other",
-      "topics": [],
-      "topic_labels": [],
-      "topic_scores": {},
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "item_type": "news",
-      "content_type": "news",
-      "traits": [],
-      "score": 0.0,
-      "score_components": {
-        "topics": 0.0,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.1,
-      "matched_interests": [],
-      "matched_labels": []
-    },
-    {
-      "id": "c565297fee5b32a3",
-      "title": "Google will buy half the electricity from one of Finland's nuclear power plants",
-      "url": "https://www.bbc.com/news/articles/c8r6y4me2g6o",
-      "summary": "Article URL: https://www.bbc.com/news/articles/c8r6y4me2g6o Comments URL: https://news.ycombinator.com/item?id=49652105 Points: 174 # Comments: 136",
-      "published_at": "2026-09-11T00:42:41+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
       "source_category": "other",
@@ -5826,7 +5947,7 @@
       "id": "692462a9077ae9e1",
       "title": "Thelio Mira AI Linux Workstation: 192 GB GPU Memory",
       "url": "https://system76.com/workstations/thelio-mira-ai",
-      "summary": "Article URL: https://system76.com/workstations/thelio-mira-ai Comments URL: https://news.ycombinator.com/item?id=49651372 Points: 76 # Comments: 49",
+      "summary": "Article URL: https://system76.com/workstations/thelio-mira-ai Comments URL: https://news.ycombinator.com/item?id=49651372 Points: 89 # Comments: 70",
       "published_at": "2026-09-10T23:10:06+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -5847,7 +5968,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.1,
+      "rank_score": 2.09,
       "matched_interests": [],
       "matched_labels": []
     },
@@ -5855,7 +5976,7 @@
       "id": "effa8971aeee6b61",
       "title": "Nine coding harnesses vs. your laptop",
       "url": "https://nasutton.notion.site/Nine-coding-harnesses-vs-your-laptop-3d139990182b80d59fa3cf500f0450ba?pvs=74",
-      "summary": "Article URL: https://nasutton.notion.site/Nine-coding-harnesses-vs-your-laptop-3d139990182b80d59fa3cf500f0450ba?pvs=74 Comments URL: https://news.ycombinator.com/item?id=49651221 Points: 39 # Comments: 1",
+      "summary": "Article URL: https://nasutton.notion.site/Nine-coding-harnesses-vs-your-laptop-3d139990182b80d59fa3cf500f0450ba?pvs=74 Comments URL: https://news.ycombinator.com/item?id=49651221 Points: 72 # Comments: 13",
       "published_at": "2026-09-10T22:54:01+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -5884,7 +6005,7 @@
       "id": "dab5a33129228fa5",
       "title": "NTSB issues investigative update on B-767 runway excursion accident in Miami",
       "url": "https://www.ntsb.gov:443/news/press-releases/Pages/NR20260909.aspx",
-      "summary": "Article URL: https://www.ntsb.gov:443/news/press-releases/Pages/NR20260909.aspx Comments URL: https://news.ycombinator.com/item?id=49650418 Points: 83 # Comments: 138",
+      "summary": "Article URL: https://www.ntsb.gov:443/news/press-releases/Pages/NR20260909.aspx Comments URL: https://news.ycombinator.com/item?id=49650418 Points: 96 # Comments: 163",
       "published_at": "2026-09-10T21:30:55+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -5913,37 +6034,8 @@
       "id": "83fc2559f87bcfb8",
       "title": "The Deathray: A simple way for an untrusted site to freeze a Mac",
       "url": "https://auberon.xyz/blog/posts/deathray/",
-      "summary": "Article URL: https://auberon.xyz/blog/posts/deathray/ Comments URL: https://news.ycombinator.com/item?id=49649124 Points: 134 # Comments: 88",
+      "summary": "Article URL: https://auberon.xyz/blog/posts/deathray/ Comments URL: https://news.ycombinator.com/item?id=49649124 Points: 156 # Comments: 103",
       "published_at": "2026-09-10T19:34:20+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_category": "other",
-      "primary_category": "other",
-      "topics": [],
-      "topic_labels": [],
-      "topic_scores": {},
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "item_type": "news",
-      "content_type": "news",
-      "traits": [],
-      "score": 0.0,
-      "score_components": {
-        "topics": 0.0,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.09,
-      "matched_interests": [],
-      "matched_labels": []
-    },
-    {
-      "id": "b8bb0b0720894fe8",
-      "title": "JEP 544: Ahead-of-Time Code Compilation",
-      "url": "https://openjdk.org/jeps/544",
-      "summary": "Article URL: https://openjdk.org/jeps/544 Comments URL: https://news.ycombinator.com/item?id=49647404 Points: 86 # Comments: 30",
-      "published_at": "2026-09-10T17:30:39+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
       "source_category": "other",
@@ -5971,7 +6063,7 @@
       "id": "9495b3c72ced3b38",
       "title": "Music Theory for the 21st-Century Classroom",
       "url": "https://musictheory.pugetsound.edu/mt21c/MusicTheory.html",
-      "summary": "Article URL: https://musictheory.pugetsound.edu/mt21c/MusicTheory.html Comments URL: https://news.ycombinator.com/item?id=49647134 Points: 197 # Comments: 85",
+      "summary": "Article URL: https://musictheory.pugetsound.edu/mt21c/MusicTheory.html Comments URL: https://news.ycombinator.com/item?id=49647134 Points: 215 # Comments: 89",
       "published_at": "2026-09-10T17:14:12+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -6000,7 +6092,7 @@
       "id": "97a98fc60d4a3f17",
       "title": "Forgejo <=16.0.3 Critical RCE",
       "url": "https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/16.0.4.md",
-      "summary": "Article URL: https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/16.0.4.md Comments URL: https://news.ycombinator.com/item?id=49645907 Points: 162 # Comments: 59",
+      "summary": "Article URL: https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/16.0.4.md Comments URL: https://news.ycombinator.com/item?id=49645907 Points: 174 # Comments: 63",
       "published_at": "2026-09-10T15:57:40+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -6029,7 +6121,7 @@
       "id": "7b24a73c35d8dbdb",
       "title": "Neki – Sharded Postgres",
       "url": "https://planetscale.com/blog/introducing-neki",
-      "summary": "Article URL: https://planetscale.com/blog/introducing-neki Comments URL: https://news.ycombinator.com/item?id=49645686 Points: 223 # Comments: 124",
+      "summary": "Article URL: https://planetscale.com/blog/introducing-neki Comments URL: https://news.ycombinator.com/item?id=49645686 Points: 237 # Comments: 129",
       "published_at": "2026-09-10T15:43:49+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -6058,7 +6150,7 @@
       "id": "bbfe29c66ab58088",
       "title": "Cognition launches new SWE-2 model, Rivaling Fable 5.1 and GPT-Astra",
       "url": "https://cognition.com/blog/swe-2",
-      "summary": "Article URL: https://cognition.com/blog/swe-2 Comments URL: https://news.ycombinator.com/item?id=49645443 Points: 393 # Comments: 165",
+      "summary": "Article URL: https://cognition.com/blog/swe-2 Comments URL: https://news.ycombinator.com/item?id=49645443 Points: 405 # Comments: 172",
       "published_at": "2026-09-10T15:29:47+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -6087,37 +6179,8 @@
       "id": "4116347b68447b29",
       "title": "Technique for Manipulating Satellite Photos Now Reveals Ancient Images (2025)",
       "url": "https://spinoff.nasa.gov/Manipulating_Satellite_Photos_Now_Reveals_Ancient_Images",
-      "summary": "https://dstretch.com/DecorrelationStretch.pdf https://www.nasa.gov/technology/tech-transfer-spinoffs/nasa-... Comments URL: https://news.ycombinator.com/item?id=49645437 Points: 305 # Comments: 47",
+      "summary": "https://dstretch.com/DecorrelationStretch.pdf https://www.nasa.gov/technology/tech-transfer-spinoffs/nasa-... Comments URL: https://news.ycombinator.com/item?id=49645437 Points: 324 # Comments: 53",
       "published_at": "2026-09-10T15:29:30+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_category": "other",
-      "primary_category": "other",
-      "topics": [],
-      "topic_labels": [],
-      "topic_scores": {},
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "item_type": "news",
-      "content_type": "news",
-      "traits": [],
-      "score": 0.0,
-      "score_components": {
-        "topics": 0.0,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.09,
-      "matched_interests": [],
-      "matched_labels": []
-    },
-    {
-      "id": "245c58b89ac9572e",
-      "title": "Don't let anyone take away your big box of cables",
-      "url": "https://blog.jim-nielsen.com/2026/hands-off-my-cables/",
-      "summary": "Article URL: https://blog.jim-nielsen.com/2026/hands-off-my-cables/ Comments URL: https://news.ycombinator.com/item?id=49645393 Points: 426 # Comments: 294",
-      "published_at": "2026-09-10T15:27:22+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
       "source_category": "other",
@@ -6369,7 +6432,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.04,
+      "rank_score": 2.03,
       "matched_interests": [],
       "matched_labels": []
     },
@@ -6462,7 +6525,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 1.97,
+      "rank_score": 1.96,
       "matched_interests": [
         "apple_ios"
       ],
@@ -6694,7 +6757,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 1.84,
+      "rank_score": 1.83,
       "matched_interests": [],
       "matched_labels": []
     },
@@ -6723,7 +6786,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 1.81,
+      "rank_score": 1.8,
       "matched_interests": [],
       "matched_labels": []
     },
@@ -6752,7 +6815,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 1.79,
+      "rank_score": 1.78,
       "matched_interests": [],
       "matched_labels": []
     },
@@ -6781,7 +6844,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 1.79,
+      "rank_score": 1.78,
       "matched_interests": [],
       "matched_labels": []
     },
@@ -6868,7 +6931,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 1.69,
+      "rank_score": 1.68,
       "matched_interests": [],
       "matched_labels": []
     },
@@ -6897,7 +6960,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 1.69,
+      "rank_score": 1.68,
       "matched_interests": [],
       "matched_labels": []
     },
@@ -6989,45 +7052,6 @@
       "matched_labels": []
     },
     {
-      "id": "19fdf4eab9fca66c",
-      "title": "Every Modality Through One API",
-      "url": "https://openrouter.ai/blog/insights/every-modality-one-api/",
-      "summary": "Chat, image generation, embeddings, and transcription usually mean four SDKs, four bills, and four auth schemes. On OpenRouter every modality runs through one base URL: you change the model string and the content type, and the same routing controls carry across.",
-      "published_at": "2026-07-16T00:00:00+00:00",
-      "source": "OpenRouter Blog",
-      "source_id": "openrouter_blog",
-      "source_category": "ai",
-      "primary_category": "ai",
-      "topics": [
-        "llm_tools"
-      ],
-      "topic_labels": [
-        "LLM・AIツール"
-      ],
-      "topic_scores": {
-        "llm_tools": 0.5
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "item_type": "blog",
-      "content_type": "blog",
-      "traits": [],
-      "score": 0.5,
-      "score_components": {
-        "topics": 0.5,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 1.63,
-      "matched_interests": [
-        "llm_tools"
-      ],
-      "matched_labels": [
-        "LLM・AIツール"
-      ]
-    },
-    {
       "id": "f39e416c29364522",
       "title": "App Storeの新しいクリエイティブアセットに向けた準備",
       "url": "https://developer.apple.com/jp/news/?id=kug6m2ea",
@@ -7110,7 +7134,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 1.54,
+      "rank_score": 1.53,
       "matched_interests": [],
       "matched_labels": []
     },
@@ -7139,7 +7163,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 1.54,
+      "rank_score": 1.53,
       "matched_interests": [],
       "matched_labels": []
     },
@@ -7256,35 +7280,6 @@
         "combinations": 0.0
       },
       "rank_score": 1.33,
-      "matched_interests": [],
-      "matched_labels": []
-    },
-    {
-      "id": "c480e547e0aae4f2",
-      "title": "The Cheapest Token Is a Cached One: Prompt Caching + Sticky Routing",
-      "url": "https://openrouter.ai/blog/tutorials/prompt-caching-sticky-routing/",
-      "summary": "Your agent sends the same system prompt, tool definitions, and schemas on every turn. Cache reads cost 0.1x to 0.5x of fresh input, but only if the next request lands on the provider holding the warm cache. Here's how caching and sticky routing work together, and how to confirm they're working.",
-      "published_at": "2026-07-21T00:00:00+00:00",
-      "source": "OpenRouter Blog",
-      "source_id": "openrouter_blog",
-      "source_category": "ai",
-      "primary_category": "ai",
-      "topics": [],
-      "topic_labels": [],
-      "topic_scores": {},
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "item_type": "blog",
-      "content_type": "blog",
-      "traits": [],
-      "score": 0.0,
-      "score_components": {
-        "topics": 0.0,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 1.32,
       "matched_interests": [],
       "matched_labels": []
     },
@@ -7512,7 +7507,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 0.61,
+      "rank_score": 0.6,
       "matched_interests": [],
       "matched_labels": []
     },
@@ -7541,7 +7536,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 0.61,
+      "rank_score": 0.6,
       "matched_interests": [],
       "matched_labels": []
     },
@@ -7628,7 +7623,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 0.49,
+      "rank_score": 0.48,
       "matched_interests": [],
       "matched_labels": []
     }
