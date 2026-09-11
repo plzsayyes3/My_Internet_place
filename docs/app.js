@@ -2,6 +2,7 @@ const DATA_URL = "./data/latest.json";
 
 const feedEl = document.querySelector("#feed");
 const filtersEl = document.querySelector("#filters");
+const topicFiltersEl = document.querySelector("#topic-filters");
 const emptyEl = document.querySelector("#empty");
 const generatedEl = document.querySelector("#generated");
 const healthEl = document.querySelector("#health");
@@ -9,6 +10,7 @@ const template = document.querySelector("#card-template");
 
 let allItems = [];
 let activeView = "for-you";
+let activeTopic = null;
 
 const SOURCE_REPEAT_PENALTY = 0.65;
 const CONSECUTIVE_SOURCE_PENALTY = 0.35;
@@ -76,6 +78,30 @@ function categoryLabel(category) {
   return CATEGORY_LABELS[normalizedCategory(category)] || String(category || "OTHER").toUpperCase();
 }
 
+function itemTopics(item) {
+  const explicitIds = Array.isArray(item.topic_ids) ? item.topic_ids : [];
+  const explicitLabels = Array.isArray(item.topic_labels) ? item.topic_labels : [];
+  if (explicitIds.length) {
+    return explicitIds.map((id, index) => ({
+      id: String(id),
+      label: String(explicitLabels[index] || id),
+    }));
+  }
+
+  if (!Array.isArray(item.topics)) return [];
+  return item.topics
+    .map((topic) => {
+      if (typeof topic === "string") return { id: topic, label: topic };
+      if (!topic || !topic.id) return null;
+      return { id: String(topic.id), label: String(topic.label || topic.id) };
+    })
+    .filter(Boolean);
+}
+
+function itemHasTopic(item, topicId) {
+  return itemTopics(item).some((topic) => topic.id === topicId);
+}
+
 function sourceKey(item) {
   return item.source_id || item.source || "unknown";
 }
@@ -116,6 +142,49 @@ function diversifyForYou(items) {
   return selected;
 }
 
+function renderTopicFilters() {
+  if (!topicFiltersEl) return;
+  topicFiltersEl.innerHTML = "";
+
+  if (!CATEGORY_ORDER.includes(activeView)) {
+    activeTopic = null;
+    topicFiltersEl.hidden = true;
+    return;
+  }
+
+  const topics = new Map();
+  for (const item of allItems.filter((candidate) => itemCategory(candidate) === activeView)) {
+    for (const topic of itemTopics(item)) {
+      if (!topics.has(topic.id)) topics.set(topic.id, topic.label);
+    }
+  }
+
+  if (!topics.size) {
+    activeTopic = null;
+    topicFiltersEl.hidden = true;
+    return;
+  }
+
+  const allButton = document.createElement("button");
+  allButton.className = `topic-filter${activeTopic ? "" : " is-active"}`;
+  allButton.dataset.topic = "";
+  allButton.textContent = "すべて";
+  topicFiltersEl.appendChild(allButton);
+
+  const sortedTopics = [...topics.entries()]
+    .sort((a, b) => a[1].localeCompare(b[1], "ja"));
+
+  for (const [id, label] of sortedTopics) {
+    const button = document.createElement("button");
+    button.className = `topic-filter${activeTopic === id ? " is-active" : ""}`;
+    button.dataset.topic = id;
+    button.textContent = label;
+    topicFiltersEl.appendChild(button);
+  }
+
+  topicFiltersEl.hidden = false;
+}
+
 function renderFilters(items) {
   const available = new Set(items.map(itemCategory));
   for (const category of CATEGORY_ORDER.filter((id) => available.has(id))) {
@@ -131,9 +200,22 @@ function renderFilters(items) {
     const button = event.target.closest("button[data-view]");
     if (!button) return;
     activeView = button.dataset.view;
+    activeTopic = null;
     document.querySelectorAll(".filter").forEach((el) => el.classList.toggle("is-active", el === button));
+    renderTopicFilters();
     renderFeed();
   });
+
+  if (topicFiltersEl) {
+    topicFiltersEl.addEventListener("click", (event) => {
+      const button = event.target.closest("button[data-topic]");
+      if (!button) return;
+      activeTopic = button.dataset.topic || null;
+      topicFiltersEl.querySelectorAll(".topic-filter")
+        .forEach((el) => el.classList.toggle("is-active", el === button));
+      renderFeed();
+    });
+  }
 }
 
 function itemsForView() {
@@ -142,9 +224,10 @@ function itemsForView() {
     return items.sort((a, b) => numericTime(b.published_at) - numericTime(a.published_at));
   }
   if (activeView === "for-you") return diversifyForYou(items);
-  return items
-    .filter((item) => itemCategory(item) === activeView)
-    .sort((a, b) => numericTime(b.published_at) - numericTime(a.published_at));
+
+  let filtered = items.filter((item) => itemCategory(item) === activeView);
+  if (activeTopic) filtered = filtered.filter((item) => itemHasTopic(item, activeTopic));
+  return filtered.sort((a, b) => numericTime(b.published_at) - numericTime(a.published_at));
 }
 
 function renderFeed() {
@@ -169,10 +252,15 @@ function renderFeed() {
     summary.textContent = displayedSummary;
     summary.hidden = !displayedSummary;
 
-    const labels = item.matched_labels || item.topic_labels || item.matched_interests || [];
-    node.querySelector(".reason").textContent = labels.length
-      ? `関心: ${labels.join(" · ")}`
-      : "発見枠";
+    const topicLabels = itemTopics(item).map((topic) => topic.label);
+    const matchedLabels = Array.isArray(item.matched_labels) ? item.matched_labels : [];
+    const preferenceLabels = matchedLabels.filter((label) => !topicLabels.includes(label));
+    const detailParts = [];
+    if (topicLabels.length) detailParts.push(`ジャンル: ${topicLabels.join(" · ")}`);
+    if (preferenceLabels.length) detailParts.push(`関心: ${preferenceLabels.join(" · ")}`);
+    node.querySelector(".reason").textContent = detailParts.length
+      ? detailParts.join(" / ")
+      : "未分類";
     node.querySelector(".published").textContent = formatDate(item.published_at);
     feedEl.appendChild(node);
   }
@@ -202,6 +290,7 @@ async function boot() {
       : "waiting for first collection";
     renderHealth(data.sources, data.translation);
     renderFilters(allItems);
+    renderTopicFilters();
     renderFeed();
   } catch (error) {
     generatedEl.textContent = "feed unavailable";
