@@ -2,7 +2,7 @@
 # Keep this list generic and safe for a public repository.
 # Official/primary feeds are preferred; discovery feeds are intentionally lower priority.
 
-version: 1
+version: 2
 
 sources:
   - id: openai_news
@@ -12,6 +12,24 @@ sources:
     category: ai_tools
     content_type: news
     priority: 1.0
+    enabled: true
+
+  - id: openrouter_blog
+    name: OpenRouter Blog
+    type: rss
+    url: https://openrouter.ai/blog/feed.xml
+    category: ai_tools
+    content_type: blog
+    priority: 0.95
+    enabled: true
+
+  - id: google_ai_blog
+    name: Google AI Blog
+    type: rss
+    url: https://blog.google/technology/ai/rss/
+    category: ai_tools
+    content_type: blog
+    priority: 0.9
     enabled: true
 
   - id: obsidian_blog
@@ -49,6 +67,24 @@ sources:
     category: software_building
     content_type: article
     priority: 0.75
+    enabled: true
+
+  - id: apple_developer_jp
+    name: Apple Developer News (JP)
+    type: rss
+    url: https://developer.apple.com/jp/news/rss/news.rss
+    category: personal_devices
+    content_type: news
+    priority: 0.9
+    enabled: true
+
+  - id: raspberry_pi_news
+    name: Raspberry Pi News
+    type: rss
+    url: https://www.raspberrypi.com/news/feed/
+    category: making
+    content_type: article
+    priority: 0.85
     enabled: true
 
   - id: simon_willison
