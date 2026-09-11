@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T23:24:34.394878+00:00",
+  "generated_at": "2026-09-11T23:50:05.661828+00:00",
   "count": 204,
   "taxonomy_version": 3,
   "interest_profile_version": 3,
@@ -94,66 +94,6 @@
     ]
   },
   "items": [
-    {
-      "id": "a5b94f6b1cc02666",
-      "title": "This Circuit Sculpture is an ESP32-Powered Console",
-      "url": "https://hackaday.com/2026/09/11/this-circuit-sculpture-is-an-esp32-powered-console/",
-      "summary": "Expressif might not have intended the ESP32-S3 to become an emulation powerhouse, but that’s certainly what has happened. The little microcontroller seems perfect for recreating the Game Boys or Game …read more",
-      "published_at": "2026-09-11T08:00:47+00:00",
-      "source": "Hackaday",
-      "source_id": "hackaday",
-      "source_kind": "publication",
-      "source_category": "make",
-      "primary_category": "make",
-      "topics": [
-        {
-          "id": "embedded_devices",
-          "score": 0.667
-        }
-      ],
-      "topic_ids": [
-        "embedded_devices"
-      ],
-      "topic_labels": [
-        "ESP32・小型デバイス"
-      ],
-      "topic_scores": {
-        "embedded_devices": 0.667
-      },
-      "matched_signals": [
-        "practical_small_computing"
-      ],
-      "positive_signals": [
-        "practical_small_computing"
-      ],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 5.6,
-        "related_interest": 0.0,
-        "freshness": 0.995,
-        "source_priority": 0.65
-      },
-      "recommendation_reason": "direct",
-      "score": 5.6,
-      "score_components": {
-        "topics": 2.9,
-        "signals": 2.7,
-        "combinations": 0.0
-      },
-      "rank_score": 7.71,
-      "matched_interests": [
-        "embedded_devices"
-      ],
-      "matched_labels": [
-        "ESP32・小型デバイス",
-        "実用小型コンピューティング"
-      ],
-      "title_ja": "この回路彫刻はESP32パワードコンソールです",
-      "summary_ja": "Expressif は ESP32-S3 がエミュレーション パワーハウスになることを意図していないかもしれませんが、それは確かに何が起こったのかです。 小さなマイクロコントローラは、ゲームボーイやゲームを回復するのに最適なようです...もっと"
-    },
     {
       "id": "e549139bba381241",
       "title": "Create your own cyberdeck",
@@ -285,6 +225,70 @@
       "summary_ja": "サイドプロジェクト: gPTY を共有したい プロジェクトのGodotとRustを組み合わせるアイデアとして始まりました(もっと知りたいと思った2つのスタック)。 ベースインスピレーションはtmuxでした - 単に複数のPTYをスポーンし、ユーザーがそれらがどのようにフィットするかをグリッド/タイルにすることができます。 しかし、私たちはouでGodotゲームエンジンを持っているので"
     },
     {
+      "id": "68409805c1b9c25e",
+      "title": "OpenAI agents carried out an undisclosed attack on RubyGems",
+      "url": "https://www.rubyhack.ai/",
+      "summary": "Article URL: https://www.rubyhack.ai/ Comments URL: https://news.ycombinator.com/item?id=49666735 Points: 5 # Comments: 2",
+      "published_at": "2026-09-11T23:17:42+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_kind": "community",
+      "source_category": "other",
+      "primary_category": "ai",
+      "topics": [
+        {
+          "id": "ai_agents_automation",
+          "score": 0.667
+        },
+        {
+          "id": "llm_ai_tools",
+          "score": 0.333
+        }
+      ],
+      "topic_ids": [
+        "ai_agents_automation",
+        "llm_ai_tools"
+      ],
+      "topic_labels": [
+        "AIエージェント・自動化",
+        "LLM・AIツール"
+      ],
+      "topic_scores": {
+        "ai_agents_automation": 0.667,
+        "llm_ai_tools": 0.333
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 3.7,
+        "related_interest": 0.0,
+        "freshness": 1.0,
+        "source_priority": 0.5
+      },
+      "recommendation_reason": "direct",
+      "score": 3.7,
+      "score_components": {
+        "topics": 3.7,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 5.8,
+      "matched_interests": [
+        "ai_agents_automation",
+        "llm_ai_tools"
+      ],
+      "matched_labels": [
+        "AIエージェント・自動化",
+        "LLM・AIツール"
+      ],
+      "title_ja": "OpenAI エージェントは、RubyGems の未公開攻撃を実施しました",
+      "summary_ja": "記事のURL: https://www.rubyhack.ai/ コメント URL: https://news.ycombinator.com/item?id=49666735 ポイント: 5 # コメント: 2"
+    },
+    {
       "id": "434ac5bdc849ee6f",
       "title": "GitHub Copilot app for Beginners: Using the diff, terminal, and browser",
       "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-using-the-diff-terminal-and-browser/",
@@ -408,7 +412,7 @@
         "signals": 0.75,
         "combinations": 1.6
       },
-      "rank_score": 5.39,
+      "rank_score": 5.38,
       "matched_interests": [
         "embedded_devices"
       ],
@@ -769,7 +773,7 @@
       "signals": {
         "direct_interest": 2.1,
         "related_interest": 0.0,
-        "freshness": 0.99,
+        "freshness": 0.989,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -953,7 +957,7 @@
       "signals": {
         "direct_interest": 2.25,
         "related_interest": 0.0,
-        "freshness": 0.866,
+        "freshness": 0.865,
         "source_priority": 0.75
       },
       "recommendation_reason": "direct",
@@ -974,6 +978,70 @@
       ],
       "title_ja": "GitHub Copilot 初心者向けアプリ: dependabot プルリクエストのトライアを自動化",
       "summary_ja": "ライブラリの更新を管理することは、常に気をつけることができます。 GitHub Copilotアプリがこのタイプの反復タスクを処理する方法を学びます。 GitHub Copilot の初心者向けアプリ: GitHub Blog で初めての dependabot のプルリクエストのトライアーを自動生成します。"
+    },
+    {
+      "id": "d1b933427aaf22b9",
+      "title": "Trying to Fix a Suspiciously Cheap Enterprise-Grade Network Switch",
+      "url": "https://hackaday.com/2026/09/11/trying-to-fix-a-suspiciously-cheap-enterprise-grade-network-switch/",
+      "summary": "When you see a listing for an Ethernet switch whose specification list is in effect ‘yes’, with a four-digit price tag when new, and with the seller asking for less …read more",
+      "published_at": "2026-09-11T23:00:39+00:00",
+      "source": "Hackaday",
+      "source_id": "hackaday",
+      "source_kind": "publication",
+      "source_category": "make",
+      "primary_category": "make",
+      "topics": [
+        {
+          "id": "embedded_devices",
+          "score": 0.25
+        },
+        {
+          "id": "3d_printing",
+          "score": 0.25
+        }
+      ],
+      "topic_ids": [
+        "embedded_devices",
+        "3d_printing"
+      ],
+      "topic_labels": [
+        "ESP32・小型デバイス",
+        "3Dプリント・Maker"
+      ],
+      "topic_scores": {
+        "embedded_devices": 0.25,
+        "3d_printing": 0.25
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 1.84,
+        "related_interest": 0.0,
+        "freshness": 1.0,
+        "source_priority": 0.65
+      },
+      "recommendation_reason": "direct",
+      "score": 1.84,
+      "score_components": {
+        "topics": 1.84,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 3.97,
+      "matched_interests": [
+        "embedded_devices",
+        "3d_printing"
+      ],
+      "matched_labels": [
+        "ESP32・小型デバイス",
+        "3Dプリント・Maker"
+      ],
+      "title_ja": "疑わしい安いエンタープライズ グレード ネットワーク スイッチを修正しようとします。",
+      "summary_ja": "仕様リストが「はい」の効果にあるイーサネット スイッチのためのリストを見たとき、新しい場合の4桁の価格札およびより少し尋ねる売り手と...続きを読む"
     },
     {
       "id": "6b5645995cb6b9ca",
@@ -1091,7 +1159,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.97,
+      "rank_score": 3.96,
       "matched_interests": [
         "embedded_devices",
         "3d_printing"
@@ -1529,7 +1597,7 @@
       "signals": {
         "direct_interest": 1.76,
         "related_interest": 0.0,
-        "freshness": 0.984,
+        "freshness": 0.983,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -1593,7 +1661,7 @@
       "signals": {
         "direct_interest": 1.76,
         "related_interest": 0.0,
-        "freshness": 0.984,
+        "freshness": 0.983,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -2041,7 +2109,7 @@
       "signals": {
         "direct_interest": 1.76,
         "related_interest": 0.0,
-        "freshness": 0.959,
+        "freshness": 0.958,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -2554,7 +2622,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.8,
+      "rank_score": 3.79,
       "matched_interests": [
         "llm_ai_tools",
         "ai_coding"
@@ -2564,7 +2632,7 @@
         "AIコーディング"
       ],
       "title_ja": "ネイティブは現在、Shopifyでモバイルの未来です",
-      "summary_ja": "ネイティブは、Shopify Shopifyでモバイルの未来は、React Nativeからネイティブアプリ用のSwiftとKotlinのコードベースを分離するために移動しています。 ネイティブからReact Nativeへの切り替えを2020年3つの理由で決定しました。 同じ機能の構築を2回停止 開発者を許可する"
+      "summary_ja": "ネイティブは現在、Shopify Shopifyでモバイルの未来は、React Nativeからネイティブアプリ用のSwiftとKotlinのコードベースを分離するために移動しています。 ネイティブからReact Nativeへの切り替えを2020年3つの理由で決定しました。 同じ機能の構築を2回停止 開発者を許可する"
     },
     {
       "id": "b1abb4baa4c07576",
@@ -2672,7 +2740,7 @@
       "signals": {
         "direct_interest": 1.65,
         "related_interest": 0.0,
-        "freshness": 0.984,
+        "freshness": 0.983,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -3175,7 +3243,7 @@
       "signals": {
         "direct_interest": 1.65,
         "related_interest": 0.0,
-        "freshness": 0.967,
+        "freshness": 0.966,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -3506,7 +3574,7 @@
         "AIコーディング"
       ],
       "title_ja": "DNSの目的は、詐欺を広めることです",
-      "summary_ja": "DNSの目的は、「ドメインネームシステムの目的は、偽りなく高いレートで人々の詐欺を実行する犯罪者のためのベクトルであるように、彼のテイクのサポートでいくつかのダウンティング統計を共有することです。」 このInterisleレポート(アンドリュー・キャンプ)では、Terenceは次のように述べています。 新たに85億人と言われる"
+      "summary_ja": "DNSの目的は、「ドメインネームシステムの目的は、偽りなく高いレートで人々の詐欺を実行するために犯罪者のためのベクトルであるようだ」と彼のテイクのサポートでいくつかのダウンティング統計を共有することです。 このInterisleレポート(アンドリュー・キャンプ)では、Terenceは次のように述べています。 新たに85億人と言われる"
     },
     {
       "id": "41b47a2aabbaf196",
@@ -3845,7 +3913,7 @@
       "signals": {
         "direct_interest": 1.5,
         "related_interest": 0.0,
-        "freshness": 0.984,
+        "freshness": 0.983,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -4175,7 +4243,7 @@
       "signals": {
         "direct_interest": 1.5,
         "related_interest": 0.0,
-        "freshness": 0.959,
+        "freshness": 0.958,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -4816,7 +4884,7 @@
       "signals": {
         "direct_interest": 1.05,
         "related_interest": 0.0,
-        "freshness": 0.991,
+        "freshness": 0.99,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -5057,61 +5125,6 @@
       "summary_ja": "それでは、OpenRouterを使いたいですか? OpenRouter のセールスポイントの1つは「ハンドルのフォールバック自動的にそして各要求のための最も費用効果が大きい選択を選ぶ」ことです、従ってモデルのための単一の API のエンドポイントを呼ぶことができ、最もよい利用できるバックエンド提供者にルーティングを得ることができます。 モハメド・ムースタファは、全セットのワワを指摘"
     },
     {
-      "id": "0b3bb7d7f4209823",
-      "title": "Quoting Boris Cherny",
-      "url": "https://simonwillison.net/2026/Sep/11/boris-cherny/",
-      "summary": "Production code written by Claude should have a higher bar than if it was written by a human. At Anthropic, we have many guardrails in place to make sure this is happening: lots of lint rules, lots of tests, Claude-driven end to end tests, Claude-powered fuzzers running daily, automated code reviews and security review",
-      "published_at": "2026-09-11T17:47:11+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_kind": "blog",
-      "source_category": "ai",
-      "primary_category": "ai",
-      "topics": [
-        {
-          "id": "llm_ai_tools",
-          "score": 0.333
-        }
-      ],
-      "topic_ids": [
-        "llm_ai_tools"
-      ],
-      "topic_labels": [
-        "LLM・AIツール"
-      ],
-      "topic_scores": {
-        "llm_ai_tools": 0.333
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "analysis",
-      "item_type": "analysis",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 1.0,
-        "related_interest": 0.0,
-        "freshness": 0.998,
-        "source_priority": 0.85
-      },
-      "recommendation_reason": "direct",
-      "score": 1.0,
-      "score_components": {
-        "topics": 1.0,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 3.17,
-      "matched_interests": [
-        "llm_ai_tools"
-      ],
-      "matched_labels": [
-        "LLM・AIツール"
-      ],
-      "title_ja": "キュート ボリス チェロニー",
-      "summary_ja": "クロードが書いたプロダクションコードは、人によって書かれているよりも高いバーを持つべきです。 Anthropic では、このことが起こっていることを確認するために多くのガードレールがあります: 多くのlint ルール、多くのテスト、Claude 主導の終了テスト、毎日実行するクロード パワードのファザー、自動コードレビューとセキュリティレビュー"
-    },
-    {
       "id": "63fecd9750b38cfe",
       "title": "Introducing ChatGPT for Financial Services",
       "url": "https://openai.com/index/introducing-chatgpt-financial-services",
@@ -5165,6 +5178,61 @@
       ],
       "title_ja": "金融サービスChatGPTのご紹介",
       "summary_ja": "金融サービスのChatGPTを導入し、財務データとGPT-6 Astraを組み合わせて研究、モデリング、クライアント対応の資料を組み合わせて紹介します。"
+    },
+    {
+      "id": "0b3bb7d7f4209823",
+      "title": "Quoting Boris Cherny",
+      "url": "https://simonwillison.net/2026/Sep/11/boris-cherny/",
+      "summary": "Production code written by Claude should have a higher bar than if it was written by a human. At Anthropic, we have many guardrails in place to make sure this is happening: lots of lint rules, lots of tests, Claude-driven end to end tests, Claude-powered fuzzers running daily, automated code reviews and security review",
+      "published_at": "2026-09-11T17:47:11+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_kind": "blog",
+      "source_category": "ai",
+      "primary_category": "ai",
+      "topics": [
+        {
+          "id": "llm_ai_tools",
+          "score": 0.333
+        }
+      ],
+      "topic_ids": [
+        "llm_ai_tools"
+      ],
+      "topic_labels": [
+        "LLM・AIツール"
+      ],
+      "topic_scores": {
+        "llm_ai_tools": 0.333
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "analysis",
+      "item_type": "analysis",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 1.0,
+        "related_interest": 0.0,
+        "freshness": 0.998,
+        "source_priority": 0.85
+      },
+      "recommendation_reason": "direct",
+      "score": 1.0,
+      "score_components": {
+        "topics": 1.0,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 3.16,
+      "matched_interests": [
+        "llm_ai_tools"
+      ],
+      "matched_labels": [
+        "LLM・AIツール"
+      ],
+      "title_ja": "キュート ボリス チェロニー",
+      "summary_ja": "クロードが書いたプロダクションコードは、人によって書かれているよりも高いバーを持つべきです。 Anthropic では、このことが起こっていることを確認するために多くのガードレールがあります: 多くのlint ルール、多くのテスト、Claude 主導の終了テスト、毎日実行するクロード パワードのファザー、自動コードレビューとセキュリティレビュー"
     },
     {
       "id": "023c2df5cdad1ad5",
@@ -5256,7 +5324,7 @@
       "signals": {
         "direct_interest": 1.0,
         "related_interest": 0.0,
-        "freshness": 0.984,
+        "freshness": 0.983,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -5720,7 +5788,7 @@
       "id": "289bb59f3eebf081",
       "title": "Claude is only available to people over 18 years",
       "url": "https://support.claude.com/en/articles/15171100-age-assurance-on-claude",
-      "summary": "Article URL: https://support.claude.com/en/articles/15171100-age-assurance-on-claude Comments URL: https://news.ycombinator.com/item?id=49656225 Points: 546 # Comments: 582",
+      "summary": "Article URL: https://support.claude.com/en/articles/15171100-age-assurance-on-claude Comments URL: https://news.ycombinator.com/item?id=49656225 Points: 551 # Comments: 584",
       "published_at": "2026-09-11T10:48:00+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -5751,7 +5819,7 @@
       "signals": {
         "direct_interest": 1.0,
         "related_interest": 0.0,
-        "freshness": 0.996,
+        "freshness": 0.995,
         "source_priority": 0.5
       },
       "recommendation_reason": "direct",
@@ -5769,7 +5837,7 @@
         "LLM・AIツール"
       ],
       "title_ja": "クラウデは18歳以上の方のみご利用いただけます。",
-      "summary_ja": "記事のURL: https://support.claude.com/en/articles/15171100-age-assurance-on-claude コメントのURL: https://news.ycombinator.com/item?id=49656225 ポイント: 546 # コメント: 582"
+      "summary_ja": "記事のURL: https://support.claude.com/en/articles/15171100-age-assurance-on-claude コメントのURL: https://news.ycombinator.com/item?id=49656225 ポイント: 551 # コメント: 584"
     },
     {
       "id": "322b7bb856954e6c",
@@ -5824,7 +5892,7 @@
         "Obsidian・PKM"
       ],
       "title_ja": "Obsidian 1.13.6 モバイル (公開)",
-      "summary_ja": "すべての新機能とバグは、Obsidian デスクトップ v1.13.6 まで修正します。タブ スイッチャのタブを閉じるために、新しい追加 swipe-to-close。 改善点 タブはタブのスイッチャーからタブを閉じた後、新しい位置にアニメーションします。 モバイルツールバーの設定ページでは、各コマンドの横にあるアイコンが表示されます。 チェックボックスのスケール"
+      "summary_ja": "Obsidianデスクトップ v1.13.6 まで、すべての新機能とバグ修正が含まれています。 タブスイッチャーのタブのタブを閉じるために、新しい追加スワイプツークローズ. 改善点 タブはタブのスイッチャーからタブを閉じた後、新しい位置にアニメーションします。 モバイルツールバーの設定ページでは、各コマンドの横にあるアイコンが表示されます。 チェックボックスのスケール"
     },
     {
       "id": "5086a94035ddaff2",
@@ -6270,7 +6338,7 @@
       "id": "53a9835ab826d34f",
       "title": "Rune is now open source",
       "url": "https://rune.build/blog/rune-is-now-open-source",
-      "summary": "Article URL: https://rune.build/blog/rune-is-now-open-source Comments URL: https://news.ycombinator.com/item?id=49660149 Points: 122 # Comments: 49",
+      "summary": "Article URL: https://rune.build/blog/rune-is-now-open-source Comments URL: https://news.ycombinator.com/item?id=49660149 Points: 127 # Comments: 52",
       "published_at": "2026-09-11T15:31:47+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -6319,7 +6387,7 @@
         "Indie Software・OSS"
       ],
       "title_ja": "Rune は現在オープンソースです",
-      "summary_ja": "記事のURL: https://rune.build/blog/rune-is-now-open-source コメントのURL: https://news.ycombinator.com/item?id=49660149 ポイント: 122 # コメント: 49"
+      "summary_ja": "記事のURL: https://rune.build/blog/rune-is-now-open-source コメントのURL: https://news.ycombinator.com/item?id=49660149 ポイント: 127 # コメント: 52"
     },
     {
       "id": "d3d32e8628746617",
@@ -6487,6 +6555,61 @@
       "summary_ja": "このアップデートでは、新しい検索可能な設定パネルとiOS共有シートを紹介します。 大きいファイルをスクロールし、テキストを選択すると、iOSとAndroidの両方で改善する必要があります。 すべての新機能とバグ修正は、Obsidian デスクトップ v1.13.4 まで含まれています。 iOS 共有シート 新しいiOS共有シートを使用すると、Safari、YouTubからコンテンツを保存できます"
     },
     {
+      "id": "dc61adfe91c11f31",
+      "title": "A better model for silicon: quantifying chip carbon with Columbia and Cornell",
+      "url": "https://www.raspberrypi.com/news/a-better-model-for-silicon-quantifying-chip-carbon-with-columbia-and-cornell/",
+      "summary": "MicroGreen and ACT were built to enable engineers to quantify the embodied carbon of their hardware. The post A better model for silicon: quantifying chip carbon with Columbia and Cornell appeared first on Raspberry Pi .",
+      "published_at": "2026-08-28T09:33:07+00:00",
+      "source": "Raspberry Pi News",
+      "source_id": "raspberry_pi_news",
+      "source_kind": "official",
+      "source_category": "make",
+      "primary_category": "make",
+      "topics": [
+        {
+          "id": "embedded_devices",
+          "score": 0.25
+        }
+      ],
+      "topic_ids": [
+        "embedded_devices"
+      ],
+      "topic_labels": [
+        "ESP32・小型デバイス"
+      ],
+      "topic_scores": {
+        "embedded_devices": 0.25
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 1.09,
+        "related_interest": 0.0,
+        "freshness": 0.878,
+        "source_priority": 0.85
+      },
+      "recommendation_reason": "direct",
+      "score": 1.09,
+      "score_components": {
+        "topics": 1.09,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.96,
+      "matched_interests": [
+        "embedded_devices"
+      ],
+      "matched_labels": [
+        "ESP32・小型デバイス"
+      ],
+      "title_ja": "シリコンに適したモデル:コロンビアとコーネルのチップカーボンを定量化",
+      "summary_ja": "マイクログリーンとACTは、エンジニアがハードウェアのエンボディカーボンを定量化できるように構築されました。 ポスト シリコンのためのより良いモデル:コロンビアとコルネルとクオンチファイトチップカーボンは、ラズベリーパイで最初に登場しました。"
+    },
+    {
       "id": "4278bca33ee9019f",
       "title": "MAI-Code-1-Flash deprecated",
       "url": "https://github.blog/changelog/2026-09-10-mai-code-1-flash-deprecated",
@@ -6531,7 +6654,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.96,
+      "rank_score": 2.95,
       "matched_interests": [
         "github_devops"
       ],
@@ -6540,61 +6663,6 @@
       ],
       "title_ja": "MAIコード-1-フラッシュ非推奨",
       "summary_ja": "MAI-Code-1-Flash は、GitHub Copilot のすべてのエクスペリエンス(Copilot Chat、インライン編集、依頼、エージェントモード、コード補完を含む)を廃止しました。 モデルの非推奨日付 提案された代替... 投稿 MAI-Code-1-Flashは、GitHubブログで最初に登場しました。"
-    },
-    {
-      "id": "dc61adfe91c11f31",
-      "title": "A better model for silicon: quantifying chip carbon with Columbia and Cornell",
-      "url": "https://www.raspberrypi.com/news/a-better-model-for-silicon-quantifying-chip-carbon-with-columbia-and-cornell/",
-      "summary": "MicroGreen and ACT were built to enable engineers to quantify the embodied carbon of their hardware. The post A better model for silicon: quantifying chip carbon with Columbia and Cornell appeared first on Raspberry Pi .",
-      "published_at": "2026-08-28T09:33:07+00:00",
-      "source": "Raspberry Pi News",
-      "source_id": "raspberry_pi_news",
-      "source_kind": "official",
-      "source_category": "make",
-      "primary_category": "make",
-      "topics": [
-        {
-          "id": "embedded_devices",
-          "score": 0.25
-        }
-      ],
-      "topic_ids": [
-        "embedded_devices"
-      ],
-      "topic_labels": [
-        "ESP32・小型デバイス"
-      ],
-      "topic_scores": {
-        "embedded_devices": 0.25
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 1.09,
-        "related_interest": 0.0,
-        "freshness": 0.879,
-        "source_priority": 0.85
-      },
-      "recommendation_reason": "direct",
-      "score": 1.09,
-      "score_components": {
-        "topics": 1.09,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.96,
-      "matched_interests": [
-        "embedded_devices"
-      ],
-      "matched_labels": [
-        "ESP32・小型デバイス"
-      ],
-      "title_ja": "シリコンに適したモデル:コロンビアとコーネルのチップカーボンを定量化",
-      "summary_ja": "マイクログリーンとACTは、エンジニアがハードウェアのエンボディカーボンを定量化できるように構築されました。 ポスト シリコンのためのより良いモデル:コロンビアとコルネルとクオンチファイトチップカーボンは、ラズベリーパイで最初に登場しました。"
     },
     {
       "id": "dc7b9892a8ebdbc8",
@@ -7145,7 +7213,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.89,
+      "rank_score": 2.88,
       "matched_interests": [
         "llm_ai_tools"
       ],
@@ -7200,7 +7268,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.89,
+      "rank_score": 2.88,
       "matched_interests": [
         "llm_ai_tools"
       ],
@@ -7575,7 +7643,7 @@
       "signals": {
         "direct_interest": 1.09,
         "related_interest": 0.0,
-        "freshness": 0.82,
+        "freshness": 0.819,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -7805,7 +7873,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.77,
+      "rank_score": 2.76,
       "matched_interests": [
         "apple_ecosystem"
       ],
@@ -8235,7 +8303,7 @@
       "signals": {
         "direct_interest": 1.0,
         "related_interest": 0.0,
-        "freshness": 0.784,
+        "freshness": 0.783,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -8455,7 +8523,7 @@
       "signals": {
         "direct_interest": 1.0,
         "related_interest": 0.0,
-        "freshness": 0.759,
+        "freshness": 0.758,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -8971,6 +9039,61 @@
       "summary_ja": "OpenRouter は、チーム支出の 5 つの制御を持っています。: 共有クレジット プールを持つ組織, ワークロードあたりのスコープモデルをプリセットします。, パーキーの支出キャップ, パーメンバーの予算を強制するガードレール, 誰が何を費やしたかを示すアクティビティダッシュボード. このガイドは、順番に1パスですべて設定します。"
     },
     {
+      "id": "f5d41ff4765fac55",
+      "title": "Understand your AI usage: every agent, model, and request",
+      "url": "https://openrouter.ai/blog/announcements/activity-dashboard/",
+      "summary": "See what your team spent on every model, save the charts you keep rebuilding, click any bar to land in the logs behind it, and query the same data from your terminal with the Analytics API.",
+      "published_at": "2026-08-17T00:00:00+00:00",
+      "source": "OpenRouter Blog",
+      "source_id": "openrouter_blog",
+      "source_kind": "official",
+      "source_category": "ai",
+      "primary_category": "ai",
+      "topics": [
+        {
+          "id": "llm_ai_tools",
+          "score": 0.25
+        }
+      ],
+      "topic_ids": [
+        "llm_ai_tools"
+      ],
+      "topic_labels": [
+        "LLM・AIツール"
+      ],
+      "topic_scores": {
+        "llm_ai_tools": 0.25
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 0.75,
+        "related_interest": 0.0,
+        "freshness": 0.783,
+        "source_priority": 0.95
+      },
+      "recommendation_reason": "direct",
+      "score": 0.75,
+      "score_components": {
+        "topics": 0.75,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.43,
+      "matched_interests": [
+        "llm_ai_tools"
+      ],
+      "matched_labels": [
+        "LLM・AIツール"
+      ],
+      "title_ja": "あらゆるエージェント、モデル、リクエストのAI使用状況を把握",
+      "summary_ja": "すべてのモデルに費やしたチームを見ると、再構築し続けるチャートを保存し、任意のバーをクリックしてログに埋め込むことができます。また、Analytics API を使用して、端末から同じデータをクエリします。"
+    },
+    {
       "id": "b7152666222b6832",
       "title": "Governing AI Spend Across a Team on OpenRouter",
       "url": "https://openrouter.ai/blog/insights/governing-team-ai-spend/",
@@ -9015,7 +9138,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.44,
+      "rank_score": 2.43,
       "matched_interests": [
         "llm_ai_tools"
       ],
@@ -9024,61 +9147,6 @@
       ],
       "title_ja": "OpenRouter チームを横断して AI を統治",
       "summary_ja": "チームのAI法案は、各エンジニアが保有するすべての鍵の合計です。 OpenRouter は、各キーの制限からエンタープライズワークスペースの予算まで、6つの操作方法を提供します。 それぞれのコントロールキャップ、必要なプラン、チームに合ったものについて説明します。"
-    },
-    {
-      "id": "f5d41ff4765fac55",
-      "title": "Understand your AI usage: every agent, model, and request",
-      "url": "https://openrouter.ai/blog/announcements/activity-dashboard/",
-      "summary": "See what your team spent on every model, save the charts you keep rebuilding, click any bar to land in the logs behind it, and query the same data from your terminal with the Analytics API.",
-      "published_at": "2026-08-17T00:00:00+00:00",
-      "source": "OpenRouter Blog",
-      "source_id": "openrouter_blog",
-      "source_kind": "official",
-      "source_category": "ai",
-      "primary_category": "ai",
-      "topics": [
-        {
-          "id": "llm_ai_tools",
-          "score": 0.25
-        }
-      ],
-      "topic_ids": [
-        "llm_ai_tools"
-      ],
-      "topic_labels": [
-        "LLM・AIツール"
-      ],
-      "topic_scores": {
-        "llm_ai_tools": 0.25
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 0.75,
-        "related_interest": 0.0,
-        "freshness": 0.784,
-        "source_priority": 0.95
-      },
-      "recommendation_reason": "direct",
-      "score": 0.75,
-      "score_components": {
-        "topics": 0.75,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.43,
-      "matched_interests": [
-        "llm_ai_tools"
-      ],
-      "matched_labels": [
-        "LLM・AIツール"
-      ],
-      "title_ja": "あらゆるエージェント、モデル、リクエストのAI使用状況を把握",
-      "summary_ja": "すべてのモデルに費やしたチームを見ると、再構築し続けるチャートを保存し、任意のバーをクリックしてログに埋め込むことができます。また、Analytics API を使用して、端末から同じデータをクエリします。"
     },
     {
       "id": "5cc715ece107a180",
@@ -9964,7 +10032,7 @@
       "id": "88bf5f4583f1d837",
       "title": "DeCloudflare",
       "url": "https://0xacab.org/dCF/deCloudflare/-/blob/master/README.md",
-      "summary": "Article URL: https://0xacab.org/dCF/deCloudflare/-/blob/master/README.md Comments URL: https://news.ycombinator.com/item?id=49666587 Points: 9 # Comments: 10",
+      "summary": "Article URL: https://0xacab.org/dCF/deCloudflare/-/blob/master/README.md Comments URL: https://news.ycombinator.com/item?id=49666587 Points: 18 # Comments: 24",
       "published_at": "2026-09-11T22:59:09+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -9998,13 +10066,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "デクラウドフレア",
-      "summary_ja": "記事のURL: https://0xacab.org/dCF/deCloudflare/-/blob/master/README.md コメント URL: https://news.ycombinator.com/item?id=49666587 ポイント: 9 # コメント: 10"
+      "summary_ja": "記事のURL: https://0xacab.org/dCF/deCloudflare/-/blob/master/README.md コメント URL: https://news.ycombinator.com/item?id=49666587 ポイント: 18 # コメント: 24"
     },
     {
       "id": "15b8bf567928f1e3",
       "title": "QueryBrew: System-Agnostic SQL-to-SQL Query Optimization [pdf]",
       "url": "https://www.vldb.org/pvldb/vol19/p4494-schmidt.pdf",
-      "summary": "Article URL: https://www.vldb.org/pvldb/vol19/p4494-schmidt.pdf Comments URL: https://news.ycombinator.com/item?id=49666155 Points: 8 # Comments: 0",
+      "summary": "Article URL: https://www.vldb.org/pvldb/vol19/p4494-schmidt.pdf Comments URL: https://news.ycombinator.com/item?id=49666155 Points: 9 # Comments: 0",
       "published_at": "2026-09-11T22:16:15+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10024,7 +10092,7 @@
       "signals": {
         "direct_interest": 0.0,
         "related_interest": 0.0,
-        "freshness": 1.0,
+        "freshness": 0.999,
         "source_priority": 0.5
       },
       "recommendation_reason": "latest",
@@ -10038,13 +10106,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "QueryBrew: System-Agnostic SQL-to-SQL クエリの最適化 [pdf]",
-      "summary_ja": "記事のURL:https://www.vldb.org/pvldb/vol19/p4494-schmidt.pdf コメント URL: https://news.ycombinator.com/item?id=49666155 ポイント: 8 # コメント: 0"
+      "summary_ja": "記事のURL:https://www.vldb.org/pvldb/vol19/p4494-schmidt.pdf コメント URL: https://news.ycombinator.com/item?id=49666155 ポイント: 9 # コメント: 0"
     },
     {
       "id": "c4c19e619bf53435",
       "title": "Project Blinkenlights",
       "url": "https://blinkenlights.de/en/",
-      "summary": "Article URL: https://blinkenlights.de/en/ Comments URL: https://news.ycombinator.com/item?id=49666146 Points: 18 # Comments: 10",
+      "summary": "Article URL: https://blinkenlights.de/en/ Comments URL: https://news.ycombinator.com/item?id=49666146 Points: 23 # Comments: 12",
       "published_at": "2026-09-11T22:15:00+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10064,7 +10132,7 @@
       "signals": {
         "direct_interest": 0.0,
         "related_interest": 0.0,
-        "freshness": 1.0,
+        "freshness": 0.999,
         "source_priority": 0.5
       },
       "recommendation_reason": "latest",
@@ -10078,13 +10146,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "プロジェクトBlinkenlights",
-      "summary_ja": "記事のURL: https://blinkenlights.de/en/ コメントのURL: https://news.ycombinator.com/item?id=49666146 ポイント: 18 # コメント: 10"
+      "summary_ja": "記事URL: https://blinkenlights.de/en/ コメントURL: https://news.ycombinator.com/item?id=49666146 ポイント: 23 #コメント: 12"
     },
     {
       "id": "066bca0fbcd83753",
       "title": "Show HN: ResolveHQ – A Helpdesk Built on Cloudflare Workers, D1, R2 and Queues",
       "url": "https://github.com/mirza-rizvi/ResolveHQ",
-      "summary": "Article URL: https://github.com/mirza-rizvi/ResolveHQ Comments URL: https://news.ycombinator.com/item?id=49665864 Points: 15 # Comments: 6",
+      "summary": "Article URL: https://github.com/mirza-rizvi/ResolveHQ Comments URL: https://news.ycombinator.com/item?id=49665864 Points: 17 # Comments: 6",
       "published_at": "2026-09-11T21:48:00+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10118,13 +10186,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "ショーHN:ResolveHQ - クラウドフレアワーカー、D1、R2、キューエスで構築されたヘルプデスク",
-      "summary_ja": "記事のURL: https://github.com/mirza-rizvi/ResolveHQ コメント URL: https://news.ycombinator.com/item?id=49665864 ポイント: 15 # コメント: 6"
+      "summary_ja": "記事のURL: https://github.com/mirza-rizvi/ResolveHQ コメント URL: https://news.ycombinator.com/item?id=49665864 ポイント: 17 # コメント: 6"
     },
     {
       "id": "97a333de512e565b",
       "title": "GrapheneOS' rewritten Messages app is released",
       "url": "https://github.com/GrapheneOS/Messaging/releases/tag/13",
-      "summary": "Article URL: https://github.com/GrapheneOS/Messaging/releases/tag/13 Comments URL: https://news.ycombinator.com/item?id=49663373 Points: 164 # Comments: 93",
+      "summary": "Article URL: https://github.com/GrapheneOS/Messaging/releases/tag/13 Comments URL: https://news.ycombinator.com/item?id=49663373 Points: 168 # Comments: 96",
       "published_at": "2026-09-11T18:50:36+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10158,13 +10226,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "グラフェンOSの書き換えメッセージアプリがリリースされました",
-      "summary_ja": "記事のURL: https://github.com/GrapheneOS/Messaging/releases/tag/13 コメントのURL: https://news.ycombinator.com/item?id=496373 ポイント: 164 # コメント: 93"
+      "summary_ja": "記事のURL: https://github.com/GrapheneOS/Messaging/releases/tag/13 注釈 URL: https://news.ycombinator.com/item?id=496373 ポイント: 168 # コメント: 96"
     },
     {
       "id": "23ec78d44972d7ae",
       "title": "CIA Releases President's Daily Briefs in Commemoration of 9/11",
       "url": "https://www.cia.gov/stories/story/cia-releases-presidents-daily-briefs-in-commemoration-of-the-25th-anniversary-of-9-11/",
-      "summary": "https://www.cia.gov/stories/story/cia-releases-presidents-da... Comments URL: https://news.ycombinator.com/item?id=49663054 Points: 83 # Comments: 50",
+      "summary": "https://www.cia.gov/stories/story/cia-releases-presidents-da... Comments URL: https://news.ycombinator.com/item?id=49663054 Points: 88 # Comments: 54",
       "published_at": "2026-09-11T18:30:07+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10198,13 +10266,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "CIAが9/11の記念に社長のデイリー・ブリーフを発表",
-      "summary_ja": "https://www.cia.gov/stories/story/cia-releases-presidents-da... コメント URL: https://news.ycombinator.com/item?id=49663054 ポイント: 83 # コメント: 50"
+      "summary_ja": "https://www.cia.gov/stories/story/cia-releases-presidents-da... コメントURL: https://news.ycombinator.com/item?id=49663054 ポイント: 88 #コメント: 54"
     },
     {
       "id": "3990004c22c157ff",
       "title": "I spent $220 on Google app ads and 60% of the installs were robots",
       "url": "https://dayzlegame.com/blog/google-ads-bot-farm/",
-      "summary": "Article URL: https://dayzlegame.com/blog/google-ads-bot-farm/ Comments URL: https://news.ycombinator.com/item?id=49662990 Points: 205 # Comments: 105",
+      "summary": "Article URL: https://dayzlegame.com/blog/google-ads-bot-farm/ Comments URL: https://news.ycombinator.com/item?id=49662990 Points: 223 # Comments: 117",
       "published_at": "2026-09-11T18:24:55+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10238,13 +10306,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "Googleアプリ広告に$220を費やし、インストールの60%はロボットだった",
-      "summary_ja": "記事のURL: https://dayzlegame.com/blog/google-ads-bot-farm/ コメント URL: https://news.ycombinator.com/item?id=49662990 ポイント: 205 # コメント: 105"
+      "summary_ja": "記事のURL: https://dayzlegame.com/blog/google-ads-bot-farm/ コメントURL: https://news.ycombinator.com/item?id=49662990 ポイント: 223 # コメント: 117"
     },
     {
       "id": "6fae8841317f92c0",
       "title": "Litelm: LiteLLM Without the Bloat",
       "url": "https://github.com/kennethwolters/litelm",
-      "summary": "Article URL: https://github.com/kennethwolters/litelm Comments URL: https://news.ycombinator.com/item?id=49662767 Points: 81 # Comments: 31",
+      "summary": "Article URL: https://github.com/kennethwolters/litelm Comments URL: https://news.ycombinator.com/item?id=49662767 Points: 82 # Comments: 31",
       "published_at": "2026-09-11T18:10:20+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10278,13 +10346,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "Litelm:ライトルム ブロアなしで",
-      "summary_ja": "記事のURL: https://github.com/kennethwolters/litelm コメント URL: https://news.ycombinator.com/item?id=49662767 ポイント: 81 # コメント: 31"
+      "summary_ja": "記事のURL: https://github.com/kennethwolters/litelm コメント URL: https://news.ycombinator.com/item?id=49662767 ポイント: 82 # コメント: 31"
     },
     {
       "id": "64b7a813fe3bacec",
       "title": "The EPA is planning to scrap public review rules for data center pollution",
       "url": "https://capitalbnews.org/data-centers-permit-rules-epa/",
-      "summary": "Article URL: https://capitalbnews.org/data-centers-permit-rules-epa/ Comments URL: https://news.ycombinator.com/item?id=49662672 Points: 293 # Comments: 194",
+      "summary": "Article URL: https://capitalbnews.org/data-centers-permit-rules-epa/ Comments URL: https://news.ycombinator.com/item?id=49662672 Points: 301 # Comments: 207",
       "published_at": "2026-09-11T18:05:21+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10318,13 +10386,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "EPAは、データセンターの汚染に関するパブリックレビュー規則をスクラップする計画です",
-      "summary_ja": "記事のURL: https://capitalbnews.org/data-centers-permit-rules-epa/ コメントのURL: https://news.ycombinator.com/item?id=49662672 ポイント: 293 # コメント: 194"
+      "summary_ja": "記事のURL: https://capitalbnews.org/data-centers-permit-rules-epa/ コメントのURL: https://news.ycombinator.com/item?id=49662672 ポイント: 301 # コメント: 207"
     },
     {
       "id": "5280e08e103088da",
       "title": "A misalignment of AI in mathematics",
       "url": "https://mathandai.org/",
-      "summary": "https://terrytao.wordpress.com/2026/09/11/a-severe-misalignm... https://www.economist.com/science-and-technology/2026/09/11/... , https://unwall.app/www.economist.com/science-and-technology/... Comments URL: https://news.ycombinator.com/item?id=49662371 Points: 525 # Comments: 590",
+      "summary": "https://terrytao.wordpress.com/2026/09/11/a-severe-misalignm... https://www.economist.com/science-and-technology/2026/09/11/... , https://unwall.app/www.economist.com/science-and-technology/... Comments URL: https://news.ycombinator.com/item?id=49662371 Points: 542 # Comments: 607",
       "published_at": "2026-09-11T17:45:12+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10358,13 +10426,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "数学におけるAIの不整列",
-      "summary_ja": "https://terrytao.wordpress.com/2026/09/11/a-severe-misalignm... https://www.economist.com/science-and-technology/2026/09/11/... , https://unwall.app/www.economist.com/science-and-technology/... コメント URL: https://news.ycombinator.com/item?id=49662371 ポイント: 525 # コメント: 590"
+      "summary_ja": "https://terrytao.wordpress.com/2026/09/11/a-severe-misalignm... https://www.economist.com/science-and-technology/2026/09/11/... , https://unwall.app/www.economist.com/science-and-technology/... コメント URL: https://news.ycombinator.com/item?id=49662371 ポイント: 542 # コメント: 607"
     },
     {
       "id": "2dc0d58ec7277e6d",
       "title": "Λ Snap – An inviting programming language for kids and adults for CS study",
       "url": "https://snap.berkeley.edu/",
-      "summary": "Article URL: https://snap.berkeley.edu/ Comments URL: https://news.ycombinator.com/item?id=49662214 Points: 94 # Comments: 52",
+      "summary": "Article URL: https://snap.berkeley.edu/ Comments URL: https://news.ycombinator.com/item?id=49662214 Points: 97 # Comments: 53",
       "published_at": "2026-09-11T17:36:11+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10398,13 +10466,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "ゾンビスナップ - CS勉強のための子供と大人のためのプログラミング言語を招待",
-      "summary_ja": "記事のURL: https://snap.berkeley.edu/ コメント URL: https://news.ycombinator.com/item?id=49662214 ポイント: 94 # コメント: 52"
+      "summary_ja": "記事URL: https://snap.berkeley.edu/ コメント URL: https://news.ycombinator.com/item?id=49662214 ポイント: 97 # コメント: 53"
     },
     {
       "id": "4627430f06ef4218",
       "title": "Mind-altering drugs played key role in rise of Andean civilization",
       "url": "https://www.science.org/content/article/mind-altering-drugs-played-key-role-rise-andean-civilization",
-      "summary": "Article URL: https://www.science.org/content/article/mind-altering-drugs-played-key-role-rise-andean-civilization Comments URL: https://news.ycombinator.com/item?id=49662020 Points: 83 # Comments: 61",
+      "summary": "Article URL: https://www.science.org/content/article/mind-altering-drugs-played-key-role-rise-andean-civilization Comments URL: https://news.ycombinator.com/item?id=49662020 Points: 84 # Comments: 62",
       "published_at": "2026-09-11T17:25:23+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10438,7 +10506,7 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "マインドフルーティング薬は、アンデス文明の上昇に重要な役割を果たしました",
-      "summary_ja": "記事のURL: https://www.science.org/content/article/mind-altering-drugs-played-key-role-rise-andean-civilization コメントのURL: https://news.ycombinator.com/item?id=49662020 ポイント: 83 #コメント: 61"
+      "summary_ja": "記事のURL: https://www.science.org/content/article/mind-altering-drugs-played-key-role-rise-andean-civilization コメントのURL: https://news.ycombinator.com/item?id=49662020 ポイント: 84 #コメント: 62"
     },
     {
       "id": "e40727c46bd1b990",
@@ -10564,7 +10632,7 @@
       "id": "a7cfffb235c8637a",
       "title": "RTK reports token savings, but our cost benchmarks disagree",
       "url": "https://quesma.com/blog/does-rtk-make-ai-coding-cheaper/",
-      "summary": "Article URL: https://quesma.com/blog/does-rtk-make-ai-coding-cheaper/ Comments URL: https://news.ycombinator.com/item?id=49656471 Points: 142 # Comments: 70",
+      "summary": "Article URL: https://quesma.com/blog/does-rtk-make-ai-coding-cheaper/ Comments URL: https://news.ycombinator.com/item?id=49656471 Points: 142 # Comments: 71",
       "published_at": "2026-09-11T11:15:13+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -10598,47 +10666,7 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "RTK はトークンの節約を報告しますが、当社のコストベンチマークは同意しない",
-      "summary_ja": "記事のURL: https://quesma.com/blog/does-rtk-make-ai-coding-cheaper/ コメントのURL: https://news.ycombinator.com/item?id=49656471 ポイント: 142 # コメント: 70"
-    },
-    {
-      "id": "5c70f830a2445c74",
-      "title": "Show HN: Bodily Oddities",
-      "url": "https://vester.si/bodily-oddities/",
-      "summary": "When I was about 11 years old, my best friend and I were playing during recess at school, and I was carrying him around on my back, presumably pretending to be a multipart attack robot. All of a sudden, my heart started hurting, and I collapsed to my knees, and the robot was no more. Every time I inhaled, it would feel",
-      "published_at": "2026-09-10T20:33:11+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_kind": "community",
-      "source_category": "other",
-      "primary_category": "other",
-      "topics": [],
-      "topic_ids": [],
-      "topic_labels": [],
-      "topic_scores": {},
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 0.0,
-        "related_interest": 0.0,
-        "freshness": 0.991,
-        "source_priority": 0.5
-      },
-      "recommendation_reason": "latest",
-      "score": 0.0,
-      "score_components": {
-        "topics": 0,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.08,
-      "matched_interests": [],
-      "matched_labels": [],
-      "title_ja": "HNを表示する: ボディリー・オッディティ",
-      "summary_ja": "およそ11歳の時、親友の親友と学校で退学中に遊んでいましたが、背中の周りを運んでいて、多発の攻撃ロボットになってしまいました。 突然、心が痛くなり、膝に倒れ、ロボットはもうなかった。 吸入するたびに、"
+      "summary_ja": "記事のURL: https://quesma.com/blog/does-rtk-make-ai-coding-cheaper/ コメントのURL: https://news.ycombinator.com/item?id=49656471 ポイント: 142 # コメント: 71"
     },
     {
       "id": "b84ad156fb943dde",
@@ -11060,7 +11088,7 @@
       "signals": {
         "direct_interest": 1.05,
         "related_interest": 0.0,
-        "freshness": 0.289,
+        "freshness": 0.288,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -11115,7 +11143,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.289,
+        "freshness": 0.288,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -11280,7 +11308,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.207,
+        "freshness": 0.206,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -11335,7 +11363,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.207,
+        "freshness": 0.206,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -11390,7 +11418,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.207,
+        "freshness": 0.206,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -11580,9 +11608,9 @@
     "engine": "argos-translate",
     "source_language": "en",
     "target_language": "ja",
-    "generated_at": "2026-09-11T23:25:39.801994+00:00",
-    "translated_fields": 69,
-    "reused_fields": 289,
+    "generated_at": "2026-09-11T23:50:44.884384+00:00",
+    "translated_fields": 23,
+    "reused_fields": 335,
     "native_japanese_fields": 50,
     "failed_fields": 0
   }
