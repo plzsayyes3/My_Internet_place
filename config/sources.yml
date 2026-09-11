@@ -9,6 +9,7 @@ sources:
     name: OpenAI News
     type: rss
     url: https://openai.com/news/rss.xml
+    language: en
     default_topics: [llm_ai_tools, ai_agents_automation]
     source_kind: official
     default_content_type: news
@@ -19,6 +20,7 @@ sources:
     name: OpenRouter Blog
     type: rss
     url: https://openrouter.ai/blog/feed.xml
+    language: en
     default_topics: [llm_ai_tools]
     source_kind: official
     default_content_type: news
@@ -29,6 +31,7 @@ sources:
     name: Google AI Blog
     type: rss
     url: https://blog.google/technology/ai/rss/
+    language: en
     default_topics: [llm_ai_tools]
     source_kind: official
     default_content_type: news
@@ -39,6 +42,7 @@ sources:
     name: Obsidian Blog
     type: rss
     url: https://obsidian.md/feed.xml
+    language: en
     default_topics: [obsidian_pkm, personal_knowledge]
     source_kind: official
     default_content_type: news
@@ -50,6 +54,7 @@ sources:
     name: Obsidian Changelog
     type: rss
     url: https://obsidian.md/changelog.xml
+    language: en
     default_topics: [obsidian_pkm]
     source_kind: official
     default_content_type: release
@@ -61,6 +66,7 @@ sources:
     name: GitHub Changelog
     type: rss
     url: https://github.blog/changelog/feed/
+    language: en
     default_topics: [github_devops]
     source_kind: official
     default_content_type: release
@@ -71,6 +77,7 @@ sources:
     name: GitHub Blog
     type: rss
     url: https://github.blog/feed/
+    language: en
     default_topics: [github_devops, indie_open_source]
     source_kind: official
     default_content_type: news
@@ -81,6 +88,7 @@ sources:
     name: Apple Developer News (JP)
     type: rss
     url: https://developer.apple.com/jp/news/rss/news.rss
+    language: ja
     default_topics: [apple_ecosystem]
     source_kind: official
     default_content_type: news
@@ -91,6 +99,7 @@ sources:
     name: Raspberry Pi News
     type: rss
     url: https://www.raspberrypi.com/news/feed/
+    language: en
     default_topics: [embedded_devices]
     source_kind: official
     default_content_type: news
@@ -101,6 +110,7 @@ sources:
     name: Simon Willison's Weblog
     type: atom
     url: https://simonwillison.net/atom/everything/
+    language: en
     default_topics: [llm_ai_tools, ai_coding]
     source_kind: blog
     default_content_type: analysis
@@ -111,6 +121,7 @@ sources:
     name: Hackaday
     type: rss
     url: https://hackaday.com/blog/feed/
+    language: en
     default_topics: [embedded_devices, 3d_printing]
     source_kind: publication
     default_content_type: news
@@ -121,6 +132,7 @@ sources:
     name: Hacker News via HNRSS
     type: rss
     url: https://hnrss.org/frontpage
+    language: en
     default_topics: []
     source_kind: community
     default_content_type: news
