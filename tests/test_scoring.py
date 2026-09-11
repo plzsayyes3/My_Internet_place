@@ -93,7 +93,7 @@ class TaxonomyV3Tests(unittest.TestCase):
         referenced = {signal for query in DISCOVERY.get("queries", []) for signal in query.get("signals", [])}
         self.assertTrue(referenced.issubset(valid), referenced - valid)
 
-    def test_pokemon_discovery_is_prepared_but_global_search_stays_disabled(self):
+    def test_pokemon_discovery_is_enabled_for_scheduled_search(self):
         signals = {x["id"]: x for x in INTERESTS.get("interest_signals", [])}
         self.assertIn("pokemon", signals)
         self.assertAlmostEqual(float(signals["pokemon"]["weight"]), 1.3)
@@ -104,7 +104,7 @@ class TaxonomyV3Tests(unittest.TestCase):
         ]
         self.assertEqual({x["query"] for x in pokemon_queries}, {"ポケモン", "Pokémon", "Pokemon news"})
         self.assertTrue(all(x.get("enabled", False) for x in pokemon_queries))
-        self.assertFalse(DISCOVERY.get("enabled", False))
+        self.assertTrue(DISCOVERY.get("enabled", False))
 
 
 if __name__ == "__main__":
