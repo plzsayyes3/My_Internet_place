@@ -18,6 +18,7 @@ const CATEGORY_LABELS = {
   knowledge_tools: "KNOWLEDGE",
   software_building: "SOFTWARE",
   making: "MAKE",
+  personal_devices: "DEVICES",
   education_childcare: "EDUCATION",
   productivity: "WORKFLOW",
   personal_web: "WEB",
