@@ -93,8 +93,8 @@ class TaxonomyV4Tests(unittest.TestCase):
 
     def test_specific_genre_priority_breaks_equal_topic_scores(self):
         category, topics, *_ = classify_and_score(
-            "ESP32 GitHub project",
-            "A repository for a small device.",
+            "ESP32 GitHub",
+            "A project.",
             fallback="other",
         )
         ids = {x["id"] for x in topics}
