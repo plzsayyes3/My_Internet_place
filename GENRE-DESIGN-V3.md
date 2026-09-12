@@ -31,7 +31,7 @@ Genre never means "how interested the user is". Signals and weights never become
 - `config/taxonomy.yml` — stable genres, internal topics, keyword rules, relations and classification priority.
 - `config/interests.yml` — public-safe topic weights, interest signals, combinations and ranking parameters.
 - `config/discovery.yml` — active-search queries linked to taxonomy topics/signals.
-- `config/sources.yml` — feed acquisition and fallback topics. Source identity is supplementary classification evidence only.
+- `config/sources.yml` — feed acquisition and narrow-feed fallback topics. Broad feeds should leave fallback topics empty.
 
 ## Twelve display genres
 
@@ -50,7 +50,7 @@ Genre never means "how interested the user is". Signals and weights never become
 | `lifestyle` | LIFESTYLE |
 | `other` | OTHER |
 
-`Other` is a real fallback shelf but should not be used when a stable topic can reasonably classify the article.
+`Other` is a real fallback shelf but should not be used when a stable topic can reasonably classify the article. It is preferable to a false genre produced only from a broad source identity.
 
 ## Topics are internal coordinates
 
@@ -70,9 +70,9 @@ Examples:
 
 Each article receives at most three topics and one primary genre.
 
-## Genre priority
+## Primary genre decision
 
-Topic score is the first decision rule. If topic scores tie, the more specific genre wins using this stable order:
+Topic score is the first decision rule. If weighted scores are equal, title evidence wins over summary-only evidence. Only after that does the stable genre priority break remaining ties:
 
 ```text
 games
@@ -89,7 +89,7 @@ lifestyle
 other
 ```
 
-This removes the previous accidental tie-breaking by topic ID string order.
+This prevents a secondary theme mentioned in the body from overriding a clearer title theme, while also removing the previous accidental tie-breaking by topic ID string order.
 
 ## Classification evidence
 
@@ -98,11 +98,21 @@ Topic matching uses:
 1. title — strongest evidence
 2. summary / description — normal evidence
 3. URL, feed category/tag and source metadata — low-weight supplementary evidence
-4. source `default_topics` — fallback only when article-level evidence produces no topic
+4. source `default_topics` — fallback only for narrow feeds when article-level evidence produces no topic
+
+Broad feeds such as Hackaday and Hacker News intentionally have no `default_topics`; unrelated articles from those feeds may remain `Other` instead of inheriting a false genre.
+
+ASCII keywords are matched on token boundaries. This prevents terms such as `journal` from matching `journalism`, and avoids singular/plural keyword pairs double-counting the same phrase. Japanese/non-ASCII terms retain substring matching.
 
 Source identity must not dominate classification.
 
 Interest-signal vocabulary that is also useful for semantic classification is represented independently in taxonomy keywords where appropriate. Example: `cyberdeck` can help identify a Small Devices article, while the `cyberdeck` interest signal separately controls recommendation strength.
+
+## Compound interest bonuses
+
+Combination bonuses are allowed to raise recommendation strength only when both a minimum number of terms and a required anchor are present. For example, `keyboard + display` alone is not enough to trigger the `Cyberdeck制作` bonus; an anchor such as `cyberdeck`, `Raspberry Pi`, `ESP32`, or `portable terminal` is also required.
+
+This keeps recommendation signals from leaking into unrelated software or note-taking articles.
 
 ## Genre / topic / signal / score example
 
