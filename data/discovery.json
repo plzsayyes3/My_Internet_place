@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-12T03:27:18Z",
+  "generated_at": "2026-09-12T11:32:01Z",
   "producer": "chatgpt_scheduled_search",
   "items": [
     {
@@ -170,6 +170,30 @@
       "discovery_query_ids": ["pokemon", "pokemon_news"],
       "discovery_queries": ["ポケモン", "Pokemon news"],
       "discovered_at": "2026-09-12T03:27:18Z"
+    },
+    {
+      "title": "PiDeck – 7-Inch Cyberdeck for Raspberry Pi 5 with Waveshare IO + NVMe HAT #3DThursday #3DPrinting",
+      "url": "https://blog.adafruit.com/2026/09/03/pideck-7-inch-cyberdeck-for-raspberry-pi-5-with-waveshare-io-nvme-hat-3dthursday-3dprinting/",
+      "summary": "Adafruit highlights a rugged Raspberry Pi 5 cyberdeck built around a Waveshare IO Board and NVMe HAT, with a 7-inch display, bolted enclosure, and editable STEP files for adapting the case to different components.",
+      "published_at": "2026-09-03T00:00:00Z",
+      "source": "Adafruit Blog",
+      "source_kind": "blog",
+      "content_type": "news",
+      "discovery_query_ids": ["cyberdeck", "diy_cyberdeck", "raspberry_pi_cyberdeck"],
+      "discovery_queries": ["cyberdeck", "DIY cyberdeck", "Raspberry Pi cyberdeck"],
+      "discovered_at": "2026-09-12T11:32:01Z"
+    },
+    {
+      "title": "September 2026 Community Day Classic: Gible",
+      "url": "https://pokemongo.com/news/communitydayclassic-gible-september-2026",
+      "summary": "Pokémon GO's official event page confirms Gible Community Day Classic for September 12, with increased Gible spawns, Shiny and Special Background chances, 3× catch XP, a Mega Collection Challenge, and Earth Power for evolved Garchomp.",
+      "published_at": null,
+      "source": "Pokémon GO",
+      "source_kind": "official",
+      "content_type": "news",
+      "discovery_query_ids": ["pokemon", "pokemon_en", "pokemon_news"],
+      "discovery_queries": ["ポケモン", "Pokémon", "Pokemon news"],
+      "discovered_at": "2026-09-12T11:32:01Z"
     }
   ]
 }
