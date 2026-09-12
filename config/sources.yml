@@ -100,7 +100,7 @@ sources:
     type: rss
     url: https://www.raspberrypi.com/news/feed/
     language: en
-    default_topics: [embedded_devices]
+    default_topics: []
     source_kind: official
     default_content_type: news
     priority: 0.85
@@ -111,7 +111,7 @@ sources:
     type: atom
     url: https://simonwillison.net/atom/everything/
     language: en
-    default_topics: [llm_ai_tools, ai_coding]
+    default_topics: []
     source_kind: blog
     default_content_type: analysis
     priority: 0.85
