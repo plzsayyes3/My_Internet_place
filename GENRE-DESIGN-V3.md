@@ -1,226 +1,152 @@
-# My Internet Place — Genre / Recommendation Taxonomy v3
+# My Internet Place — Genre / Recommendation Taxonomy v4
 
-Status: **base v3 implemented and validated**  
-Updated: 2026-09-11
+Status: **v4 implementation**  
+Updated: 2026-09-12  
 
-This document is the source of truth for classification and recommendation taxonomy in `plzsayyes3/My_Internet_place`.
+> Historical filename retained to avoid breaking existing references. This document now describes v4 and is the source of truth for article genre classification.
 
-## Current implementation
+## Goal
 
-Base implementation commit: `7736217b9ef9a05fb1b9be0ff309d003a5a0a283`
+When My Internet Place is opened, the top-level genre should make it immediately clear what kind of information an article belongs to. Personal interest strength is a separate concern.
 
-Validation on GitHub Actions:
+The processing order is:
 
-- taxonomy regression tests: success
-- RSS/Atom collection: success
-- generated dataset commit: `99a0011e880f1daf78b94d4a88443de951b3a610`
-- 12/12 configured feeds healthy at validation time
-- 204 items generated at validation time
+```text
+article
+  -> normalize title / summary / low-weight metadata
+  -> taxonomy topic matching
+  -> one primary genre
+  -> interest signal matching
+  -> interest score / ranking
+```
 
-## For other AI / contributors
+Genre never means "how interested the user is". Signals and weights never become navigation categories by themselves.
 
-Before changing taxonomy, scoring, sources, or recommendation behavior:
+## Public/private boundary
 
-1. Read this document first.
-2. Check the latest `main` HEAD and blob SHA of every file you will edit.
-3. Preserve the working RSS/Atom collection and `FOR YOU` / `LATEST` behavior.
-4. Do not repeat the base v3 migration; it is already implemented.
-5. Do not perform unrelated refactors in the same change.
-6. Internal category/topic IDs below are stable. UI labels may change.
-7. `DISCOVERY` is a recommendation surface, not a genre.
-8. `BLOG` is a source kind, not a content type.
-9. `LONG READ` is reading depth, not a content type.
-10. Active-search phrases belong in `config/discovery.yml`, not in the stable taxonomy.
+`plzsayyes3/gpts/interests/discovery-profile.yml` is the canonical long-term personal interest profile. My Internet Place only carries public-safe abstractions such as topic IDs, general search terms, signals, weights, combinations and downrank conditions. Personal context from gpts must not be copied into this public repository.
 
 ## Configuration architecture
 
-The v3 model is deliberately split across four files:
+- `config/taxonomy.yml` — stable genres, internal topics, keyword rules, relations and classification priority.
+- `config/interests.yml` — public-safe topic weights, interest signals, combinations and ranking parameters.
+- `config/discovery.yml` — active-search queries linked to taxonomy topics/signals.
+- `config/sources.yml` — feed acquisition and fallback topics. Source identity is supplementary classification evidence only.
 
-- `config/taxonomy.yml` — stable 8 categories, 25 topics, keywords, relations, content types, source kinds, reading depths, classification rules.
-- `config/interests.yml` — public-safe topic weights, attention signals, combination bonuses, ranking parameters.
-- `config/discovery.yml` — active-search queries and their topic links. Currently disabled as a collector.
-- `config/sources.yml` — RSS/Atom sources, `default_topics`, `source_kind`, `default_content_type`, priority.
-
-This split is intentional. Stable classification, personal preference, active search, and feed acquisition must not be collapsed into one file.
-
-## Five independent article axes
-
-```text
-ARTICLE
-├─ primary_category   # coarse UI shelf
-├─ topics[]           # internal interest coordinates
-├─ content_type       # nature of content
-├─ source_kind        # nature of publisher/source
-└─ reading_depth      # reading weight
-```
-
-Recommendation reason is separate:
-
-```text
-direct | related | latest | discovery | follow_up
-```
-
-## Eight display categories
+## Twelve display genres
 
 | ID | UI label |
 |---|---|
 | `ai` | AI |
-| `knowledge` | KNOWLEDGE |
+| `knowledge` | KNOWLEDGE / NOTES |
 | `software` | SOFTWARE |
-| `make` | MAKE |
-| `work` | WORK |
-| `education` | EDUCATION |
-| `life` | LIFE |
-| `web` | WEB |
+| `making` | MAKING |
+| `small_devices` | SMALL DEVICES |
+| `ios_apple` | iOS / APPLE |
+| `education` | CHILDCARE / EDUCATION |
+| `work` | WORK / TASK |
+| `personal_web` | PERSONAL WEB |
+| `games` | GAMES / POKEMON |
+| `lifestyle` | LIFESTYLE |
+| `other` | OTHER |
 
-Keep top-level navigation at roughly 7–8 categories. `DISCOVERY` never becomes a category.
+`Other` is a real fallback shelf but should not be used when a stable topic can reasonably classify the article.
 
-## 25 internal topics
+## Topics are internal coordinates
 
-### AI
-- `llm_ai_tools`
-- `ai_agents_automation`
-- `ai_coding`
+Examples:
 
-### KNOWLEDGE
-- `obsidian_pkm`
-- `personal_knowledge`
-- `local_first`
-- `systems_thinking`
+- AI: foundation models, AI tools/services, agents, local AI, AI development, AI use cases.
+- Knowledge: Obsidian/PKM, personal knowledge, daily notes, handwriting/analog notes, local-first, systems thinking.
+- Software: GitHub, web apps, indie/OSS, Obsidian plugin development, small tools, HCI.
+- Making: general maker/electronics projects, 3D printing.
+- Small Devices: ESP32/embedded, e-paper, wearables, custom input devices.
+- iOS / Apple: Apple ecosystem, Shortcuts/iOS automation.
+- Education: early childhood, child development, non-cognitive learning.
+- Work: task/time management, management/teams, work design.
+- Personal Web: personal web/RSS.
+- Games: Pokemon.
+- Lifestyle: life design.
 
-### SOFTWARE
-- `github_devops`
-- `web_apps`
-- `indie_open_source`
+Each article receives at most three topics and one primary genre.
 
-### MAKE
-- `embedded_devices`
-- `e_paper`
-- `wearables`
-- `input_devices`
-- `3d_printing`
+## Genre priority
 
-### WORK
-- `task_time_management`
-- `management_teams`
-- `work_design`
+Topic score is the first decision rule. If topic scores tie, the more specific genre wins using this stable order:
 
-### EDUCATION
-- `early_childhood`
-- `child_development`
-- `noncognitive_learning`
+```text
+games
+small_devices
+ios_apple
+ai
+knowledge
+software
+making
+education
+work
+personal_web
+lifestyle
+other
+```
 
-### LIFE
-- `life_design`
-- `apple_ecosystem`
+This removes the previous accidental tie-breaking by topic ID string order.
 
-### WEB
-- `personal_web_rss`
-- `hci_interfaces`
+## Classification evidence
 
-Each item receives at most 3 topics. Add a new topic only when existing topics cannot distinguish recommendation behavior.
+Topic matching uses:
 
-Product names and temporary interests normally become keywords, preference signals, or discovery queries. Examples: ESP32/M5Stack/Raspberry Pi → `embedded_devices`; keyboards/T9/HID → `input_devices`; Cyberdeck → discovery query/signal rather than a permanent topic.
+1. title — strongest evidence
+2. summary / description — normal evidence
+3. URL, feed category/tag and source metadata — low-weight supplementary evidence
+4. source `default_topics` — fallback only when article-level evidence produces no topic
 
-## Content type / source kind / reading depth
+Source identity must not dominate classification.
 
-Content types:
+Interest-signal vocabulary that is also useful for semantic classification is represented independently in taxonomy keywords where appropriate. Example: `cyberdeck` can help identify a Small Devices article, while the `cyberdeck` interest signal separately controls recommendation strength.
 
-- `news`
-- `release`
-- `tool`
-- `paper`
-- `how_to`
-- `analysis`
-- `essay`
-- `case_study`
-
-Source kinds:
-
-- `official`
-- `blog`
-- `publication`
-- `research`
-- `community`
-- `repository`
-
-Reading depth:
-
-- `quick`
-- `standard`
-- `long`
-
-Therefore `BLOG` belongs to `source_kind`, and `LONG READ` is `reading_depth: long`.
-
-## Classification behavior
-
-1. Match article title and summary against topic keywords.
-2. Weight title matches more strongly than summary matches.
-3. Keep at most 3 highest-scoring topics.
-4. Derive `primary_category` from the highest topic.
-5. Use source `default_topics` only when article text produces no topic match.
-6. Apply topic weights, preference signals, and combination bonuses from `interests.yml`.
-7. Keep compatibility fields while the current Pages UI still uses them.
-
-Preference signals currently retained include compact devices, cyberdecks, e-paper devices, practical small computing, custom input devices, local-first personal tools, calm personal technology, and a negative signal for large industrial robotics. These are preference signals, not navigation topics.
-
-## Generated data
-
-The v3 dataset exposes at least:
+## Genre / topic / signal / score example
 
 ```json
 {
-  "source_kind": "publication",
-  "primary_category": "make",
-  "topics": [{"id": "embedded_devices", "score": 0.667}],
-  "content_type": "news",
-  "reading_depth": "standard",
-  "signals": {
-    "direct_interest": 5.6,
-    "related_interest": 0.0,
-    "freshness": 1.0,
-    "source_priority": 0.65
-  },
-  "recommendation_reason": "direct"
+  "genre": "small_devices",
+  "primary_category": "small_devices",
+  "topics": [
+    {"id": "e_paper", "score": 0.667}
+  ],
+  "matched_signals": ["epaper_device", "practical_small_computing"],
+  "interest_score": 8.4,
+  "rank_score": 9.6
 }
 ```
 
-Compatibility fields such as `source_category`, `item_type`, `topic_ids`, `topic_labels`, `matched_interests`, and `matched_labels` remain for now.
+`primary_category` and `score` remain as compatibility aliases while the UI and generated data migrate to `genre` and `interest_score`.
 
-## DISCOVERY and active search
+## Generated genre metadata
 
-`DISCOVERY` should later recommend nearby-but-not-identical topics using the weighted topic graph, roughly 1–2 hops from strong interests. It should not be random unrelated content.
+The generated root JSON includes a `genres` array copied from taxonomy. The Pages UI reads this array rather than maintaining a separate hard-coded navigation taxonomy. A legacy map remains only to render previously generated data safely.
 
-`config/discovery.yml` holds changing active-search phrases separately. Its search collector is not yet enabled.
+## Pokemon
 
-## UI rule
-
-Permanent navigation stays compact:
+Pokemon is intentionally represented on all three relevant axes:
 
 ```text
-FOR YOU
-LATEST
-DISCOVERY   # future recommendation surface
-
-AI
-KNOWLEDGE
-SOFTWARE
-MAKE
-WORK
-EDUCATION
-LIFE
-WEB
+genre = games
+topic = pokemon
+signal = pokemon
 ```
 
-Do not expose all 25 topics as permanent top-level navigation.
+This prevents Pokemon discovery items from falling into `other` while preserving independent interest weighting.
 
-## Next work
+## Compatibility
 
-1. Observe real classifications and tune keywords/weights.
-2. Improve item-level content-type / reading-depth inference only if needed.
-3. Design privacy-safe storage for `気になる` / `興味なし`.
-4. Add related-topic recommendation scoring.
-5. Implement `DISCOVERY`.
-6. Implement active web search from `discovery.yml`.
+Legacy category names from older generated datasets are normalized at collection/UI boundaries. Freshly generated v4 data uses only current genre IDs.
 
-Out of scope unless separately assigned: broad visual redesign, translation, AI summaries, publication of private history, and unrelated feed expansion.
+## Out of scope for this change
+
+- adding news sources
+- translation changes
+- visual redesign
+- new recommendation surfaces
+- new product features
+
+The focus is classification quality and correct propagation from taxonomy to generated data and genre filters.
