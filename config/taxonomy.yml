@@ -112,6 +112,11 @@ topics:
     category: software
     keywords: [GitHub, GitHub Actions, GitHub Pages, CI/CD, repository, Git workflow]
 
+  - id: programming
+    label: プログラミング・言語
+    category: software
+    keywords: [Python, Rust, JavaScript, TypeScript, programming language, programming languages, compiler, interpreter, package manager, package managers, software library, software libraries, codebase, プログラミング, プログラミング言語]
+
   - id: web_apps
     label: Webアプリ
     category: software
@@ -269,9 +274,15 @@ relations:
     weight: 0.60
   - topics: [personal_knowledge, personal_web_rss]
     weight: 0.65
+  - topics: [github_devops, programming]
+    weight: 0.80
   - topics: [github_devops, web_apps]
     weight: 0.85
   - topics: [github_devops, indie_open_source]
+    weight: 0.70
+  - topics: [programming, web_apps]
+    weight: 0.80
+  - topics: [programming, indie_open_source]
     weight: 0.70
   - topics: [web_apps, personal_web_rss]
     weight: 0.70

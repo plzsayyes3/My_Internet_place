@@ -73,6 +73,24 @@ class TaxonomyV4Tests(unittest.TestCase):
         self.assertTrue(keyword_matches("AI agents", "openai ai agents are running"))
         self.assertFalse(keyword_matches("AI agent", "openai ai agents are running"))
 
+    def test_generic_programming_article_is_software(self):
+        category, topics, *_ = classify_and_score(
+            "Soft-deprecating re.match()",
+            "Python 3.15 changes how an API should be used in new code.",
+            fallback="other",
+        )
+        self.assertEqual(category, "software")
+        self.assertIn("programming", {x["id"] for x in topics})
+
+    def test_rust_side_project_is_software_without_source_fallback(self):
+        category, topics, *_ = classify_and_score(
+            "Show HN: Godot and Rust based multiplexer",
+            "A side project combining Godot and Rust for terminal panes.",
+            fallback="other",
+        )
+        self.assertEqual(category, "software")
+        self.assertIn("programming", {x["id"] for x in topics})
+
     def test_cyberdeck_epaper_is_small_devices_and_strongly_boosted(self):
         category, topics, score, signals, combinations, _ = classify_and_score(
             "Build a pocket ESP32 e-paper cyberdeck",
@@ -171,9 +189,10 @@ class TaxonomyV4Tests(unittest.TestCase):
         self.assertEqual([x["id"] for x in topics], ["early_childhood"])
         self.assertTrue(topics[0]["fallback"])
 
-    def test_broad_hackaday_feed_has_no_default_topic_fallback(self):
+    def test_broad_feeds_have_no_default_topic_fallback(self):
         sources = {x["id"]: x for x in SOURCES.get("sources", [])}
-        self.assertEqual(sources["hackaday"].get("default_topics"), [])
+        for source_id in ("hackaday", "hacker_news", "raspberry_pi_news", "simon_willison"):
+            self.assertEqual(sources[source_id].get("default_topics"), [], source_id)
 
     def test_article_text_overrides_source_default_topic(self):
         category, topics, *_ = classify_and_score(

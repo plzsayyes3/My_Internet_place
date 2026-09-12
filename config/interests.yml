@@ -18,6 +18,7 @@ topic_weights:
   local_first: 1.00
   systems_thinking: 0.95
   github_devops: 1.05
+  programming: 0.90
   web_apps: 1.05
   indie_open_source: 0.90
   obsidian_plugin_dev: 1.15
