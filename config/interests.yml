@@ -172,24 +172,28 @@ combinations:
   - id: pocket_epaper
     label: 小型電子ペーパー端末
     terms: [ESP32, M5Stack, e-paper, epaper, handheld, pocket, wearable, Watchy]
+    required_any: [e-paper, epaper]
     min_match: 2
     bonus: 1.4
 
   - id: cyberdeck_build
     label: Cyberdeck制作
     terms: [cyberdeck, Raspberry Pi, ESP32, keyboard, display, battery, portable terminal]
+    required_any: [cyberdeck, Raspberry Pi, ESP32, portable terminal]
     min_match: 2
     bonus: 1.6
 
   - id: tiny_input_device
     label: 小型入力装置
     terms: [keyboard, Bluetooth HID, one handed, thumb, handheld, ESP32, M5Stack]
+    required_any: [keyboard, Bluetooth HID, one handed, thumb]
     min_match: 2
     bonus: 1.25
 
   - id: personal_epaper_reader
     label: 個人向けE-paper Reader
-    terms: [e-paper, RSS, reader, feed, offline, personal]
+    terms: [e-paper, epaper, RSS, reader, feed, offline, personal]
+    required_any: [e-paper, epaper]
     min_match: 2
     bonus: 1.15
 
