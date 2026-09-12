@@ -11,40 +11,58 @@ const template = document.querySelector("#card-template");
 let allItems = [];
 let activeView = "for-you";
 let activeTopic = null;
+let categoryOrder = [
+  "ai", "knowledge", "software", "making", "small_devices", "ios_apple",
+  "education", "work", "personal_web", "games", "lifestyle", "other",
+];
+let categoryLabels = {
+  ai: "AI",
+  knowledge: "KNOWLEDGE / NOTES",
+  software: "SOFTWARE",
+  making: "MAKING",
+  small_devices: "SMALL DEVICES",
+  ios_apple: "iOS / APPLE",
+  education: "CHILDCARE / EDUCATION",
+  work: "WORK / TASK",
+  personal_web: "PERSONAL WEB",
+  games: "GAMES / POKEMON",
+  lifestyle: "LIFESTYLE",
+  other: "OTHER",
+};
 
 const SOURCE_REPEAT_PENALTY = 0.65;
 const CONSECUTIVE_SOURCE_PENALTY = 0.35;
 
-const CATEGORY_ORDER = [
-  "ai", "knowledge", "software", "make",
-  "work", "education", "life", "web",
-];
-
-const CATEGORY_LABELS = {
-  ai: "AI",
-  knowledge: "KNOWLEDGE",
-  software: "SOFTWARE",
-  make: "MAKE",
-  work: "WORK",
-  education: "EDUCATION",
-  life: "LIFE",
-  web: "WEB",
-  other: "OTHER",
-};
-
-// Old generated data can still be read while v3 settles.
+// Old generated data can still be read while v4 settles.
 const LEGACY_CATEGORY_MAP = {
   ai_tools: "ai",
   knowledge_tools: "knowledge",
   software_building: "software",
-  personal_devices: "life",
-  devices: "make",
-  making: "make",
+  personal_devices: "small_devices",
+  devices: "small_devices",
+  make: "making",
   productivity: "work",
   education_childcare: "education",
-  personal_web: "web",
+  web: "personal_web",
+  personal_web: "personal_web",
+  life: "lifestyle",
   discovery: "other",
 };
+
+function configureGenres(genres) {
+  if (!Array.isArray(genres) || !genres.length) return;
+  const normalized = genres
+    .filter((genre) => genre && genre.id)
+    .map((genre) => ({
+      id: String(genre.id),
+      label: String(genre.label || genre.id).toUpperCase(),
+      order: Number(genre.order ?? 999),
+    }))
+    .sort((a, b) => a.order - b.order || a.id.localeCompare(b.id));
+  if (!normalized.length) return;
+  categoryOrder = normalized.map((genre) => genre.id);
+  categoryLabels = Object.fromEntries(normalized.map((genre) => [genre.id, genre.label]));
+}
 
 function formatDate(value) {
   if (!value) return "";
@@ -71,11 +89,11 @@ function normalizedCategory(category) {
 }
 
 function itemCategory(item) {
-  return normalizedCategory(item.primary_category || item.source_category);
+  return normalizedCategory(item.genre || item.primary_category || item.source_category);
 }
 
 function categoryLabel(category) {
-  return CATEGORY_LABELS[normalizedCategory(category)] || String(category || "OTHER").toUpperCase();
+  return categoryLabels[normalizedCategory(category)] || String(category || "OTHER").toUpperCase();
 }
 
 function itemTopics(item) {
@@ -121,7 +139,7 @@ function diversifyForYou(items) {
       const item = remaining[index];
       const source = sourceKey(item);
       const sourceCount = sourceCounts.get(source) || 0;
-      const adjustedScore = Number(item.rank_score || item.score || 0)
+      const adjustedScore = Number(item.rank_score || item.interest_score || item.score || 0)
         - sourceCount * SOURCE_REPEAT_PENALTY
         - (source === previousSource ? CONSECUTIVE_SOURCE_PENALTY : 0);
       const publishedAt = numericTime(item.published_at);
@@ -146,7 +164,7 @@ function renderTopicFilters() {
   if (!topicFiltersEl) return;
   topicFiltersEl.innerHTML = "";
 
-  if (!CATEGORY_ORDER.includes(activeView)) {
+  if (!categoryOrder.includes(activeView)) {
     activeTopic = null;
     topicFiltersEl.hidden = true;
     return;
@@ -187,7 +205,7 @@ function renderTopicFilters() {
 
 function renderFilters(items) {
   const available = new Set(items.map(itemCategory));
-  for (const category of CATEGORY_ORDER.filter((id) => available.has(id))) {
+  for (const category of categoryOrder.filter((id) => available.has(id))) {
     if (filtersEl.querySelector(`[data-view="${CSS.escape(category)}"]`)) continue;
     const button = document.createElement("button");
     button.className = "filter";
@@ -241,7 +259,7 @@ function renderFeed() {
     node.querySelector(".source").textContent = item.source || "Unknown source";
     node.querySelector(".kind").textContent = (item.content_type || item.item_type || "news").toUpperCase();
     node.querySelector(".category").textContent = categoryLabel(itemCategory(item));
-    node.querySelector(".score").textContent = scoreLabel(Number(item.score || 0));
+    node.querySelector(".score").textContent = scoreLabel(Number(item.interest_score ?? item.score ?? 0));
 
     const title = node.querySelector(".title");
     const displayedTitle = item.title_ja || item.title || "";
@@ -297,6 +315,7 @@ async function boot() {
     const response = await fetch(`${DATA_URL}?t=${Date.now()}`);
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
+    configureGenres(data.genres);
     allItems = data.items || [];
     generatedEl.textContent = data.generated_at
       ? `updated ${formatDate(data.generated_at)}`
