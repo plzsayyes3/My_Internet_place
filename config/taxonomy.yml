@@ -1,51 +1,80 @@
 # Stable public taxonomy for My Internet Place.
-# Categories are for browsing. Topics are for classification/recommendation.
-# Personal weights live in interests.yml; active-search queries live in discovery.yml.
+# Genres are coarse browsing shelves. Topics are classification coordinates.
+# Personal weights/signals live in interests.yml; active-search queries live in discovery.yml.
 
-version: 3
+version: 4
 
 categories:
   - id: ai
     label: AI
     order: 10
   - id: knowledge
-    label: KNOWLEDGE
+    label: KNOWLEDGE / NOTES
     order: 20
   - id: software
     label: SOFTWARE
     order: 30
-  - id: make
-    label: MAKE
+  - id: making
+    label: MAKING
     order: 40
-  - id: work
-    label: WORK
+  - id: small_devices
+    label: SMALL DEVICES
     order: 50
-  - id: education
-    label: EDUCATION
+  - id: ios_apple
+    label: iOS / APPLE
     order: 60
-  - id: life
-    label: LIFE
+  - id: education
+    label: CHILDCARE / EDUCATION
     order: 70
-  - id: web
-    label: WEB
+  - id: work
+    label: WORK / TASK
     order: 80
+  - id: personal_web
+    label: PERSONAL WEB
+    order: 90
+  - id: games
+    label: GAMES / POKEMON
+    order: 100
+  - id: lifestyle
+    label: LIFESTYLE
+    order: 110
+  - id: other
+    label: OTHER
+    order: 120
 
 topics:
-  - id: llm_ai_tools
-    label: LLM・AIツール
+  # AI
+  - id: foundation_models
+    label: 基盤モデル・新モデル
     category: ai
-    keywords: [LLM, large language model, OpenAI, ChatGPT, Gemini, Claude, Anthropic, OpenRouter, 生成AI]
+    keywords: [foundation model, frontier model, base model, model weights, reasoning model, multimodal model, parameter count, model benchmark, 基盤モデル, 推論モデル]
+
+  - id: llm_ai_tools
+    label: AIツール・サービス
+    category: ai
+    keywords: [OpenAI, ChatGPT, Gemini, Claude, Anthropic, OpenRouter, AI tool, AI tools, AI service, AI services, generative AI, 生成AI]
 
   - id: ai_agents_automation
     label: AIエージェント・自動化
     category: ai
     keywords: [AI agent, AI agents, agentic, autonomous agent, agent workflow, MCP, tool calling, AI automation, AIエージェント]
 
-  - id: ai_coding
-    label: AIコーディング
+  - id: local_ai
+    label: ローカルAI
     category: ai
-    keywords: [AI coding, coding agent, coding assistant, Codex, Claude Code, Gemini CLI, GitHub Copilot, vibe coding]
+    keywords: [local AI, local LLM, on-device AI, on device AI, Ollama, llama.cpp, MLX, GGUF, ローカルAI]
 
+  - id: ai_coding
+    label: AI開発・コーディング
+    category: ai
+    keywords: [AI coding, coding agent, coding assistant, Codex, Claude Code, Gemini CLI, GitHub Copilot, vibe coding, AI SDK, AI development]
+
+  - id: ai_use_cases
+    label: AI活用事例
+    category: ai
+    keywords: [AI use case, AI use cases, AI workflow, practical AI, AI adoption, AI productivity, AI活用, 生成AI活用]
+
+  # Knowledge / Notes
   - id: obsidian_pkm
     label: Obsidian・PKM
     category: knowledge
@@ -55,7 +84,17 @@ topics:
     label: 記録・知識管理
     category: knowledge
     legacy_ids: [personal_knowledge_recording]
-    keywords: [note taking, journaling, personal archive, knowledge base, digital garden, personal knowledge, life logging, 記録, 知識管理, ノート術]
+    keywords: [note taking, personal archive, knowledge base, digital garden, personal knowledge, life logging, 記録, 知識管理, ノート術]
+
+  - id: daily_notes_journaling
+    label: デイリーノート・日誌
+    category: knowledge
+    keywords: [daily note, daily notes, journaling, journal, diary, daily log, morning pages, デイリーノート, 日誌, 日記]
+
+  - id: handwriting_analog
+    label: 手書き・アナログノート
+    category: knowledge
+    keywords: [handwriting, handwritten note, paper notebook, analog note, analogue note, digital handwriting, digital ink, 手書き, アナログノート, デジタル手書き]
 
   - id: local_first
     label: Local-first
@@ -67,6 +106,7 @@ topics:
     category: knowledge
     keywords: [systems thinking, system thinking, mental model, cognitive tools, sensemaking, thinking tools, tools for thought, システム思考, 思考法]
 
+  # Software Development
   - id: github_devops
     label: GitHub・Actions
     category: software
@@ -79,53 +119,72 @@ topics:
     keywords: [web app, web application, browser app, JavaScript, TypeScript, PWA, static site, frontend, Webアプリ]
 
   - id: indie_open_source
-    label: Indie Software・OSS
+    label: 個人開発・OSS
     category: software
-    keywords: [open source, OSS, indie software, indie hacker, solo developer, self hosted, self-hosted]
+    keywords: [open source, OSS, indie software, indie hacker, solo developer, self hosted, self-hosted, side project, personal software]
 
+  - id: obsidian_plugin_dev
+    label: Obsidian Plugin開発
+    category: software
+    keywords: [Obsidian plugin, Obsidian API, community plugin, plugin development, Obsidianプラグイン]
+
+  - id: small_tools
+    label: 小さなツール制作
+    category: software
+    keywords: [small tool, tiny tool, utility app, micro app, personal utility, lightweight app, 小さなツール, 個人ツール]
+
+  - id: hci_interfaces
+    label: HCI・インターフェース
+    category: software
+    keywords: [HCI, human computer interaction, user interface, tangible interface, interaction design, interface design, ambient computing]
+
+  # Making
+  - id: maker_projects
+    label: 電子工作・Maker
+    category: making
+    keywords: [maker project, DIY electronics, electronics project, hardware build, hardware project, fabrication, 電子工作, 自作ハードウェア]
+
+  - id: 3d_printing
+    label: 3Dプリント・Maker
+    category: making
+    keywords: [3D printing, 3D printer, STL, parametric design, parametric CAD, OpenSCAD, fabrication, maker project, 3Dプリント, 3Dプリンタ]
+
+  # Small Devices
   - id: embedded_devices
     label: ESP32・小型デバイス
-    category: make
+    category: small_devices
     legacy_ids: [small_computing, diy_electronics]
-    keywords: [ESP32, ESP32-S3, M5Stack, M5Stick, Raspberry Pi, microcontroller, micro computer, handheld computer, pocket computer, embedded device, Arduino, PCB, 小型端末, 小型デバイス, 電子工作]
+    keywords: [ESP32, ESP32-S3, M5Stack, M5Stick, Raspberry Pi, Raspberry Pi Zero, Raspberry Pi Pico, microcontroller, micro computer, handheld computer, pocket computer, portable terminal, cyberdeck, writerdeck, embedded device, Arduino, PCB, 小型端末, 小型デバイス]
 
   - id: e_paper
     label: 電子ペーパー
-    category: make
+    category: small_devices
     legacy_ids: [epaper_wearables]
     keywords: [e-paper, epaper, e-ink, eink, E Ink, electronic paper, Waveshare, 電子ペーパー]
 
   - id: wearables
     label: ウェアラブル
-    category: make
+    category: small_devices
     keywords: [wearable, wearable computer, smartwatch, smart watch, Watchy, wrist computer, wearable device, ウェアラブル]
 
   - id: input_devices
     label: 入力デバイス・自作キーボード
-    category: make
+    category: small_devices
     keywords: [mechanical keyboard, custom keyboard, DIY keyboard, Bluetooth keyboard, Bluetooth HID, HID, input device, chorded keyboard, one handed keyboard, one-handed keyboard, thumb keyboard, macropad, macro pad, T9 keyboard, 自作キーボード, 入力デバイス]
 
-  - id: 3d_printing
-    label: 3Dプリント・Maker
-    category: make
-    keywords: [3D printing, 3D printer, STL, parametric design, parametric CAD, OpenSCAD, fabrication, maker project, 3Dプリント, 3Dプリンタ]
+  # iOS / Apple
+  - id: apple_ecosystem
+    label: Apple・iPhone・Watch
+    category: ios_apple
+    legacy_ids: [apple_ios]
+    keywords: [Apple Watch, iPhone, iPad, iOS, iPadOS, watchOS, macOS, Apple ecosystem, Apple Developer]
 
-  - id: task_time_management
-    label: タスク・時間管理
-    category: work
-    keywords: [task management, time management, time blocking, task planning, time tracking, productivity system, calendar workflow, task workflow, タスク管理, 時間管理, 手帳]
+  - id: ios_automation
+    label: Shortcuts・iOS自動化
+    category: ios_apple
+    keywords: [Shortcuts, Apple Shortcuts, Scriptable, App Intents, Shortcuts app, iOS automation, ショートカット, iOS自動化]
 
-  - id: management_teams
-    label: マネジメント・チーム
-    category: work
-    keywords: [management, team building, leadership, one-on-one, 1on1, psychological safety, organizational design, organization design, team communication, チームづくり, マネジメント]
-
-  - id: work_design
-    label: 働き方・仕事設計
-    category: work
-    legacy_ids: [workflow_design, slow_productivity]
-    keywords: [work design, workflow design, personal workflow, future of work, slow productivity, sustainable productivity, humane productivity, meaningful work, work life, 働き方, 仕事設計, ワークフロー]
-
+  # Childcare / Education
   - id: early_childhood
     label: 保育・幼児教育
     category: education
@@ -142,32 +201,52 @@ topics:
     legacy_ids: [education_practice]
     keywords: [non-cognitive skills, noncognitive skills, executive function, self regulation, self-regulation, social emotional learning, SEL, play based learning, play-based learning, 非認知能力, 自己調整, 遊びを通した学び]
 
-  - id: life_design
-    label: 生活設計
-    category: life
-    keywords: [life design, intentional living, simple living, everyday systems, personal systems, slow living, lifestyle design, 生活設計, 暮らし]
+  # Work / Task Design
+  - id: task_time_management
+    label: タスク・時間管理
+    category: work
+    keywords: [task management, time management, time blocking, task planning, time tracking, productivity system, calendar workflow, task workflow, タスク管理, 時間管理, 手帳]
 
-  - id: apple_ecosystem
-    label: Apple Watch・iPhone・iOS
-    category: life
-    legacy_ids: [apple_ios]
-    keywords: [Apple Watch, iPhone, iOS, watchOS, Shortcuts, Apple Shortcuts, Scriptable, Apple ecosystem]
+  - id: management_teams
+    label: マネジメント・チーム
+    category: work
+    keywords: [management, team building, leadership, one-on-one, 1on1, psychological safety, organizational design, organization design, team communication, チームづくり, マネジメント]
 
+  - id: work_design
+    label: 働き方・仕事設計
+    category: work
+    legacy_ids: [workflow_design, slow_productivity]
+    keywords: [work design, workflow design, personal workflow, future of work, slow productivity, sustainable productivity, humane productivity, meaningful work, work life, 働き方, 仕事設計, ワークフロー]
+
+  # Personal Web
   - id: personal_web_rss
     label: 個人Web・RSS
-    category: web
-    keywords: [personal website, personal web, IndieWeb, indie web, RSS, Atom, Atom feed, feed reader, blogroll, weblog, 個人サイト, フィード]
+    category: personal_web
+    keywords: [personal website, personal web, IndieWeb, indie web, RSS, Atom, Atom feed, feed reader, blogroll, weblog, digital garden, 個人サイト, フィード]
 
-  - id: hci_interfaces
-    label: HCI・インターフェース
-    category: web
-    keywords: [HCI, human computer interaction, user interface, tangible interface, calm technology, ubiquitous computing, interaction design, interface design, ambient computing]
+  # Games / Pokemon
+  - id: pokemon
+    label: ポケモン
+    category: games
+    keywords: [ポケモン, Pokémon, Pokemon, ポケットモンスター, Pocket Monsters, Pokémon GO, Pokemon GO, ポケモンカード]
+
+  # Lifestyle
+  - id: life_design
+    label: 生活設計
+    category: lifestyle
+    keywords: [life design, intentional living, simple living, everyday systems, personal systems, slow living, lifestyle design, 生活設計, 暮らし]
 
 relations:
+  - topics: [foundation_models, llm_ai_tools]
+    weight: 0.90
+  - topics: [foundation_models, local_ai]
+    weight: 0.75
   - topics: [llm_ai_tools, ai_agents_automation]
     weight: 0.90
   - topics: [llm_ai_tools, ai_coding]
     weight: 0.80
+  - topics: [llm_ai_tools, ai_use_cases]
+    weight: 0.70
   - topics: [ai_agents_automation, ai_coding]
     weight: 0.85
   - topics: [ai_agents_automation, github_devops]
@@ -176,10 +255,16 @@ relations:
     weight: 0.50
   - topics: [obsidian_pkm, personal_knowledge]
     weight: 0.95
+  - topics: [obsidian_pkm, obsidian_plugin_dev]
+    weight: 0.90
   - topics: [obsidian_pkm, local_first]
     weight: 0.80
   - topics: [obsidian_pkm, personal_web_rss]
     weight: 0.50
+  - topics: [personal_knowledge, daily_notes_journaling]
+    weight: 0.85
+  - topics: [personal_knowledge, handwriting_analog]
+    weight: 0.75
   - topics: [personal_knowledge, systems_thinking]
     weight: 0.60
   - topics: [personal_knowledge, personal_web_rss]
@@ -190,14 +275,18 @@ relations:
     weight: 0.70
   - topics: [web_apps, personal_web_rss]
     weight: 0.70
+  - topics: [web_apps, ios_automation]
+    weight: 0.65
+  - topics: [maker_projects, 3d_printing]
+    weight: 0.70
+  - topics: [maker_projects, embedded_devices]
+    weight: 0.80
   - topics: [embedded_devices, e_paper]
     weight: 0.85
   - topics: [embedded_devices, wearables]
     weight: 0.80
   - topics: [embedded_devices, input_devices]
     weight: 0.75
-  - topics: [embedded_devices, 3d_printing]
-    weight: 0.65
   - topics: [e_paper, wearables]
     weight: 0.90
   - topics: [input_devices, hci_interfaces]
@@ -206,6 +295,8 @@ relations:
     weight: 0.80
   - topics: [apple_ecosystem, wearables]
     weight: 0.80
+  - topics: [apple_ecosystem, ios_automation]
+    weight: 0.90
   - topics: [apple_ecosystem, hci_interfaces]
     weight: 0.65
   - topics: [task_time_management, work_design]
@@ -266,9 +357,11 @@ classification:
   minimum_topic_score: 0.25
   primary_category:
     strategy: highest_scoring_topic
+    priority: [games, small_devices, ios_apple, ai, knowledge, software, making, education, work, personal_web, lifestyle, other]
   topic_matching:
     title_multiplier: 2.0
     summary_multiplier: 1.0
+    metadata_multiplier: 0.5
     max_keyword_matches_per_topic: 3
   fallback:
     use_source_default_topics: true
