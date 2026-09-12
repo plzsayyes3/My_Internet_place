@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-11T23:51:04Z",
+  "generated_at": "2026-09-12T03:27:18Z",
   "producer": "chatgpt_scheduled_search",
   "items": [
     {
@@ -86,6 +86,90 @@
       "discovery_query_ids": ["pokemon", "pokemon_news"],
       "discovery_queries": ["ポケモン", "Pokemon news"],
       "discovered_at": "2026-09-11T23:51:04Z"
+    },
+    {
+      "title": "Raspberry Pi 5 Cyberdeck – DIY Handheld with Powerbank #3DThursday #3DPrinting",
+      "url": "https://blog.adafruit.com/2026/09/03/raspberry-pi-5-cyberdeck-diy-handheld-with-powerbank-3dthursday-3dprinting/",
+      "summary": "Adafruit highlights a Raspberry Pi 5 handheld cyberdeck with a high-resolution display, replaceable power-bank power, exposed Mini HDMI, and a 3D-printable enclosure designed for programming, deployment, and network work.",
+      "published_at": "2026-09-03T18:00:00Z",
+      "source": "Adafruit Blog",
+      "source_kind": "blog",
+      "content_type": "news",
+      "discovery_query_ids": ["cyberdeck", "diy_cyberdeck", "raspberry_pi_cyberdeck", "diy_handheld_terminal"],
+      "discovery_queries": ["cyberdeck", "DIY cyberdeck", "Raspberry Pi cyberdeck", "DIY handheld terminal"],
+      "discovered_at": "2026-09-12T03:27:18Z"
+    },
+    {
+      "title": "Small E-Ink Device For IoT Projects",
+      "url": "https://www.electronicsforu.com/news/small-e-ink-device-for-iot-projects",
+      "summary": "Electronics For You covers M5Stack PaperMono, an ESP32-S3R8 handheld with a 3.97-inch grayscale touch E-Ink display, frontlight, LoRa, NFC, microSD, RTC, IMU, Wi-Fi, and a built-in 1150mAh battery.",
+      "published_at": "2026-09-10T00:00:00Z",
+      "source": "Electronics For You",
+      "source_kind": "publication",
+      "content_type": "news",
+      "discovery_query_ids": ["esp32_handheld", "esp32_epaper", "m5stack_epaper", "portable_epaper_computer", "low_power_personal_device"],
+      "discovery_queries": ["ESP32 handheld", "ESP32 e-paper", "M5Stack e-paper", "portable e-paper computer", "low power personal device"],
+      "discovered_at": "2026-09-12T03:27:18Z"
+    },
+    {
+      "title": "Even without Winds and Waves, Pokemon just had its best ever year with $3.4 billion in net sales probably thanks to Pokopia, FireRed and LeafGreen",
+      "url": "https://www.gamesradar.com/games/pokemon/even-without-winds-and-waves-pokemon-just-had-its-best-ever-year-with-usd3-4-billion-in-net-sales-probably-thanks-to-pokopia-firered-and-leafgreen/",
+      "summary": "GamesRadar reports that The Pokémon Company posted record 2026 results, citing roughly $3.4 billion in net sales and strong performance from releases including Pokémon Pokopia and the Switch versions of FireRed and LeafGreen.",
+      "published_at": "2026-09-09T00:00:00Z",
+      "source": "GamesRadar+",
+      "source_kind": "publication",
+      "content_type": "news",
+      "discovery_query_ids": ["pokemon", "pokemon_en", "pokemon_news"],
+      "discovery_queries": ["ポケモン", "Pokémon", "Pokemon news"],
+      "discovered_at": "2026-09-12T03:27:18Z"
+    },
+    {
+      "title": "Competitive Pokémon is on phones now, but you still need a Switch to become a champion",
+      "url": "https://www.theverge.com/games/990691/competitive-pokemon-champions-mobile-tournament-accessibility",
+      "summary": "The Verge examines Pokémon Champions on mobile and Switch, noting that cross-platform play is supported but top-level championship competition still requires Switch hardware, despite the mobile version’s broad reach.",
+      "published_at": "2026-09-07T00:00:00Z",
+      "source": "The Verge",
+      "source_kind": "publication",
+      "content_type": "analysis",
+      "discovery_query_ids": ["pokemon", "pokemon_en", "pokemon_news"],
+      "discovery_queries": ["ポケモン", "Pokémon", "Pokemon news"],
+      "discovered_at": "2026-09-12T03:27:18Z"
+    },
+    {
+      "title": "With Pokemon Bank's demise on the horizon, one modder makes their own adapter to move Pokemon from GBA to Switch consoles",
+      "url": "https://www.gamesradar.com/games/pokemon/with-pokemon-banks-demise-on-the-horizon-one-modder-makes-their-own-adapter-to-move-pokemon-from-gba-to-switch-consoles/",
+      "summary": "A hobbyist built a homebrew adapter that transfers Pokémon between Game Boy Advance hardware and Switch consoles, an experimental preservation path as Pokémon Bank approaches its announced 2027 shutdown.",
+      "published_at": "2026-09-06T00:00:00Z",
+      "source": "GamesRadar+",
+      "source_kind": "publication",
+      "content_type": "news",
+      "discovery_query_ids": ["pokemon", "pokemon_en", "pokemon_news"],
+      "discovery_queries": ["ポケモン", "Pokémon", "Pokemon news"],
+      "discovered_at": "2026-09-12T03:27:18Z"
+    },
+    {
+      "title": "Pokémon Horizons Anime Teams up with Pokémon GO Mobile Game for 150th Episode",
+      "url": "https://www.crunchyroll.com/news/latest/2026/9/2/pokemon-horizons-anime-pokemon-go-collab",
+      "summary": "Crunchyroll reports a Pokémon Horizons and Pokémon GO collaboration tied to the anime’s 150th episode, with the episode scheduled for September 18 and connected in-game content featuring Friede-themed elements.",
+      "published_at": "2026-09-02T15:09:00Z",
+      "source": "Crunchyroll News",
+      "source_kind": "publication",
+      "content_type": "news",
+      "discovery_query_ids": ["pokemon", "pokemon_en", "pokemon_news"],
+      "discovery_queries": ["ポケモン", "Pokémon", "Pokemon news"],
+      "discovered_at": "2026-09-12T03:27:18Z"
+    },
+    {
+      "title": "【秋の睡眠健康週間・ぐっすりの日】『Pokémon Sleep』の「#ポケモンとねむる」の最新情報を一挙公開！",
+      "url": "https://prtimes.jp/main/html/rd/p/000000895.000026665.html",
+      "summary": "株式会社ポケモンは9月1日、Pokémon Sleepの秋企画を発表。全国睡眠県グランプリ2026、NOT A HOTELとの宿泊企画、Fitbit Airとのコラボなど、睡眠を軸にした複数施策を公開した。",
+      "published_at": "2026-09-01T03:18:00Z",
+      "source": "株式会社ポケモン / PR TIMES",
+      "source_kind": "official",
+      "content_type": "release",
+      "discovery_query_ids": ["pokemon", "pokemon_news"],
+      "discovery_queries": ["ポケモン", "Pokemon news"],
+      "discovered_at": "2026-09-12T03:27:18Z"
     }
   ]
 }
