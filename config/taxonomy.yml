@@ -371,7 +371,7 @@ classification:
     priority: [games, small_devices, ios_apple, ai, knowledge, software, making, education, work, personal_web, lifestyle, other]
   topic_matching:
     title_multiplier: 2.0
-    summary_multiplier: 1.0
+    summary_multiplier: 1.5
     metadata_multiplier: 0.5
     max_keyword_matches_per_topic: 3
   fallback:
