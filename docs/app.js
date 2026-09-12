@@ -55,7 +55,7 @@ function configureGenres(genres) {
     .filter((genre) => genre && genre.id)
     .map((genre) => ({
       id: String(genre.id),
-      label: String(genre.label || genre.id).toUpperCase(),
+      label: String(genre.label || genre.id),
       order: Number(genre.order ?? 999),
     }))
     .sort((a, b) => a.order - b.order || a.id.localeCompare(b.id));
