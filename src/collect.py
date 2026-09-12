@@ -1,6 +1,6 @@
 """Collect RSS/Atom items for My Internet Place.
 
-Taxonomy = stable classification vocabulary.
+Taxonomy = stable genre/topic classification vocabulary.
 Interests = public-safe personal weights/signals.
 Sources = feed metadata and fallback topics.
 Discovery = separate active-search configuration (not executed here yet).
@@ -34,12 +34,21 @@ FETCH_ATTEMPTS = 3
 RETRY_DELAY_SECONDS = 2
 TRACKING_KEYS = {"fbclid", "gclid", "mc_cid", "mc_eid", "ref_src"}
 LEGACY_CATEGORY_MAP = {
-    "ai_tools": "ai", "knowledge_tools": "knowledge", "software_building": "software",
-    "personal_devices": "life", "devices": "make", "making": "make",
-    "productivity": "work", "education_childcare": "education",
-    "personal_web": "web", "discovery": "other",
+    "ai_tools": "ai",
+    "knowledge_tools": "knowledge",
+    "software_building": "software",
+    "personal_devices": "small_devices",
+    "devices": "small_devices",
+    "make": "making",
+    "making": "making",
+    "productivity": "work",
+    "education_childcare": "education",
+    "web": "personal_web",
+    "personal_web": "personal_web",
+    "life": "lifestyle",
+    "discovery": "other",
 }
-USER_AGENT = "MyInternetPlace/0.3 (public RSS collector; https://github.com/plzsayyes3/My_Internet_place)"
+USER_AGENT = "MyInternetPlace/0.4 (public RSS collector; https://github.com/plzsayyes3/My_Internet_place)"
 
 
 def load_yaml(path: Path) -> dict:
@@ -109,40 +118,68 @@ def normalize_category(category: str, valid: set[str]) -> str:
     return value if value in valid else "other"
 
 
-def _topic_match(topic: dict, title: str, summary: str, config: dict) -> dict | None:
+def _topic_match(topic: dict, title: str, summary: str, metadata: str, config: dict) -> dict | None:
     matching = config.get("topic_matching", {})
     title_mul = float(matching.get("title_multiplier", 2.0))
     summary_mul = float(matching.get("summary_multiplier", 1.0))
+    metadata_mul = float(matching.get("metadata_multiplier", 0.5))
     max_hits = max(1, int(matching.get("max_keyword_matches_per_topic", 3)))
     minimum = float(config.get("minimum_topic_score", 0.25))
     terms = [str(x) for x in topic.get("keywords", [])]
+
     tm = [t for t in terms if keyword_matches(t, title)][:max_hits]
     used = {t.lower() for t in tm}
-    sm = [t for t in terms if t.lower() not in used and keyword_matches(t, summary)][:max(0, max_hits-len(tm))]
-    if not tm and not sm:
+    sm = [t for t in terms if t.lower() not in used and keyword_matches(t, summary)][:max(0, max_hits - len(tm))]
+    used.update(t.lower() for t in sm)
+    mm = [t for t in terms if t.lower() not in used and keyword_matches(t, metadata)][:max(0, max_hits - len(tm) - len(sm))]
+    if not tm and not sm and not mm:
         return None
-    raw = title_mul * len(tm) + summary_mul * len(sm)
+
+    raw = title_mul * len(tm) + summary_mul * len(sm) + metadata_mul * len(mm)
     score = min(1.0, raw / max(title_mul * max_hits, 1.0))
     if score < minimum:
         return None
-    return {"id": str(topic.get("id")), "label": str(topic.get("label") or topic.get("id")),
-            "category": str(topic.get("category", "other")), "score": round(score, 3),
-            "raw_score": round(raw, 3), "terms": tm + sm, "fallback": False}
+    return {
+        "id": str(topic.get("id")),
+        "label": str(topic.get("label") or topic.get("id")),
+        "category": str(topic.get("category", "other")),
+        "score": round(score, 3),
+        "raw_score": round(raw, 3),
+        "terms": tm + sm + mm,
+        "fallback": False,
+    }
 
 
-def classify_item(title: str, summary: str, topics: list[dict], valid_categories: set[str],
-                  fallback_category: str = "other", fallback_topic_ids: list[str] | None = None,
-                  classification: dict | None = None) -> tuple[str, list[dict]]:
-    """Return one coarse category and at most N scored topics."""
+def classify_item(
+    title: str,
+    summary: str,
+    topics: list[dict],
+    valid_categories: set[str],
+    fallback_category: str = "other",
+    fallback_topic_ids: list[str] | None = None,
+    classification: dict | None = None,
+    metadata_text: str = "",
+) -> tuple[str, list[dict]]:
+    """Return one stable genre and at most N scored topics."""
     config = classification or {}
     max_topics = max(1, int(config.get("max_topics_per_item", 3)))
+    primary = config.get("primary_category", {})
+    priority = [str(x) for x in primary.get("priority", [])]
+    category_rank = {category: index for index, category in enumerate(priority)}
+
     matched = []
     for topic in topics:
-        item = _topic_match(topic, title.lower(), summary.lower(), config)
+        item = _topic_match(topic, title.lower(), summary.lower(), metadata_text.lower(), config)
         if item:
             item["category"] = normalize_category(item["category"], valid_categories)
             matched.append(item)
-    matched.sort(key=lambda x: (x["score"], x["raw_score"], x["id"]), reverse=True)
+
+    matched.sort(key=lambda x: (
+        -float(x["score"]),
+        -float(x["raw_score"]),
+        category_rank.get(x["category"], len(category_rank) + 1),
+        x["id"],
+    ))
     matched = matched[:max_topics]
 
     if not matched and config.get("fallback", {}).get("use_source_default_topics", True) and fallback_topic_ids:
@@ -151,9 +188,15 @@ def classify_item(title: str, summary: str, topics: list[dict], valid_categories
         for topic_id in fallback_topic_ids[:max_topics]:
             topic = by_id.get(str(topic_id))
             if topic:
-                matched.append({"id": str(topic["id"]), "label": str(topic.get("label") or topic["id"]),
-                                "category": normalize_category(str(topic.get("category", "other")), valid_categories),
-                                "score": round(minimum, 3), "raw_score": 0.0, "terms": [], "fallback": True})
+                matched.append({
+                    "id": str(topic["id"]),
+                    "label": str(topic.get("label") or topic["id"]),
+                    "category": normalize_category(str(topic.get("category", "other")), valid_categories),
+                    "score": round(minimum, 3),
+                    "raw_score": 0.0,
+                    "terms": [],
+                    "fallback": True,
+                })
 
     category = matched[0]["category"] if matched else normalize_category(fallback_category, valid_categories)
     return category, matched
@@ -172,9 +215,14 @@ def score_preferences(title: str, summary: str, matched_topics: list[dict], inte
         weight = float(signal.get("weight", 0))
         contribution = weight * strength
         signal_score += contribution
-        signals.append({"id": str(signal.get("id")), "label": str(signal.get("label") or signal.get("id")),
-                        "weight": weight, "strength": round(strength, 2),
-                        "contribution": round(contribution, 2), "terms": terms})
+        signals.append({
+            "id": str(signal.get("id")),
+            "label": str(signal.get("label") or signal.get("id")),
+            "weight": weight,
+            "strength": round(strength, 2),
+            "contribution": round(contribution, 2),
+            "terms": terms,
+        })
 
     combo_score, combos = 0.0, []
     for combo in interest_config.get("combinations", []):
@@ -184,10 +232,18 @@ def score_preferences(title: str, summary: str, matched_topics: list[dict], inte
             continue
         bonus = float(combo.get("bonus", 0))
         combo_score += bonus
-        combos.append({"id": str(combo.get("id")), "label": str(combo.get("label") or combo.get("id")),
-                       "bonus": bonus, "terms": hits})
+        combos.append({
+            "id": str(combo.get("id")),
+            "label": str(combo.get("label") or combo.get("id")),
+            "bonus": bonus,
+            "terms": hits,
+        })
 
-    components = {"topics": round(topic_score, 2), "signals": round(signal_score, 2), "combinations": round(combo_score, 2)}
+    components = {
+        "topics": round(topic_score, 2),
+        "signals": round(signal_score, 2),
+        "combinations": round(combo_score, 2),
+    }
     return round(topic_score + signal_score + combo_score, 2), signals, combos, components
 
 
@@ -198,13 +254,37 @@ def display_labels(topics: list[dict], signals: list[dict], combos: list[dict]) 
     return list(dict.fromkeys(labels))[:6]
 
 
+def entry_classification_metadata(entry, article_url: str, source_name: str, source_id: str) -> str:
+    """Low-weight classification context from URL/feed tags/source metadata."""
+    values = [article_url, source_name, source_id]
+    for tag in entry.get("tags", []) or []:
+        if hasattr(tag, "get"):
+            value = tag.get("term") or tag.get("label") or tag.get("scheme")
+        else:
+            value = tag
+        if value:
+            values.append(str(value))
+    for key in ("category", "categories"):
+        value = entry.get(key)
+        if isinstance(value, (list, tuple)):
+            values.extend(str(x) for x in value if x)
+        elif value:
+            values.append(str(value))
+    return clean_text(" ".join(values))
+
+
 def fetch_feed(url: str):
     last_error = None
     for attempt in range(1, FETCH_ATTEMPTS + 1):
         try:
-            r = requests.get(url, headers={"User-Agent": USER_AGENT,
-                "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, */*"},
-                timeout=FETCH_TIMEOUT_SECONDS)
+            r = requests.get(
+                url,
+                headers={
+                    "User-Agent": USER_AGENT,
+                    "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, */*",
+                },
+                timeout=FETCH_TIMEOUT_SECONDS,
+            )
             r.raise_for_status()
             parsed = feedparser.parse(r.content)
             if getattr(parsed, "bozo", False) and not parsed.entries:
@@ -232,72 +312,143 @@ def _default_category(topic_ids: list[str], topic_by_id: dict[str, dict], valid:
 
 
 def collect() -> dict:
-    source_config, taxonomy, interests = load_yaml(SOURCES_FILE), load_yaml(TAXONOMY_FILE), load_yaml(INTERESTS_FILE)
-    sources, topics = source_config.get("sources", []), taxonomy.get("topics", [])
+    source_config = load_yaml(SOURCES_FILE)
+    taxonomy = load_yaml(TAXONOMY_FILE)
+    interests = load_yaml(INTERESTS_FILE)
+    sources = source_config.get("sources", [])
+    topics = taxonomy.get("topics", [])
     classification = taxonomy.get("classification", {})
-    valid_categories = {str(x["id"]) for x in taxonomy.get("categories", []) if x.get("id")}
+    genres = sorted(
+        [
+            {"id": str(x["id"]), "label": str(x.get("label") or x["id"]), "order": int(x.get("order", 999))}
+            for x in taxonomy.get("categories", [])
+            if x.get("id")
+        ],
+        key=lambda x: (x["order"], x["id"]),
+    )
+    valid_categories = {x["id"] for x in genres}
     topic_by_id = {str(x["id"]): x for x in topics if x.get("id")}
     valid_content = {str(x["id"]) for x in taxonomy.get("content_types", []) if x.get("id")}
     valid_source = {str(x["id"]) for x in taxonomy.get("source_kinds", []) if x.get("id")}
     valid_depth = {str(x["id"]) for x in taxonomy.get("reading_depths", []) if x.get("id")}
     now, items, source_status = datetime.now(timezone.utc), [], []
-    enabled = [s for s in sources if s.get("enabled", True) and s.get("type", "rss") in {"rss", "atom", "feed"} and s.get("url")]
+    enabled = [
+        s for s in sources
+        if s.get("enabled", True)
+        and s.get("type", "rss") in {"rss", "atom", "feed"}
+        and s.get("url")
+    ]
 
     for source in enabled:
-        url = str(source["url"]); source_id = str(source.get("id") or source.get("name") or url)
+        url = str(source["url"])
+        source_id = str(source.get("id") or source.get("name") or url)
         configured_name = str(source.get("name") or "")
         defaults = [str(x) for x in source.get("default_topics", [])]
-        fallback_category = str(source.get("default_category") or source.get("category") or _default_category(defaults, topic_by_id, valid_categories))
+        fallback_category = str(
+            source.get("default_category")
+            or source.get("category")
+            or _default_category(defaults, topic_by_id, valid_categories)
+        )
         source_kind = _validated(str(source.get("source_kind", "publication")), valid_source, "publication")
-        content_type = _validated(str(source.get("default_content_type") or source.get("default_item_type") or source.get("content_type") or "news"), valid_content, "news")
+        content_type = _validated(
+            str(source.get("default_content_type") or source.get("default_item_type") or source.get("content_type") or "news"),
+            valid_content,
+            "news",
+        )
         depth = _validated(str(source.get("default_reading_depth", "standard")), valid_depth, "standard")
-        priority = float(source.get("priority", 0.5)); max_age = int(source.get("max_age_days", MAX_AGE_DAYS))
+        priority = float(source.get("priority", 0.5))
+        max_age = int(source.get("max_age_days", MAX_AGE_DAYS))
         try:
-            parsed = fetch_feed(url); source_name = configured_name or parsed.feed.get("title") or source_id
+            parsed = fetch_feed(url)
+            source_name = configured_name or parsed.feed.get("title") or source_id
             added = stale = 0
             for entry in parsed.entries[:MAX_ITEMS_PER_SOURCE]:
-                title = clean_text(entry.get("title")); article_url = canonical_url(str(entry.get("link", "")).strip())
+                title = clean_text(entry.get("title"))
+                article_url = canonical_url(str(entry.get("link", "")).strip())
                 if not title or not article_url or not is_safe_article_url(article_url):
                     continue
                 published = parsed_datetime(entry)
                 if published:
                     age = max(0.0, (now - published).total_seconds() / 86400)
                     if age > max_age:
-                        stale += 1; continue
-                    freshness = max(0.0, 1.0 - age / max_age); published_at = published.isoformat()
+                        stale += 1
+                        continue
+                    freshness = max(0.0, 1.0 - age / max_age)
+                    published_at = published.isoformat()
                 else:
                     freshness, published_at = 0.2, None
                 summary = clean_text(entry.get("summary") or entry.get("description") or entry.get("subtitle"))
-                category, matched = classify_item(title, summary, topics, valid_categories, fallback_category, defaults, classification)
+                metadata = entry_classification_metadata(entry, article_url, source_name, source_id)
+                category, matched = classify_item(
+                    title,
+                    summary,
+                    topics,
+                    valid_categories,
+                    fallback_category,
+                    defaults,
+                    classification,
+                    metadata_text=metadata,
+                )
                 score, matched_signals, matched_combos, components = score_preferences(title, summary, matched, interests)
                 rank_score = round(score * (0.55 + 0.45 * freshness) + 2.0 * freshness + priority * 0.2, 2)
-                topic_ids = [x["id"] for x in matched]; topic_labels = [x["label"] for x in matched]
+                topic_ids = [x["id"] for x in matched]
+                topic_labels = [x["label"] for x in matched]
                 public_topics = [{"id": x["id"], "score": x["score"]} for x in matched]
                 labels = display_labels(matched, matched_signals, matched_combos)
                 direct = max(0.0, score)
                 items.append({
-                    "id": item_id(article_url, title), "title": title, "url": article_url,
-                    "summary": summary[:SUMMARY_LIMIT], "published_at": published_at,
-                    "source": source_name, "source_id": source_id, "source_kind": source_kind,
+                    "id": item_id(article_url, title),
+                    "title": title,
+                    "url": article_url,
+                    "summary": summary[:SUMMARY_LIMIT],
+                    "published_at": published_at,
+                    "source": source_name,
+                    "source_id": source_id,
+                    "source_kind": source_kind,
                     "source_category": normalize_category(fallback_category, valid_categories),
-                    "primary_category": category, "topics": public_topics,
-                    "topic_ids": topic_ids, "topic_labels": topic_labels,
+                    "genre": category,
+                    "primary_category": category,
+                    "topics": public_topics,
+                    "topic_ids": topic_ids,
+                    "topic_labels": topic_labels,
                     "topic_scores": {x["id"]: x["score"] for x in matched},
                     "matched_signals": [x["id"] for x in matched_signals],
                     "positive_signals": [x["id"] for x in matched_signals if float(x.get("contribution", 0)) > 0],
                     "matched_combinations": [x["id"] for x in matched_combos],
-                    "content_type": content_type, "item_type": content_type, "reading_depth": depth,
-                    "signals": {"direct_interest": round(direct, 2), "related_interest": 0.0,
-                                "freshness": round(freshness, 3), "source_priority": round(priority, 3)},
+                    "content_type": content_type,
+                    "item_type": content_type,
+                    "reading_depth": depth,
+                    "signals": {
+                        "direct_interest": round(direct, 2),
+                        "related_interest": 0.0,
+                        "freshness": round(freshness, 3),
+                        "source_priority": round(priority, 3),
+                    },
                     "recommendation_reason": "direct" if direct > 0 else "latest",
-                    "score": score, "score_components": components, "rank_score": rank_score,
-                    "matched_interests": topic_ids, "matched_labels": labels,
+                    "interest_score": score,
+                    "score": score,
+                    "score_components": components,
+                    "rank_score": rank_score,
+                    "matched_interests": topic_ids,
+                    "matched_labels": labels,
                 })
                 added += 1
-            source_status.append({"id": source_id, "name": source_name, "ok": True, "items": added, "stale_skipped": stale})
+            source_status.append({
+                "id": source_id,
+                "name": source_name,
+                "ok": True,
+                "items": added,
+                "stale_skipped": stale,
+            })
         except Exception as exc:
-            source_status.append({"id": source_id, "name": configured_name or source_id, "ok": False, "items": 0,
-                                  "stale_skipped": 0, "error": clean_text(str(exc))[:180]})
+            source_status.append({
+                "id": source_id,
+                "name": configured_name or source_id,
+                "ok": False,
+                "items": 0,
+                "stale_skipped": 0,
+                "error": clean_text(str(exc))[:180],
+            })
             print(f"[WARN] {source_id}: {exc}")
 
     deduped = {}
@@ -305,19 +456,31 @@ def collect() -> dict:
         old = deduped.get(item["url"])
         if not old or item["rank_score"] > old["rank_score"]:
             deduped[item["url"]] = item
-    ranked = sorted(deduped.values(), key=lambda x: (x.get("rank_score", 0), x.get("published_at") or ""), reverse=True)[:MAX_ITEMS]
+    ranked = sorted(
+        deduped.values(),
+        key=lambda x: (x.get("rank_score", 0), x.get("published_at") or ""),
+        reverse=True,
+    )[:MAX_ITEMS]
     healthy = sum(1 for x in source_status if x["ok"])
     if enabled and healthy == 0:
         raise RuntimeError("All configured feeds failed; keeping the previous dataset.")
-    return {"generated_at": now.isoformat(), "count": len(ranked), "taxonomy_version": taxonomy.get("version"),
-            "interest_profile_version": interests.get("version"),
-            "sources": {"configured": len(enabled), "healthy": healthy, "status": source_status}, "items": ranked}
+    return {
+        "generated_at": now.isoformat(),
+        "count": len(ranked),
+        "taxonomy_version": taxonomy.get("version"),
+        "interest_profile_version": interests.get("version"),
+        "genres": genres,
+        "sources": {"configured": len(enabled), "healthy": healthy, "status": source_status},
+        "items": ranked,
+    }
 
 
 def main() -> None:
-    result = collect(); payload = json.dumps(result, ensure_ascii=False, indent=2) + "\n"
+    result = collect()
+    payload = json.dumps(result, ensure_ascii=False, indent=2) + "\n"
     for path in OUTPUT_FILES:
-        path.parent.mkdir(parents=True, exist_ok=True); path.write_text(payload, encoding="utf-8")
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(payload, encoding="utf-8")
     print(f"Collected {result['count']} items from {result['sources']['healthy']}/{result['sources']['configured']} feeds")
 
 

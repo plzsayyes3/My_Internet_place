@@ -2,7 +2,7 @@
 
 This step intentionally runs after RSS/Atom collection and before translation.
 Search is performed outside GitHub Actions by a scheduled ChatGPT task, which
-writes public-safe metadata to data/discovery.json.  This module validates that
+writes public-safe metadata to data/discovery.json. This module validates that
 metadata, applies the same taxonomy/interest scoring used for RSS items, and
 merges it into latest.json without disturbing the RSS collector itself.
 """
@@ -121,8 +121,6 @@ def _build_discovery_item(
         freshness = max(0.0, 1.0 - age_days / max_age_days)
         published_at = published.isoformat()
     else:
-        # Search results without a trustworthy publication date are allowed, but
-        # receive a lower freshness score so dated recent material wins.
         freshness = 0.35
         published_at = None
 
@@ -154,6 +152,9 @@ def _build_discovery_item(
     fallback_category = _fallback_category(fallback_topics, topics_by_id, valid_categories)
 
     summary = clean_text(str(raw.get("summary") or raw.get("snippet") or ""))[:SUMMARY_LIMIT]
+    source = clean_text(str(raw.get("source") or raw.get("publisher") or "Web discovery"))
+    source_kind = str(raw.get("source_kind") or "publication")
+    metadata = clean_text(" ".join([url, source, source_kind, *query_texts]))
     category, matched = classify_item(
         title,
         summary,
@@ -162,12 +163,12 @@ def _build_discovery_item(
         fallback_category,
         fallback_topics,
         taxonomy.get("classification", {}),
+        metadata_text=metadata,
     )
     score, matched_signals, matched_combos, components = score_preferences(
         title, summary, matched, interests
     )
 
-    source_kind = str(raw.get("source_kind") or "publication")
     if source_kind not in valid_sources:
         source_kind = "publication"
     content_type = str(raw.get("content_type") or "news")
@@ -178,9 +179,6 @@ def _build_discovery_item(
         reading_depth = "standard"
 
     source_priority = SOURCE_PRIORITIES.get(source_kind, 0.65)
-    # Active discovery itself is a weak positive signal. It should help a
-    # relevant search result compete, but never overwhelm the normal interest
-    # score or freshness model.
     discovery_bonus = min(0.45, 0.18 * query_weight)
     rank_score = round(
         score * (0.55 + 0.45 * freshness)
@@ -200,7 +198,6 @@ def _build_discovery_item(
         if marker not in labels:
             labels.append(marker)
 
-    source = clean_text(str(raw.get("source") or raw.get("publisher") or "Web discovery"))
     host = urlsplit(url).netloc.lower()
     if host.startswith("www."):
         host = host[4:]
@@ -216,6 +213,7 @@ def _build_discovery_item(
         "source_id": source_id,
         "source_kind": source_kind,
         "source_category": fallback_category,
+        "genre": category,
         "primary_category": category,
         "topics": [{"id": x["id"], "score": x["score"]} for x in matched],
         "topic_ids": topic_ids,
@@ -237,6 +235,7 @@ def _build_discovery_item(
             "active_discovery": round(discovery_bonus, 3),
         },
         "recommendation_reason": "direct" if score > 0 else "discovery",
+        "interest_score": score,
         "score": score,
         "score_components": components,
         "rank_score": rank_score,
@@ -280,7 +279,9 @@ def merge() -> dict:
         if item:
             accepted.append(item)
 
-    merged: dict[str, dict] = {str(item.get("url")): item for item in latest.get("items", []) if item.get("url")}
+    merged: dict[str, dict] = {
+        str(item.get("url")): item for item in latest.get("items", []) if item.get("url")
+    }
     duplicate_hits = 0
     for item in accepted:
         url = item["url"]
