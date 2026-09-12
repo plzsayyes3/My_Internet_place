@@ -1,12 +1,13 @@
 import unittest
 from pathlib import Path
 
-from src.collect import classify_item, load_yaml, score_preferences
+from src.collect import classify_item, keyword_matches, load_yaml, score_preferences
 
 ROOT = Path(__file__).resolve().parents[1]
 TAXONOMY = load_yaml(ROOT / "config" / "taxonomy.yml")
 INTERESTS = load_yaml(ROOT / "config" / "interests.yml")
 DISCOVERY = load_yaml(ROOT / "config" / "discovery.yml")
+SOURCES = load_yaml(ROOT / "config" / "sources.yml")
 TOPICS = TAXONOMY.get("topics", [])
 VALID_CATEGORIES = {str(x["id"]) for x in TAXONOMY.get("categories", []) if x.get("id")}
 CLASSIFICATION = TAXONOMY.get("classification", {})
@@ -66,6 +67,12 @@ class TaxonomyV4Tests(unittest.TestCase):
         self.assertNotIn("long_read", content_types)
         self.assertIn("long", depths)
 
+    def test_ascii_keyword_matching_uses_word_boundaries(self):
+        self.assertTrue(keyword_matches("journal", "a journal entry"))
+        self.assertFalse(keyword_matches("journal", "journalism support"))
+        self.assertTrue(keyword_matches("AI agents", "openai ai agents are running"))
+        self.assertFalse(keyword_matches("AI agent", "openai ai agents are running"))
+
     def test_cyberdeck_epaper_is_small_devices_and_strongly_boosted(self):
         category, topics, score, signals, combinations, _ = classify_and_score(
             "Build a pocket ESP32 e-paper cyberdeck",
@@ -79,6 +86,15 @@ class TaxonomyV4Tests(unittest.TestCase):
         self.assertIn("cyberdeck", {x["id"] for x in signals})
         self.assertIn("cyberdeck_build", {x["id"] for x in combinations})
         self.assertGreater(score, 8.0)
+
+    def test_generic_keyboard_and_display_do_not_trigger_cyberdeck_bonus(self):
+        _, _, _, _, combinations, _ = classify_and_score(
+            "Obsidian keyboard and display improvements",
+            "Keyboard navigation and display settings are easier to configure.",
+            fallback="knowledge",
+            default_topics=["obsidian_pkm"],
+        )
+        self.assertNotIn("cyberdeck_build", {x["id"] for x in combinations})
 
     def test_pokemon_is_genre_topic_and_signal(self):
         category, topics, score, signals, _, _ = classify_and_score(
@@ -101,6 +117,28 @@ class TaxonomyV4Tests(unittest.TestCase):
         self.assertIn("embedded_devices", ids)
         self.assertIn("github_devops", ids)
         self.assertEqual(category, "small_devices")
+
+    def test_title_evidence_breaks_equal_weight_before_genre_priority(self):
+        category, topics, *_ = classify_and_score(
+            "Obsidian Mobile update",
+            "This release adds iOS and iPhone improvements.",
+            fallback="knowledge",
+            default_topics=["obsidian_pkm"],
+        )
+        ids = {x["id"] for x in topics}
+        self.assertIn("obsidian_pkm", ids)
+        self.assertIn("apple_ecosystem", ids)
+        self.assertEqual(category, "knowledge")
+
+    def test_journalism_does_not_become_daily_notes(self):
+        category, topics, *_ = classify_and_score(
+            "OpenAI expands support for journalism",
+            "Tools and training for journalists and news organizations.",
+            fallback="ai",
+            default_topics=["llm_ai_tools"],
+        )
+        self.assertEqual(category, "ai")
+        self.assertNotIn("daily_notes_journaling", {x["id"] for x in topics})
 
     def test_metadata_is_supplemental_but_can_support_three_consistent_terms(self):
         category, topics, *_ = classify_and_score(
@@ -133,6 +171,10 @@ class TaxonomyV4Tests(unittest.TestCase):
         self.assertEqual([x["id"] for x in topics], ["early_childhood"])
         self.assertTrue(topics[0]["fallback"])
 
+    def test_broad_hackaday_feed_has_no_default_topic_fallback(self):
+        sources = {x["id"]: x for x in SOURCES.get("sources", [])}
+        self.assertEqual(sources["hackaday"].get("default_topics"), [])
+
     def test_article_text_overrides_source_default_topic(self):
         category, topics, *_ = classify_and_score(
             "Obsidian local-first notes",
@@ -146,12 +188,20 @@ class TaxonomyV4Tests(unittest.TestCase):
 
     def test_discovery_queries_reference_valid_topics(self):
         valid = {x["id"] for x in TOPICS}
-        referenced = {topic for query in DISCOVERY.get("queries", []) for topic in query.get("topics", [])}
+        referenced = {
+            topic
+            for query in DISCOVERY.get("queries", [])
+            for topic in query.get("topics", [])
+        }
         self.assertTrue(referenced.issubset(valid), referenced - valid)
 
     def test_discovery_queries_reference_valid_interest_signals(self):
         valid = {x["id"] for x in INTERESTS.get("interest_signals", [])}
-        referenced = {signal for query in DISCOVERY.get("queries", []) for signal in query.get("signals", [])}
+        referenced = {
+            signal
+            for query in DISCOVERY.get("queries", [])
+            for signal in query.get("signals", [])
+        }
         self.assertTrue(referenced.issubset(valid), referenced - valid)
 
     def test_pokemon_discovery_has_topic_and_signal(self):
@@ -160,10 +210,14 @@ class TaxonomyV4Tests(unittest.TestCase):
         self.assertAlmostEqual(float(signals["pokemon"]["weight"]), 1.3)
 
         pokemon_queries = [
-            x for x in DISCOVERY.get("queries", [])
+            x
+            for x in DISCOVERY.get("queries", [])
             if "pokemon" in x.get("signals", [])
         ]
-        self.assertEqual({x["query"] for x in pokemon_queries}, {"ポケモン", "Pokémon", "Pokemon news"})
+        self.assertEqual(
+            {x["query"] for x in pokemon_queries},
+            {"ポケモン", "Pokémon", "Pokemon news"},
+        )
         self.assertTrue(all("pokemon" in x.get("topics", []) for x in pokemon_queries))
         self.assertTrue(all(x.get("enabled", False) for x in pokemon_queries))
         self.assertTrue(DISCOVERY.get("enabled", False))

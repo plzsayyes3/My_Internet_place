@@ -1,5 +1,5 @@
 # Public RSS/Atom sources for My Internet Place.
-# default_topics are fallback hints only; each article is classified from its own text.
+# default_topics are fallback hints for narrow feeds only; broad feeds should leave them empty.
 # BLOG is represented by source_kind, not content_type.
 
 version: 4
@@ -122,7 +122,7 @@ sources:
     type: rss
     url: https://hackaday.com/blog/feed/
     language: en
-    default_topics: [embedded_devices, 3d_printing]
+    default_topics: []
     source_kind: publication
     default_content_type: news
     priority: 0.65
