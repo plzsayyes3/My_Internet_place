@@ -43,6 +43,7 @@ main {
 .eyebrow,
 .meta,
 .health,
+.sync-status,
 .source,
 .kind,
 .category,
@@ -59,6 +60,17 @@ h1 { margin: 0; font-size: clamp(28px, 6vw, 54px); line-height: 1.03; max-width:
 .meta-block { text-align: right; }
 .meta { white-space: nowrap; color: #77736a; }
 .health { margin-top: 6px; color: #77736a; }
+.sync-status { margin-top: 6px; color: #77736a; }
+.sync-settings {
+  margin-top: 10px;
+  border: 1px solid #c8c3b7;
+  background: transparent;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font: inherit;
+  font-size: 11px;
+  cursor: pointer;
+}
 
 .filters {
   display: flex;
@@ -112,12 +124,17 @@ h1 { margin: 0; font-size: clamp(28px, 6vw, 54px); line-height: 1.03; max-width:
   min-width: 0;
   padding: 28px 0;
   border-bottom: 1px solid #d8d3c8;
+  transition: opacity .18s ease;
 }
+.card.is-read { opacity: .5; }
+.card.is-skipped { opacity: .32; }
+.card.is-kept { opacity: 1; }
 .card-topline, .card-footer { display: flex; justify-content: space-between; gap: 16px; color: #77736a; }
 .source-line { display: flex; align-items: center; gap: 8px; min-width: 0; flex-wrap: wrap; }
 .source { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .kind,
-.category {
+.category,
+.reading-state-label {
   border: 1px solid #c8c3b7;
   border-radius: 999px;
   padding: 2px 6px;
@@ -126,6 +143,10 @@ h1 { margin: 0; font-size: clamp(28px, 6vw, 54px); line-height: 1.03; max-width:
 }
 .category {
   border-style: dashed;
+  color: #56544e;
+}
+.reading-state-label {
+  font-size: 10px;
   color: #56544e;
 }
 .score { color: #35372f; white-space: nowrap; }
@@ -149,6 +170,29 @@ h1 { margin: 0; font-size: clamp(28px, 6vw, 54px); line-height: 1.03; max-width:
   font-size: 12px;
   line-height: 1.2;
 }
+.state-actions {
+  display: flex;
+  gap: 7px;
+  margin: -2px 0 18px;
+}
+.state-actions button {
+  border: 1px solid #c8c3b7;
+  background: transparent;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font: inherit;
+  font-size: 11px;
+  cursor: pointer;
+}
+.state-actions button:disabled {
+  opacity: .35;
+  cursor: default;
+}
+.state-actions button.is-active {
+  background: #22231f;
+  border-color: #22231f;
+  color: #fff;
+}
 .reason { min-width: 0; text-transform: none; letter-spacing: 0; overflow-wrap: anywhere; }
 .published { white-space: nowrap; margin-left: auto; }
 .empty { padding: 64px 0; color: #77736a; }
@@ -166,4 +210,5 @@ h1 { margin: 0; font-size: clamp(28px, 6vw, 54px); line-height: 1.03; max-width:
   .card-footer { align-items: start; }
   .card-topline { align-items: start; }
   .source-line { gap: 6px; }
+  .state-actions { flex-wrap: wrap; }
 }
