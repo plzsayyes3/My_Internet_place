@@ -17,6 +17,8 @@
     <div class="meta-block">
       <div class="meta" id="generated">loading…</div>
       <div class="health" id="health"></div>
+      <button class="sync-settings" id="sync-settings" type="button">SYNC SETUP</button>
+      <div class="sync-status" id="sync-status">reading state: off</div>
     </div>
   </header>
 
@@ -38,12 +40,18 @@
           <span class="source"></span>
           <span class="kind"></span>
           <span class="category"></span>
+          <span class="reading-state-label" hidden></span>
         </div>
         <span class="score"></span>
       </div>
       <h2><a class="title" target="_blank" rel="noopener noreferrer"></a></h2>
       <p class="summary"></p>
       <div class="topic-tags" aria-label="詳細ジャンル"></div>
+      <div class="state-actions" aria-label="この記事の状態">
+        <button type="button" data-state="read">READ</button>
+        <button type="button" data-state="skip">SKIP</button>
+        <button type="button" data-state="keep">KEEP</button>
+      </div>
       <div class="card-footer">
         <span class="reason"></span>
         <time class="published"></time>
@@ -51,6 +59,7 @@
     </article>
   </template>
 
+  <script src="reading-state.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
