@@ -6,9 +6,12 @@ const topicFiltersEl = document.querySelector("#topic-filters");
 const emptyEl = document.querySelector("#empty");
 const generatedEl = document.querySelector("#generated");
 const healthEl = document.querySelector("#health");
+const syncSettingsEl = document.querySelector("#sync-settings");
+const syncStatusEl = document.querySelector("#sync-status");
 const template = document.querySelector("#card-template");
 
 let allItems = [];
+let readingStates = new Map();
 let activeView = "for-you";
 let activeTopic = null;
 let categoryOrder = [
@@ -32,6 +35,8 @@ let categoryLabels = {
 
 const SOURCE_REPEAT_PENALTY = 0.65;
 const CONSECUTIVE_SOURCE_PENALTY = 0.35;
+const READ_PENALTY = 1000;
+const SKIP_PENALTY = 2000;
 
 // Old generated data can still be read while v4 settles.
 const LEGACY_CATEGORY_MAP = {
@@ -124,6 +129,30 @@ function sourceKey(item) {
   return item.source_id || item.source || "unknown";
 }
 
+function itemState(item) {
+  return readingStates.get(String(item.id))?.status || null;
+}
+
+function statePenalty(item) {
+  const state = itemState(item);
+  if (state === "read") return READ_PENALTY;
+  if (state === "skip") return SKIP_PENALTY;
+  return 0;
+}
+
+function stateSortRank(item) {
+  const state = itemState(item);
+  if (state === "read") return 1;
+  if (state === "skip") return 2;
+  return 0;
+}
+
+function compareFreshWithinState(a, b) {
+  const stateDiff = stateSortRank(a) - stateSortRank(b);
+  if (stateDiff) return stateDiff;
+  return numericTime(b.published_at) - numericTime(a.published_at);
+}
+
 function diversifyForYou(items) {
   const remaining = [...items];
   const selected = [];
@@ -141,7 +170,8 @@ function diversifyForYou(items) {
       const sourceCount = sourceCounts.get(source) || 0;
       const adjustedScore = Number(item.rank_score || item.interest_score || item.score || 0)
         - sourceCount * SOURCE_REPEAT_PENALTY
-        - (source === previousSource ? CONSECUTIVE_SOURCE_PENALTY : 0);
+        - (source === previousSource ? CONSECUTIVE_SOURCE_PENALTY : 0)
+        - statePenalty(item);
       const publishedAt = numericTime(item.published_at);
       if (adjustedScore > bestAdjustedScore
           || (adjustedScore === bestAdjustedScore && publishedAt > bestPublishedAt)) {
@@ -194,7 +224,7 @@ function renderTopicFilters() {
 
   for (const [id, label] of sortedTopics) {
     const button = document.createElement("button");
-    button.className = `filter topic-filter${activeTopic === id ? " is-active" : ""}`;
+    button.className = `filter topic-filter${activeTopic === id ? "" : ""}${activeTopic === id ? " is-active" : ""}`;
     button.dataset.topic = id;
     button.textContent = label;
     topicFiltersEl.appendChild(button);
@@ -239,27 +269,85 @@ function renderFilters(items) {
 
 function itemsForView() {
   const items = [...allItems];
-  if (activeView === "latest") {
-    return items.sort((a, b) => numericTime(b.published_at) - numericTime(a.published_at));
-  }
+  if (activeView === "latest") return items.sort(compareFreshWithinState);
   if (activeView === "for-you") return diversifyForYou(items);
 
   let filtered = items.filter((item) => itemCategory(item) === activeView);
   if (activeTopic) filtered = filtered.filter((item) => itemHasTopic(item, activeTopic));
-  return filtered.sort((a, b) => numericTime(b.published_at) - numericTime(a.published_at));
+  return filtered.sort(compareFreshWithinState);
+}
+
+function setSyncStatus(text, isError = false) {
+  if (!syncStatusEl) return;
+  syncStatusEl.textContent = text;
+  syncStatusEl.dataset.error = isError ? "true" : "false";
+}
+
+function updateSyncButton() {
+  if (!syncSettingsEl || !window.ReadingState) return;
+  syncSettingsEl.textContent = window.ReadingState.configured() ? "SYNC" : "SYNC SETUP";
+}
+
+async function refreshReadingStates() {
+  if (!window.ReadingState?.configured()) {
+    readingStates = new Map();
+    setSyncStatus("reading state: off");
+    updateSyncButton();
+    return;
+  }
+
+  setSyncStatus("reading state: syncing…");
+  try {
+    readingStates = await window.ReadingState.load();
+    setSyncStatus(`reading state: ${readingStates.size} synced`);
+  } catch (error) {
+    readingStates = new Map();
+    setSyncStatus("reading state: sync error", true);
+    console.error(error);
+  }
+  updateSyncButton();
+}
+
+async function changeItemState(item, nextState) {
+  if (!window.ReadingState?.configured()) return;
+  const id = String(item.id);
+  const current = itemState(item);
+  try {
+    if (current === nextState) {
+      await window.ReadingState.clear(id);
+      readingStates.delete(id);
+    } else {
+      const saved = await window.ReadingState.set(id, nextState);
+      readingStates.set(id, saved);
+    }
+    setSyncStatus(`reading state: ${readingStates.size} synced`);
+    renderFeed();
+  } catch (error) {
+    setSyncStatus("reading state: save error", true);
+    console.error(error);
+  }
 }
 
 function renderFeed() {
   feedEl.innerHTML = "";
   const items = itemsForView();
   emptyEl.hidden = items.length > 0;
+  const syncConfigured = Boolean(window.ReadingState?.configured());
 
   for (const item of items) {
     const node = template.content.cloneNode(true);
+    const card = node.querySelector(".card");
+    const state = itemState(item);
+    if (state) card.classList.add(`is-${state === "skip" ? "skipped" : state}`);
+
     node.querySelector(".source").textContent = item.source || "Unknown source";
     node.querySelector(".kind").textContent = (item.content_type || item.item_type || "news").toUpperCase();
     node.querySelector(".category").textContent = categoryLabel(itemCategory(item));
     node.querySelector(".score").textContent = scoreLabel(Number(item.interest_score ?? item.score ?? 0));
+
+    const stateLabel = node.querySelector(".reading-state-label");
+    stateLabel.textContent = state ? state.toUpperCase() : "";
+    stateLabel.hidden = !state;
 
     const title = node.querySelector(".title");
     const displayedTitle = item.title_ja || item.title || "";
@@ -292,6 +380,17 @@ function renderFeed() {
       : "";
     reason.hidden = preferenceLabels.length === 0;
 
+    const actionButtons = node.querySelectorAll(".state-actions button[data-state]");
+    actionButtons.forEach((button) => {
+      const targetState = button.dataset.state;
+      button.disabled = !syncConfigured;
+      button.classList.toggle("is-active", state === targetState);
+      button.title = syncConfigured
+        ? (state === targetState ? "もう一度押すと未設定に戻します" : `${targetState.toUpperCase()} にする`)
+        : "SYNC SETUPから同期を設定してください";
+      button.addEventListener("click", () => changeItemState(item, targetState));
+    });
+
     node.querySelector(".published").textContent = formatDate(item.published_at);
     feedEl.appendChild(node);
   }
@@ -310,6 +409,15 @@ function renderHealth(sources, translation) {
     .join("\n");
 }
 
+if (syncSettingsEl && window.ReadingState) {
+  syncSettingsEl.addEventListener("click", async () => {
+    const changed = window.ReadingState.configureFromPrompt();
+    if (!changed) return;
+    await refreshReadingStates();
+    renderFeed();
+  });
+}
+
 async function boot() {
   try {
     const response = await fetch(`${DATA_URL}?t=${Date.now()}`);
@@ -321,6 +429,7 @@ async function boot() {
       ? `updated ${formatDate(data.generated_at)}`
       : "waiting for first collection";
     renderHealth(data.sources, data.translation);
+    await refreshReadingStates();
     renderFilters(allItems);
     renderTopicFilters();
     renderFeed();
