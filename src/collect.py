@@ -147,7 +147,12 @@ def _topic_match(topic: dict, title: str, summary: str, metadata: str, config: d
     if not tm and not sm and not mm:
         return None
 
-    raw = title_mul * len(tm) + summary_mul * len(sm) + metadata_mul * len(mm)
+    # A single summary hit is strong enough to classify, but repeated summary
+    # terms have diminishing weight so title evidence wins an otherwise equal tie.
+    summary_raw = 0.0
+    if sm:
+        summary_raw = summary_mul + max(0, len(sm) - 1) * max(0.0, title_mul - summary_mul)
+    raw = title_mul * len(tm) + summary_raw + metadata_mul * len(mm)
     score = min(1.0, raw / max(title_mul * max_hits, 1.0))
     if score < minimum:
         return None
