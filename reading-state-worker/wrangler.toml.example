@@ -1,0 +1,14 @@
+name = "my-internet-place-reading-state"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+
+[vars]
+ALLOWED_ORIGIN = "https://plzsayyes3.github.io"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "my-internet-place-reading-state"
+database_id = "REPLACE_WITH_D1_DATABASE_ID"
+
+# Set SYNC_TOKEN as a Worker secret, not in this file:
+# npx wrangler secret put SYNC_TOKEN
