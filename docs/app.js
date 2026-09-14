@@ -125,6 +125,17 @@ function itemHasTopic(item, topicId) {
   return itemTopics(item).some((topic) => topic.id === topicId);
 }
 
+function itemThumbnail(item) {
+  const candidates = [
+    item.thumbnail_url,
+    item.image_url,
+    item.og_image,
+    item.image,
+    item.thumbnail,
+  ];
+  return candidates.find((value) => typeof value === "string" && /^https?:\/\//i.test(value)) || "";
+}
+
 function sourceKey(item) {
   return item.source_id || item.source || "unknown";
 }
@@ -283,6 +294,11 @@ function setSyncStatus(text, isError = false) {
   syncStatusEl.dataset.error = isError ? "true" : "false";
 }
 
+function pendingSyncLabel() {
+  const pending = window.ReadingState?.pendingCount?.() || 0;
+  return pending ? `reading state: ${pending} pending` : `reading state: ${readingStates.size} synced`;
+}
+
 function updateSyncButton() {
   if (!syncSettingsEl || !window.ReadingState) return;
   syncSettingsEl.textContent = window.ReadingState.configured() ? "SYNC" : "SYNC SETUP";
@@ -299,31 +315,32 @@ async function refreshReadingStates() {
   setSyncStatus("reading state: syncing…");
   try {
     readingStates = await window.ReadingState.load();
-    setSyncStatus(`reading state: ${readingStates.size} synced`);
+    setSyncStatus(pendingSyncLabel());
   } catch (error) {
     readingStates = new Map();
-    setSyncStatus("reading state: sync error", true);
+    const pending = window.ReadingState?.pendingCount?.() || 0;
+    setSyncStatus(pending ? `reading state: ${pending} pending · sync error` : "reading state: sync error", true);
     console.error(error);
   }
   updateSyncButton();
 }
 
-async function changeItemState(item, nextState) {
+function changeItemState(item, nextState) {
   if (!window.ReadingState?.configured()) return;
   const id = String(item.id);
   const current = itemState(item);
   try {
     if (current === nextState) {
-      await window.ReadingState.clear(id);
+      window.ReadingState.clear(id);
       readingStates.delete(id);
     } else {
-      const saved = await window.ReadingState.set(id, nextState);
+      const saved = window.ReadingState.set(id, nextState);
       readingStates.set(id, saved);
     }
-    setSyncStatus(`reading state: ${readingStates.size} synced`);
+    setSyncStatus(pendingSyncLabel());
     renderFeed();
   } catch (error) {
-    setSyncStatus("reading state: save error", true);
+    setSyncStatus("reading state: local save error", true);
     console.error(error);
   }
 }
@@ -359,6 +376,21 @@ function renderFeed() {
     const displayedSummary = item.summary_ja || item.summary || "";
     summary.textContent = displayedSummary;
     summary.hidden = !displayedSummary;
+
+    const thumbnailUrl = itemThumbnail(item);
+    const thumbnail = node.querySelector(".thumbnail");
+    const thumbnailImage = node.querySelector(".thumbnail-image");
+    if (thumbnailUrl) {
+      thumbnail.href = item.url;
+      thumbnail.hidden = false;
+      thumbnailImage.src = thumbnailUrl;
+      thumbnailImage.alt = "";
+      thumbnailImage.addEventListener("error", () => {
+        thumbnail.hidden = true;
+      }, { once: true });
+    } else {
+      thumbnail.hidden = true;
+    }
 
     const topics = itemTopics(item);
     const topicLabels = topics.map((topic) => topic.label);
@@ -407,6 +439,20 @@ function renderHealth(sources, translation) {
   healthEl.title = (sources.status || [])
     .map((source) => `${source.ok ? "✓" : "×"} ${source.name}`)
     .join("\n");
+}
+
+if (window.ReadingState?.onStatus) {
+  window.ReadingState.onStatus((detail) => {
+    if (detail.phase === "syncing") {
+      setSyncStatus(`reading state: syncing ${detail.pending}…`);
+    } else if (detail.phase === "synced") {
+      setSyncStatus(detail.pending ? `reading state: ${detail.pending} pending` : `reading state: ${readingStates.size} synced`);
+    } else if (detail.phase === "error") {
+      setSyncStatus(`reading state: ${detail.pending} pending · sync error`, true);
+    } else if (detail.phase === "queued") {
+      setSyncStatus(`reading state: ${detail.pending} pending`);
+    }
+  });
 }
 
 if (syncSettingsEl && window.ReadingState) {

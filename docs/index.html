@@ -44,13 +44,20 @@
         </div>
         <span class="score"></span>
       </div>
-      <h2><a class="title" target="_blank" rel="noopener noreferrer"></a></h2>
-      <p class="summary"></p>
-      <div class="topic-tags" aria-label="詳細ジャンル"></div>
-      <div class="state-actions" aria-label="この記事の状態">
-        <button type="button" data-state="read">READ</button>
-        <button type="button" data-state="skip">SKIP</button>
-        <button type="button" data-state="keep">KEEP</button>
+      <div class="card-content">
+        <div class="card-copy">
+          <h2><a class="title" target="_blank" rel="noopener noreferrer"></a></h2>
+          <p class="summary"></p>
+          <div class="topic-tags" aria-label="詳細ジャンル"></div>
+          <div class="state-actions" aria-label="この記事の状態">
+            <button type="button" data-state="read">READ</button>
+            <button type="button" data-state="skip">SKIP</button>
+            <button type="button" data-state="keep">KEEP</button>
+          </div>
+        </div>
+        <a class="thumbnail" target="_blank" rel="noopener noreferrer" hidden aria-label="記事を開く">
+          <img class="thumbnail-image" alt="" loading="lazy" decoding="async" />
+        </a>
       </div>
       <div class="card-footer">
         <span class="reason"></span>
