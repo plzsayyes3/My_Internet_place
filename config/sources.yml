@@ -138,3 +138,14 @@ sources:
     default_content_type: news
     priority: 0.5
     enabled: true
+
+  - id: salicylic_weekly
+    name: 自作キーボード温泉街週報
+    type: atom
+    url: https://salicylic-weekly.hatenablog.jp/feed
+    language: ja
+    default_topics: [input_devices, maker_projects]
+    source_kind: blog
+    default_content_type: analysis
+    priority: 1.0
+    enabled: true
