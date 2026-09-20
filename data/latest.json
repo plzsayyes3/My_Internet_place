@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T23:00:14.631141+00:00",
+  "generated_at": "2026-09-20T23:20:22.789442+00:00",
   "count": 227,
   "taxonomy_version": 4,
   "interest_profile_version": 4,
@@ -215,7 +215,7 @@
       "signals": {
         "direct_interest": 10.05,
         "related_interest": 0.0,
-        "freshness": 0.217,
+        "freshness": 0.216,
         "source_priority": 0.7,
         "active_discovery": 0.306
       },
@@ -227,7 +227,7 @@
         "signals": 3.88,
         "combinations": 2.55
       },
-      "rank_score": 7.39,
+      "rank_score": 7.38,
       "matched_interests": [
         "e_paper",
         "embedded_devices"
@@ -313,7 +313,7 @@
       "signals": {
         "direct_interest": 9.36,
         "related_interest": 0.0,
-        "freshness": 0.217,
+        "freshness": 0.216,
         "source_priority": 0.7,
         "active_discovery": 0.306
       },
@@ -1361,7 +1361,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 4.39,
+      "rank_score": 4.38,
       "matched_interests": [
         "llm_ai_tools",
         "programming"
@@ -1372,7 +1372,7 @@
       ],
       "image_url": "https://static.simonwillison.net/static/2026/5k-route.webp",
       "title_ja": "GPT-6 Astra と ChatGPT 作業で実行中のルートを生成する",
-      "summary_ja": "今朝はGPT-6 Astra(Max)でチャットGPT作業をしていたのはきちんとしたことです。 自分の家からループする私から5Kと10Kのランニングルートを調べます。 OSMデータを使用する 埋め込まれた視覚化とダウンロード可能なGPXファイルとGeoJSONファイルの両方として、27分間働いたし、私が求めたものを正確に作り出しました。"
+      "summary_ja": "今朝はGPT-6 Astra(Max)でチャットGPT作業をしていたのはきちんとしたことです。 自分の家からループする私から5Kと10Kのランニングルートを調べます。 OSMデータを使用する 埋め込まれた視覚化とダウンロード可能なGPXファイルとGeoJSONファイルの両方として、私が求めたものを正確に作成し、27分間働いた。"
     },
     {
       "id": "1164e3484aa11323",
@@ -1711,7 +1711,7 @@
       "signals": {
         "direct_interest": 2.14,
         "related_interest": 0.0,
-        "freshness": 0.981,
+        "freshness": 0.98,
         "source_priority": 0.75
       },
       "recommendation_reason": "direct",
@@ -1829,7 +1829,7 @@
       "signals": {
         "direct_interest": 2.1,
         "related_interest": 0.0,
-        "freshness": 0.965,
+        "freshness": 0.964,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -3190,7 +3190,7 @@
       "signals": {
         "direct_interest": 1.76,
         "related_interest": 0.0,
-        "freshness": 0.923,
+        "freshness": 0.922,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -3257,7 +3257,7 @@
       "signals": {
         "direct_interest": 2.04,
         "related_interest": 0.0,
-        "freshness": 0.834,
+        "freshness": 0.833,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -3413,7 +3413,7 @@
       ],
       "image_url": "https://obsidian.md/images/banner.png",
       "title_ja": "Obsidian 1.13.6 モバイル (公開)",
-      "summary_ja": "Obsidianデスクトップ v1.13.6 まで、すべての新機能とバグ修正が含まれています。 タブスイッチャーのタブのタブを閉じるために、新しい追加スワイプツークローズ. 改善点 タブはタブのスイッチャーからタブを閉じた後、新しい位置にアニメーションします。 モバイルツールバーの設定ページでは、各コマンドの横にあるアイコンが表示されます。 チェックボックスのスケール"
+      "summary_ja": "すべての新機能とバグは、Obsidian デスクトップ v1.13.6 まで修正します。タブ スイッチャのタブを閉じるために、新しい追加 swipe-to-close。 改善点 タブはタブのスイッチャーからタブを閉じた後、新しい位置にアニメーションします。 モバイルツールバーの設定ページでは、各コマンドの横にあるアイコンが表示されます。 チェックボックスのスケール"
     },
     {
       "id": "fba79bfc8afbcc1a",
@@ -3469,7 +3469,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.71,
+      "rank_score": 3.7,
       "matched_interests": [
         "llm_ai_tools",
         "ai_agents_automation"
@@ -3735,7 +3735,7 @@
       "signals": {
         "direct_interest": 1.76,
         "related_interest": 0.0,
-        "freshness": 0.897,
+        "freshness": 0.896,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -4195,7 +4195,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.53,
+      "rank_score": 3.52,
       "matched_interests": [
         "embedded_devices"
       ],
@@ -4304,7 +4304,7 @@
       "signals": {
         "direct_interest": 4.6,
         "related_interest": 0.0,
-        "freshness": 0.146,
+        "freshness": 0.145,
         "source_priority": 0.7,
         "active_discovery": 0.234
       },
@@ -4316,7 +4316,7 @@
         "signals": 2.6,
         "combinations": 0.0
       },
-      "rank_score": 3.5,
+      "rank_score": 3.49,
       "matched_interests": [
         "pokemon"
       ],
@@ -4416,73 +4416,6 @@
       "summary_ja": "Obsidian Desktop v1.13.3 までの新機能とバグ修正をすべて備えています。 改善はライトボックスに画像を解読するために「スワイプダウン」ジェスチャーを追加しました。 キーボードが表示されなくなった画像のタッピングは行いません。 画像をズームするダブルタップを修正しました。 ライブプレビュー:新しい列や新しい行を作成するための固定ボタンがw"
     },
     {
-      "id": "5752ed149a14bd7a",
-      "title": "Project HydraFusion: Frontier quality via multi-model orchestration",
-      "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
-      "summary": "In controlled offline evaluations, HydraFusion’s selective coding workflows matched or exceeded the evaluated Opus 5 baseline while reducing estimated workflow cost. Now available as a research preview in GitHub Copilot. The post Project HydraFusion: Frontier quality via multi-model orchestration appeared first on The ",
-      "published_at": "2026-09-04T16:04:14+00:00",
-      "source": "GitHub Blog",
-      "source_id": "github_blog",
-      "source_kind": "official",
-      "source_category": "software",
-      "genre": "ai",
-      "primary_category": "ai",
-      "topics": [
-        {
-          "id": "ai_coding",
-          "score": 0.25
-        },
-        {
-          "id": "github_devops",
-          "score": 0.25
-        }
-      ],
-      "topic_ids": [
-        "ai_coding",
-        "github_devops"
-      ],
-      "topic_labels": [
-        "AI開発・コーディング",
-        "GitHub・Actions"
-      ],
-      "topic_scores": {
-        "ai_coding": 0.25,
-        "github_devops": 0.25
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 1.69,
-        "related_interest": 0.0,
-        "freshness": 0.864,
-        "source_priority": 0.75
-      },
-      "recommendation_reason": "direct",
-      "interest_score": 1.69,
-      "score": 1.69,
-      "score_components": {
-        "topics": 1.69,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 3.47,
-      "matched_interests": [
-        "ai_coding",
-        "github_devops"
-      ],
-      "matched_labels": [
-        "AI開発・コーディング",
-        "GitHub・Actions"
-      ],
-      "image_url": "https://github.blog/wp-content/uploads/2026/09/OptA_UI.jpg",
-      "title_ja": "プロジェクトHydraFusion:マルチモデルのオーケストレーションによるフロンティア品質",
-      "summary_ja": "制御されたオフライン評価では、HydraFusion の 選択的なコーディングワークフローは、評価された Opus 5 ベースラインにマッチするか、または超過して、推定ワークフローコストを削減します。 GitHub Copilotで研究プレビューとして利用できます。 ポストプロジェクトHydraFusion:マルチモデルのオーケストレーションを介してフロンティア品質が最初に登場"
-    },
-    {
       "id": "0a065895f331588a",
       "title": "Be alert: targeted attacks on prominent Rustaceans",
       "url": "https://simonwillison.net/2026/Sep/17/targeted-attacks-on-rustaceans/",
@@ -4548,6 +4481,73 @@
       "image_url": "https://simonwillison.net/2026/Sep/17/targeted-attacks-on-rustaceans/",
       "title_ja": "警告: 顕著なRustaceansの標的攻撃",
       "summary_ja": "警戒:Adam Harveyとセキュリティチームからの顕著なRustaceans重要警告の標的攻撃: 私たちは、デバイスとアカウントを侵害しようとする一般的なクレートの素晴らしなメンバーと所有者をターゲットにする継続的なキャンペーンがあると信じています。 ビデオ"
+    },
+    {
+      "id": "5752ed149a14bd7a",
+      "title": "Project HydraFusion: Frontier quality via multi-model orchestration",
+      "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
+      "summary": "In controlled offline evaluations, HydraFusion’s selective coding workflows matched or exceeded the evaluated Opus 5 baseline while reducing estimated workflow cost. Now available as a research preview in GitHub Copilot. The post Project HydraFusion: Frontier quality via multi-model orchestration appeared first on The ",
+      "published_at": "2026-09-04T16:04:14+00:00",
+      "source": "GitHub Blog",
+      "source_id": "github_blog",
+      "source_kind": "official",
+      "source_category": "software",
+      "genre": "ai",
+      "primary_category": "ai",
+      "topics": [
+        {
+          "id": "ai_coding",
+          "score": 0.25
+        },
+        {
+          "id": "github_devops",
+          "score": 0.25
+        }
+      ],
+      "topic_ids": [
+        "ai_coding",
+        "github_devops"
+      ],
+      "topic_labels": [
+        "AI開発・コーディング",
+        "GitHub・Actions"
+      ],
+      "topic_scores": {
+        "ai_coding": 0.25,
+        "github_devops": 0.25
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 1.69,
+        "related_interest": 0.0,
+        "freshness": 0.864,
+        "source_priority": 0.75
+      },
+      "recommendation_reason": "direct",
+      "interest_score": 1.69,
+      "score": 1.69,
+      "score_components": {
+        "topics": 1.69,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 3.46,
+      "matched_interests": [
+        "ai_coding",
+        "github_devops"
+      ],
+      "matched_labels": [
+        "AI開発・コーディング",
+        "GitHub・Actions"
+      ],
+      "image_url": "https://github.blog/wp-content/uploads/2026/09/OptA_UI.jpg",
+      "title_ja": "プロジェクトHydraFusion:マルチモデルのオーケストレーションによるフロンティア品質",
+      "summary_ja": "制御されたオフライン評価では、HydraFusion の 選択的なコーディングワークフローは、評価された Opus 5 ベースラインにマッチするか、または超過して、推定ワークフローコストを削減します。 GitHub Copilotで研究プレビューとして利用できます。 ポストプロジェクトHydraFusion:マルチモデルのオーケストレーションを介してフロンティア品質が最初に登場"
     },
     {
       "id": "f7a9c4b5a15d1841",
@@ -4620,7 +4620,7 @@
       "id": "d13a71ff8bdddb5a",
       "title": "Google's Open Agentic Orchestrator",
       "url": "https://agentexecutor.io",
-      "summary": "Article URL: https://agentexecutor.io Comments URL: https://news.ycombinator.com/item?id=49780797 Points: 4 # Comments: 0",
+      "summary": "Article URL: https://agentexecutor.io Comments URL: https://news.ycombinator.com/item?id=49780797 Points: 31 # Comments: 8",
       "published_at": "2026-09-20T22:32:43+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -4672,7 +4672,7 @@
       ],
       "image_url": "https://agentexecutor.io/axolotl.svg",
       "title_ja": "Googleのオープン・エージェント・オーケストラ",
-      "summary_ja": "記事URL: https://agentexecutor.io コメントURL:https://news.ycombinator.com/item?id=49780797 ポイント: 4 # コメント: 0"
+      "summary_ja": "記事のURL:https://agentexecutor.io コメント URL: https://news.ycombinator.com/item?id=49780797 ポイント: 31 # コメント: 8"
     },
     {
       "id": "0a02c8015e967a7e",
@@ -4730,7 +4730,7 @@
       ],
       "image_url": "https://openrouter.ai/blog/images/llm-as-a-judge-evaluate-ai-agents.png",
       "title_ja": "LLM-as-a-Judge: スコアAIエージェントが自動出力",
-      "summary_ja": "LLM の判断は、あなたがプレーン語で書く基準に対してエージェントの出力をスコアする第二モデルです。 このガイドでは、裁判官が決定的なテストと人間のレビューの横に収まる場所を説明し、Ori Evalテストに1つを追加する方法を示し、候補モデルを比較し、人間にラベル付けされた例に対するしきい値を調整します。"
+      "summary_ja": "LLM の判断は、あなたがプレーン語で書く基準に対してエージェントの出力をスコアする第二モデルです。 このガイドでは、裁判官が決定的なテストと人間のレビューの横に収まる場所を説明し、Ori Evalテストに1つを追加する方法を示し、候補モデルを比較し、人間にラベルされた例に対するしきい値を調整します。"
     },
     {
       "id": "21dd0cfb3d8b0e92",
@@ -4951,7 +4951,7 @@
       "signals": {
         "direct_interest": 1.45,
         "related_interest": 0.0,
-        "freshness": 0.904,
+        "freshness": 0.903,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -5498,7 +5498,7 @@
       "signals": {
         "direct_interest": 1.58,
         "related_interest": 0.0,
-        "freshness": 0.799,
+        "freshness": 0.798,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -5558,7 +5558,7 @@
       "signals": {
         "direct_interest": 1.05,
         "related_interest": 0.0,
-        "freshness": 0.991,
+        "freshness": 0.99,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -5941,7 +5941,7 @@
       "id": "d262d81024b8412a",
       "title": "ChatGPT now knows what you do on other websites via ad collector",
       "url": "https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector/",
-      "summary": "Article URL: https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector/ Comments URL: https://news.ycombinator.com/item?id=49776729 Points: 500 # Comments: 288",
+      "summary": "Article URL: https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector/ Comments URL: https://news.ycombinator.com/item?id=49776729 Points: 513 # Comments: 295",
       "published_at": "2026-09-20T15:18:44+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -5993,7 +5993,7 @@
       ],
       "image_url": "https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector/",
       "title_ja": "ChatGPTは、広告コレクタを介して他のウェブサイトで何をするかを知っています",
-      "summary_ja": "記事のURL: https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector/ コメントのURL: https://news.ycombinator.com/item?id=49776729 ポイント: 500 #コメント: 288"
+      "summary_ja": "記事のURL: https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector/ 注釈 URL: https://news.ycombinator.com/item?id=49776729 ポイント: 513 # コメント: 295"
     },
     {
       "id": "6b49ad1831bca7bf",
@@ -6147,7 +6147,7 @@
       "signals": {
         "direct_interest": 1.25,
         "related_interest": 0.0,
-        "freshness": 0.834,
+        "freshness": 0.833,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -7021,7 +7021,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.975,
+        "freshness": 0.974,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -7078,7 +7078,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.98,
+        "freshness": 0.979,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -7157,67 +7157,10 @@
       "summary_ja": "エンタープライズ管理者は、既存の古典的な個人アクセストークン(PAT)とGitHub Enterprise Cloud の組織の SSH キーの SSO 認可を自動化し、開発者による手動パーオーガナイゼーション認証を交換できるようになりました。 ポストは古典的なPATおよびSSHのキーのためのSSOの承認を最初に現れました自動化します"
     },
     {
-      "id": "47e4677cdf8e3d8d",
-      "title": "Build an internet radio",
-      "url": "https://www.raspberrypi.com/news/build-an-internet-radio/",
-      "summary": "Use potentiometers to control an LED and tune in to online radio stations. The post Build an internet radio appeared first on Raspberry Pi .",
-      "published_at": "2026-09-03T09:12:33+00:00",
-      "source": "Raspberry Pi News",
-      "source_id": "raspberry_pi_news",
-      "source_kind": "official",
-      "source_category": "other",
-      "genre": "small_devices",
-      "primary_category": "small_devices",
-      "topics": [
-        {
-          "id": "embedded_devices",
-          "score": 0.25
-        }
-      ],
-      "topic_ids": [
-        "embedded_devices"
-      ],
-      "topic_labels": [
-        "ESP32・小型デバイス"
-      ],
-      "topic_scores": {
-        "embedded_devices": 0.25
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 1.09,
-        "related_interest": 0.0,
-        "freshness": 0.854,
-        "source_priority": 0.85
-      },
-      "recommendation_reason": "direct",
-      "interest_score": 1.09,
-      "score": 1.09,
-      "score_components": {
-        "topics": 1.09,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.9,
-      "matched_interests": [
-        "embedded_devices"
-      ],
-      "matched_labels": [
-        "ESP32・小型デバイス"
-      ],
-      "title_ja": "インターネットラジオの構築",
-      "summary_ja": "電位計を使用して、オンラインラジオ局にLEDとタインを制御することができます。 ポストビルドインターネットラジオは、最初にラズベリーパイに登場しました。"
-    },
-    {
       "id": "1eb71d85a4f42f24",
       "title": "Ogre Battle 64 Recompiled Project at 99.05%",
       "url": "https://github.com/lfarroco/ogre-battle-64-recomp",
-      "summary": "Article URL: https://github.com/lfarroco/ogre-battle-64-recomp Comments URL: https://news.ycombinator.com/item?id=49780022 Points: 11 # Comments: 3",
+      "summary": "Article URL: https://github.com/lfarroco/ogre-battle-64-recomp Comments URL: https://news.ycombinator.com/item?id=49780022 Points: 14 # Comments: 5",
       "published_at": "2026-09-20T20:59:02+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -7268,13 +7211,13 @@
         "GitHub・Actions"
       ],
       "title_ja": "99.05%でOgre Battle 64 Recompiledプロジェクト",
-      "summary_ja": "記事URL: https://github.com/lfarroco/ogre-battle-64-recomp コメントURL: https://news.ycombinator.com/item?id=49780022 ポイント: 11 # コメント: 3"
+      "summary_ja": "記事のURL: https://github.com/lfarroco/ogre-battle-64-recomp コメントURL: https://news.ycombinator.com/item?id=49780022 ポイント: 14 # コメント: 5"
     },
     {
       "id": "a57522304811ee2e",
       "title": "I turned Jev into a (lousy) chatbot",
       "url": "https://github.com/kyle-pena-nlp/jevchat/",
-      "summary": "Article URL: https://github.com/kyle-pena-nlp/jevchat/ Comments URL: https://news.ycombinator.com/item?id=49778162 Points: 73 # Comments: 24",
+      "summary": "Article URL: https://github.com/kyle-pena-nlp/jevchat/ Comments URL: https://news.ycombinator.com/item?id=49778162 Points: 77 # Comments: 25",
       "published_at": "2026-09-20T17:51:27+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -7325,13 +7268,13 @@
         "GitHub・Actions"
       ],
       "title_ja": "Jevを(ルーシー)チャットボットに変換",
-      "summary_ja": "記事のURL: https://github.com/kyle-pena-nlp/jevchat/ コメントのURL: https://news.ycombinator.com/item?id=49778162 ポイント: 73 # コメント: 24"
+      "summary_ja": "記事のURL: https://github.com/kyle-pena-nlp/jevchat/ コメントのURL: https://news.ycombinator.com/item?id=49778162 ポイント: 77 #コメント: 25"
     },
     {
       "id": "b04be724122c1d2e",
       "title": "Resident Evil 4 (GameCube) – complete byte-identical decompilation to C/C++",
       "url": "https://github.com/adonis-singh/re4",
-      "summary": "Article URL: https://github.com/adonis-singh/re4 Comments URL: https://news.ycombinator.com/item?id=49778022 Points: 73 # Comments: 43",
+      "summary": "Article URL: https://github.com/adonis-singh/re4 Comments URL: https://news.ycombinator.com/item?id=49778022 Points: 75 # Comments: 47",
       "published_at": "2026-09-20T17:38:27+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -7382,13 +7325,70 @@
         "GitHub・Actions"
       ],
       "title_ja": "残留Evil 4(GameCube) - C/C++へのバイト識別分解を完了",
-      "summary_ja": "記事URL: https://github.com/adonis-singh/re4 コメントURL: https://news.ycombinator.com/item?id=49778022 ポイント: 73 # コメント: 43"
+      "summary_ja": "記事のURL: https://github.com/adonis-singh/re4 コメントのURL: https://news.ycombinator.com/item?id=49778022 ポイント: 75 # コメント: 47"
+    },
+    {
+      "id": "47e4677cdf8e3d8d",
+      "title": "Build an internet radio",
+      "url": "https://www.raspberrypi.com/news/build-an-internet-radio/",
+      "summary": "Use potentiometers to control an LED and tune in to online radio stations. The post Build an internet radio appeared first on Raspberry Pi .",
+      "published_at": "2026-09-03T09:12:33+00:00",
+      "source": "Raspberry Pi News",
+      "source_id": "raspberry_pi_news",
+      "source_kind": "official",
+      "source_category": "other",
+      "genre": "small_devices",
+      "primary_category": "small_devices",
+      "topics": [
+        {
+          "id": "embedded_devices",
+          "score": 0.25
+        }
+      ],
+      "topic_ids": [
+        "embedded_devices"
+      ],
+      "topic_labels": [
+        "ESP32・小型デバイス"
+      ],
+      "topic_scores": {
+        "embedded_devices": 0.25
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 1.09,
+        "related_interest": 0.0,
+        "freshness": 0.853,
+        "source_priority": 0.85
+      },
+      "recommendation_reason": "direct",
+      "interest_score": 1.09,
+      "score": 1.09,
+      "score_components": {
+        "topics": 1.09,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.89,
+      "matched_interests": [
+        "embedded_devices"
+      ],
+      "matched_labels": [
+        "ESP32・小型デバイス"
+      ],
+      "title_ja": "インターネットラジオの構築",
+      "summary_ja": "電位計を使用して、オンラインラジオ局にLEDとタインを制御することができます。 ポストビルドインターネットラジオは、最初にラズベリーパイに登場しました。"
     },
     {
       "id": "6fb977a7c4f071b0",
       "title": "Laya (OS Jev) on Mac M4 CoreML Offline (45 decisions per second)",
       "url": "https://gist.github.com/fordnox/e592d0f68b543fd044be8e6d040863a0",
-      "summary": "Article URL: https://gist.github.com/fordnox/e592d0f68b543fd044be8e6d040863a0 Comments URL: https://news.ycombinator.com/item?id=49777106 Points: 111 # Comments: 21",
+      "summary": "Article URL: https://gist.github.com/fordnox/e592d0f68b543fd044be8e6d040863a0 Comments URL: https://news.ycombinator.com/item?id=49777106 Points: 115 # Comments: 21",
       "published_at": "2026-09-20T15:58:52+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -7420,7 +7420,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.998,
+        "freshness": 0.997,
         "source_priority": 0.5
       },
       "recommendation_reason": "direct",
@@ -7439,7 +7439,7 @@
         "GitHub・Actions"
       ],
       "title_ja": "Mac M4 CoreML オフラインでLaya (OS Jev) (毎秒45の決定)",
-      "summary_ja": "記事のURL: https://gist.github.com/fordnox/e592d0f68b543fd044be8e6d040863a0 コメント URL: https://news.ycombinator.com/item?id=49777106 ポイント: 111 # コメント: 21"
+      "summary_ja": "記事のURL:https://gist.github.com/fordnox/e592d0f68b543fd044be8e6d040863a0 コメント URL: https://news.ycombinator.com/item?id=49777106 ポイント: 115 # コメント: 21"
     },
     {
       "id": "4e5de7b67a7d7d1e",
@@ -7819,7 +7819,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.965,
+        "freshness": 0.964,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -8617,7 +8617,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.949,
+        "freshness": 0.948,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -8674,7 +8674,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.948,
+        "freshness": 0.947,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -9720,7 +9720,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.59,
+      "rank_score": 2.58,
       "matched_interests": [
         "github_devops"
       ],
@@ -9898,7 +9898,7 @@
       "signals": {
         "direct_interest": 3.51,
         "related_interest": 0.0,
-        "freshness": 0.074,
+        "freshness": 0.073,
         "source_priority": 0.62,
         "active_discovery": 0.234
       },
@@ -10327,7 +10327,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.798,
+        "freshness": 0.797,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -10384,7 +10384,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.798,
+        "freshness": 0.797,
         "source_priority": 0.75
       },
       "recommendation_reason": "direct",
@@ -10715,7 +10715,7 @@
       "signals": {
         "direct_interest": 3.59,
         "related_interest": 0.0,
-        "freshness": 0.003,
+        "freshness": 0.002,
         "source_priority": 0.62,
         "active_discovery": 0.234
       },
@@ -10966,7 +10966,7 @@
       "signals": {
         "direct_interest": 3.45,
         "related_interest": 0.0,
-        "freshness": 0.003,
+        "freshness": 0.002,
         "source_priority": 0.7,
         "active_discovery": 0.234
       },
@@ -11663,7 +11663,7 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "ロジャー・ラビットの創造精神",
-      "summary_ja": "ロジャー・ラビットのクリエイティブ・スピリットは、ロジャー・ラビット、1988年の映画『ロバート・ツェメックイ』の映画『誰がロジャー・ラビット』を舞台にしたのが大好きです。 数年ぶりに見られず、Cypress Frankenfeldは映画の初期からこのシーケンスを指摘しました。自転車に乗るペリカンです! 密接に見て、ペリカンは"
+      "summary_ja": "ロジャー・ラビットのクリエイティブ・スピリットは、ロジャー・ラビット、1988年の映画『ロバート・ツェメッキス』を舞台に愛しています。 数年ぶりに見られず、Cypress Frankenfeldは映画の初期からこのシーケンスを指摘しました。自転車に乗るペリカンです! 詳しく見て、ペリカンは"
     },
     {
       "id": "b42a1c7934250172",
@@ -11873,7 +11873,7 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "LLMで書き込む方法",
-      "summary_ja": "LLM Thomas PtacekでLLMをコピーエディタとして使用する方法, アシスタントを書くことではありません: ルール番号1: LLMがあなたに提案する単一の単語を使用することはできません. [...] LLM が提案するフレーズの特定の回転が示すルールを採用すべき知的個人的な保護装置の形態としてあると思います"
+      "summary_ja": "LLM Thomas PtacekでLLMをコピーエディタとして使用する方法, アシスタントを書き込みとしてではなく: ルール番号1: LLMがあなたに提案する単一の単語を使用することはできません. [...] LLM が提案するフレーズの特定の回転が示すルールを採用すべき知的個人的な保護装置の形態としてあると思います"
     },
     {
       "id": "755632a9b268c31b",
@@ -11933,10 +11933,52 @@
       "summary_ja": "当社の新しいオートルータは、数百万人の人々のモデルの決定によって通知され、さまざまなタスクのスペクトルにわたって従来のタスクベースの分類器を外しています。"
     },
     {
+      "id": "98ce8fd3195d67a8",
+      "title": "What Happened to the Snowden Archive",
+      "url": "https://libroot.org/posts/what-happened-to-the-snowden-archive",
+      "summary": "Article URL: https://libroot.org/posts/what-happened-to-the-snowden-archive Comments URL: https://news.ycombinator.com/item?id=49780820 Points: 33 # Comments: 3",
+      "published_at": "2026-09-20T22:35:49+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_kind": "community",
+      "source_category": "other",
+      "genre": "other",
+      "primary_category": "other",
+      "topics": [],
+      "topic_ids": [],
+      "topic_labels": [],
+      "topic_scores": {},
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 0.0,
+        "related_interest": 0.0,
+        "freshness": 1.0,
+        "source_priority": 0.5
+      },
+      "recommendation_reason": "latest",
+      "interest_score": 0.0,
+      "score": 0.0,
+      "score_components": {
+        "topics": 0,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.1,
+      "matched_interests": [],
+      "matched_labels": [],
+      "title_ja": "スノーデン アーカイブに何が役立つか",
+      "summary_ja": "記事のURL: https://libroot.org/posts/what-happened-to-the-snowden-archive コメント URL: https://news.ycombinator.com/item?id=49780820 ポイント: 33 # コメント: 3"
+    },
+    {
       "id": "116f236363b83a14",
       "title": "Bill to Ban Private Equity from Owning Medical Practices",
       "url": "https://truthout.org/articles/warren-introduces-bill-to-ban-private-equity-from-owning-medical-practices/",
-      "summary": "Article URL: https://truthout.org/articles/warren-introduces-bill-to-ban-private-equity-from-owning-medical-practices/ Comments URL: https://news.ycombinator.com/item?id=49780630 Points: 29 # Comments: 3",
+      "summary": "Article URL: https://truthout.org/articles/warren-introduces-bill-to-ban-private-equity-from-owning-medical-practices/ Comments URL: https://news.ycombinator.com/item?id=49780630 Points: 67 # Comments: 25",
       "published_at": "2026-09-20T22:13:46+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -11972,13 +12014,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "ビル・ツー・バン・プライベート・エクイティ・オブ・メディカル・プラクティス",
-      "summary_ja": "記事のURL: https://truthout.org/articles/warren-introduces-bill-to-ban-private-equity-from-owning-medical-practices/ コメントのURL: https://news.ycombinator.com/item?id=49780630 ポイント: 29 #コメント: 3"
+      "summary_ja": "記事のURL: https://truthout.org/articles/warren-introduces-bill-to-ban-private-equity-from-owning-medical-practices/ コメントのURL: https://news.ycombinator.com/item?id=49780630 ポイント: 67 #コメント: 25"
     },
     {
       "id": "bb8539a1188ebe94",
       "title": "Nobody pays for FOSS, we can force them to",
       "url": "https://seldo.com/posts/nobody-pays-for-open-source-we-can-force-them-to/",
-      "summary": "Article URL: https://seldo.com/posts/nobody-pays-for-open-source-we-can-force-them-to/ Comments URL: https://news.ycombinator.com/item?id=49780064 Points: 63 # Comments: 34",
+      "summary": "Article URL: https://seldo.com/posts/nobody-pays-for-open-source-we-can-force-them-to/ Comments URL: https://news.ycombinator.com/item?id=49780064 Points: 83 # Comments: 55",
       "published_at": "2026-09-20T21:04:32+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -12014,13 +12056,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "FOSSの支払いは誰もいません。",
-      "summary_ja": "記事のURL: https://seldo.com/posts/nobody-pays-for-open-source-we-can-force-them-to/ コメントのURL: https://news.ycombinator.com/item?id=49780064 ポイント: 63 #コメント: 34"
+      "summary_ja": "記事のURL: https://seldo.com/posts/nobody-pays-for-open-source-we-can-force-them-to/ コメント URL: https://news.ycombinator.com/item?id=49780064 ポイント: 83 # コメント: 55"
     },
     {
       "id": "bcf2f39b76a0ec0a",
       "title": "Frontier Labs Are Selling Garbage to Fools in Washington",
       "url": "https://deadneurons.substack.com/p/frontier-labs-are-selling-garbage",
-      "summary": "Article URL: https://deadneurons.substack.com/p/frontier-labs-are-selling-garbage Comments URL: https://news.ycombinator.com/item?id=49779432 Points: 97 # Comments: 31",
+      "summary": "Article URL: https://deadneurons.substack.com/p/frontier-labs-are-selling-garbage Comments URL: https://news.ycombinator.com/item?id=49779432 Points: 110 # Comments: 37",
       "published_at": "2026-09-20T19:55:36+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -12056,13 +12098,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "フロンティアラボはワシントン州のFoolsにガーベージを販売しています",
-      "summary_ja": "記事のURL: https://deadneurons.substack.com/p/frontier-labs-are-selling-garbage コメントのURL: https://news.ycombinator.com/item?id=49779432 ポイント: 97 # コメント: 31"
+      "summary_ja": "記事のURL: https://deadneurons.substack.com/p/frontier-labs-are-selling-garbage コメントのURL: https://news.ycombinator.com/item?id=49779432 ポイント: 110 # コメント: 37"
     },
     {
       "id": "1ecd301c6a302914",
       "title": "The Hierarchy of Money",
       "url": "https://gregorygundersen.com/blog/2026/09/20/hierarchy-of-money/",
-      "summary": "Article URL: https://gregorygundersen.com/blog/2026/09/20/hierarchy-of-money/ Comments URL: https://news.ycombinator.com/item?id=49779253 Points: 56 # Comments: 16",
+      "summary": "Article URL: https://gregorygundersen.com/blog/2026/09/20/hierarchy-of-money/ Comments URL: https://news.ycombinator.com/item?id=49779253 Points: 62 # Comments: 24",
       "published_at": "2026-09-20T19:37:43+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -12098,13 +12140,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "お金の階層",
-      "summary_ja": "記事のURL: https://gregorygundersen.com/blog/2026/09/20/hierarchy-of-money/ コメントのURL: https://news.ycombinator.com/item?id=49779253 ポイント: 56 # コメント: 16"
+      "summary_ja": "記事のURL: https://gregorygundersen.com/blog/2026/09/20/hierarchy-of-money/ コメントのURL: https://news.ycombinator.com/item?id=49779253 ポイント: 62 # コメント: 24"
     },
     {
       "id": "b3041a9dc3e4b9ef",
       "title": "Software Sandboxing: The Basics (2025)",
       "url": "https://blog.emilua.org/2025/01/12/software-sandboxing-basics/",
-      "summary": "Article URL: https://blog.emilua.org/2025/01/12/software-sandboxing-basics/ Comments URL: https://news.ycombinator.com/item?id=49778670 Points: 52 # Comments: 6",
+      "summary": "Article URL: https://blog.emilua.org/2025/01/12/software-sandboxing-basics/ Comments URL: https://news.ycombinator.com/item?id=49778670 Points: 57 # Comments: 7",
       "published_at": "2026-09-20T18:42:47+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -12125,7 +12167,7 @@
       "signals": {
         "direct_interest": 0.0,
         "related_interest": 0.0,
-        "freshness": 0.999,
+        "freshness": 0.998,
         "source_priority": 0.5
       },
       "recommendation_reason": "latest",
@@ -12140,13 +12182,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "ソフトウェアサンドボックス:基本 (2025)",
-      "summary_ja": "記事のURL: https://blog.emilua.org/2025/01/12/software-sandboxing-basics/ コメントURL:https://news.ycombinator.com/item?id=49778670 ポイント: 52 # 注釈: 6"
+      "summary_ja": "記事のURL: https://blog.emilua.org/2025/01/12/software-sandboxing-basics/ コメントURL:https://news.ycombinator.com/item?id=49778670 ポイント: 57 # 注釈: 7"
     },
     {
       "id": "3038a1a213406625",
       "title": "A Necessary History of the Oddest Letter: W",
       "url": "https://lithub.com/a-necessary-history-of-the-oddest-letter-w/",
-      "summary": "Article URL: https://lithub.com/a-necessary-history-of-the-oddest-letter-w/ Comments URL: https://news.ycombinator.com/item?id=49778195 Points: 78 # Comments: 44",
+      "summary": "Article URL: https://lithub.com/a-necessary-history-of-the-oddest-letter-w/ Comments URL: https://news.ycombinator.com/item?id=49778195 Points: 80 # Comments: 45",
       "published_at": "2026-09-20T17:55:57+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -12182,13 +12224,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "最悪の手紙の必要な歴史:W",
-      "summary_ja": "記事のURL: https://lithub.com/a-necessary-history-of-the-oddest-letter-w/ コメントのURL: https://news.ycombinator.com/item?id=49778195 ポイント: 78 #コメント: 44"
+      "summary_ja": "記事のURL: https://lithub.com/a-necessary-history-of-the-oddest-letter-w/ コメントのURL: https://news.ycombinator.com/item?id=49778195 ポイント: 80 # コメント: 45"
     },
     {
       "id": "1de3ac3a4f811840",
       "title": "Samsung is expected to more than double output of its HBM4 and HBM4E DRAM",
       "url": "https://en.sedaily.com/finance/2026/09/20/samsung-to-double-hbm4-output-next-year-sources-say",
-      "summary": "Article URL: https://en.sedaily.com/finance/2026/09/20/samsung-to-double-hbm4-output-next-year-sources-say Comments URL: https://news.ycombinator.com/item?id=49778029 Points: 273 # Comments: 188",
+      "summary": "Article URL: https://en.sedaily.com/finance/2026/09/20/samsung-to-double-hbm4-output-next-year-sources-say Comments URL: https://news.ycombinator.com/item?id=49778029 Points: 301 # Comments: 193",
       "published_at": "2026-09-20T17:38:50+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -12224,13 +12266,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "サムスンは、そのHBM4とHBM4E DRAMの倍以上の出力を期待",
-      "summary_ja": "記事のURL: https://en.sedaily.com/finance/2026/09/20/samsung-to-double-hbm4-output-next-year-sources-say コメントのURL: https://news.ycombinator.com/item?id=49778029 ポイント: 273 #コメント: 188"
+      "summary_ja": "記事のURL: https://en.sedaily.com/finance/2026/09/20/samsung-to-double-hbm4-output-next-year-sources-say コメントのURL: https://news.ycombinator.com/item?id=49778029 ポイント: 301 #コメント: 193"
     },
     {
       "id": "a9ce62e3f531de56",
       "title": "Trying the Software Factory Pattern",
       "url": "https://lethain.com/software-factory-experiment/",
-      "summary": "Article URL: https://lethain.com/software-factory-experiment/ Comments URL: https://news.ycombinator.com/item?id=49777913 Points: 55 # Comments: 33",
+      "summary": "Article URL: https://lethain.com/software-factory-experiment/ Comments URL: https://news.ycombinator.com/item?id=49777913 Points: 58 # Comments: 33",
       "published_at": "2026-09-20T17:27:11+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -12266,49 +12308,7 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "ソフトウェア工場パターンを試す",
-      "summary_ja": "記事URL: https://lethain.com/software-factory-experiment/ コメントURL: https://news.ycombinator.com/item?id=49777913 ポイント: 55 #コメント: 33"
-    },
-    {
-      "id": "dffe5b069efccc7c",
-      "title": "US Revokes Limits on Power Plants' Climate Pollution",
-      "url": "https://text.hrw.org/news/2026/09/17/us-revokes-limits-on-power-plants-climate-pollution",
-      "summary": "Article URL: https://text.hrw.org/news/2026/09/17/us-revokes-limits-on-power-plants-climate-pollution Comments URL: https://news.ycombinator.com/item?id=49777841 Points: 188 # Comments: 171",
-      "published_at": "2026-09-20T17:19:52+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_kind": "community",
-      "source_category": "other",
-      "genre": "other",
-      "primary_category": "other",
-      "topics": [],
-      "topic_ids": [],
-      "topic_labels": [],
-      "topic_scores": {},
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 0.0,
-        "related_interest": 0.0,
-        "freshness": 0.998,
-        "source_priority": 0.5
-      },
-      "recommendation_reason": "latest",
-      "interest_score": 0.0,
-      "score": 0.0,
-      "score_components": {
-        "topics": 0,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.1,
-      "matched_interests": [],
-      "matched_labels": [],
-      "title_ja": "米国は発電所の気候汚染を制限します",
-      "summary_ja": "記事のURL: https://text.hrw.org/news/2026/09/17/us-revokes-limits-on-power-plants-climate-pollution コメント URL: https://news.ycombinator.com/item?id=49777841 ポイント: 188 # コメント: 171"
+      "summary_ja": "記事のURL: https://lethain.com/software-factory-experiment/ コメントのURL: https://news.ycombinator.com/item?id=49777913 ポイント: 58 #コメント: 33"
     },
     {
       "id": "7dd4d15a2d1e0d90",
@@ -12351,48 +12351,6 @@
       "matched_labels": [],
       "title_ja": "HNを表示する: 半径 - A Meetup.com 代替",
       "summary_ja": "こんにちは! 私はラディウスを再起動します [1] - 元のショーHNの後に遠くまで [2] (私はその日の仕事を非難します). ラディウスは、私の周りに何が起こっていたかわからないと、私の欲求から始まりました。 当初の計画は、大小から小小の「イベントのすべてとすべての種類を表示する」としましたが、当時は、フォーカスをcに絞りました。"
-    },
-    {
-      "id": "4a86517ce0803c62",
-      "title": "Prompts aren’t Real",
-      "url": "https://evaluation.club",
-      "summary": "Article URL: https://evaluation.club Comments URL: https://news.ycombinator.com/item?id=49777111 Points: 94 # Comments: 45",
-      "published_at": "2026-09-20T15:59:25+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_kind": "community",
-      "source_category": "other",
-      "genre": "other",
-      "primary_category": "other",
-      "topics": [],
-      "topic_ids": [],
-      "topic_labels": [],
-      "topic_scores": {},
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 0.0,
-        "related_interest": 0.0,
-        "freshness": 0.998,
-        "source_priority": 0.5
-      },
-      "recommendation_reason": "latest",
-      "interest_score": 0.0,
-      "score": 0.0,
-      "score_components": {
-        "topics": 0,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.1,
-      "matched_interests": [],
-      "matched_labels": [],
-      "title_ja": "プロンプトは現実ではありません",
-      "summary_ja": "記事URL: https://evaluation.club コメント URL: https://news.ycombinator.com/item?id=49777111 ポイント: 94 # コメント: 45"
     },
     {
       "id": "e3bda85863fb8aa9",
@@ -12521,10 +12479,52 @@
       "summary_ja": "福祉に対する感情、好み、権利、またはいかなる権利も持たずに、モデルを扱うべきではありません。 意識は、倫理的、法的、政治システムの土台です。 これらの権利の味を共有する別のエンティティティティを招待するには、証拠によって正当化されず、AIの封入を行い、"
     },
     {
+      "id": "4a86517ce0803c62",
+      "title": "Prompts aren’t Real",
+      "url": "https://evaluation.club",
+      "summary": "Article URL: https://evaluation.club Comments URL: https://news.ycombinator.com/item?id=49777111 Points: 96 # Comments: 45",
+      "published_at": "2026-09-20T15:59:25+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_kind": "community",
+      "source_category": "other",
+      "genre": "other",
+      "primary_category": "other",
+      "topics": [],
+      "topic_ids": [],
+      "topic_labels": [],
+      "topic_scores": {},
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 0.0,
+        "related_interest": 0.0,
+        "freshness": 0.997,
+        "source_priority": 0.5
+      },
+      "recommendation_reason": "latest",
+      "interest_score": 0.0,
+      "score": 0.0,
+      "score_components": {
+        "topics": 0,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.09,
+      "matched_interests": [],
+      "matched_labels": [],
+      "title_ja": "プロンプトは現実ではありません",
+      "summary_ja": "記事URL: https://evaluation.club コメント URL: https://news.ycombinator.com/item?id=49777111 ポイント: 96 # コメント: 45"
+    },
+    {
       "id": "02d7ff13faefe1c3",
       "title": "Custom home server built from spare parts",
       "url": "https://asmat.ca/blog/i-went-bananas/",
-      "summary": "Article URL: https://asmat.ca/blog/i-went-bananas/ Comments URL: https://news.ycombinator.com/item?id=49776960 Points: 48 # Comments: 22",
+      "summary": "Article URL: https://asmat.ca/blog/i-went-bananas/ Comments URL: https://news.ycombinator.com/item?id=49776960 Points: 53 # Comments: 23",
       "published_at": "2026-09-20T15:43:32+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -12560,13 +12560,55 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "予備品から造られる注文の家のサーバー",
-      "summary_ja": "記事のURL: https://asmat.ca/blog/i-went-bananas/ コメント URL: https://news.ycombinator.com/item?id=49776960 ポイント: 48 # コメント: 22"
+      "summary_ja": "記事のURL: https://asmat.ca/blog/i-went-bananas/ コメント URL: https://news.ycombinator.com/item?id=49776960 ポイント: 53 # コメント: 23"
+    },
+    {
+      "id": "195b280128b2ad2b",
+      "title": "What's been going on in w64devkit the past year",
+      "url": "https://nullprogram.com/blog/2026/09/20/",
+      "summary": "Article URL: https://nullprogram.com/blog/2026/09/20/ Comments URL: https://news.ycombinator.com/item?id=49776796 Points: 5 # Comments: 1",
+      "published_at": "2026-09-20T15:25:41+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_kind": "community",
+      "source_category": "other",
+      "genre": "other",
+      "primary_category": "other",
+      "topics": [],
+      "topic_ids": [],
+      "topic_labels": [],
+      "topic_scores": {},
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 0.0,
+        "related_interest": 0.0,
+        "freshness": 0.997,
+        "source_priority": 0.5
+      },
+      "recommendation_reason": "latest",
+      "interest_score": 0.0,
+      "score": 0.0,
+      "score_components": {
+        "topics": 0,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.09,
+      "matched_interests": [],
+      "matched_labels": [],
+      "title_ja": "昨年のw64devkitで何が起こっているのか",
+      "summary_ja": "記事のURL: https://nullprogram.com/blog/2026/09/20/ コメントのURL: https://news.ycombinator.com/item?id=49776796 ポイント: 5 #コメント: 1"
     },
     {
       "id": "f4cb32ae0bb286f6",
       "title": "Singapore’s National Library Board offers micropayments to build reading habits",
       "url": "https://www.gadgetreview.com/singapore-is-paying-people-to-put-down-their-phones-and-read-books",
-      "summary": "Article URL: https://www.gadgetreview.com/singapore-is-paying-people-to-put-down-their-phones-and-read-books Comments URL: https://news.ycombinator.com/item?id=49776717 Points: 160 # Comments: 66",
+      "summary": "Article URL: https://www.gadgetreview.com/singapore-is-paying-people-to-put-down-their-phones-and-read-books Comments URL: https://news.ycombinator.com/item?id=49776717 Points: 166 # Comments: 66",
       "published_at": "2026-09-20T15:18:05+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -12602,49 +12644,7 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "シンガポールのナショナル・ライブラリー・ボードは、読書習慣を作るためのマイクロペイメントを提供しています",
-      "summary_ja": "記事のURL: https://www.gadgetreview.com/singapore-is-paying-people-to-put-down-their-phones-and-read-book 注釈 URL: https://news.ycombinator.com/item?id=49776717 ポイント: 160 # 注釈: 66"
-    },
-    {
-      "id": "8d96dd1e98bf6212",
-      "title": "Pirate Face Rescues LLM Models from Deletion",
-      "url": "https://pirateface.co/",
-      "summary": "Article URL: https://pirateface.co/ Comments URL: https://news.ycombinator.com/item?id=49776699 Points: 390 # Comments: 122",
-      "published_at": "2026-09-20T15:16:07+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_kind": "community",
-      "source_category": "other",
-      "genre": "other",
-      "primary_category": "other",
-      "topics": [],
-      "topic_ids": [],
-      "topic_labels": [],
-      "topic_scores": {},
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 0.0,
-        "related_interest": 0.0,
-        "freshness": 0.997,
-        "source_priority": 0.5
-      },
-      "recommendation_reason": "latest",
-      "interest_score": 0.0,
-      "score": 0.0,
-      "score_components": {
-        "topics": 0,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.09,
-      "matched_interests": [],
-      "matched_labels": [],
-      "title_ja": "海賊の顔の救助LM Deletion からのモデル",
-      "summary_ja": "記事URL: https://pirateface.co/ コメント URL: https://news.ycombinator.com/item?id=49776699 ポイント: 390 # コメント: 122"
+      "summary_ja": "記事のURL: https://www.gadgetreview.com/singapore-is-paying-people-to-put-down-their-phones-and-read-book 注釈 URL: https://news.ycombinator.com/item?id=49776717 ポイント: 166 # コメント: 66"
     },
     {
       "id": "f39e416c29364522",
@@ -12869,7 +12869,7 @@
       "signals": {
         "direct_interest": 0.0,
         "related_interest": 0.0,
-        "freshness": 0.932,
+        "freshness": 0.931,
         "source_priority": 0.85
       },
       "recommendation_reason": "latest",
@@ -12988,7 +12988,7 @@
       "signals": {
         "direct_interest": 2.65,
         "related_interest": 0.0,
-        "freshness": 0.003,
+        "freshness": 0.002,
         "source_priority": 0.62,
         "active_discovery": 0.234
       },
@@ -13374,7 +13374,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.373,
+        "freshness": 0.372,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -13508,7 +13508,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 1.07,
+      "rank_score": 1.06,
       "matched_interests": [
         "apple_ecosystem"
       ],
@@ -13765,9 +13765,9 @@
     "engine": "argos-translate",
     "source_language": "en",
     "target_language": "ja",
-    "generated_at": "2026-09-20T23:01:12.432343+00:00",
-    "translated_fields": 60,
-    "reused_fields": 316,
+    "generated_at": "2026-09-20T23:21:18.027725+00:00",
+    "translated_fields": 31,
+    "reused_fields": 345,
     "native_japanese_fields": 78,
     "failed_fields": 0
   }
