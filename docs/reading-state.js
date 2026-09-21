@@ -4,8 +4,8 @@
   const BRANCH = "main";
   const STATE_PATH = "app-state/my-internet-place/reading-state.json";
   const TOKEN_KEY = "zen-note-github-token";
-  const PENDING_KEY = "my-internet-place-reading-state-pending-v1";
-  const ALLOWED_STATUSES = new Set(["read", "skip", "keep"]);
+  const PENDING_KEY = "my-internet-place-reading-state-pending-v2";
+  const LEGACY_PENDING_KEY = "my-internet-place-reading-state-pending-v1";
   const MAX_RETRIES = 3;
   const SYNC_DELAY_MS = 1500;
   const RETRY_DELAY_MS = 15000;
@@ -55,44 +55,105 @@
     return btoa(binary);
   }
 
+  function normalizeArticleState(value) {
+    const raw = value && typeof value === "object" ? value : {};
+    const legacyStatus = typeof raw.status === "string" ? raw.status : null;
+    return {
+      read: typeof raw.read === "boolean" ? raw.read : legacyStatus === "read",
+      kept: typeof raw.kept === "boolean" ? raw.kept : legacyStatus === "keep",
+      skipped: typeof raw.skipped === "boolean" ? raw.skipped : legacyStatus === "skip",
+      note: typeof raw.note === "string" ? raw.note : "",
+      updated_at: raw.updated_at || null,
+    };
+  }
+
+  function isEmptyState(state) {
+    return !state.read && !state.kept && !state.skipped && !state.note;
+  }
+
   function emptyDocument() {
-    return { version: 1, updated_at: null, articles: {} };
+    return { version: 2, updated_at: null, articles: {} };
   }
 
   function normalizeDocument(value) {
     const document = value && typeof value === "object" ? value : emptyDocument();
-    const articles = document.articles && typeof document.articles === "object"
+    const sourceArticles = document.articles && typeof document.articles === "object"
       ? document.articles
       : {};
+    const articles = {};
+    for (const [articleId, rawState] of Object.entries(sourceArticles)) {
+      const state = normalizeArticleState(rawState);
+      if (!isEmptyState(state)) articles[String(articleId)] = state;
+    }
     return {
-      version: 1,
+      version: 2,
       updated_at: document.updated_at || null,
       articles,
     };
   }
 
   function emptyPendingDocument() {
-    return { version: 1, mutations: {} };
+    return { version: 2, mutations: {} };
+  }
+
+  function migrateLegacyPending() {
+    try {
+      const raw = localStorage.getItem(LEGACY_PENDING_KEY);
+      if (!raw) return null;
+      const parsed = JSON.parse(raw);
+      const mutations = {};
+      for (const [articleId, mutation] of Object.entries(parsed?.mutations || {})) {
+        if (mutation?.status === null) {
+          mutations[String(articleId)] = {
+            state: null,
+            updated_at: mutation?.updated_at || new Date().toISOString(),
+          };
+          continue;
+        }
+        const state = normalizeArticleState({
+          status: mutation?.status,
+          updated_at: mutation?.updated_at,
+        });
+        mutations[String(articleId)] = {
+          state,
+          updated_at: state.updated_at || new Date().toISOString(),
+        };
+      }
+      localStorage.removeItem(LEGACY_PENDING_KEY);
+      return { version: 2, mutations };
+    } catch (error) {
+      console.warn("legacy reading-state pending buffer could not be migrated", error);
+      return null;
+    }
   }
 
   function loadPendingDocument() {
     try {
-      const raw = localStorage.getItem(PENDING_KEY);
-      if (!raw) return emptyPendingDocument();
-      const parsed = JSON.parse(raw);
-      const mutations = parsed?.mutations && typeof parsed.mutations === "object"
-        ? parsed.mutations
-        : {};
-      const normalized = {};
-      for (const [articleId, mutation] of Object.entries(mutations)) {
-        const status = mutation?.status ?? null;
-        if (status !== null && !ALLOWED_STATUSES.has(status)) continue;
-        normalized[String(articleId)] = {
-          status,
-          updated_at: mutation?.updated_at || new Date().toISOString(),
-        };
+      let raw = localStorage.getItem(PENDING_KEY);
+      if (!raw) {
+        const migrated = migrateLegacyPending();
+        if (migrated && Object.keys(migrated.mutations).length) {
+          localStorage.setItem(PENDING_KEY, JSON.stringify(migrated));
+          return migrated;
+        }
+        return emptyPendingDocument();
       }
-      return { version: 1, mutations: normalized };
+      const parsed = JSON.parse(raw);
+      const normalized = {};
+      for (const [articleId, mutation] of Object.entries(parsed?.mutations || {})) {
+        if (mutation?.state === null) {
+          normalized[String(articleId)] = {
+            state: null,
+            updated_at: mutation?.updated_at || new Date().toISOString(),
+          };
+          continue;
+        }
+        const state = normalizeArticleState(mutation?.state || mutation);
+        const updatedAt = mutation?.updated_at || state.updated_at || new Date().toISOString();
+        state.updated_at = updatedAt;
+        normalized[String(articleId)] = { state, updated_at: updatedAt };
+      }
+      return { version: 2, mutations: normalized };
     } catch (error) {
       console.warn("reading-state pending buffer was invalid and has been reset", error);
       return emptyPendingDocument();
@@ -105,7 +166,7 @@
       localStorage.removeItem(PENDING_KEY);
       return;
     }
-    localStorage.setItem(PENDING_KEY, JSON.stringify({ version: 1, mutations }));
+    localStorage.setItem(PENDING_KEY, JSON.stringify({ version: 2, mutations }));
   }
 
   function pendingCount() {
@@ -175,27 +236,22 @@
 
   function mapFromDocument(document) {
     return new Map(
-      Object.entries(document.articles || {}).map(([articleId, state]) => [
-        String(articleId),
-        {
-          article_id: String(articleId),
-          status: state?.status || null,
-          updated_at: state?.updated_at || null,
-        },
-      ])
+      Object.entries(document.articles || {}).map(([articleId, rawState]) => {
+        const state = normalizeArticleState(rawState);
+        return [String(articleId), { article_id: String(articleId), ...state }];
+      })
     );
   }
 
   function applyPendingToMap(states, pendingDocument = loadPendingDocument()) {
     const merged = new Map(states);
     for (const [articleId, mutation] of Object.entries(pendingDocument.mutations || {})) {
-      if (mutation.status === null) {
+      if (mutation.state === null) {
         merged.delete(String(articleId));
       } else {
         merged.set(String(articleId), {
           article_id: String(articleId),
-          status: mutation.status,
-          updated_at: mutation.updated_at,
+          ...normalizeArticleState(mutation.state),
           pending: true,
         });
       }
@@ -211,27 +267,34 @@
     return merged;
   }
 
-  function queueMutation(articleId, status) {
+  function queueMutation(articleId, state) {
     const id = String(articleId);
-    if (status !== null && !ALLOWED_STATUSES.has(status)) {
-      throw new Error(`invalid reading state: ${status}`);
-    }
-
     const pending = loadPendingDocument();
     const updatedAt = new Date().toISOString();
-    pending.mutations[id] = { status, updated_at: updatedAt };
+
+    if (state === null || isEmptyState(normalizeArticleState(state))) {
+      pending.mutations[id] = { state: null, updated_at: updatedAt };
+    } else {
+      const normalized = normalizeArticleState(state);
+      normalized.updated_at = updatedAt;
+      pending.mutations[id] = { state: normalized, updated_at: updatedAt };
+    }
+
     savePendingDocument(pending);
-    emit("queued", { article_id: id, status });
+    emit("queued", { article_id: id, state });
     scheduleFlush();
 
-    return status === null
-      ? null
-      : { article_id: id, status, updated_at: updatedAt, pending: true };
+    if (state === null) return null;
+    return {
+      article_id: id,
+      ...normalizeArticleState({ ...state, updated_at: updatedAt }),
+      pending: true,
+    };
   }
 
   function sameMutation(a, b) {
     return Boolean(a && b)
-      && (a.status ?? null) === (b.status ?? null)
+      && JSON.stringify(a.state ?? null) === JSON.stringify(b.state ?? null)
       && a.updated_at === b.updated_at;
   }
 
@@ -239,15 +302,16 @@
     const mutationTimes = [];
     for (const [articleId, mutation] of Object.entries(snapshot)) {
       mutationTimes.push(mutation.updated_at);
-      if (mutation.status === null) {
+      if (mutation.state === null) {
         delete document.articles[articleId];
       } else {
-        document.articles[articleId] = {
-          status: mutation.status,
+        document.articles[articleId] = normalizeArticleState({
+          ...mutation.state,
           updated_at: mutation.updated_at,
-        };
+        });
       }
     }
+    document.version = 2;
     document.updated_at = mutationTimes.sort().at(-1) || new Date().toISOString();
     return document;
   }
@@ -316,8 +380,19 @@
     }, delay);
   }
 
+  function setState(articleId, state) {
+    return queueMutation(articleId, state);
+  }
+
   function set(articleId, status) {
-    return queueMutation(articleId, status);
+    const legacy = status === "read"
+      ? { read: true, kept: false, skipped: false, note: "" }
+      : status === "keep"
+        ? { read: false, kept: true, skipped: false, note: "" }
+        : status === "skip"
+          ? { read: false, kept: false, skipped: true, note: "" }
+          : null;
+    return queueMutation(articleId, legacy);
   }
 
   function clear(articleId) {
@@ -345,6 +420,7 @@
   window.ReadingState = {
     configured,
     load,
+    setState,
     set,
     clear,
     flush,
