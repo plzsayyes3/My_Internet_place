@@ -60,15 +60,95 @@ h1 {
   border-color: #22231f;
   color: white;
 }
-.deck { position: relative; }
+.deck {
+  position: relative;
+  padding: 4px 3px 14px;
+}
+.deck::before,
+.deck::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  border: 1px solid #d7d1c5;
+  border-radius: 24px;
+  background: rgba(255,255,255,.34);
+}
+.deck::before {
+  inset: 13px 13px 0;
+  transform: translateY(10px) scale(.975);
+  opacity: .62;
+  z-index: 0;
+}
+.deck::after {
+  inset: 7px 7px 0;
+  transform: translateY(5px) scale(.988);
+  opacity: .82;
+  z-index: 1;
+}
 .card {
-  touch-action: pan-y;
+  position: relative;
+  z-index: 2;
+  touch-action: none;
   background: rgba(255,255,255,.58);
   border: 1px solid #d7d1c5;
   border-radius: 24px;
   overflow: hidden;
   box-shadow: 0 12px 35px rgba(40,35,25,.06);
-  transition: transform .2s ease, opacity .2s ease;
+  transition: transform .22s cubic-bezier(.2,.8,.2,1), opacity .2s ease, box-shadow .18s ease;
+  cursor: grab;
+  will-change: transform;
+}
+.card.is-dragging {
+  transition: none;
+  cursor: grabbing;
+  user-select: none;
+  box-shadow: 0 18px 44px rgba(40,35,25,.14);
+}
+.swipe-cue {
+  position: absolute;
+  z-index: 8;
+  pointer-events: none;
+  opacity: 0;
+  border: 2px solid #262722;
+  border-radius: 12px;
+  background: rgba(245,243,238,.92);
+  padding: 9px 12px 8px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .05em;
+  line-height: 1.05;
+  backdrop-filter: blur(8px);
+  transition: opacity .06s linear, transform .08s linear, background .08s linear, color .08s linear;
+}
+.swipe-cue small {
+  display: block;
+  margin-top: 5px;
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: .08em;
+  opacity: .65;
+}
+.swipe-cue.is-ready {
+  color: #fff;
+  background: #262722;
+}
+.swipe-cue-left {
+  top: 24px;
+  left: 18px;
+  transform: rotate(-8deg) scale(.92);
+}
+.swipe-cue-right {
+  top: 24px;
+  right: 18px;
+  transform: rotate(8deg) scale(.92);
+}
+.swipe-cue-up {
+  top: 22px;
+  left: 50%;
+  transform: translateX(-50%) scale(.92);
+}
+.card.is-dragging .swipe-cue {
+  transform-origin: center;
 }
 .card-image {
   width: 100%;
@@ -293,6 +373,9 @@ function render() {
 
   deck.innerHTML = `
     <article class="card" id="card">
+      <div class="swipe-cue swipe-cue-left" data-cue="skip">興味なし<small>離すと確定</small></div>
+      <div class="swipe-cue swipe-cue-up" data-cue="read">見出しで十分<small>離すと確定</small></div>
+      <div class="swipe-cue swipe-cue-right" data-cue="keep">あとで読む<small>離すと確定</small></div>
       <img class="card-image" src="${item.image}" alt="">
       <div class="card-body">
         <div class="topline">
@@ -352,6 +435,11 @@ function bindCard(item) {
   const card = document.querySelector("#card");
   const memo = document.querySelector("#memo");
   const saved = document.querySelector("#saved");
+  const cues = {
+    skip: card.querySelector('[data-cue="skip"]'),
+    read: card.querySelector('[data-cue="read"]'),
+    keep: card.querySelector('[data-cue="keep"]')
+  };
   let saveTimer;
 
   memo.addEventListener("input", () => {
@@ -369,38 +457,108 @@ function bindCard(item) {
     button.addEventListener("click", () => decide(button.dataset.action));
   });
 
+  const HORIZONTAL_THRESHOLD = 112;
+  const UP_THRESHOLD = 96;
   let startX = 0;
   let startY = 0;
   let active = false;
+  let pointerId = null;
+  let currentAction = null;
+  let ready = false;
+
+  function resetCues() {
+    Object.values(cues).forEach(cue => {
+      cue.style.opacity = "0";
+      cue.classList.remove("is-ready");
+    });
+  }
+
+  function setCue(action, progress, isReady) {
+    resetCues();
+    if (!action) return;
+    const cue = cues[action];
+    cue.style.opacity = String(Math.min(.98, .18 + progress * .82));
+    cue.classList.toggle("is-ready", isReady);
+  }
+
+  function snapBack() {
+    card.classList.remove("is-dragging");
+    card.style.transform = "";
+    card.style.opacity = "";
+    resetCues();
+    currentAction = null;
+    ready = false;
+  }
 
   card.addEventListener("pointerdown", event => {
     if (event.target.closest("textarea, a, button")) return;
     startX = event.clientX;
     startY = event.clientY;
     active = true;
+    pointerId = event.pointerId;
+    currentAction = null;
+    ready = false;
+    card.classList.add("is-dragging");
+    card.setPointerCapture?.(event.pointerId);
   });
 
-  card.addEventListener("pointerup", event => {
-    if (!active) return;
-    active = false;
+  card.addEventListener("pointermove", event => {
+    if (!active || event.pointerId !== pointerId) return;
 
     const dx = event.clientX - startX;
     const dy = event.clientY - startY;
-    const horizontal = Math.abs(dx) > Math.abs(dy);
+    const ax = Math.abs(dx);
+    const ay = Math.abs(dy);
 
-    if (horizontal && dx < -70) {
-      decide("skip");
-    } else if (horizontal && dx > 70) {
-      decide("keep");
-    } else if (!horizontal && dy < -70) {
-      decide("read");
+    let action = null;
+    let progress = 0;
+    let isReady = false;
+
+    if (ax > ay * 1.12 && ax > 12) {
+      action = dx < 0 ? "skip" : "keep";
+      progress = Math.min(1, ax / HORIZONTAL_THRESHOLD);
+      isReady = ax >= HORIZONTAL_THRESHOLD;
+      card.style.transform = `translate3d(${dx}px, ${dy * .14}px, 0) rotate(${dx * .025}deg)`;
+    } else if (dy < -12 && ay > ax * .82) {
+      action = "read";
+      progress = Math.min(1, ay / UP_THRESHOLD);
+      isReady = ay >= UP_THRESHOLD;
+      card.style.transform = `translate3d(${dx * .12}px, ${dy}px, 0) rotate(${dx * .012}deg)`;
+    } else {
+      card.style.transform = `translate3d(${dx * .18}px, ${Math.min(14, Math.max(-14, dy * .18))}px, 0)`;
     }
+
+    currentAction = action;
+    ready = isReady;
+    setCue(action, progress, isReady);
+  });
+
+  card.addEventListener("pointerup", event => {
+    if (!active || event.pointerId !== pointerId) return;
+    active = false;
+    card.releasePointerCapture?.(event.pointerId);
+
+    if (currentAction && ready) {
+      card.classList.remove("is-dragging");
+      decide(currentAction);
+    } else {
+      snapBack();
+    }
+  });
+
+  card.addEventListener("pointercancel", () => {
+    active = false;
+    snapBack();
   });
 }
 
 function decide(action) {
   const card = document.querySelector("#card");
   if (!card) return;
+
+  card.classList.remove("is-dragging");
+  card.style.transform = "";
+  card.style.opacity = "";
 
   if (action === "skip") card.classList.add("fly-left");
   if (action === "keep") card.classList.add("fly-right");
