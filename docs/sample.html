@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>My Internet Place — Deck Sample</title>
+<style>
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #20211e;
+  background: #f5f3ee;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #f5f3ee;
+}
+.app {
+  width: min(720px, calc(100vw - 24px));
+  margin: 0 auto;
+  padding: 22px 0 40px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+.eyebrow {
+  margin: 0 0 5px;
+  font-size: 11px;
+  letter-spacing: .14em;
+}
+h1 {
+  margin: 0;
+  font-size: clamp(24px, 7vw, 38px);
+  line-height: 1;
+}
+.progress {
+  color: #77736a;
+  font-size: 12px;
+  white-space: nowrap;
+}
+.modebar {
+  display: flex;
+  gap: 7px;
+  margin-bottom: 15px;
+}
+.mode {
+  border: 1px solid #c8c3b7;
+  border-radius: 999px;
+  background: transparent;
+  padding: 7px 12px;
+  font-size: 11px;
+}
+.mode.active {
+  background: #22231f;
+  border-color: #22231f;
+  color: white;
+}
+.deck { position: relative; }
+.card {
+  touch-action: pan-y;
+  background: rgba(255,255,255,.58);
+  border: 1px solid #d7d1c5;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(40,35,25,.06);
+  transition: transform .2s ease, opacity .2s ease;
+}
+.card-image {
+  width: 100%;
+  aspect-ratio: 16 / 8;
+  object-fit: cover;
+  background: #e7e3d9;
+}
+.card-body { padding: 20px; }
+.topline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.source {
+  font-size: 11px;
+  letter-spacing: .08em;
+  color: #66645d;
+}
+.signal {
+  border: 1px solid #c7c2b6;
+  border-radius: 999px;
+  padding: 4px 8px;
+  font-size: 10px;
+  letter-spacing: .07em;
+}
+.signal.widen { border-style: dashed; }
+.signal.note { background: #eae6db; }
+.title {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  font-size: clamp(25px, 6vw, 36px);
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 13px;
+}
+.summary {
+  margin: 0;
+  color: #56544e;
+  line-height: 1.75;
+  font-size: 14px;
+}
+.tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+.tag {
+  background: #ebe7dd;
+  border-radius: 999px;
+  padding: 5px 9px;
+  font-size: 11px;
+}
+.reason {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #ddd8cd;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.reason strong {
+  display: block;
+  font-size: 10px;
+  letter-spacing: .1em;
+  margin-bottom: 3px;
+}
+.memo { margin-top: 18px; }
+.memo-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7px;
+  font-size: 11px;
+  color: #6c6961;
+}
+textarea {
+  width: 100%;
+  resize: vertical;
+  min-height: 76px;
+  border: 1px solid #ccc6ba;
+  border-radius: 14px;
+  padding: 12px;
+  background: rgba(255,255,255,.5);
+  font: inherit;
+  line-height: 1.5;
+}
+.actions {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr 1fr;
+  gap: 8px;
+  margin-top: 12px;
+}
+.action {
+  min-height: 56px;
+  border-radius: 15px;
+  border: 1px solid #c9c3b7;
+  background: rgba(255,255,255,.4);
+  font: inherit;
+  cursor: pointer;
+}
+.action small {
+  display: block;
+  margin-top: 3px;
+  font-size: 9px;
+  color: #7a776f;
+}
+.action.read {
+  background: #252621;
+  border-color: #252621;
+  color: white;
+}
+.action.read small { color: #ccc9bf; }
+.hint {
+  text-align: center;
+  margin: 13px 0 0;
+  color: #918d83;
+  font-size: 10px;
+}
+.card.fly-left {
+  transform: translateX(-110%) rotate(-7deg);
+  opacity: 0;
+}
+.card.fly-right {
+  transform: translateX(110%) rotate(7deg);
+  opacity: 0;
+}
+.card.fly-up {
+  transform: translateY(-80%) scale(.95);
+  opacity: 0;
+}
+.done {
+  padding: 80px 20px;
+  text-align: center;
+  color: #66645d;
+}
+@media (min-width: 700px) {
+  .app { padding-top: 45px; }
+  .card-body { padding: 26px; }
+}
+</style>
+</head>
+<body>
+<main class="app">
+  <header class="header">
+    <div>
+      <p class="eyebrow">MY INTERNET PLACE</p>
+      <h1>FOR YOU</h1>
+    </div>
+    <div class="progress" id="progress"></div>
+  </header>
+
+  <div class="modebar">
+    <button class="mode active" type="button">DECK</button>
+    <button class="mode" type="button">LATEST</button>
+    <button class="mode" type="button">KEEP</button>
+  </div>
+
+  <section class="deck" id="deck"></section>
+</main>
+
+<script>
+const items = [
+  {
+    id: "keyboard-weekly",
+    source: "自作キーボード温泉街週報",
+    signal: "FOLLOWING",
+    signalClass: "",
+    title: "今週の自作キーボード界隈をまとめて見る",
+    summary: "自作キーボード、薄型スイッチ、小型入力デバイスなど、最近の動きをまとめた記事。",
+    tags: ["自作キーボード", "入力デバイス"],
+    reason: "継続して強く関心を持っている入力デバイス領域から。",
+    image: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=1200&q=70",
+    url: "https://salicylic-weekly.hatenablog.jp/"
+  },
+  {
+    id: "thinking-note",
+    source: "AI PICK",
+    signal: "WIDEN",
+    signalClass: "widen",
+    title: "書きながら考えることは、なぜ思考を深くするのか",
+    summary: "読む、考える、書くという行為の関係を扱った記事。効率ではなく、考える時間そのものに注目する。",
+    tags: ["思考", "ノート", "Writing"],
+    reason: "デバイス系に偏りやすいため、最近薄くなりがちな『考える・書く』領域から意図的に選択。",
+    image: "https://images.unsplash.com/photo-1456324504439-367cee3b3c32?auto=format&fit=crop&w=1200&q=70",
+    url: "#"
+  },
+  {
+    id: "food-question",
+    source: "PERSONAL RESEARCH",
+    signal: "FROM NOTE",
+    signalClass: "note",
+    title: "なぜ人は満腹でも食べ続けてしまうことがあるのか",
+    summary: "空腹だけでは説明できない食行動について、習慣・報酬・ストレスなど複数の要因から整理する。",
+    tags: ["生活", "心理", "Research"],
+    reason: "Daily Note に残した『食べすぎるという行為は、どうして起きるのか』という問いから。",
+    image: "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=70",
+    url: "#"
+  }
+];
+
+let index = 0;
+const savedNotes = JSON.parse(localStorage.getItem("mip-sample-notes") || "{}");
+const deck = document.querySelector("#deck");
+const progress = document.querySelector("#progress");
+
+function render() {
+  progress.textContent = index < items.length ? `${index + 1} / ${items.length}` : "";
+
+  if (index >= items.length) {
+    deck.innerHTML = `
+      <div class="done">
+        <h2>ひと通り見ました。</h2>
+        <p>KEEPした記事や、残したメモから次の探索につなげる。</p>
+      </div>
+    `;
+    return;
+  }
+
+  const item = items[index];
+
+  deck.innerHTML = `
+    <article class="card" id="card">
+      <img class="card-image" src="${item.image}" alt="">
+      <div class="card-body">
+        <div class="topline">
+          <span class="source">${item.source}</span>
+          <span class="signal ${item.signalClass}">${item.signal}</span>
+        </div>
+
+        <a class="title" href="${item.url}" target="_blank" rel="noopener noreferrer">
+          ${item.title}
+        </a>
+
+        <p class="summary">${item.summary}</p>
+
+        <div class="tags">
+          ${item.tags.map(tag => `<span class="tag">${tag}</span>`).join("")}
+        </div>
+
+        <div class="reason">
+          <strong>WHY THIS?</strong>
+          ${item.reason}
+        </div>
+
+        <div class="memo">
+          <div class="memo-label">
+            <span>この記事を見て思ったこと</span>
+            <span id="saved">AUTO SAVE</span>
+          </div>
+          <textarea id="memo" placeholder="気になったこと、連想したこと、あとで調べたいこと…">${savedNotes[item.id] || ""}</textarea>
+        </div>
+
+        <div class="actions">
+          <button class="action skip" data-action="skip" type="button">
+            興味なし
+            <small>← SWIPE</small>
+          </button>
+
+          <button class="action read" data-action="read" type="button">
+            見出しで十分
+            <small>↑ SWIPE</small>
+          </button>
+
+          <button class="action keep" data-action="keep" type="button">
+            あとで読む
+            <small>SWIPE →</small>
+          </button>
+        </div>
+
+        <p class="hint">左：興味なし ／ 上：ここまで ／ 右：あとで読む</p>
+      </div>
+    </article>
+  `;
+
+  bindCard(item);
+}
+
+function bindCard(item) {
+  const card = document.querySelector("#card");
+  const memo = document.querySelector("#memo");
+  const saved = document.querySelector("#saved");
+  let saveTimer;
+
+  memo.addEventListener("input", () => {
+    saved.textContent = "SAVING…";
+    clearTimeout(saveTimer);
+
+    saveTimer = setTimeout(() => {
+      savedNotes[item.id] = memo.value;
+      localStorage.setItem("mip-sample-notes", JSON.stringify(savedNotes));
+      saved.textContent = "SAVED";
+    }, 300);
+  });
+
+  document.querySelectorAll("[data-action]").forEach(button => {
+    button.addEventListener("click", () => decide(button.dataset.action));
+  });
+
+  let startX = 0;
+  let startY = 0;
+  let active = false;
+
+  card.addEventListener("pointerdown", event => {
+    if (event.target.closest("textarea, a, button")) return;
+    startX = event.clientX;
+    startY = event.clientY;
+    active = true;
+  });
+
+  card.addEventListener("pointerup", event => {
+    if (!active) return;
+    active = false;
+
+    const dx = event.clientX - startX;
+    const dy = event.clientY - startY;
+    const horizontal = Math.abs(dx) > Math.abs(dy);
+
+    if (horizontal && dx < -70) {
+      decide("skip");
+    } else if (horizontal && dx > 70) {
+      decide("keep");
+    } else if (!horizontal && dy < -70) {
+      decide("read");
+    }
+  });
+}
+
+function decide(action) {
+  const card = document.querySelector("#card");
+  if (!card) return;
+
+  if (action === "skip") card.classList.add("fly-left");
+  if (action === "keep") card.classList.add("fly-right");
+  if (action === "read") card.classList.add("fly-up");
+
+  setTimeout(() => {
+    index += 1;
+    render();
+  }, 210);
+}
+
+render();
+</script>
+</body>
+</html>
