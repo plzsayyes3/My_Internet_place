@@ -237,6 +237,45 @@ textarea {
   font: inherit;
   line-height: 1.5;
 }
+.read-now {
+  width: 100%;
+  margin-top: 12px;
+  min-height: 52px;
+  border: 1px solid #262722;
+  border-radius: 15px;
+  background: #f5f3ee;
+  color: #20211e;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+.read-now small {
+  display: block;
+  margin-top: 3px;
+  font-size: 9px;
+  font-weight: 500;
+  color: #77736a;
+}
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 22px;
+  z-index: 20;
+  transform: translate(-50%, 14px);
+  opacity: 0;
+  pointer-events: none;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: #252621;
+  color: #fff;
+  font-size: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.16);
+  transition: opacity .18s ease, transform .18s ease;
+}
+.toast.is-visible {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
 .actions {
   display: grid;
   grid-template-columns: 1fr 1.15fr 1fr;
@@ -310,6 +349,7 @@ textarea {
 
   <section class="deck" id="deck"></section>
 </main>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script>
 const items = [
@@ -353,8 +393,28 @@ const items = [
 
 let index = 0;
 const savedNotes = JSON.parse(localStorage.getItem("mip-sample-notes") || "{}");
+const savedStates = JSON.parse(localStorage.getItem("mip-sample-states") || "{}");
 const deck = document.querySelector("#deck");
 const progress = document.querySelector("#progress");
+const toast = document.querySelector("#toast");
+let toastTimer;
+
+function showToast(message) {
+  toast.textContent = message;
+  toast.classList.add("is-visible");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => toast.classList.remove("is-visible"), 1600);
+}
+
+function saveSampleState(item, patch) {
+  const previous = savedStates[item.id] || {};
+  savedStates[item.id] = {
+    ...previous,
+    ...patch,
+    updated_at: new Date().toISOString()
+  };
+  localStorage.setItem("mip-sample-states", JSON.stringify(savedStates));
+}
 
 function render() {
   progress.textContent = index < items.length ? `${index + 1} / ${items.length}` : "";
@@ -406,6 +466,11 @@ function render() {
           <textarea id="memo" placeholder="気になったこと、連想したこと、あとで調べたいこと…">${savedNotes[item.id] || ""}</textarea>
         </div>
 
+        <button class="read-now" id="read-now" type="button">
+          そのまま読む
+          <small>記事を開く ＋ あとで読むに残す ＋ 既読</small>
+        </button>
+
         <div class="actions">
           <button class="action skip" data-action="skip" type="button">
             興味なし
@@ -455,6 +520,23 @@ function bindCard(item) {
 
   document.querySelectorAll("[data-action]").forEach(button => {
     button.addEventListener("click", () => decide(button.dataset.action));
+  });
+
+  const readNow = document.querySelector("#read-now");
+  readNow.addEventListener("click", () => {
+    saveSampleState(item, {
+      kept: true,
+      read: true,
+      decision: "read_now"
+    });
+
+    showToast("あとで読むに保存し、既読にしました");
+
+    if (item.url && item.url !== "#") {
+      window.open(item.url, "_blank", "noopener,noreferrer");
+    }
+
+    setTimeout(() => decide("read-now"), 260);
   });
 
   const HORIZONTAL_THRESHOLD = 112;
@@ -555,6 +637,15 @@ function bindCard(item) {
 function decide(action) {
   const card = document.querySelector("#card");
   if (!card) return;
+  const item = items[index];
+
+  if (action === "skip") {
+    saveSampleState(item, { kept: false, read: false, decision: "skip" });
+  } else if (action === "read") {
+    saveSampleState(item, { kept: false, read: true, decision: "headline_enough" });
+  } else if (action === "keep") {
+    saveSampleState(item, { kept: true, read: false, decision: "keep" });
+  }
 
   card.classList.remove("is-dragging");
   card.style.transform = "";
@@ -562,7 +653,7 @@ function decide(action) {
 
   if (action === "skip") card.classList.add("fly-left");
   if (action === "keep") card.classList.add("fly-right");
-  if (action === "read") card.classList.add("fly-up");
+  if (action === "read" || action === "read-now") card.classList.add("fly-up");
 
   setTimeout(() => {
     index += 1;
