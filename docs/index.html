@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="最近の自分が気になるインターネットを、公開フィードから集める個人用記事レーダー。" />
+  <meta name="description" content="最近の自分が気になるインターネットを、読み、選び、考えを残す個人用記事レーダー。" />
   <title>My Internet Place</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -11,8 +11,8 @@
   <header class="site-header">
     <div>
       <p class="eyebrow">MY INTERNET PLACE</p>
-      <h1>最近の自分が気になるインターネット</h1>
-      <p class="lead">ニュース、記事、ブログ、ツール、リリースをひとつの流れに。</p>
+      <h1>FOR YOU</h1>
+      <p class="lead">見る、選ぶ、残す。自分のためのインターネット。</p>
     </div>
     <div class="meta-block">
       <div class="meta" id="generated">loading…</div>
@@ -22,20 +22,89 @@
     </div>
   </header>
 
-  <nav class="filters" id="filters" aria-label="記事フィルター">
-    <button class="filter is-active" data-view="for-you">FOR YOU</button>
-    <button class="filter" data-view="latest">LATEST</button>
+  <nav class="primary-nav" id="primary-nav" aria-label="表示切替">
+    <button class="nav-button is-active" data-view="deck" type="button">DECK</button>
+    <button class="nav-button" data-view="latest" type="button">LATEST</button>
+    <button class="nav-button" data-view="keep" type="button">KEEP</button>
   </nav>
+
+  <nav class="filters category-filters" id="filters" aria-label="ジャンルフィルター" hidden></nav>
   <nav class="filters topic-filters" id="topic-filters" aria-label="詳細ジャンルフィルター" hidden></nav>
 
   <main>
-    <section class="feed" id="feed" aria-live="polite"></section>
+    <section class="deck-view" id="deck-view" aria-live="polite">
+      <div class="deck-head">
+        <span id="deck-progress"></span>
+        <span>SWIPE TO SORT</span>
+      </div>
+      <div class="deck" id="deck"></div>
+    </section>
+
+    <section class="feed" id="feed" aria-live="polite" hidden></section>
     <p class="empty" id="empty" hidden>まだ記事がありません。</p>
   </main>
 
-  <template id="card-template">
-    <article class="card">
-      <div class="card-topline">
+  <template id="deck-template">
+    <article class="deck-card">
+      <div class="swipe-cue swipe-cue-left" data-cue="skip">興味なし<small>離すと確定</small></div>
+      <div class="swipe-cue swipe-cue-up" data-cue="read">見出しで十分<small>離すと確定</small></div>
+      <div class="swipe-cue swipe-cue-right" data-cue="keep">あとで読む<small>離すと確定</small></div>
+
+      <div class="deck-image-wrap" hidden>
+        <img class="deck-image" alt="" loading="eager" decoding="async" />
+      </div>
+
+      <div class="deck-body">
+        <div class="deck-topline">
+          <span class="deck-source"></span>
+          <span class="deck-signal"></span>
+        </div>
+
+        <h2><button class="deck-title" type="button"></button></h2>
+        <p class="deck-summary"></p>
+        <div class="topic-tags deck-tags"></div>
+
+        <div class="deck-reason">
+          <strong>WHY THIS?</strong>
+          <span></span>
+        </div>
+
+        <div class="memo">
+          <div class="memo-label">
+            <span>この記事を見て思ったこと</span>
+            <span class="memo-status">AUTO SAVE</span>
+          </div>
+          <textarea class="memo-input" placeholder="気になったこと、連想したこと、あとで調べたいこと…"></textarea>
+        </div>
+
+        <button class="read-now" type="button">
+          そのまま読む
+          <small>記事を開く ＋ あとで読むに残す ＋ 既読</small>
+        </button>
+
+        <div class="deck-actions">
+          <button class="deck-action" data-action="skip" type="button">
+            興味なし
+            <small>← SWIPE</small>
+          </button>
+          <button class="deck-action primary" data-action="read" type="button">
+            見出しで十分
+            <small>↑ SWIPE</small>
+          </button>
+          <button class="deck-action" data-action="keep" type="button">
+            あとで読む
+            <small>SWIPE →</small>
+          </button>
+        </div>
+
+        <p class="deck-hint">左：興味なし ／ 上：ここまで ／ 右：あとで読む</p>
+      </div>
+    </article>
+  </template>
+
+  <template id="list-card-template">
+    <article class="list-card">
+      <div class="list-topline">
         <div class="source-line">
           <span class="source"></span>
           <span class="kind"></span>
@@ -44,27 +113,32 @@
         </div>
         <span class="score"></span>
       </div>
-      <div class="card-content">
-        <div class="card-copy">
-          <h2><a class="title" target="_blank" rel="noopener noreferrer"></a></h2>
+
+      <div class="list-content">
+        <div class="list-copy">
+          <h2><button class="title-button" type="button"></button></h2>
           <p class="summary"></p>
-          <div class="topic-tags" aria-label="詳細ジャンル"></div>
-          <div class="state-actions" aria-label="この記事の状態">
-            <button type="button" data-state="read">READ</button>
-            <button type="button" data-state="skip">SKIP</button>
-            <button type="button" data-state="keep">KEEP</button>
+          <div class="topic-tags"></div>
+          <div class="list-actions">
+            <button type="button" data-action="read-now">読む</button>
+            <button type="button" data-action="keep">あとで読む</button>
+            <button type="button" data-action="read">既読</button>
+            <button type="button" data-action="skip">興味なし</button>
           </div>
         </div>
-        <a class="thumbnail" target="_blank" rel="noopener noreferrer" hidden aria-label="記事を開く">
+        <button class="thumbnail" type="button" hidden aria-label="記事を読む">
           <img class="thumbnail-image" alt="" loading="lazy" decoding="async" />
-        </a>
+        </button>
       </div>
-      <div class="card-footer">
+
+      <div class="list-footer">
         <span class="reason"></span>
         <time class="published"></time>
       </div>
     </article>
   </template>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
   <script src="reading-state.js"></script>
   <script src="app.js"></script>
