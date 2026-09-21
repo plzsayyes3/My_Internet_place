@@ -772,3 +772,93 @@ h1 {
     font-size: 12px;
   }
 }
+
+
+/* Compact top chrome: keep the deck visible above the fold. */
+.site-header {
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0 7px;
+  border-bottom: 0;
+}
+
+.site-header h1 {
+  font-size: 15px;
+  line-height: 1;
+  letter-spacing: .11em;
+  white-space: nowrap;
+}
+
+.site-header .lead,
+.site-header .eyebrow,
+.site-header .health,
+.site-header .sync-status {
+  display: none;
+}
+
+.meta-block {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-align: right;
+}
+
+.meta {
+  font-size: 9px;
+  letter-spacing: .04em;
+}
+
+.sync-settings {
+  margin-top: 0;
+  padding: 4px 8px;
+  font-size: 9px;
+}
+
+.primary-nav {
+  padding: 6px 0 8px;
+}
+
+.nav-button,
+.filter {
+  padding: 6px 10px;
+  font-size: 11px;
+}
+
+.deck-view {
+  margin-top: 0;
+}
+
+.deck-head {
+  padding-top: 0;
+  padding-bottom: 6px;
+}
+
+@media (max-width: 640px) {
+  .site-header {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+
+  .site-header h1 {
+    font-size: 13px;
+  }
+
+  .meta-block {
+    margin-top: 0;
+    margin-left: auto;
+    gap: 6px;
+  }
+
+  .meta {
+    max-width: 105px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .primary-nav {
+    padding-top: 5px;
+    padding-bottom: 7px;
+  }
+}
