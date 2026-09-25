@@ -370,7 +370,23 @@ function renderTags(container, item) {
 }
 
 function deckItems() {
-  return diversifyForYou(allItems.filter((item) => !isProcessed(item)));
+  const pending = allItems.filter((item) => !isProcessed(item));
+  const nonAi = diversifyForYou(pending.filter((item) => itemCategory(item) !== "ai"));
+  const ai = diversifyForYou(pending.filter((item) => itemCategory(item) === "ai"));
+  const mixed = [];
+
+  while (nonAi.length || ai.length) {
+    for (let index = 0; index < 4 && nonAi.length; index += 1) {
+      mixed.push(nonAi.shift());
+    }
+    if (ai.length) mixed.push(ai.shift());
+
+    // If only one pool remains, do not strand unread items.
+    if (!nonAi.length && ai.length) mixed.push(...ai.splice(0));
+    if (!ai.length && nonAi.length) mixed.push(...nonAi.splice(0));
+  }
+
+  return mixed;
 }
 
 function renderDeck() {
@@ -589,6 +605,12 @@ function stateLabel(state) {
 function renderCategoryFilters() {
   filtersEl.innerHTML = "";
 
+  if (activeView === "ai") {
+    filtersEl.hidden = true;
+    renderTopicFilters();
+    return;
+  }
+
   if (activeView !== "latest") {
     filtersEl.hidden = true;
     topicFiltersEl.hidden = true;
@@ -617,14 +639,15 @@ function renderCategoryFilters() {
 function renderTopicFilters() {
   topicFiltersEl.innerHTML = "";
 
-  if (activeView !== "latest" || !activeCategory) {
+  const targetCategory = activeView === "ai" ? "ai" : activeCategory;
+  if ((activeView !== "latest" && activeView !== "ai") || !targetCategory) {
     topicFiltersEl.hidden = true;
     activeTopic = null;
     return;
   }
 
   const topics = new Map();
-  for (const item of allItems.filter((candidate) => itemCategory(candidate) === activeCategory)) {
+  for (const item of allItems.filter((candidate) => itemCategory(candidate) === targetCategory)) {
     for (const topic of itemTopics(item)) {
       if (!topics.has(topic.id)) topics.set(topic.id, topic.label);
     }
@@ -659,8 +682,11 @@ function listItems() {
       .sort((a, b) => numericTime(b.published_at) - numericTime(a.published_at));
   }
 
-  let items = [...allItems];
-  if (activeCategory) {
+  let items = activeView === "ai"
+    ? allItems.filter((item) => itemCategory(item) === "ai")
+    : [...allItems];
+
+  if (activeView === "latest" && activeCategory) {
     items = items.filter((item) => itemCategory(item) === activeCategory);
   }
   if (activeTopic) {
@@ -675,7 +701,9 @@ function renderList() {
   emptyEl.hidden = items.length > 0;
   emptyEl.textContent = activeView === "keep"
     ? "あとで読む記事はまだありません。"
-    : "記事がありません。";
+    : activeView === "ai"
+      ? "AIの記事はまだありません。"
+      : "記事がありません。";
 
   for (const item of items) {
     const state = itemState(item);
