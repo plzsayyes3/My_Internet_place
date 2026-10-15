@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T00:00:05.838570+00:00",
+  "generated_at": "2026-10-15T08:28:42.822467+00:00",
   "count": 220,
   "taxonomy_version": 4,
   "interest_profile_version": 4,
@@ -203,7 +203,7 @@
       "signals": {
         "direct_interest": 6.61,
         "related_interest": 0.0,
-        "freshness": 0.998,
+        "freshness": 0.995,
         "source_priority": 0.65
       },
       "recommendation_reason": "direct",
@@ -214,7 +214,7 @@
         "signals": 4.8,
         "combinations": 0.0
       },
-      "rank_score": 8.73,
+      "rank_score": 8.72,
       "matched_interests": [
         "e_paper"
       ],
@@ -225,6 +225,87 @@
       "image_url": "https://hackaday.com/wp-content/uploads/2026/10/ePaper_esp32_gameboy.jpg",
       "title_ja": "ゲームボーイファンの30 FPSを配信する小さな電子ペーパーディスプレイ",
       "summary_ja": "低速リフレッシュ、ゴースト、低コントラスト — 待機、パッシブマトリックスLCD、または電子ペーパーディスプレイについて話していますか? そのため、e-paperゲームボーイエミュレータは物事です:制限...もっと読む"
+    },
+    {
+      "id": "9677e39991833e0d",
+      "title": "AI Controls iPhone Via ESP32",
+      "url": "https://hackaday.com/2026/10/14/ai-controls-iphone-via-esp32/",
+      "summary": "Do you want to get an AI agent to do something to an iPhone? You could try and jailbreak the device and do some heavy software hacking, or… you could …read more",
+      "published_at": "2026-10-15T02:00:25+00:00",
+      "source": "Hackaday",
+      "source_id": "hackaday",
+      "source_kind": "publication",
+      "source_category": "other",
+      "genre": "small_devices",
+      "primary_category": "small_devices",
+      "topics": [
+        {
+          "id": "embedded_devices",
+          "score": 0.333
+        },
+        {
+          "id": "apple_ecosystem",
+          "score": 0.333
+        },
+        {
+          "id": "ai_agents_automation",
+          "score": 0.25
+        }
+      ],
+      "topic_ids": [
+        "embedded_devices",
+        "apple_ecosystem",
+        "ai_agents_automation"
+      ],
+      "topic_labels": [
+        "ESP32・小型デバイス",
+        "Apple・iPhone・Watch",
+        "AIエージェント・自動化"
+      ],
+      "topic_scores": {
+        "embedded_devices": 0.333,
+        "apple_ecosystem": 0.333,
+        "ai_agents_automation": 0.25
+      },
+      "matched_signals": [
+        "practical_small_computing"
+      ],
+      "positive_signals": [
+        "practical_small_computing"
+      ],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 5.54,
+        "related_interest": 0.0,
+        "freshness": 0.998,
+        "source_priority": 0.65
+      },
+      "recommendation_reason": "direct",
+      "interest_score": 5.54,
+      "score": 5.54,
+      "score_components": {
+        "topics": 3.51,
+        "signals": 2.03,
+        "combinations": 0.0
+      },
+      "rank_score": 7.66,
+      "matched_interests": [
+        "embedded_devices",
+        "apple_ecosystem",
+        "ai_agents_automation"
+      ],
+      "matched_labels": [
+        "ESP32・小型デバイス",
+        "Apple・iPhone・Watch",
+        "AIエージェント・自動化",
+        "実用小型コンピューティング"
+      ],
+      "image_url": "https://hackaday.com/wp-content/uploads/2026/10/A-7-ESP32-lets-an-AI-set-an-alarm-on-a-stock-iPhone-no-Mac-no-jailbreak-0-20-screenshot-1.png",
+      "title_ja": "ESP32でiPhoneを制御",
+      "summary_ja": "iPhoneに何かをするためにAIエージェントを取得したいですか? あなたは、デバイスを試し、ジェイルブレイクし、いくつかの重いソフトウェアハッキングを行うことができます, または...もっと"
     },
     {
       "id": "e9bc46619b6f520f",
@@ -276,7 +357,7 @@
       "signals": {
         "direct_interest": 3.93,
         "related_interest": 0.0,
-        "freshness": 0.981,
+        "freshness": 0.978,
         "source_priority": 0.75
       },
       "recommendation_reason": "direct",
@@ -287,7 +368,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 6.01,
+      "rank_score": 6.0,
       "matched_interests": [
         "github_devops",
         "ai_coding",
@@ -342,7 +423,7 @@
       "signals": {
         "direct_interest": 3.47,
         "related_interest": 0.0,
-        "freshness": 0.999,
+        "freshness": 0.996,
         "source_priority": 0.65
       },
       "recommendation_reason": "direct",
@@ -353,7 +434,7 @@
         "signals": 2.03,
         "combinations": 0.0
       },
-      "rank_score": 5.6,
+      "rank_score": 5.58,
       "matched_interests": [
         "embedded_devices"
       ],
@@ -415,7 +496,7 @@
       "signals": {
         "direct_interest": 3.25,
         "related_interest": 0.0,
-        "freshness": 0.99,
+        "freshness": 0.987,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -426,7 +507,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 5.4,
+      "rank_score": 5.39,
       "matched_interests": [
         "ai_coding",
         "llm_ai_tools",
@@ -484,7 +565,7 @@
       "signals": {
         "direct_interest": 3.1,
         "related_interest": 0.0,
-        "freshness": 0.996,
+        "freshness": 0.993,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -495,7 +576,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 5.29,
+      "rank_score": 5.28,
       "matched_interests": [
         "llm_ai_tools",
         "ai_agents_automation"
@@ -558,7 +639,7 @@
       "signals": {
         "direct_interest": 3.25,
         "related_interest": 0.0,
-        "freshness": 0.954,
+        "freshness": 0.952,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -569,7 +650,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 5.26,
+      "rank_score": 5.25,
       "matched_interests": [
         "ai_coding",
         "llm_ai_tools",
@@ -634,7 +715,7 @@
       "signals": {
         "direct_interest": 3.16,
         "related_interest": 0.0,
-        "freshness": 0.958,
+        "freshness": 0.957,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -645,7 +726,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 5.21,
+      "rank_score": 5.2,
       "matched_interests": [
         "obsidian_pkm",
         "apple_ecosystem",
@@ -703,7 +784,7 @@
       "signals": {
         "direct_interest": 3.01,
         "related_interest": 0.0,
-        "freshness": 0.991,
+        "freshness": 0.988,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -714,7 +795,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 5.15,
+      "rank_score": 5.14,
       "matched_interests": [
         "llm_ai_tools",
         "ai_agents_automation"
@@ -777,7 +858,7 @@
       "signals": {
         "direct_interest": 3.04,
         "related_interest": 0.0,
-        "freshness": 0.981,
+        "freshness": 0.978,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -788,7 +869,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 5.15,
+      "rank_score": 5.14,
       "matched_interests": [
         "programming",
         "apple_ecosystem",
@@ -846,7 +927,7 @@
       "signals": {
         "direct_interest": 2.76,
         "related_interest": 0.0,
-        "freshness": 0.991,
+        "freshness": 0.988,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -857,7 +938,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 4.9,
+      "rank_score": 4.89,
       "matched_interests": [
         "llm_ai_tools",
         "ai_agents_automation"
@@ -910,7 +991,7 @@
       "signals": {
         "direct_interest": 3.21,
         "related_interest": 0.0,
-        "freshness": 0.862,
+        "freshness": 0.859,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -921,7 +1002,7 @@
         "signals": 0.68,
         "combinations": 0.0
       },
-      "rank_score": 4.9,
+      "rank_score": 4.89,
       "matched_interests": [
         "embedded_devices"
       ],
@@ -976,7 +1057,7 @@
       "signals": {
         "direct_interest": 2.9,
         "related_interest": 0.0,
-        "freshness": 0.941,
+        "freshness": 0.938,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -987,7 +1068,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 4.87,
+      "rank_score": 4.86,
       "matched_interests": [
         "llm_ai_tools",
         "ai_coding"
@@ -1050,7 +1131,7 @@
       "signals": {
         "direct_interest": 3.16,
         "related_interest": 0.0,
-        "freshness": 0.846,
+        "freshness": 0.844,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -1126,7 +1207,7 @@
       "signals": {
         "direct_interest": 2.82,
         "related_interest": 0.0,
-        "freshness": 0.933,
+        "freshness": 0.932,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -1190,7 +1271,7 @@
       "signals": {
         "direct_interest": 3.05,
         "related_interest": 0.0,
-        "freshness": 0.869,
+        "freshness": 0.866,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -1201,7 +1282,7 @@
         "signals": 0.0,
         "combinations": 1.6
       },
-      "rank_score": 4.78,
+      "rank_score": 4.77,
       "matched_interests": [
         "embedded_devices"
       ],
@@ -1263,7 +1344,7 @@
       "signals": {
         "direct_interest": 2.7,
         "related_interest": 0.0,
-        "freshness": 0.967,
+        "freshness": 0.964,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -1274,7 +1355,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 4.76,
+      "rank_score": 4.75,
       "matched_interests": [
         "programming",
         "github_devops",
@@ -1339,7 +1420,7 @@
       "signals": {
         "direct_interest": 2.55,
         "related_interest": 0.0,
-        "freshness": 0.998,
+        "freshness": 0.995,
         "source_priority": 0.5
       },
       "recommendation_reason": "direct",
@@ -1350,7 +1431,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 4.64,
+      "rank_score": 4.63,
       "matched_interests": [
         "apple_ecosystem",
         "ai_agents_automation",
@@ -1364,6 +1445,158 @@
       "image_url": "https://petal.live/",
       "title_ja": "ショーHN:ペタール、オープンソースのCoScreen / ScreenHeroがついに無料で",
       "summary_ja": "こんにちは! CoScreenの創始者であるジェイソン・トーマスです。 ご存知の通り、Datadog は 7 月 31 日に CoScreen サービスを日没させます。 オリジナルの CoScreen チームから私たち 4 つは、過去のカップル ヶ月を過ごしました 無料とオープンソースのペア プログラミング ツールを私たち前に触発: それはペタールと呼ばれています"
+    },
+    {
+      "id": "b831871fa77622d1",
+      "title": "Tree Appreciator",
+      "url": "https://simonwillison.net/2026/Oct/14/tree-appreciator/",
+      "summary": "Tool: Tree Appreciator Another game experiment with Claude. This one used the default Claude iPhone app (chat mode, not Claude Code mode), where I prompted Claude Opus 5.5 Max with: Build a three js game called \"Tree appreciator\" - it shows you two algorithmically generated trees and the game mechanics is about appreci",
+      "published_at": "2026-10-14T21:23:01+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_kind": "blog",
+      "source_category": "other",
+      "genre": "ios_apple",
+      "primary_category": "ios_apple",
+      "topics": [
+        {
+          "id": "apple_ecosystem",
+          "score": 0.25
+        },
+        {
+          "id": "ai_coding",
+          "score": 0.25
+        },
+        {
+          "id": "llm_ai_tools",
+          "score": 0.25
+        }
+      ],
+      "topic_ids": [
+        "apple_ecosystem",
+        "ai_coding",
+        "llm_ai_tools"
+      ],
+      "topic_labels": [
+        "Apple・iPhone・Watch",
+        "AI開発・コーディング",
+        "AIツール・サービス"
+      ],
+      "topic_scores": {
+        "apple_ecosystem": 0.25,
+        "ai_coding": 0.25,
+        "llm_ai_tools": 0.25
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "analysis",
+      "item_type": "analysis",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 2.44,
+        "related_interest": 0.0,
+        "freshness": 0.996,
+        "source_priority": 0.85
+      },
+      "recommendation_reason": "direct",
+      "interest_score": 2.44,
+      "score": 2.44,
+      "score_components": {
+        "topics": 2.44,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 4.6,
+      "matched_interests": [
+        "apple_ecosystem",
+        "ai_coding",
+        "llm_ai_tools"
+      ],
+      "matched_labels": [
+        "Apple・iPhone・Watch",
+        "AI開発・コーディング",
+        "AIツール・サービス"
+      ],
+      "image_url": "https://static.simonwillison.net/static/2026-10-14/IMG_9084.jpeg",
+      "title_ja": "ツリー鑑賞者",
+      "summary_ja": "ツール: ツリー鑑賞者 クロードと別のゲーム実験. この1つはデフォルトのClaude iPhoneアプリ(チャットモード、Claudeコードモードではなく)を使用しており、Claude Opus 5.5 Maxをプロンプト: \"Tree appreciator\"と呼ばれる3つのjsゲームを作成 - それはあなたに2つのアルゴリズム的に生成された木とゲームメカニクスが鑑賞について示しています"
+    },
+    {
+      "id": "b8c7763ac9d2879c",
+      "title": "Show HN: Ito – Build Terminal UIs in Lua",
+      "url": "https://uji.sh/ito/",
+      "summary": "My friend and I are huge Neovim nerds. We like to rice our terminals and our editors. We just wanted a harness that we can do the same with, rice it till our hearts' desire. So, we started looking out for harnesses. Pi was great, Pi was good. But in the end, it was JavaScript. I don't have anything against JavaScript, ",
+      "published_at": "2026-10-14T22:23:53+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_kind": "community",
+      "source_category": "other",
+      "genre": "software",
+      "primary_category": "software",
+      "topics": [
+        {
+          "id": "programming",
+          "score": 0.333
+        },
+        {
+          "id": "github_devops",
+          "score": 0.25
+        },
+        {
+          "id": "web_apps",
+          "score": 0.25
+        }
+      ],
+      "topic_ids": [
+        "programming",
+        "github_devops",
+        "web_apps"
+      ],
+      "topic_labels": [
+        "プログラミング・言語",
+        "GitHub・Actions",
+        "Webアプリ"
+      ],
+      "topic_scores": {
+        "programming": 0.333,
+        "github_devops": 0.25,
+        "web_apps": 0.25
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 2.47,
+        "related_interest": 0.0,
+        "freshness": 0.996,
+        "source_priority": 0.5
+      },
+      "recommendation_reason": "direct",
+      "interest_score": 2.47,
+      "score": 2.47,
+      "score_components": {
+        "topics": 2.47,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 4.56,
+      "matched_interests": [
+        "programming",
+        "github_devops",
+        "web_apps"
+      ],
+      "matched_labels": [
+        "プログラミング・言語",
+        "GitHub・Actions",
+        "Webアプリ"
+      ],
+      "image_url": "https://uji.sh/og.jpg",
+      "title_ja": "HN を表示: Ito – Lua でターミナル UI を作成",
+      "summary_ja": "私の友人と私は巨大なNeovimのナードです。 ターミナルやエディタをご飯にしたい。 私たちは、私たちが同じことを行うことができるハーネスを望んでいました, 私たちの心までそれを米. ハーネスを探し始めました。 Pi は良かったです。 しかし、最後にはJavaScriptでした。 JavaScript に対して何もない"
     },
     {
       "id": "d582b9f0b367b0fd",
@@ -1415,7 +1648,7 @@
       "signals": {
         "direct_interest": 2.77,
         "related_interest": 0.0,
-        "freshness": 0.875,
+        "freshness": 0.872,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -1426,7 +1659,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 4.55,
+      "rank_score": 4.54,
       "matched_interests": [
         "ai_agents_automation",
         "llm_ai_tools",
@@ -1484,7 +1717,7 @@
       "signals": {
         "direct_interest": 2.6,
         "related_interest": 0.0,
-        "freshness": 0.917,
+        "freshness": 0.914,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -1495,7 +1728,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 4.53,
+      "rank_score": 4.52,
       "matched_interests": [
         "llm_ai_tools",
         "ai_agents_automation"
@@ -1558,7 +1791,7 @@
       "signals": {
         "direct_interest": 2.9,
         "related_interest": 0.0,
-        "freshness": 0.821,
+        "freshness": 0.819,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -1569,7 +1802,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 4.5,
+      "rank_score": 4.49,
       "matched_interests": [
         "obsidian_pkm",
         "apple_ecosystem",
@@ -1627,7 +1860,7 @@
       "signals": {
         "direct_interest": 2.45,
         "related_interest": 0.0,
-        "freshness": 0.947,
+        "freshness": 0.944,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -1638,7 +1871,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 4.49,
+      "rank_score": 4.48,
       "matched_interests": [
         "llm_ai_tools",
         "ai_coding"
@@ -1701,7 +1934,7 @@
       "signals": {
         "direct_interest": 2.36,
         "related_interest": 0.0,
-        "freshness": 0.981,
+        "freshness": 0.978,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -1712,7 +1945,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 4.47,
+      "rank_score": 4.46,
       "matched_interests": [
         "ai_coding",
         "programming",
@@ -1770,7 +2003,7 @@
       "signals": {
         "direct_interest": 2.6,
         "related_interest": 0.0,
-        "freshness": 0.892,
+        "freshness": 0.889,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -1781,7 +2014,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 4.45,
+      "rank_score": 4.44,
       "matched_interests": [
         "llm_ai_tools",
         "ai_agents_automation"
@@ -1823,7 +2056,7 @@
       "signals": {
         "direct_interest": 2.25,
         "related_interest": 0.0,
-        "freshness": 1.0,
+        "freshness": 0.997,
         "source_priority": 0.65
       },
       "recommendation_reason": "direct",
@@ -1834,7 +2067,7 @@
         "signals": 2.25,
         "combinations": 0.0
       },
-      "rank_score": 4.38,
+      "rank_score": 4.37,
       "matched_interests": [],
       "matched_labels": [
         "小型・携帯デバイス"
@@ -1893,7 +2126,7 @@
       "signals": {
         "direct_interest": 2.4,
         "related_interest": 0.0,
-        "freshness": 0.929,
+        "freshness": 0.926,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -1904,7 +2137,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 4.38,
+      "rank_score": 4.37,
       "matched_interests": [
         "foundation_models",
         "llm_ai_tools",
@@ -2039,7 +2272,7 @@
       "signals": {
         "direct_interest": 2.1,
         "related_interest": 0.0,
-        "freshness": 0.996,
+        "freshness": 0.994,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -2050,7 +2283,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 4.28,
+      "rank_score": 4.27,
       "matched_interests": [
         "github_devops"
       ],
@@ -2104,7 +2337,7 @@
       "signals": {
         "direct_interest": 2.1,
         "related_interest": 0.0,
-        "freshness": 0.992,
+        "freshness": 0.989,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -2115,7 +2348,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 4.28,
+      "rank_score": 4.27,
       "matched_interests": [
         "ai_agents_automation",
         "ai_use_cases"
@@ -2171,7 +2404,7 @@
       "signals": {
         "direct_interest": 2.33,
         "related_interest": 0.0,
-        "freshness": 0.897,
+        "freshness": 0.894,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -2182,7 +2415,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 4.2,
+      "rank_score": 4.19,
       "matched_interests": [
         "apple_ecosystem",
         "ai_agents_automation"
@@ -2245,7 +2478,7 @@
       "signals": {
         "direct_interest": 2.14,
         "related_interest": 0.0,
-        "freshness": 0.958,
+        "freshness": 0.955,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -2256,7 +2489,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 4.19,
+      "rank_score": 4.18,
       "matched_interests": [
         "indie_open_source",
         "programming",
@@ -2314,7 +2547,7 @@
       "signals": {
         "direct_interest": 2.0,
         "related_interest": 0.0,
-        "freshness": 0.991,
+        "freshness": 0.988,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -2325,7 +2558,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 4.17,
+      "rank_score": 4.16,
       "matched_interests": [
         "github_devops",
         "management_teams"
@@ -2381,7 +2614,7 @@
       "signals": {
         "direct_interest": 2.04,
         "related_interest": 0.0,
-        "freshness": 0.958,
+        "freshness": 0.957,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -2392,7 +2625,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 4.11,
+      "rank_score": 4.1,
       "matched_interests": [
         "obsidian_pkm",
         "apple_ecosystem"
@@ -2404,6 +2637,73 @@
       "image_url": "https://obsidian.md/images/banner.png",
       "title_ja": "Obsidian 1.14デスクトップ(公開)",
       "summary_ja": "このアップデートでは、個々のMarkdownファイル、ベース用のカンバンビュー、色を強調するためのサポートを紹介します。 重要:Markdownファイルを開くには、最新のインストーラが必要です。 当社のウェブサイトからObsidianをダウンロードし、アプリを再インストールします。 お問い合わせ お気に入りのプラグイン、テーマ、ツール、方法を教えてください。"
+    },
+    {
+      "id": "3b3777bd0fbed745",
+      "title": "Aidlc: Adaptive workflow steering rules for AI coding agents",
+      "url": "https://github.com/awslabs/aidlc-workflows",
+      "summary": "Article URL: https://github.com/awslabs/aidlc-workflows Comments URL: https://news.ycombinator.com/item?id=50100387 Points: 4 # Comments: 0",
+      "published_at": "2026-10-15T07:20:39+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_kind": "community",
+      "source_category": "other",
+      "genre": "ai",
+      "primary_category": "ai",
+      "topics": [
+        {
+          "id": "ai_coding",
+          "score": 0.333
+        },
+        {
+          "id": "github_devops",
+          "score": 0.25
+        }
+      ],
+      "topic_ids": [
+        "ai_coding",
+        "github_devops"
+      ],
+      "topic_labels": [
+        "AI開発・コーディング",
+        "GitHub・Actions"
+      ],
+      "topic_scores": {
+        "ai_coding": 0.333,
+        "github_devops": 0.25
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 1.99,
+        "related_interest": 0.0,
+        "freshness": 1.0,
+        "source_priority": 0.5
+      },
+      "recommendation_reason": "direct",
+      "interest_score": 1.99,
+      "score": 1.99,
+      "score_components": {
+        "topics": 1.99,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 4.09,
+      "matched_interests": [
+        "ai_coding",
+        "github_devops"
+      ],
+      "matched_labels": [
+        "AI開発・コーディング",
+        "GitHub・Actions"
+      ],
+      "image_url": "https://opengraph.githubassets.com/50ffd1d46630f0f03c8f986e316a1e8751aa9cc88659c335b4201bfc0dbe02be/awslabs/aidlc-workflows",
+      "title_ja": "Aidlc:AIコーディングエージェントの適応ワークフローステアリングルール",
+      "summary_ja": "記事のURL: https://github.com/awslabs/aidlc-workflows コメントURL:https://news.ycombinator.com/item?id=50100387 ポイント: 4 # コメント: 0"
     },
     {
       "id": "cef0a6bd28042cf7",
@@ -2529,7 +2829,7 @@
       "signals": {
         "direct_interest": 2.04,
         "related_interest": 0.0,
-        "freshness": 0.933,
+        "freshness": 0.932,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -2540,7 +2840,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 4.04,
+      "rank_score": 4.03,
       "matched_interests": [
         "obsidian_pkm",
         "apple_ecosystem"
@@ -2589,7 +2889,7 @@
       "signals": {
         "direct_interest": 1.84,
         "related_interest": 0.0,
-        "freshness": 0.99,
+        "freshness": 0.987,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -2600,7 +2900,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 4.0,
+      "rank_score": 3.99,
       "matched_interests": [
         "github_devops"
       ],
@@ -2654,7 +2954,7 @@
       "signals": {
         "direct_interest": 2.01,
         "related_interest": 0.0,
-        "freshness": 0.933,
+        "freshness": 0.93,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -2665,7 +2965,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.99,
+      "rank_score": 3.98,
       "matched_interests": [
         "llm_ai_tools",
         "ai_agents_automation"
@@ -2721,7 +3021,7 @@
       "signals": {
         "direct_interest": 1.79,
         "related_interest": 0.0,
-        "freshness": 0.989,
+        "freshness": 0.986,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -2732,7 +3032,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.95,
+      "rank_score": 3.94,
       "matched_interests": [
         "llm_ai_tools",
         "github_devops"
@@ -2788,7 +3088,7 @@
       "signals": {
         "direct_interest": 1.76,
         "related_interest": 0.0,
-        "freshness": 0.987,
+        "freshness": 0.985,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -2799,7 +3099,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.93,
+      "rank_score": 3.92,
       "matched_interests": [
         "llm_ai_tools",
         "ai_agents_automation"
@@ -2855,7 +3155,7 @@
       "signals": {
         "direct_interest": 1.8,
         "related_interest": 0.0,
-        "freshness": 0.981,
+        "freshness": 0.978,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -2866,7 +3166,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.92,
+      "rank_score": 3.91,
       "matched_interests": [
         "programming",
         "ai_coding"
@@ -2922,7 +3222,7 @@
       "signals": {
         "direct_interest": 2.1,
         "related_interest": 0.0,
-        "freshness": 0.875,
+        "freshness": 0.872,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -2933,7 +3233,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.92,
+      "rank_score": 3.91,
       "matched_interests": [
         "ai_agents_automation",
         "llm_ai_tools"
@@ -2989,7 +3289,7 @@
       "signals": {
         "direct_interest": 1.69,
         "related_interest": 0.0,
-        "freshness": 0.999,
+        "freshness": 0.996,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -3000,7 +3300,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.88,
+      "rank_score": 3.87,
       "matched_interests": [
         "ai_coding",
         "github_devops"
@@ -3056,7 +3356,7 @@
       "signals": {
         "direct_interest": 2.04,
         "related_interest": 0.0,
-        "freshness": 0.875,
+        "freshness": 0.874,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -3067,7 +3367,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.87,
+      "rank_score": 3.86,
       "matched_interests": [
         "obsidian_pkm",
         "apple_ecosystem"
@@ -3123,7 +3423,7 @@
       "signals": {
         "direct_interest": 1.8,
         "related_interest": 0.0,
-        "freshness": 0.949,
+        "freshness": 0.946,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -3134,7 +3434,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.86,
+      "rank_score": 3.85,
       "matched_interests": [
         "input_devices",
         "maker_projects"
@@ -3190,7 +3490,7 @@
       "signals": {
         "direct_interest": 1.69,
         "related_interest": 0.0,
-        "freshness": 0.989,
+        "freshness": 0.986,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -3201,7 +3501,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.85,
+      "rank_score": 3.84,
       "matched_interests": [
         "ai_coding",
         "github_devops"
@@ -3257,7 +3557,7 @@
       "signals": {
         "direct_interest": 1.9,
         "related_interest": 0.0,
-        "freshness": 0.892,
+        "freshness": 0.889,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -3268,7 +3568,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.79,
+      "rank_score": 3.78,
       "matched_interests": [
         "llm_ai_tools",
         "ai_coding"
@@ -3317,7 +3617,7 @@
       "signals": {
         "direct_interest": 1.75,
         "related_interest": 0.0,
-        "freshness": 0.936,
+        "freshness": 0.933,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -3328,7 +3628,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.77,
+      "rank_score": 3.76,
       "matched_interests": [
         "llm_ai_tools"
       ],
@@ -3382,7 +3682,7 @@
       "signals": {
         "direct_interest": 1.76,
         "related_interest": 0.0,
-        "freshness": 0.928,
+        "freshness": 0.926,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -3393,7 +3693,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.76,
+      "rank_score": 3.75,
       "matched_interests": [
         "ai_agents_automation",
         "llm_ai_tools"
@@ -3442,7 +3742,7 @@
       "signals": {
         "direct_interest": 1.75,
         "related_interest": 0.0,
-        "freshness": 0.929,
+        "freshness": 0.926,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -3453,7 +3753,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.75,
+      "rank_score": 3.74,
       "matched_interests": [
         "llm_ai_tools"
       ],
@@ -3507,7 +3807,7 @@
       "signals": {
         "direct_interest": 2.09,
         "related_interest": 0.0,
-        "freshness": 0.819,
+        "freshness": 0.816,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -3518,7 +3818,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.73,
+      "rank_score": 3.72,
       "matched_interests": [
         "early_childhood",
         "embedded_devices"
@@ -3574,7 +3874,7 @@
       "signals": {
         "direct_interest": 2.04,
         "related_interest": 0.0,
-        "freshness": 0.821,
+        "freshness": 0.819,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -3585,7 +3885,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.71,
+      "rank_score": 3.7,
       "matched_interests": [
         "obsidian_pkm",
         "apple_ecosystem"
@@ -3641,7 +3941,7 @@
       "signals": {
         "direct_interest": 1.8,
         "related_interest": 0.0,
-        "freshness": 0.891,
+        "freshness": 0.888,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -3708,7 +4008,7 @@
       "signals": {
         "direct_interest": 1.76,
         "related_interest": 0.0,
-        "freshness": 0.897,
+        "freshness": 0.894,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -3775,7 +4075,7 @@
       "signals": {
         "direct_interest": 1.8,
         "related_interest": 0.0,
-        "freshness": 0.897,
+        "freshness": 0.894,
         "source_priority": 0.75
       },
       "recommendation_reason": "direct",
@@ -3786,7 +4086,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.66,
+      "rank_score": 3.65,
       "matched_interests": [
         "ai_agents_automation",
         "github_devops"
@@ -3842,7 +4142,7 @@
       "signals": {
         "direct_interest": 1.76,
         "related_interest": 0.0,
-        "freshness": 0.889,
+        "freshness": 0.886,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -3853,7 +4153,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.65,
+      "rank_score": 3.64,
       "matched_interests": [
         "llm_ai_tools",
         "ai_agents_automation"
@@ -3909,7 +4209,7 @@
       "signals": {
         "direct_interest": 1.95,
         "related_interest": 0.0,
-        "freshness": 0.817,
+        "freshness": 0.814,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -3920,7 +4220,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.61,
+      "rank_score": 3.6,
       "matched_interests": [
         "programming",
         "web_apps"
@@ -3969,7 +4269,7 @@
       "signals": {
         "direct_interest": 2.1,
         "related_interest": 0.0,
-        "freshness": 0.764,
+        "freshness": 0.761,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -3980,7 +4280,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.59,
+      "rank_score": 3.58,
       "matched_interests": [
         "apple_ecosystem"
       ],
@@ -4034,7 +4334,7 @@
       "signals": {
         "direct_interest": 1.43,
         "related_interest": 0.0,
-        "freshness": 0.984,
+        "freshness": 0.981,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -4045,7 +4345,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.56,
+      "rank_score": 3.55,
       "matched_interests": [
         "llm_ai_tools",
         "programming"
@@ -4101,7 +4401,7 @@
       "signals": {
         "direct_interest": 2.06,
         "related_interest": 0.0,
-        "freshness": 0.764,
+        "freshness": 0.761,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -4112,7 +4412,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.55,
+      "rank_score": 3.54,
       "matched_interests": [
         "apple_ecosystem",
         "personal_web_rss"
@@ -4168,7 +4468,7 @@
       "signals": {
         "direct_interest": 2.18,
         "related_interest": 0.0,
-        "freshness": 0.708,
+        "freshness": 0.705,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -4179,7 +4479,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.49,
+      "rank_score": 3.48,
       "matched_interests": [
         "apple_ecosystem",
         "foundation_models"
@@ -4235,7 +4535,7 @@
       "signals": {
         "direct_interest": 1.61,
         "related_interest": 0.0,
-        "freshness": 0.883,
+        "freshness": 0.88,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -4246,7 +4546,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.48,
+      "rank_score": 3.47,
       "matched_interests": [
         "foundation_models",
         "llm_ai_tools"
@@ -4302,7 +4602,7 @@
       "signals": {
         "direct_interest": 1.8,
         "related_interest": 0.0,
-        "freshness": 0.816,
+        "freshness": 0.813,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -4313,7 +4613,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.48,
+      "rank_score": 3.47,
       "matched_interests": [
         "input_devices",
         "maker_projects"
@@ -4369,7 +4669,7 @@
       "signals": {
         "direct_interest": 1.43,
         "related_interest": 0.0,
-        "freshness": 0.95,
+        "freshness": 0.947,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -4380,7 +4680,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.47,
+      "rank_score": 3.46,
       "matched_interests": [
         "llm_ai_tools",
         "indie_open_source"
@@ -4436,7 +4736,7 @@
       "signals": {
         "direct_interest": 2.04,
         "related_interest": 0.0,
-        "freshness": 0.733,
+        "freshness": 0.732,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -4503,7 +4803,7 @@
       "signals": {
         "direct_interest": 2.04,
         "related_interest": 0.0,
-        "freshness": 0.729,
+        "freshness": 0.728,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -4563,7 +4863,7 @@
       "signals": {
         "direct_interest": 1.45,
         "related_interest": 0.0,
-        "freshness": 0.93,
+        "freshness": 0.927,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -4584,6 +4884,64 @@
       "image_url": "https://www.raspberrypi.com/app/uploads/2026/10/IMG_4806-1024x768.jpg",
       "title_ja": "Raspberry Pi デスクトップ PC と Mac で利用可能",
       "summary_ja": "Raspberry Pi デスクトップの待望の PC と Mac 版が更新されました。 投稿 Raspberry Pi デスクトップは、PC と Mac が Raspberry Pi で最初に登場しました。"
+    },
+    {
+      "id": "ff39952f0589ba80",
+      "title": "Creating a Garmin \"MCP\"",
+      "url": "https://jackantico.io/garmin-mcp",
+      "summary": "Article URL: https://jackantico.io/garmin-mcp Comments URL: https://news.ycombinator.com/item?id=50081045 Points: 18 # Comments: 6",
+      "published_at": "2026-10-14T00:52:25+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_kind": "community",
+      "source_category": "other",
+      "genre": "ai",
+      "primary_category": "ai",
+      "topics": [
+        {
+          "id": "ai_agents_automation",
+          "score": 0.333
+        }
+      ],
+      "topic_ids": [
+        "ai_agents_automation"
+      ],
+      "topic_labels": [
+        "AIエージェント・自動化"
+      ],
+      "topic_scores": {
+        "ai_agents_automation": 0.333
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 1.35,
+        "related_interest": 0.0,
+        "freshness": 0.989,
+        "source_priority": 0.5
+      },
+      "recommendation_reason": "direct",
+      "interest_score": 1.35,
+      "score": 1.35,
+      "score_components": {
+        "topics": 1.35,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 3.42,
+      "matched_interests": [
+        "ai_agents_automation"
+      ],
+      "matched_labels": [
+        "AIエージェント・自動化"
+      ],
+      "image_url": "https://jackantico.io/garmin-mcp",
+      "title_ja": "ガーミン「MCP」の作成",
+      "summary_ja": "記事のURL: https://jackantico.io/garmin-mcp コメントのURL: https://news.ycombinator.com/item?id=50081045 ポイント: 18 # コメント: 6"
     },
     {
       "id": "322b7bb856954e6c",
@@ -4628,7 +4986,7 @@
       "signals": {
         "direct_interest": 2.04,
         "related_interest": 0.0,
-        "freshness": 0.725,
+        "freshness": 0.724,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -4639,7 +4997,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.43,
+      "rank_score": 3.42,
       "matched_interests": [
         "obsidian_pkm",
         "apple_ecosystem"
@@ -4688,7 +5046,7 @@
       "signals": {
         "direct_interest": 1.45,
         "related_interest": 0.0,
-        "freshness": 0.921,
+        "freshness": 0.918,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -4699,7 +5057,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.41,
+      "rank_score": 3.4,
       "matched_interests": [
         "embedded_devices"
       ],
@@ -4753,7 +5111,7 @@
       "signals": {
         "direct_interest": 2.04,
         "related_interest": 0.0,
-        "freshness": 0.712,
+        "freshness": 0.711,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -4827,7 +5185,7 @@
       "signals": {
         "direct_interest": 3.45,
         "related_interest": 0.0,
-        "freshness": 0.35,
+        "freshness": 0.349,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -4889,7 +5247,7 @@
       "signals": {
         "direct_interest": 1.45,
         "related_interest": 0.0,
-        "freshness": 0.886,
+        "freshness": 0.884,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -4900,7 +5258,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.32,
+      "rank_score": 3.31,
       "matched_interests": [
         "embedded_devices"
       ],
@@ -4947,7 +5305,7 @@
       "signals": {
         "direct_interest": 1.25,
         "related_interest": 0.0,
-        "freshness": 0.942,
+        "freshness": 0.94,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -4968,73 +5326,6 @@
       "image_url": "https://obsidian.md/images/banner.png",
       "title_ja": "肥満者 10月 2026",
       "summary_ja": "O O が返ってきた! 毎年10月、オシディアンのコミュニティが「私はそれを作るべき」に変わります! プラグイン、テーマ、ボルト、ガイド、またはビデオでスタイリングしている場合でも、これを完了して共有する月です。 今年はオスペディアンのチームも一緒に活動しています。"
-    },
-    {
-      "id": "291aa002cffaa71d",
-      "title": "Image-to-Video AI Models Compared: Cost, Resolution, and Control",
-      "url": "https://openrouter.ai/blog/insights/image-to-video-models-compared/",
-      "summary": "If you already have the image a video should start from, the model choice comes down to what has to happen after that frame. This post compares the Veo 3.1, Seedance, Kling, and Grok Imagine Video lines on duration, resolution, first-frame and last-frame control, generated audio, reference inputs, and current per-secon",
-      "published_at": "2026-09-29T00:00:00+00:00",
-      "source": "OpenRouter Blog",
-      "source_id": "openrouter_blog",
-      "source_kind": "official",
-      "source_category": "ai",
-      "genre": "software",
-      "primary_category": "software",
-      "topics": [
-        {
-          "id": "programming",
-          "score": 0.25
-        },
-        {
-          "id": "web_apps",
-          "score": 0.25
-        }
-      ],
-      "topic_ids": [
-        "programming",
-        "web_apps"
-      ],
-      "topic_labels": [
-        "プログラミング・言語",
-        "Webアプリ"
-      ],
-      "topic_scores": {
-        "programming": 0.25,
-        "web_apps": 0.25
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 1.46,
-        "related_interest": 0.0,
-        "freshness": 0.867,
-        "source_priority": 0.95
-      },
-      "recommendation_reason": "direct",
-      "interest_score": 1.46,
-      "score": 1.46,
-      "score_components": {
-        "topics": 1.46,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 3.3,
-      "matched_interests": [
-        "programming",
-        "web_apps"
-      ],
-      "matched_labels": [
-        "プログラミング・言語",
-        "Webアプリ"
-      ],
-      "image_url": "https://openrouter.ai/blog/images/image-to-video-models-compared.png",
-      "title_ja": "コスト、解像度、制御の比較: 対ビデオAIモデル",
-      "summary_ja": "既に動画が始まっていれば、その枠の後にはモデルの選択が起こるものまで下がります。 この投稿は、Veo 3.1、 Seedance、Kling、およびGrok Imagine Video lineを時間、解像度、ファーストフレーム、最終フレーム制御、生成されたオーディオ、参照入力、および現在のパーセコンと比較します"
     },
     {
       "id": "3bcaa0c0f429f2e4",
@@ -5072,7 +5363,7 @@
       "signals": {
         "direct_interest": 1.25,
         "related_interest": 0.0,
-        "freshness": 0.942,
+        "freshness": 0.94,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -5130,7 +5421,7 @@
       "signals": {
         "direct_interest": 1.25,
         "related_interest": 0.0,
-        "freshness": 0.942,
+        "freshness": 0.94,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -5151,6 +5442,73 @@
       "image_url": "https://obsidian.md/images/banner.png",
       "title_ja": "Obsidian 1.14.4 デスクトップ(ほぼアクセス)",
       "summary_ja": "改善ベース:カンバン列の右クリックメニューに「非表示列」を追加。 ベース:「新しいベースを作成する」で作られたベースは、「テーブル」ではなく、最初のビュー「ビュー」という名前になりました。 ファイルエクスプローラ、ブックマーク、アウトライン、および同期ビューで検索すると、各アイテムのフルパスが表示されます。 用語(例:-Archive )を除く"
+    },
+    {
+      "id": "291aa002cffaa71d",
+      "title": "Image-to-Video AI Models Compared: Cost, Resolution, and Control",
+      "url": "https://openrouter.ai/blog/insights/image-to-video-models-compared/",
+      "summary": "If you already have the image a video should start from, the model choice comes down to what has to happen after that frame. This post compares the Veo 3.1, Seedance, Kling, and Grok Imagine Video lines on duration, resolution, first-frame and last-frame control, generated audio, reference inputs, and current per-secon",
+      "published_at": "2026-09-29T00:00:00+00:00",
+      "source": "OpenRouter Blog",
+      "source_id": "openrouter_blog",
+      "source_kind": "official",
+      "source_category": "ai",
+      "genre": "software",
+      "primary_category": "software",
+      "topics": [
+        {
+          "id": "programming",
+          "score": 0.25
+        },
+        {
+          "id": "web_apps",
+          "score": 0.25
+        }
+      ],
+      "topic_ids": [
+        "programming",
+        "web_apps"
+      ],
+      "topic_labels": [
+        "プログラミング・言語",
+        "Webアプリ"
+      ],
+      "topic_scores": {
+        "programming": 0.25,
+        "web_apps": 0.25
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 1.46,
+        "related_interest": 0.0,
+        "freshness": 0.864,
+        "source_priority": 0.95
+      },
+      "recommendation_reason": "direct",
+      "interest_score": 1.46,
+      "score": 1.46,
+      "score_components": {
+        "topics": 1.46,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 3.29,
+      "matched_interests": [
+        "programming",
+        "web_apps"
+      ],
+      "matched_labels": [
+        "プログラミング・言語",
+        "Webアプリ"
+      ],
+      "image_url": "https://openrouter.ai/blog/images/image-to-video-models-compared.png",
+      "title_ja": "コスト、解像度、制御の比較: 対ビデオAIモデル",
+      "summary_ja": "既に動画が始まっていれば、その枠の後にはモデルの選択が起こるものまで下がります。 この投稿は、Veo 3.1、 Seedance、Kling、およびGrok Imagine Video lineを時間、解像度、ファーストフレーム、最終フレーム制御、生成されたオーディオ、参照入力、および現在のパーセコンと比較します"
     },
     {
       "id": "10ebd5a8648d8b52",
@@ -5195,7 +5553,7 @@
       "signals": {
         "direct_interest": 2.04,
         "related_interest": 0.0,
-        "freshness": 0.679,
+        "freshness": 0.678,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -5262,7 +5620,7 @@
       "signals": {
         "direct_interest": 2.04,
         "related_interest": 0.0,
-        "freshness": 0.679,
+        "freshness": 0.678,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -5322,7 +5680,7 @@
       "signals": {
         "direct_interest": 1.2,
         "related_interest": 0.0,
-        "freshness": 0.946,
+        "freshness": 0.943,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -5333,7 +5691,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.26,
+      "rank_score": 3.25,
       "matched_interests": [
         "ai_coding"
       ],
@@ -5380,7 +5738,7 @@
       "signals": {
         "direct_interest": 1.09,
         "related_interest": 0.0,
-        "freshness": 0.996,
+        "freshness": 0.993,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -5391,7 +5749,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.25,
+      "rank_score": 3.24,
       "matched_interests": [
         "embedded_devices"
       ],
@@ -5438,7 +5796,7 @@
       "signals": {
         "direct_interest": 1.09,
         "related_interest": 0.0,
-        "freshness": 0.979,
+        "freshness": 0.976,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -5449,7 +5807,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.21,
+      "rank_score": 3.2,
       "matched_interests": [
         "embedded_devices"
       ],
@@ -5496,7 +5854,7 @@
       "signals": {
         "direct_interest": 1.05,
         "related_interest": 0.0,
-        "freshness": 0.999,
+        "freshness": 0.996,
         "source_priority": 0.75
       },
       "recommendation_reason": "direct",
@@ -5507,7 +5865,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.2,
+      "rank_score": 3.19,
       "matched_interests": [
         "github_devops"
       ],
@@ -5561,7 +5919,7 @@
       "signals": {
         "direct_interest": 1.8,
         "related_interest": 0.0,
-        "freshness": 0.716,
+        "freshness": 0.713,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -5572,7 +5930,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.2,
+      "rank_score": 3.19,
       "matched_interests": [
         "input_devices",
         "maker_projects"
@@ -5584,6 +5942,64 @@
       "image_url": "https://cdn.image.st-hatena.com/image/scale/db37f22aeeebe29bdf443e148b71e52d27cb4fac/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FS%2FSalicylic_acid3%2F20260911%2F20260911011427.png",
       "title_ja": "週報208回目（2026年9月11日）",
       "summary_ja": "こんにちは。自キ温泉ガイドのサリチル酸です。 ようやく9月になり、子どもたちの夏休みが終わりましたね。 9月は販売イベントが多く、ますます忙しくなりそうです。"
+    },
+    {
+      "id": "b81f259c6183c9d4",
+      "title": "iPhone Duoに向けた準備",
+      "url": "https://developer.apple.com/jp/news/?id=vn8abkxx",
+      "summary": "今すぐiPhone Duoに向けた準備を始めましょう。新しいビデオを視聴し、グループラボに申し込み、Apple Developer ForumsでのQ&Aに参加しましょう。 最新情報を確認する",
+      "published_at": "2026-09-09T23:05:23+00:00",
+      "source": "Apple Developer News (JP)",
+      "source_id": "apple_developer_jp",
+      "source_kind": "official",
+      "source_category": "ios_apple",
+      "genre": "ios_apple",
+      "primary_category": "ios_apple",
+      "topics": [
+        {
+          "id": "apple_ecosystem",
+          "score": 0.583
+        }
+      ],
+      "topic_ids": [
+        "apple_ecosystem"
+      ],
+      "topic_labels": [
+        "Apple・iPhone・Watch"
+      ],
+      "topic_scores": {
+        "apple_ecosystem": 0.583
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 1.84,
+        "related_interest": 0.0,
+        "freshness": 0.705,
+        "source_priority": 0.9
+      },
+      "recommendation_reason": "direct",
+      "interest_score": 1.84,
+      "score": 1.84,
+      "score_components": {
+        "topics": 1.84,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 3.19,
+      "matched_interests": [
+        "apple_ecosystem"
+      ],
+      "matched_labels": [
+        "Apple・iPhone・Watch"
+      ],
+      "image_url": "https://developer.apple.com/news/images/og/apple-developer-og.png",
+      "title_ja": "iPhone Duoに向けた準備",
+      "summary_ja": "今すぐiPhone Duoに向けた準備を始めましょう。新しいビデオを視聴し、グループラボに申し込み、Apple Developer ForumsでのQ&Aに参加しましょう。 最新情報を確認する"
     },
     {
       "id": "466893cf2b6bc722",
@@ -5621,7 +6037,7 @@
       "signals": {
         "direct_interest": 1.0,
         "related_interest": 0.0,
-        "freshness": 0.994,
+        "freshness": 0.991,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -5632,7 +6048,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.19,
+      "rank_score": 3.18,
       "matched_interests": [
         "llm_ai_tools"
       ],
@@ -5679,7 +6095,7 @@
       "signals": {
         "direct_interest": 1.45,
         "related_interest": 0.0,
-        "freshness": 0.839,
+        "freshness": 0.836,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -5690,7 +6106,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.19,
+      "rank_score": 3.18,
       "matched_interests": [
         "embedded_devices"
       ],
@@ -5700,64 +6116,6 @@
       "image_url": "https://www.raspberrypi.com/app/uploads/2026/09/RPOM170-blog-image-Large-1024x683.jpeg",
       "title_ja": "ラズベリーパイ公式マガジン#170",
       "summary_ja": "若いメーカーのトリオは、水質や生物を調査する素晴らしいラズベリーPi 3ベースの水中カメラを作成しました。 投稿 Sensea 水中カメラ — Raspberry Pi 公式マガジン #170 は Raspberry Pi で最初に登場しました。"
-    },
-    {
-      "id": "b81f259c6183c9d4",
-      "title": "iPhone Duoに向けた準備",
-      "url": "https://developer.apple.com/jp/news/?id=vn8abkxx",
-      "summary": "今すぐiPhone Duoに向けた準備を始めましょう。新しいビデオを視聴し、グループラボに申し込み、Apple Developer ForumsでのQ&Aに参加しましょう。 最新情報を確認する",
-      "published_at": "2026-09-09T23:05:23+00:00",
-      "source": "Apple Developer News (JP)",
-      "source_id": "apple_developer_jp",
-      "source_kind": "official",
-      "source_category": "ios_apple",
-      "genre": "ios_apple",
-      "primary_category": "ios_apple",
-      "topics": [
-        {
-          "id": "apple_ecosystem",
-          "score": 0.583
-        }
-      ],
-      "topic_ids": [
-        "apple_ecosystem"
-      ],
-      "topic_labels": [
-        "Apple・iPhone・Watch"
-      ],
-      "topic_scores": {
-        "apple_ecosystem": 0.583
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 1.84,
-        "related_interest": 0.0,
-        "freshness": 0.708,
-        "source_priority": 0.9
-      },
-      "recommendation_reason": "direct",
-      "interest_score": 1.84,
-      "score": 1.84,
-      "score_components": {
-        "topics": 1.84,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 3.19,
-      "matched_interests": [
-        "apple_ecosystem"
-      ],
-      "matched_labels": [
-        "Apple・iPhone・Watch"
-      ],
-      "image_url": "https://developer.apple.com/news/images/og/apple-developer-og.png",
-      "title_ja": "iPhone Duoに向けた準備",
-      "summary_ja": "今すぐiPhone Duoに向けた準備を始めましょう。新しいビデオを視聴し、グループラボに申し込み、Apple Developer ForumsでのQ&Aに参加しましょう。 最新情報を確認する"
     },
     {
       "id": "f3294383318fff31",
@@ -5795,7 +6153,7 @@
       "signals": {
         "direct_interest": 1.05,
         "related_interest": 0.0,
-        "freshness": 0.99,
+        "freshness": 0.987,
         "source_priority": 0.75
       },
       "recommendation_reason": "direct",
@@ -5853,7 +6211,7 @@
       "signals": {
         "direct_interest": 1.0,
         "related_interest": 0.0,
-        "freshness": 0.989,
+        "freshness": 0.986,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -5871,7 +6229,6 @@
       "matched_labels": [
         "AIツール・サービス"
       ],
-      "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-argon__blog-header__2784x1566.width-1300.png",
       "title_ja": "ジェミニ4アルゴン:あなたの最も困難な問題を解決するために構築",
       "summary_ja": "ツイート"
     },
@@ -5911,7 +6268,7 @@
       "signals": {
         "direct_interest": 1.01,
         "related_interest": 0.0,
-        "freshness": 0.988,
+        "freshness": 0.985,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -5922,14 +6279,13 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.15,
+      "rank_score": 3.14,
       "matched_interests": [
         "ai_agents_automation"
       ],
       "matched_labels": [
         "AIエージェント・自動化"
       ],
-      "image_url": "https://simonwillison.net/2026/Oct/13/geoffrey-huntley/",
       "title_ja": "キュート ゲフリー ハントリー",
       "summary_ja": "エージェントが私の診断ライブラリを使用していない場合、私はAGENTS.mdをイントロスペクトし、更新することができますが、まだデルタがあり、それは漂流します。 代わりに、私は診断モジュールをバイパスするobservabilityモジュールへの直接呼び出しのための git diff をチェックする事前コミットのホックを書きます。 Boom: コミットを失敗し、th を指示するプロンプトを注入します"
     },
@@ -5969,7 +6325,7 @@
       "signals": {
         "direct_interest": 1.09,
         "related_interest": 0.0,
-        "freshness": 0.946,
+        "freshness": 0.943,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -5987,7 +6343,6 @@
       "matched_labels": [
         "ESP32・小型デバイス"
       ],
-      "image_url": "https://www.raspberrypi.com/app/uploads/2026/10/RECEPTION-1024x609.jpg",
       "title_ja": "Pi Towers のネットゼロ: 私たちがそれをやっている方法",
       "summary_ja": "Raspberry Pi Ltdでは、プロパティポートフォリオを変革し、ネットゼロに到達する先駆者を目指しています。 Pi Towers の投稿ネットゼロ: Raspberry Pi で最初に登場した方法"
     },
@@ -6027,7 +6382,7 @@
       "signals": {
         "direct_interest": 1.25,
         "related_interest": 0.0,
-        "freshness": 0.875,
+        "freshness": 0.874,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -6045,124 +6400,8 @@
       "matched_labels": [
         "Obsidian・PKM"
       ],
-      "image_url": "https://obsidian.md/images/banner.png",
       "title_ja": "Obsidian 1.14.2デスクトップ(ほぼアクセス)",
       "summary_ja": "新しいあなたは今、Obsidianのあなたのボルトの外からファイルを開くことができます。 ファイルが現在のウィンドウ(デスクトップのみ)で開きます。 \"vaultの外からファイルを開く\"コマンドを追加しました。 コンピュータ上の任意のファイルを選択して、アプリで表示します。 オペレーティングシステムのオープンメニューにObsidianが表示されるようになりました。"
-    },
-    {
-      "id": "77797577f7769d84",
-      "title": "Anthropic's Scion is heavily inspired by Mononoke",
-      "url": "https://sunshowers.io/posts/anthropic-mononoke/",
-      "summary": "Article URL: https://sunshowers.io/posts/anthropic-mononoke/ Comments URL: https://news.ycombinator.com/item?id=50094694 Points: 212 # Comments: 93",
-      "published_at": "2026-10-14T20:30:54+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_kind": "community",
-      "source_category": "other",
-      "genre": "ai",
-      "primary_category": "ai",
-      "topics": [
-        {
-          "id": "llm_ai_tools",
-          "score": 0.333
-        }
-      ],
-      "topic_ids": [
-        "llm_ai_tools"
-      ],
-      "topic_labels": [
-        "AIツール・サービス"
-      ],
-      "topic_scores": {
-        "llm_ai_tools": 0.333
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 1.0,
-        "related_interest": 0.0,
-        "freshness": 0.999,
-        "source_priority": 0.5
-      },
-      "recommendation_reason": "direct",
-      "interest_score": 1.0,
-      "score": 1.0,
-      "score_components": {
-        "topics": 1.0,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 3.1,
-      "matched_interests": [
-        "llm_ai_tools"
-      ],
-      "matched_labels": [
-        "AIツール・サービス"
-      ],
-      "image_url": "https://sunshowers.io/images/og-image.png",
-      "title_ja": "Anthropic's Scion は Mononoke にインスパイアされています",
-      "summary_ja": "記事のURL: https://sunshowers.io/posts/anthropic-mononoke/ コメントのURL: https://news.ycombinator.com/item?id=50094694 ポイント: 212 # 注釈: 93"
-    },
-    {
-      "id": "cf4ae686e4b812b0",
-      "title": "Show HN: I wrote an email app that accepts only one sender per inbox",
-      "url": "https://clova.email/",
-      "summary": "Infinite inboxes, including prefixes where you don't have to create inboxes before you use them -- they self create when you add a suffix. Three types of inboxes: - One sender. Locks to the first domain to send email (except gmail, outlook, etc where it locks to an email account for obivous reasons. It bounces everyone",
-      "published_at": "2026-10-14T17:00:59+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_kind": "community",
-      "source_category": "other",
-      "genre": "ai",
-      "primary_category": "ai",
-      "topics": [
-        {
-          "id": "ai_agents_automation",
-          "score": 0.25
-        }
-      ],
-      "topic_ids": [
-        "ai_agents_automation"
-      ],
-      "topic_labels": [
-        "AIエージェント・自動化"
-      ],
-      "topic_scores": {
-        "ai_agents_automation": 0.25
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 1.01,
-        "related_interest": 0.0,
-        "freshness": 0.998,
-        "source_priority": 0.5
-      },
-      "recommendation_reason": "direct",
-      "interest_score": 1.01,
-      "score": 1.01,
-      "score_components": {
-        "topics": 1.01,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 3.1,
-      "matched_interests": [
-        "ai_agents_automation"
-      ],
-      "matched_labels": [
-        "AIエージェント・自動化"
-      ],
-      "title_ja": "HN を表示: 受信トレイ 1 つの送信者だけを受け入れるメール アプリを書いた",
-      "summary_ja": "Infiniteの受信トレイは、それらを使用する前に受信トレイを作成する必要がない接頭辞を含みます。 suffixを追加すると、自分で作成します。 3種類の受信トレイ: - 1つの送信機。 最初のドメインにロックしてメールを送信します(ただし、Gmail、Outlookなど)。 みんなにバウンス"
     },
     {
       "id": "d32c46ace3bcb26a",
@@ -6200,7 +6439,7 @@
       "signals": {
         "direct_interest": 0.9,
         "related_interest": 0.0,
-        "freshness": 0.994,
+        "freshness": 0.991,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -6211,7 +6450,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.09,
+      "rank_score": 3.08,
       "matched_interests": [
         "ai_coding"
       ],
@@ -6257,7 +6496,7 @@
       "signals": {
         "direct_interest": 1.0,
         "related_interest": 0.0,
-        "freshness": 0.952,
+        "freshness": 0.949,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -6314,7 +6553,7 @@
       "signals": {
         "direct_interest": 1.0,
         "related_interest": 0.0,
-        "freshness": 0.946,
+        "freshness": 0.943,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -6325,7 +6564,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.07,
+      "rank_score": 3.06,
       "matched_interests": [
         "llm_ai_tools"
       ],
@@ -6378,7 +6617,7 @@
       "signals": {
         "direct_interest": 1.8,
         "related_interest": 0.0,
-        "freshness": 0.666,
+        "freshness": 0.663,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -6389,7 +6628,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.06,
+      "rank_score": 3.05,
       "matched_interests": [
         "input_devices",
         "maker_projects"
@@ -6437,64 +6676,7 @@
       "signals": {
         "direct_interest": 1.0,
         "related_interest": 0.0,
-        "freshness": 0.937,
-        "source_priority": 1.0
-      },
-      "recommendation_reason": "direct",
-      "interest_score": 1.0,
-      "score": 1.0,
-      "score_components": {
-        "topics": 1.0,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 3.05,
-      "matched_interests": [
-        "llm_ai_tools"
-      ],
-      "matched_labels": [
-        "AIツール・サービス"
-      ],
-      "title_ja": "AIの未来を形づける十代の若者たちを助け、計画し、",
-      "summary_ja": "大学プランナーは、新しいフラッシュカード、クイズ、十代のAI評議会と一緒に、学生が大学のアプリケーションを管理するのに役立つティーンのためのチャットGPTに来ています。"
-    },
-    {
-      "id": "a527a46b861e9185",
-      "title": "GPT-6 and Intelligent UI for everyone",
-      "url": "https://openai.com/index/gpt-6-for-everyone",
-      "summary": "GPT‑6 is rolling out globally in ChatGPT with Intelligent UI, delivering faster responses with visuals and interactive experiences you can explore and use directly.",
-      "published_at": "2026-10-07T00:00:00+00:00",
-      "source": "OpenAI News",
-      "source_id": "openai_news",
-      "source_kind": "official",
-      "source_category": "ai",
-      "genre": "ai",
-      "primary_category": "ai",
-      "topics": [
-        {
-          "id": "llm_ai_tools",
-          "score": 0.333
-        }
-      ],
-      "topic_ids": [
-        "llm_ai_tools"
-      ],
-      "topic_labels": [
-        "AIツール・サービス"
-      ],
-      "topic_scores": {
-        "llm_ai_tools": 0.333
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 1.0,
-        "related_interest": 0.0,
-        "freshness": 0.933,
+        "freshness": 0.935,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -6512,8 +6694,8 @@
       "matched_labels": [
         "AIツール・サービス"
       ],
-      "title_ja": "GPT-6とインテリジェントなUIをみんなに",
-      "summary_ja": "GPT‐6 は、インテリジェントな UI で ChatGPT でグローバルに展開し、視覚やインタラクティブな体験を素早く対応できます。"
+      "title_ja": "AIの未来を形づける十代の若者たちを助け、計画し、",
+      "summary_ja": "大学プランナーは、新しいフラッシュカード、クイズ、十代のAI評議会と一緒に、学生が大学のアプリケーションを管理するのに役立つティーンのためのチャットGPTに来ています。"
     },
     {
       "id": "01b38b6776119a20",
@@ -6551,7 +6733,7 @@
       "signals": {
         "direct_interest": 1.25,
         "related_interest": 0.0,
-        "freshness": 0.846,
+        "freshness": 0.844,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -6571,6 +6753,63 @@
       ],
       "title_ja": "Obsidian 1.14.1デスクトップ(ほぼアクセス)",
       "summary_ja": "数学のレンダリングは、MathJax 4.1.3 を使用して、MathJax 3 と Temml を交換します。ベース: キーボードのナビゲーション、選択、水平スクロールを含むテーブルビューに右から左に (RTL) サポートを追加。 動作しないオプションを開くための固定デフォルトファイルはありません。 OSメニューからOSメニューから、最近開いていない不具合を修正"
+    },
+    {
+      "id": "a527a46b861e9185",
+      "title": "GPT-6 and Intelligent UI for everyone",
+      "url": "https://openai.com/index/gpt-6-for-everyone",
+      "summary": "GPT‑6 is rolling out globally in ChatGPT with Intelligent UI, delivering faster responses with visuals and interactive experiences you can explore and use directly.",
+      "published_at": "2026-10-07T00:00:00+00:00",
+      "source": "OpenAI News",
+      "source_id": "openai_news",
+      "source_kind": "official",
+      "source_category": "ai",
+      "genre": "ai",
+      "primary_category": "ai",
+      "topics": [
+        {
+          "id": "llm_ai_tools",
+          "score": 0.333
+        }
+      ],
+      "topic_ids": [
+        "llm_ai_tools"
+      ],
+      "topic_labels": [
+        "AIツール・サービス"
+      ],
+      "topic_scores": {
+        "llm_ai_tools": 0.333
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 1.0,
+        "related_interest": 0.0,
+        "freshness": 0.93,
+        "source_priority": 1.0
+      },
+      "recommendation_reason": "direct",
+      "interest_score": 1.0,
+      "score": 1.0,
+      "score_components": {
+        "topics": 1.0,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 3.03,
+      "matched_interests": [
+        "llm_ai_tools"
+      ],
+      "matched_labels": [
+        "AIツール・サービス"
+      ],
+      "title_ja": "GPT-6とインテリジェントなUIをみんなに",
+      "summary_ja": "GPT‐6 は、インテリジェントな UI で ChatGPT でグローバルに展開し、視覚やインタラクティブな体験を素早く対応できます。"
     },
     {
       "id": "b02e0832484a53fe",
@@ -6608,7 +6847,7 @@
       "signals": {
         "direct_interest": 1.0,
         "related_interest": 0.0,
-        "freshness": 0.933,
+        "freshness": 0.93,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -6619,7 +6858,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.03,
+      "rank_score": 3.02,
       "matched_interests": [
         "llm_ai_tools"
       ],
@@ -6665,7 +6904,7 @@
       "signals": {
         "direct_interest": 1.0,
         "related_interest": 0.0,
-        "freshness": 0.931,
+        "freshness": 0.928,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -6676,7 +6915,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.03,
+      "rank_score": 3.02,
       "matched_interests": [
         "llm_ai_tools"
       ],
@@ -6722,7 +6961,7 @@
       "signals": {
         "direct_interest": 1.0,
         "related_interest": 0.0,
-        "freshness": 0.92,
+        "freshness": 0.917,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -6779,7 +7018,7 @@
       "signals": {
         "direct_interest": 1.84,
         "related_interest": 0.0,
-        "freshness": 0.639,
+        "freshness": 0.636,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -6790,7 +7029,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 3.0,
+      "rank_score": 2.99,
       "matched_interests": [
         "apple_ecosystem"
       ],
@@ -6836,7 +7075,7 @@
       "signals": {
         "direct_interest": 0.9,
         "related_interest": 0.0,
-        "freshness": 0.952,
+        "freshness": 0.949,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -6847,7 +7086,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.99,
+      "rank_score": 2.98,
       "matched_interests": [
         "ai_coding"
       ],
@@ -6893,7 +7132,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.988,
+        "freshness": 0.985,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -6950,7 +7189,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.988,
+        "freshness": 0.985,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -6961,7 +7200,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.95,
+      "rank_score": 2.94,
       "matched_interests": [
         "github_devops"
       ],
@@ -7007,7 +7246,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.988,
+        "freshness": 0.985,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -7018,7 +7257,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.95,
+      "rank_score": 2.94,
       "matched_interests": [
         "github_devops"
       ],
@@ -7064,7 +7303,7 @@
       "signals": {
         "direct_interest": 1.05,
         "related_interest": 0.0,
-        "freshness": 0.883,
+        "freshness": 0.88,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -7075,7 +7314,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.95,
+      "rank_score": 2.94,
       "matched_interests": [
         "github_devops"
       ],
@@ -7121,7 +7360,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.998,
+        "freshness": 0.995,
         "source_priority": 0.75
       },
       "recommendation_reason": "direct",
@@ -7132,7 +7371,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.94,
+      "rank_score": 2.93,
       "matched_interests": [
         "github_devops"
       ],
@@ -7178,7 +7417,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.996,
+        "freshness": 0.993,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -7189,7 +7428,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.94,
+      "rank_score": 2.93,
       "matched_interests": [
         "llm_ai_tools"
       ],
@@ -7198,63 +7437,6 @@
       ],
       "title_ja": "SentinelOneは、数週間から数時間までのマルウェア分析を切断",
       "summary_ja": "OpenAI Daybreak では、SentinelOne は数週間のマルウェア分析を数時間短縮し、より多くの脅威を調査する能力を作成します。"
-    },
-    {
-      "id": "05d0965b5b4f2f0f",
-      "title": "How Albertsons Companies is reimagining retail from the inside out",
-      "url": "https://openai.com/index/albertsons-reimagining-retail",
-      "summary": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers.",
-      "published_at": "2026-10-01T16:00:00+00:00",
-      "source": "OpenAI News",
-      "source_id": "openai_news",
-      "source_kind": "official",
-      "source_category": "ai",
-      "genre": "ai",
-      "primary_category": "ai",
-      "topics": [
-        {
-          "id": "llm_ai_tools",
-          "score": 0.333
-        }
-      ],
-      "topic_ids": [
-        "llm_ai_tools"
-      ],
-      "topic_labels": [
-        "AIツール・サービス"
-      ],
-      "topic_scores": {
-        "llm_ai_tools": 0.333
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 1.0,
-        "related_interest": 0.0,
-        "freshness": 0.889,
-        "source_priority": 1.0
-      },
-      "recommendation_reason": "direct",
-      "interest_score": 1.0,
-      "score": 1.0,
-      "score_components": {
-        "topics": 1.0,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.93,
-      "matched_interests": [
-        "llm_ai_tools"
-      ],
-      "matched_labels": [
-        "AIツール・サービス"
-      ],
-      "title_ja": "アルバートソンズ企業が中外からの小売を想像している方法",
-      "summary_ja": "Albertsons Cos. は、ChatGPT Enterprise および OpenAI API を使用して、チームがより迅速に作業し、何百万もの顧客に食料品の買い物を容易にします。"
     },
     {
       "id": "6765f9e03165c17a",
@@ -7292,7 +7474,7 @@
       "signals": {
         "direct_interest": 1.0,
         "related_interest": 0.0,
-        "freshness": 0.892,
+        "freshness": 0.889,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -7312,6 +7494,63 @@
       ],
       "title_ja": "LangChain対CrewAI:オーケストレーションがOpenRouter-Native Routingと比較",
       "summary_ja": "マルチモデルのオーケストレーションは3層。 ワークフローのオーケストレーションは、計画、状態、記憶、委任、LangGraphとCrewAIが構築されています。 モデルルーティングは、失敗したときにコールとフォールバックのモデルを選択し、プロバイダルーティングは、そのモデルを提供するプロバイダを選択します。 OpenRouter は secon をします"
+    },
+    {
+      "id": "05d0965b5b4f2f0f",
+      "title": "How Albertsons Companies is reimagining retail from the inside out",
+      "url": "https://openai.com/index/albertsons-reimagining-retail",
+      "summary": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers.",
+      "published_at": "2026-10-01T16:00:00+00:00",
+      "source": "OpenAI News",
+      "source_id": "openai_news",
+      "source_kind": "official",
+      "source_category": "ai",
+      "genre": "ai",
+      "primary_category": "ai",
+      "topics": [
+        {
+          "id": "llm_ai_tools",
+          "score": 0.333
+        }
+      ],
+      "topic_ids": [
+        "llm_ai_tools"
+      ],
+      "topic_labels": [
+        "AIツール・サービス"
+      ],
+      "topic_scores": {
+        "llm_ai_tools": 0.333
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 1.0,
+        "related_interest": 0.0,
+        "freshness": 0.886,
+        "source_priority": 1.0
+      },
+      "recommendation_reason": "direct",
+      "interest_score": 1.0,
+      "score": 1.0,
+      "score_components": {
+        "topics": 1.0,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.92,
+      "matched_interests": [
+        "llm_ai_tools"
+      ],
+      "matched_labels": [
+        "AIツール・サービス"
+      ],
+      "title_ja": "アルバートソンズ企業が中外からの小売を想像している方法",
+      "summary_ja": "Albertsons Cos. は、ChatGPT Enterprise および OpenAI API を使用して、チームがより迅速に作業し、何百万もの顧客に食料品の買い物を容易にします。"
     },
     {
       "id": "f52bc831b8ef6892",
@@ -7349,7 +7588,7 @@
       "signals": {
         "direct_interest": 1.31,
         "related_interest": 0.0,
-        "freshness": 0.781,
+        "freshness": 0.778,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -7413,7 +7652,7 @@
       "signals": {
         "direct_interest": 1.8,
         "related_interest": 0.0,
-        "freshness": 0.608,
+        "freshness": 0.605,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -7424,7 +7663,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.9,
+      "rank_score": 2.89,
       "matched_interests": [
         "input_devices",
         "maker_projects"
@@ -7472,7 +7711,7 @@
       "signals": {
         "direct_interest": 1.31,
         "related_interest": 0.0,
-        "freshness": 0.764,
+        "freshness": 0.761,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -7483,7 +7722,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.88,
+      "rank_score": 2.87,
       "matched_interests": [
         "apple_ecosystem"
       ],
@@ -7492,63 +7731,6 @@
       ],
       "title_ja": "EUにおけるApp Tracking Transparencyに関するアップデート",
       "summary_ja": "欧州の一部の競争当局との合意に基づき、Appleは欧州連合（EU）におけるApp Tracking Transparencyフレームワークに変更を導入します。iOS 27.2およびiPadOS 27.2以降、デベロッパはEU内でApp Tracking Transparencyシステムプロンプトの代替バージョンを使用できるようになります。どのタイミングでユーザーにトラッキングの許可を得る必要があるかに関する要件に変更はありません。法的要件により、ドイツ、フランス、イタリア、ポーランド、およびルーマニア向けに配信されるアプリでは、システムプロンプトの代替バージョンのみが利用できます。 さらに詳しく"
-    },
-    {
-      "id": "cf2863e2eef6f7a3",
-      "title": "Hack the World: Why hackathons are still the best place to learn to build",
-      "url": "https://github.blog/developer-skills/career-growth/hack-the-world-why-hackathons-are-still-the-best-place-to-learn-to-build/",
-      "summary": "The barriers to building software have collapsed. Today, anyone can build. Hackathons are a great place to start learning. The post Hack the World: Why hackathons are still the best place to learn to build appeared first on The GitHub Blog .",
-      "published_at": "2026-10-09T16:00:00+00:00",
-      "source": "GitHub Blog",
-      "source_id": "github_blog",
-      "source_kind": "official",
-      "source_category": "software",
-      "genre": "software",
-      "primary_category": "software",
-      "topics": [
-        {
-          "id": "github_devops",
-          "score": 0.25
-        }
-      ],
-      "topic_ids": [
-        "github_devops"
-      ],
-      "topic_labels": [
-        "GitHub・Actions"
-      ],
-      "topic_scores": {
-        "github_devops": 0.25
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 0.79,
-        "related_interest": 0.0,
-        "freshness": 0.956,
-        "source_priority": 0.75
-      },
-      "recommendation_reason": "direct",
-      "interest_score": 0.79,
-      "score": 0.79,
-      "score_components": {
-        "topics": 0.79,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.84,
-      "matched_interests": [
-        "github_devops"
-      ],
-      "matched_labels": [
-        "GitHub・Actions"
-      ],
-      "title_ja": "世界をハック: なぜハッカソンはまだ構築するために学ぶための最良の場所",
-      "summary_ja": "ソフトウェア構築の障壁が崩壊しました。 今日は、誰でもビルドできます。 ハッカソンは学習を始めるのに最適な場所です。 ポストハック世界: ハッカソンがまだGitHubブログで最初に登場したビルドを学ぶための最良の場所である理由 ."
     },
     {
       "id": "7fedfe91792bf89c",
@@ -7586,7 +7768,7 @@
       "signals": {
         "direct_interest": 1.25,
         "related_interest": 0.0,
-        "freshness": 0.767,
+        "freshness": 0.765,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -7606,6 +7788,63 @@
       ],
       "title_ja": "Obsidian 1.13.8 モバイル (公開)",
       "summary_ja": "アンドロイド: エディタが誤って読書モードからスクロールしながら編集モードに切り替えることを引き起こした問題を修正しました。"
+    },
+    {
+      "id": "cf2863e2eef6f7a3",
+      "title": "Hack the World: Why hackathons are still the best place to learn to build",
+      "url": "https://github.blog/developer-skills/career-growth/hack-the-world-why-hackathons-are-still-the-best-place-to-learn-to-build/",
+      "summary": "The barriers to building software have collapsed. Today, anyone can build. Hackathons are a great place to start learning. The post Hack the World: Why hackathons are still the best place to learn to build appeared first on The GitHub Blog .",
+      "published_at": "2026-10-09T16:00:00+00:00",
+      "source": "GitHub Blog",
+      "source_id": "github_blog",
+      "source_kind": "official",
+      "source_category": "software",
+      "genre": "software",
+      "primary_category": "software",
+      "topics": [
+        {
+          "id": "github_devops",
+          "score": 0.25
+        }
+      ],
+      "topic_ids": [
+        "github_devops"
+      ],
+      "topic_labels": [
+        "GitHub・Actions"
+      ],
+      "topic_scores": {
+        "github_devops": 0.25
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 0.79,
+        "related_interest": 0.0,
+        "freshness": 0.953,
+        "source_priority": 0.75
+      },
+      "recommendation_reason": "direct",
+      "interest_score": 0.79,
+      "score": 0.79,
+      "score_components": {
+        "topics": 0.79,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.83,
+      "matched_interests": [
+        "github_devops"
+      ],
+      "matched_labels": [
+        "GitHub・Actions"
+      ],
+      "title_ja": "世界をハック: なぜハッカソンはまだ構築するために学ぶための最良の場所",
+      "summary_ja": "ソフトウェア構築の障壁が崩壊しました。 今日は、誰でもビルドできます。 ハッカソンは学習を始めるのに最適な場所です。 ポストハック世界: ハッカソンがまだGitHubブログで最初に登場したビルドを学ぶための最良の場所である理由 ."
     },
     {
       "id": "677bb4a98ba40c4b",
@@ -7643,7 +7882,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.959,
+        "freshness": 0.956,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -7700,7 +7939,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.948,
+        "freshness": 0.945,
         "source_priority": 0.75
       },
       "recommendation_reason": "direct",
@@ -7711,7 +7950,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.82,
+      "rank_score": 2.81,
       "matched_interests": [
         "github_devops"
       ],
@@ -7757,7 +7996,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.942,
+        "freshness": 0.939,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -7777,63 +8016,6 @@
       ],
       "title_ja": "AI対応の「偽前」業務の中断",
       "summary_ja": "OpenAIは、偽面のジャーナリストと地政的なメッセージングを広めるシンクタンクを使用したAIの影響力のある2つの操作を中断しました。"
-    },
-    {
-      "id": "a7208543f1ab8584",
-      "title": "datasette-ports 0.4",
-      "url": "https://simonwillison.net/2026/Oct/12/datasette-ports/",
-      "summary": "Release: datasette-ports 0.4 My plugin for detecting and listing all Datasette instances on the current machine now works with the latest version, and displays the detected PID as well. Knowing the PID makes it easier to attach the new Python 3.15 profiler . Tags: datasette",
-      "published_at": "2026-10-12T04:57:07+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_kind": "blog",
-      "source_category": "other",
-      "genre": "software",
-      "primary_category": "software",
-      "topics": [
-        {
-          "id": "programming",
-          "score": 0.25
-        }
-      ],
-      "topic_ids": [
-        "programming"
-      ],
-      "topic_labels": [
-        "プログラミング・言語"
-      ],
-      "topic_scores": {
-        "programming": 0.25
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "analysis",
-      "item_type": "analysis",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 0.68,
-        "related_interest": 0.0,
-        "freshness": 0.977,
-        "source_priority": 0.85
-      },
-      "recommendation_reason": "direct",
-      "interest_score": 0.68,
-      "score": 0.68,
-      "score_components": {
-        "topics": 0.68,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.8,
-      "matched_interests": [
-        "programming"
-      ],
-      "matched_labels": [
-        "プログラミング・言語"
-      ],
-      "title_ja": "データセットポート 0.4",
-      "summary_ja": "リリース:データセットポート 0.4 現在のマシン上のすべてのDatasetteインスタンスを検出し、リストするための私のプラグインは、最新のバージョンで動作し、検出されたPIDも表示されます。 PID を知ると、新しい Python 3.15 のプロファイラを取り付けやすくなります。 タグ: データシート"
     },
     {
       "id": "dd8e7ceb08de612a",
@@ -7871,7 +8053,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.95,
+        "freshness": 0.947,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -7891,6 +8073,63 @@
       ],
       "title_ja": "トゥク 1.0",
       "summary_ja": "リリース: ttok 1.0 私は ttok 0.4 、 ran uv ツールのアップグレード ttok を解放しました。新しいバージョンにファイルを配管しました。GPT-5/GPT-6 に非常に明確にデフォルトでなければならないときに GPT-4 のトークナイザーにデフォルトであることがわかりました! デフォルトを切り替えることは、1.0を最終的に出荷する合理的な言い訳でした。 OpenAIは行動しません"
+    },
+    {
+      "id": "a7208543f1ab8584",
+      "title": "datasette-ports 0.4",
+      "url": "https://simonwillison.net/2026/Oct/12/datasette-ports/",
+      "summary": "Release: datasette-ports 0.4 My plugin for detecting and listing all Datasette instances on the current machine now works with the latest version, and displays the detected PID as well. Knowing the PID makes it easier to attach the new Python 3.15 profiler . Tags: datasette",
+      "published_at": "2026-10-12T04:57:07+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_kind": "blog",
+      "source_category": "other",
+      "genre": "software",
+      "primary_category": "software",
+      "topics": [
+        {
+          "id": "programming",
+          "score": 0.25
+        }
+      ],
+      "topic_ids": [
+        "programming"
+      ],
+      "topic_labels": [
+        "プログラミング・言語"
+      ],
+      "topic_scores": {
+        "programming": 0.25
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "analysis",
+      "item_type": "analysis",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 0.68,
+        "related_interest": 0.0,
+        "freshness": 0.974,
+        "source_priority": 0.85
+      },
+      "recommendation_reason": "direct",
+      "interest_score": 0.68,
+      "score": 0.68,
+      "score_components": {
+        "topics": 0.68,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.79,
+      "matched_interests": [
+        "programming"
+      ],
+      "matched_labels": [
+        "プログラミング・言語"
+      ],
+      "title_ja": "データセットポート 0.4",
+      "summary_ja": "リリース:データセットポート 0.4 現在のマシン上のすべてのDatasetteインスタンスを検出し、リストするための私のプラグインは、最新のバージョンで動作し、検出されたPIDも表示されます。 PID を知ると、新しい Python 3.15 のプロファイラを取り付けやすくなります。 タグ: データシート"
     },
     {
       "id": "5e9d3ccfbaf733b9",
@@ -7928,7 +8167,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.949,
+        "freshness": 0.946,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -7939,7 +8178,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.8,
+      "rank_score": 2.79,
       "matched_interests": [
         "llm_ai_tools"
       ],
@@ -7985,7 +8224,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.939,
+        "freshness": 0.937,
         "source_priority": 0.75
       },
       "recommendation_reason": "direct",
@@ -7996,7 +8235,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.8,
+      "rank_score": 2.79,
       "matched_interests": [
         "github_devops"
       ],
@@ -8042,7 +8281,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.937,
+        "freshness": 0.935,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -8099,7 +8338,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.933,
+        "freshness": 0.93,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -8119,63 +8358,6 @@
       ],
       "title_ja": "AIセールスエージェントが月間600時間のセールスチームを節約する方法",
       "summary_ja": "Rasp は OpenRouter の 5 人のセールス チームを 1 か月の約 600 時間戻し、1 日あたりのコールを 2 回余す部屋を加え、Ori の 1 日約 $ 30 で実行します。"
-    },
-    {
-      "id": "c817f9d97c315392",
-      "title": "Building Git infrastructure for agent-scale development",
-      "url": "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/",
-      "summary": "We're rebuilding GitHub's Git infrastructure while GitHub keeps running, creating a foundation for agent-scale software development. The post Building Git infrastructure for agent-scale development appeared first on The GitHub Blog .",
-      "published_at": "2026-10-06T20:57:56+00:00",
-      "source": "GitHub Blog",
-      "source_id": "github_blog",
-      "source_kind": "official",
-      "source_category": "software",
-      "genre": "software",
-      "primary_category": "software",
-      "topics": [
-        {
-          "id": "github_devops",
-          "score": 0.25
-        }
-      ],
-      "topic_ids": [
-        "github_devops"
-      ],
-      "topic_labels": [
-        "GitHub・Actions"
-      ],
-      "topic_scores": {
-        "github_devops": 0.25
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 0.79,
-        "related_interest": 0.0,
-        "freshness": 0.932,
-        "source_priority": 0.75
-      },
-      "recommendation_reason": "direct",
-      "interest_score": 0.79,
-      "score": 0.79,
-      "score_components": {
-        "topics": 0.79,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.78,
-      "matched_interests": [
-        "github_devops"
-      ],
-      "matched_labels": [
-        "GitHub・Actions"
-      ],
-      "title_ja": "エージェントスケール開発のためのGitインフラの構築",
-      "summary_ja": "GitHub の Git インフラストラクチャを再構築しています。GitHub は実行を続け、エージェント規模のソフトウェア開発の基盤を築きます。 「The GitHub Blog 」にて、エージェントスケール開発のための「Building Git」インフラが初登場しました。"
     },
     {
       "id": "c5dea8b885eaee1b",
@@ -8213,7 +8395,7 @@
       "signals": {
         "direct_interest": 0.68,
         "related_interest": 0.0,
-        "freshness": 0.967,
+        "freshness": 0.964,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -8233,6 +8415,63 @@
       ],
       "title_ja": "Dwarf Fortress は、バージョン管理を今すぐ使用",
       "summary_ja": "しばらく前にDwarf Fortressがバージョン管理を使用しなかったことを聞いています。 その事実は、私の頭に宿されています。, その固有の複雑さを与えたので、私は、バージョン管理から利益をもたらすコードベースを想像するトラブルを持っているより多くの. それは芸術です。 私は見に行って、バージョンコンなしで日を報告する悲しいです"
+    },
+    {
+      "id": "c817f9d97c315392",
+      "title": "Building Git infrastructure for agent-scale development",
+      "url": "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/",
+      "summary": "We're rebuilding GitHub's Git infrastructure while GitHub keeps running, creating a foundation for agent-scale software development. The post Building Git infrastructure for agent-scale development appeared first on The GitHub Blog .",
+      "published_at": "2026-10-06T20:57:56+00:00",
+      "source": "GitHub Blog",
+      "source_id": "github_blog",
+      "source_kind": "official",
+      "source_category": "software",
+      "genre": "software",
+      "primary_category": "software",
+      "topics": [
+        {
+          "id": "github_devops",
+          "score": 0.25
+        }
+      ],
+      "topic_ids": [
+        "github_devops"
+      ],
+      "topic_labels": [
+        "GitHub・Actions"
+      ],
+      "topic_scores": {
+        "github_devops": 0.25
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 0.79,
+        "related_interest": 0.0,
+        "freshness": 0.929,
+        "source_priority": 0.75
+      },
+      "recommendation_reason": "direct",
+      "interest_score": 0.79,
+      "score": 0.79,
+      "score_components": {
+        "topics": 0.79,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.77,
+      "matched_interests": [
+        "github_devops"
+      ],
+      "matched_labels": [
+        "GitHub・Actions"
+      ],
+      "title_ja": "エージェントスケール開発のためのGitインフラの構築",
+      "summary_ja": "GitHub の Git インフラストラクチャを再構築しています。GitHub は実行を続け、エージェント規模のソフトウェア開発の基盤を築きます。 「The GitHub Blog 」にて、エージェントスケール開発のための「Building Git」インフラが初登場しました。"
     },
     {
       "id": "7a8dce1fec2f6766",
@@ -8270,7 +8509,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.935,
+        "freshness": 0.932,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -8281,7 +8520,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.77,
+      "rank_score": 2.76,
       "matched_interests": [
         "llm_ai_tools"
       ],
@@ -8327,65 +8566,8 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.922,
+        "freshness": 0.919,
         "source_priority": 1.0
-      },
-      "recommendation_reason": "direct",
-      "interest_score": 0.75,
-      "score": 0.75,
-      "score_components": {
-        "topics": 0.75,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.77,
-      "matched_interests": [
-        "llm_ai_tools"
-      ],
-      "matched_labels": [
-        "AIツール・サービス"
-      ],
-      "title_ja": "EUのテキストの実証規則への当社のアプローチ",
-      "summary_ja": "OpenAIがEU規則の下で透かしに近づいている方法 透かしが適用される場所、検出の仕組み、およびなぜアクセスが研究者と始まるかを学びます。"
-    },
-    {
-      "id": "234d71b4e01ddc9f",
-      "title": "Quoting Victoria Kim",
-      "url": "https://simonwillison.net/2026/Oct/6/victoria-kim/",
-      "summary": "Since the Medicare breach, OpenAI has put in place additional monitoring to allow “immediate intervention” by staff to stop training if the company’s models access the internet in ways they’re not supposed to, Mr. Kwon [chief strategy officer at OpenAI] said. — Victoria Kim , Reporting from the Australian parliament Ta",
-      "published_at": "2026-10-06T23:58:56+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_kind": "blog",
-      "source_category": "other",
-      "genre": "ai",
-      "primary_category": "ai",
-      "topics": [
-        {
-          "id": "llm_ai_tools",
-          "score": 0.25
-        }
-      ],
-      "topic_ids": [
-        "llm_ai_tools"
-      ],
-      "topic_labels": [
-        "AIツール・サービス"
-      ],
-      "topic_scores": {
-        "llm_ai_tools": 0.25
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "analysis",
-      "item_type": "analysis",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 0.75,
-        "related_interest": 0.0,
-        "freshness": 0.933,
-        "source_priority": 0.85
       },
       "recommendation_reason": "direct",
       "interest_score": 0.75,
@@ -8402,8 +8584,8 @@
       "matched_labels": [
         "AIツール・サービス"
       ],
-      "title_ja": "ビクトリア・キム・クート",
-      "summary_ja": "メディケアの侵害以来、OpenAIは、同社のモデルがインターネットにアクセスするかどうかを訓練を停止するために、スタッフによる「即時介入」を可能にするために、追加の監視を配置しています。Kwon [OpenAIのチーフ戦略役員]は言いました。 — ビクトリア・キム , オーストラリアの議会のTaから報告"
+      "title_ja": "EUのテキストの実証規則への当社のアプローチ",
+      "summary_ja": "OpenAIがEU規則の下で透かしに近づいている方法 透かしが適用される場所、検出の仕組み、およびなぜアクセスが研究者と始まるかを学びます。"
     },
     {
       "id": "dea294fad0135d59",
@@ -8441,7 +8623,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.922,
+        "freshness": 0.919,
         "source_priority": 0.75
       },
       "recommendation_reason": "direct",
@@ -8452,7 +8634,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.76,
+      "rank_score": 2.75,
       "matched_interests": [
         "github_devops"
       ],
@@ -8498,7 +8680,7 @@
       "signals": {
         "direct_interest": 1.25,
         "related_interest": 0.0,
-        "freshness": 0.733,
+        "freshness": 0.732,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -8509,7 +8691,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.76,
+      "rank_score": 2.75,
       "matched_interests": [
         "obsidian_pkm"
       ],
@@ -8555,64 +8737,7 @@
       "signals": {
         "direct_interest": 1.25,
         "related_interest": 0.0,
-        "freshness": 0.729,
-        "source_priority": 0.95
-      },
-      "recommendation_reason": "direct",
-      "interest_score": 1.25,
-      "score": 1.25,
-      "score_components": {
-        "topics": 1.25,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.75,
-      "matched_interests": [
-        "obsidian_pkm"
-      ],
-      "matched_labels": [
-        "Obsidian・PKM"
-      ],
-      "title_ja": "オブシディアン 1.13.7 モバイル(早期アクセス)",
-      "summary_ja": "Obsidian Desktop v1.13.7 までのすべての新機能とバグ修正が含まれています。"
-    },
-    {
-      "id": "5086a94035ddaff2",
-      "title": "Obsidian 1.13.6 Desktop (Public)",
-      "url": "https://obsidian.md/changelog/2026-08-10-desktop-v1.13.6/",
-      "summary": "Improvements The app now waits for configuration files to finish saving when quitting to avoid the file getting corrupted. Improved “Undo close tab” behavior. Tabs now reopen in the correct tab group, and if the currently active tab is the “New tab” page, it will no longer be reused. Removed dialog to approve URI actio",
-      "published_at": "2026-08-10T00:00:00+00:00",
-      "source": "Obsidian Changelog",
-      "source_id": "obsidian_changelog",
-      "source_kind": "official",
-      "source_category": "knowledge",
-      "genre": "knowledge",
-      "primary_category": "knowledge",
-      "topics": [
-        {
-          "id": "obsidian_pkm",
-          "score": 0.333
-        }
-      ],
-      "topic_ids": [
-        "obsidian_pkm"
-      ],
-      "topic_labels": [
-        "Obsidian・PKM"
-      ],
-      "topic_scores": {
-        "obsidian_pkm": 0.333
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "release",
-      "item_type": "release",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 1.25,
-        "related_interest": 0.0,
-        "freshness": 0.725,
+        "freshness": 0.728,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -8630,8 +8755,8 @@
       "matched_labels": [
         "Obsidian・PKM"
       ],
-      "title_ja": "Obsidian 1.13.6 デスクトップ (公開)",
-      "summary_ja": "改善点 このアプリは、ファイルが破損しているのを避けるために終了したときに設定ファイルを保存するのを待ちます。 「タブを閉じる」動作を改善しました。 タブは正しいタブグループで再オープンし、現在アクティブなタブが「新しいタブ」ページの場合、再利用されることはありません。 URI アクティオを承認するための削除されたダイアログ"
+      "title_ja": "オブシディアン 1.13.7 モバイル(早期アクセス)",
+      "summary_ja": "Obsidian Desktop v1.13.7 までのすべての新機能とバグ修正が含まれています。"
     },
     {
       "id": "c0ce0b9065465eb8",
@@ -8676,7 +8801,7 @@
       "signals": {
         "direct_interest": 1.8,
         "related_interest": 0.0,
-        "freshness": 0.549,
+        "freshness": 0.546,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -8700,61 +8825,61 @@
       "summary_ja": "こんにちは。自キ温泉ガイドのサリチル酸です。 昨日は早朝から出張だったので1日遅らせました。 今日は名古屋のイベントに遠征に行くので、できるだけサクッと書いていきたいと思います。"
     },
     {
-      "id": "3fa8774035dc591d",
-      "title": "Is Jev as Accurate as Frontier Models at Classification?",
-      "url": "https://openrouter.ai/blog/insights/jev-vs-claude-opus-5-classification/",
-      "summary": "Claude Opus 5 leads OpenRouter's classification task ranking by spend. We sent the same 3,080 Banking77 utterances to it and to Jev 1.13 through the Decisions API. Opus scored 84.4% to Jev's 81.0%, and Jev answered in 175 ms at $0.11 per thousand requests against 2.3 seconds and $2.42 for Opus.",
-      "published_at": "2026-09-22T00:00:00+00:00",
-      "source": "OpenRouter Blog",
-      "source_id": "openrouter_blog",
+      "id": "5086a94035ddaff2",
+      "title": "Obsidian 1.13.6 Desktop (Public)",
+      "url": "https://obsidian.md/changelog/2026-08-10-desktop-v1.13.6/",
+      "summary": "Improvements The app now waits for configuration files to finish saving when quitting to avoid the file getting corrupted. Improved “Undo close tab” behavior. Tabs now reopen in the correct tab group, and if the currently active tab is the “New tab” page, it will no longer be reused. Removed dialog to approve URI actio",
+      "published_at": "2026-08-10T00:00:00+00:00",
+      "source": "Obsidian Changelog",
+      "source_id": "obsidian_changelog",
       "source_kind": "official",
-      "source_category": "ai",
-      "genre": "ai",
-      "primary_category": "ai",
+      "source_category": "knowledge",
+      "genre": "knowledge",
+      "primary_category": "knowledge",
       "topics": [
         {
-          "id": "llm_ai_tools",
+          "id": "obsidian_pkm",
           "score": 0.333
         }
       ],
       "topic_ids": [
-        "llm_ai_tools"
+        "obsidian_pkm"
       ],
       "topic_labels": [
-        "AIツール・サービス"
+        "Obsidian・PKM"
       ],
       "topic_scores": {
-        "llm_ai_tools": 0.333
+        "obsidian_pkm": 0.333
       },
       "matched_signals": [],
       "positive_signals": [],
       "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
+      "content_type": "release",
+      "item_type": "release",
       "reading_depth": "standard",
       "signals": {
-        "direct_interest": 1.0,
+        "direct_interest": 1.25,
         "related_interest": 0.0,
-        "freshness": 0.808,
+        "freshness": 0.724,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
-      "interest_score": 1.0,
-      "score": 1.0,
+      "interest_score": 1.25,
+      "score": 1.25,
       "score_components": {
-        "topics": 1.0,
+        "topics": 1.25,
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.72,
+      "rank_score": 2.73,
       "matched_interests": [
-        "llm_ai_tools"
+        "obsidian_pkm"
       ],
       "matched_labels": [
-        "AIツール・サービス"
+        "Obsidian・PKM"
       ],
-      "title_ja": "Jev は、Fere のモデルとして、分類で正確ですか?",
-      "summary_ja": "Claude Opus 5 は OpenRouter の分類タスクのランキングを支出することでリードします。 同じ3,080 Banking77のタランスをJev 1.13にDecisions APIを通して送りました。 Opus は、Jev の 81.0% に 84.4% をスコアし、Jev は 175 ms で 2.3 秒と Opus の $2.42 に対して 1 万件のリクエストで回答しました。"
+      "title_ja": "Obsidian 1.13.6 デスクトップ (公開)",
+      "summary_ja": "改善点 このアプリは、ファイルが破損しているのを避けるために終了したときに設定ファイルを保存するのを待ちます。 「タブを閉じる」動作を改善しました。 タブは正しいタブグループで再オープンし、現在アクティブなタブが「新しいタブ」ページの場合、再利用されることはありません。 URI アクティオを承認するための削除されたダイアログ"
     },
     {
       "id": "42479fc4b200c7e7",
@@ -8792,7 +8917,7 @@
       "signals": {
         "direct_interest": 0.68,
         "related_interest": 0.0,
-        "freshness": 0.941,
+        "freshness": 0.938,
         "source_priority": 0.85
       },
       "recommendation_reason": "direct",
@@ -8812,6 +8937,63 @@
       ],
       "title_ja": "Ben Affleckを引用",
       "summary_ja": "幼い頃からコンピューターにいつもお世話になりました。 その後、アナログフィルムからデジタルに移行し始めたとき、その側面に興味を持たせました。 長年のビジュアル効果ワークフローには、機械学習が含まれている。 なので、かなりの Python スクリプトや、その bec のようなもののように書くことができます。"
+    },
+    {
+      "id": "3fa8774035dc591d",
+      "title": "Is Jev as Accurate as Frontier Models at Classification?",
+      "url": "https://openrouter.ai/blog/insights/jev-vs-claude-opus-5-classification/",
+      "summary": "Claude Opus 5 leads OpenRouter's classification task ranking by spend. We sent the same 3,080 Banking77 utterances to it and to Jev 1.13 through the Decisions API. Opus scored 84.4% to Jev's 81.0%, and Jev answered in 175 ms at $0.11 per thousand requests against 2.3 seconds and $2.42 for Opus.",
+      "published_at": "2026-09-22T00:00:00+00:00",
+      "source": "OpenRouter Blog",
+      "source_id": "openrouter_blog",
+      "source_kind": "official",
+      "source_category": "ai",
+      "genre": "ai",
+      "primary_category": "ai",
+      "topics": [
+        {
+          "id": "llm_ai_tools",
+          "score": 0.333
+        }
+      ],
+      "topic_ids": [
+        "llm_ai_tools"
+      ],
+      "topic_labels": [
+        "AIツール・サービス"
+      ],
+      "topic_scores": {
+        "llm_ai_tools": 0.333
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 1.0,
+        "related_interest": 0.0,
+        "freshness": 0.805,
+        "source_priority": 0.95
+      },
+      "recommendation_reason": "direct",
+      "interest_score": 1.0,
+      "score": 1.0,
+      "score_components": {
+        "topics": 1.0,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.71,
+      "matched_interests": [
+        "llm_ai_tools"
+      ],
+      "matched_labels": [
+        "AIツール・サービス"
+      ],
+      "title_ja": "Jev は、Fere のモデルとして、分類で正確ですか?",
+      "summary_ja": "Claude Opus 5 は OpenRouter の分類タスクのランキングを支出することでリードします。 同じ3,080 Banking77のタランスをJev 1.13にDecisions APIを通して送りました。 Opus は、Jev の 81.0% に 84.4% をスコアし、Jev は 175 ms で 2.3 秒と Opus の $2.42 に対して 1 万件のリクエストで回答しました。"
     },
     {
       "id": "4cb3148455bf6275",
@@ -8849,7 +9031,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.889,
+        "freshness": 0.886,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -8860,7 +9042,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.71,
+      "rank_score": 2.7,
       "matched_interests": [
         "apple_ecosystem"
       ],
@@ -8906,7 +9088,7 @@
       "signals": {
         "direct_interest": 1.25,
         "related_interest": 0.0,
-        "freshness": 0.712,
+        "freshness": 0.711,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -8963,7 +9145,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.897,
+        "freshness": 0.894,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -8974,7 +9156,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.69,
+      "rank_score": 2.68,
       "matched_interests": [
         "llm_ai_tools"
       ],
@@ -9020,7 +9202,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.892,
+        "freshness": 0.889,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -9031,7 +9213,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.69,
+      "rank_score": 2.68,
       "matched_interests": [
         "llm_ai_tools"
       ],
@@ -9077,7 +9259,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.892,
+        "freshness": 0.889,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -9088,7 +9270,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.69,
+      "rank_score": 2.68,
       "matched_interests": [
         "llm_ai_tools"
       ],
@@ -9134,7 +9316,7 @@
       "signals": {
         "direct_interest": 1.25,
         "related_interest": 0.0,
-        "freshness": 0.704,
+        "freshness": 0.703,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -9191,7 +9373,7 @@
       "signals": {
         "direct_interest": 1.25,
         "related_interest": 0.0,
-        "freshness": 0.704,
+        "freshness": 0.703,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -9248,7 +9430,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.883,
+        "freshness": 0.88,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -9259,7 +9441,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.67,
+      "rank_score": 2.66,
       "matched_interests": [
         "llm_ai_tools"
       ],
@@ -9312,7 +9494,7 @@
       "signals": {
         "direct_interest": 1.58,
         "related_interest": 0.0,
-        "freshness": 0.598,
+        "freshness": 0.595,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -9323,7 +9505,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.67,
+      "rank_score": 2.66,
       "matched_interests": [
         "apple_ecosystem",
         "daily_notes_journaling"
@@ -9371,7 +9553,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.875,
+        "freshness": 0.872,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -9382,7 +9564,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.65,
+      "rank_score": 2.64,
       "matched_interests": [
         "llm_ai_tools"
       ],
@@ -9428,7 +9610,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.865,
+        "freshness": 0.862,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -9485,7 +9667,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.858,
+        "freshness": 0.855,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -9496,7 +9678,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.61,
+      "rank_score": 2.6,
       "matched_interests": [
         "llm_ai_tools"
       ],
@@ -9549,7 +9731,7 @@
       "signals": {
         "direct_interest": 1.8,
         "related_interest": 0.0,
-        "freshness": 0.491,
+        "freshness": 0.488,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -9560,7 +9742,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.57,
+      "rank_score": 2.56,
       "matched_interests": [
         "input_devices",
         "maker_projects"
@@ -9608,7 +9790,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.823,
+        "freshness": 0.82,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -9619,7 +9801,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.52,
+      "rank_score": 2.51,
       "matched_interests": [
         "llm_ai_tools"
       ],
@@ -9665,7 +9847,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.817,
+        "freshness": 0.814,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -9676,7 +9858,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.51,
+      "rank_score": 2.5,
       "matched_interests": [
         "llm_ai_tools"
       ],
@@ -9722,7 +9904,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.808,
+        "freshness": 0.805,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -9779,7 +9961,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.808,
+        "freshness": 0.805,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -9836,7 +10018,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.8,
+        "freshness": 0.797,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -9893,7 +10075,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.8,
+        "freshness": 0.797,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -9950,7 +10132,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.8,
+        "freshness": 0.797,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -10090,7 +10272,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.783,
+        "freshness": 0.78,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -10147,7 +10329,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.78,
+        "freshness": 0.777,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -10158,7 +10340,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.42,
+      "rank_score": 2.41,
       "matched_interests": [
         "llm_ai_tools"
       ],
@@ -10204,7 +10386,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.78,
+        "freshness": 0.777,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -10261,7 +10443,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.775,
+        "freshness": 0.772,
         "source_priority": 0.95
       },
       "recommendation_reason": "direct",
@@ -10325,7 +10507,7 @@
       "signals": {
         "direct_interest": 1.8,
         "related_interest": 0.0,
-        "freshness": 0.433,
+        "freshness": 0.43,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -10336,7 +10518,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.41,
+      "rank_score": 2.4,
       "matched_interests": [
         "input_devices",
         "maker_projects"
@@ -10384,7 +10566,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.774,
+        "freshness": 0.771,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -10395,7 +10577,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.4,
+      "rank_score": 2.39,
       "matched_interests": [
         "llm_ai_tools"
       ],
@@ -10441,7 +10623,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.756,
+        "freshness": 0.753,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -10452,7 +10634,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.36,
+      "rank_score": 2.35,
       "matched_interests": [
         "llm_ai_tools"
       ],
@@ -10498,7 +10680,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.756,
+        "freshness": 0.753,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -10509,7 +10691,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.36,
+      "rank_score": 2.35,
       "matched_interests": [
         "llm_ai_tools"
       ],
@@ -10555,7 +10737,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.756,
+        "freshness": 0.753,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -10566,7 +10748,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.36,
+      "rank_score": 2.35,
       "matched_interests": [
         "llm_ai_tools"
       ],
@@ -10612,7 +10794,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.755,
+        "freshness": 0.752,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -10623,7 +10805,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.36,
+      "rank_score": 2.35,
       "matched_interests": [
         "llm_ai_tools"
       ],
@@ -10676,7 +10858,7 @@
       "signals": {
         "direct_interest": 1.84,
         "related_interest": 0.0,
-        "freshness": 0.414,
+        "freshness": 0.411,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -10687,7 +10869,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.36,
+      "rank_score": 2.35,
       "matched_interests": [
         "apple_ecosystem",
         "work_design"
@@ -10735,7 +10917,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.748,
+        "freshness": 0.745,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -10746,7 +10928,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.34,
+      "rank_score": 2.33,
       "matched_interests": [
         "llm_ai_tools"
       ],
@@ -10792,7 +10974,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.747,
+        "freshness": 0.744,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -10803,7 +10985,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.34,
+      "rank_score": 2.33,
       "matched_interests": [
         "llm_ai_tools"
       ],
@@ -10849,7 +11031,7 @@
       "signals": {
         "direct_interest": 1.05,
         "related_interest": 0.0,
-        "freshness": 0.638,
+        "freshness": 0.635,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -10906,7 +11088,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.714,
+        "freshness": 0.711,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -10917,7 +11099,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.26,
+      "rank_score": 2.25,
       "matched_interests": [
         "llm_ai_tools"
       ],
@@ -10963,7 +11145,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.706,
+        "freshness": 0.703,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -10974,7 +11156,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.24,
+      "rank_score": 2.23,
       "matched_interests": [
         "llm_ai_tools"
       ],
@@ -11020,7 +11202,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.706,
+        "freshness": 0.703,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -11031,7 +11213,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.24,
+      "rank_score": 2.23,
       "matched_interests": [
         "llm_ai_tools"
       ],
@@ -11066,7 +11248,7 @@
       "signals": {
         "direct_interest": 0.0,
         "related_interest": 0.0,
-        "freshness": 0.997,
+        "freshness": 0.994,
         "source_priority": 0.85
       },
       "recommendation_reason": "latest",
@@ -11082,6 +11264,90 @@
       "matched_labels": [],
       "title_ja": "AIは、大量解読ゲームです。 それは素晴らしいと怖いです。",
       "summary_ja": "AIは、大量解読ゲームです。 それは素晴らしいと怖いです。 インディーゲーム開発のPopcarは、既存のゲームのAIを搭載したデコンピレーションの最近の波について話します。既存のゲームと奇妙なマッシュアップを可能にし、ゲーム保存プロジェクトでブームを生成して、新しいハードウェア(多くの場合、バロー)で作業する古いゲームを入手します"
+    },
+    {
+      "id": "8ae8d3c1b8fcabc1",
+      "title": "Building An M7 Pan Tilt Head Controller",
+      "url": "https://hackaday.com/2026/10/15/building-an-m7-pan-tilt-head-controller/",
+      "summary": "The Soonpho M7 Pan Tilt Head is a useful photography tool for remotely aiming a decently-sized camera. Only, [Kyle Housley] wanted a little more control than was available out of …read more",
+      "published_at": "2026-10-15T08:00:43+00:00",
+      "source": "Hackaday",
+      "source_id": "hackaday",
+      "source_kind": "publication",
+      "source_category": "other",
+      "genre": "other",
+      "primary_category": "other",
+      "topics": [],
+      "topic_ids": [],
+      "topic_labels": [],
+      "topic_scores": {},
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 0.0,
+        "related_interest": 0.0,
+        "freshness": 1.0,
+        "source_priority": 0.65
+      },
+      "recommendation_reason": "latest",
+      "interest_score": 0.0,
+      "score": 0.0,
+      "score_components": {
+        "topics": 0,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.13,
+      "matched_interests": [],
+      "matched_labels": [],
+      "title_ja": "造るM7鍋の傾きの頭部のコントローラー",
+      "summary_ja": "遠方M7パンティルトヘッドは、集中型カメラを目指した、リモートで便利な撮影ツールです。 だけ, [Kyle Housley] は、より少し多くの制御を望んでいた...続きを読む"
+    },
+    {
+      "id": "79eddec8cb43692c",
+      "title": "Pager Converted to Meshtastic Node",
+      "url": "https://hackaday.com/2026/10/14/pager-converted-to-meshtastic-node/",
+      "summary": "Text messaging has been around on cellular networks en masse for around three decades now. It’s so common that it’s difficult to remember a time without it. Its two-way quick …read more",
+      "published_at": "2026-10-15T05:00:22+00:00",
+      "source": "Hackaday",
+      "source_id": "hackaday",
+      "source_kind": "publication",
+      "source_category": "other",
+      "genre": "other",
+      "primary_category": "other",
+      "topics": [],
+      "topic_ids": [],
+      "topic_labels": [],
+      "topic_scores": {},
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 0.0,
+        "related_interest": 0.0,
+        "freshness": 0.999,
+        "source_priority": 0.65
+      },
+      "recommendation_reason": "latest",
+      "interest_score": 0.0,
+      "score": 0.0,
+      "score_components": {
+        "topics": 0,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.13,
+      "matched_interests": [],
+      "matched_labels": [],
+      "title_ja": "Pager は Meshtastic ノードに変換",
+      "summary_ja": "テキストメッセージングは、セルラーネットワークの周りにありましたが、今では3年ほど多量化しています。 それなしで時間を覚えるのが難しいので、よくあります。 その2方向の速い...続きを読む"
     },
     {
       "id": "beefc2a6ce52f111",
@@ -11108,7 +11374,7 @@
       "signals": {
         "direct_interest": 0.0,
         "related_interest": 0.0,
-        "freshness": 0.983,
+        "freshness": 0.98,
         "source_priority": 0.85
       },
       "recommendation_reason": "latest",
@@ -11119,7 +11385,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.14,
+      "rank_score": 2.13,
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "エルムメタアイ 0.2",
@@ -11161,7 +11427,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.647,
+        "freshness": 0.644,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -11172,7 +11438,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.14,
+      "rank_score": 2.13,
       "matched_interests": [
         "apple_ecosystem"
       ],
@@ -11207,132 +11473,6 @@
       "signals": {
         "direct_interest": 0.0,
         "related_interest": 0.0,
-        "freshness": 0.998,
-        "source_priority": 0.65
-      },
-      "recommendation_reason": "latest",
-      "interest_score": 0.0,
-      "score": 0.0,
-      "score_components": {
-        "topics": 0,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.13,
-      "matched_interests": [],
-      "matched_labels": [],
-      "title_ja": "2026 ハッカデースーパーコン: ワークショップが開いている!",
-      "summary_ja": "Supercon は Hackaday の年次集まりであり、あなたは絶対にそこにある必要があります。 今日は、ワークショップのラインナップをお知らせし、これまで以上に提供してきましたが...続きを読む"
-    },
-    {
-      "id": "a370f02a6320d0de",
-      "title": "DIY Force Sensing Joysticks are a Cheap Way To Go",
-      "url": "https://hackaday.com/2026/10/14/diy-force-sensing-joysticks-are-a-cheap-way-to-go/",
-      "summary": "Traditional joysticks typically use potentiometers or hall effect sensors to determine the displacement of the stick itself when moved by the operator. Force-sensing joysticks are considered more desirable for certain …read more",
-      "published_at": "2026-10-14T15:30:40+00:00",
-      "source": "Hackaday",
-      "source_id": "hackaday",
-      "source_kind": "publication",
-      "source_category": "other",
-      "genre": "other",
-      "primary_category": "other",
-      "topics": [],
-      "topic_ids": [],
-      "topic_labels": [],
-      "topic_scores": {},
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 0.0,
-        "related_interest": 0.0,
-        "freshness": 0.997,
-        "source_priority": 0.65
-      },
-      "recommendation_reason": "latest",
-      "interest_score": 0.0,
-      "score": 0.0,
-      "score_components": {
-        "topics": 0,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.12,
-      "matched_interests": [],
-      "matched_labels": [],
-      "title_ja": "DIYフォースセンシングジョイスティックは行くために安い方法です",
-      "summary_ja": "従来のジョイスティックは、オペレータが移動したときに棒自体の変位を決定するために、通常、電位計またはホール効果センサーを使用します。 フォースセンシングジョイスティックは、特定のためにより望ましいと考えられています...続きを読む"
-    },
-    {
-      "id": "03573e1b2e02a31c",
-      "title": "What’s a Nonius?",
-      "url": "https://hackaday.com/2026/10/14/whats-a-nonius/",
-      "summary": "If you already know what a nonius is, you can probably skip this post. But, if like us, you would have to look it up, we’ll tell you what we …read more",
-      "published_at": "2026-10-14T14:00:10+00:00",
-      "source": "Hackaday",
-      "source_id": "hackaday",
-      "source_kind": "publication",
-      "source_category": "other",
-      "genre": "other",
-      "primary_category": "other",
-      "topics": [],
-      "topic_ids": [],
-      "topic_labels": [],
-      "topic_scores": {},
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 0.0,
-        "related_interest": 0.0,
-        "freshness": 0.997,
-        "source_priority": 0.65
-      },
-      "recommendation_reason": "latest",
-      "interest_score": 0.0,
-      "score": 0.0,
-      "score_components": {
-        "topics": 0,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.12,
-      "matched_interests": [],
-      "matched_labels": [],
-      "title_ja": "Noniusとは?",
-      "summary_ja": "もしあなたが既にnoniusが何であるかを知っているならば、おそらくこの投稿をスキップすることができます。 しかし、私たちが好きなら、あなたはそれを調べる必要があります、我々はあなたに私たちを伝えます...続きを読む"
-    },
-    {
-      "id": "ccd5746be895e20f",
-      "title": "Testing Oneself for AI Slop",
-      "url": "https://hackaday.com/2026/10/14/testing-oneself-for-ai-slop/",
-      "summary": "The feed of a Hackaday writer brings many surprises, some rubbish, and the occasional diamond which of course we bring to you. Sometimes a page catches the eye that’s not …read more",
-      "published_at": "2026-10-14T11:00:06+00:00",
-      "source": "Hackaday",
-      "source_id": "hackaday",
-      "source_kind": "publication",
-      "source_category": "other",
-      "genre": "other",
-      "primary_category": "other",
-      "topics": [],
-      "topic_ids": [],
-      "topic_labels": [],
-      "topic_scores": {},
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 0.0,
-        "related_interest": 0.0,
         "freshness": 0.995,
         "source_priority": 0.65
       },
@@ -11347,8 +11487,92 @@
       "rank_score": 2.12,
       "matched_interests": [],
       "matched_labels": [],
-      "title_ja": "AI Slopのテスト",
-      "summary_ja": "ハッカデーライターのフィードは、多くの驚き、いくつかのルビッシュ、そして私たちがあなたに連れて来る機会のあるダイヤモンドをもたらします。 時には、ページが目を引く...もっと読む"
+      "title_ja": "2026 ハッカデースーパーコン: ワークショップが開いている!",
+      "summary_ja": "Supercon は Hackaday の年次集まりであり、あなたは絶対にそこにある必要があります。 今日は、ワークショップのラインナップをお知らせし、これまで以上に提供してきましたが...続きを読む"
+    },
+    {
+      "id": "274157c50040f603",
+      "title": "Show HN: Flipflop, Iroh-powered persistent tunnels for filesharing",
+      "url": "https://github.com/andunieee/flipflop",
+      "summary": "This is a project that spun from my frustrations of using LocalSend and DashBeam to transfer stuff between devices, and with the extra goal of being fast, trying out the Slint framework and, most importantly, establishing a communication channel with trusted external people that can be left always on. Comments URL: htt",
+      "published_at": "2026-10-15T04:25:28+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_kind": "community",
+      "source_category": "other",
+      "genre": "other",
+      "primary_category": "other",
+      "topics": [],
+      "topic_ids": [],
+      "topic_labels": [],
+      "topic_scores": {},
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 0.0,
+        "related_interest": 0.0,
+        "freshness": 0.999,
+        "source_priority": 0.5
+      },
+      "recommendation_reason": "latest",
+      "interest_score": 0.0,
+      "score": 0.0,
+      "score_components": {
+        "topics": 0,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.1,
+      "matched_interests": [],
+      "matched_labels": [],
+      "title_ja": "HN を表示: フリップフロップ、ファイルハーリングのための Iroh 動力を与えられた永続トンネル",
+      "summary_ja": "これは、LocalSendとDashBeamを使用して、デバイス間で物事を転送し、Slintフレームワークを試してみると、最も重要なことは、常に残ることができる信頼できる外部の人々と通信チャネルを確立し、高速であることの余分な目標で、私の不満からスピンされたプロジェクトです。 コメント URL: htt"
+    },
+    {
+      "id": "1b861133ba99a5c9",
+      "title": "The Double Headed Stack Allocator",
+      "url": "https://blog.demofox.org/2026/10/03/the-double-headed-stack-allocator/",
+      "summary": "Article URL: https://blog.demofox.org/2026/10/03/the-double-headed-stack-allocator/ Comments URL: https://news.ycombinator.com/item?id=50098274 Points: 59 # Comments: 13",
+      "published_at": "2026-10-15T02:06:36+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_kind": "community",
+      "source_category": "other",
+      "genre": "other",
+      "primary_category": "other",
+      "topics": [],
+      "topic_ids": [],
+      "topic_labels": [],
+      "topic_scores": {},
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 0.0,
+        "related_interest": 0.0,
+        "freshness": 0.998,
+        "source_priority": 0.5
+      },
+      "recommendation_reason": "latest",
+      "interest_score": 0.0,
+      "score": 0.0,
+      "score_components": {
+        "topics": 0,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.1,
+      "matched_interests": [],
+      "matched_labels": [],
+      "title_ja": "ダブルヘッドスタックアオケーター",
+      "summary_ja": "記事のURL: https://blog.demofox.org/2026/10/03/the-double-headed-stack-allocator/ コメントのURL: https://news.ycombinator.com/item?id=50098274 ポイント: 59 #コメント: 13"
     },
     {
       "id": "68fad791883d4c3f",
@@ -11386,7 +11610,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.647,
+        "freshness": 0.644,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -11397,7 +11621,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.11,
+      "rank_score": 2.1,
       "matched_interests": [
         "llm_ai_tools"
       ],
@@ -11443,7 +11667,7 @@
       "signals": {
         "direct_interest": 3.15,
         "related_interest": 0.0,
-        "freshness": 0.057,
+        "freshness": 0.054,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -11454,7 +11678,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.11,
+      "rank_score": 2.1,
       "matched_interests": [
         "apple_ecosystem"
       ],
@@ -11465,10 +11689,52 @@
       "summary_ja": "FigmaおよびSketch用のAppleのデザインキットがiOS、iPadOS、macOS 27で利用可能になりました。キットには以下の内容が含まれます。 Liquid Glassのアップデート コンポーネントと状態のサポートの拡大 コードになじむ名前への変更 サイズ変更の改善 macOS用のダークモードの追加 Appleのデザインリソースからデザインキットをダウンロード"
     },
     {
+      "id": "d17808794bf174e8",
+      "title": "LFM2.5-24B-A2B: Built for fast on-device agents",
+      "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b",
+      "summary": "Article URL: https://www.liquid.ai/blog/lfm2-5-24b-a2b Comments URL: https://news.ycombinator.com/item?id=50097369 Points: 193 # Comments: 44",
+      "published_at": "2026-10-14T23:59:37+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_kind": "community",
+      "source_category": "other",
+      "genre": "other",
+      "primary_category": "other",
+      "topics": [],
+      "topic_ids": [],
+      "topic_labels": [],
+      "topic_scores": {},
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 0.0,
+        "related_interest": 0.0,
+        "freshness": 0.997,
+        "source_priority": 0.5
+      },
+      "recommendation_reason": "latest",
+      "interest_score": 0.0,
+      "score": 0.0,
+      "score_components": {
+        "topics": 0,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.09,
+      "matched_interests": [],
+      "matched_labels": [],
+      "title_ja": "LFM2.5-24B-A2B:速いオンデバイザーの代理店のために造られる",
+      "summary_ja": "記事のURL: https://www.liquid.ai/blog/lfm2-5-24b-a2b コメントURL: https://news.ycombinator.com/item?id=50097369 ポイント: 193 # コメント: 44"
+    },
+    {
       "id": "06c07368cb5a8fb4",
       "title": "Tiny Little Office",
       "url": "https://tinylittleoffice.com/",
-      "summary": "Article URL: https://tinylittleoffice.com/ Comments URL: https://news.ycombinator.com/item?id=50096142 Points: 71 # Comments: 11",
+      "summary": "Article URL: https://tinylittleoffice.com/ Comments URL: https://news.ycombinator.com/item?id=50096142 Points: 394 # Comments: 58",
       "published_at": "2026-10-14T22:10:08+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -11489,7 +11755,7 @@
       "signals": {
         "direct_interest": 0.0,
         "related_interest": 0.0,
-        "freshness": 0.999,
+        "freshness": 0.996,
         "source_priority": 0.5
       },
       "recommendation_reason": "latest",
@@ -11500,17 +11766,17 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.1,
+      "rank_score": 2.09,
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "小さな小さなオフィス",
-      "summary_ja": "記事のURL:https://tinylittleoffice.com/ コメント URL: https://news.ycombinator.com/item?id=50096142 ポイント: 71 # コメント: 11"
+      "summary_ja": "記事のURL:https://tinylittleoffice.com/ コメント URL: https://news.ycombinator.com/item?id=50096142 ポイント: 394 # コメント: 58"
     },
     {
       "id": "56db0875e5c8780e",
       "title": "We’re releasing Jev 1.14.0 along with experimental features for dreamers",
       "url": "https://typesafe.ai/blog/jev-1-14",
-      "summary": "Article URL: https://typesafe.ai/blog/jev-1-14 Comments URL: https://news.ycombinator.com/item?id=50095353 Points: 135 # Comments: 52",
+      "summary": "Article URL: https://typesafe.ai/blog/jev-1-14 Comments URL: https://news.ycombinator.com/item?id=50095353 Points: 277 # Comments: 88",
       "published_at": "2026-10-14T21:11:03+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -11531,7 +11797,7 @@
       "signals": {
         "direct_interest": 0.0,
         "related_interest": 0.0,
-        "freshness": 0.999,
+        "freshness": 0.996,
         "source_priority": 0.5
       },
       "recommendation_reason": "latest",
@@ -11542,17 +11808,17 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.1,
+      "rank_score": 2.09,
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "夢想家のための実験的な機能とともにJev 1.14.0をリリースしています",
-      "summary_ja": "記事のURL: https://typesafe.ai/blog/jev-1-14 注釈 URL: https://news.ycombinator.com/item?id=500953 ポイント: 135 # コメント: 52"
+      "summary_ja": "記事のURL: https://typesafe.ai/blog/jev-1-14 注釈 URL: https://news.ycombinator.com/item?id=500953 ポイント: 277 # コメント: 88"
     },
     {
       "id": "9e875971d706722e",
       "title": "OpenCode 2.0",
       "url": "https://anoma.ly/notes/opencode-2-0/",
-      "summary": "Article URL: https://anoma.ly/notes/opencode-2-0/ Comments URL: https://news.ycombinator.com/item?id=50094994 Points: 219 # Comments: 83",
+      "summary": "Article URL: https://anoma.ly/notes/opencode-2-0/ Comments URL: https://news.ycombinator.com/item?id=50094994 Points: 577 # Comments: 219",
       "published_at": "2026-10-14T20:48:24+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -11573,7 +11839,7 @@
       "signals": {
         "direct_interest": 0.0,
         "related_interest": 0.0,
-        "freshness": 0.999,
+        "freshness": 0.996,
         "source_priority": 0.5
       },
       "recommendation_reason": "latest",
@@ -11584,59 +11850,17 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.1,
+      "rank_score": 2.09,
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "オープンコード 2.0",
-      "summary_ja": "記事のURL: https://anoma.ly/notes/opencode-2-0/ コメントのURL: https://news.ycombinator.com/item?id=50094994 ポイント: 219 # コメント: 83"
-    },
-    {
-      "id": "1d96be30ebd1a643",
-      "title": "Yandex outage: data shows that instead of going dark, malicious bots moved",
-      "url": "https://blog.cloudflare.com/yandex-outage/",
-      "summary": "Article URL: https://blog.cloudflare.com/yandex-outage/ Comments URL: https://news.ycombinator.com/item?id=50094673 Points: 189 # Comments: 59",
-      "published_at": "2026-10-14T20:29:13+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_kind": "community",
-      "source_category": "other",
-      "genre": "other",
-      "primary_category": "other",
-      "topics": [],
-      "topic_ids": [],
-      "topic_labels": [],
-      "topic_scores": {},
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 0.0,
-        "related_interest": 0.0,
-        "freshness": 0.999,
-        "source_priority": 0.5
-      },
-      "recommendation_reason": "latest",
-      "interest_score": 0.0,
-      "score": 0.0,
-      "score_components": {
-        "topics": 0,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.1,
-      "matched_interests": [],
-      "matched_labels": [],
-      "title_ja": "Yandex の停電: データは暗く、悪意のあるボットが移動するのではなく、データが表示される",
-      "summary_ja": "記事のURL: https://blog.cloudflare.com/yandex-outage/ コメントのURL: https://news.ycombinator.com/item?id=50094673 ポイント: 189 # コメント: 59"
+      "summary_ja": "記事のURL: https://anoma.ly/notes/opencode-2-0/ コメントのURL: https://news.ycombinator.com/item?id=50094994 ポイント: 577 # コメント: 219"
     },
     {
       "id": "9c1d7cfa62ecb033",
       "title": "Fancy Curl Sites",
       "url": "https://nytpu.com/gemlog/2026-03-18",
-      "summary": "Article URL: https://nytpu.com/gemlog/2026-03-18 Comments URL: https://news.ycombinator.com/item?id=50093612 Points: 64 # Comments: 12",
+      "summary": "Article URL: https://nytpu.com/gemlog/2026-03-18 Comments URL: https://news.ycombinator.com/item?id=50093612 Points: 124 # Comments: 24",
       "published_at": "2026-10-14T19:29:12+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -11657,7 +11881,7 @@
       "signals": {
         "direct_interest": 0.0,
         "related_interest": 0.0,
-        "freshness": 0.998,
+        "freshness": 0.995,
         "source_priority": 0.5
       },
       "recommendation_reason": "latest",
@@ -11668,17 +11892,17 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.1,
+      "rank_score": 2.09,
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "ファンシーカールサイト",
-      "summary_ja": "記事のURL: https://nytpu.com/gemlog/2026-03-18 コメントのURL: https://news.ycombinator.com/item?id=50093612 ポイント: 64 # コメント: 12"
+      "summary_ja": "記事のURL: https://nytpu.com/gemlog/2026-03-18 コメントのURL: https://news.ycombinator.com/item?id=50093612 ポイント: 124 # コメント: 24"
     },
     {
-      "id": "eda5446ccea04fc3",
-      "title": "Things to know when you get cancer – 2026 Edition",
+      "id": "bd5fe56baa336ad7",
+      "title": "Things to know when you get cancer",
       "url": "https://jjmaxwell4.com/writing/things-to-know-when-you-get-cancer/",
-      "summary": "Article URL: https://jjmaxwell4.com/writing/things-to-know-when-you-get-cancer/ Comments URL: https://news.ycombinator.com/item?id=50093568 Points: 632 # Comments: 170",
+      "summary": "Article URL: https://jjmaxwell4.com/writing/things-to-know-when-you-get-cancer/ Comments URL: https://news.ycombinator.com/item?id=50093568 Points: 1273 # Comments: 319",
       "published_at": "2026-10-14T19:26:30+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -11699,7 +11923,7 @@
       "signals": {
         "direct_interest": 0.0,
         "related_interest": 0.0,
-        "freshness": 0.998,
+        "freshness": 0.995,
         "source_priority": 0.5
       },
       "recommendation_reason": "latest",
@@ -11710,143 +11934,17 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.1,
+      "rank_score": 2.09,
       "matched_interests": [],
       "matched_labels": [],
-      "title_ja": "がんの時を知ること - 2026版",
-      "summary_ja": "記事のURL: https://jjmaxwell4.com/writing/things-to-know-when-you-get-cancer/ コメント URL: https://news.ycombinator.com/item?id=50093568 ポイント: 632 # コメント: 170"
-    },
-    {
-      "id": "0c3dcc85ccd3e0ed",
-      "title": "Suicide rates highest ever among middle-aged men",
-      "url": "https://www.telegraph.co.uk/news/2026/10/13/suicide-rates-highest-ever-among-middle-aged-men/",
-      "summary": "Article URL: https://www.telegraph.co.uk/news/2026/10/13/suicide-rates-highest-ever-among-middle-aged-men/ Comments URL: https://news.ycombinator.com/item?id=50093180 Points: 212 # Comments: 270",
-      "published_at": "2026-10-14T19:03:58+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_kind": "community",
-      "source_category": "other",
-      "genre": "other",
-      "primary_category": "other",
-      "topics": [],
-      "topic_ids": [],
-      "topic_labels": [],
-      "topic_scores": {},
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 0.0,
-        "related_interest": 0.0,
-        "freshness": 0.998,
-        "source_priority": 0.5
-      },
-      "recommendation_reason": "latest",
-      "interest_score": 0.0,
-      "score": 0.0,
-      "score_components": {
-        "topics": 0,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.1,
-      "matched_interests": [],
-      "matched_labels": [],
-      "title_ja": "中高齢男性の中で最も高い自殺率",
-      "summary_ja": "記事のURL: https://www.telegraph.co.uk/news/2026/10/13/suicide-rates-highest-ever-among-middle-aged-men/ コメント URL: https://news.ycombinator.com/item?id=50093180 ポイント: 212 # 270"
-    },
-    {
-      "id": "4d72222b5f255211",
-      "title": "Fire at Starlink site in Bulgaria after suspected sabotage in Poland",
-      "url": "https://dpa-international.com/politics/urn:newsml:dpa.com:20090101:261014-930-839530/",
-      "summary": "Article URL: https://dpa-international.com/politics/urn:newsml:dpa.com:20090101:261014-930-839530/ Comments URL: https://news.ycombinator.com/item?id=50092730 Points: 263 # Comments: 194",
-      "published_at": "2026-10-14T18:37:21+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_kind": "community",
-      "source_category": "other",
-      "genre": "other",
-      "primary_category": "other",
-      "topics": [],
-      "topic_ids": [],
-      "topic_labels": [],
-      "topic_scores": {},
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 0.0,
-        "related_interest": 0.0,
-        "freshness": 0.998,
-        "source_priority": 0.5
-      },
-      "recommendation_reason": "latest",
-      "interest_score": 0.0,
-      "score": 0.0,
-      "score_components": {
-        "topics": 0,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.1,
-      "matched_interests": [],
-      "matched_labels": [],
-      "title_ja": "ポーランドのサボテーを疑った後にブルガリアのStarlinkサイトで火災",
-      "summary_ja": "記事のURL: https://dpa-international.com/politics/urn:newsml:dpa.com:20090101:261014-930-839530/ 注釈 URL: https://news.ycombinator.com/item?id=50092730 ポイント: 263 # コメント: 194"
-    },
-    {
-      "id": "b581a01578468bb4",
-      "title": "Banks are now trying to offload the AI data center debt they just underwrote",
-      "url": "https://startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote/",
-      "summary": "Article URL: https://startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote/ Comments URL: https://news.ycombinator.com/item?id=50092664 Points: 248 # Comments: 199",
-      "published_at": "2026-10-14T18:32:52+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_kind": "community",
-      "source_category": "other",
-      "genre": "other",
-      "primary_category": "other",
-      "topics": [],
-      "topic_ids": [],
-      "topic_labels": [],
-      "topic_scores": {},
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 0.0,
-        "related_interest": 0.0,
-        "freshness": 0.998,
-        "source_priority": 0.5
-      },
-      "recommendation_reason": "latest",
-      "interest_score": 0.0,
-      "score": 0.0,
-      "score_components": {
-        "topics": 0,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.1,
-      "matched_interests": [],
-      "matched_labels": [],
-      "title_ja": "銀行はAIデータセンターの債務をオフロードしようとしています。",
-      "summary_ja": "記事のURL: https://startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote/ コメントのURL: https://news.ycombinator.com/item?id=50092664 ポイント: 248 #コメント: 199"
+      "title_ja": "がんを摂取する際に知っておくべきこと",
+      "summary_ja": "記事のURL: https://jjmaxwell4.com/writing/things-to-know-when-you-get-cancer/ コメント URL: https://news.ycombinator.com/item?id=50093568 ポイント: 1273 # コメント: 319"
     },
     {
       "id": "f9954036043c5f13",
       "title": "Virtual Oxide Labs: Emulating a Full Oxide Rack",
       "url": "https://oxide.computer/blog/voxel-labs",
-      "summary": "Article URL: https://oxide.computer/blog/voxel-labs Comments URL: https://news.ycombinator.com/item?id=50092423 Points: 53 # Comments: 4",
+      "summary": "Article URL: https://oxide.computer/blog/voxel-labs Comments URL: https://news.ycombinator.com/item?id=50092423 Points: 117 # Comments: 13",
       "published_at": "2026-10-14T18:21:14+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -11867,7 +11965,7 @@
       "signals": {
         "direct_interest": 0.0,
         "related_interest": 0.0,
-        "freshness": 0.998,
+        "freshness": 0.995,
         "source_priority": 0.5
       },
       "recommendation_reason": "latest",
@@ -11878,59 +11976,17 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.1,
+      "rank_score": 2.09,
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "バーチャルオキサイドラボ:フルオキサイドラックのエミュレート",
-      "summary_ja": "記事のURL: https://oxide.computer/blog/voxel-labs コメントのURL: https://news.ycombinator.com/item?id=50092423 ポイント: 53 #コメント: 4"
-    },
-    {
-      "id": "285ea7942abe0540",
-      "title": "America didn't lose its rare earth industry, it sold it",
-      "url": "https://www.lawfaremedia.org/article/america-didn-t-lose-its-rare-earth-industry.-it-sold-it",
-      "summary": "Article URL: https://www.lawfaremedia.org/article/america-didn-t-lose-its-rare-earth-industry.-it-sold-it Comments URL: https://news.ycombinator.com/item?id=50091875 Points: 143 # Comments: 68",
-      "published_at": "2026-10-14T17:50:26+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_kind": "community",
-      "source_category": "other",
-      "genre": "other",
-      "primary_category": "other",
-      "topics": [],
-      "topic_ids": [],
-      "topic_labels": [],
-      "topic_scores": {},
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 0.0,
-        "related_interest": 0.0,
-        "freshness": 0.998,
-        "source_priority": 0.5
-      },
-      "recommendation_reason": "latest",
-      "interest_score": 0.0,
-      "score": 0.0,
-      "score_components": {
-        "topics": 0,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.1,
-      "matched_interests": [],
-      "matched_labels": [],
-      "title_ja": "アメリカは、その希少な地球産業を失いませんでした, それはそれを販売",
-      "summary_ja": "記事のURL: https://www.lawfaremedia.org/article/america-didn-t-lose-its-rare-earth-industry.-it-sold-it コメントのURL: https://news.ycombinator.com/item?id=50091875 ポイント: 143 #コメント: 68"
+      "summary_ja": "記事のURL: https://oxide.computer/blog/voxel-labs コメントのURL: https://news.ycombinator.com/item?id=50092423 ポイント: 117 # コメント: 13"
     },
     {
       "id": "d7e1413a096752c6",
       "title": "Containment and monitoring failures are to blame for AI hacking reports: experts",
       "url": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
-      "summary": "Article URL: https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html Comments URL: https://news.ycombinator.com/item?id=50091788 Points: 814 # Comments: 437",
+      "summary": "Article URL: https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html Comments URL: https://news.ycombinator.com/item?id=50091788 Points: 890 # Comments: 519",
       "published_at": "2026-10-14T17:45:23+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -11951,7 +12007,7 @@
       "signals": {
         "direct_interest": 0.0,
         "related_interest": 0.0,
-        "freshness": 0.998,
+        "freshness": 0.995,
         "source_priority": 0.5
       },
       "recommendation_reason": "latest",
@@ -11962,59 +12018,17 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.1,
+      "rank_score": 2.09,
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "回避と監視の失敗は、AIハッキングレポートを非難することです:専門家",
-      "summary_ja": "記事のURL: https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html コメント URL: https://news.ycombinator.com/item?id=50091788 ポイント: 814 # コメント: 437"
-    },
-    {
-      "id": "05a34a6a7a97deca",
-      "title": "Has AI tells",
-      "url": "https://theconsensus.dev/blog/2026/10/14/has-ai-tells.html?focus=1",
-      "summary": "Article URL: https://theconsensus.dev/blog/2026/10/14/has-ai-tells.html?focus=1 Comments URL: https://news.ycombinator.com/item?id=50090799 Points: 63 # Comments: 69",
-      "published_at": "2026-10-14T16:52:42+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_kind": "community",
-      "source_category": "other",
-      "genre": "other",
-      "primary_category": "other",
-      "topics": [],
-      "topic_ids": [],
-      "topic_labels": [],
-      "topic_scores": {},
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 0.0,
-        "related_interest": 0.0,
-        "freshness": 0.998,
-        "source_priority": 0.5
-      },
-      "recommendation_reason": "latest",
-      "interest_score": 0.0,
-      "score": 0.0,
-      "score_components": {
-        "topics": 0,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.1,
-      "matched_interests": [],
-      "matched_labels": [],
-      "title_ja": "人工知能は言う",
-      "summary_ja": "記事のURL: https://theconsensus.dev/blog/2026/10/14/has-ai-tells.html?focus=1 コメントのURL: https://news.ycombinator.com/item?id=50090799 ポイント: 63 # コメント: 69"
+      "summary_ja": "記事のURL: https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html コメント URL: https://news.ycombinator.com/item?id=50091788 ポイント: 890 # コメント: 519"
     },
     {
       "id": "f7fba3aace33ea5d",
       "title": "Better HTTP/1 connection reuse in Go 1.27",
       "url": "https://go.dev/blog/http-connection-reuse",
-      "summary": "Article URL: https://go.dev/blog/http-connection-reuse Comments URL: https://news.ycombinator.com/item?id=50090369 Points: 184 # Comments: 30",
+      "summary": "Article URL: https://go.dev/blog/http-connection-reuse Comments URL: https://news.ycombinator.com/item?id=50090369 Points: 247 # Comments: 36",
       "published_at": "2026-10-14T16:29:33+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -12035,7 +12049,7 @@
       "signals": {
         "direct_interest": 0.0,
         "related_interest": 0.0,
-        "freshness": 0.997,
+        "freshness": 0.994,
         "source_priority": 0.5
       },
       "recommendation_reason": "latest",
@@ -12050,55 +12064,13 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "より良いHTTP / 1接続は、Go 1.27で再利用します",
-      "summary_ja": "記事のURL: https://go.dev/blog/http-connection-reuse コメントURL: https://news.ycombinator.com/item?id=50090369 ポイント: 184 # コメント: 30"
-    },
-    {
-      "id": "0eff8652df6c406f",
-      "title": "Google is silently linking your phone number across all signed-in accounts",
-      "url": "https://www.androidauthority.com/google-auto-phone-number-verification-android-3723117/",
-      "summary": "Article URL: https://www.androidauthority.com/google-auto-phone-number-verification-android-3723117/ Comments URL: https://news.ycombinator.com/item?id=50090349 Points: 347 # Comments: 92",
-      "published_at": "2026-10-14T16:28:51+00:00",
-      "source": "Hacker News via HNRSS",
-      "source_id": "hacker_news",
-      "source_kind": "community",
-      "source_category": "other",
-      "genre": "other",
-      "primary_category": "other",
-      "topics": [],
-      "topic_ids": [],
-      "topic_labels": [],
-      "topic_scores": {},
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 0.0,
-        "related_interest": 0.0,
-        "freshness": 0.997,
-        "source_priority": 0.5
-      },
-      "recommendation_reason": "latest",
-      "interest_score": 0.0,
-      "score": 0.0,
-      "score_components": {
-        "topics": 0,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.09,
-      "matched_interests": [],
-      "matched_labels": [],
-      "title_ja": "Googleは署名されたアカウント全体にあなたの電話番号をサイレントにリンクしています",
-      "summary_ja": "記事のURL: https://www.androidauthority.com/google-auto-phone-number-verification-android-3723117/ コメントのURL: https://news.ycombinator.com/item?id=50090349 ポイント: 347 # コメント: 92"
+      "summary_ja": "記事URL: https://go.dev/blog/http-connection-reuse コメントURL: https://news.ycombinator.com/item?id=50090369 ポイント: 247 # コメント: 36"
     },
     {
       "id": "4c5f77dbca7a6f9b",
       "title": "Americans' social activity has steeply declined in the past 30 years",
       "url": "https://www.dataforprogress.org/blog/2026/9/29/americans-social-activity-has-steeply-declined-in-the-past-30-years",
-      "summary": "Article URL: https://www.dataforprogress.org/blog/2026/9/29/americans-social-activity-has-steeply-declined-in-the-past-30-years Comments URL: https://news.ycombinator.com/item?id=50089921 Points: 159 # Comments: 225",
+      "summary": "Article URL: https://www.dataforprogress.org/blog/2026/9/29/americans-social-activity-has-steeply-declined-in-the-past-30-years Comments URL: https://news.ycombinator.com/item?id=50089921 Points: 381 # Comments: 354",
       "published_at": "2026-10-14T16:09:00+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
@@ -12119,7 +12091,7 @@
       "signals": {
         "direct_interest": 0.0,
         "related_interest": 0.0,
-        "freshness": 0.997,
+        "freshness": 0.994,
         "source_priority": 0.5
       },
       "recommendation_reason": "latest",
@@ -12134,14 +12106,14 @@
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "アメリカ人の社会的活動は、過去30年間に急激に減少しました",
-      "summary_ja": "記事のURL:https://www.dataforprogress.org/blog/2026/9/29/americans-social-active-has-steeply-declined-in-the-past-30-years コメントURL:https://news.ycombinator.com/item?id=50089921 ポイント:159 #コメント:225"
+      "summary_ja": "記事のURL: https://www.dataforprogress.org/blog/2026/9/29/americans-social-active-has-steeply-declined-in-the-past-30-years コメントURL: https://news.ycombinator.com/item?id=50089921 ポイント: 381 #コメント: 354"
     },
     {
-      "id": "6a1ef51fe8ff24a1",
-      "title": "Submarine cable resilience",
-      "url": "https://blog.apnic.net/2026/10/14/submarine-cable-resilience/",
-      "summary": "Article URL: https://blog.apnic.net/2026/10/14/submarine-cable-resilience/ Comments URL: https://news.ycombinator.com/item?id=50089229 Points: 121 # Comments: 43",
-      "published_at": "2026-10-14T15:31:15+00:00",
+      "id": "a702d5ac0f9fb366",
+      "title": "How Amazon pushes up prices all across the Internet",
+      "url": "https://www.not-ship.com/how-amazon-pushes-up-prices-all-across-the-internet/",
+      "summary": "Article URL: https://www.not-ship.com/how-amazon-pushes-up-prices-all-across-the-internet/ Comments URL: https://news.ycombinator.com/item?id=50084757 Points: 817 # Comments: 634",
+      "published_at": "2026-10-14T09:28:17+00:00",
       "source": "Hacker News via HNRSS",
       "source_id": "hacker_news",
       "source_kind": "community",
@@ -12161,7 +12133,7 @@
       "signals": {
         "direct_interest": 0.0,
         "related_interest": 0.0,
-        "freshness": 0.997,
+        "freshness": 0.992,
         "source_priority": 0.5
       },
       "recommendation_reason": "latest",
@@ -12172,11 +12144,53 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.09,
+      "rank_score": 2.08,
       "matched_interests": [],
       "matched_labels": [],
-      "title_ja": "潜水ケーブル弾性",
-      "summary_ja": "記事のURL: https://blog.apnic.net/2026/10/14/submarine-cable-resilience/ コメントのURL: https://news.ycombinator.com/item?id=50089229 ポイント: 121 # コメント: 43"
+      "title_ja": "Amazonがインターネット全体で価格をプッシュする方法",
+      "summary_ja": "記事のURL: https://www.not-ship.com/how-amazon-pushes-up-prices-all-across-the-internet/ コメント URL: https://news.ycombinator.com/item?id=50084757 ポイント: 817 # コメント: 634"
+    },
+    {
+      "id": "ccf521f8a59f5b1d",
+      "title": "Why is every rationalist blog post way too long?",
+      "url": "https://alexwennerberg.com/blog/2026-10-13-long.html",
+      "summary": "Article URL: https://alexwennerberg.com/blog/2026-10-13-long.html Comments URL: https://news.ycombinator.com/item?id=50083028 Points: 336 # Comments: 277",
+      "published_at": "2026-10-14T06:02:16+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_kind": "community",
+      "source_category": "other",
+      "genre": "other",
+      "primary_category": "other",
+      "topics": [],
+      "topic_ids": [],
+      "topic_labels": [],
+      "topic_scores": {},
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 0.0,
+        "related_interest": 0.0,
+        "freshness": 0.991,
+        "source_priority": 0.5
+      },
+      "recommendation_reason": "latest",
+      "interest_score": 0.0,
+      "score": 0.0,
+      "score_components": {
+        "topics": 0,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.08,
+      "matched_interests": [],
+      "matched_labels": [],
+      "title_ja": "なぜ、すべての合理的主義者のブログ投稿方法が長いですか?",
+      "summary_ja": "記事のURL: https://alexwennerberg.com/blog/2026-10-13-long.html コメント URL: https://news.ycombinator.com/item?id=50083028 ポイント: 336 # コメント: 277"
     },
     {
       "id": "8d48ee443dfc7672",
@@ -12214,7 +12228,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.641,
+        "freshness": 0.638,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -12225,7 +12239,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.09,
+      "rank_score": 2.08,
       "matched_interests": [
         "llm_ai_tools"
       ],
@@ -12271,7 +12285,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.639,
+        "freshness": 0.636,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -12282,7 +12296,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.09,
+      "rank_score": 2.08,
       "matched_interests": [
         "llm_ai_tools"
       ],
@@ -12291,6 +12305,90 @@
       ],
       "title_ja": "Google Picsをお試しください:Googleワークスペースで簡単に画像作成と編集",
       "summary_ja": "Google Picsによって作成された画像のコラージュ、トップのテキスト「Google Picsへのサイヒョ」"
+    },
+    {
+      "id": "a6e925dcced39ffd",
+      "title": "Donaldson Futuro House in Idyllwild, California, USA",
+      "url": "https://www.wowhaus.co.uk/2026/10/12/donaldson-futuro-house-in-idyllwild-california-usa/",
+      "summary": "Article URL: https://www.wowhaus.co.uk/2026/10/12/donaldson-futuro-house-in-idyllwild-california-usa/ Comments URL: https://news.ycombinator.com/item?id=50077709 Points: 42 # Comments: 13",
+      "published_at": "2026-10-13T19:55:41+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_kind": "community",
+      "source_category": "other",
+      "genre": "other",
+      "primary_category": "other",
+      "topics": [],
+      "topic_ids": [],
+      "topic_labels": [],
+      "topic_scores": {},
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 0.0,
+        "related_interest": 0.0,
+        "freshness": 0.987,
+        "source_priority": 0.5
+      },
+      "recommendation_reason": "latest",
+      "interest_score": 0.0,
+      "score": 0.0,
+      "score_components": {
+        "topics": 0,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.07,
+      "matched_interests": [],
+      "matched_labels": [],
+      "title_ja": "Donaldson Futuro House, カリフォルニア, アメリカ",
+      "summary_ja": "記事のURL: https://www.wowhaus.co.uk/2026/10/12/donaldson-futuro-house-in-idyllwild-california-usa/ コメント URL: https://news.ycombinator.com/item?id=50077709 ポイント: 42 #コメント: 13"
+    },
+    {
+      "id": "74196e1ec3dde2b4",
+      "title": "Your C is not standard C",
+      "url": "https://sebsite.pw/w/20261012-notstdc.html",
+      "summary": "Article URL: https://sebsite.pw/w/20261012-notstdc.html Comments URL: https://news.ycombinator.com/item?id=50071546 Points: 81 # Comments: 45",
+      "published_at": "2026-10-13T13:36:21+00:00",
+      "source": "Hacker News via HNRSS",
+      "source_id": "hacker_news",
+      "source_kind": "community",
+      "source_category": "other",
+      "genre": "other",
+      "primary_category": "other",
+      "topics": [],
+      "topic_ids": [],
+      "topic_labels": [],
+      "topic_scores": {},
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 0.0,
+        "related_interest": 0.0,
+        "freshness": 0.985,
+        "source_priority": 0.5
+      },
+      "recommendation_reason": "latest",
+      "interest_score": 0.0,
+      "score": 0.0,
+      "score_components": {
+        "topics": 0,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.07,
+      "matched_interests": [],
+      "matched_labels": [],
+      "title_ja": "あなたのCは標準Cではありません",
+      "summary_ja": "記事のURL: https://sebsite.pw/w/20261012-notstdc.html コメント URL: https://news.ycombinator.com/item?id=50071546 ポイント: 81 # コメント: 45"
     },
     {
       "id": "1a6501566a70ffca",
@@ -12317,7 +12415,7 @@
       "signals": {
         "direct_interest": 0.0,
         "related_interest": 0.0,
-        "freshness": 0.955,
+        "freshness": 0.952,
         "source_priority": 0.85
       },
       "recommendation_reason": "latest",
@@ -12328,110 +12426,11 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.08,
+      "rank_score": 2.07,
       "matched_interests": [],
       "matched_labels": [],
       "title_ja": "マタイグリーンを引用",
       "summary_ja": "誰もが尊敬されていることを非常に心配しているので、私は最悪の可能性を上げるゴフボールになるつもりです。 ミニクリプトには1%のチャンスがあり、既存のパブリックキー暗号化アルゴリズムで自信を失います。 2018年6月6日 ここでの問題は、AI prのスピードは、"
-    },
-    {
-      "id": "c281d305570f91dd",
-      "title": "Anti-Patterns in Software Blogging",
-      "url": "https://simonwillison.net/2026/Oct/7/anti-patterns-in-software-blogging/",
-      "summary": "Anti-Patterns in Software Blogging Some excellent writing advice from Michael Lynch. Michael warns against \"meandering intros\", misjudging your reader's existing knowledge, assuming they'll read your previous posts, and excessive formality. He also warns against overreliance on links as an excuse not to explain termino",
-      "published_at": "2026-10-07T14:53:51+00:00",
-      "source": "Simon Willison's Weblog",
-      "source_id": "simon_willison",
-      "source_kind": "blog",
-      "source_category": "other",
-      "genre": "other",
-      "primary_category": "other",
-      "topics": [],
-      "topic_ids": [],
-      "topic_labels": [],
-      "topic_scores": {},
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "analysis",
-      "item_type": "analysis",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 0.0,
-        "related_interest": 0.0,
-        "freshness": 0.939,
-        "source_priority": 0.85
-      },
-      "recommendation_reason": "latest",
-      "interest_score": 0.0,
-      "score": 0.0,
-      "score_components": {
-        "topics": 0,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.05,
-      "matched_interests": [],
-      "matched_labels": [],
-      "title_ja": "ソフトウェア・ブロッキングのアンチ・パターン",
-      "summary_ja": "マイケル・リンチの優れた執筆アドバイスをBloggingでAnti-Patterns。 マイケルは、読者の既存の知識を偽装し、「イントロをさまざまにする」と警告し、以前の投稿を読んでいると仮定して、過剰な公式性を失います。 彼はまた、文体を説明しない排泄物としてリンクの信頼性に対して警告します"
-    },
-    {
-      "id": "dd7c0205e5b06a89",
-      "title": "Apple Developer Program使用許諾契約が改訂されました",
-      "url": "https://developer.apple.com/jp/news/?id=0cgo95n6",
-      "summary": "欧州連合（EU）で配信されるアプリに関して改訂された条件（代替配信、代替決済、ビジネス規約など）を規定するため、 Apple Developer Program使用許諾契約の付属書14（英語） が追加されました。これらの条件は2026年10月1日に発効します。 変更内容をご確認のうえ、 ご自身のアカウントにサインイン し、更新された各種契約／規約に同意してください。 改訂された使用許諾契約の翻訳は、1か月以内に Apple Developer Webサイト でご確認いただけます。",
-      "published_at": "2026-08-18T15:00:32+00:00",
-      "source": "Apple Developer News (JP)",
-      "source_id": "apple_developer_jp",
-      "source_kind": "official",
-      "source_category": "ios_apple",
-      "genre": "ios_apple",
-      "primary_category": "ios_apple",
-      "topics": [
-        {
-          "id": "apple_ecosystem",
-          "score": 0.333
-        }
-      ],
-      "topic_ids": [
-        "apple_ecosystem"
-      ],
-      "topic_labels": [
-        "Apple・iPhone・Watch"
-      ],
-      "topic_scores": {
-        "apple_ecosystem": 0.333
-      },
-      "matched_signals": [],
-      "positive_signals": [],
-      "matched_combinations": [],
-      "content_type": "news",
-      "item_type": "news",
-      "reading_depth": "standard",
-      "signals": {
-        "direct_interest": 1.05,
-        "related_interest": 0.0,
-        "freshness": 0.522,
-        "source_priority": 0.9
-      },
-      "recommendation_reason": "direct",
-      "interest_score": 1.05,
-      "score": 1.05,
-      "score_components": {
-        "topics": 1.05,
-        "signals": 0.0,
-        "combinations": 0.0
-      },
-      "rank_score": 2.05,
-      "matched_interests": [
-        "apple_ecosystem"
-      ],
-      "matched_labels": [
-        "Apple・iPhone・Watch"
-      ],
-      "title_ja": "Apple Developer Program使用許諾契約が改訂されました",
-      "summary_ja": "欧州連合（EU）で配信されるアプリに関して改訂された条件（代替配信、代替決済、ビジネス規約など）を規定するため、 Apple Developer Program使用許諾契約の付属書14（英語） が追加されました。これらの条件は2026年10月1日に発効します。 変更内容をご確認のうえ、 ご自身のアカウントにサインイン し、更新された各種契約／規約に同意してください。 改訂された使用許諾契約の翻訳は、1か月以内に Apple Developer Webサイト でご確認いただけます。"
     },
     {
       "id": "254fdd0db4adf5d1",
@@ -12476,7 +12475,7 @@
       "signals": {
         "direct_interest": 1.8,
         "related_interest": 0.0,
-        "freshness": 0.308,
+        "freshness": 0.305,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -12498,6 +12497,105 @@
       ],
       "title_ja": "週報202回目（2026年7月24日）",
       "summary_ja": "こんにちは。自キ温泉ガイドのサリチル酸です。 最近本業が忙しくてヘロヘロになっています。 朝の満員電車の暑くてベトっとした湿度が辛いので、せめて午後から出社しようと調整しているのですが、外出する気温じゃなくて辛いですね。"
+    },
+    {
+      "id": "c281d305570f91dd",
+      "title": "Anti-Patterns in Software Blogging",
+      "url": "https://simonwillison.net/2026/Oct/7/anti-patterns-in-software-blogging/",
+      "summary": "Anti-Patterns in Software Blogging Some excellent writing advice from Michael Lynch. Michael warns against \"meandering intros\", misjudging your reader's existing knowledge, assuming they'll read your previous posts, and excessive formality. He also warns against overreliance on links as an excuse not to explain termino",
+      "published_at": "2026-10-07T14:53:51+00:00",
+      "source": "Simon Willison's Weblog",
+      "source_id": "simon_willison",
+      "source_kind": "blog",
+      "source_category": "other",
+      "genre": "other",
+      "primary_category": "other",
+      "topics": [],
+      "topic_ids": [],
+      "topic_labels": [],
+      "topic_scores": {},
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "analysis",
+      "item_type": "analysis",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 0.0,
+        "related_interest": 0.0,
+        "freshness": 0.936,
+        "source_priority": 0.85
+      },
+      "recommendation_reason": "latest",
+      "interest_score": 0.0,
+      "score": 0.0,
+      "score_components": {
+        "topics": 0,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.04,
+      "matched_interests": [],
+      "matched_labels": [],
+      "title_ja": "ソフトウェア・ブロッキングのアンチ・パターン",
+      "summary_ja": "マイケル・リンチの優れた執筆アドバイスをBloggingでAnti-Patterns。 マイケルは、読者の既存の知識を偽装し、「イントロをさまざまにする」と警告し、以前の投稿を読んでいると仮定して、過剰な公式性を失います。 彼はまた、文体を説明しない排泄物としてリンクの信頼性に対して警告します"
+    },
+    {
+      "id": "dd7c0205e5b06a89",
+      "title": "Apple Developer Program使用許諾契約が改訂されました",
+      "url": "https://developer.apple.com/jp/news/?id=0cgo95n6",
+      "summary": "欧州連合（EU）で配信されるアプリに関して改訂された条件（代替配信、代替決済、ビジネス規約など）を規定するため、 Apple Developer Program使用許諾契約の付属書14（英語） が追加されました。これらの条件は2026年10月1日に発効します。 変更内容をご確認のうえ、 ご自身のアカウントにサインイン し、更新された各種契約／規約に同意してください。 改訂された使用許諾契約の翻訳は、1か月以内に Apple Developer Webサイト でご確認いただけます。",
+      "published_at": "2026-08-18T15:00:32+00:00",
+      "source": "Apple Developer News (JP)",
+      "source_id": "apple_developer_jp",
+      "source_kind": "official",
+      "source_category": "ios_apple",
+      "genre": "ios_apple",
+      "primary_category": "ios_apple",
+      "topics": [
+        {
+          "id": "apple_ecosystem",
+          "score": 0.333
+        }
+      ],
+      "topic_ids": [
+        "apple_ecosystem"
+      ],
+      "topic_labels": [
+        "Apple・iPhone・Watch"
+      ],
+      "topic_scores": {
+        "apple_ecosystem": 0.333
+      },
+      "matched_signals": [],
+      "positive_signals": [],
+      "matched_combinations": [],
+      "content_type": "news",
+      "item_type": "news",
+      "reading_depth": "standard",
+      "signals": {
+        "direct_interest": 1.05,
+        "related_interest": 0.0,
+        "freshness": 0.519,
+        "source_priority": 0.9
+      },
+      "recommendation_reason": "direct",
+      "interest_score": 1.05,
+      "score": 1.05,
+      "score_components": {
+        "topics": 1.05,
+        "signals": 0.0,
+        "combinations": 0.0
+      },
+      "rank_score": 2.04,
+      "matched_interests": [
+        "apple_ecosystem"
+      ],
+      "matched_labels": [
+        "Apple・iPhone・Watch"
+      ],
+      "title_ja": "Apple Developer Program使用許諾契約が改訂されました",
+      "summary_ja": "欧州連合（EU）で配信されるアプリに関して改訂された条件（代替配信、代替決済、ビジネス規約など）を規定するため、 Apple Developer Program使用許諾契約の付属書14（英語） が追加されました。これらの条件は2026年10月1日に発効します。 変更内容をご確認のうえ、 ご自身のアカウントにサインイン し、更新された各種契約／規約に同意してください。 改訂された使用許諾契約の翻訳は、1か月以内に Apple Developer Webサイト でご確認いただけます。"
     },
     {
       "id": "38ea2e3d08e3ecb0",
@@ -12535,7 +12633,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.589,
+        "freshness": 0.586,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -12546,7 +12644,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 2.0,
+      "rank_score": 1.99,
       "matched_interests": [
         "apple_ecosystem"
       ],
@@ -12592,7 +12690,7 @@
       "signals": {
         "direct_interest": 0.75,
         "related_interest": 0.0,
-        "freshness": 0.573,
+        "freshness": 0.57,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -12603,7 +12701,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 1.93,
+      "rank_score": 1.92,
       "matched_interests": [
         "personal_web_rss"
       ],
@@ -12656,7 +12754,7 @@
       "signals": {
         "direct_interest": 1.8,
         "related_interest": 0.0,
-        "freshness": 0.258,
+        "freshness": 0.255,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -12722,7 +12820,7 @@
       "signals": {
         "direct_interest": 2.06,
         "related_interest": 0.0,
-        "freshness": 0.191,
+        "freshness": 0.188,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -12733,7 +12831,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 1.87,
+      "rank_score": 1.86,
       "matched_interests": [
         "apple_ecosystem",
         "personal_web_rss"
@@ -12781,7 +12879,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.522,
+        "freshness": 0.519,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -12838,7 +12936,7 @@
       "signals": {
         "direct_interest": 1.25,
         "related_interest": 0.0,
-        "freshness": 0.354,
+        "freshness": 0.353,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -12849,7 +12947,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 1.8,
+      "rank_score": 1.79,
       "matched_interests": [
         "obsidian_pkm"
       ],
@@ -12895,7 +12993,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.472,
+        "freshness": 0.469,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -12906,7 +13004,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 1.73,
+      "rank_score": 1.72,
       "matched_interests": [
         "apple_ecosystem"
       ],
@@ -12956,7 +13054,7 @@
       "signals": {
         "direct_interest": 1.84,
         "related_interest": 0.0,
-        "freshness": 0.141,
+        "freshness": 0.138,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -12967,7 +13065,7 @@
         "signals": 0.75,
         "combinations": 0.0
       },
-      "rank_score": 1.61,
+      "rank_score": 1.6,
       "matched_interests": [
         "input_devices"
       ],
@@ -13014,7 +13112,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.414,
+        "freshness": 0.411,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -13025,7 +13123,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 1.59,
+      "rank_score": 1.58,
       "matched_interests": [
         "apple_ecosystem"
       ],
@@ -13075,7 +13173,7 @@
       "signals": {
         "direct_interest": 1.84,
         "related_interest": 0.0,
-        "freshness": 0.074,
+        "freshness": 0.071,
         "source_priority": 1.0
       },
       "recommendation_reason": "direct",
@@ -13086,7 +13184,7 @@
         "signals": 0.75,
         "combinations": 0.0
       },
-      "rank_score": 1.42,
+      "rank_score": 1.41,
       "matched_interests": [
         "input_devices"
       ],
@@ -13133,7 +13231,7 @@
       "signals": {
         "direct_interest": 1.84,
         "related_interest": 0.0,
-        "freshness": 0.013,
+        "freshness": 0.01,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -13144,7 +13242,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 1.23,
+      "rank_score": 1.22,
       "matched_interests": [
         "apple_ecosystem"
       ],
@@ -13190,7 +13288,7 @@
       "signals": {
         "direct_interest": 1.84,
         "related_interest": 0.0,
-        "freshness": 0.013,
+        "freshness": 0.01,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -13201,7 +13299,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 1.23,
+      "rank_score": 1.22,
       "matched_interests": [
         "apple_ecosystem"
       ],
@@ -13247,7 +13345,7 @@
       "signals": {
         "direct_interest": 0.79,
         "related_interest": 0.0,
-        "freshness": 0.172,
+        "freshness": 0.169,
         "source_priority": 0.9
       },
       "recommendation_reason": "direct",
@@ -13258,7 +13356,7 @@
         "signals": 0.0,
         "combinations": 0.0
       },
-      "rank_score": 1.02,
+      "rank_score": 1.01,
       "matched_interests": [
         "apple_ecosystem"
       ],
@@ -13287,9 +13385,9 @@
     "engine": "argos-translate",
     "source_language": "en",
     "target_language": "ja",
-    "generated_at": "2026-10-15T00:01:22.654993+00:00",
-    "translated_fields": 71,
-    "reused_fields": 293,
+    "generated_at": "2026-10-15T08:29:48.737913+00:00",
+    "translated_fields": 46,
+    "reused_fields": 318,
     "native_japanese_fields": 76,
     "failed_fields": 0
   }
